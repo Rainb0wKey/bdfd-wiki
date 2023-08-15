@@ -503,7 +503,7 @@ Current music:
 ![](https://user-images.githubusercontent.com/70456337/222919976-4e9d3110-7a5f-4653-bcdd-ceaa8bfa58db.png)
 
 ## $jsonArrayUnshift
-`$jsonArrayUnfhist` function adds the value in the front of the array.
+`$jsonArrayUnshift` function adds the value in the front of the array.
 
 ### Syntax
 ```
