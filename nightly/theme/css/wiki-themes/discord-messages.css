@@ -23,6 +23,7 @@
     color: #999;
     font-size: 12px;
     margin-left: 3px;
+    user-select: none;
 }
 
 .discord-quote-container > blockquote {
@@ -45,6 +46,7 @@
     margin-top: 0.075em;
     border-radius: 4px;
     padding: 3px 5px;
+    user-select: none;
 }
 
 .discord-message .discord-author-info .discord-application-tag-verified {
