@@ -11,6 +11,13 @@
     background-color: #2e3035;
 }
 
+@media only screen and (max-width: 768px) {
+.discord-message .discord-message-timestamp {
+  font-size: 10px;
+}
+}
+
+
 .discord-message .discord-message-timestamp {
     color: #999;
     font-size: 12px;
