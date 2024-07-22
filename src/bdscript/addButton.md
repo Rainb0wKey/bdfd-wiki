@@ -1,6 +1,10 @@
 # $addButton
 Adds a button to a message.
 
+```admonish warning title="Data loss"
+The following steps can lead to irrecoverable data corruption.
+```
+
 ## Syntax
 ```
 $addButton[New row?;Interaction ID/URL;Label;Style;(Disable?;Emoji;Message ID)]
