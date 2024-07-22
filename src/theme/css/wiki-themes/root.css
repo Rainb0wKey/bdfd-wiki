@@ -1,5 +1,6 @@
 :root {
-    --sidebar-width: 500px;
+    --sidebar-width: 350px;
+    --sidebar-border-radius: 20px;
     --page-padding: 15px;
     --content-max-width: 750px;
     --menu-bar-height: 50px;
