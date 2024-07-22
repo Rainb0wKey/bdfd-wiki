@@ -160,3 +160,16 @@
     justify-content: center;
     display: flex;
 }
+
+.discord-reaction {
+    border-radius: 0.5rem;
+    cursor: pointer;
+    flex-shrink: 0;
+    margin-right: 0.25rem;
+    margin-bottom: 0.25rem;
+    user-select: none;
+    transition: none 0.1s ease;
+    transition-property: background-color, border-color;
+    background-color: #272727;
+    border: 1px solid transparent;
+}
