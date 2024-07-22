@@ -9,6 +9,7 @@
 .discord-messages {
     border-radius: 10px;
     background-color: #2e3035;
+    box-shadow: 7px 7px 15px rgb(66 68 73 / 50%);
 }
 
 @media only screen and (max-width: 768px) {
