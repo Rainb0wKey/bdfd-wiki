@@ -126,21 +126,6 @@
 
                         <h1 class="menu-title">Bot Designer For Discord - Wiki</h1>
 
-                        <div class="right-buttons">
-
-                            <a href="../print.html" title="Print this book" aria-label="Print this book">
-                                <i id="print-button" class="fa fa-print"></i>
-                            </a>
-
-                            <a href="https://github.com/NilPointer-Software/bdfd-wiki" title="Git repository" aria-label="Git repository">
-                                <i id="git-repository-button" class="fa fa-github"></i>
-                            </a>
-
-                           <a href="https://github.com/NilPointer-Software/bdfd-wiki/edit/dev/src/bdscript/editButton.md" title="Suggest an edit" aria-label="Suggest an edit">
-                               <i id="git-edit-button" class="fa fa-edit"></i>
-                           </a>
-
-                        </div>
                     </div>
                 </div>
 
@@ -194,14 +179,14 @@ Here, are all possible values for the <code>style</code> function argument.</p>
 <li><code>link</code> - Redirect button</li>
 </ul>
 <discord-messages>
-    <discord-message role-color="#378afa" avatar="https://github.com/NilPointer-Software/bdfd-wiki/assets/113303649/e5fdc906-6c14-4e19-91c0-4ce95b852c61" bot verified author="BDFD Support">
+    <discord-message bot author="BDFD Support" avatar="https://github.com/NilPointer-Software/bdfd-wiki/assets/113303649/e5fdc906-6c14-4e19-91c0-4ce95b852c61" verified role-color="#378afa">
         Buttons:
         <discord-attachments slot="components">
             <discord-action-row>
                 <discord-button type="primary">
                     Primary
                 </discord-button>
-                <discord-button type="primary" disabled>
+                <discord-button disabled type="primary">
                     Primary
                 </discord-button>
             </discord-action-row>
@@ -209,7 +194,7 @@ Here, are all possible values for the <code>style</code> function argument.</p>
                 <discord-button type="success">
                     Success
                 </discord-button>
-                <discord-button type="success" disabled>
+                <discord-button disabled type="success">
                     Success
                 </discord-button>
             </discord-action-row>
@@ -231,14 +216,14 @@ Here, are all possible values for the <code>style</code> function argument.</p>
             </discord-action-row>
         </discord-attachments>
     </discord-message>
-    <discord-message bot verified author="BDFD Support" avatar="https://github.com/NilPointer-Software/bdfd-wiki/assets/113303649/e5fdc906-6c14-4e19-91c0-4ce95b852c61" role-color="#378afa">
+    <discord-message role-color="#378afa" verified author="BDFD Support" bot avatar="https://github.com/NilPointer-Software/bdfd-wiki/assets/113303649/e5fdc906-6c14-4e19-91c0-4ce95b852c61">
         Other Buttons:
         <discord-attachments slot="components">
             <discord-action-row>
-                <discord-button type="secondary" url="https://nilpointer-software.github.io/bdfd-wiki/nightly/">
+                <discord-button url="https://nilpointer-software.github.io/bdfd-wiki/nightly/" type="secondary">
                     Link
                 </discord-button>
-                <discord-button type="secondary" disabled url="https://nilpointer-software.github.io/bdfd-wiki/nightly/">
+                <discord-button url="https://nilpointer-software.github.io/bdfd-wiki/nightly/" type="secondary" disabled>
                     Link
                 </discord-button>
             </discord-action-row>

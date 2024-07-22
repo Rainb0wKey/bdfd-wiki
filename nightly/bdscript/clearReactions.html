@@ -126,21 +126,6 @@
 
                         <h1 class="menu-title">Bot Designer For Discord - Wiki</h1>
 
-                        <div class="right-buttons">
-
-                            <a href="../print.html" title="Print this book" aria-label="Print this book">
-                                <i id="print-button" class="fa fa-print"></i>
-                            </a>
-
-                            <a href="https://github.com/NilPointer-Software/bdfd-wiki" title="Git repository" aria-label="Git repository">
-                                <i id="git-repository-button" class="fa fa-github"></i>
-                            </a>
-
-                           <a href="https://github.com/NilPointer-Software/bdfd-wiki/edit/dev/src/bdscript/clearReactions.md" title="Suggest an edit" aria-label="Suggest an edit">
-                               <i id="git-edit-button" class="fa fa-edit"></i>
-                           </a>
-
-                        </div>
                     </div>
                 </div>
 
@@ -186,20 +171,20 @@ $clearReactions[$channelID;$message;✅]
 </code></pre>
 <h3 id="before"><a class="header" href="#before">Before</a></h3>
 <discord-messages>
-    <discord-message author="BDFD Support" bot verified role-color="#378afa">
+    <discord-message bot author="BDFD Support" role-color="#378afa" verified>
         Message ID: 1216863258708021248
         <discord-reactions slot="reactions">
-            <discord-reaction reacted name=":white_check_mark:" count="179" emoji="https://upload.wikimedia.org/wikipedia/commons/thumb/3/34/Twemoji12_2705.svg/640px-Twemoji12_2705.svg.png">
+            <discord-reaction count="179" emoji="https://upload.wikimedia.org/wikipedia/commons/thumb/3/34/Twemoji12_2705.svg/640px-Twemoji12_2705.svg.png" reacted name=":white_check_mark:">
             </discord-reaction>
         </discord-reactions>
     </discord-message>
 </discord-messages>
 <h3 id="after"><a class="header" href="#after">After</a></h3>
 <discord-messages>
-    <discord-message bot role-color="#378afa" author="BDFD Support" verified>
+    <discord-message author="BDFD Support" bot verified role-color="#378afa">
         Message ID: 1216863258708021248
     </discord-message>
-    <discord-message role-color="#E67E22" author="RainbowKey">
+    <discord-message author="RainbowKey" role-color="#E67E22">
         !example 1216863258708021248
     </discord-message>
 </discord-messages>

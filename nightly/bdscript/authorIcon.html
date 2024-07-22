@@ -126,21 +126,6 @@
 
                         <h1 class="menu-title">Bot Designer For Discord - Wiki</h1>
 
-                        <div class="right-buttons">
-
-                            <a href="../print.html" title="Print this book" aria-label="Print this book">
-                                <i id="print-button" class="fa fa-print"></i>
-                            </a>
-
-                            <a href="https://github.com/NilPointer-Software/bdfd-wiki" title="Git repository" aria-label="Git repository">
-                                <i id="git-repository-button" class="fa fa-github"></i>
-                            </a>
-
-                           <a href="https://github.com/NilPointer-Software/bdfd-wiki/edit/dev/src/bdscript/authorIcon.md" title="Suggest an edit" aria-label="Suggest an edit">
-                               <i id="git-edit-button" class="fa fa-edit"></i>
-                           </a>
-
-                        </div>
                     </div>
                 </div>
 
@@ -191,9 +176,9 @@ $author[⬅️ That is the author icon. This is the author text.]
     <discord-message role-color="#EE7908" author="Nicky">
         !example
     </discord-message>
-    <discord-message role-color="#748BD4" author="Wiki Bot" bot verified>
+    <discord-message verified bot author="Wiki Bot" role-color="#748BD4">
         <none>
-        <discord-embed author-name="⬅️ That is the author icon. This is the author text." author-image="https://user-images.githubusercontent.com/111157596/257052136-4b8d5715-b381-4d5f-8c46-8ae0be53c8d8.png" slot="embeds">
+        <discord-embed slot="embeds" author-name="⬅️ That is the author icon. This is the author text." author-image="https://user-images.githubusercontent.com/111157596/257052136-4b8d5715-b381-4d5f-8c46-8ae0be53c8d8.png">
         </discord-embed>
     </discord-message>
 </discord-messages>

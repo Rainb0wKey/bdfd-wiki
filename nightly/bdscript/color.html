@@ -126,21 +126,6 @@
 
                         <h1 class="menu-title">Bot Designer For Discord - Wiki</h1>
 
-                        <div class="right-buttons">
-
-                            <a href="../print.html" title="Print this book" aria-label="Print this book">
-                                <i id="print-button" class="fa fa-print"></i>
-                            </a>
-
-                            <a href="https://github.com/NilPointer-Software/bdfd-wiki" title="Git repository" aria-label="Git repository">
-                                <i id="git-repository-button" class="fa fa-github"></i>
-                            </a>
-
-                           <a href="https://github.com/NilPointer-Software/bdfd-wiki/edit/dev/src/bdscript/color.md" title="Suggest an edit" aria-label="Suggest an edit">
-                               <i id="git-edit-button" class="fa fa-edit"></i>
-                           </a>
-
-                        </div>
                     </div>
                 </div>
 
@@ -188,9 +173,9 @@ $color[#673ab7]
     <discord-message role-color="#EE7908" author="Nicky">
         !example
     </discord-message>
-    <discord-message role-color="#748BD4" author="Wiki Bot" verified bot>
+    <discord-message verified bot author="Wiki Bot" role-color="#748BD4">
         <none>
-        <discord-embed slot="embeds" color="#673ab7">
+        <discord-embed color="#673ab7" slot="embeds">
             <discord-embed-description slot="description">
                 ⬅️ That is the embed color border!
             </discord-embed-description>

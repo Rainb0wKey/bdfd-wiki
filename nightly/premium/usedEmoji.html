@@ -126,21 +126,6 @@
 
                         <h1 class="menu-title">Bot Designer For Discord - Wiki</h1>
 
-                        <div class="right-buttons">
-
-                            <a href="../print.html" title="Print this book" aria-label="Print this book">
-                                <i id="print-button" class="fa fa-print"></i>
-                            </a>
-
-                            <a href="https://github.com/NilPointer-Software/bdfd-wiki" title="Git repository" aria-label="Git repository">
-                                <i id="git-repository-button" class="fa fa-github"></i>
-                            </a>
-
-                           <a href="https://github.com/NilPointer-Software/bdfd-wiki/edit/dev/src/premium/usedEmoji.md" title="Suggest an edit" aria-label="Suggest an edit">
-                               <i id="git-edit-button" class="fa fa-edit"></i>
-                           </a>
-
-                        </div>
                     </div>
                 </div>
 
@@ -186,12 +171,12 @@ $sendMessage[Emoji: $usedEmoji]
     <discord-message role-color="#EE7908" author="Nicky">
         !example
     </discord-message>
-    <discord-message bot verified author="Wiki Bot" role-color="#748BD4">
+    <discord-message bot author="Wiki Bot" role-color="#748BD4" verified>
         Yes or No?
         <discord-reactions slot="reactions">
             <discord-reaction name=":white_check_mark:" emoji="https://upload.wikimedia.org/wikipedia/commons/thumb/3/34/Twemoji12_2705.svg/640px-Twemoji12_2705.svg.png" count="2" reacted>
             </discord-reaction>
-            <discord-reaction emoji="https://upload.wikimedia.org/wikipedia/commons/thumb/5/53/Twemoji2_274c.svg/640px-Twemoji2_274c.svg.png" count="1" name=":x:">
+            <discord-reaction count="1" name=":x:" emoji="https://upload.wikimedia.org/wikipedia/commons/thumb/5/53/Twemoji2_274c.svg/640px-Twemoji2_274c.svg.png">
             </discord-reaction>
         </discord-reactions>
     </discord-message>

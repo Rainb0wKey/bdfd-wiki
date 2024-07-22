@@ -126,21 +126,6 @@
 
                         <h1 class="menu-title">Bot Designer For Discord - Wiki</h1>
 
-                        <div class="right-buttons">
-
-                            <a href="../print.html" title="Print this book" aria-label="Print this book">
-                                <i id="print-button" class="fa fa-print"></i>
-                            </a>
-
-                            <a href="https://github.com/NilPointer-Software/bdfd-wiki" title="Git repository" aria-label="Git repository">
-                                <i id="git-repository-button" class="fa fa-github"></i>
-                            </a>
-
-                           <a href="https://github.com/NilPointer-Software/bdfd-wiki/edit/dev/src/premium/messageContains.md" title="Suggest an edit" aria-label="Suggest an edit">
-                               <i id="git-edit-button" class="fa fa-edit"></i>
-                           </a>
-
-                        </div>
                     </div>
                 </div>
 
@@ -191,16 +176,16 @@
 <li>
 <p>Now, let’s say in chat someone types : <code>Hello Bot!</code>, <code>Hello</code>, <code>Hey Everyone!</code>, <code>Hi Noituri</code> etc. The bot will respond with “Hello there! How are you?”.</p>
 <discord-messages>
-    <discord-message author="noituri" role-color="#F1BDEE">
+    <discord-message role-color="#F1BDEE" author="noituri">
         Hello
     </discord-message>
-    <discord-message bot role-color="#748BD4" verified author="Wiki Bot">
+    <discord-message role-color="#748BD4" author="Wiki Bot" verified bot>
         Hello there! How are you?
     </discord-message>
-    <discord-message author="Nicky" role-color="#EE7908">
+    <discord-message role-color="#EE7908" author="Nicky">
         Hi Noituri
     </discord-message>
-    <discord-message role-color="#748BD4" verified author="Wiki Bot" bot>
+    <discord-message author="Wiki Bot" bot role-color="#748BD4" verified>
         Hello there! How are you?
     </discord-message>
 </discord-messages>
