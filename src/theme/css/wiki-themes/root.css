@@ -3,6 +3,7 @@
     --page-padding: 15px;
     --content-max-width: 750px;
     --menu-bar-height: 50px;
+    --menu-bar-border-radius: 10px;
 }
 
 :root code {
