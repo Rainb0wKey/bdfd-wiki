@@ -83,9 +83,6 @@ if (window.playground_copyable) {
 		const sideBarToggle = document.getElementById("sidebar-toggle");
 		const themeToggle = document.getElementById("theme-toggle");
 		const searchToggle = document.getElementById("search-toggle");
-		const printToggle = document.getElementById("print-button");
-		const githubLink = document.getElementById("git-repository-button");
-		const gitEdit = document.getElementById("git-edit-button");
 
 		if (theme == 'bdfd') {
 			menuBar.style.backgroundColor = '#673ab7';
