@@ -14,12 +14,10 @@ smart-punctuation = true
 git-repository-url = "https://github.com/NilPointer-Software/bdfd-wiki"
 edit-url-template = "https://github.com/NilPointer-Software/bdfd-wiki/edit/dev/{path}"
 site-url = "/bdfd-wiki/"
+additional-css = ["custom.css"]
 
 [output.html.fold]
 enable = true
-
-[output.html]
-additional-css = ["custom.css"]
 
 [output.html.code]
 hidelines = { bdscript = "{$hide}" }
