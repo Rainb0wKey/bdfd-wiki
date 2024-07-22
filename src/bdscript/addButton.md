@@ -1,8 +1,8 @@
 # $addButton
 Adds a button to a message.
 
-```admonish warning title="Data loss"
-The following steps can lead to irrecoverable data corruption.
+```admonish warning title="Information"
+Hello!
 ```
 
 ## Syntax
