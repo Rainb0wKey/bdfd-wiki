@@ -2,10 +2,11 @@
 ### ✨ Imagine An App...
 ...That makes building Discord bots easy with beginner-friendly functions. An app that's capable of developing nearly all types of bots - from simple *echo* bots, to advanced multi-purpose administration ones. Where simplicity meets functionality and scalability. That's **Bot Designer for Discord**.
 
+<div align="center">
+    
 What are you waiting for? Create the bot of your dreams today!
 
-<div align="center">
-<a href="https://botdesignerdiscord.com" class="button">Try!</a>
+<a href="https://botdesignerdiscord.com" class="button">Create my bot!</a>
 </div>
 
 ### 📎 Links
