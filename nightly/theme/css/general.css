@@ -10,7 +10,7 @@
 a.button {
     font-size: 20px;
     border-radius: 10px;
-    background-color: var(--chapter-hover-bg);
+    background-color: #1f2124;
     color: #000;
     text-decoration: none;
 }
