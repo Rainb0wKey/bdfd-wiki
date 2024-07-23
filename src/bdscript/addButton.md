@@ -1,10 +1,6 @@
 # $addButton
 Adds a button to a message.
 
-```admonish warning title="Information"
-Hello!
-```
-
 ## Syntax
 ```
 $addButton[New row?;Interaction ID/URL;Label;Style;(Disable?;Emoji;Message ID)]
@@ -12,7 +8,9 @@ $addButton[New row?;Interaction ID/URL;Label;Style;(Disable?;Emoji;Message ID)]
 
 ### Parameters
 - `New row?` `(Type: Bool || Flag: Required)`: If set to `yes`, the button will appear in a new row. If set to `no`, the button will appear in the same row as the previous button.
-    > A message can have a maximum of 25 buttons (5 rows of 5 buttons).
+```admonish info title="Information"
+A message can have a maximum of 25 buttons (5 rows of 5 buttons).
+```
 - `Interaction ID/URL` `(Type: String, URL || Flag: Required)`: Depending on the button type, you either set it to `Interaction ID` which is then used in `$onInteraction[ID]` callback or `URL` if it's a link button.
 - `Label` `(Type: String || Flag: Emptiable)`: The text value visible on the button.
 - `Style` `(Type: Enum || Flag: Required)`: It's used to specify the button's background color. If the button has a link/URL, you **have to** set the value to `link`. Check [this section](#button-style) for more details.
@@ -20,8 +18,9 @@ $addButton[New row?;Interaction ID/URL;Label;Style;(Disable?;Emoji;Message ID)]
 - `Emoji` `(Type: Emoji || Flag: Vacantable)`: Adds an emoji inside the button. Emojis have to be either pasted as *unicode*, *alias* or be in the following format `<:emoji name:emoji ID>`.
 - `Message ID` `(Type: Snowflake || Flag: Vacantable)`: Adds the button to the provided message ID. It's important to note that the provided message ID author **has to** be the bot.
 
-> Interactive buttons can't have duplicated `ID`'s in the same message. So for example, you can't have two buttons with the ID set to `test`.
-
+```admonish warning
+Interactive buttons can’t have duplicated `ID`’s in the same message. So for example, you can’t have two buttons with the ID set to `test`.
+```
 > If `URL` is used in the `Interaction ID/URL` argument, it **has to** start with `http://` or `https://`.
 
 ## Button Style
