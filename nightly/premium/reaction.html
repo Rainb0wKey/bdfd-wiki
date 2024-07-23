@@ -36,7 +36,6 @@
         <link rel="stylesheet" href="../ayu-highlight.css">
 
         <!-- Custom theme stylesheets -->
-           <link rel="stylesheet" href="../custom.css">
            <link rel="stylesheet" href=".././src/theme/mdbook-admonish.css">
 
     </head>
@@ -158,14 +157,14 @@ $sendMessage[$username clicked on the reaction]
     <discord-message role-color="#EE7908" author="Nicky">
         !example
     </discord-message>
-    <discord-message bot verified role-color="#748BD4" author="Wiki Bot">
+    <discord-message bot author="Wiki Bot" verified role-color="#748BD4">
         Click
         <discord-reactions slot="reactions">
-            <discord-reaction count="2" emoji="https://cdn.discordapp.com/emojis/766607515445231637.webp" name=":emoji:" reacted>
+            <discord-reaction name=":emoji:" emoji="https://cdn.discordapp.com/emojis/766607515445231637.webp" count="2" reacted>
             </discord-reaction>
         </discord-reactions>
     </discord-message>
-    <discord-message bot author="Wiki Bot" role-color="#748BD4" verified>
+    <discord-message bot verified author="Wiki Bot" role-color="#748BD4">
         Nicky clicked on the reaction
     </discord-message>
 </discord-messages>
