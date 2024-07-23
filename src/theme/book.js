@@ -90,18 +90,12 @@ if (window.playground_copyable) {
 			sideBarToggle.style.color = '#fff';
 			themeToggle.style.color = '#fff';
 			searchToggle.style.color = '#fff';
-			printToggle.style.color = '#fff';
-			githubLink.style.color = '#fff';
-			gitEdit.style.color = '#fff';
 		} else {
 			menuBar.style.backgroundColor = '';
 			menuBar.style.color = '';
 			sideBarToggle.style.color = '';
 			themeToggle.style.color = '';
 			searchToggle.style.color = '';
-			printToggle.style.color = '';
-			githubLink.style.color = '';
-			gitEdit.style.color = '';
 		}
 
 		setTimeout(function() {
