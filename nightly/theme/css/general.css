@@ -7,6 +7,15 @@
     font-size: 62.5%;
 }
 
+buttonlink.button {
+    padding: 1px 6px;
+    border: 1px outset buttonborder;
+    border-radius: 3px;
+    color: buttontext;
+    background-color: buttonface;
+    text-decoration: none;
+}
+
 html {
     font-family: "Open Sans", sans-serif;
     color: var(--fg);
