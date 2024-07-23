@@ -1,7 +1,7 @@
 "use strict";
 
 // Fix back button cache problem
-window.onunload = function () { };
+window.onunload = function() { };
 
 // Syntax highlighting Configuration
 hljs.configure({
@@ -9,45 +9,39 @@ hljs.configure({
 	languages: [],      // Languages used for auto-detection
 });
 
-document.querySelectorAll('code').forEach((block) => {
+Array.from(document.querySelectorAll('code')).forEach(function(block) {
 	hljs.highlightBlock(block);
 	block.classList.add('hljs');
 });
 
 if (window.playground_copyable) {
-	document.querySelectorAll('pre code').forEach((block) => {
-		const pre_block = block.parentNode;
+	Array.from(document.querySelectorAll('pre code')).forEach(function(block) {
+		var pre_block = block.parentNode;
 		if (!pre_block.classList.contains('playground')) {
-			let buttons = pre_block.querySelector(".buttons");
+			var buttons = pre_block.querySelector(".buttons");
 			if (!buttons) {
 				buttons = document.createElement('div');
 				buttons.className = 'buttons';
 				pre_block.insertBefore(buttons, pre_block.firstChild);
 			}
 
-			const clipButton = document.createElement('button');
-			clipButton.className = 'fa fa-regular fa-paste clip-button';
+			var clipButton = document.createElement('button');
+			clipButton.className = 'fa fa-copy clip-button';
 			clipButton.title = 'Copy to clipboard';
 			clipButton.setAttribute('aria-label', clipButton.title);
 			clipButton.innerHTML = '<i class=\"tooltiptext\"></i>';
 
-			const wrapButton = document.createElement('button');
-			wrapButton.className = 'fa fa-solid fa-paragraph wrap-button';
-			wrapButton.title = 'Wrap code'
-			wrapButton.setAttribute('aria-label', wrapButton.title);
-
 			buttons.insertBefore(clipButton, buttons.firstChild);
-			buttons.insertBefore(wrapButton, buttons.firstChild);
 		}
 	});
 }
 
 (function themes() {
-	const html = document.querySelector('html');
-	const themeToggleButton = document.getElementById('theme-toggle');
-	const themePopup = document.getElementById('theme-list');
-	const themeColorMetaTag = document.querySelector('meta[name="theme-color"]');
-	const stylesheets = {
+	var html = document.querySelector('html');
+	var themeToggleButton = document.getElementById('theme-toggle');
+	var themePopup = document.getElementById('theme-list');
+	var themeColorMetaTag = document.querySelector('meta[name="theme-color"]');
+	var stylesheets = {
 		ayuHighlight: document.querySelector("[href$='ayu-highlight.css']"),
 		tomorrowNight: document.querySelector("[href$='tomorrow-night.css']"),
 		highlight: document.querySelector("[href$='highlight.css']"),
@@ -113,17 +107,17 @@ if (window.playground_copyable) {
 			gitEdit.style.color = '';
 		}
 
-		setTimeout(() => {
+		setTimeout(function() {
 			themeColorMetaTag.content = getComputedStyle(document.body).backgroundColor;
 		}, 1);
 
 		if (window.ace && window.editors) {
-			window.editors.forEach((editor) => {
+			window.editors.forEach(function(editor) {
 				editor.setTheme(ace_theme);
 			});
 		}
 
-		let previousTheme;
+		var previousTheme;
 		try { previousTheme = localStorage.getItem('mdbook-theme'); } catch (e) { }
 		if (previousTheme === null || previousTheme === undefined) { previousTheme = default_theme; }
 
@@ -136,13 +130,13 @@ if (window.playground_copyable) {
 	}
 
 	// Set theme
-	let theme;
+	var theme;
 	try { theme = localStorage.getItem('mdbook-theme'); } catch (e) { }
 	if (theme === null || theme === undefined) { theme = default_theme; }
 
 	set_theme(theme, false);
 
-	themeToggleButton.addEventListener('click', () => {
+	themeToggleButton.addEventListener('click', function() {
 		if (themePopup.style.display === 'block') {
 			hideThemes();
 		} else {
@@ -150,12 +144,12 @@ if (window.playground_copyable) {
 		}
 	});
 
-	themePopup.addEventListener('click', (e) => {
+	themePopup.addEventListener('click', function(e) {
 		var theme = e.target.id || e.target.parentElement.id;
 		set_theme(theme);
 	});
 
-	themePopup.addEventListener('focusout', (e) => {
+	themePopup.addEventListener('focusout', function(e) {
 		// e.relatedTarget is null in Safari and Firefox on macOS (see workaround below)
 		if (!!e.relatedTarget && !themeToggleButton.contains(e.relatedTarget) && !themePopup.contains(e.relatedTarget)) {
 			hideThemes();
@@ -163,13 +157,13 @@ if (window.playground_copyable) {
 	});
 
 	// Should not be needed, but it works around an issue on macOS & iOS: https://github.com/rust-lang/mdBook/issues/628
-	document.addEventListener('click', (e) => {
+	document.addEventListener('click', function(e) {
 		if (themePopup.style.display === 'block' && !themeToggleButton.contains(e.target) && !themePopup.contains(e.target)) {
 			hideThemes();
 		}
 	});
 
-	document.addEventListener('keydown', (e) => {
+	document.addEventListener('keydown', function(e) {
 		if (e.altKey || e.ctrlKey || e.metaKey || e.shiftKey) { return; }
 		if (!themePopup.contains(e.target)) { return; }
 
@@ -205,18 +199,18 @@ if (window.playground_copyable) {
 })();
 
 (function sidebar() {
-	const html = document.querySelector("html");
-	const sidebar = document.getElementById("sidebar");
-	const sidebarScrollBox = document.getElementById("sidebar-scrollbox");
-	const sidebarLinks = document.querySelectorAll('#sidebar a');
-	const sidebarToggleButton = document.getElementById("sidebar-toggle");
-	const sidebarResizeHandle = document.getElementById("sidebar-resize-handle");
-	let firstContact = null;
+	var html = document.querySelector("html");
+	var sidebar = document.getElementById("sidebar");
+	var sidebarScrollBox = document.getElementById("sidebar-scrollbox");
+	var sidebarLinks = document.querySelectorAll('#sidebar a');
+	var sidebarToggleButton = document.getElementById("sidebar-toggle");
+	var sidebarResizeHandle = document.getElementById("sidebar-resize-handle");
+	var firstContact = null;
 
 	function showSidebar() {
 		html.classList.remove('sidebar-hidden')
 		html.classList.add('sidebar-visible');
-		Array.from(sidebarLinks).forEach(function (link) {
+		Array.from(sidebarLinks).forEach(function(link) {
 			link.setAttribute('tabIndex', 0);
 		});
 		sidebarToggleButton.setAttribute('aria-expanded', true);
@@ -225,20 +219,20 @@ if (window.playground_copyable) {
 	}
 
 
-	const sidebarAnchorToggles = document.querySelectorAll('#sidebar a.toggle');
+	var sidebarAnchorToggles = document.querySelectorAll('#sidebar a.toggle');
 
 	function toggleSection(ev) {
 		ev.currentTarget.parentElement.classList.toggle('expanded');
 	}
 
-	sidebarAnchorToggles.forEach(function (el) {
+	Array.from(sidebarAnchorToggles).forEach(function(el) {
 		el.addEventListener('click', toggleSection);
 	});
 
 	function hideSidebar() {
 		html.classList.remove('sidebar-visible')
 		html.classList.add('sidebar-hidden');
-		sidebarLinks.forEach((link) => {
+		Array.from(sidebarLinks).forEach(function(link) {
 			link.setAttribute('tabIndex', -1);
 		});
 		sidebarToggleButton.setAttribute('aria-expanded', false);
@@ -247,7 +241,7 @@ if (window.playground_copyable) {
 	}
 
 	// Toggle sidebar
-	sidebarToggleButton.addEventListener('click', () => {
+	sidebarToggleButton.addEventListener('click', function sidebarToggle() {
 		if (html.classList.contains("sidebar-hidden")) {
 			showSidebar();
 		} else if (html.classList.contains("sidebar-visible")) {
@@ -263,7 +257,7 @@ if (window.playground_copyable) {
 
 	sidebarResizeHandle.addEventListener('mousedown', initResize, false);
 
-	function initResize() {
+	function initResize(e) {
 		window.addEventListener('mousemove', resize, false);
 		window.addEventListener('mouseup', stopResize, false);
 		html.classList.add('sidebar-resizing');
@@ -272,20 +266,20 @@ if (window.playground_copyable) {
 		document.documentElement.style.setProperty('--sidebar-width', (e.clientX - sidebar.offsetLeft) + 'px');
 	}
 	//on mouseup remove windows functions mousemove & mouseup
-	function stopResize() {
+	function stopResize(e) {
 		html.classList.remove('sidebar-resizing');
 		window.removeEventListener('mousemove', resize, false);
 		window.removeEventListener('mouseup', stopResize, false);
 	}
 
-	document.addEventListener('touchstart', (e) => {
+	document.addEventListener('touchstart', function(e) {
 		firstContact = {
 			x: e.touches[0].clientX,
 			time: Date.now()
 		};
 	}, { passive: true });
 
-	document.addEventListener('touchmove', (e) => {
+	document.addEventListener('touchmove', function(e) {
 		if (!firstContact)
 			return;
 
@@ -304,14 +298,14 @@ if (window.playground_copyable) {
 	}, { passive: true });
 
 	// Scroll sidebar to current active section
-	const activeSection = sidebar.querySelector(".active");
+	var activeSection = sidebar.querySelector(".active");
 	if (activeSection) {
 		sidebarScrollBox.scrollTop = activeSection.offsetTop;
 	}
 })();
 
 (function chapterNavigation() {
-	document.addEventListener('keydown', (e) => {
+	document.addEventListener('keydown', function(e) {
 		if (e.altKey || e.ctrlKey || e.metaKey || e.shiftKey) { return; }
 		if (window.search && window.search.hasFocus()) { return; }
 
@@ -335,68 +329,56 @@ if (window.playground_copyable) {
 })();
 
 (function clipboard() {
-	const clipButtons = document.querySelectorAll('.clip-button');
+	var clipButtons = document.querySelectorAll('.clip-button');
 
 	function hideTooltip(elem) {
 		elem.firstChild.innerText = "";
-		elem.className = 'fa far fa-clipboard clip-button';
+		elem.className = 'fa fa-copy clip-button';
 	}
 
 	function showTooltip(elem, msg) {
 		elem.firstChild.innerText = msg;
-		elem.className = 'fa far fa-clipboard tooltipped';
+		elem.className = 'fa fa-copy tooltipped';
 	}
 
-	const clipboardSnippets = new ClipboardJS('.clip-button', {
-		text: (trigger) => {
+	var clipboardSnippets = new ClipboardJS('.clip-button', {
+		text: function(trigger) {
 			hideTooltip(trigger);
-			const playground = trigger.closest("pre");
+			let playground = trigger.closest("pre");
 			return playground.querySelector("code").textContent;
 		}
 	});
 
-	clipButtons.forEach((clipButton) => {
-		clipButton.addEventListener('mouseout', (e) => {
+	Array.from(clipButtons).forEach(function(clipButton) {
+		clipButton.addEventListener('mouseout', function(e) {
 			hideTooltip(e.currentTarget);
 		});
 	});
 
-	clipboardSnippets.on('success', (e) => {
+	clipboardSnippets.on('success', function(e) {
 		e.clearSelection();
 		showTooltip(e.trigger, "Copied!");
 	});
 
-	clipboardSnippets.on('error', (e) => {
+	clipboardSnippets.on('error', function(e) {
 		showTooltip(e.trigger, "Clipboard error!");
 	});
 })();
 
-(function wrap() {
-	const wrapButtons = document.querySelectorAll(".wrap-button");
-	wrapButtons.forEach((button) => {
-		button.addEventListener('click', (e) => {
-			const playground = button.closest("pre");
-			const codeBlock = playground.querySelector("code");
-			if (!codeBlock.style.textWrap || codeBlock.style.textWrap === 'nowrap') codeBlock.style.textWrap = 'wrap';
-			else codeBlock.style.textWrap = 'nowrap';
-		});
-	});
-})();
-
 (function scrollToTop() {
-	const menuTitle = document.querySelector('.menu-title');
+	var menuTitle = document.querySelector('.menu-title');
 
-	menuTitle.addEventListener('click', function () {
+	menuTitle.addEventListener('click', function() {
 		document.scrollingElement.scrollTo({ top: 0, behavior: 'smooth' });
 	});
 })();
 
 (function autoHideMenu() {
-	const menu = document.getElementById('menu-bar');
+	var menu = document.getElementById('menu-bar');
 
-	const previousScrollTop = document.scrollingElement.scrollTop;
+	var previousScrollTop = document.scrollingElement.scrollTop;
 
-	document.addEventListener('scroll', () => {
+	document.addEventListener('scroll', function() {
 		if (menu.classList.contains('folded') && document.scrollingElement.scrollTop < previousScrollTop) {
 			menu.classList.remove('folded');
 		} else if (!menu.classList.contains('folded') && document.scrollingElement.scrollTop > previousScrollTop) {
