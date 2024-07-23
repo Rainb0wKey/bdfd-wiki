@@ -102,6 +102,22 @@
                             <button id="sidebar-toggle" class="icon-button" type="button" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="sidebar">
                                 <i class="fa fa-bars"></i>
                             </button>
+														<button id="theme-toggle" class="icon-button" type="button" title="Change theme" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="theme-list">
+                                <i class="fa fa-paint-brush"></i>
+                            </button>
+                            <ul id="theme-list" class="theme-popup" aria-label="Themes" role="menu">
+                                <li role="none"><button role="menuitem" class="theme" id="ayu">Ayu</button></li>
+                                <li role="none"><button role="menuitem" class="theme" id="bdfd">Bot Designer for Discord</button></li>
+                                <li role="none"><button role="menuitem" class="theme" id="discord">Discord</button></li>
+                                <li role="none"><button role="menuitem" class="theme" id="gluo">Gluo</button></li>
+                                <li role="none"><button role="menuitem" class="theme" id="green">Green</button></li>
+                                <li role="none"><button role="menuitem" class="theme" id="ios">iOS</button></li>
+                                <li role="none"><button role="menuitem" class="theme" id="kneon">Kinda Neon</button></li>
+                                <li role="none"><button role="menuitem" class="theme" id="light">Light</button></li>
+                                <li role="none"><button role="menuitem" class="theme" id="navy">Navy</button></li>
+                                <li role="none"><button role="menuitem" class="theme" id="rust">Rust</button></li>
+                                <li role="none"><button role="menuitem" class="theme" id="highcon">High Contrast</button></li>
+                            </ul>
                             <button id="search-toggle" class="icon-button" type="button" title="Search. (Shortkey: s)" aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="S" aria-controls="searchbar">
                                 <i class="fa fa-search"></i>
                             </button>
@@ -187,7 +203,7 @@ I created a new thread! &lt;#$startThread[Cool Thread;$channelID;;1440;yes]&gt;
     <discord-system-message type="thread">
         <i style="color: #378afa">BDFD Support</i> Started a thread: <i style="color: white">Cool Thread</i>. See all <i style="color: white">threads</i>.
     </discord-system-message>
-    <discord-message bot author="BDFD Support" role-color="#378afa" verified>
+    <discord-message bot role-color="#378afa" verified author="BDFD Support">
         I created a new thread! <discord-mention type="channel">Cool Thread</discord-mention>
     </discord-message>
 </discord-messages>
@@ -235,7 +251,7 @@ $editThread[1098166444111433819;Cool Thread 😎;no;!unchanged;!unchanged;5]
 $threadAddMember[1021054508975009793;$authorID]
 </code></pre>
 <discord-messages>
-    <discord-message author="RainbowKey" role-color="#E67E22">
+    <discord-message role-color="#E67E22" author="RainbowKey">
         !example
     </discord-message>
 </discord-messages>
@@ -284,7 +300,7 @@ $threadAddMember[$var[id];$authorID]
     <discord-system-message type="thread">
         <i style="color: #378afa">BDFD Support</i> Started a thread: <i style="color: white">Cool Thread</i>. See all <i style="color: white">threads</i>.
     </discord-system-message>
-    <discord-message bot role-color="#378afa" author="BDFD Support" verified>
+    <discord-message role-color="#378afa" verified author="BDFD Support" bot>
         New thread - <discord-mention type="channel">Cool Thread</discord-mention>
     </discord-message>
 </discord-messages>
