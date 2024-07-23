@@ -9,7 +9,7 @@ $addButton[New row?;Interaction ID/URL;Label;Style;(Disable?;Emoji;Message ID)]
 ### Parameters
 - `New row?` `(Type: Bool || Flag: Required)`: If set to `yes`, the button will appear in a new row. If set to `no`, the button will appear in the same row as the previous button.
 
-```admonish info title="Information"
+```admonish info title="Limit"
 A message can have a maximum of 25 buttons (5 rows of 5 buttons).
 ```
 
@@ -24,7 +24,7 @@ A message can have a maximum of 25 buttons (5 rows of 5 buttons).
 Interactive buttons can’t have duplicated `ID`’s in the same message. So for example, you can’t have two buttons with the ID set to `test`.
 ```
 
-```admonish info title="Tip"
+```admonish info title="Information"
 If `URL` is used in the `Interaction ID/URL` argument, it **has to** start with `http://` or `https://`.
 ```
 
