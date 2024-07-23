@@ -122,9 +122,10 @@
                             <button id="search-toggle" class="icon-button" type="button" title="Search. (Shortkey: s)" aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="S" aria-controls="searchbar">
                                 <i class="fa fa-search"></i>
                             </button>
-                        </div>
 
-                        <h1 class="menu-title">Bot Designer For Discord</h1>
+														<h1 class="menu-title">Bot Designer For Discord</h1>
+
+                        </div>
 
                     </div>
                 </div>
@@ -197,13 +198,13 @@
 I created a new thread! &lt;#$startThread[Cool Thread;$channelID;;1440;yes]&gt;
 </code></pre>
 <discord-messages>
-    <discord-message role-color="#E67E22" author="RainbowKey">
+    <discord-message author="RainbowKey" role-color="#E67E22">
         !example
     </discord-message>
     <discord-system-message type="thread">
         <i style="color: #378afa">BDFD Support</i> Started a thread: <i style="color: white">Cool Thread</i>. See all <i style="color: white">threads</i>.
     </discord-system-message>
-    <discord-message role-color="#378afa" author="BDFD Support" verified bot>
+    <discord-message author="BDFD Support" role-color="#378afa" bot verified>
         I created a new thread! <discord-mention type="channel">Cool Thread</discord-mention>
     </discord-message>
 </discord-messages>
@@ -251,7 +252,7 @@ $editThread[1098166444111433819;Cool Thread 😎;no;!unchanged;!unchanged;5]
 $threadAddMember[1021054508975009793;$authorID]
 </code></pre>
 <discord-messages>
-    <discord-message author="RainbowKey" role-color="#E67E22">
+    <discord-message role-color="#E67E22" author="RainbowKey">
         !example
     </discord-message>
 </discord-messages>
@@ -294,13 +295,13 @@ New thread - &lt;#$var[id]&gt;
 $threadAddMember[$var[id];$authorID]
 </code></pre>
 <discord-messages>
-    <discord-message author="RainbowKey" role-color="#E67E22">
+    <discord-message role-color="#E67E22" author="RainbowKey">
         !example
     </discord-message>
     <discord-system-message type="thread">
         <i style="color: #378afa">BDFD Support</i> Started a thread: <i style="color: white">Cool Thread</i>. See all <i style="color: white">threads</i>.
     </discord-system-message>
-    <discord-message verified role-color="#378afa" bot author="BDFD Support">
+    <discord-message verified role-color="#378afa" author="BDFD Support" bot>
         New thread - <discord-mention type="channel">Cool Thread</discord-mention>
     </discord-message>
 </discord-messages>

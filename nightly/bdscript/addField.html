@@ -122,9 +122,10 @@
                             <button id="search-toggle" class="icon-button" type="button" title="Search. (Shortkey: s)" aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="S" aria-controls="searchbar">
                                 <i class="fa fa-search"></i>
                             </button>
-                        </div>
 
-                        <h1 class="menu-title">Bot Designer For Discord</h1>
+														<h1 class="menu-title">Bot Designer For Discord</h1>
+
+                        </div>
 
                     </div>
                 </div>
@@ -180,10 +181,10 @@ $addField[The field name 2!;The field value 2!]
 $addField[The field name 3!;The field value 3!]
 </code></pre>
 <discord-messages>
-    <discord-message author="Nicky" role-color="#EE7908">
+    <discord-message role-color="#EE7908" author="Nicky">
         !example
     </discord-message>
-    <discord-message bot role-color="#748BD4" verified author="Wiki Bot">
+    <discord-message verified bot author="Wiki Bot" role-color="#748BD4">
         <none>
         <discord-embed slot="embeds">
             <discord-embed-fields slot="fields">
@@ -207,20 +208,20 @@ $addField[The field name 2!;The field value 2!;yes]
 $addField[The field name 3!;The field value 3!;yes]
 </code></pre>
 <discord-messages>
-    <discord-message author="Nicky" role-color="#EE7908">
+    <discord-message role-color="#EE7908" author="Nicky">
         !example
     </discord-message>
-    <discord-message verified author="Wiki Bot" bot role-color="#748BD4">
+    <discord-message role-color="#748BD4" verified author="Wiki Bot" bot>
         <none>
         <discord-embed slot="embeds">
             <discord-embed-fields slot="fields">
-                <discord-embed-field field-title="The field name 1!" inline inline-index="1">
+                <discord-embed-field inline-index="1" inline field-title="The field name 1!">
                     The field value 1!
                 </discord-embed-field>
-                <discord-embed-field field-title="The field name 2!" inline inline-index="2">
+                <discord-embed-field inline-index="2" inline field-title="The field name 2!">
                     The field value 2!
                 </discord-embed-field>
-                <discord-embed-field inline field-title="The field name 3!" inline-index="3">
+                <discord-embed-field inline inline-index="3" field-title="The field name 3!">
                     The field value 3!
                 </discord-embed-field>
             </discord-embed-fields>

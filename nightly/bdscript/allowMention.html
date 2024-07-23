@@ -122,9 +122,10 @@
                             <button id="search-toggle" class="icon-button" type="button" title="Search. (Shortkey: s)" aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="S" aria-controls="searchbar">
                                 <i class="fa fa-search"></i>
                             </button>
-                        </div>
 
-                        <h1 class="menu-title">Bot Designer For Discord</h1>
+														<h1 class="menu-title">Bot Designer For Discord</h1>
+
+                        </div>
 
                     </div>
                 </div>
@@ -166,19 +167,19 @@ $message
 </code></pre>
 <h3 id="with-allowmention"><a class="header" href="#with-allowmention">With <code>$allowMention</code>:</a></h3>
 <discord-messages>
-    <discord-message avatar="https://github.com/NilPointer-Software/bdfd-wiki/assets/113303649/a9034fd5-40c2-4320-a408-2f2ee0071d9d" role-color="#E67E22" author="RainbowKey">
+    <discord-message author="RainbowKey" role-color="#E67E22" avatar="https://github.com/NilPointer-Software/bdfd-wiki/assets/113303649/a9034fd5-40c2-4320-a408-2f2ee0071d9d">
         !example <discord-mention>RainbowKey</discord-mention>
     </discord-message>
-    <discord-message avatar="https://github.com/NilPointer-Software/bdfd-wiki/assets/113303649/e5fdc906-6c14-4e19-91c0-4ce95b852c61" verified bot role-color="#378afa" author="BDFD Support">
+    <discord-message role-color="#378afa" bot verified author="BDFD Support" avatar="https://github.com/NilPointer-Software/bdfd-wiki/assets/113303649/e5fdc906-6c14-4e19-91c0-4ce95b852c61">
         <discord-mention>RainbowKey</discord-mention>
     </discord-message>
 </discord-messages>
 <h3 id="without-allowmention"><a class="header" href="#without-allowmention">Without <code>$allowMention</code></a></h3>
 <discord-messages>
-    <discord-message author="RainbowKey" role-color="#E67E22">
+    <discord-message role-color="#E67E22" author="RainbowKey">
         !example <discord-mention>RainbowKey</discord-mention>
     </discord-message>
-    <discord-message author="BDFD Support" verified role-color="#378afa" bot>
+    <discord-message bot role-color="#378afa" verified author="BDFD Support">
         @RainbowKey
     </discord-message>
 </discord-messages>

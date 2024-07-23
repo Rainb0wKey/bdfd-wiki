@@ -122,9 +122,10 @@
                             <button id="search-toggle" class="icon-button" type="button" title="Search. (Shortkey: s)" aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="S" aria-controls="searchbar">
                                 <i class="fa fa-search"></i>
                             </button>
-                        </div>
 
-                        <h1 class="menu-title">Bot Designer For Discord</h1>
+														<h1 class="menu-title">Bot Designer For Discord</h1>
+
+                        </div>
 
                     </div>
                 </div>
@@ -170,17 +171,17 @@
 $sendMessage[$username clicked on the reaction]
 </code></pre>
 <discord-messages>
-    <discord-message author="Nicky" role-color="#EE7908">
+    <discord-message role-color="#EE7908" author="Nicky">
         !example
     </discord-message>
-    <discord-message role-color="#748BD4" author="Wiki Bot" bot verified>
+    <discord-message author="Wiki Bot" role-color="#748BD4" verified bot>
         Click
         <discord-reactions slot="reactions">
-            <discord-reaction emoji="https://cdn.discordapp.com/emojis/766607515445231637.webp" count="2" reacted name=":emoji:">
+            <discord-reaction emoji="https://cdn.discordapp.com/emojis/766607515445231637.webp" reacted name=":emoji:" count="2">
             </discord-reaction>
         </discord-reactions>
     </discord-message>
-    <discord-message role-color="#748BD4" author="Wiki Bot" verified bot>
+    <discord-message verified bot author="Wiki Bot" role-color="#748BD4">
         Nicky clicked on the reaction
     </discord-message>
 </discord-messages>
