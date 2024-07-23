@@ -12,6 +12,7 @@ a.button {
     border-radius: 10px;
     background-color: #1f2124;
     color: #000;
+    width: 30px
     text-decoration: none;
 }
 
