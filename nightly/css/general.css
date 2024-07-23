@@ -8,11 +8,10 @@
 }
 
 a.button {
-    font-size: 22px;
-    padding: 1px 6px;
-    border: 1px outset buttonborder;
+    font-size: 20px;
     border-radius: 10px;
-    background-color: #44c76f;
+    background-color: #1e8f44;
+    color: #fff;
     text-decoration: none;
 }
 
