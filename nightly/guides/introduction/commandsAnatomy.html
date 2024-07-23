@@ -102,7 +102,7 @@
                             <button id="sidebar-toggle" class="icon-button" type="button" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="sidebar">
                                 <i class="fa fa-bars"></i>
                             </button>
-														<button id="theme-toggle" class="icon-button" type="button" title="Change theme" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="theme-list">
+                            <button id="theme-toggle" class="icon-button" type="button" title="Change theme" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="theme-list">
                                 <i class="fa fa-paint-brush"></i>
                             </button>
                             <ul id="theme-list" class="theme-popup" aria-label="Themes" role="menu">
@@ -121,11 +121,25 @@
                             <button id="search-toggle" class="icon-button" type="button" title="Search. (Shortkey: s)" aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="S" aria-controls="searchbar">
                                 <i class="fa fa-search"></i>
                             </button>
-
-														<h1 class="menu-title">Bot Designer For Discord</h1>
-
                         </div>
 
+                        <h1 class="menu-title">Bot Designer For Discord - Wiki</h1>
+
+                        <div class="right-buttons">
+
+                            <a href="../../print.html" title="Print this book" aria-label="Print this book">
+                                <i id="print-button" class="fa fa-print"></i>
+                            </a>
+
+                            <a href="https://github.com/NilPointer-Software/bdfd-wiki" title="Git repository" aria-label="Git repository">
+                                <i id="git-repository-button" class="fa fa-github"></i>
+                            </a>
+
+                           <a href="https://github.com/NilPointer-Software/bdfd-wiki/edit/dev/src/guides/introduction/commandsAnatomy.md" title="Suggest an edit" aria-label="Suggest an edit">
+                               <i id="git-edit-button" class="fa fa-edit"></i>
+                           </a>
+
+                        </div>
                     </div>
                 </div>
 
@@ -169,10 +183,10 @@
 <p><img src="https://user-images.githubusercontent.com/69215413/120054230-b092b300-bffc-11eb-805d-16b8b6c41cc1.png" alt="image" /></p>
 <h4 id="output"><a class="header" href="#output">Output</a></h4>
 <discord-messages>
-    <discord-message avatar="https://github.com/NilPointer-Software/bdfd-wiki/assets/113303649/a9034fd5-40c2-4320-a408-2f2ee0071d9d" role-color="#E67E22" author="RainbowKey">
+    <discord-message avatar="https://github.com/NilPointer-Software/bdfd-wiki/assets/113303649/a9034fd5-40c2-4320-a408-2f2ee0071d9d" author="RainbowKey" role-color="#E67E22">
         !help
     </discord-message>
-    <discord-message role-color="#378afa" author="BDFD Support" bot verified>
+    <discord-message bot author="BDFD Support" role-color="#378afa" verified>
         <discord-embed slot="embeds" embed-title="Help">
             <discord-embed-description slot="description">
                 !command1 - description... <br />!command2 - description... <br />etc

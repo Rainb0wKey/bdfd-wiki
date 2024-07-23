@@ -102,7 +102,7 @@
                             <button id="sidebar-toggle" class="icon-button" type="button" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="sidebar">
                                 <i class="fa fa-bars"></i>
                             </button>
-														<button id="theme-toggle" class="icon-button" type="button" title="Change theme" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="theme-list">
+                            <button id="theme-toggle" class="icon-button" type="button" title="Change theme" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="theme-list">
                                 <i class="fa fa-paint-brush"></i>
                             </button>
                             <ul id="theme-list" class="theme-popup" aria-label="Themes" role="menu">
@@ -121,11 +121,25 @@
                             <button id="search-toggle" class="icon-button" type="button" title="Search. (Shortkey: s)" aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="S" aria-controls="searchbar">
                                 <i class="fa fa-search"></i>
                             </button>
-
-														<h1 class="menu-title">Bot Designer For Discord</h1>
-
                         </div>
 
+                        <h1 class="menu-title">Bot Designer For Discord - Wiki</h1>
+
+                        <div class="right-buttons">
+
+                            <a href="../print.html" title="Print this book" aria-label="Print this book">
+                                <i id="print-button" class="fa fa-print"></i>
+                            </a>
+
+                            <a href="https://github.com/NilPointer-Software/bdfd-wiki" title="Git repository" aria-label="Git repository">
+                                <i id="git-repository-button" class="fa fa-github"></i>
+                            </a>
+
+                           <a href="https://github.com/NilPointer-Software/bdfd-wiki/edit/dev/src/bdscript/addField.md" title="Suggest an edit" aria-label="Suggest an edit">
+                               <i id="git-edit-button" class="fa fa-edit"></i>
+                           </a>
+
+                        </div>
                     </div>
                 </div>
 
@@ -183,7 +197,7 @@ $addField[The field name 3!;The field value 3!]
     <discord-message role-color="#EE7908" author="Nicky">
         !example
     </discord-message>
-    <discord-message bot verified role-color="#748BD4" author="Wiki Bot">
+    <discord-message bot role-color="#748BD4" verified author="Wiki Bot">
         <none>
         <discord-embed slot="embeds">
             <discord-embed-fields slot="fields">
@@ -207,20 +221,20 @@ $addField[The field name 2!;The field value 2!;yes]
 $addField[The field name 3!;The field value 3!;yes]
 </code></pre>
 <discord-messages>
-    <discord-message role-color="#EE7908" author="Nicky">
+    <discord-message author="Nicky" role-color="#EE7908">
         !example
     </discord-message>
-    <discord-message role-color="#748BD4" bot verified author="Wiki Bot">
+    <discord-message author="Wiki Bot" role-color="#748BD4" bot verified>
         <none>
         <discord-embed slot="embeds">
             <discord-embed-fields slot="fields">
-                <discord-embed-field inline-index="1" field-title="The field name 1!" inline>
+                <discord-embed-field inline-index="1" inline field-title="The field name 1!">
                     The field value 1!
                 </discord-embed-field>
-                <discord-embed-field inline inline-index="2" field-title="The field name 2!">
+                <discord-embed-field field-title="The field name 2!" inline inline-index="2">
                     The field value 2!
                 </discord-embed-field>
-                <discord-embed-field field-title="The field name 3!" inline inline-index="3">
+                <discord-embed-field inline-index="3" field-title="The field name 3!" inline>
                     The field value 3!
                 </discord-embed-field>
             </discord-embed-fields>

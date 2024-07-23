@@ -102,7 +102,7 @@
                             <button id="sidebar-toggle" class="icon-button" type="button" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="sidebar">
                                 <i class="fa fa-bars"></i>
                             </button>
-														<button id="theme-toggle" class="icon-button" type="button" title="Change theme" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="theme-list">
+                            <button id="theme-toggle" class="icon-button" type="button" title="Change theme" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="theme-list">
                                 <i class="fa fa-paint-brush"></i>
                             </button>
                             <ul id="theme-list" class="theme-popup" aria-label="Themes" role="menu">
@@ -121,11 +121,25 @@
                             <button id="search-toggle" class="icon-button" type="button" title="Search. (Shortkey: s)" aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="S" aria-controls="searchbar">
                                 <i class="fa fa-search"></i>
                             </button>
-
-														<h1 class="menu-title">Bot Designer For Discord</h1>
-
                         </div>
 
+                        <h1 class="menu-title">Bot Designer For Discord - Wiki</h1>
+
+                        <div class="right-buttons">
+
+                            <a href="../print.html" title="Print this book" aria-label="Print this book">
+                                <i id="print-button" class="fa fa-print"></i>
+                            </a>
+
+                            <a href="https://github.com/NilPointer-Software/bdfd-wiki" title="Git repository" aria-label="Git repository">
+                                <i id="git-repository-button" class="fa fa-github"></i>
+                            </a>
+
+                           <a href="https://github.com/NilPointer-Software/bdfd-wiki/edit/dev/src/premium/awaitedReactions.md" title="Suggest an edit" aria-label="Suggest an edit">
+                               <i id="git-edit-button" class="fa fa-edit"></i>
+                           </a>
+
+                        </div>
                     </div>
                 </div>
 
@@ -161,39 +175,39 @@
     <discord-message author="Nicky" role-color="#EE7908">
         accept
     </discord-message>
-    <discord-message verified role-color="#748BD4" author="Wiki Bot" bot>
+    <discord-message bot author="Wiki Bot" verified role-color="#748BD4">
         <discord-embed slot="embeds">
             <discord-embed-description slot="description">
                 Do you accept?
             </discord-embed-description>
         </discord-embed>
         <discord-reactions slot="reactions">
-            <discord-reaction count="2" reacted emoji="https://upload.wikimedia.org/wikipedia/commons/thumb/3/34/Twemoji12_2705.svg/640px-Twemoji12_2705.svg.png" name=":white_check_mark:">
+            <discord-reaction name=":white_check_mark:" reacted count="2" emoji="https://upload.wikimedia.org/wikipedia/commons/thumb/3/34/Twemoji12_2705.svg/640px-Twemoji12_2705.svg.png">
             </discord-reaction>
-            <discord-reaction name=":x:" emoji="https://upload.wikimedia.org/wikipedia/commons/thumb/5/53/Twemoji2_274c.svg/640px-Twemoji2_274c.svg.png" count="1">
+            <discord-reaction count="1" name=":x:" emoji="https://upload.wikimedia.org/wikipedia/commons/thumb/5/53/Twemoji2_274c.svg/640px-Twemoji2_274c.svg.png">
             </discord-reaction>
         </discord-reactions>
     </discord-message>
-    <discord-message verified bot author="Wiki Bot" role-color="#748BD4">
+    <discord-message author="Wiki Bot" bot role-color="#748BD4" verified>
         Accepted
     </discord-message>
     <discord-message role-color="#EE7908" author="Nicky">
         accept
     </discord-message>
-    <discord-message bot role-color="#748BD4" verified author="Wiki Bot">
+    <discord-message verified author="Wiki Bot" role-color="#748BD4" bot>
         <discord-embed slot="embeds">
             <discord-embed-description slot="description">
                 Do you accept?
             </discord-embed-description>
         </discord-embed>
         <discord-reactions slot="reactions">
-            <discord-reaction count="1" emoji="https://upload.wikimedia.org/wikipedia/commons/thumb/3/34/Twemoji12_2705.svg/640px-Twemoji12_2705.svg.png" name=":white_check_mark:">
+            <discord-reaction count="1" name=":white_check_mark:" emoji="https://upload.wikimedia.org/wikipedia/commons/thumb/3/34/Twemoji12_2705.svg/640px-Twemoji12_2705.svg.png">
             </discord-reaction>
-            <discord-reaction count="2" emoji="https://upload.wikimedia.org/wikipedia/commons/thumb/5/53/Twemoji2_274c.svg/640px-Twemoji2_274c.svg.png" name=":x:" reacted>
+            <discord-reaction emoji="https://upload.wikimedia.org/wikipedia/commons/thumb/5/53/Twemoji2_274c.svg/640px-Twemoji2_274c.svg.png" reacted count="2" name=":x:">
             </discord-reaction>
         </discord-reactions>
     </discord-message>
-    <discord-message author="Wiki Bot" role-color="#748BD4" bot verified>
+    <discord-message bot author="Wiki Bot" verified role-color="#748BD4">
         Declined
     </discord-message>
 </discord-messages>
@@ -235,19 +249,19 @@
 <img src="https://user-images.githubusercontent.com/95774950/183701030-c82a8744-9dff-4ad9-83b5-2aa64f45cc59.png" alt="Screenshot_20220809_194754" />
 <img src="https://user-images.githubusercontent.com/95774950/183701074-395c4770-8439-4441-a0ad-5c69ae9cded4.png" alt="Screenshot_20220809_194805" /></p>
 <discord-messages>
-    <discord-message author="Nicky" role-color="#EE7908">
+    <discord-message role-color="#EE7908" author="Nicky">
         accept
     </discord-message>
-    <discord-message author="Wiki Bot" bot role-color="#748BD4" verified>
+    <discord-message verified author="Wiki Bot" bot role-color="#748BD4">
         <discord-embed slot="embeds">
             <discord-embed-description slot="description">
                 Do you accept?
             </discord-embed-description>
         </discord-embed>
         <discord-reactions slot="reactions">
-            <discord-reaction count="2" emoji="https://upload.wikimedia.org/wikipedia/commons/thumb/3/34/Twemoji12_2705.svg/640px-Twemoji12_2705.svg.png" name=":white_check_mark:" reacted>
+            <discord-reaction name=":white_check_mark:" emoji="https://upload.wikimedia.org/wikipedia/commons/thumb/3/34/Twemoji12_2705.svg/640px-Twemoji12_2705.svg.png" reacted count="2">
             </discord-reaction>
-            <discord-reaction name=":x:" count="1" emoji="https://upload.wikimedia.org/wikipedia/commons/thumb/5/53/Twemoji2_274c.svg/640px-Twemoji2_274c.svg.png">
+            <discord-reaction emoji="https://upload.wikimedia.org/wikipedia/commons/thumb/5/53/Twemoji2_274c.svg/640px-Twemoji2_274c.svg.png" count="1" name=":x:">
             </discord-reaction>
         </discord-reactions>
     </discord-message>
