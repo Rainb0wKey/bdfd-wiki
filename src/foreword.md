@@ -4,7 +4,7 @@
 
 What are you waiting for? Create the bot of your dreams today!
 
-**Start with [*Bot Designer for Discord*](https://botdesignerdiscord.com)**
+<buttonlink href="https://botdesignerdiscord.com" class="button">**Start with *Bot Designer for Discord* **</a>
 
 ### 📎 Links
 - [Discord Server](https://botdesignerdiscord.com/discord)
