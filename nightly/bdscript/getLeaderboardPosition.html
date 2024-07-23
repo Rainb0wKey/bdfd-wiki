@@ -139,37 +139,37 @@
                             <script src="../theme/breadcrumbs.js"></script>
                         </nav>
                         <h1 id="getleaderboardposition"><a class="header" href="#getleaderboardposition">$getLeaderboardPosition</a></h1>
-<p>Get position in leaderboard for given variable.</p>
+<p>Get position in a leaderboard for a given variable.</p>
 <h2 id="syntax"><a class="header" href="#syntax">Syntax</a></h2>
 <pre><code>$getLeaderboardPosition[Variable type;Variable name;Sort type;(User ID)]
 </code></pre>
 <h3 id="parameters"><a class="header" href="#parameters">Parameters</a></h3>
 <ul>
-<li><code>Variable type</code> <code>(Type: Enum || Flag: Required)</code>: The type of the variable. Variable types:
+<li><code>Variable type</code> <code>(Type: Enum || Flag: Required)</code>: The variable type. Variable types:
 <ul>
 <li><code>user</code> - <a href="../guides/introduction/variables.html#user-variables">User variable</a></li>
 <li><code>globalUser</code> - <a href="../guides/introduction/variables.html#globalglobal-user-variables">Global-User variable</a></li>
 </ul>
 </li>
-<li><code>Variable name</code> <code>(Type: String || Flag: Required)</code>: The variable name to generate the leaderboard for.</li>
+<li><code>Variable name</code> <code>(Type: String || Flag: Required)</code>: The variable name to generate a leaderboard for.</li>
 <li><code>Sort type</code> <code>(Type: Enum || Flag: Required)</code>: The sort type. Sort types:
 <ul>
-<li><code>asc</code> - Sorts the values in ascending order.</li>
-<li><code>desc</code> - Sorts the values in descending order.</li>
+<li><code>asc</code> - Sorts values in ascending order.</li>
+<li><code>desc</code> - Sorts values in descending order.</li>
 </ul>
 </li>
-<li><code>User ID</code>: <code>(Type: Snowflake  || Flag: Optional)</code>: ID of the user from whom you want to get a position in the leaderboard.</li>
+<li><code>User ID</code>: <code>(Type: Snowflake  || Flag: Optional)</code>: The ID of a user from whom you want to get a position in a leaderboard.</li>
 </ul>
 <h2 id="example"><a class="header" href="#example">Example</a></h2>
 <pre><code>$nomention
-My position in leaderboards: $getLeaderboardPosition[user;Coins;desc]
+Your position in the leaderboard: $getLeaderboardPosition[user;Coins;desc]
 </code></pre>
 <discord-messages>
     <discord-message author="RainbowKey" role-color="#E67E22">
         !example
     </discord-message>
-    <discord-message author="BDFD Support" verified bot role-color="#378afa">
-        My position in leaderboards: 2
+    <discord-message bot verified author="BDFD Support" role-color="#378afa">
+        Your position in the leaderboard: 2
     </discord-message>
 </discord-messages>
 
