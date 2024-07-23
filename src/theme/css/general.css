@@ -8,6 +8,7 @@
 }
 
 a.button {
+    font-size: 22px;
     padding: 1px 6px;
     border: 1px outset buttonborder;
     border-radius: 10px;
