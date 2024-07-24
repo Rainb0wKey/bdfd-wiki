@@ -214,10 +214,11 @@ pre > .buttons {
     z-index: 100;
     right: 5px;
     margin: 2px;
-    padding: 3px;
+    padding: 1px;
     visibility: hidden;
     opacity: 0;
     transition: visibility 0.1s linear, opacity 0.1s linear;
+    color: #FFF;
 
     cursor: pointer;
 }
