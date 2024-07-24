@@ -158,7 +158,7 @@ blockquote {
     color: #fff;
     background-color: #333;
     transform: translateX(-50%); /* Center by moving tooltip 50% of its width left */
-    left: 45px; /* Half of the width of the icon */
+    left: 42px; /* Half of the width of the icon */
     top: -35px;
     font-size: 0.8em;
     text-align: center;
