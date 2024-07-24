@@ -233,15 +233,13 @@ pre > .buttons i {
     margin-left: 8px;
 }
 pre > .buttons button {
-    color: var(--icons);
     margin: 0px 5px;
     padding: 3px 5px;
     cursor: inherit;
 
     border-style: solid;
     border-width: 1px;
-    border-radius: 5px;
-    border-color: var(--icons);
+    border-radius: 7px;
     background-color: var(--theme-popup-bg);
     transition: 100ms;
     transition-property: color,border-color,background-color;
