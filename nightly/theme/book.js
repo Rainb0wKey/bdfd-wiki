@@ -339,12 +339,12 @@ if (window.playground_copyable) {
 
 	function hideTooltip(elem) {
 		elem.firstChild.innerText = "";
-		elem.className = 'fa far fa-clipboard clip-button';
+		elem.className = 'fa fa-clipboard clip-button';
 	}
 
 	function showTooltip(elem, msg) {
 		elem.firstChild.innerText = msg;
-		elem.className = 'fa far fa-clipboard tooltipped';
+		elem.className = 'fa fa-clipboard tooltipped';
 	}
 
 	const clipboardSnippets = new ClipboardJS('.clip-button', {
