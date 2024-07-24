@@ -234,6 +234,7 @@ pre > .buttons button {
 
     border-radius: 7px;
     background-color: var(--theme-popup-bg);
+    border: 0;
     transition: 100ms;
     transition-property: color,border-color,background-color;
 }
