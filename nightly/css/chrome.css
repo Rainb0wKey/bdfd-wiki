@@ -219,14 +219,7 @@ pre > .buttons {
     opacity: 0;
     transition: visibility 0.1s linear, opacity 0.1s linear;
 
-    color: var(--sidebar-fg);
     cursor: pointer;
-}
-
-pre > .buttons :hover {
-    color: var(--sidebar-active);
-    border-color: var(--icons-hover);
-    background-color: var(--theme-hover);
 }
 
 pre > .buttons i {
@@ -237,8 +230,6 @@ pre > .buttons button {
     padding: 3px 5px;
     cursor: inherit;
 
-    border-style: solid;
-    border-width: 1px;
     border-radius: 7px;
     background-color: var(--theme-popup-bg);
     transition: 100ms;
