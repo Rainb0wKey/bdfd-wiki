@@ -230,7 +230,7 @@ pre > .buttons button {
     margin: 0px 5px;
     padding: 3px 5px;
     cursor: inherit;
-    color: #FFF; 
+    color: #c2c2c2; 
 
     border-radius: 7px;
     background-color: var(--theme-popup-bg);
