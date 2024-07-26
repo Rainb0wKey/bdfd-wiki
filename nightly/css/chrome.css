@@ -154,8 +154,8 @@ html:not(.sidebar-visible) #menu-bar:not(:hover).folded > #menu-bar-sticky-conta
     font-size: 2.5em;
     text-align: center;
     text-decoration: none;
-    width: 90px;
-    border-radius: 5px;
+    width: 60px;
+    border-radius: 10px;
     background-color: var(--chapter-hover-bg);
 }
 
