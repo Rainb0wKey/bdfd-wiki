@@ -211,9 +211,9 @@ pre:hover > .buttons {
 pre > .buttons {
     position: absolute;
     z-index: 100;
-    right: 5px;
+    right: -2px;
     margin: 2px;
-    padding: 3px;
+    padding: 2px;
     visibility: hidden;
     opacity: 0;
     transition: visibility 0.1s linear, opacity 0.1s linear;
@@ -225,23 +225,34 @@ pre > .buttons {
 pre > .buttons :hover {
     color: var(--sidebar-active);
     border-color: var(--icons-hover);
-    background-color: var(--theme-hover);
+    width: 32px;
+    height: 32px;
+    border-radius: 8px;
+    
+    transition: 100ms;
+    transition-property: width,height,border-radius;
 }
 
 pre > .buttons i {
     margin-left: 8px;
 }
 pre > .buttons button {
-    color: var(--icons);
+    color: #aeaeae;
     margin: 0px 5px;
     padding: 3px 5px;
     cursor: inherit;
 
+    width: 30px;
+    height: 30px;
+    
     border-style: solid;
     border-width: 1px;
-    border-radius: 4px;
-    border-color: var(--icons);
+    border-radius: 9px;
+    border-color: #aeaeae;
+    
     background-color: var(--theme-popup-bg);
+    opacity: .75;
+    
     transition: 100ms;
     transition-property: color,border-color,background-color;
 }
