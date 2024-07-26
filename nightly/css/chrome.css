@@ -227,7 +227,7 @@ pre > .buttons :hover {
     background-color: var(--theme-hover);
     width: 32px;
     height: 32px;
-    opacity: .4
+    opacity: .2;
 }
 
 pre > .buttons i {
@@ -242,7 +242,7 @@ pre > .buttons button {
     height: 30px;
     border-radius: 7px;
     background-color: #c2c2c2;
-    opacity: .5;
+    opacity: .3;
     border: 0;
     transition: 100ms;
     transition-property: color,border-color,background-color;
