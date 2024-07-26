@@ -26,6 +26,7 @@ a > .hljs {
     top: 0;
     z-index: 101;
     margin: auto calc(0px - var(--page-padding));
+    padding: 5px;
 }
 #menu-bar > #menu-bar-sticky-container {
     display: flex;
@@ -34,6 +35,7 @@ a > .hljs {
     border-bottom-color: var(--bg);
     border-bottom-width: 1px;
     border-bottom-style: solid;
+    border-radius: 10px;
 }
 .js #menu-bar > #menu-bar-sticky-container {
     transition: transform 0.3s;
