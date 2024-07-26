@@ -488,7 +488,7 @@ ul#searchresults span.teaser em {
     left: 10px;
     top: var(--menu-bar-height);
     z-index: 1000;
-    border-radius: 4px;
+    border-radius: 10px;
     font-size: 0.7em;
     color: var(--fg);
     background: var(--theme-popup-bg);
