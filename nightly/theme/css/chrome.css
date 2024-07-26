@@ -344,26 +344,21 @@ ul#searchresults span.teaser em {
 
 .sidebar {
     position: fixed;
-    left: 0;
-    top: 0;
+    left: 5px;
+    top: 10px;
     bottom: 0;
     width: var(--sidebar-width);
     font-size: 0.875em;
     box-sizing: border-box;
+    border-radius: 10px;
+    width: 290px;
+    height: 600px;
     -webkit-overflow-scrolling: touch;
     overscroll-behavior-y: contain;
     background-color: var(--sidebar-bg);
     color: var(--sidebar-fg);
 }
-.sidebar-resizing {
-    -moz-user-select: none;
-    -webkit-user-select: none;
-    -ms-user-select: none;
-    user-select: none;
-}
-.js:not(.sidebar-resizing) .sidebar {
-    transition: transform 0.3s; /* Animation: slide away */
-}
+
 .sidebar code {
     line-height: 2em;
 }
