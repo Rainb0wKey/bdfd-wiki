@@ -224,7 +224,7 @@ pre > .buttons {
 
 pre > .buttons :hover {
     color: var(--sidebar-active);
-    border-color: var(--icons-hover);
+    border-color: var(--sidebar-active);
     width: 32px;
     height: 32px;
     border-radius: 8px;
