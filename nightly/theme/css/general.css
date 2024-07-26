@@ -170,9 +170,3 @@ blockquote {
 .tooltipped .tooltiptext {
     visibility: visible;
 }
-
-.mobile-nav-chapters {
-    text-align: center;
-    width: 60px;
-    border-radius: 10px;
-}
