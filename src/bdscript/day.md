@@ -25,5 +25,7 @@ Today Is: $day
   color: "#748BD4"
   bot: true
   content: |
-    Today Is: 22
+    <div id="day"></div>
 ```
+
+<script src="../theme/livetime.js"></script>
