@@ -32,4 +32,4 @@ Remaining tokens: $aiQuota
 
 > New tokens will be awarded and summed up every 24 hours!
 > 
-> Token limit (per bot): 2500 (Can be expanded over time)
+> Token limit (per bot): 5000 (20000 characters)
