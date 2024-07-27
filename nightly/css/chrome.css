@@ -325,14 +325,25 @@ ul#searchresults {
     list-style: none;
     padding-left: 20px;
 }
+
 ul#searchresults li {
     margin: 10px 0px;
     padding: 2px;
-    border-radius: 2px;
+    background-color: var(--theme-hover);
+    border-radius: 8px;
+    padding: 7px;
 }
 ul#searchresults li.focus {
-    background-color: var(--searchresults-li-bg);
+    border-radius: 10px;
+    padding: 9px;
+    background: var(--sidebar-bg);
+    font-size: 16.5px;
+    border-width: 1px;
+    border-color: var(--icons);
+    border-style: solid;
+
 }
+
 ul#searchresults span.teaser {
     display: block;
     clear: both;
