@@ -239,6 +239,11 @@ pre > .buttons :hover {
     transition-property: width,height,border-radius;
 }
 
+pre > .buttons :active {
+    color: #60f36b;
+    border-color: #60f36b;
+}
+
 pre > .buttons i {
     margin-left: 8px;
 }
