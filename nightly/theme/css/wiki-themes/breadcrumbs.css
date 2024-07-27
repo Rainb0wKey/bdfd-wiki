@@ -1,22 +1,37 @@
 .breadcrumb {
-    display: flex;
-    flex-wrap: wrap;
-    margin-top: 5px;
+    display: -webkit-box;
     color: var(--links);
+    padding-top: 10px;
 }
 
 .breadcrumb :nth-child(n+3)::before {
     content: "/";
-    margin: 0 5px;
+    margin: 0 4px;
 }
 
 .breadcrumb a {
     text-decoration: none;
+    background-color: var(--sidebar-bg);
+    padding: 5px;
+    font-size: 14px;
+    text-align: center;
+    border-radius: 10px;
+
 }
 
 .breadcrumb a:hover{
-    color: var(--icons-hover);
+    padding: 6px;
+    font-size: 15px;
     text-decoration: none;
+    transition: .3s;
+}
+
+.breadcrumb a:not(:hover){
+    padding: 5px;
+    font-size: 14px;
+    text-decoration: none;
+    border-radius: 12px;
+    transition: .3s;
 }
 
 .breadcrumb :link:hover{
