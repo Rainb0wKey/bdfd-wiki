@@ -392,9 +392,9 @@ if (window.playground_copyable) {
 })();
 
 (function autoHideMenu() {
-	const menu = document.getElementById('menu-bar');
+	var menu = document.getElementById('menu-bar');
 
-	const previousScrollTop = document.scrollingElement.scrollTop;
+	var previousScrollTop = document.scrollingElement.scrollTop;
 
 	document.addEventListener('scroll', () => {
 		if (menu.classList.contains('folded') && document.scrollingElement.scrollTop < previousScrollTop) {
