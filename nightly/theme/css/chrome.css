@@ -49,7 +49,7 @@ a > .hljs {
     z-index: 10;
     line-height: var(--menu-bar-height);
     cursor: pointer;
-    transition: color 0.5s;
+    transition: color 0.2s;
 }
 @media only screen and (max-width: 420px) {
     #menu-bar i, #menu-bar .icon-button {
