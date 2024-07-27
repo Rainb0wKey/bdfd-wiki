@@ -505,4 +505,5 @@ ul#searchresults span.teaser em {
 .theme-popup .theme:hover {
     background-color: var(--theme-hover);
     border-radius: 10px;
+    transition: .5s;
 }
