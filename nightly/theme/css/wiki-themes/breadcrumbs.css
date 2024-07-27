@@ -33,8 +33,3 @@
     border-radius: 12px;
     transition: .3s;
 }
-
-.breadcrumb :link:hover{
-    color: var(--icons-hover);
-    text-decoration: none;
-}
