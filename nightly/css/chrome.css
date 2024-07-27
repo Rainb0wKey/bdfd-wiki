@@ -377,6 +377,7 @@ ul#searchresults span.teaser em {
     overscroll-behavior-y: contain;
     background-color: var(--sidebar-bg);
     color: var(--sidebar-fg);
+    scrollbar-color: var(--scrollbar) var(--sidebar-bg);
 }
 
 .sidebar code {
@@ -400,13 +401,6 @@ ul#searchresults span.teaser em {
 .sidebar-visible .sidebar {
     transform: translateX(0);
     transition: transform 0.3s;
-}
-
-.sidebar::-webkit-scrollbar {
-    background: var(--sidebar-bg);
-}
-.sidebar::-webkit-scrollbar-thumb {
-    background: var(--scrollbar);
 }
 
 .sidebar-visible .page-wrapper {
