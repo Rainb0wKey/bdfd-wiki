@@ -388,7 +388,8 @@ ul#searchresults span.teaser em {
 }
 
 .sidebar-hidden .sidebar {
-    transform: translateX(calc(0px - var(--sidebar-width)));
+    transform: translateX(calc(-5px - var(--sidebar-width)));
+    transition: transform 0.3s;
 }
 .sidebar::-webkit-scrollbar {
     background: var(--sidebar-bg);
@@ -399,6 +400,7 @@ ul#searchresults span.teaser em {
 
 .sidebar-visible .page-wrapper {
     transform: translateX(var(--sidebar-width));
+    transition: transform 0.3s;
 }
 @media only screen and (min-width: 620px) {
     .sidebar-visible .page-wrapper {
