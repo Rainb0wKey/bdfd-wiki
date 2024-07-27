@@ -354,8 +354,8 @@ ul#searchresults span.teaser em {
     font-size: 0.875em;
     box-sizing: border-box;
     border-radius: 10px;
-    width: 315px;
-    height: 600px;
+    width: var(--sidebar-width);
+    height: 97%;
     -webkit-overflow-scrolling: touch;
     overscroll-behavior-y: contain;
     background-color: var(--sidebar-bg);
