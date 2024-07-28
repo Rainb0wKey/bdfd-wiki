@@ -298,9 +298,11 @@ mark.fade-out {
 }
 
 #searchbar {
-    width: 100%;
-    margin: 5px auto 0px auto;
-    padding: 10px 16px;
+    margin: 5px auto 0px;
+    margin-left: 3%;
+    width: 95%;
+    height: 30px;
+    padding: 2%;
     transition: box-shadow 300ms ease-in-out;
     border: 1px solid var(--searchbar-border-color);
     border-radius: 10px;
@@ -316,7 +318,8 @@ mark.fade-out {
 .searchresults-header {
     font-weight: bold;
     font-size: 1em;
-    padding: 18px 0 0 300px;
+    text-align: center;
+    padding: 18px 0 0 18px;
     color: var(--searchresults-header-fg);
 }
 
@@ -329,7 +332,7 @@ mark.fade-out {
 
 ul#searchresults {
     list-style: none;
-    padding-left: 20px;
+    padding-left: 0px;
 }
 
 ul#searchresults li {
