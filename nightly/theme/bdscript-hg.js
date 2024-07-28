@@ -1,8 +1,7 @@
 cb = document.getElementsByClassName("bdscript");
 arr = cb[0].textContent
 
-keys = [  [
-    "$addButton",
+keys = [  "$addButton",
     "$addCmdReactions",
     "$addEmoji",
     "$addField",
