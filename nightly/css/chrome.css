@@ -381,7 +381,7 @@ ul#searchresults span.teaser em {
     overscroll-behavior-y: contain;
     background-color: var(--sidebar-bg);
     color: var(--sidebar-fg);
-    scrollbar-color: var(--scrollbar) var(--sidebar-bg);
+    scrollbar-color: var(--scrollbar) rgba(255, 0, 0, 0);
 }
 
 .sidebar code {
