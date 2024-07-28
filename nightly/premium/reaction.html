@@ -9,7 +9,7 @@
 
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
         <meta name="description" content="The official documentation of BDFD. It covers guides, examples related to BDScript, BDJS and as well features too.">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"/>
         <meta name="theme-color" content="#748bd4">
         <meta name="og:image" content="https://botdesignerdiscord.com/logo512.png">
 
@@ -184,17 +184,17 @@
 $sendMessage[$username clicked on the reaction]
 </code></pre>
 <discord-messages>
-    <discord-message author="Nicky" role-color="#EE7908">
+    <discord-message role-color="#EE7908" author="Nicky">
         !example
     </discord-message>
-    <discord-message author="Wiki Bot" bot role-color="#748BD4" verified>
+    <discord-message verified role-color="#748BD4" bot author="Wiki Bot">
         Click
         <discord-reactions slot="reactions">
             <discord-reaction count="2" reacted name=":emoji:" emoji="https://cdn.discordapp.com/emojis/766607515445231637.webp">
             </discord-reaction>
         </discord-reactions>
     </discord-message>
-    <discord-message bot role-color="#748BD4" author="Wiki Bot" verified>
+    <discord-message verified author="Wiki Bot" role-color="#748BD4" bot>
         Nicky clicked on the reaction
     </discord-message>
 </discord-messages>
