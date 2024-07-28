@@ -171,25 +171,17 @@
                             <script src="../theme/breadcrumbs.js"></script>
                         </nav>
                         <h1 id="addbutton"><a class="header" href="#addbutton">$addButton</a></h1>
-<p>Adds a button to a message.</p>
+<p><strong>TESTING PAGE</strong>
+Adds a button to a message.</p>
 <h2 id="syntax"><a class="header" href="#syntax">Syntax</a></h2>
-<pre><code>$addButton[New row?;Interaction ID/URL;Label;Style;(Disable?;Emoji;Message ID)]
+<pre><code class="bdscript">$addButton[New row?;Interaction ID/URL;Label;Style;(Disable?;Emoji;Message ID)]</code></pre>
+<pre><code>
+### Parameters
+- `New row?` `(Type: Bool || Flag: Required)`: If set to `yes`, the button will appear in a new row. If set to `no`, the button will appear in the same row as the previous button.
+
+```admonish info title="Limits"
+A message can have a maximum of 25 buttons (5 rows of 5 buttons).
 </code></pre>
-<h3 id="parameters"><a class="header" href="#parameters">Parameters</a></h3>
-<ul>
-<li><code>New row?</code> <code>(Type: Bool || Flag: Required)</code>: If set to <code>yes</code>, the button will appear in a new row. If set to <code>no</code>, the button will appear in the same row as the previous button.</li>
-</ul>
-<div id="admonition-limits" class="admonition admonish-info" role="note" aria-labelledby="admonition-limits-title">
-<div class="admonition-title">
-<div id="admonition-limits-title">
-<p>Limits</p>
-</div>
-<a class="admonition-anchor-link" href="#admonition-limits"></a>
-</div>
-<div>
-<p>A message can have a maximum of 25 buttons (5 rows of 5 buttons).</p>
-</div>
-</div>
 <ul>
 <li><code>Interaction ID/URL</code> <code>(Type: String, URL || Flag: Required)</code>: Depending on the button type, you either set it to <code>Interaction ID</code> which is then used in <code>$onInteraction[ID]</code> callback or <code>URL</code> if it’s a link button.</li>
 <li><code>Label</code> <code>(Type: String || Flag: Emptiable)</code>: The text value visible on the button.</li>
@@ -231,7 +223,7 @@ Here, are all possible values for the <code>style</code> function argument.</p>
 <li><code>link</code> - Redirect button</li>
 </ul>
 <discord-messages>
-    <discord-message author="BDFD Support" bot verified role-color="#378afa">
+    <discord-message author="BDFD Support" role-color="#378afa" verified bot>
         Buttons:
         <discord-attachments slot="components">
             <discord-action-row>
@@ -254,7 +246,7 @@ Here, are all possible values for the <code>style</code> function argument.</p>
                 <discord-button type="destructive">
                     Danger
                 </discord-button>
-                <discord-button type="destructive" disabled>
+                <discord-button disabled type="destructive">
                     Danger
                 </discord-button>
             </discord-action-row>
@@ -268,19 +260,19 @@ Here, are all possible values for the <code>style</code> function argument.</p>
             </discord-action-row>
         </discord-attachments>
     </discord-message>
-    <discord-message role-color="#378afa" verified bot author="BDFD Support">
+    <discord-message role-color="#378afa" verified author="BDFD Support" bot>
         Other Buttons:
         <discord-attachments slot="components">
             <discord-action-row>
-                <discord-button url="https://nilpointer-software.github.io/bdfd-wiki/nightly/" type="secondary">
+                <discord-button type="secondary" url="https://nilpointer-software.github.io/bdfd-wiki/nightly/">
                     Link
                 </discord-button>
-                <discord-button type="secondary" url="https://nilpointer-software.github.io/bdfd-wiki/nightly/" disabled>
+                <discord-button url="https://nilpointer-software.github.io/bdfd-wiki/nightly/" type="secondary" disabled>
                     Link
                 </discord-button>
             </discord-action-row>
             <discord-action-row>
-                <discord-button type="secondary" emoji="https://em-content.zobj.net/thumbs/120/mozilla/36/heavy-black-heart_2764.png">
+                <discord-button emoji="https://em-content.zobj.net/thumbs/120/mozilla/36/heavy-black-heart_2764.png" type="secondary">
                     Emoji
                 </discord-button>
             </discord-action-row>
@@ -299,7 +291,7 @@ $addButton[no;test;Say hello!;primary;no;]
     <discord-message role-color="#E67E22" author="RainbowKey">
         !example
     </discord-message>
-    <discord-message role-color="#378afa" author="BDFD Support" bot verified>
+    <discord-message author="BDFD Support" role-color="#378afa" bot verified>
         Hello
         <discord-attachments slot="components">
             <discord-action-row>
