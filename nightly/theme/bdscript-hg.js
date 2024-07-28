@@ -51,7 +51,7 @@ keys = [  [
     "$botOwnerID",
     "$botTyping",
     "$c",
-    "$calculate@,
+    "$calculate",
     "$catch",
     "$categoryChannels@,
     "$categoryCount",
