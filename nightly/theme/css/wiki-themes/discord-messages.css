@@ -153,6 +153,10 @@
     transform: scale(1.4);
 }
 
+.discord-button.discord-button-secondary {
+  color: #fff !important;
+}
+
 .discord-reaction-inner img {
     border-radius: 0;
 }
