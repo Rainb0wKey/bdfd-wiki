@@ -24,8 +24,8 @@ Invite Me! $getBotInvite
   color: "#E67E22"
   content: |
     !example
-- user_id: 1009018156494368798
-  username: Invate this bot
+- user_id: 390515191819010058
+  username: kubastick
   color: "#378afa"
   bot: true
   content: |
