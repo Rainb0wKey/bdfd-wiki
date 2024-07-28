@@ -239,19 +239,6 @@ pre > .buttons :hover {
     transition-property: width,height,border-radius;
 }
 
-pre > .buttons :not( :hover) {
-    color: var(--sidebar-fg);
-    border-color: var(--sidebar-fg);
-    border-radius: 9px;
-    
-    width: 30px;
-    height: 30px;
-    
-    opacity: .75;
-    
-    transition: 200ms;
-}
-
 pre > .buttons :active {
     color: #60f36b;
     border-color: #60f36b;
