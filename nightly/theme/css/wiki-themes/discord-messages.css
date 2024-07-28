@@ -2,6 +2,10 @@
     font-size: 16px !important;
 }
 
+.discord-message a {
+  color: #00aff4 !important;
+}
+
 .discord-messages {
     border-radius: 10px;
     background-color: #2e3035;
