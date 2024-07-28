@@ -391,17 +391,17 @@ keys = [  "$addButton",
 
 for (b = 0; b < cb.length; b++) {
 for (i = 0; i < keys.length; i++) {
-arr = arr.replaceAll(keys[i], '<span style="color: #FFF;">' + keys[i] + '</span>');
+arr = arr.replaceAll(keys[i], '<span style="color: #73FBFF;">' + keys[i] + '</span>');
 };
 
-arr = arr.replaceAll("$if", '<span style="color: #FFF;">' + "$if" + '</span>');
-arr = arr.replaceAll("$endif", '<span style="color: #FFF;">' + "$endif" + '</span>');
-arr = arr.replaceAll("$else", '<span style="color: #FFF;">' + "$else" + '</span>');
-arr = arr.replaceAll("$elseif", '<span style="color: #FFF;">' + "$elseif" + '</span>');
+arr = arr.replaceAll("$if", '<span style="color: #A37FFC;">' + "$if" + '</span>');
+arr = arr.replaceAll("$endif", '<span style="color: #A37FFC;">' + "$endif" + '</span>');
+arr = arr.replaceAll("$else", '<span style="color: #A37FFC;">' + "$else" + '</span>');
+arr = arr.replaceAll("$elseif", '<span style="color: #A37FFC;">' + "$elseif" + '</span>');
 
-arr = arr.replaceAll("[", '<span style="color: #FFF;">' + "[" + '</span>');
-arr = arr.replaceAll("]", '<span style="color: #FFF;">' + "]" + '</span>');
-arr = arr.replaceAll("\;/", '<span style="color: #FFF;">' + ";" + '</span>');
+arr = arr.replaceAll("[", '<span style="color: #FF4C4C;">' + "[" + '</span>');
+arr = arr.replaceAll("]", '<span style="color: #FF4C4C;">' + "]" + '</span>');
+arr = arr.replaceAll("\;/", '<span style="color: #FF484A;">' + ";" + '</span>');
 
 cb[b].innerHTML = arr; 
 try {
