@@ -53,7 +53,7 @@ keys = [  [
     "$c",
     "$calculate",
     "$catch",
-    "$categoryChannels@,
+    "$categoryChannels",
     "$categoryCount",
     "$categoryID",
     "$changeCooldownTime",
