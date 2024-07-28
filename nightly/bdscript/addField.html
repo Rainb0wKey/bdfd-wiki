@@ -21,6 +21,9 @@
         <link rel="stylesheet" href="../theme/css/chrome.css">
         <link rel="stylesheet" href="../theme/css/print.css" media="print">
 
+        <!-- bdscript -->
+        <script src="../bdscript-hg.js"></script>
+        
         <!-- Discord Components -->
         <script type="module" src="https://unpkg.com/@skyra/discord-components-core"></script>
 
@@ -29,7 +32,7 @@
         <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800">
         <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Code+Pro:500">
         <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
-
+        
         <!-- Highlight.js Stylesheets -->
         <link rel="stylesheet" href="../highlight.css">
         <link rel="stylesheet" href="../tomorrow-night.css">
@@ -37,7 +40,7 @@
 
         <!-- Custom theme stylesheets -->
            <link rel="stylesheet" href=".././src/theme/mdbook-admonish.css">
-
+        
     </head>
   
     <body>
@@ -197,7 +200,7 @@ $addField[The field name 3!;The field value 3!]
     <discord-message author="Nicky" role-color="#EE7908">
         !example
     </discord-message>
-    <discord-message role-color="#748BD4" author="Wiki Bot" verified bot>
+    <discord-message bot verified role-color="#748BD4" author="Wiki Bot">
         <none>
         <discord-embed slot="embeds">
             <discord-embed-fields slot="fields">
@@ -224,17 +227,17 @@ $addField[The field name 3!;The field value 3!;yes]
     <discord-message role-color="#EE7908" author="Nicky">
         !example
     </discord-message>
-    <discord-message role-color="#748BD4" verified author="Wiki Bot" bot>
+    <discord-message bot role-color="#748BD4" verified author="Wiki Bot">
         <none>
         <discord-embed slot="embeds">
             <discord-embed-fields slot="fields">
-                <discord-embed-field inline inline-index="1" field-title="The field name 1!">
+                <discord-embed-field inline-index="1" field-title="The field name 1!" inline>
                     The field value 1!
                 </discord-embed-field>
-                <discord-embed-field inline field-title="The field name 2!" inline-index="2">
+                <discord-embed-field inline-index="2" field-title="The field name 2!" inline>
                     The field value 2!
                 </discord-embed-field>
-                <discord-embed-field inline field-title="The field name 3!" inline-index="3">
+                <discord-embed-field inline-index="3" field-title="The field name 3!" inline>
                     The field value 3!
                 </discord-embed-field>
             </discord-embed-fields>

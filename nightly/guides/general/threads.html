@@ -21,6 +21,9 @@
         <link rel="stylesheet" href="../../theme/css/chrome.css">
         <link rel="stylesheet" href="../../theme/css/print.css" media="print">
 
+        <!-- bdscript -->
+        <script src="../../bdscript-hg.js"></script>
+        
         <!-- Discord Components -->
         <script type="module" src="https://unpkg.com/@skyra/discord-components-core"></script>
 
@@ -29,7 +32,7 @@
         <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800">
         <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Code+Pro:500">
         <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
-
+        
         <!-- Highlight.js Stylesheets -->
         <link rel="stylesheet" href="../../highlight.css">
         <link rel="stylesheet" href="../../tomorrow-night.css">
@@ -37,7 +40,7 @@
 
         <!-- Custom theme stylesheets -->
            <link rel="stylesheet" href="../.././src/theme/mdbook-admonish.css">
-
+        
     </head>
   
     <body>
@@ -217,7 +220,7 @@ I created a new thread! &lt;#$startThread[Cool Thread;$channelID;;1440;yes]&gt;
     <discord-system-message type="thread">
         <i style="color: #378afa">BDFD Support</i> Started a thread: <i style="color: white">Cool Thread</i>. See all <i style="color: white">threads</i>.
     </discord-system-message>
-    <discord-message verified author="BDFD Support" role-color="#378afa" bot>
+    <discord-message role-color="#378afa" author="BDFD Support" bot verified>
         I created a new thread! <discord-mention type="channel">Cool Thread</discord-mention>
     </discord-message>
 </discord-messages>
@@ -243,7 +246,7 @@ I created a new thread! &lt;#$startThread[Cool Thread;$channelID;;1440;yes]&gt;
 $editThread[1098166444111433819;Cool Thread 😎;no;!unchanged;!unchanged;5]
 </code></pre>
 <discord-messages>
-    <discord-message author="RainbowKey" role-color="#E67E22">
+    <discord-message role-color="#E67E22" author="RainbowKey">
         !example
     </discord-message>
     <discord-system-message type="edit">
@@ -308,13 +311,13 @@ New thread - &lt;#$var[id]&gt;
 $threadAddMember[$var[id];$authorID]
 </code></pre>
 <discord-messages>
-    <discord-message author="RainbowKey" role-color="#E67E22">
+    <discord-message role-color="#E67E22" author="RainbowKey">
         !example
     </discord-message>
     <discord-system-message type="thread">
         <i style="color: #378afa">BDFD Support</i> Started a thread: <i style="color: white">Cool Thread</i>. See all <i style="color: white">threads</i>.
     </discord-system-message>
-    <discord-message role-color="#378afa" author="BDFD Support" bot verified>
+    <discord-message role-color="#378afa" author="BDFD Support" verified bot>
         New thread - <discord-mention type="channel">Cool Thread</discord-mention>
     </discord-message>
 </discord-messages>

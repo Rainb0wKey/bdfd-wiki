@@ -21,6 +21,9 @@
         <link rel="stylesheet" href="../theme/css/chrome.css">
         <link rel="stylesheet" href="../theme/css/print.css" media="print">
 
+        <!-- bdscript -->
+        <script src="../bdscript-hg.js"></script>
+        
         <!-- Discord Components -->
         <script type="module" src="https://unpkg.com/@skyra/discord-components-core"></script>
 
@@ -29,7 +32,7 @@
         <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800">
         <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Code+Pro:500">
         <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
-
+        
         <!-- Highlight.js Stylesheets -->
         <link rel="stylesheet" href="../highlight.css">
         <link rel="stylesheet" href="../tomorrow-night.css">
@@ -37,7 +40,7 @@
 
         <!-- Custom theme stylesheets -->
            <link rel="stylesheet" href=".././src/theme/mdbook-admonish.css">
-
+        
     </head>
   
     <body>
@@ -185,10 +188,10 @@
 Channel Position: $channelPosition[$mentionedChannels[1;yes]]
 </code></pre>
 <discord-messages>
-    <discord-message author="RainbowKey" role-color="#E67E22">
+    <discord-message role-color="#E67E22" author="RainbowKey">
         !example <discord-mention type="channel">main-chat</discord-mention>
     </discord-message>
-    <discord-message bot role-color="#378afa" verified author="BDFD Support">
+    <discord-message author="BDFD Support" verified role-color="#378afa" bot>
         Channel Position: 2
     </discord-message>
 </discord-messages>
