@@ -1,4 +1,4 @@
-cb = document.getElementsByClassName("bdscript hljs");
+cb = document.getElementsByClassName("bdscript");
 arr = cb[0].textContent
 
 keys = [  "$addButton",
