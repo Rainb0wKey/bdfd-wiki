@@ -368,6 +368,7 @@
     - [$serverVerificationLvl](./bdscript/serverVerificationLvl.md)
     - [$setChannelVar](./bdscript/setChannelVar.md)
     - [$setServerVar](./bdscript/setServerVar.md)
+    - [$setUserRoles](./bdscript/setUserRoles.md)
     - [$setUserVar](./bdscript/setUserVar.md)
     - [$setVar](./bdscript/setVar.md)
     - [$shardID](./bdscript/shardID.md)
