@@ -135,6 +135,17 @@
     position: relative;
 }
 
+.discord-message .discord-mention .discord-mention-icon {
+  width: 1em !important;
+  height: 1em !important;
+  left: 0.125em !important;
+  top: 0.125em !important;
+}
+
+.discord-message .discord-mention.discord-channel-mention {
+  padding-left: 1.2em !important;
+}
+
 .discord-reaction .discord-reaction-inner {
     display: flex;
     align-items: center;
