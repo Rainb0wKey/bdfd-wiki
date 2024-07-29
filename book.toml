@@ -13,7 +13,6 @@ preferred-dark-theme = "bdfd"
 smart-punctuation = true
 git-repository-url = "https://github.com/NilPointer-Software/bdfd-wiki"
 edit-url-template = "https://github.com/NilPointer-Software/bdfd-wiki/edit/dev/{path}"
-site-url = "/bdfd-wiki/"
 
 [output.html.fold]
 enable = true
