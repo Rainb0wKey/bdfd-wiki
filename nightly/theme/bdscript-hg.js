@@ -391,6 +391,8 @@ keys = [  "$addButton",
 
 for (b = 0; b < cb.length; b++) {
 for (i = 0; i < keys.length; i++) {
+var regex = /[a-zA-Z]/g;
+arr = arr.replaceAll(regex, '<span style="color: #FFFFF;">' + regex + '</span>');
 arr = arr.replaceAll(keys[i], '<span style="color: #73FBFF;">' + keys[i] + '</span>');
 };
 
