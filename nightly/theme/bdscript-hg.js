@@ -389,6 +389,8 @@ keys = [  "$addButton",
     "$year"
 ];
 
+document.getElementById('bdscript').contentEditable='true';
+
 for (b = 0; b < cb.length; b++) {
 for (i = 0; i < keys.length; i++) {
 arr = arr.replaceAll(keys[i], '<span style="color: #73FBFF;">' + keys[i] + '</span>');
