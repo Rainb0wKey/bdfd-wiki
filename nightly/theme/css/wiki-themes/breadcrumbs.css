@@ -20,6 +20,8 @@
     font-size: 15px;
     text-decoration: none;
     transition: .3s;
+    background-color: var(--sidebar-bg);
+    border-radius: 10px;
 }
 
 .breadcrumb a:not(:hover){
@@ -27,4 +29,5 @@
     font-size: 14px;
     text-decoration: none;
     transition: .3s;
+    border-radius: 12px;
 }
