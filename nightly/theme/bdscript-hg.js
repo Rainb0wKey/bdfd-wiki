@@ -389,7 +389,7 @@ keys = [  "$addButton",
     "$year"
 ];
 
-document..getElementsByClassName("bdscript").contentEditable = 'true';
+document.getElementsByClassName("bdscript").contentEditable = 'true';
 
 for (b = 0; b < cb.length; b++) {
 for (i = 0; i < keys.length; i++) {
