@@ -395,6 +395,7 @@ arr = arr.replaceAll(keys[i], '<span style="color: #73FBFF;">' + keys[i] + '</sp
 };
 
 arr = arr.replaceAll("$nomention", '<span style="color: #FF77F9;">' + "$nomention" + '</span>');
+arr = arr.replaceAll("$c", '<span style="color: #7f7679;">' + "$c" + '</span>');
 
 arr = arr.replaceAll("$if", '<span style="color: #A37FFC;">' + "$if" + '</span>');
 arr = arr.replaceAll("$endif", '<span style="color: #A37FFC;">' + "$endif" + '</span>');
