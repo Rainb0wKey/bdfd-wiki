@@ -58,7 +58,8 @@ function highlight() {
 }
 
 
-sheme = './bdscript-schema.json'
+import data from './bdscript-schema.json'
+sheme = data
 
 
 highlight()
