@@ -30,7 +30,8 @@ function escapeHtml(unsafe) {
         .replace(/</g, "&lt")
         .replace(/>/g, "&gt")
         .replace(/"/g, "&quot")
-        .replace(/'/g, "&#039");
+        .replace(/'/g, "&#039")
+        .replace(/;/g, "&#059");
 }
 
 function highlight() {
@@ -44,7 +45,7 @@ function highlight() {
             .replace(/\;/g, styling("semicolonHighlight"))
             .replace(/\[/g, styling("bracketHighlight"))
             .replace(/\]/g, styling("bracketHighlight"))
-            .replace(/\$[a-zA-Z]*/g, styling("fallbackHighlight"))
+            .replace(/\$[a-zA-Z]*/g, styling("fallbackHighlight")) // lazy static fallback because cors funny
             .replace(/.*/g, styling("defaultTextHighlight"))
 
         let keys = Object.keys(scheme.functionsHighlights).sort((a, b) => b.length - a.length);
@@ -57,7 +58,9 @@ function highlight() {
     });
 }
 
-sheme = {
+
+// sample scheme (default bds scheme)
+scheme = {
    "defaultTextHighlight":{
       "color":4288341353,
       "style":0
@@ -114,4 +117,6 @@ sheme = {
    }
 }
 
+
+// triggafinga
 highlight()
