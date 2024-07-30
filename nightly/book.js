@@ -36,8 +36,14 @@ if (window.playground_copyable) {
 			wrapButton.title = 'Wrap code'
 			wrapButton.setAttribute('aria-label', wrapButton.title);
 
+			const disableButton = document.createElement('button');
+			disableButton.className = 'fa-regular fa-eye-slash disable-button';
+			disableButton.title = 'Disable highlighting'
+			disableButton.setAttribute('aria-label', disableButton.title);
+
 			buttons.insertBefore(clipButton, buttons.firstChild);
 			buttons.insertBefore(wrapButton, buttons.firstChild);
+			buttons.insertBefore(disableButton, buttons.firstChild);
 		}
 	});
 }
@@ -379,6 +385,17 @@ if (window.playground_copyable) {
 			const codeBlock = playground.querySelector("code");
 			if (!codeBlock.style.textWrap || codeBlock.style.textWrap === 'nowrap') codeBlock.style.textWrap = 'wrap';
 			else codeBlock.style.textWrap = 'nowrap';
+		});
+	});
+})();
+
+(function disable() {
+	const disableButtons = document.querySelectorAll(".disable-button");
+	disableButtons.forEach((button) => {
+		button.addEventListener('click', (e) => {
+			const playground = button.closest("pre");
+			const codeBlock = playground.querySelector("code");
+                        codeBlock.style.color = "White";
 		});
 	});
 })();
