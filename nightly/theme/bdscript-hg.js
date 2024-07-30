@@ -1,3 +1,5 @@
+alert(document.currentScript.src.substring(0, document.currentScript.src.lastIndexOf('/'))))
+
 function functionHighlight(func) {
     let color = ((scheme.functionsHighlights[func].color & 0xFFFFFF)).toString(16).padStart(6, '0').toUpperCase(); // convert dec to hex
     let style = fontStyle(scheme.functionsHighlights[func].style);
