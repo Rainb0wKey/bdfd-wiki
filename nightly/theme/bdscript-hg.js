@@ -57,9 +57,7 @@ function highlight() {
     });
 }
 
-
-import data from './bdscript-scheme.json'
-sheme = data
+sheme = './bdscript-scheme.json'
 
 
 highlight()
