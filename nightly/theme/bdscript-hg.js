@@ -4,6 +4,7 @@ function functionHighlight(func) {
     return `<span class="function" style="color: #${color}; ${style}">$&</span>`;
 }
 
+// applies css to the target
 function styling(type) {
     let color = ((scheme[type].color & 0xFFFFFF)).toString(16).padStart(6, '0').toUpperCase();
     let style = fontStyle(scheme[type].style);
@@ -23,11 +24,21 @@ function fontStyle(style) {
     }
 }
 
+function escapeHtml(unsafe) {
+    return unsafe
+        .replace(/&/g, "&amp")
+        .replace(/</g, "&lt")
+        .replace(/>/g, "&gt")
+        .replace(/"/g, "&quot")
+        .replace(/'/g, "&#039")
+        .replace(/;/g, "&#059");
+}
+
 function highlight() {
     const codeBlocks = document.querySelectorAll('pre code');
 
     codeBlocks.forEach(codeBlock => {
-        let code = codeBlock.textContent;
+        let code = escapeHtml(codeBlock.textContent);
 	
 	// not using replaceAll because this was initially made in es5, already tested on latest es6 though
         code = code
@@ -43,9 +54,10 @@ function highlight() {
         });
 
         codeBlock.innerHTML = code;
+        console.log("Highlighted code: " + code);
     });
 }
 
-scheme = ./bdscript-scheme.json
+scheme = bdscript-scheme.json
 
 highlight()
