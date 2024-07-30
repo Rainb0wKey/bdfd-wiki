@@ -1,415 +1,111 @@
-cb = document.getElementsByClassName("bdscript");
-arr = cb[0].textContent
+function functionHighlight(func) {
+    let color = ((scheme.functionsHighlights[func].color & 0xFFFFFF)).toString(16).padStart(6, '0').toUpperCase(); // convert dec to hex
+    let style = fontStyle(scheme.functionsHighlights[func].style);
+    return `<span class="function" style="color: #${color}; ${style}">$&</span>`;
+}
 
-keys = [  "$addButton",
-    "$addCmdReactions",
-    "$addEmoji",
-    "$addField",
-    "$addMessageReactions",
-    "$addReactions",
-    "$addSelectMenuOption",
-    "$addTextInput",
-    "$addTimestamp",
-    "$aiQuota",
-    "$ai",
-    "$allMembersCount",
-    "$allowMention",
-    "$allowRoleMentions",
-    "$allowUserMentions",
-    "$alternativeParsing",
-    "$and",
-    "$appendOptionSuggestion",
-    "$argCount",
-    "$argsCheck",
-    "$async",
-    "$authorAvatar",
-    "$authorID",
-    "$authorIcon",
-    "$authorOfMessage",
-    "$authorURL",
-    "$author",
-    "$autoCompleteOptionName",
-    "$autoCompleteOptionValue",
-    "$awaitFunc",
-    "$awaitReactions",
-    "$await",
-    "$ban",
-    "$banID",
-    "$blackListIDs",
-    "$blackListRolesIDs",
-    "$blackListRoles",
-    "$blackListServers",
-    "$blackListUsers",
-    "$boostCount",
-    "$botCommands",
-    "$botID",
-    "$botLeave",
-    "$botListDescription",
-    "$botListHide",
-    "$botNode",
-    "$botOwnerID",
-    "$botTyping",
-    "$c",
-    "$calculate",
-    "$catch",
-    "$categoryChannels",
-    "$categoryCount",
-    "$categoryID",
-    "$changeCooldownTime",
-    "$changeUsernameWithID",
-    "$changeUsername",
-    "$channelCount",
-    "$channelExists",
-    "$channelID",
-    "$channelIDFromName",
-    "$channelName",
-    "$channelNames",
-    "$channelPosition",
-    "$channelSendMessage",
-    "$channelTopic",
-    "$channelType",
-    "$charCount",
-    "$checkCondition",
-    "$checkContains",
-    "$checkUserPerms",
-    "$clear",
-    "$clearReactions",
-    "$closeTicket",
-    "$colorRole",
-    "$color",
-    "$commandsCount",
-    "$cooldown",
-    "$createChannel",
-    "$createRole",
-    "$creationDate",
-    "$cropText",
-    "$customEmoji",
-    "$customID",
-    "$customImage",
-    "$date",
-    "$day",
-    "$defer",
-    "$deleteChannelsByName",
-    "$deleteChannels",
-    "$deleteIn",
-    "$deleteMessage",
-    "$deleteRole",
-    "$deletecommand",
-    "$description",
-    "$disableInnerSpaceRemoval",
-    "$disableSpecialEscaping",
-    "$discriminator",
-    "$displayName",
-    "$divide",
-    "$dm",
-    "$dmChannelID",
-    "$dm",
-    "$editButton",
-    "$editChannelPerms",
-    "$editEmbedIn",
-    "$editIn",
-    "$editMessage",
-    "$editSelectMenuOption",
-    "$editSelectMenu",
-    "$editSplitText",
-    "$editThread",
-    "$else",
-    "$elseif",
-    "$embedSuppressErrors",
-    "$embeddedURL",
-    "$emoteCount",
-    "$enableDecimals",
-    "$enabled",
-    "$endasync",
-    "$endif",
-    "$endtry",
-    "$ephemeral",
-    "$error",
-    "$eval",
-    "$executionTime",
-    "$findChannel",
-    "$findRole",
-    "$findUser",
-    "$footerIcon",
-    "$footer",
-    "$getBanReason",
-    "$getBotInvite",
-    "$getChannelVar",
-    "$getCooldown",
-    "$getCustomStatus",
-    "$getEmbedData",
-    "$getInviteInfo",
-    "$getLeaderboardPosition",
-    "$getLeaderboardValue",
-    "$getMessage",
-    "$getReactions",
-    "$getRoleColor",
-    "$getServerInvite",
-    "$getServerVar",
-    "$getTextSplitLength",
-    "$getTimestamp",
-    "$getUserStatus",
-    "$getUserVar",
-    "$getVar",
-    "$giveRole",
-    "$globalCooldown",
-    "$globalUserLeaderboard",
-    "$guildExists",
-    "$guildID",
-    "$hasRole",
-    "$highestRole",
-    "$highestRoleWithPerms",
-    "$hostingExpireTime",
-    "$hour",
-    "$httpAddHeader",
-    "$httpDelete",
-    "$httpGetHeader",
-    "$httpGet",
-    "$httpPatch",
-    "$httpPost",
-    "$httpPut",
-    "$httpRemoveHeader",
-    "$httpResult",
-    "$httpStatus",
-    "$hypesquad",
-    "$if",
-    "$ignoreChannels",
-    "$ignoreLinks",
-    "$ignoreTriggerCase",
-    "$image",
-    "$input",
-    "$isAdmin",
-    "$isBanned",
-    "$isBoolean",
-    "$isBooster",
-    "$isBot",
-    "$isHoisted",
-    "$isMentionable",
-    "$isNSFW",
-    "$isNumber",
-    "$isSlash",
-    "$isTicket",
-    "$isTimedOut",
-    "$isUserDMEnabled",
-    "$isValidHex",
-    "$joinSplitText",
-    "$jsonArrayAppend",
-    "$jsonArrayCount",
-    "$jsonArrayIndex",
-    "$jsonArrayPop",
-    "$jsonArrayReverse",
-    "$jsonArrayShift",
-    "$jsonArraySort",
-    "$jsonArrayUnshift",
-    "$jsonArray",
-    "$jsonClear",
-    "$jsonExists",
-    "$jsonJoinArray",
-    "$jsonParse",
-    "$jsonPretty",
-    "$jsonSetString",
-    "$jsonSet",
-    "$jsonStringify",
-    "$jsonUnset",
-    "$json",
-    "$kick",
-    "$kickMention",
-    "$lowestRole",
-    "$lowestRoleWithPerms",
-    "$max",
-    "$membersCount",
-    "$mentionedChannels",
-    "$mentionedRoles",
-    "$mentioned",
-    "$message",
-    "$messageID",
-    "$min",
-    "$minute",
-    "$modifyChannelPerms",
-    "$modifyChannel",
-    "$modifyRolePerms",
-    "$modifyRole",
-    "$modulo",
-    "$month",
-    "$multi",
-    "$mute",
-    "$newModal",
-    "$newSelectMenu",
-    "$newTicket[]",
-    "$nickname",
-    "$noMentionMessage",
-    "$nodeVersion",
-    "$nomention",
-    "$numberSeparator",
-    "$onlyAdmin",
-    "$onlyBotChannelPerms",
-    "$onlyBotPerms",
-    "$onlyForCategories",
-    "$onlyForChannels",
-    "$onlyForIDs",
-    "$onlyForRoleIDs",
-    "$onlyForRoles",
-    "$onlyForServers",
-    "$onlyForUsers",
-    "$onlyIfMessageContains",
-    "$onlyIf",
-    "$onlyNSFW",
-    "$onlyPerms",
-    "$optOff",
-    "$or",
-    "$parentID",
-    "$pinMessage",
-    "$ping",
-    "$premiumExpireTime",
-    "$publishMessage",
-    "$random",
-    "$randomCategoryID",
-    "$randomChannelID",
-    "$randomGuildID",
-    "$randomMention",
-    "$randomRoleID",
-    "$randomString",
-    "$randomText",
-    "$randomUser",
-    "$randomUserID",
-    "$registerGuildCommands",
-    "$removeAllComponents",
-    "$removeButtons",
-    "$removeComponent",
-    "$removeContains",
-    "$removeEmoji",
-    "$removeLinks",
-    "$removeSplitTextElement",
-    "$repeatMessage",
-    "$replaceText",
-    "$repliedMessageID",
-    "$reply",
-    "$replyIn",
-    "$resetChannelVar",
-    "$resetServerVar",
-    "$resetUserVar",
-    "$roleCount",
-    "$roleExists",
-    "$roleGrant",
-    "$roleID",
-    "$roleInfo",
-    "$roleName",
-    "$roleNames",
-    "$rolePosition",
-    "$round",
-    "$scriptLanguage",
-    "$second",
-    "$sendEmbedMessage",
-    "$sendMessage",
-    "$sendNotification",
-    "$serverChannelExists",
-    "$serverCooldown",
-    "$serverCount",
-    "$serverDescription",
-    "$serverEmojis",
-    "$serverIcon",
-    "$serverIcon[]",
-    "$serverLeaderboard",
-    "$serverName[]",
-    "$serverNames",
-    "$serverNames[]",
-    "$serverOwner",
-    "$serverRegion",
-    "$serverVerificationLvl",
-    "$setChannelVar",
-    "$setServerVar",
-    "$setUserRoles",
-    "$setUserVar",
-    "$setVar[]",
-    "$shardID",
-    "$slashCommandsCount",
-    "$slashID",
-    "$slowmode",
-    "$sort",
-    "$splitText",
-    "$startThread",
-    "$stop",
-    "$sub",
-    "$sum",
-    "$suppressErrors",
-    "$takeRole",
-    "$textSplit",
-    "$threadAddMember",
-    "$threadRemoveMember",
-    "$thumbnail",
-    "$time",
-    "$timeout",
-    "$title",
-    "$toLowercase",
-    "$toTitleCase",
-    "$toUppercase",
-    "$trimContent",
-    "$try",
-    "$tts",
-    "$unban",
-    "$unbanID",
-    "$unescape",
-    "$unmute",
-    "$unpinMessage",
-    "$unregisterGuildCommands",
-    "$untimeout",
-    "$uptime",
-    "$url",
-    "$useChannel",
-    "$usedEmoji",
-    "$userAvatar",
-    "$userBadges",
-    "$userBannerColor",
-    "$userBanner",
-    "$userExists",
-    "$userID",
-    "$userInfo",
-    "$userJoinedDiscord",
-    "$userJoined",
-    "$userLeaderboard",
-    "$userPerms",
-    "$userReacted",
-    "$userRoles",
-    "$userServerAvatar",
-    "$username",
-    "$varExistError",
-    "$varExists",
-    "$var",
-    "$variablesCount",
-    "$webhookAvatarURL",
-    "$webhookColor",
-    "$webhookContent",
-    "$webhookCreate",
-    "$webhookDelete",
-    "$webhookDescription",
-    "$webhookFooter",
-    "$webhookSend",
-    "$webhookTitle",
-    "$webhookUsername",
-    "$year"
-];
+// applies css to the target
+function styling(type) {
+    let color = ((scheme[type].color & 0xFFFFFF)).toString(16).padStart(6, '0').toUpperCase();
+    let style = fontStyle(scheme[type].style);
+    return `<span style="color: #${color}; ${style}">$&</span>`;
+}
 
-document.getElementsByClassName("bdscript").contentEditable = 'true';
+function fontStyle(style) {
+    switch (style) {
+        case 0:
+            return "font-style: normal; font-weight: normal;";
+        case 1:
+            return "font-style: normal; font-weight: bold;";
+        case 2:
+            return "font-style: italic; font-weight: normal;";
+        case 3:
+            return "font-style: italic; font-weight: bold;";
+    }
+}
 
-for (b = 0; b < cb.length; b++) {
-for (i = 0; i < keys.length; i++) {
-arr = arr.replaceAll(keys[i], '<span style="color: #73FBFF;">' + keys[i] + '</span>');
-};
+function highlight() {
+    const codeBlocks = document.querySelectorAll('pre code');
 
-arr = arr.replaceAll("$nomention", '<span style="color: #FF77F9;">' + "$nomention" + '</span>');
-arr = arr.replaceAll("$c", '<span style="color: #7f7679;">' + "$c" + '</span>');
+    codeBlocks.forEach(codeBlock => {
+        let code = codeBlock.textContent; // innerHTML was fucky
+	
+	// not using replaceAll because this was initially made in es5, already tested on latest es6 though
+        code = code
+            .replace(/\;/g, styling("semicolonHighlight"))
+            .replace(/\[/g, styling("bracketHighlight"))
+            .replace(/\]/g, styling("bracketHighlight"))
+            .replace(/\$[a-zA-Z]*/g, styling("fallbackHighlight")) // lazy static fallback because cors funny
+            .replace(/.*/g, styling("defaultTextHighlight"))
 
-arr = arr.replaceAll("$if", '<span style="color: #A37FFC;">' + "$if" + '</span>');
-arr = arr.replaceAll("$endif", '<span style="color: #A37FFC;">' + "$endif" + '</span>');
-arr = arr.replaceAll("$else", '<span style="color: #A37FFC;">' + "$else" + '</span>');
-arr = arr.replaceAll("$elseif", '<span style="color: #A37FFC;">' + "$elseif" + '</span>');
+        let keys = Object.keys(scheme.functionsHighlights).sort((a, b) => b.length - a.length);
+        keys.forEach(key => {
+            code = code.replace(new RegExp(`\\${key}`, 'g'), functionHighlight(key));
+        });
 
-arr = arr.replaceAll("[", '<span style="color: #FF4C4C;">' + "[" + '</span>');
-arr = arr.replaceAll("]", '<span style="color: #FF4C4C;">' + "]" + '</span>');
-arr = arr.replaceAll("\;/", '<span style="color: #FF484A;">' + ";" + '</span>');
+        codeBlock.innerHTML = code;
+    });
+}
 
-cb[b].innerHTML = arr; 
-try {
-  arr = cb[b + 1].textContent;
-} catch (error) { console.log("highlight success") };
-};
+
+// sample scheme (default bds scheme)
+scheme = {
+   "defaultTextHighlight":{
+      "color":4288341353,
+      "style":0
+   },
+   "fallbackHighlight":{
+      "color":4285791231,
+      "style":0
+   },
+   "bracketHighlight":{
+      "color":4294921292,
+      "style":1
+   },
+   "semicolonHighlight":{
+      "color":4294920266,
+      "style":1
+   },
+   "functionsHighlights":{
+      "$nomention":{
+         "color":4294932473,
+         "style":0
+      },
+      "$catch":{
+         "color":4288905212,
+         "style":0
+      },
+      "$else":{
+         "color":4288905212,
+         "style":0
+      },
+      "$elseif":{
+         "color":4288905212,
+         "style":0
+      },
+      "$endif":{
+         "color":4288905212,
+         "style":0
+      },
+      "$endtry":{
+         "color":4288905212,
+         "style":0
+      },
+      "$error":{
+         "color":4288905212,
+         "style":0
+      },
+      "$if":{
+         "color":4288905212,
+         "style":0
+      },
+      "$try":{
+         "color":4288905212,
+         "style":0
+      }
+   }
+}
+
+
+// triggafinga
+highlight()
