@@ -231,7 +231,7 @@ if (window.playground_copyable) {
 		ev.currentTarget.parentElement.classList.toggle('expanded');
 	}
 
-	sidebarAnchorToggles.forEach(function (el) {
+	sidebarAnchorToggles.forEach((el) => {
 		el.addEventListener('click', toggleSection);
 	});
 
