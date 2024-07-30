@@ -1,7 +1,22 @@
+// Load and parse the JSON file
+fetch('./bdscript-scheme.json')
+  .then(response => response.json())
+  .then(data => {
+    scheme = data;
+    highlight();
+  })
+  .catch(error => console.error('Error loading scheme file:', error));
+
+// ... rest of your code ... 
+
 function functionHighlight(func) {
-    let color = ((scheme.functionsHighlights[func].color & 0xFFFFFF)).toString(16).padStart(6, '0').toUpperCase();
-    let style = fontStyle(scheme.functionsHighlights[func].style);
-    return `<span class="function" style="color: #${color}; ${style}">$&</span>`;
+    if (scheme.functionsHighlights && scheme.functionsHighlights[func]) {
+        let color = ((scheme.functionsHighlights[func].color & 0xFFFFFF)).toString(16).padStart(6, '0').toUpperCase();
+        let style = fontStyle(scheme.functionsHighlights[func].style);
+        return `<span class="function" style="color: #${color}; ${style}">$&</span>`;
+    } else {
+        return func; // Or return a default highlighted version, etc.
+    }
 }
 
 // applies css to the target
@@ -39,16 +54,17 @@ function highlight() {
 
     codeBlocks.forEach(codeBlock => {
         let code = escapeHtml(codeBlock.textContent);
-	
-	// not using replaceAll because this was initially made in es5, already tested on latest es6 though
+
+        // Apply styles (order matters)
         code = code
             .replace(/\;/g, styling("semicolonHighlight"))
             .replace(/\[/g, styling("bracketHighlight"))
             .replace(/\]/g, styling("bracketHighlight"))
-            .replace(/\$[a-zA-Z]*/g, styling("fallbackHighlight"))
-            .replace(/.*/g, styling("defaultTextHighlight"))
+            .replace(/\$[a-zA-Z]*/g, styling("fallbackHighlight")); // Adjust regex if needed
 
-        let keys = Object.keys(scheme.functionsHighlights).sort((a, b) => b.length - a.length);
+        // Highlight functions
+        let keys = Object.keys(scheme.functionsHighlights); 
+        keys.sort((a, b) => a.localeCompare(b)); // Sort alphabetically
         keys.forEach(key => {
             code = code.replace(new RegExp(`\\${key}`, 'g'), functionHighlight(key));
         });
@@ -57,7 +73,3 @@ function highlight() {
         console.log("Highlighted code: " + code);
     });
 }
-
-scheme = './bdscript-scheme.json'
-
-highlight()
