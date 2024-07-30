@@ -59,5 +59,7 @@ function highlight() {
 
 sheme = './bdscript-scheme.json'
 
+hljs.initHighlightingOnLoad();
+hljs.initLineNumbersOnLoad();
 
 highlight()
