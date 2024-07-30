@@ -389,7 +389,7 @@ if (window.playground_copyable) {
 (function scrollToTop() {
 	const menuTitle = document.querySelector('.menu-title');
 
-	menuTitle.addEventListener('click', function () {
+	menuTitle.addEventListener('click', () => {
 		document.scrollingElement.scrollTo({ top: 0, behavior: 'smooth' });
 	});
 })();
