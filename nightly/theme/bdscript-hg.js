@@ -57,9 +57,9 @@ function highlight() {
     });
 }
 
-sheme = './bdscript-scheme.json'
-
 hljs.initHighlightingOnLoad();
 hljs.initLineNumbersOnLoad();
+
+sheme = './bdscript-scheme.json'
 
 highlight()
