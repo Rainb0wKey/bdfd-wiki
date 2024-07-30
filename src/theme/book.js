@@ -216,7 +216,7 @@ if (window.playground_copyable) {
 	function showSidebar() {
 		html.classList.remove('sidebar-hidden')
 		html.classList.add('sidebar-visible');
-		Array.from(sidebarLinks).forEach(function (link) {
+		Array.from(sidebarLinks).forEach((link) => {
 			link.setAttribute('tabIndex', 0);
 		});
 		sidebarToggleButton.setAttribute('aria-expanded', true);
