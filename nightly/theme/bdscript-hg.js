@@ -1,4 +1,4 @@
-let json = require('./bdscript-scheme.json');
+alert(document.baseURI)
 
 function functionHighlight(func) {
     let color = ((scheme.functionsHighlights[func].color & 0xFFFFFF)).toString(16).padStart(6, '0').toUpperCase(); // convert dec to hex
@@ -61,6 +61,6 @@ function highlight() {
 }
 
 
-scheme = json
+scheme = './bdscript-scheme.json'
 
 highlight()
