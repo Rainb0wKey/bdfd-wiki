@@ -20,9 +20,6 @@
         <link rel="stylesheet" href="../../theme/css/general.css">
         <link rel="stylesheet" href="../../theme/css/chrome.css">
         <link rel="stylesheet" href="../../theme/css/print.css" media="print">
-
-        <!-- bdscript -->
-        <script src="../../theme/bdscript-hg.js"></script>
         
         <!-- Discord Components -->
         <script type="module" src="https://unpkg.com/@skyra/discord-components-core"></script>
@@ -188,10 +185,10 @@
 $sendMessage[[ Hi, this is pretty cool\; right? \]]
 </code></pre>
 <discord-messages>
-    <discord-message author="RainbowKey" role-color="#E67E22">
+    <discord-message role-color="#E67E22" author="RainbowKey">
         !example
     </discord-message>
-    <discord-message bot role-color="#378afa" verified author="BDFD Support">
+    <discord-message verified bot author="BDFD Support" role-color="#378afa">
         [ Hi, this is pretty cool; right? ]
     </discord-message>
 </discord-messages>
@@ -242,5 +239,8 @@ $sendMessage[[ Hi, this is pretty cool\; right? \]]
         <!-- Custom JS scripts -->
 
 
+        <!-- bdscript -->
+        <script src="../../theme/bdscript-hg.js"></script>
+        
     </body>
 </html>

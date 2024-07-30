@@ -20,9 +20,6 @@
         <link rel="stylesheet" href="../theme/css/general.css">
         <link rel="stylesheet" href="../theme/css/chrome.css">
         <link rel="stylesheet" href="../theme/css/print.css" media="print">
-
-        <!-- bdscript -->
-        <script src="../theme/bdscript-hg.js"></script>
         
         <!-- Discord Components -->
         <script type="module" src="https://unpkg.com/@skyra/discord-components-core"></script>
@@ -206,7 +203,7 @@
     <discord-system-message type="join">
         Welcome <font color="white">Nicky</font>. Say hi!
     </discord-system-message>
-    <discord-message verified bot highlight author="Wiki Bot" role-color="#748BD4">
+    <discord-message bot highlight role-color="#748BD4" verified author="Wiki Bot">
         <discord-mention>Nicky</discord-mention>, welcome to Cool Server!
     </discord-message>
 </discord-messages>
@@ -317,5 +314,8 @@ $setServerVar[welcome;$mentionedChannels[1]]
         <!-- Custom JS scripts -->
 
 
+        <!-- bdscript -->
+        <script src="../theme/bdscript-hg.js"></script>
+        
     </body>
 </html>

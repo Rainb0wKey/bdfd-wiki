@@ -20,9 +20,6 @@
         <link rel="stylesheet" href="../../theme/css/general.css">
         <link rel="stylesheet" href="../../theme/css/chrome.css">
         <link rel="stylesheet" href="../../theme/css/print.css" media="print">
-
-        <!-- bdscript -->
-        <script src="../../theme/bdscript-hg.js"></script>
         
         <!-- Discord Components -->
         <script type="module" src="https://unpkg.com/@skyra/discord-components-core"></script>
@@ -206,13 +203,13 @@ $awaitFunc[say]
     <discord-message author="RainbowKey" role-color="#E67E22">
         !example
     </discord-message>
-    <discord-message bot role-color="#378afa" author="BDFD Support" verified>
+    <discord-message verified role-color="#378afa" author="BDFD Support" bot>
         What do you want me to say?
     </discord-message>
-    <discord-message author="RainbowKey" role-color="#E67E22">
+    <discord-message role-color="#E67E22" author="RainbowKey">
         I love BDFD
     </discord-message>
-    <discord-message verified role-color="#378afa" author="BDFD Support" bot>
+    <discord-message author="BDFD Support" verified role-color="#378afa" bot>
         I love BDFD
     </discord-message>
 </discord-messages>
@@ -237,13 +234,13 @@ $message
     <discord-message author="RainbowKey" role-color="#E67E22">
         !example
     </discord-message>
-    <discord-message author="BDFD Support" verified bot role-color="#378afa">
+    <discord-message author="BDFD Support" role-color="#378afa" verified bot>
         What do you want me to say?
     </discord-message>
     <discord-message author="RainbowKey" role-color="#E67E22">
         I love BDFD
     </discord-message>
-    <discord-message author="BDFD Support" bot role-color="#378afa" verified>
+    <discord-message bot verified author="BDFD Support" role-color="#378afa">
         I love BDFD
     </discord-message>
 </discord-messages>
@@ -389,5 +386,8 @@ You have provided a number: $message
         <!-- Custom JS scripts -->
 
 
+        <!-- bdscript -->
+        <script src="../../theme/bdscript-hg.js"></script>
+        
     </body>
 </html>

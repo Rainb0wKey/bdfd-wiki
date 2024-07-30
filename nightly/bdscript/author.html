@@ -20,9 +20,6 @@
         <link rel="stylesheet" href="../theme/css/general.css">
         <link rel="stylesheet" href="../theme/css/chrome.css">
         <link rel="stylesheet" href="../theme/css/print.css" media="print">
-
-        <!-- bdscript -->
-        <script src="../theme/bdscript-hg.js"></script>
         
         <!-- Discord Components -->
         <script type="module" src="https://unpkg.com/@skyra/discord-components-core"></script>
@@ -189,7 +186,7 @@ $author[This is the author text!]
     <discord-message author="Nicky" role-color="#EE7908">
         !author
     </discord-message>
-    <discord-message role-color="#748BD4" author="Wiki Bot" bot verified>
+    <discord-message verified role-color="#748BD4" bot author="Wiki Bot">
         <discord-embed slot="embeds" author-name="This is the author text!">
         </discord-embed>
     </discord-message>
@@ -241,5 +238,8 @@ $author[This is the author text!]
         <!-- Custom JS scripts -->
 
 
+        <!-- bdscript -->
+        <script src="../theme/bdscript-hg.js"></script>
+        
     </body>
 </html>
