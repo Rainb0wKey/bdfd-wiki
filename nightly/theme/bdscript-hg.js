@@ -58,6 +58,6 @@ function highlight() {
     });
 }
 
-scheme = bdscript-scheme.json
+scheme = './bdscript-scheme.json'
 
 highlight()
