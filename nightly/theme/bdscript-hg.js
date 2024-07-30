@@ -1,22 +1,9 @@
-// Load and parse the JSON file
-fetch('./bdscript-scheme.json')
-  .then(response => response.json())
-  .then(data => {
-    scheme = data;
-    highlight();
-  })
-  .catch(error => console.error('Error loading scheme file:', error));
-
-// ... rest of your code ... 
+let json = require('./bdscript-scheme.json');
 
 function functionHighlight(func) {
-    if (scheme.functionsHighlights && scheme.functionsHighlights[func]) {
-        let color = ((scheme.functionsHighlights[func].color & 0xFFFFFF)).toString(16).padStart(6, '0').toUpperCase();
-        let style = fontStyle(scheme.functionsHighlights[func].style);
-        return `<span class="function" style="color: #${color}; ${style}">$&</span>`;
-    } else {
-        return func; // Or return a default highlighted version, etc.
-    }
+    let color = ((scheme.functionsHighlights[func].color & 0xFFFFFF)).toString(16).padStart(6, '0').toUpperCase(); // convert dec to hex
+    let style = fontStyle(scheme.functionsHighlights[func].style);
+    return `<span class="function" style="color: #${color}; ${style}">$&</span>`;
 }
 
 // applies css to the target
@@ -53,18 +40,17 @@ function highlight() {
     const codeBlocks = document.querySelectorAll('pre code');
 
     codeBlocks.forEach(codeBlock => {
-        let code = escapeHtml(codeBlock.textContent);
-
-        // Apply styles (order matters)
+        let code = escapeHtml(codeBlock.textContent); // innerHTML was fucky
+	
+	// not using replaceAll because this was initially made in es5, already tested on latest es6 though
         code = code
             .replace(/\;/g, styling("semicolonHighlight"))
             .replace(/\[/g, styling("bracketHighlight"))
             .replace(/\]/g, styling("bracketHighlight"))
-            .replace(/\$[a-zA-Z]*/g, styling("fallbackHighlight")); // Adjust regex if needed
+            .replace(/\$[a-zA-Z]*/g, styling("fallbackHighlight"))
+            .replace(/.*/g, styling("defaultTextHighlight"))
 
-        // Highlight functions
-        let keys = Object.keys(scheme.functionsHighlights); 
-        keys.sort((a, b) => a.localeCompare(b)); // Sort alphabetically
+        let keys = Object.keys(scheme.functionsHighlights).sort((a, b) => b.length - a.length);
         keys.forEach(key => {
             code = code.replace(new RegExp(`\\${key}`, 'g'), functionHighlight(key));
         });
@@ -73,3 +59,8 @@ function highlight() {
         console.log("Highlighted code: " + code);
     });
 }
+
+
+scheme = json
+
+highlight()
