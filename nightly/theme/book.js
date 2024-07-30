@@ -37,7 +37,7 @@ if (window.playground_copyable) {
 			wrapButton.setAttribute('aria-label', wrapButton.title);
 
 			const disableButton = document.createElement('button');
-			disableButton.className = 'fa-regular fa-eye-slash disable-button';
+			disableButton.className = 'fa-solid fa-text-slash disable-button';
 			disableButton.title = 'Disable highlighting'
 			disableButton.setAttribute('aria-label', disableButton.title);
 
