@@ -24,6 +24,9 @@
         <!-- Discord Components -->
         <script type="module" src="https://unpkg.com/@skyra/discord-components-core"></script>
 
+        <!-- 404  -->
+        <script src="../404.md"></script>
+        
         <!-- Fonts -->
         <link rel="stylesheet" href="../FontAwesome/css/font-awesome.css">
         <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800">
@@ -197,7 +200,7 @@ $addField[The field name 3!;The field value 3!]
     <discord-message role-color="#EE7908" author="Nicky">
         !example
     </discord-message>
-    <discord-message author="Wiki Bot" role-color="#748BD4" bot verified>
+    <discord-message bot verified author="Wiki Bot" role-color="#748BD4">
         <none>
         <discord-embed slot="embeds">
             <discord-embed-fields slot="fields">
@@ -224,17 +227,17 @@ $addField[The field name 3!;The field value 3!;yes]
     <discord-message author="Nicky" role-color="#EE7908">
         !example
     </discord-message>
-    <discord-message role-color="#748BD4" bot author="Wiki Bot" verified>
+    <discord-message role-color="#748BD4" verified author="Wiki Bot" bot>
         <none>
         <discord-embed slot="embeds">
             <discord-embed-fields slot="fields">
-                <discord-embed-field field-title="The field name 1!" inline-index="1" inline>
+                <discord-embed-field inline inline-index="1" field-title="The field name 1!">
                     The field value 1!
                 </discord-embed-field>
-                <discord-embed-field inline inline-index="2" field-title="The field name 2!">
+                <discord-embed-field field-title="The field name 2!" inline inline-index="2">
                     The field value 2!
                 </discord-embed-field>
-                <discord-embed-field inline inline-index="3" field-title="The field name 3!">
+                <discord-embed-field inline field-title="The field name 3!" inline-index="3">
                     The field value 3!
                 </discord-embed-field>
             </discord-embed-fields>

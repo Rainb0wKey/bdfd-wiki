@@ -24,6 +24,9 @@
         <!-- Discord Components -->
         <script type="module" src="https://unpkg.com/@skyra/discord-components-core"></script>
 
+        <!-- 404  -->
+        <script src="../404.md"></script>
+        
         <!-- Fonts -->
         <link rel="stylesheet" href="../FontAwesome/css/font-awesome.css">
         <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800">
@@ -186,10 +189,10 @@ $channelType[$channelID]
 </code></pre>
 <p><strong>Text Channel</strong></p>
 <discord-messages>
-    <discord-message role-color="#EE7908" author="Nicky">
+    <discord-message author="Nicky" role-color="#EE7908">
         !channelType
     </discord-message>
-    <discord-message author="Wiki Bot" verified role-color="#748BD4" bot>
+    <discord-message author="Wiki Bot" role-color="#748BD4" bot verified>
         text
     </discord-message>
 </discord-messages>
@@ -198,7 +201,7 @@ $channelType[$channelID]
     <discord-message author="Nicky">
         !channelType
     </discord-message>
-    <discord-message author="Wiki Bot" bot verified>
+    <discord-message verified author="Wiki Bot" bot>
         dm
     </discord-message>
 </discord-messages>
