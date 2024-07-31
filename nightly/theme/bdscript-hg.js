@@ -1,4 +1,4 @@
-import { scheme } require('./theme/bdscript-scheme.json');
+import { scheme } require('./bdscript-scheme.json');
 
 function functionHighlight(func) {
     let color = ((scheme.functionsHighlights[func].color & 0xFFFFFF)).toString(16).padStart(6, '0').toUpperCase(); // convert dec to hex
