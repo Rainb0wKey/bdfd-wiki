@@ -1,5 +1,3 @@
-import { scheme } require('./src/theme/bdscript-scheme.json');
-
 function functionHighlight(func) {
     let color = ((scheme.functionsHighlights[func].color & 0xFFFFFF)).toString(16).padStart(6, '0').toUpperCase(); // convert dec to hex
     let style = fontStyle(scheme.functionsHighlights[func].style);
@@ -62,7 +60,62 @@ function highlight() {
 
 
 // sample scheme (default bds scheme)
-scheme = scheme
+scheme = {
+   "defaultTextHighlight":{
+      "color":4288341353,
+      "style":0
+   },
+   "fallbackHighlight":{
+      "color":4285791231,
+      "style":0
+   },
+   "bracketHighlight":{
+      "color":4294921292,
+      "style":1
+   },
+   "semicolonHighlight":{
+      "color":4294920266,
+      "style":1
+   },
+   "functionsHighlights":{
+      "$nomention":{
+         "color":4294932473,
+         "style":0
+      },
+      "$catch":{
+         "color":4288905212,
+         "style":0
+      },
+      "$else":{
+         "color":4288905212,
+         "style":0
+      },
+      "$elseif":{
+         "color":4288905212,
+         "style":0
+      },
+      "$endif":{
+         "color":4288905212,
+         "style":0
+      },
+      "$endtry":{
+         "color":4288905212,
+         "style":0
+      },
+      "$error":{
+         "color":4288905212,
+         "style":0
+      },
+      "$if":{
+         "color":4288905212,
+         "style":0
+      },
+      "$try":{
+         "color":4288905212,
+         "style":0
+      }
+   }
+}
 
 
 // triggafinga
