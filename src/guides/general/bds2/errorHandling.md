@@ -1,11 +1,98 @@
 # Error Handling
-In BDScript 2 you can handle errors returned by functions or limiters (such as `$cooldown[]` or `$onlyIf[]`).
+In this section, you’ll learn how to use the error handling.
 
-## Error Handling Functions
-### $try
-Used to open the Error Handling block.
-### $endtry
-Used to close the Error Handling block.
+```admonish danger title="BDScript 2"
+You must use **BDScript 2** for the functions to work correctly.
+```
+
+## Content
+
+## Functions Used
+- [`$try`](../../../bdscript/try.md)
+- [`$endtry`](../../../bdscript/endtry.md)
+- [`$catch`](../../../bdscript/catch.md)
+- [`$error[]`](../../../bdscript/error.md)
+
+# $try
+Opens the Error Handling block.
+
+## Syntax
+```
+$try
+```
+
+## Example
+- Let's create 3 commannds with different triggers: `!example`, `!test` and `!bot`.
+
+Command code for `!example` trigger:
+```
+$nomention
+$try
+$sum[2;a]
+$endtry
+```
+
+Command code for `!test` trigger:
+```
+$nomention
+$try
+$sum[2;2]
+$edntry
+```
+
+```admonish question title="What is this?"
+How [`$sum[]`](../../../bdscript/sum.md) works? The explanation of how [`$endtry`](#endtry) works will be given below.
+```
+
+Command code for `!bot` trigger:
+```
+$nomention
+$sum[2;a]
+```
+
+Now let's run each command:
+
+```discord yaml
+- user_id: 803569638084313098
+  username: RainbowKey
+  color: "#E67E22"
+  content: |
+    !example
+- user_id: 803569638084313098
+  username: RainbowKey
+  color: "#E67E22"
+  content: |
+    !test
+- user_id: 1009018156494368798
+  username: BDFD Support
+  color: "#378afa"
+  bot: true
+  verified: true
+  content: |
+    4
+- user_id: 803569638084313098
+  username: RainbowKey
+  color: "#E67E22"
+  content: |
+    !bot
+- user_id: 1009018156494368798
+  username: BDFD Support
+  color: "#378afa"
+  bot: true
+  verified: true
+  content: |
+    ❌ Function <code>$sum</code> at <code>2:9</code> returned an error: expected integer in position 2, got 'a'
+```
+
+As you can see only `!test` command returned a response, but why?
+
+```dmonish abstract title="Explanation"
+`$try` executes all the code (from top to bottom and from left to right) in its block and stops execution if it encounters an error.
+```
+
+# $endtry
+Soon...
+
 ### $catch
 Used to create a sub-block between `$try` and `$endtry` that will contain the code that will be executed when an error occurs.
 ### $error[]
