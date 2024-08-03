@@ -6,6 +6,7 @@ You must use **BDScript 2** for the functions to work correctly.
 ```
 
 ## Content
+[**Functions Used**](#functions-used) > [**$try**](#try) > [**$endtry**](#endtry) > [**$catch**](#catch) > [**$error[]**](#error) > [**Create BDScript custom error**](#create-bdscript-custom-error) > [**Create custom error for function**](#create-custom-error-for-function)
 
 ## Functions Used
 - [`$try`](../../../bdscript/try.md)
@@ -255,7 +256,9 @@ $endtry
 How [`$description[]`](../../../bdscript/description.md) works?
 ```
 
-# Create custom error
+# Create BDScript custom error
+With `$error[]` you can create custom error for code!
+
 ```
 $nomention
 $try
@@ -307,34 +310,56 @@ $endtry
        🔍 $sum[2;]
 ```
 
-### Limiter Error
-As a way to use Error Handling with Limiter Errors, we'll use `$cooldown[]`. With the help of Error Handling, we can make a nice cooldown error message.
+# Create custom error for function
+With error handling you can embed an error for...\
+**Cooldown functions**: [`$serverCooldown[]`](../../../bdscript/serverCooldown.md), [`$globalCooldown[]`](../../../bdscript/globalCooldown.md), [`$cooldown[]`](../../../bdscript/cooldown.md);\
+**"Only If" Functions**: [`$onlyAdmin[]`](../../../bdscript/onlyAdmin.md), [`$onlyIf[]`](../../../bdscript/onlyIf.md) and other simillar "Only If" functions...;\
+**Enabled function**: [`$enabled[]`](../../../bdscript/enabled.md).
 
-To handle only the error of our limiter, we will use a [temporary variable](../../../bdscript/var.md) and [if statements](../ifStatements.md).
-If `$cooldown[]` returns an error, the value of the temporary variable will be set to `true` (in which case our nice error message will be sent).
-
-> **Note**: The `error message` argument in `$cooldown[]` must be left blank.
+-**Let's create embed error for `$coodlwon[]` function:**
 
 ```
 $nomention
-
-$var[cooldownError;false]
-
 $try
-  $cooldown[3m;]
+  $cooldown[5m;]
+  Hey, are you making an example for the guide?
 $catch
-  $var[cooldownError;true]
+  $description[⏱️ You have a cooldown! Wait $getCooldown[normal] seconds.]
 $endtry
-
-$if[$var[cooldownError]==false]
-Hey $username, are you making an example for the guide?
-$else
-$color[E74C3C]
-$author[Oops, $username!]
-$authorIcon[$authorAvatar]
-$title[You have a cooldown!]
-$description[Come back <t:$sum[$getTimestamp;$getCooldown[normal]]:R>.]
-$endif
 ```
-![Limiter Error](https://user-images.githubusercontent.com/70456337/194721773-c9487fd5-89de-4d4d-8296-a56150b94db7.png)
-![Limiter Error](https://user-images.githubusercontent.com/70456337/194721785-cbbd2936-033b-4e0b-b554-6af8b3325c38.png)
+
+```discord yaml
+- user_id: 803569638084313098
+  username: RainbowKey
+  color: "#E67E22"
+  content: |
+    !example
+- user_id: 1009018156494368798
+  username: BDFD Support
+  color: "#378afa"
+  bot: true
+  verified: true
+  content: |
+    Hey, are you making an example for the guide?
+- user_id: 803569638084313098
+  username: RainbowKey
+  color: "#E67E22"
+  content: |
+    !example
+- user_id: 1009018156494368798
+  username: BDFD Support
+  color: "#378afa"
+  bot: true
+  verified: true
+  embed: 
+    description: |
+      ⏱️ You have a cooldown! Wait 290 seconds.
+  ```
+
+```admonish question title="What is this?"
+How [`$cooldown[]`](../../../bdscript/cooldown.md) and [`$getCooldown[]`](../../../bdscript/getCooldown.md) works?
+```
+
+```admonish danger title="BDScript 2"
+Don't forget to choose **BDScript 2** when using the [Error Handling functions](#functions-used)!
+```
