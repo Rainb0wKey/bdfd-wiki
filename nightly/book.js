@@ -37,7 +37,7 @@ if (window.playground_copyable) {
 			wrapButton.setAttribute('aria-label', wrapButton.title);
 
 			const syntaxButton = document.createElement('button');
-			syntaxButton.className = 'fa-solid fa-bold syntax-button';
+			syntaxButton.className = 'fa fa-bold syntax-button';
 			syntaxButton.title = 'Syntax code'
 			syntaxButton.setAttribute('aria-label', syntaxButton.title);
 
