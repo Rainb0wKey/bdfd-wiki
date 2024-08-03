@@ -271,6 +271,12 @@ pre > .result {
     margin-top: 10px;
 }
 
+.nostyle {
+    color: inherit !important;
+    font-weight: inherit !important;
+    font-style: normal !important;
+}
+
 /* Search */
 
 #searchresults a {
