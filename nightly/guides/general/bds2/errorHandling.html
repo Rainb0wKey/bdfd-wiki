@@ -237,20 +237,20 @@ $sum[2;a]
     <discord-message author="RainbowKey" role-color="#E67E22">
         !test
     </discord-message>
-    <discord-message bot author="BDFD Support" verified role-color="#378afa">
+    <discord-message verified bot role-color="#378afa" author="BDFD Support">
         4
     </discord-message>
     <discord-message author="RainbowKey" role-color="#E67E22">
         !bot
     </discord-message>
-    <discord-message verified bot author="BDFD Support" role-color="#378afa">
+    <discord-message role-color="#378afa" bot verified author="BDFD Support">
         ❌ Function <code>$sum</code> at <code>2:9</code> returned an error: expected integer in position 2, got 'a'
     </discord-message>
 </discord-messages>
 <p>As you can see only <code>!test</code> command returned a response, but why?</p>
-<pre><code class="language-dmonish abstract title=&quot;Explanation&quot;">`$try` executes all the code (from top to bottom and from left to right) in its block and stops execution if it encounters an error.
+<pre><code class="language-dmonish abstract title=&quot;Explanation&quot;">Error Handling ($try) executes all the code (from top to bottom and from left to right) in its block and stops execution if it encounters an error.
 </code></pre>
-<pre><code class="language-dmonish danger title=&quot;Need to know&quot;">`$try` block does not support some errors. For example not closed bracket in the function.
+<pre><code class="language-dmonish danger title=&quot;Need to know&quot;">Error Handling  Han does not support some errors. For example not closed bracket in the function.
 </code></pre>
 <h1 id="endtry"><a class="header" href="#endtry">$endtry</a></h1>
 <p>Closes the Error Handling block.</p>
@@ -267,10 +267,10 @@ $endtry
 <li>With <code>$endtry</code>:</li>
 </ul>
 <discord-messages>
-    <discord-message role-color="#E67E22" author="RainbowKey">
+    <discord-message author="RainbowKey" role-color="#E67E22">
         !example
     </discord-message>
-    <discord-message author="BDFD Support" verified role-color="#378afa" bot>
+    <discord-message author="BDFD Support" role-color="#378afa" bot verified>
         4
     </discord-message>
 </discord-messages>
@@ -281,7 +281,7 @@ $endtry
     <discord-message author="RainbowKey" role-color="#E67E22">
         !example
     </discord-message>
-    <discord-message role-color="#378afa" verified bot author="BDFD Support">
+    <discord-message bot verified author="BDFD Support" role-color="#378afa">
         <code>$try</code> not closed with <code>$endtry</code> or invalid use of <code>$sum</code>
     </discord-message>
 </discord-messages>
@@ -299,16 +299,16 @@ $catch
 $endtry
 </code></pre>
 <discord-messages>
-    <discord-message author="RainbowKey" role-color="#E67E22">
+    <discord-message role-color="#E67E22" author="RainbowKey">
         !example a
     </discord-message>
-    <discord-message author="BDFD Support" bot verified role-color="#378afa">
+    <discord-message verified bot author="BDFD Support" role-color="#378afa">
         ❌ Invalid number!
     </discord-message>
     <discord-message role-color="#E67E22" author="RainbowKey">
         !example 6
     </discord-message>
-    <discord-message author="BDFD Support" bot verified role-color="#378afa">
+    <discord-message role-color="#378afa" bot verified author="BDFD Support">
         8
     </discord-message>
 </discord-messages>
@@ -371,7 +371,7 @@ $endtry
     <discord-message author="RainbowKey" role-color="#E67E22">
         !example a
     </discord-message>
-    <discord-message bot author="BDFD Support" verified role-color="#378afa">
+    <discord-message verified author="BDFD Support" bot role-color="#378afa">
         ❌ An error has occurred!<br />Function: $description<br />Error: expected valid value in position 2, got empty value
     </discord-message>
 </discord-messages>
@@ -400,7 +400,7 @@ $catch
 $endtry
 </code></pre>
 <discord-messages>
-    <discord-message author="RainbowKey" role-color="#E67E22">
+    <discord-message role-color="#E67E22" author="RainbowKey">
         !example 100
     </discord-message>
     <discord-message author="BDFD Support" bot verified role-color="#378afa">
@@ -409,7 +409,7 @@ $endtry
     <discord-message role-color="#E67E22" author="RainbowKey">
         !example a
     </discord-message>
-    <discord-message role-color="#378afa" bot author="BDFD Support" verified>
+    <discord-message role-color="#378afa" verified bot author="BDFD Support">
         <discord-embed slot="embeds" embed-title="Error!
 ">
             <discord-embed-description slot="description">
@@ -446,13 +446,13 @@ $endtry
     <discord-message role-color="#E67E22" author="RainbowKey">
         !example
     </discord-message>
-    <discord-message bot verified author="BDFD Support" role-color="#378afa">
+    <discord-message role-color="#378afa" author="BDFD Support" bot verified>
         Hey, are you making an example for the guide?
     </discord-message>
-    <discord-message author="RainbowKey" role-color="#E67E22">
+    <discord-message role-color="#E67E22" author="RainbowKey">
         !example
     </discord-message>
-    <discord-message bot author="BDFD Support" verified role-color="#378afa">
+    <discord-message bot author="BDFD Support" role-color="#378afa" verified>
         <discord-embed slot="embeds">
             <discord-embed-description slot="description">
                 ⏱️ You have a cooldown! Wait 290 seconds.
