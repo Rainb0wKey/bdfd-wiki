@@ -181,16 +181,17 @@
 </code></pre>
 <h2 id="example"><a class="header" href="#example">Example</a></h2>
 <pre><code>$nomention
-Today Is: $day
+Current Day: $day
 </code></pre>
 <discord-messages>
-    <discord-message role-color="#EE7908" author="Nicky">
+    <discord-message author="Nicky" role-color="#EE7908">
         !example
     </discord-message>
-    <discord-message bot author="Wiki Bot" role-color="#748BD4">
-        Today Is: 22
+    <discord-message bot role-color="#748BD4" author="Wiki Bot">
+        <div id="day-mark"></div>
     </discord-message>
 </discord-messages>
+<script src="../theme/livetime.js"></script>
 
                     </main>
 
