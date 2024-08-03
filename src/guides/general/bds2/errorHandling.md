@@ -28,7 +28,7 @@ Command code for `!example` trigger:
 ```
 $nomention
 $try
-$sum[2;a]
+  $sum[2;a]
 $endtry
 ```
 
@@ -36,7 +36,7 @@ Command code for `!test` trigger:
 ```
 $nomention
 $try
-$sum[2;2]
+  $sum[2;2]
 $edntry
 ```
 
@@ -90,37 +90,169 @@ As you can see only `!test` command returned a response, but why?
 `$try` executes all the code (from top to bottom and from left to right) in its block and stops execution if it encounters an error.
 ```
 
-# $endtry
-Soon...
-
-### $catch
-Used to create a sub-block between `$try` and `$endtry` that will contain the code that will be executed when an error occurs.
-### $error[]
-Used in the `$catch` block to return error information.
-#### Possible Arguments
-- `command` - returns the name of the function that returned the error.
-- `message` - returns the error message that was received.
-- `source` - returns the content of the line where the error occurred.
-- `row` - returns the number of the row in the code where the error occurred.
-- `column` - returns the number of the column in the code where the error occurred.
-
-## Examples
-### Function Error
+```dmonish danger title="Need to know"
+`$try` block does not support some errors. For example not closed bracket in the function.
 ```
-$nomention
 
-$try
-  $color[FFFFFF]
-  $title[Hi]
-  $description[Some broken code;]
-$catch
-  $color[E74C3C]
-  $title[Error Handling]
-  $addField[Function:;$error[command]]
-  $addField[Error:;$error[message]]
+# $endtry
+Closes the Error Handling block.
+
+## Syntax
+```
 $endtry
 ```
-![Function Error](https://user-images.githubusercontent.com/70456337/194721708-b8062ac5-7ef3-48af-b412-1d66381add44.png)
+
+## Example
+```
+$nomention
+$try
+  $sum[2;2]
+$endtry
+```
+
+- With `$endtry`:
+```discord yaml
+- user_id: 803569638084313098
+  username: RainbowKey
+  color: "#E67E22"
+  content: |
+    !example
+- user_id: 1009018156494368798
+  username: BDFD Support
+  color: "#378afa"
+  bot: true
+  verified: true
+  content: |
+    4
+```
+
+- Without `$endtry`:
+```discord yaml
+- user_id: 803569638084313098
+  username: RainbowKey
+  color: "#E67E22"
+  content: |
+    !example
+- user_id: 1009018156494368798
+  username: BDFD Support
+  color: "#378afa"
+  bot: true
+  verified: true
+  content: |
+    <code>$try</code> not closed with <code>$endtry</code> or invalid use of <code>$sum</code>
+```
+
+# $catch
+Used to create a sub-block between `$try` and `$endtry` that will contain the code that will be executed when an error occurs.
+
+## Syntax
+```
+$catch
+```
+
+## Example
+```
+$nomention
+$try
+  $sum[2;$message]
+$catch
+  ❌ Invalid number!
+$endtry
+```
+
+```discord yaml
+- user_id: 803569638084313098
+  username: RainbowKey
+  color: "#E67E22"
+  content: |
+    !example a
+- user_id: 1009018156494368798
+  username: BDFD Support
+  color: "#378afa"
+  bot: true
+  verified: true
+  content: |
+    ❌ Invalid number!
+- user_id: 803569638084313098
+  username: RainbowKey
+  color: "#E67E22"
+  content: |
+    !example 6
+- user_id: 1009018156494368798
+  username: BDFD Support
+  color: "#378afa"
+  bot: true
+  verified: true
+  content: |
+    8
+```
+
+```admonish question title="What is this?"
+How [`$message`](../../../bdscript/message.md) works?
+```
+
+# $error
+Used in the `$catch` block to return the BDScript 2 error information.
+
+## Syntax
+```
+$error[Type]
+```
+
+## Parameters
+- `Type` `(Type: Enum || Flag: Required)`: What type of error data to return.
+
+### Error Type
+| Name | Description | Response example
+| `command` | Returns the name of the function that returned the error. | $sum
+| `message` | Returns the error message that was received. | expected integer in position 2, got 'a'
+| `source` | Returns the content of the line where the error occurred. | $sum[2;a]
+| `row` | Returns the number of the row in the code where the error occurred. | 2
+| `column` | Returns the number of the column in the code where the error occurred. | 10
+
+~~~admonish warning title="Syntax sensitivity"
+The type input must only be written in lowercase letters.
+❌ Not correct:
+```
+$error[ROW]
+```
+✅ Correct:
+```
+$error[row]
+```
+~~~
+
+## Example
+```
+$nomention
+$try
+  $description[Hello developer!;]
+$catch
+❌ An error has occurred!
+Function: $error[command]
+Error: $error[message]
+$endtry
+```
+
+```admonish question title="What is this?"
+How [`$description[]`](../../../bdscript/description.md) works?
+```
+
+# Create custom error
+```
+$nomention
+$try
+  $try[2;$message]
+$catch
+  $title[Error!]
+  $description[🚧 Description:
+```$error[message]```]
+  $addField[Location;Row: `$error[row]` | Column: `$error[column]`]
+  $footer[🔍 $error[source]]
+$endtry
+```
+
+
 ### Limiter Error
 As a way to use Error Handling with Limiter Errors, we'll use `$cooldown[]`. With the help of Error Handling, we can make a nice cooldown error message.
 
