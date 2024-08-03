@@ -393,14 +393,17 @@ if (window.playground_copyable) {
 })();
 
 (function syntax() {
-	const syntaxButtons = document.querySelectorAll(".syntax-button");
-	syntaxButtons.forEach((hgButton) => {
-		hgButton.addEventListener('click', (e) => {
-			const playground = hgButton.closest("pre");
-			const codeBlock = playground.querySelector("code");
-			codeBlock.classList.toggle('nostyle');
-		});
-	});
+    const syntaxButtons = document.querySelectorAll(".syntax-button");
+    syntaxButtons.forEach((hgButton) => {
+        hgButton.addEventListener('click', (e) => {
+            const playground = hgButton.closest("pre");
+            const codeBlock = playground.querySelector("code");
+            const spans = codeBlock.querySelectorAll("span"); 
+            spans.forEach((span) => {
+                span.classList.toggle('nostyle');
+            });
+        });
+    });
 })();
 
 (function scrollToTop() {
