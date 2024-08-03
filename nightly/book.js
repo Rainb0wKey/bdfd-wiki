@@ -216,7 +216,7 @@ if (window.playground_copyable) {
 	function showSidebar() {
 		html.classList.remove('sidebar-hidden')
 		html.classList.add('sidebar-visible');
-		Array.from(sidebarLinks).forEach(function (link) {
+		Array.from(sidebarLinks).forEach((link) => {
 			link.setAttribute('tabIndex', 0);
 		});
 		sidebarToggleButton.setAttribute('aria-expanded', true);
@@ -231,7 +231,7 @@ if (window.playground_copyable) {
 		ev.currentTarget.parentElement.classList.toggle('expanded');
 	}
 
-	sidebarAnchorToggles.forEach(function (el) {
+	sidebarAnchorToggles.forEach((el) => {
 		el.addEventListener('click', toggleSection);
 	});
 
@@ -377,8 +377,11 @@ if (window.playground_copyable) {
 		button.addEventListener('click', (e) => {
 			const playground = button.closest("pre");
 			const codeBlock = playground.querySelector("code");
-			if (!codeBlock.style.textWrap || codeBlock.style.textWrap === 'nowrap') codeBlock.style.textWrap = 'wrap';
-			else codeBlock.style.textWrap = 'nowrap';
+			if (!codeBlock.style.textWrap || codeBlock.style.textWrap === 'nowrap') {
+			    codeBlock.style.textWrap = 'wrap';
+			} else {
+			    codeBlock.style.textWrap = 'nowrap';
+			}
 		});
 	});
 })();
@@ -386,7 +389,7 @@ if (window.playground_copyable) {
 (function scrollToTop() {
 	const menuTitle = document.querySelector('.menu-title');
 
-	menuTitle.addEventListener('click', function () {
+	menuTitle.addEventListener('click', () => {
 		document.scrollingElement.scrollTo({ top: 0, behavior: 'smooth' });
 	});
 })();
