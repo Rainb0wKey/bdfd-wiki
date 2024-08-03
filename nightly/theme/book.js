@@ -36,8 +36,14 @@ if (window.playground_copyable) {
 			wrapButton.title = 'Wrap code'
 			wrapButton.setAttribute('aria-label', wrapButton.title);
 
+			const syntaxButton = document.createElement('button');
+			syntaxButton.className = 'fa-solid fa-text-slash syntax-button';
+			syntaxButton.title = 'Syntax code'
+			syntaxButton.setAttribute('aria-label', syntaxButton.title);
+
 			buttons.insertBefore(clipButton, buttons.firstChild);
 			buttons.insertBefore(wrapButton, buttons.firstChild);
+			buttons.insertBefore(syntaxButton, buttons.firstChild);
 		}
 	});
 }
@@ -382,6 +388,17 @@ if (window.playground_copyable) {
 			} else {
 			    codeBlock.style.textWrap = 'nowrap';
 			}
+		});
+	});
+})();
+
+(function syntax() {
+	const syntaxButtons = document.querySelectorAll(".syntax-button");
+	syntaxButtons.forEach((hgButton) => {
+		hgButton.addEventListener('click', (e) => {
+			const playground = hgButton.closest("pre");
+			const codeBlock = playground.querySelector("code");
+			codeBlock.classList.toggle('nostyle');
 		});
 	});
 })();
