@@ -234,6 +234,23 @@ Error: $error[message]
 $endtry
 ```
 
+```discord yaml
+- user_id: 803569638084313098
+  username: RainbowKey
+  color: "#E67E22"
+  content: |
+    !example a
+- user_id: 1009018156494368798
+  username: BDFD Support
+  color: "#378afa"
+  bot: true
+  verified: true
+  content: |
+    ❌ An error has occurred!
+    Function: $description
+    Error: expected valid value in position 2, got empty value
+```
+
 ```admonish question title="What is this?"
 How [`$description[]`](../../../bdscript/description.md) works?
 ```
@@ -242,7 +259,7 @@ How [`$description[]`](../../../bdscript/description.md) works?
 ```
 $nomention
 $try
-  $try[2;$message]
+  $sum[2;$message]
 $catch
   $title[Error!]
   $description[🚧 Description:
@@ -252,6 +269,43 @@ $catch
 $endtry
 ```
 
+```discord yaml
+- user_id: 803569638084313098
+  username: RainbowKey
+  color: "#E67E22"
+  content: |
+    !example 100
+- user_id: 1009018156494368798
+  username: BDFD Support
+  color: "#378afa"
+  bot: true
+  verified: true
+  content: |
+    102
+- user_id: 803569638084313098
+  username: RainbowKey
+  color: "#E67E22"
+  content: |
+    !example a
+- user_id: 1009018156494368798
+  username: BDFD Support
+  color: "#378afa"
+  bot: true
+  verified: true
+  embed: 
+    title: |
+     Error!
+    description: |
+     🚧 Description:
+     <code class="multiline">expected valid value in position 2, got empty value</code>
+    fields:
+    - name: Location
+      value: |
+        Row: <code>2</code> | Column: <code>17</code>
+    footer:
+      text: | 
+       🔍 $sum[2;]
+```
 
 ### Limiter Error
 As a way to use Error Handling with Limiter Errors, we'll use `$cooldown[]`. With the help of Error Handling, we can make a nice cooldown error message.
