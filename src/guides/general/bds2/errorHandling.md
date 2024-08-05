@@ -38,7 +38,7 @@ Command code for `!test` trigger:
 $nomention
 $try
   $sum[2;2]
-$edntry
+$endtry
 ```
 
 ```admonish question title="What is this?"
@@ -204,12 +204,13 @@ $error[Type]
 - `Type` `(Type: Enum || Flag: Required)`: What type of error data to return.
 
 ### Error Type
-| Name | Description | Example
-| `command` | Returns the name of the function that returned the error. | $sum
-| `message` | Returns the error message that was received. | expected integer in position 2, got 'a'
-| `source` | Returns the content of the line where the error occurred. | $sum[2;a]
-| `row` | Returns the number of the row in the code where the error occurred. | 2
-| `column` | Returns the number of the column in the code where the error occurred. | 10
+| Name      | Description                                                            | Example
+| --------- | ---------------------------------------------------------------------- | ----------------------------------------
+| `command` | Returns the name of the function that returned the error.              | $sum
+| `message` | Returns the error message that was received.                           | expected integer in position 2, got 'a'
+| `source`  | Returns the content of the line where the error occurred.              | $sum[2;a]
+| `row`     | Returns the number of the row in the code where the error occurred.    | 2
+| `column`  | Returns the number of the column in the code where the error occurred. | 10
 
 ~~~admonish warning title="Syntax sensitivity"
 The type input must only be written in lowercase letters.
@@ -311,12 +312,12 @@ $endtry
 ```
 
 # Create custom error for function
-With error handling you can embed an error for...\
-**Cooldown functions**: [`$serverCooldown[]`](../../../bdscript/serverCooldown.md), [`$globalCooldown[]`](../../../bdscript/globalCooldown.md), [`$cooldown[]`](../../../bdscript/cooldown.md);\
-**"Only If" Functions**: [`$onlyAdmin[]`](../../../bdscript/onlyAdmin.md), [`$onlyIf[]`](../../../bdscript/onlyIf.md) and other simillar "Only If" functions...;\
-**Enabled function**: [`$enabled[]`](../../../bdscript/enabled.md).
+With error handling you can embed an error for...
+- Cooldown functions: [`$serverCooldown[]`](../../../bdscript/serverCooldown.md), [`$globalCooldown[]`](../../../bdscript/globalCooldown.md), [`$cooldown[]`](../../../bdscript/cooldown.md);
+- "Only If" Functions: [`$onlyAdmin[]`](../../../bdscript/onlyAdmin.md), [`$onlyIf[]`](../../../bdscript/onlyIf.md) and other simillar "Only If" functions...;
+- Enabled function: [`$enabled[]`](../../../bdscript/enabled.md).
 
--**Let's create embed error for `$coodlwon[]` function:**
+Let's create embed error for `$coodlwon[]` function:
 
 ```
 $nomention
