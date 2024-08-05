@@ -87,11 +87,11 @@ Now let's run each command:
 
 As you can see only `!test` command returned a response, but why?
 
-```dmonish abstract title="Explanation"
-`$try` executes all the code (from top to bottom and from left to right) in its block and stops execution if it encounters an error.
+```admonish abstract title="Explanation"
+`$try` executes whole code (from top to bottom and from left to right) in its block and stops execution if it encounters an error.
 ```
 
-```dmonish danger title="Need to know"
+```admonish danger title="Need to know"
 `$try` block does not support some errors. For example not closed bracket in the function.
 ```
 
@@ -107,7 +107,7 @@ $endtry
 ```
 $nomention
 $try
-  $sum[2;2]
+  $sum[2;5]
 $endtry
 ```
 
@@ -124,7 +124,7 @@ $endtry
   bot: true
   verified: true
   content: |
-    4
+    7
 ```
 
 - Without `$endtry`:
@@ -213,7 +213,7 @@ $error[Type]
 | `column`  | Returns the number of the column in the code where the error occurred. | 10
 
 ~~~admonish warning title="Syntax sensitivity"
-The type input must only be written in lowercase letters.
+The type input must only be written in lowercase letters.\
 ❌ Not correct:
 ```
 $error[ROW]
