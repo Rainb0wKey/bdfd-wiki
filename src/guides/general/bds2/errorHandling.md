@@ -6,7 +6,7 @@ You must use **BDScript 2** for the functions to work correctly.
 ```
 
 ## Content
-[**Functions Used**](#functions-used) > [**$try**](#try) > [**$endtry**](#endtry) > [**$catch**](#catch) > [**$error[]**](#error) > [**Create BDScript custom error**](#create-bdscript-custom-error) > [**Create custom error for function**](#create-custom-error-for-function)
+[**Functions Used**](#functions-used) > [**$try**](#try) > [**$endtry**](#endtry) > [**$catch**](#catch) > [**$error[]**](#error) > [**Error Type**](#error-type) > [**Create BDScript custom error**](#create-bdscript-custom-error) > [**Create custom error for function**](#create-custom-error-for-function)
 
 ## Functions Used
 - [`$try`](../../../bdscript/try.md)
@@ -204,7 +204,7 @@ $error[Type]
 - `Type` `(Type: Enum || Flag: Required)`: What type of error data to return.
 
 ### Error Type
-| Name | Description | Response example
+| Name | Description | Example
 | `command` | Returns the name of the function that returned the error. | $sum
 | `message` | Returns the error message that was received. | expected integer in position 2, got 'a'
 | `source` | Returns the content of the line where the error occurred. | $sum[2;a]
@@ -327,6 +327,7 @@ $catch
   $description[⏱️ You have a cooldown! Wait $getCooldown[normal] seconds.]
 $endtry
 ```
+*This example will work with other functions too, just replace `$cooldown[]` function (Specified above).*
 
 ```discord yaml
 - user_id: 803569638084313098
