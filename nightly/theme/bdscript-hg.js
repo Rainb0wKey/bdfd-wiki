@@ -58,7 +58,7 @@ function highlight() {
 
 
 // sample scheme (default bds scheme)
-fetch('{path_to_root}theme/bdscript-scheme.json')
+fetch('{{path_to_root}}theme/bdscript-scheme.json')
   .then(response => response.json())
   .then(data => {
     scheme = data;
