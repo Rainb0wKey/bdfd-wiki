@@ -185,13 +185,17 @@
 </div>
 </div>
 <h2 id="content"><a class="header" href="#content">Content</a></h2>
-<p><a href="#functions-used"><strong>Functions Used</strong></a> &gt; <a href="#try"><strong>$try</strong></a> &gt; <a href="#endtry"><strong>$endtry</strong></a> &gt; <a href="#catch"><strong>$catch</strong></a> &gt; <a href="#error"><strong>$error[]</strong></a> &gt; <a href="#error-type"><strong>Error Type</strong></a> &gt; <a href="#create-bdscript-custom-error"><strong>Create BDScript custom error</strong></a> &gt; <a href="#create-custom-error-for-function"><strong>Create custom error for function</strong></a></p>
+<p><a href="#functions-used"><strong>Functions Used</strong></a> &gt; <a href="#try"><strong>$try</strong></a> &gt; <a href="#endtry"><strong>$endtry</strong></a> &gt; <a href="#catch"><strong>$catch</strong></a> &gt; <a href="#error"><strong>$error[]</strong></a> &gt; <a href="#stop"><strong>$stop</strong></a> &gt; <a href="#error-type"><strong>Error Type</strong></a> &gt; <a href="#create-bdscript-custom-error"><strong>Create BDScript custom error</strong></a> &gt; <a href="#create-custom-error-for-function"><strong>Create custom error for function</strong></a></p>
 <h2 id="functions-used"><a class="header" href="#functions-used">Functions Used</a></h2>
 <ul>
 <li><a href="../../../bdscript/try.html"><code>$try</code></a></li>
 <li><a href="../../../bdscript/endtry.html"><code>$endtry</code></a></li>
 <li><a href="../../../bdscript/catch.html"><code>$catch</code></a></li>
 <li><a href="../../../bdscript/error.html"><code>$error[]</code></a></li>
+</ul>
+<h2 id="support-functions-used"><a class="header" href="#support-functions-used">Support Functions Used</a></h2>
+<ul>
+<li><a href="../../../bdscript/stop.html"><code>$stop</code></a></li>
 </ul>
 <h1 id="try"><a class="header" href="#try">$try</a></h1>
 <p>Opens the Error Handling block.</p>
@@ -234,16 +238,16 @@ $sum[2;a]
     <discord-message author="RainbowKey" role-color="#E67E22">
         !example
     </discord-message>
-    <discord-message role-color="#E67E22" author="RainbowKey">
+    <discord-message author="RainbowKey" role-color="#E67E22">
         !test
     </discord-message>
-    <discord-message verified bot role-color="#378afa" author="BDFD Support">
+    <discord-message verified role-color="#378afa" author="BDFD Support" bot>
         4
     </discord-message>
     <discord-message author="RainbowKey" role-color="#E67E22">
         !bot
     </discord-message>
-    <discord-message bot author="BDFD Support" role-color="#378afa" verified>
+    <discord-message bot verified author="BDFD Support" role-color="#378afa">
         ❌ Function <code>$sum</code> at <code>2:9</code> returned an error: expected integer in position 2, got 'a'
     </discord-message>
 </discord-messages>
@@ -288,7 +292,7 @@ $endtry
     <discord-message role-color="#E67E22" author="RainbowKey">
         !example
     </discord-message>
-    <discord-message bot verified author="BDFD Support" role-color="#378afa">
+    <discord-message bot verified role-color="#378afa" author="BDFD Support">
         7
     </discord-message>
 </discord-messages>
@@ -296,10 +300,10 @@ $endtry
 <li>Without <code>$endtry</code>:</li>
 </ul>
 <discord-messages>
-    <discord-message author="RainbowKey" role-color="#E67E22">
+    <discord-message role-color="#E67E22" author="RainbowKey">
         !example
     </discord-message>
-    <discord-message bot role-color="#378afa" verified author="BDFD Support">
+    <discord-message bot author="BDFD Support" verified role-color="#378afa">
         <code>$try</code> not closed with <code>$endtry</code> or invalid use of <code>$sum</code>
     </discord-message>
 </discord-messages>
@@ -320,13 +324,13 @@ $endtry
     <discord-message author="RainbowKey" role-color="#E67E22">
         !example a
     </discord-message>
-    <discord-message role-color="#378afa" author="BDFD Support" bot verified>
+    <discord-message bot verified author="BDFD Support" role-color="#378afa">
         ❌ Invalid number!
     </discord-message>
-    <discord-message role-color="#E67E22" author="RainbowKey">
+    <discord-message author="RainbowKey" role-color="#E67E22">
         !example 6
     </discord-message>
-    <discord-message author="BDFD Support" bot role-color="#378afa" verified>
+    <discord-message author="BDFD Support" verified bot role-color="#378afa">
         8
     </discord-message>
 </discord-messages>
@@ -389,7 +393,7 @@ $endtry
     <discord-message role-color="#E67E22" author="RainbowKey">
         !example a
     </discord-message>
-    <discord-message role-color="#378afa" verified author="BDFD Support" bot>
+    <discord-message bot verified role-color="#378afa" author="BDFD Support">
         ❌ An error has occurred!<br />Function: $description<br />Error: expected valid value in position 2, got empty value
     </discord-message>
 </discord-messages>
@@ -404,6 +408,32 @@ $endtry
 <p>How <a href="../../../bdscript/description.html"><code>$description[]</code></a> works?</p>
 </div>
 </div>
+<h1 id="stop"><a class="header" href="#stop">$stop</a></h1>
+<p>Stops the command execution.</p>
+<h2 id="syntax-4"><a class="header" href="#syntax-4">Syntax</a></h2>
+<pre><code>$stop
+</code></pre>
+<h2 id="example-4"><a class="header" href="#example-4">Example</a></h2>
+<pre><code>$nomention
+$try
+  $sum[2;$message]
+$catch
+  $stop
+$endtry
+Number: $message
+</code></pre>
+<discord-messages>
+    <discord-message author="RainbowKey" role-color="#E67E22">
+        !example a
+    </discord-message>
+    <discord-message author="RainbowKey" role-color="#E67E22">
+        !example 5
+    </discord-message>
+    <discord-message author="BDFD Support" verified bot role-color="#378afa">
+        7<br />Number: $message
+    </discord-message>
+</discord-messages>
+<p><em>As we can see, the bot did not send “Number: a” when we tried use “<code>!example a</code>”.</em></p>
 <h1 id="create-bdscript-custom-error"><a class="header" href="#create-bdscript-custom-error">Create BDScript custom error</a></h1>
 <p>With <code>$error[]</code> you can create custom error for code!</p>
 <pre><code>$nomention
@@ -418,16 +448,16 @@ $catch
 $endtry
 </code></pre>
 <discord-messages>
-    <discord-message author="RainbowKey" role-color="#E67E22">
+    <discord-message role-color="#E67E22" author="RainbowKey">
         !example 100
     </discord-message>
-    <discord-message role-color="#378afa" author="BDFD Support" bot verified>
+    <discord-message author="BDFD Support" role-color="#378afa" verified bot>
         102
     </discord-message>
-    <discord-message role-color="#E67E22" author="RainbowKey">
+    <discord-message author="RainbowKey" role-color="#E67E22">
         !example a
     </discord-message>
-    <discord-message bot verified author="BDFD Support" role-color="#378afa">
+    <discord-message author="BDFD Support" role-color="#378afa" verified bot>
         <discord-embed slot="embeds" embed-title="Error!
 ">
             <discord-embed-description slot="description">
@@ -465,13 +495,13 @@ $endtry
     <discord-message role-color="#E67E22" author="RainbowKey">
         !example
     </discord-message>
-    <discord-message author="BDFD Support" bot verified role-color="#378afa">
+    <discord-message role-color="#378afa" author="BDFD Support" verified bot>
         Hey, are you making an example for the guide?
     </discord-message>
-    <discord-message author="RainbowKey" role-color="#E67E22">
+    <discord-message role-color="#E67E22" author="RainbowKey">
         !example
     </discord-message>
-    <discord-message bot author="BDFD Support" role-color="#378afa" verified>
+    <discord-message verified bot author="BDFD Support" role-color="#378afa">
         <discord-embed slot="embeds">
             <discord-embed-description slot="description">
                 ⏱️ You have a cooldown! Wait 290 seconds.
