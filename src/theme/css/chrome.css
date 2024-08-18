@@ -399,7 +399,7 @@ ul#searchresults span.teaser em {
 }
 
 .sidebar-hidden .sidebar {
-    transform: translateX(calc(-5px - var(--sidebar-width)));
+    transform: translateX(calc(-10px - var(--sidebar-width)));
     transition: transform 0.3s;
 }
 
