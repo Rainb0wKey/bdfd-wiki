@@ -107,16 +107,32 @@ table {
     border-radius: 10px;
     overflow: hidden;
     box-shadow: 0 0 5px var(--searchbar-shadow-color);
+    transition: .3s
 }
 
 table td {
     padding: 6px 25px;
     border: 1px var(--table-border-color) solid;
+    border-radius: 0;
+    transition: .2s;
+}
+
+table td:hover {
+    transform: scale(1.02);
+    border-color: var(--sidebar-active);
+    border-radius: 10px !important;
+    opacity: .9;
+    transition: .2s
 }
 
 table thead {
     background: var(--table-header-bg);
     border-radius: 10px 10px 0 0;
+}
+
+table:hover {
+    box-shadow: 0 0 5px 2px var(--sidebar-active);
+    transition: .3s
 }
 
 table thead td {
@@ -145,6 +161,7 @@ table tbody tr:last-child td:first-child {
 table tbody tr:last-child td:last-child {
     border-radius: 0 0 10px 0;
 }
+
 
 blockquote {
     margin: 20px 0;
