@@ -101,34 +101,50 @@ h4 a.header:target {
 }
 
 table {
-    margin-block-start: 1em;
-    margin-block-end: 1em;
-    margin-inline-start: 0px;
-    margin-inline-end: 0px;
-    border-collapse: collapse;
+    margin: auto;
+    border-collapse: separate;
+    border-spacing: 0;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 0 5px var(--searchbar-shadow-color);
 }
+
 table td {
-    padding: 3px 20px;
+    padding: 6px 25px;
     border: 1px var(--table-border-color) solid;
 }
+
 table thead {
     background: var(--table-header-bg);
+    border-radius: 10px 10px 0 0;
 }
+
 table thead td {
     font-weight: 700;
     border: none;
 }
+
 table thead th {
     padding: 3px 20px;
 }
+
 table thead tr {
     border: 1px var(--table-header-bg) solid;
+    border-radius: 10px 10px 0 0;
 }
+
 /* Alternate background colors for rows */
 table tbody tr:nth-child(2n) {
     background: var(--table-alternate-bg);
 }
 
+table tbody tr:last-child td:first-child {
+    border-radius: 0 0 0 10px;
+}
+
+table tbody tr:last-child td:last-child {
+    border-radius: 0 0 10px 0;
+}
 
 blockquote {
     margin: 20px 0;
