@@ -7,13 +7,11 @@
 
 
         
-        <head>
-            <!-- android and new safari -->
-          <meta name="theme-color" content="#2196F3">
+        <!-- android and new safari -->
+        <meta name="theme-color" content="#2196F3">
 
-          <!-- fallback for older safari -->
-          <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-        </head>
+        <!-- fallback for older safari -->
+        <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
         
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
         <meta name="description" content="The official documentation of BDFD. It covers guides, examples related to BDScript, BDJS and as well features too.">
@@ -195,17 +193,17 @@
 $sendMessage[$username clicked on the reaction]
 </code></pre>
 <discord-messages>
-    <discord-message role-color="#EE7908" author="Nicky">
+    <discord-message author="Nicky" role-color="#EE7908">
         !example
     </discord-message>
-    <discord-message bot verified author="Wiki Bot" role-color="#748BD4">
+    <discord-message author="Wiki Bot" bot role-color="#748BD4" verified>
         Click
         <discord-reactions slot="reactions">
-            <discord-reaction name=":emoji:" emoji="https://cdn.discordapp.com/emojis/766607515445231637.webp" reacted count="2">
+            <discord-reaction reacted name=":emoji:" count="2" emoji="https://cdn.discordapp.com/emojis/766607515445231637.webp">
             </discord-reaction>
         </discord-reactions>
     </discord-message>
-    <discord-message verified bot author="Wiki Bot" role-color="#748BD4">
+    <discord-message author="Wiki Bot" bot verified role-color="#748BD4">
         Nicky clicked on the reaction
     </discord-message>
 </discord-messages>
