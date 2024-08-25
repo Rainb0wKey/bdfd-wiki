@@ -104,15 +104,14 @@ table td {
     padding: 6px 25px;
     border: 1px var(--table-border-color) solid;
     border-radius: 0;
-    transition: .2s;
+    transition: .4s;
 }
 
 table td:hover {
     transform: scale(1.02);
     border-color: var(--sidebar-active);
     border-radius: 10px !important;
-    opacity: .9;
-    transition: .2s
+    transition: .5s
 }
 
 table thead {
