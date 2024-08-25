@@ -6,7 +6,15 @@
         <title>$messageContains - Bot Designer For Discord - Wiki</title>
 
 
+        
+        <head>
+            <!-- android and new safari -->
+          <meta name="theme-color" content="#2196F3">
 
+          <!-- fallback for older safari -->
+          <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+        </head>
+        
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
         <meta name="description" content="The official documentation of BDFD. It covers guides, examples related to BDScript, BDJS and as well features too.">
         <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
@@ -193,16 +201,16 @@
 <li>
 <p>Now, let’s say in chat someone types : <code>Hello Bot!</code>, <code>Hello</code>, <code>Hey Everyone!</code>, <code>Hi Noituri</code> etc. The bot will respond with “Hello there! How are you?”.</p>
 <discord-messages>
-    <discord-message author="noituri" role-color="#F1BDEE">
+    <discord-message role-color="#F1BDEE" author="noituri">
         Hello
     </discord-message>
-    <discord-message author="Wiki Bot" role-color="#748BD4" bot verified>
+    <discord-message bot author="Wiki Bot" role-color="#748BD4" verified>
         Hello there! How are you?
     </discord-message>
-    <discord-message role-color="#EE7908" author="Nicky">
+    <discord-message author="Nicky" role-color="#EE7908">
         Hi Noituri
     </discord-message>
-    <discord-message author="Wiki Bot" role-color="#748BD4" verified bot>
+    <discord-message author="Wiki Bot" bot role-color="#748BD4" verified>
         Hello there! How are you?
     </discord-message>
 </discord-messages>

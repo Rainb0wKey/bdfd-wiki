@@ -6,7 +6,15 @@
         <title>$author - Bot Designer For Discord - Wiki</title>
 
 
+        
+        <head>
+            <!-- android and new safari -->
+          <meta name="theme-color" content="#2196F3">
 
+          <!-- fallback for older safari -->
+          <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+        </head>
+        
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
         <meta name="description" content="The official documentation of BDFD. It covers guides, examples related to BDScript, BDJS and as well features too.">
         <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
@@ -189,8 +197,8 @@ $author[This is the author text!]
     <discord-message author="Nicky" role-color="#EE7908">
         !author
     </discord-message>
-    <discord-message verified bot author="Wiki Bot" role-color="#748BD4">
-        <discord-embed slot="embeds" author-name="This is the author text!">
+    <discord-message bot role-color="#748BD4" author="Wiki Bot" verified>
+        <discord-embed author-name="This is the author text!" slot="embeds">
         </discord-embed>
     </discord-message>
 </discord-messages>
