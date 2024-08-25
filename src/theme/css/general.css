@@ -103,7 +103,7 @@ table {
 table td {
     padding: 6px 25px;
     border: 1px var(--table-border-color) solid;
-    border-radius: 0;
+    border-radius: 0px !important;
     transition: .4s;
 }
 
