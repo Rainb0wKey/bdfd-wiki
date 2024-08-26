@@ -278,6 +278,10 @@ pre > .result {
     font-style: normal !important;
 }
 
+.footer {
+    background-color: var(--sidebar-bg);
+}
+
 /* Search */
 
 #searchresults a {
