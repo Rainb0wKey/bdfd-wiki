@@ -282,6 +282,7 @@ pre > .result {
     background-color: var(--sidebar-bg);
     border-radius: 10px;
     width: 95%;
+    margin: auto;
 }
 
 /* Search */
