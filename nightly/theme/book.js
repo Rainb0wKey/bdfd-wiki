@@ -14,6 +14,15 @@ document.querySelectorAll('code').forEach((block) => {
 	block.classList.add('hljs');
 });
 
+
+function changeThemeColor() {
+  const lastClassName = document.documentElement.className.split(' ').pop();
+  const colorElement = document.querySelector(`.${lastClassName}`);
+  const bgColor = getComputedStyle(colorElement).getPropertyValue('--bg').trim();
+  document.querySelector('meta[name="theme-color"]').setAttribute('content', bgColor);
+} 
+
+
 if (window.playground_copyable) {
 	document.querySelectorAll('pre code').forEach((block) => {
 		const pre_block = block.parentNode;
@@ -159,6 +168,7 @@ if (window.playground_copyable) {
 	themePopup.addEventListener('click', (e) => {
 		var theme = e.target.id || e.target.parentElement.id;
 		set_theme(theme);
+		changeThemeColor();
 	});
 
 	themePopup.addEventListener('focusout', (e) => {
