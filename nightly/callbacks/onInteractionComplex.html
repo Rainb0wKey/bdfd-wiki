@@ -6,15 +6,13 @@
         <title>$onInteraction[] - Bot Designer For Discord - Wiki</title>
 
 
-        
-        <!-- android and new safari -->
-        <meta name="theme-color" content="rgba(33, 150, 243, 1)">
 
         <!-- fallback for older safari -->
         <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
         
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
         <meta name="description" content="The official documentation of BDFD. It covers guides, examples related to BDScript, BDJS and as well features too.">
+        <meta name="theme-color" content="rgba(33, 150, 243, 1)">
         <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
         <meta name="og:image" content="https://botdesignerdiscord.com/logo512.png">
 
@@ -214,10 +212,10 @@ $sendMessage[Hello $displayName!]
 <li>
 <p>Execute commands</p>
 <discord-messages>
-    <discord-message role-color="#EE7908" author="Nicky">
+    <discord-message author="Nicky" role-color="#EE7908">
         !example
     </discord-message>
-    <discord-message role-color="#748BD4" bot author="Wiki Bot" verified>
+    <discord-message verified author="Wiki Bot" role-color="#748BD4" bot>
         Click!
         <discord-attachments slot="components">
             <discord-action-row>
@@ -227,7 +225,7 @@ $sendMessage[Hello $displayName!]
             </discord-action-row>
         </discord-attachments>
     </discord-message>
-    <discord-message author="Wiki Bot" verified role-color="#748BD4" bot>
+    <discord-message role-color="#748BD4" author="Wiki Bot" bot verified>
         Hello Nicky!
     </discord-message>
 </discord-messages>
