@@ -280,10 +280,8 @@ pre > .result {
 
 .footer {
     background-color: var(--sidebar-bg);
-    border-radius: 10px;
-    width: 95%;
-    margin: auto;
-    padding: 2px;
+    border-radius: 10px 10px 0 0;
+    padding: 1.5px;
 }
 
 /* Search */
