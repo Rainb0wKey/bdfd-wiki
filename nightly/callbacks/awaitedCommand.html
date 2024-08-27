@@ -200,13 +200,13 @@ $message
     <discord-message author="Nicky" role-color="#EE7908">
         !say
     </discord-message>
-    <discord-message bot role-color="#748BD4" author="Wiki Bot" verified>
+    <discord-message bot verified role-color="#748BD4" author="Wiki Bot">
         What do you want me to say?
     </discord-message>
     <discord-message author="Nicky" role-color="#EE7908">
         I love BDFD!
     </discord-message>
-    <discord-message bot author="Wiki Bot" role-color="#748BD4" verified>
+    <discord-message verified role-color="#748BD4" author="Wiki Bot" bot>
         I love BDFD!
     </discord-message>
 </discord-messages>
@@ -222,40 +222,40 @@ $elseif[$message==cancel]
 $endif
 </code></pre>
 <discord-messages>
-    <discord-message author="Nicky" role-color="#EE7908">
+    <discord-message role-color="#EE7908" author="Nicky">
         !odd
     </discord-message>
-    <discord-message bot role-color="#748BD4" author="Wiki Bot" verified>
+    <discord-message author="Wiki Bot" bot verified role-color="#748BD4">
         Is "19" an odd number?
     </discord-message>
     <discord-message role-color="#EE7908" author="Nicky">
         yes
     </discord-message>
-    <discord-message role-color="#748BD4" author="Wiki Bot" bot verified>
+    <discord-message author="Wiki Bot" bot role-color="#748BD4" verified>
         Your answer is correct!
     </discord-message>
-    <discord-message role-color="#EE7908" author="Nicky">
+    <discord-message author="Nicky" role-color="#EE7908">
         !odd
     </discord-message>
-    <discord-message author="Wiki Bot" bot role-color="#748BD4" verified>
+    <discord-message author="Wiki Bot" role-color="#748BD4" verified bot>
         Is "19" an odd number?
     </discord-message>
     <discord-message author="Nicky" role-color="#EE7908">
         no
     </discord-message>
-    <discord-message author="Wiki Bot" role-color="#748BD4" bot verified>
+    <discord-message author="Wiki Bot" role-color="#748BD4" verified bot>
         Your answer is incorrect!
     </discord-message>
     <discord-message author="Nicky" role-color="#EE7908">
         !odd
     </discord-message>
-    <discord-message bot author="Wiki Bot" role-color="#748BD4" verified>
+    <discord-message verified bot author="Wiki Bot" role-color="#748BD4">
         Is "19" an odd number?
     </discord-message>
     <discord-message role-color="#EE7908" author="Nicky">
         cancel
     </discord-message>
-    <discord-message bot author="Wiki Bot" role-color="#748BD4" verified>
+    <discord-message author="Wiki Bot" bot role-color="#748BD4" verified>
         Command cancelled!
     </discord-message>
 </discord-messages>
@@ -265,16 +265,16 @@ $endif
 You have provided a number: $message
 </code></pre>
 <discord-messages>
-    <discord-message author="Nicky" role-color="#EE7908">
+    <discord-message role-color="#EE7908" author="Nicky">
         !number
     </discord-message>
-    <discord-message role-color="#748BD4" bot author="Wiki Bot" verified>
+    <discord-message verified role-color="#748BD4" author="Wiki Bot" bot>
         Provide a number!
     </discord-message>
-    <discord-message role-color="#EE7908" author="Nicky">
+    <discord-message author="Nicky" role-color="#EE7908">
         7
     </discord-message>
-    <discord-message role-color="#748BD4" author="Wiki Bot" bot verified>
+    <discord-message verified bot author="Wiki Bot" role-color="#748BD4">
         You have provided a number: 7
     </discord-message>
 </discord-messages>
@@ -331,7 +331,7 @@ You have provided a number: $message
 	<div class="footer">
 		<div class="logo">
 			<img src="../favicon.png" alt="BDFD" width="100px" height="100px" class="bdfdlogo">
-			<p>BDFD - Create the bot of your dreams</p>
+			<p>Create the bot of your dreams</p>
 		</div>
 		<div class="footerlinks">
 			<h3 id="resources"><a class="header" href="#resources">Resources</a></h3>
