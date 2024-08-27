@@ -206,7 +206,7 @@ $description["helloworld"]
     <discord-message author="Nicky" role-color="#EE7908">
         hello
     </discord-message>
-    <discord-message verified author="Wiki Bot" bot role-color="#748BD4">
+    <discord-message author="Wiki Bot" verified bot role-color="#748BD4">
         <none>
         <discord-embed slot="embeds">
             <discord-embed-description slot="description">
@@ -217,7 +217,7 @@ $description["helloworld"]
     <discord-message author="Nicky" role-color="#EE7908">
         helloworld
     </discord-message>
-    <discord-message author="Wiki Bot" role-color="#748BD4" verified bot>
+    <discord-message verified role-color="#748BD4" bot author="Wiki Bot">
         <none>
         <discord-embed slot="embeds">
             <discord-embed-description slot="description">
@@ -231,7 +231,7 @@ $description["helloworld"]
     <discord-message author="Nicky" role-color="#EE7908">
         hello
     </discord-message>
-    <discord-message role-color="#748BD4" author="Wiki Bot" verified bot>
+    <discord-message author="Wiki Bot" verified bot role-color="#748BD4">
         <none>
         <discord-embed slot="embeds">
             <discord-embed-description slot="description">
@@ -239,10 +239,10 @@ $description["helloworld"]
             </discord-embed-description>
         </discord-embed>
     </discord-message>
-    <discord-message author="Nicky" role-color="#EE7908">
+    <discord-message role-color="#EE7908" author="Nicky">
         helloworld
     </discord-message>
-    <discord-message bot author="Wiki Bot" role-color="#748BD4" verified>
+    <discord-message role-color="#748BD4" verified author="Wiki Bot" bot>
         <none>
         <discord-embed slot="embeds">
             <discord-embed-description slot="description">
@@ -306,8 +306,16 @@ $description["helloworld"]
 
 
 	<div class="footer">
-		<p>This is footer! BDFD Wiki<p>
-		<img src="../favicon.png" alt="BDFD" width="100px" height="100px">
+		<div class="logo">
+			<img src="../favicon.png" alt="BDFD" width="100px" height="100px" class="bdfdlogo">
+			<p>BDFD - Create the bot of your dreams</p>
+		</div>
+		<div class="footerlinks">
+			<h3 id="resources"><a class="header" href="#resources">Resources</a></h3>
+			<p>Our API</p>
+			<p>Terms of Service</p>
+			<p>Node Status</p>
+		</div>
 	</div>
 
         <!-- bdscript -->

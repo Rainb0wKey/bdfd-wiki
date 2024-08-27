@@ -209,7 +209,7 @@
     <discord-system-message type="join">
         Welcome <font color="white">Nicky</font>. Say hi!
     </discord-system-message>
-    <discord-message highlight role-color="#748BD4" author="Wiki Bot" bot verified>
+    <discord-message author="Wiki Bot" bot highlight verified role-color="#748BD4">
         <discord-mention>Nicky</discord-mention>, welcome to Cool Server!
     </discord-message>
 </discord-messages>
@@ -321,8 +321,16 @@ $setServerVar[welcome;$mentionedChannels[1]]
 
 
 	<div class="footer">
-		<p>This is footer! BDFD Wiki<p>
-		<img src="../favicon.png" alt="BDFD" width="100px" height="100px">
+		<div class="logo">
+			<img src="../favicon.png" alt="BDFD" width="100px" height="100px" class="bdfdlogo">
+			<p>BDFD - Create the bot of your dreams</p>
+		</div>
+		<div class="footerlinks">
+			<h3 id="resources"><a class="header" href="#resources">Resources</a></h3>
+			<p>Our API</p>
+			<p>Terms of Service</p>
+			<p>Node Status</p>
+		</div>
 	</div>
 
         <!-- bdscript -->

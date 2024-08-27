@@ -187,7 +187,7 @@ My owner's ID: $botOwnerID
     <discord-message author="Nicky" role-color="#EE7908">
         !botOwnerID
     </discord-message>
-    <discord-message author="Wiki Bot" bot verified role-color="#748BD4">
+    <discord-message role-color="#748BD4" bot author="Wiki Bot" verified>
         My owner's ID: 729343563401265193
     </discord-message>
 </discord-messages>
@@ -239,8 +239,16 @@ My owner's ID: $botOwnerID
 
 
 	<div class="footer">
-		<p>This is footer! BDFD Wiki<p>
-		<img src="../favicon.png" alt="BDFD" width="100px" height="100px">
+		<div class="logo">
+			<img src="../favicon.png" alt="BDFD" width="100px" height="100px" class="bdfdlogo">
+			<p>BDFD - Create the bot of your dreams</p>
+		</div>
+		<div class="footerlinks">
+			<h3 id="resources"><a class="header" href="#resources">Resources</a></h3>
+			<p>Our API</p>
+			<p>Terms of Service</p>
+			<p>Node Status</p>
+		</div>
 	</div>
 
         <!-- bdscript -->
