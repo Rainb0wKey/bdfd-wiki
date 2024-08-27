@@ -190,17 +190,17 @@
 $sendMessage[$username clicked on the reaction]
 </code></pre>
 <discord-messages>
-    <discord-message role-color="#EE7908" author="Nicky">
+    <discord-message author="Nicky" role-color="#EE7908">
         !example
     </discord-message>
-    <discord-message author="Wiki Bot" role-color="#748BD4" bot verified>
+    <discord-message role-color="#748BD4" bot author="Wiki Bot" verified>
         Click
         <discord-reactions slot="reactions">
-            <discord-reaction name=":emoji:" reacted count="2" emoji="https://cdn.discordapp.com/emojis/766607515445231637.webp">
+            <discord-reaction count="2" emoji="https://cdn.discordapp.com/emojis/766607515445231637.webp" reacted name=":emoji:">
             </discord-reaction>
         </discord-reactions>
     </discord-message>
-    <discord-message role-color="#748BD4" author="Wiki Bot" bot verified>
+    <discord-message role-color="#748BD4" author="Wiki Bot" verified bot>
         Nicky clicked on the reaction
     </discord-message>
 </discord-messages>
@@ -254,9 +254,10 @@ $sendMessage[$username clicked on the reaction]
         <!-- Custom JS scripts -->
 
 
-				<div class="footer">
-					<p>This is footer! BDFD Wiki<p>
-				</div>
+	<div class="footer">
+		<p>This is footer! BDFD Wiki<p>
+		<img src="../favicon.png" alt="BDFD" width="100px" height="100px">
+	</div>
 
         <!-- bdscript -->
         <script src="../theme/bdscript-hg.js"></script>

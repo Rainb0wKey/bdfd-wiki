@@ -212,10 +212,10 @@ $sendMessage[Hello $displayName!]
 <li>
 <p>Execute commands</p>
 <discord-messages>
-    <discord-message role-color="#EE7908" author="Nicky">
+    <discord-message author="Nicky" role-color="#EE7908">
         !example
     </discord-message>
-    <discord-message bot verified author="Wiki Bot" role-color="#748BD4">
+    <discord-message bot author="Wiki Bot" verified role-color="#748BD4">
         Click!
         <discord-attachments slot="components">
             <discord-action-row>
@@ -225,7 +225,7 @@ $sendMessage[Hello $displayName!]
             </discord-action-row>
         </discord-attachments>
     </discord-message>
-    <discord-message bot verified author="Wiki Bot" role-color="#748BD4">
+    <discord-message verified role-color="#748BD4" bot author="Wiki Bot">
         Hello Nicky!
     </discord-message>
 </discord-messages>
@@ -281,9 +281,10 @@ $sendMessage[Hello $displayName!]
         <!-- Custom JS scripts -->
 
 
-				<div class="footer">
-					<p>This is footer! BDFD Wiki<p>
-				</div>
+	<div class="footer">
+		<p>This is footer! BDFD Wiki<p>
+		<img src="../favicon.png" alt="BDFD" width="100px" height="100px">
+	</div>
 
         <!-- bdscript -->
         <script src="../theme/bdscript-hg.js"></script>
