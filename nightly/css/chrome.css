@@ -278,10 +278,36 @@ pre > .result {
     font-style: normal !important;
 }
 
+/* Footer */
+
 .footer {
     background-color: var(--sidebar-bg);
     border-radius: 10px 10px 0 0;
-    padding: 1.5px;
+    bottom: 0;
+    padding: 15px 0 10px 10px;
+    font-size: 14px;
+    line-height: 20px;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+}
+
+.logo {
+    flex-basis: 25%;
+    padding: 10px;
+}
+
+.bdfdlogo {
+    margin-bottom: 5px;
+}
+
+.footerlinks h3 {
+    width: fit-content;
+    margin-bottom: 30px;
+    position: relative;
+    text-decoration: none !important;
+    color: #FFFF;
 }
 
 /* Search */
