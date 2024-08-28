@@ -120,6 +120,65 @@ html:not(.sidebar-visible) #menu-bar:not(:hover).folded > #menu-bar-sticky-conta
     color: var(--icons-hover);
 }
 
+/* Settings */
+
+.themebuttons {
+    display: block;
+}
+
+.button {
+    padding-left: 20px;
+    padding-right: 20px;
+    height: 45px;
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+    font-size: 16px;
+    text-transform: capitalize;
+    margin: .25%;
+    font-weight: bold;
+    transition: .4s;
+    box-shadow: 0 12px 15px rgba(0, 0, 0, 0.3);
+}
+
+.button:hover {
+    transform: scale(1.05);
+    border-radius: 13px;
+    border-style: solid;
+    border-width: 2px;
+    transition: .4s;
+}
+
+.themebuttons .button#bdfd {
+    color: #d5c0ff;
+    background-color: #643cb4;
+    border-color: #805dc7;
+}
+
+.themebuttons .button#forest {
+    color: #cfffe2;
+    background-color: #245d3a;
+    border-color: #3d9b61;
+}
+
+.themebuttons .button#dark-moon {
+    color: #ffbaba;
+    background-color: #652828;
+    border-color: #933838;
+}
+
+.themebuttons .button#light {
+    color: #454545;
+    background-color: #e4e4e4;
+    border-color: #FFF;
+}
+
+.themebuttons .button#discord {
+    color: #9b9b9b;
+    background-color: #414148;
+    border-color: #52525a;
+}
+
 /* Nav Icons */
 
 .nav-chapters {
