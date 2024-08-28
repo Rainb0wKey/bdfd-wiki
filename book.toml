@@ -37,9 +37,6 @@ on_failure = "bail"
 [output.html.redirect]
 "/guides/ifStatements.html" = "./general/ifStatements.html"
 "/guides/async.html" = "./general/bds2/asyncScopes.html"
-"/guides/buttons.html" = "./general/interactions/buttons/aboutButtons.html"
-"/selectmenu.html" = "./guides/general/interactions/selectMenus/aboutSelectMenu.html"
-"/trycatch.html" = "./guides/general/bds2/errorHandling.html"
 
 "/bdscript/awaitReactions.html" = "../premium/awaitReactions.html"
 "/bdscript/customImage.html" = "../premium/customImage.html"
