@@ -209,9 +209,9 @@ html:not(.sidebar-visible) #menu-bar:not(:hover).folded > #menu-bar-sticky-conta
 }
 
 .themebuttons .tbutton#forest {
-    color: #cfffe2;
-    background-color: #245d3a;
-    border-color: #3d9b61;
+    color: #28A2A5;
+    background-color: #116062;
+    border-color: #28A2A5;
 }
 
 .themebuttons .tbutton#bloody-moon {
