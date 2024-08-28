@@ -127,7 +127,7 @@ html:not(.sidebar-visible) #menu-bar:not(:hover).folded > #menu-bar-sticky-conta
     user-select: none;
 }
 
-.button {
+.tbutton {
     padding-left: 20px;
     padding-right: 20px;
     height: 45px;
@@ -143,7 +143,7 @@ html:not(.sidebar-visible) #menu-bar:not(:hover).folded > #menu-bar-sticky-conta
     box-shadow: 0 12px 15px rgba(0, 0, 0, 0.3);
 }
 
-.button:hover {
+.tbutton:hover {
     transform: scale(1.05);
     border-radius: 13px;
     border-style: solid;
@@ -151,43 +151,43 @@ html:not(.sidebar-visible) #menu-bar:not(:hover).folded > #menu-bar-sticky-conta
     transition: .4s;
 }
 
-.themebuttons .button#bdfd {
+.themebuttons .tbutton#bdfd {
     color: #d5c0ff;
     background-color: #643cb4;
     border-color: #805dc7;
 }
 
-.themebuttons .button#forest {
+.themebuttons .tbutton#forest {
     color: #cfffe2;
     background-color: #245d3a;
     border-color: #3d9b61;
 }
 
-.themebuttons .button#bloody-moon {
+.themebuttons .tbutton#bloody-moon {
     color: #ffbaba;
     background-color: #652828;
     border-color: #933838;
 }
 
-.themebuttons .button#light {
+.themebuttons .tbutton#light {
     color: #454545;
     background-color: #e4e4e4;
     border-color: #FFF;
 }
 
-.themebuttons .button#discord {
+.themebuttons .tbutton#discord {
     color: #9b9b9b;
     background-color: #414148;
     border-color: #52525a;
 }
 
-.themebuttons .button#cyber {
+.themebuttons .tbutton#cyber {
     color: #b2b2fd;
     background-color: #4f4fca;
     border-color: #8080e8;
 }
 
-.themebuttons .button#coffee {
+.themebuttons .tbutton#coffee {
     color: #c89829;
     background-color: #6c4d06;
     border-color: #9f7619;
