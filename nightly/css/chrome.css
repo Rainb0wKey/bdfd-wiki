@@ -127,6 +127,11 @@ html:not(.sidebar-visible) #menu-bar:not(:hover).folded > #menu-bar-sticky-conta
     user-select: none;
 }
 
+.textsizebuttons {
+    display: block;
+    user-select: none;
+}
+
 .tbutton {
     padding-left: 20px;
     padding-right: 20px;
@@ -143,12 +148,58 @@ html:not(.sidebar-visible) #menu-bar:not(:hover).folded > #menu-bar-sticky-conta
     box-shadow: 0 12px 15px rgba(0, 0, 0, 0.3);
 }
 
+.sbutton {
+    padding-left: 10px;
+    padding-right: 10px;
+    height: 35px;
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+    font-size: 16px;
+    text-transform: capitalize;
+    margin: .25%;
+    margin-top: 2%;
+    font-weight: bold;
+    transition: .4s;
+    background-color: var(--sidebar-bg);
+    color: var(--sidebar-fg);
+    box-shadow: 0 12px 15px rgba(0, 0, 0, 0.3);
+}
+
+.sbutton:after {
+    content: "px";
+}
+
 .tbutton:hover {
     transform: scale(1.05);
     border-radius: 13px;
     border-style: solid;
     border-width: 3px;
     transition: .4s;
+}
+
+.sbutton:hover {
+    transform: scale(1.1);
+    border-radius: 15px;
+    border-style: solid;
+    border-width: 1px;
+    transition: .4s;
+}
+
+.textsizebuttons .sbutton#text15 {
+    font-size: 15px;
+}
+
+.textsizebuttons .sbutton#text16 {
+    font-size: 16px;
+}
+
+.textsizebuttons .sbutton#text17 {
+    font-size: 17px;
+}
+
+.textsizebuttons .sbutton#text18 {
+    font-size: 18px;
 }
 
 .themebuttons .tbutton#bdfd {
@@ -192,7 +243,6 @@ html:not(.sidebar-visible) #menu-bar:not(:hover).folded > #menu-bar-sticky-conta
     background-color: #6c4d06;
     border-color: #9f7619;
 }
-
 /* Nav Icons */
 
 .nav-chapters {
