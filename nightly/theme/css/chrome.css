@@ -243,6 +243,13 @@ html:not(.sidebar-visible) #menu-bar:not(:hover).folded > #menu-bar-sticky-conta
     background-color: #6c4d06;
     border-color: #9f7619;
 }
+
+.themebuttons .tbutton#modern {
+    color: #000;
+    background-color: #FFF;
+    border-color: #000;
+}
+
 /* Nav Icons */
 
 .nav-chapters {
