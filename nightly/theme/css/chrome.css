@@ -181,7 +181,7 @@ html:not(.sidebar-visible) #menu-bar:not(:hover).folded > #menu-bar-sticky-conta
 }
 
 .hbutton {
-    border-color: var(--links);
+    border-color: var(--icons);
 }
 
 .sbutton,
