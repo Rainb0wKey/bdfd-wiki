@@ -122,6 +122,31 @@ html:not(.sidebar-visible) #menu-bar:not(:hover).folded > #menu-bar-sticky-conta
 
 /* Settings */
 
+.themeembed {
+    background-color: var(--sidebar-bg);
+    border-radius: 10px;
+    color: var(--sidebar-fg);
+    margin-top: -35px;
+    padding-bottom: 15px;
+    padding-left: 15px;
+    padding-right: 15px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+    transition: .3s;
+}
+
+.themeembed:hover {
+    transform: scale(1.025);
+    transition: .3s;
+}
+
+.themeembed h2 {
+    padding-top: 15px;
+}
+
+.themeembed p {
+    margin-top: -15px;
+}
+
 .themebuttons {
     display: flex;
     justify-content: center;
