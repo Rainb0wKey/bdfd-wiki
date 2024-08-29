@@ -20,7 +20,7 @@ const webSize = document.documentElement;
 
 range.addEventListener("input", () => {
 	displaySize.textContent = range.value;
-	root.style.fontSize = `${range.value}%`;
+	webSize.style.fontSize = `${range.value}%`;
 });
 
 function changeThemeColor() {
