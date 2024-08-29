@@ -34,10 +34,10 @@ function changeTextFont() {
     font = 'cursive';
   else if (id == 'font5')
     font = 'monospace';
-  else if (id == 'font4')
-    font = 'cursive';
-  else
+  else if (id == 'font6')
     font = 'system-ui';
+  else
+    font = '"Open Sans", sans-serif';
 
   fonntHtml.style.fontFamily = font;
 }
