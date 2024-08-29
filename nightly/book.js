@@ -16,10 +16,11 @@ document.querySelectorAll('code').forEach((block) => {
 
 const range = document.getElementById("textsize");
 const displaySize = document.getElementById("display-size");
+const webSize = document.documentElement;
 
 range.addEventListener("input", () => {
 	displaySize.textContent = range.value;
-	displaySize.style.fontSize = range.value + "px";
+	root.style.fontSize = `${range.value}%`;
 });
 
 function changeThemeColor() {
