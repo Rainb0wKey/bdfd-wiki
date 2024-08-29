@@ -200,7 +200,7 @@ html:not(.sidebar-visible) #menu-bar:not(:hover).folded > #menu-bar-sticky-conta
 }
 
 .textsizebuttons label:after {
-  content: "%";
+  content: " %";
 }
 
 .hbutton {
