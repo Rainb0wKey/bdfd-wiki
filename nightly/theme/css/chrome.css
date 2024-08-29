@@ -136,6 +136,7 @@ html:not(.sidebar-visible) #menu-bar:not(:hover).folded > #menu-bar-sticky-conta
 
 .settingembed:hover {
     transform: scale(1.025);
+    border-radius: 15px;
     transition: .3s;
 }
 
