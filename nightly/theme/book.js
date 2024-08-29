@@ -42,7 +42,7 @@ function changeTextFont() {
   fontHtml.style.fontFamily = font;
 }
 
-function changeTextFont() {
+function changeTextHigh() {
   const id = event.srcElement.id;
   const fonntHtml = document.querySelector('html');
 
