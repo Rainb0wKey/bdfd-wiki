@@ -414,6 +414,12 @@ html:not(.sidebar-visible) #menu-bar:not(:hover).folded > #menu-bar-sticky-conta
     border-color: #715891;
 }
 
+.themebuttons .tbutton#lemonade {
+    color: #d4d54f;
+    background-color: #a3a51a;
+    border-color: #c1c337;
+}
+
 .themebuttons .tbutton#android {
     color: #a1acf9;
     background-color: #36418e;
