@@ -179,6 +179,20 @@ html:not(.sidebar-visible) #menu-bar:not(:hover).folded > #menu-bar-sticky-conta
     box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
 }
 
+.textsizebuttons input[type='range'] {
+    -webkit-appearance: none;
+    background:var(--fg);
+    height: 1px;
+    width: 30%;
+}
+.textsizebuttons input[type='range']::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    background: var(--links);
+    border-radius: 10px;
+    height:25px;
+    width:10px;
+}
+
 .hbutton {
     border-color: var(--icons);
 }
