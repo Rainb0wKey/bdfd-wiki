@@ -42,6 +42,33 @@ function changeTextFont() {
   fontHtml.style.fontFamily = font;
 }
 
+function changeTextFont() {
+  const id = event.srcElement.id;
+  const fonntHtml = document.querySelector('html');
+
+  if (id == 'high-blue')
+    color = '257df0';
+  else if (id == 'high-red')
+    color = 'f02525';
+  else if (id == 'high-green')
+    color = '25f03e';
+  else if (id == 'high-yellow')
+    color = 'f0ea25';
+  else if (id == 'high-purple')
+    color = '8f25f0';
+  else if (id == 'high-white')
+    color = 'fff';
+  else if (id == 'high-black')
+    color = '000';
+  else
+    color = 'none';
+
+  if ( color == 'none' )
+    fonntHtml.style.textShadow = color;
+  else
+    fonntHtml.style.textShadow = '0 0 10px' + ' #' + color;
+}
+
 function changeThemeColor() {
   const lastClassName = document.documentElement.className.split(' ').pop();
   const colorElement = document.querySelector(`.${lastClassName}`);
