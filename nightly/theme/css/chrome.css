@@ -235,6 +235,10 @@ html:not(.sidebar-visible) #menu-bar:not(:hover).folded > #menu-bar-sticky-conta
     font-family: monospace;
 }
 
+.textfontbuttons .fbutton#font6 {
+    font-family: system-ui;
+}
+
 .textsizebuttons .sbutton#text15 {
     font-size: 15px;
 }
