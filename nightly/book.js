@@ -19,6 +19,7 @@ const displaySize = document.getElementById("display-size");
 
 range.addEventListener("input", () => {
 	displaySize.textContent = range.value;
+	displaySize.style.fontSize = range.value + "px";
 });
 
 function changeThemeColor() {
