@@ -155,11 +155,13 @@ html:not(.sidebar-visible) #menu-bar:not(:hover).folded > #menu-bar-sticky-conta
     justify-content: center;
     flex-wrap: wrap;
     user-select: none;
+    -webkit-user-select : none;
 }
 
 .textfontbuttons {
     display: block;
     user-select: none;
+    -webkit-user-select : none;
     margin-top: -20px;
 }
 
