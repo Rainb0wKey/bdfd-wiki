@@ -122,7 +122,7 @@ html:not(.sidebar-visible) #menu-bar:not(:hover).folded > #menu-bar-sticky-conta
 
 /* Settings */
 
-.themeembed {
+.settingembed {
     background-color: var(--sidebar-bg);
     border-radius: 10px;
     color: var(--sidebar-fg);
@@ -134,16 +134,16 @@ html:not(.sidebar-visible) #menu-bar:not(:hover).folded > #menu-bar-sticky-conta
     transition: .3s;
 }
 
-.themeembed:hover {
+.settingembed:hover {
     transform: scale(1.025);
     transition: .3s;
 }
 
-.themeembed h2 {
+.settingembed h2 {
     padding-top: 15px;
 }
 
-.themeembed p {
+.settingembed p {
     margin-top: -15px;
 }
 
@@ -157,6 +157,7 @@ html:not(.sidebar-visible) #menu-bar:not(:hover).folded > #menu-bar-sticky-conta
 .textsizebuttons {
     display: block;
     user-select: none;
+    margin-top: -25px;
 }
 
 .tbutton {
@@ -186,8 +187,8 @@ html:not(.sidebar-visible) #menu-bar:not(:hover).folded > #menu-bar-sticky-conta
     margin-top: 2%;
     font-weight: bold;
     transition: .4s;
-    background-color: var(--sidebar-bg);
-    color: var(--sidebar-fg);
+    background-color: var(---bg);
+    color: var(--fg);
     box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
 }
 
