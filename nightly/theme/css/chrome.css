@@ -180,6 +180,10 @@ html:not(.sidebar-visible) #menu-bar:not(:hover).folded > #menu-bar-sticky-conta
     box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
 }
 
+.hbutton {
+    border-color: var(--links);
+}
+
 .sbutton,
 .fbutton {
     padding-left: 10px;
