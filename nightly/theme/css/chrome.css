@@ -190,7 +190,7 @@ html:not(.sidebar-visible) #menu-bar:not(:hover).folded > #menu-bar-sticky-conta
     margin-top: 2%;
     transition: .4s;
     background-color: var(---bg);
-    color: var(--fg);
+    color: var(--sidebar-fg);
     box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
 }
 
