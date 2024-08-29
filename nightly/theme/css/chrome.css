@@ -193,6 +193,10 @@ html:not(.sidebar-visible) #menu-bar:not(:hover).folded > #menu-bar-sticky-conta
     width:10px;
 }
 
+.textsizebuttons label:after {
+  content: "px";
+}
+
 .hbutton {
     border-color: var(--icons);
 }
