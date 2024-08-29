@@ -22,6 +22,26 @@ function changeFontSize() {
   webSize.style.fontSize = `${range.value}%`;
 }
 
+function changeTextFont() {
+  const id = event.srcElement.id;
+  const fonntHtml = document.querySelector('html');
+
+  if (id == 'font2')
+    font = 'Georgia, serif';
+  else if (id == 'font3')
+    font = 'Montserrat';
+  else if (id == 'font4')
+    font = 'cursive';
+  else if (id == 'font5')
+    font = 'monospace';
+  else if (id == 'font4')
+    font = 'cursive';
+  else
+    font = 'system-ui';
+
+  fonntHtml.style.fontFamily = font;
+}
+
 function changeThemeColor() {
   const lastClassName = document.documentElement.className.split(' ').pop();
   const colorElement = document.querySelector(`.${lastClassName}`);
