@@ -140,7 +140,6 @@ html:not(.sidebar-visible) #menu-bar:not(:hover).folded > #menu-bar-sticky-conta
     border-radius: 15px;
     cursor: pointer;
     font-size: 16px;
-    text-transform: capitalize;
     margin: .25%;
     margin-top: 2%;
     font-weight: bold;
@@ -156,7 +155,6 @@ html:not(.sidebar-visible) #menu-bar:not(:hover).folded > #menu-bar-sticky-conta
     border-radius: 15px;
     cursor: pointer;
     font-size: 16px;
-    text-transform: capitalize;
     margin: .25%;
     margin-top: 2%;
     font-weight: bold;
