@@ -25,7 +25,8 @@ function changeFontSize() {
 function changeTextFont() {
   const id = event.srcElement.id;
   const fontHtml = document.querySelector('html');
-
+  let font = '"Open Sans", sans-serif';
+	
   if (id == 'font2')
     font = 'Georgia, serif';
   else if (id == 'font3')
@@ -36,8 +37,6 @@ function changeTextFont() {
     font = 'monospace';
   else if (id == 'font6')
     font = 'system-ui';
-  else
-    font = '"Open Sans", sans-serif';
 
   fontHtml.style.fontFamily = font;
 }
@@ -45,7 +44,8 @@ function changeTextFont() {
 function changeTextHigh() {
   const id = event.srcElement.id;
   const fonntHtml = document.querySelector('html');
-
+  let color = 'none';
+	
   if (id == 'high-blue')
     color = '257df0';
   else if (id == 'high-red')
@@ -60,8 +60,6 @@ function changeTextHigh() {
     color = 'fff';
   else if (id == 'high-black')
     color = '000';
-  else
-    color = 'none';
 
   if ( color == 'none' )
     fonntHtml.style.textShadow = color;
