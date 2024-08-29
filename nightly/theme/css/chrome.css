@@ -183,7 +183,7 @@ html:not(.sidebar-visible) #menu-bar:not(:hover).folded > #menu-bar-sticky-conta
     -webkit-appearance: none;
     background:var(--fg);
     height: 1px;
-    width: 30%;
+    width: 40%;
 }
 .textsizebuttons input[type='range']::-webkit-slider-thumb {
     -webkit-appearance: none;
@@ -191,6 +191,11 @@ html:not(.sidebar-visible) #menu-bar:not(:hover).folded > #menu-bar-sticky-conta
     border-radius: 10px;
     height:25px;
     width:10px;
+}
+
+.textsizebuttons input[type='range']::-webkit-slider-thumb:hover {
+    -webkit-appearance: none;
+    cursor: e-resize;
 }
 
 .textsizebuttons label:after {
