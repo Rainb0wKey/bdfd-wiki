@@ -122,7 +122,6 @@ html:not(.sidebar-visible) #menu-bar:not(:hover).folded > #menu-bar-sticky-conta
 
 /* Settings */
 
-
 .settingembed {
     background-color: var(--sidebar-bg);
     border-radius: 10px;
@@ -150,7 +149,8 @@ html:not(.sidebar-visible) #menu-bar:not(:hover).folded > #menu-bar-sticky-conta
 }
 
 .themebuttons,
-.texthighbuttons {
+.texthighbuttons,
+.discordexamplebuttons {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
@@ -201,6 +201,48 @@ html:not(.sidebar-visible) #menu-bar:not(:hover).folded > #menu-bar-sticky-conta
     box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
 }
 
+.dbutton {
+    width: 125px;
+    height: 150px;
+    margin: 1%;
+    border: none;
+    border-radius: 15px;
+    border-radius: 10px;
+    padding: 10px;
+    background-color: var(--bg);
+    cursor: pointer;
+    box-shadow: 0 3px 20px rgba(0, 0, 0, 0.3);
+    transition: .4s;
+}
+
+.display-color {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+    margin-left: 10px;
+    box-shadow: 0 3px 20px rgba(0, 0, 0, 0.3);
+    transition: .4s;
+}
+
+.display-color#light {
+    background-color: #F2F3F5;
+}
+
+.display-color#dark {
+    background-color: #1C1D22;
+}
+
+.display-color#midnight {
+    background-color: #000;
+}
+
+.display-text {
+    color: var(--fg);
+    font-size: 17px;
+    font-weight: bold;
+}
+
 .sbutton:after {
     content: "px";
 }
@@ -220,6 +262,18 @@ html:not(.sidebar-visible) #menu-bar:not(:hover).folded > #menu-bar-sticky-conta
     transform: scale(1.1);
     border-radius: 15px;
     border-width: 1px;
+    transition: .4s;
+}
+
+.display-color:hover {
+    transform: scale(1.05);
+    border-radius: 30%;
+    transition: .4s;
+}
+
+.dbutton:hover {
+    transform: scale(1.05);
+    border-radius: 20px;
     transition: .4s;
 }
 
@@ -365,6 +419,7 @@ html:not(.sidebar-visible) #menu-bar:not(:hover).folded > #menu-bar-sticky-conta
     background-color: #36418e;
     border-color: #525dab;
 }
+
 /* Nav Icons */
 
 .nav-chapters {
