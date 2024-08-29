@@ -14,14 +14,13 @@ document.querySelectorAll('code').forEach((block) => {
 	block.classList.add('hljs');
 });
 
-const range = document.getElementById("textsize");
-const displaySize = document.getElementById("display-size");
-const webSize = document.documentElement;
-
-range.addEventListener("input", () => {
-	displaySize.textContent = range.value;
-	webSize.style.fontSize = `${range.value}%`;
-});
+function changeFontSize() {
+  const range = document.getElementById("textsize");
+  const displaySize = document.getElementById("display-size");
+  const webSize = document.documentElement;
+  displaySize.textContent = range.value;
+  webSize.style.fontSize = `${range.value}%`;
+}
 
 function changeThemeColor() {
   const lastClassName = document.documentElement.className.split(' ').pop();
