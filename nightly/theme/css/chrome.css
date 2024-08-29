@@ -188,7 +188,6 @@ html:not(.sidebar-visible) #menu-bar:not(:hover).folded > #menu-bar-sticky-conta
     font-size: 16px;
     margin: .25%;
     margin-top: 2%;
-    font-weight: bold;
     transition: .4s;
     background-color: var(---bg);
     color: var(--fg);
@@ -214,10 +213,6 @@ html:not(.sidebar-visible) #menu-bar:not(:hover).folded > #menu-bar-sticky-conta
     border-radius: 15px;
     border-width: 1px;
     transition: .4s;
-}
-
-.textfontbuttons .fbutton{
-    font-weight: inherit;
 }
 
 .textfontbuttons .fbutton#font1 {
