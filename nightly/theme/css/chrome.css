@@ -282,15 +282,15 @@ html:not(.sidebar-visible) #menu-bar:not(:hover).folded > #menu-bar-sticky-conta
     transition: .4s;
 }
 
-.display-color:hover {
-    transform: scale(1.05);
-    border-radius: 30%;
-    transition: .4s;
-}
-
 .dbutton:hover {
     transform: scale(1.05);
     border-radius: 20px;
+    transition: .4s;
+}
+
+.dbutton:hover > .display-color {
+    transform: scale(1.05);
+    border-radius: 30%;
     transition: .4s;
 }
 
