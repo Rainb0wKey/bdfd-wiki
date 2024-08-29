@@ -14,6 +14,12 @@ document.querySelectorAll('code').forEach((block) => {
 	block.classList.add('hljs');
 });
 
+const range = document.getElementById("textsize");
+const displaySize = document.getElementById("display-size");
+
+range.addEventListener("input", () => {
+	displaySize.textContent = range.value;
+});
 
 function changeThemeColor() {
   const lastClassName = document.documentElement.className.split(' ').pop();
