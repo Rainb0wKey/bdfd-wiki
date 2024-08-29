@@ -24,7 +24,7 @@ function changeFontSize() {
 
 function changeTextFont() {
   const id = event.srcElement.id;
-  const fonntHtml = document.querySelector('html');
+  const fontHtml = document.querySelector('html');
 
   if (id == 'font2')
     font = 'Georgia, serif';
@@ -39,7 +39,7 @@ function changeTextFont() {
   else
     font = '"Open Sans", sans-serif';
 
-  fonntHtml.style.fontFamily = font;
+  fontHtml.style.fontFamily = font;
 }
 
 function changeThemeColor() {
