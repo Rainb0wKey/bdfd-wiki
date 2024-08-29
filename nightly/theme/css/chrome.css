@@ -155,10 +155,11 @@ html:not(.sidebar-visible) #menu-bar:not(:hover).folded > #menu-bar-sticky-conta
     user-select: none;
 }
 
-.textsizebuttons {
+.textsizebuttons,
+.textfontbuttons {
     display: block;
     user-select: none;
-    margin-top: -25px;
+    margin-top: -20px;
 }
 
 .tbutton {
@@ -176,7 +177,8 @@ html:not(.sidebar-visible) #menu-bar:not(:hover).folded > #menu-bar-sticky-conta
     box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
 }
 
-.sbutton {
+.sbutton,
+.fbutton {
     padding-left: 10px;
     padding-right: 10px;
     height: 35px;
@@ -197,7 +199,7 @@ html:not(.sidebar-visible) #menu-bar:not(:hover).folded > #menu-bar-sticky-conta
     content: "px";
 }
 
-.tbutton:hover {
+.tbutton:hover{
     transform: scale(1.05);
     border-radius: 13px;
     border-style: solid;
@@ -206,11 +208,36 @@ html:not(.sidebar-visible) #menu-bar:not(:hover).folded > #menu-bar-sticky-conta
     transition: .4s;
 }
 
-.sbutton:hover {
+.sbutton:hover,
+.fbutton:hover {
     transform: scale(1.1);
     border-radius: 15px;
     border-width: 1px;
     transition: .4s;
+}
+
+.textfontbuttons .fbutton{
+    font-weight: inherit;
+}
+
+.textfontbuttons .fbutton#font1 {
+    font-family: "Open Sans", sans-serif;
+}
+
+.textfontbuttons .fbutton#font2 {
+    font-family: Georgia, serif;
+}
+
+.textfontbuttons .fbutton#font3 {
+    font-family: Montserrat;
+}
+
+.textfontbuttons .fbutton#font4 {
+    font-family: cursive;
+}
+
+.textfontbuttons .fbutton#font5 {
+    font-family: monospace;
 }
 
 .textsizebuttons .sbutton#text15 {
