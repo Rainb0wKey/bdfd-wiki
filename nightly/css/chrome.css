@@ -224,7 +224,8 @@ html:not(.sidebar-visible) #menu-bar:not(:hover).folded > #menu-bar-sticky-conta
     border-color: var(--icons);
 }
 
-.fbutton {
+.fbutton,
+.hgButton {
     padding-left: 1rem;
     padding-right: 1rem;
     height: 4rem;
@@ -238,6 +239,11 @@ html:not(.sidebar-visible) #menu-bar:not(:hover).folded > #menu-bar-sticky-conta
     background-color: var(--bg);
     color: var(--fg);
     box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+}
+
+.hgButton {
+    margin-top: -2%;
+    margin-bottom: 2%;
 }
 
 .dbutton {
@@ -305,7 +311,8 @@ html:not(.sidebar-visible) #menu-bar:not(:hover).folded > #menu-bar-sticky-conta
     transition: .4s;
 }
 
-.fbutton:hover {
+.fbutton:hover,
+.hgButton:hover {
     transform: scale(1.1);
     border-radius: 15px;
     border-width: 1px;
@@ -316,6 +323,10 @@ html:not(.sidebar-visible) #menu-bar:not(:hover).folded > #menu-bar-sticky-conta
     transform: scale(1.05);
     border-radius: 20px;
     transition: .4s;
+}
+
+.hgButton#resetHG:hover {
+    background-color: #320000;
 }
 
 .dbutton:hover > .display-color {
