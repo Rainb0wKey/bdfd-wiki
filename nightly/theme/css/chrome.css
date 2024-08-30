@@ -250,13 +250,14 @@ html:not(.sidebar-visible) #menu-bar:not(:hover).folded > #menu-bar-sticky-conta
 }
 
 #default-is {
+    -webkit-user-select : none;
     user-select: none;
     font-size: 0.8em;
     color: var(--sidebar-fg);
     margin-top: 5px;
     margin-bottom: -2px;
     margin-left: auto;
-    width: 100px;
+    text-align: right;
 }
 
 #default-is:before {
