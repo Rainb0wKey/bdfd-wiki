@@ -246,6 +246,10 @@ html:not(.sidebar-visible) #menu-bar:not(:hover).folded > #menu-bar-sticky-conta
     margin-bottom: 15px;
 }
 
+.hgButton i {
+  margin-right: 5px;
+}
+
 .hgButton p {
     text-align: center;
     margin: 0;
