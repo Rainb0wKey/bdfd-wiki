@@ -196,7 +196,7 @@
 </div>
 <div class="settingembed">
   <h2 id="text-highlighting"><a class="header" href="#text-highlighting">Text Highlighting</a></h2>
-  <p>Descrption</p>
+  <p>Color?!</p>
   <div class="texthighbuttons">
     <button id="high-none" onClick="changeTextHigh()" class="hbutton">Disable</button>
     <button id="high-blue" onClick="changeTextHigh()" class="hbutton">Blue</button>
@@ -219,7 +219,7 @@
 </div>
 <div class="settingembed">
   <h2 id="text-font"><a class="header" href="#text-font">Text Font</a></h2>
-  <p>Descrption</p>
+  <p>Let's change the font!</p>
   <div class="textfontbuttons">
   	<button id="font1" class="fbutton" onClick="changeTextFont()">Open Sans</button>
     <button id="font2" class="fbutton" onClick="changeTextFont()">Serif</button>
@@ -232,7 +232,7 @@
 </div>
 <div class="settingembed">
   <h2 id="discord-example"><a class="header" href="#discord-example">Discord Example</a></h2>
-  <p>Descrption</p>
+  <p>Let's change the theme for discord examples!</p>
   <div class="discordexamplebuttons">
     <button id="light" class="dbutton">
       <div class="display-color" id="light"></div>
@@ -248,16 +248,24 @@
     </button>
   </div>
 </div>
-<h2 id="highlighting"><a class="header" href="#highlighting">Highlighting</a></h2>
-<p>Input your  highlighting code here!</p>
-<pre><code class="language-json">{
-  "$nomention":"#FFFFF"
-}
-</code></pre>
+<discord-messages>
+    <discord-message author="RainbowKey" role-color="#E67E22">
+        !example ❤️
+        <discord-reactions slot="reactions">
+            <discord-reaction emoji="https://upload.wikimedia.org/wikipedia/commons/7/70/Symbolic_Love_Heart.png" name=":emoji:" count="1">
+            </discord-reaction>
+        </discord-reactions>
+    </discord-message>
+    <discord-message role-color="#378afa" author="BDFD Support" bot verified>
+        Added!
+    </discord-message>
+</discord-messages>
 <div class="settingembed">
   <h2 id="code-highlighting"><a class="header" href="#code-highlighting">Code Highlighting</a></h2>
   <p>Input your  highlighting code here!</p>
   <div class="codehighlighting">
+    <button id="copyHG" onClick="copyHGInput()" class="hgButton">Copy</button>
+    <button id="resetHG" onClick="resetHGInput()" class="hgButton">Reset</button>
     <textarea id="jsonhginput"></textarea>
   </div>
 </div>
