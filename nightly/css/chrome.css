@@ -327,6 +327,7 @@ html:not(.sidebar-visible) #menu-bar:not(:hover).folded > #menu-bar-sticky-conta
 
 .hgButton#resetHG:hover {
     background-color: #320000;
+    color: #FFF;
 }
 
 .dbutton:hover > .display-color {
