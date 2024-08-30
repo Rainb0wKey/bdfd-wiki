@@ -242,8 +242,8 @@ html:not(.sidebar-visible) #menu-bar:not(:hover).folded > #menu-bar-sticky-conta
 }
 
 .hgButton {
-    margin-top: -2%;
-    margin-bottom: 2%;
+    margin-top: -1px;
+    margin-bottom: 15px;
 }
 
 .dbutton {
