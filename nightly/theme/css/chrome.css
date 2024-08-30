@@ -252,7 +252,7 @@ html:not(.sidebar-visible) #menu-bar:not(:hover).folded > #menu-bar-sticky-conta
 #default-is {
     user-select: none;
     font-size: 0.8em;
-    color: #777;
+    color: var(--sidebar-fg);
     margin-top: 5px;
     margin-bottom: -2px;
     margin-left: auto;
