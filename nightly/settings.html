@@ -213,7 +213,7 @@
   <p>Can't see well? Let's edit the text size:</p>
   <div class="textsizebuttons">
     <label id="display-size">62</label>
-    <input type="range" id="textsize" name="volume" min="50" max="100" value="62" oninput="changeFontSize()"/>
+    <input type="range" id="textsize" min="50" max="100" value="62" oninput="changeFontSize()"/>
     <p id="default-is">62%</p>
   </div>
 </div>
@@ -246,6 +246,7 @@
       <div class="display-color" id="midnight"></div>
       <div class="display-text">Midnight</div>
     </button>
+    <p id="default-is">Dark</p>
   </div>
 </div>
 <h2 id="highlighting"><a class="header" href="#highlighting">Highlighting</a></h2>
@@ -254,6 +255,13 @@
   "$nomention":"#FFFFF"
 }
 </code></pre>
+<div class="settingembed">
+  <h2 id="code-highlighting"><a class="header" href="#code-highlighting">Code Highlighting</a></h2>
+  <p>Input your  highlighting code here!</p>
+  <div class="codehighlighting">
+    <input type="text" id="jsonhginput"/>
+  </div>
+</div>
 
                     </main>
 
