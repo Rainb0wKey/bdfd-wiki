@@ -60,6 +60,10 @@ function changeTextHigh() {
     color = 'fff';
   else if (id == 'high-black')
     color = '000';
+  else if (id == 'high-pink')
+    color = 'f025d7';
+  else if (id == 'high-orange')
+    color = 'f07025';
 
   if ( color == 'none' )
     fonntHtml.style.textShadow = color;
