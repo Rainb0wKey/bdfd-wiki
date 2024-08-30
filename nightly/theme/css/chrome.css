@@ -126,7 +126,7 @@ html:not(.sidebar-visible) #menu-bar:not(:hover).folded > #menu-bar-sticky-conta
     background-color: var(--sidebar-bg);
     border-radius: 10px;
     color: var(--sidebar-fg);
-    margin-top: -2.5rem;
+    margin-top: -4.5rem;
     padding-bottom: 15px;
     padding-left: 15px;
     padding-right: 15px;
