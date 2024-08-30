@@ -378,6 +378,14 @@ html:not(.sidebar-visible) #menu-bar:not(:hover).folded > #menu-bar-sticky-conta
     text-shadow: 0 0 10px #000000;
 }
 
+.texthighbuttons .hbutton#high-pink {
+    text-shadow: 0 0 10px #f025d7;
+}
+
+.texthighbuttons .hbutton#high-orange {
+    text-shadow: 0 0 10px #f07025;
+}
+
 .textfontbuttons .fbutton#font1 {
     font-family: "Open Sans", sans-serif;
 }
