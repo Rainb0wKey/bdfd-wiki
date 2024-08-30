@@ -232,7 +232,7 @@ html:not(.sidebar-visible) #menu-bar:not(:hover).folded > #menu-bar-sticky-conta
     border: none;
     border-radius: 10px;
     cursor: pointer;
-    font-size: 16px;
+    font-size: 1.5rem;
     margin: .25%;
     margin-top: 3%;
     transition: .4s;
