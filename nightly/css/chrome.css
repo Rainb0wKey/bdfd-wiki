@@ -122,6 +122,17 @@ html:not(.sidebar-visible) #menu-bar:not(:hover).folded > #menu-bar-sticky-conta
 
 /* Settings */
 
+.discord-messages {
+    margin-top: 1rem;
+    transition: .3s;
+}
+
+.discord-messages:hover {
+    transform: scale(1.025);
+    border-radius: 12.5px;
+    transition: .3s;
+}
+
 .settingembed {
     background-color: var(--sidebar-bg);
     border-radius: 10px;
