@@ -249,6 +249,20 @@ html:not(.sidebar-visible) #menu-bar:not(:hover).folded > #menu-bar-sticky-conta
     transition: .4s;
 }
 
+#default-is {
+    user-select: none;
+    font-size: 0.8em;
+    color: #777;
+    margin-top: 5px;
+    margin-bottom: -2px;
+    margin-left: auto;
+    width: 100px;
+}
+
+#default-is:before {
+    content: "Default is ";
+}
+
 .display-color#light {
     background-color: #F2F3F5;
 }
