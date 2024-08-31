@@ -197,6 +197,41 @@
     background-color: #000;
 }
 
+.display-color#redmoon {
+    background: linear-gradient(-25deg, #240000, #740606);
+}
+
+.display-color#nightsapphire {
+    background: linear-gradient(-25deg, #000124, #260674);
+}
+
+.display-color#emeraldearth {
+    background: linear-gradient(-25deg, #0c2400, #067446);
+}
+
+.display-color#nightviolet {
+    background: linear-gradient(-25deg, #1d0024, #350674);
+}
+
+.display-color#oldwood {
+    background: linear-gradient(-25deg, #240f00, #744806);
+}
+
+.display-color#azuresky {
+    background: linear-gradient(-25deg, #001a24, #067465);
+}
+
+.display-color#cherryvelvety {
+    background: linear-gradient(-25deg, #240017, #74064d);
+}
+
+.display-color#forestdepth {
+    background: linear-gradient(-25deg, #222400, #687406);
+}
+
+.display-color#nightchestnut {
+    background: linear-gradient(-25deg, #190024, #740606);
+}
 .display-text {
     color: var(--fg);
     font-size: 1.75rem;
