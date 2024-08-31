@@ -239,29 +239,29 @@
   <h2 id="discord-example"><a class="header" href="#discord-example">Discord Example</a></h2>
   <p>Let's change the theme for discord examples!</p>
   <div class="discordexamplebuttons">
-    <button id="light" class="dbutton">
+    <button id="light" class="dbutton" onClick="changeDiscordTheme()">
       <div class="display-color" id="light"></div>
       <div class="display-text">Light</div>
     </button>
-    <button id="dark" class="dbutton">
+    <button id="dark" class="dbutton" onClick="changeDiscordTheme()">
       <div class="display-color" id="dark"></div>
       <div class="display-text">Dark</div>
     </button>
-    <button id="midnight" class="dbutton">
+    <button id="midnight" class="dbutton" onClick="changeDiscordTheme()">
       <div class="display-color" id="midnight"></div>
       <div class="display-text">Midnight</div>
     </button>
   </div>
 </div>
 <discord-messages>
-    <discord-message role-color="#E67E22" author="RainbowKey">
+    <discord-message author="RainbowKey" role-color="#E67E22">
         !example ❤️
         <discord-reactions slot="reactions">
-            <discord-reaction count="1" name=":emoji:" emoji="https://upload.wikimedia.org/wikipedia/commons/7/70/Symbolic_Love_Heart.png">
+            <discord-reaction count="1" emoji="https://upload.wikimedia.org/wikipedia/commons/7/70/Symbolic_Love_Heart.png" name=":emoji:">
             </discord-reaction>
         </discord-reactions>
     </discord-message>
-    <discord-message bot verified role-color="#378afa" author="BDFD Support">
+    <discord-message bot author="BDFD Support" role-color="#378afa" verified>
         Added!
     </discord-message>
 </discord-messages>
