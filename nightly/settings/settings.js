@@ -28,10 +28,35 @@ function changeDiscordTheme() {
     exampleColor = '#000';
     reactionColor = '#131318';
     messageTextColor = '#DDDEE1';
+  } else if (buttonId === 'redmoon') {
+    reactionColor = '#4e0505';
+    discordMessages.style.background = 'linear-gradient(-25deg, #240000, #740606)';
+  } else if (buttonId === 'nightsapphire') {
+    reactionColor = '#11054e';
+    discordMessages.style.background = 'linear-gradient(-25deg, #000124, #260674)';
+  } else if (buttonId === 'emeraldearth') {
+    reactionColor = '#0c4e05';
+    discordMessages.style.background = 'linear-gradient(-25deg, #0c2400, #067446)';
+  } else if (buttonId === 'nightviolet') {
+    reactionColor = '#0c4e05';
+    discordMessages.style.background = 'linear-gradient(-25deg, #1d0024, #350674)';
+  } else if (buttonId === 'oldwood') {
+    reactionColor = '#4e3b05';
+    discordMessages.style.background = 'linear-gradient(-25deg, #240f00, #744806)';
+  } else if (buttonId === 'azuresky') {
+    reactionColor = '#05474e';
+    discordMessages.style.background = 'linear-gradient(-25deg, #001a24, #067465)';
+  } else if (buttonId === 'cherryvelvety') {
+    reactionColor = '#4e0537';
+    discordMessages.style.background = 'linear-gradient(-25deg, #240017, #74064d)';
+  } else if (buttonId === 'forestdepth') {
+    reactionColor = '#4c4e05';
+    discordMessages.style.background = 'linear-gradient(-25deg, #222400, #687406)';
+  } else if (buttonId === 'nightchestnut') {
+    reactionColor = '#4e0505';
+    discordMessages.style.background = 'linear-gradient(-25deg, #190024, #740606)';
   } else {
-    exampleColor = '#1C1D22';
-    reactionColor = '#202226';
-    messageTextColor = '#C6C7CC';
+    console.error('Incorrect theme ID:', buttonId);
   }
 
   if (discordMessages) {
