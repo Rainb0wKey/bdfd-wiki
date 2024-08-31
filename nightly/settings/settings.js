@@ -6,7 +6,7 @@ function changeFontSize() {
   webSize.style.fontSize = `${range.value}%`;
 
   // Save in Storage
-  updateJsonFile("text-size", '${range.value}%'); 
+  updateJsonFile("text-size", range.value + "%"); 
 }
 
 function changeTextFont() {
