@@ -73,6 +73,9 @@ function changeTextHigh() {
 }
 
 function loadSettings() {
+  const displaySize = document.getElementById("display-size");
+  const range = document.getElementById("textsize");
+
   let data = JSON.parse(localStorage.getItem('json')) || {
     "theme": "bdfd",
     "discord-example-theme": "light",
@@ -84,6 +87,11 @@ function loadSettings() {
   document.querySelector('html').style.fontFamily = data['text-font'];
   document.querySelector('html').style.fontSize = data['text-size'];
   document.querySelector('html').style.textShadow = data['text-hg'];
+
+  if (displaySize) {
+    displaySize.textContent = data['text-size'].replace('%', '');
+    range.value = parseInt(data['text-size'].replace('%', ''));
+  }
 }
 
 window.onload = loadSettings;
