@@ -9,6 +9,24 @@ function changeFontSize() {
   updateJsonFile("text-size", range.value + "%"); 
 }
 
+
+function changeDiscordTheme() {
+  const buttonid = event.srcElement.id;
+  const discordMessages = document.querySelector('.discord-messages');
+
+  let examplecolor = '#1C1D22';
+
+  if (buttonid == 'light')
+    examplecolor = '#F2F3F5';
+  else if (buttonid == 'midnight')
+    examplecolor = '#000';
+
+  if (discordMessages) {
+    discordMessages.style.backgroundColor = examplecolor;
+  }
+
+}
+
 function changeTextFont() {
   const id = event.srcElement.id;
   const fontHtml = document.querySelector('html');
