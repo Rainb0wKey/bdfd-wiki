@@ -23,6 +23,22 @@ function changeTextFont() {
     font = 'system-ui';
 
   fontHtml.style.fontFamily = font;
+  // Save in Storage
+  updateJsonFile("text-font", font); 
+}
+
+function updateJsonFile(key, value) {
+  const jsonFilePath = './settings.json';
+
+  fetch(jsonFilePath)
+    .then(response => response.json())
+    .then(data => {
+      data[key] = value;
+
+      const updatedJson = JSON.stringify(data, null, 2);
+      localStorage.setItem('json', updatedJson);
+    })
+    .catch(error => console.error('I cant update JSON:', error));
 }
 
 function changeTextHigh() {
