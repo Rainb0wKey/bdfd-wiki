@@ -28,6 +28,10 @@ function changeDiscordTheme() {
     exampleColor = '#000';
     reactionColor = '#131318';
     messageTextColor = '#DDDEE1';
+  } else {
+    exampleColor = '#1C1D22';
+    reactionColor = '#202226';
+    messageTextColor = '#C6C7CC';
   }
 
   if (discordMessages) {
