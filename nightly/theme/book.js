@@ -14,15 +14,6 @@ document.querySelectorAll('code').forEach((block) => {
 	block.classList.add('hljs');
 });
 
-
-function changeThemeColor() {
-  const lastClassName = document.documentElement.className.split(' ').pop();
-  const colorElement = document.querySelector(`.${lastClassName}`);
-  const bgColor = getComputedStyle(colorElement).getPropertyValue('--bg').trim();
-  document.querySelector('meta[name="theme-color"]').setAttribute('content', bgColor);
-} 
-
-
 if (window.playground_copyable) {
 	document.querySelectorAll('pre code').forEach((block) => {
 		const pre_block = block.parentNode;
@@ -45,14 +36,8 @@ if (window.playground_copyable) {
 			wrapButton.title = 'Wrap code'
 			wrapButton.setAttribute('aria-label', wrapButton.title);
 
-			const syntaxButton = document.createElement('button');
-			syntaxButton.className = 'fa fa-bold syntax-button';
-			syntaxButton.title = 'Syntax code'
-			syntaxButton.setAttribute('aria-label', syntaxButton.title);
-
 			buttons.insertBefore(clipButton, buttons.firstChild);
 			buttons.insertBefore(wrapButton, buttons.firstChild);
-			buttons.insertBefore(syntaxButton, buttons.firstChild);
 		}
 	});
 }
@@ -168,7 +153,6 @@ if (window.playground_copyable) {
 	themePopup.addEventListener('click', (e) => {
 		var theme = e.target.id || e.target.parentElement.id;
 		set_theme(theme);
-		changeThemeColor();
 	});
 
 	themePopup.addEventListener('focusout', (e) => {
@@ -400,20 +384,6 @@ if (window.playground_copyable) {
 			}
 		});
 	});
-})();
-
-(function syntax() {
-    const syntaxButtons = document.querySelectorAll(".syntax-button");
-    syntaxButtons.forEach((hgButton) => {
-        hgButton.addEventListener('click', (e) => {
-            const playground = hgButton.closest("pre");
-            const codeBlock = playground.querySelector("code");
-            const spans = codeBlock.querySelectorAll("span"); 
-            spans.forEach((span) => {
-                span.classList.toggle('nostyle');
-            });
-        });
-    });
 })();
 
 (function scrollToTop() {
