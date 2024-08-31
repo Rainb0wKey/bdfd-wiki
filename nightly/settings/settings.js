@@ -4,6 +4,9 @@ function changeFontSize() {
   const webSize = document.documentElement;
   displaySize.textContent = range.value;
   webSize.style.fontSize = `${range.value}%`;
+
+  // Save in Storage
+  updateJsonFile("text-hg", '${range.value}%'); 
 }
 
 function changeTextFont() {
@@ -64,6 +67,9 @@ function changeTextHigh() {
     fonntHtml.style.textShadow = color;
   else
     fonntHtml.style.textShadow = '0 0 10px' + ' #' + color;
+
+  // Save in Storage
+  updateJsonFile("text-hg", fonntHtml.style.textShadow); 
 }
 
 function loadSettings() {
