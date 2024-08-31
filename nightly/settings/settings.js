@@ -23,22 +23,17 @@ function changeTextFont() {
     font = 'system-ui';
 
   fontHtml.style.fontFamily = font;
+
   // Save in Storage
   updateJsonFile("text-font", font); 
 }
 
 function updateJsonFile(key, value) {
-  const jsonFilePath = './settings.json';
+  let data = JSON.parse(localStorage.getItem('json')) || {};
 
-  fetch(jsonFilePath)
-    .then(response => response.json())
-    .then(data => {
-      data[key] = value;
+  data[key] = value;
 
-      const updatedJson = JSON.stringify(data, null, 2);
-      localStorage.setItem('json', updatedJson);
-    })
-    .catch(error => console.error('I cant update JSON:', error));
+  localStorage.setItem('json', JSON.stringify(data, null, 2));
 }
 
 function changeTextHigh() {
@@ -70,3 +65,17 @@ function changeTextHigh() {
   else
     fonntHtml.style.textShadow = '0 0 10px' + ' #' + color;
 }
+
+function loadSettings() {
+  let data = JSON.parse(localStorage.getItem('json')) || {
+    "theme": "bdfd",
+    "discord-example-theme": "light",
+    "text-size": "62%",
+    "text-hg": "none",
+    "text-font": "Open Sans, sans-serif",
+  };
+
+  document.querySelector('html').style.fontFamily = data['text-font'];
+}
+
+window.onload = loadSettings;
