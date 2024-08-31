@@ -9,6 +9,11 @@ function changeFontSize() {
   updateJsonFile("text-size", range.value + "%"); 
 }
 
+function copyHGInput() {
+  const textarea = document.getElementById('jsonhginput');
+  textarea.select();
+  document.execCommand('copy');
+}
 
 function changeDiscordTheme() {
   const buttonId = event.srcElement.id;
