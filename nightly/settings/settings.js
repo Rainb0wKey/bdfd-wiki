@@ -16,7 +16,7 @@ function changeDiscordTheme() {
   const reaction = document.querySelector('.discord-reaction');
   const messageColor = document.querySelector('.discord-message-markup');
 
-  let examplecolor = '#1C1D22';
+  let exampleColor = '#1C1D22';
   let reactionColor = '#202226';
   let messageTextColor = '#C6C7CC';
 
@@ -31,7 +31,7 @@ function changeDiscordTheme() {
   }
 
   if (discordMessages) {
-    discordMessages.style.backgroundColor = examplecolor;
+    discordMessages.style.backgroundColor = exampleColor;
     reaction.style.backgroundColor = reactionColor;
     messageColor.style.color = messageTextColor;
   }
