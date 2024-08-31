@@ -38,7 +38,7 @@ function changeDiscordTheme() {
     reactionColor = '#0c4e05';
     discordMessages.style.background = 'linear-gradient(-25deg, #0c2400, #067446)';
   } else if (buttonId === 'nightviolet') {
-    reactionColor = '#0c4e05';
+    reactionColor = '#3c054e';
     discordMessages.style.background = 'linear-gradient(-25deg, #1d0024, #350674)';
   } else if (buttonId === 'oldwood') {
     reactionColor = '#4e3b05';
