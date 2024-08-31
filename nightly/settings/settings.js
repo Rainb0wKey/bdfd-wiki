@@ -11,7 +11,7 @@ function changeFontSize() {
 
 
 function changeDiscordTheme() {
-  const buttonid = event.srcElement.id;
+  const buttonId = event.srcElement.id;
   const discordMessages = document.querySelector('.discord-messages');
   const reaction = document.querySelector('.discord-reaction');
   const messageColor = document.querySelector('.discord-message-markup');
