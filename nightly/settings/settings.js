@@ -13,16 +13,26 @@ function changeFontSize() {
 function changeDiscordTheme() {
   const buttonid = event.srcElement.id;
   const discordMessages = document.querySelector('.discord-messages');
+  const reaction = document.querySelector('.discord-reaction');
+  const messageColor = document.querySelector('.discord-message-markup');
 
   let examplecolor = '#1C1D22';
+  let reactionColor = '#202226';
+  let messageColor = '#C6C7CC';
 
   if (buttonid == 'light')
-    examplecolor = '#F2F3F5';
+    examplecolor = '#FFF';
+    reactionColor = '#F2F3F5';
+    messageColor = '#313338';
   else if (buttonid == 'midnight')
     examplecolor = '#000';
+    reactionColor = '#131318';
+    messageColor = '#DDDEE1';
 
   if (discordMessages) {
     discordMessages.style.backgroundColor = examplecolor;
+    reaction.style.backgroundColor = reactionColor;
+    messageColor.style.color = messageColor;
   }
 
 }
