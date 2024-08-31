@@ -176,7 +176,7 @@
                         </nav>
                         <h1 id="settings"><a class="header" href="#settings">Settings</a></h1>
 <p>Let’s customize your exp in the bdfd wiki world 🌍!</p>
-<script src="./settings.css"></script>
+<link rel="stylesheet" href="./settings.css">
 <script src="./settings.js"></script>
 <div class="settingembed">
   <h2 id="theme"><a class="header" href="#theme">Theme</a></h2>
@@ -256,11 +256,11 @@
     <discord-message role-color="#E67E22" author="RainbowKey">
         !example ❤️
         <discord-reactions slot="reactions">
-            <discord-reaction count="1" name=":emoji:" emoji="https://upload.wikimedia.org/wikipedia/commons/7/70/Symbolic_Love_Heart.png">
+            <discord-reaction emoji="https://upload.wikimedia.org/wikipedia/commons/7/70/Symbolic_Love_Heart.png" name=":emoji:" count="1">
             </discord-reaction>
         </discord-reactions>
     </discord-message>
-    <discord-message author="BDFD Support" verified role-color="#378afa" bot>
+    <discord-message bot author="BDFD Support" role-color="#378afa" verified>
         Added!
     </discord-message>
 </discord-messages>
