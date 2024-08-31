@@ -23,11 +23,11 @@ function changeDiscordTheme() {
   if (buttonId === 'light') {
     exampleColor = '#FFF';
     reactionColor = '#F2F3F5';
-    messageColor = '#313338';
+    messageTextColor = '#313338';
   } else if (buttonId === 'midnight') {
     exampleColor = '#000';
     reactionColor = '#131318';
-    messageColor = '#DDDEE1';
+    messageTextColor = '#DDDEE1';
   }
 
   if (discordMessages) {
