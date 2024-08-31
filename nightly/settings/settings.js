@@ -18,21 +18,21 @@ function changeDiscordTheme() {
 
   let examplecolor = '#1C1D22';
   let reactionColor = '#202226';
-  let messageColor = '#C6C7CC';
+  let messageTextColor = '#C6C7CC';
 
   if (buttonid == 'light')
     examplecolor = '#FFF';
     reactionColor = '#F2F3F5';
-    messageColor = '#313338';
+    messageTextColor = '#313338';
   else if (buttonid == 'midnight')
     examplecolor = '#000';
     reactionColor = '#131318';
-    messageColor = '#DDDEE1';
+    messageTextColor = '#DDDEE1';
 
   if (discordMessages) {
     discordMessages.style.backgroundColor = examplecolor;
     reaction.style.backgroundColor = reactionColor;
-    messageColor.style.color = messageColor;
+    messageColor.style.color = messageTextColor;
   }
 
 }
