@@ -1,6 +1,7 @@
 # Summary
 
 [Foreword](./foreword.md)
+[Settings](./settings/settings.md)
 [Changelog](./CHANGELOG.md)
 [Flowchart Changelog](./FLOWCHART_CHANGELOG.md)
 [Terms of Service](./terms.md)
