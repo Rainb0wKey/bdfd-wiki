@@ -4,14 +4,15 @@
 /* Settings */
 
 .discord-messages {
-    margin-top: 1rem;
-    transition: .3s;
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+    transition: .5s;
 }
 
 .discord-messages:hover {
     transform: scale(1.025);
     border-radius: 12.5px;
-    transition: .3s;
+    transition: .5s;
 }
 
 .settingembed {
