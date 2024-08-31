@@ -25,39 +25,39 @@ function changeDiscordTheme() {
   let reactionColor = '#202226';
   let messageTextColor = '#C6C7CC';
 
-  if (buttonId === 'light') {
+  if (buttonId === 'light-button') {
     exampleColor = '#FFF';
     reactionColor = '#F2F3F5';
     messageTextColor = '#313338';
-  } else if (buttonId === 'midnight') {
+  } else if (buttonId === 'dark-button') {
     exampleColor = '#000';
     reactionColor = '#131318';
     messageTextColor = '#DDDEE1';
-  } else if (buttonId === 'redmoon') {
+  } else if (buttonId === 'redmoon-button') {
     reactionColor = '#4e0505';
     discordMessages.style.background = 'linear-gradient(-25deg, #240000, #740606)';
-  } else if (buttonId === 'nightsapphire') {
+  } else if (buttonId === 'nightsapphire-button') {
     reactionColor = '#11054e';
     discordMessages.style.background = 'linear-gradient(-25deg, #000124, #260674)';
-  } else if (buttonId === 'emeraldearth') {
+  } else if (buttonId === 'emeraldearth-button') {
     reactionColor = '#0c4e05';
     discordMessages.style.background = 'linear-gradient(-25deg, #0c2400, #067446)';
-  } else if (buttonId === 'nightviolet') {
+  } else if (buttonId === 'nightviolet-button') {
     reactionColor = '#3c054e';
     discordMessages.style.background = 'linear-gradient(-25deg, #1d0024, #350674)';
-  } else if (buttonId === 'oldwood') {
+  } else if (buttonId === 'oldwood-button') {
     reactionColor = '#4e3b05';
     discordMessages.style.background = 'linear-gradient(-25deg, #240f00, #744806)';
-  } else if (buttonId === 'azuresky') {
+  } else if (buttonId === 'azuresky-button') {
     reactionColor = '#05474e';
     discordMessages.style.background = 'linear-gradient(-25deg, #001a24, #067465)';
-  } else if (buttonId === 'cherryvelvety') {
+  } else if (buttonId === 'cherryvelvety-button') {
     reactionColor = '#4e0537';
     discordMessages.style.background = 'linear-gradient(-25deg, #240017, #74064d)';
-  } else if (buttonId === 'forestdepth') {
+  } else if (buttonId === 'forestdepth-button') {
     reactionColor = '#4c4e05';
     discordMessages.style.background = 'linear-gradient(-25deg, #222400, #687406)';
-  } else if (buttonId === 'nightchestnut') {
+  } else if (buttonId === 'nightchestnut-button') {
     reactionColor = '#4e0505';
     discordMessages.style.background = 'linear-gradient(-25deg, #190024, #740606)';
   } else {
