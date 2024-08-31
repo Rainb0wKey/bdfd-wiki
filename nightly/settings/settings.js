@@ -20,14 +20,15 @@ function changeDiscordTheme() {
   let reactionColor = '#202226';
   let messageTextColor = '#C6C7CC';
 
-  if (buttonid == 'light')
-    examplecolor = '#FFF';
+  if (buttonId === 'light') {
+    exampleColor = '#FFF';
     reactionColor = '#F2F3F5';
-    messageTextColor = '#313338';
-  else if (buttonid == 'midnight')
-    examplecolor = '#000';
+    messageColor = '#313338';
+  } else if (buttonId === 'midnight') {
+    exampleColor = '#000';
     reactionColor = '#131318';
-    messageTextColor = '#DDDEE1';
+    messageColor = '#DDDEE1';
+  }
 
   if (discordMessages) {
     discordMessages.style.backgroundColor = examplecolor;
