@@ -24,6 +24,9 @@
         <!-- Discord Components -->
         <script type="module" src="https://unpkg.com/@skyra/discord-components-core"></script>
 
+				<!-- Settings -->
+				<script src="../settings/settings.js"></script>
+
         <!-- Fonts -->
         <link rel="stylesheet" href="../FontAwesome/css/font-awesome.css">
         <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800">
@@ -185,10 +188,10 @@ $colorRole[$noMentionMessage]
 ✅ Changed the role color of &lt;@&amp;$mentionedRoles[1]&gt; to `$noMentionMessage`!
 </code></pre>
 <discord-messages>
-    <discord-message author="Nicky" role-color="#EE7908">
+    <discord-message role-color="#EE7908" author="Nicky">
         !example <discord-mention type="role" color="#E11F0E">cool role</discord-mention> #E11F0E
     </discord-message>
-    <discord-message author="Wiki Bot" role-color="#748BD4" bot verified>
+    <discord-message bot author="Wiki Bot" role-color="#748BD4" verified>
         ✅ Changed the role color of <discord-mention type="role" color="#E11F0E">cool role</discord-mention> to <code>#E11F0E</code>!
     </discord-message>
 </discord-messages>

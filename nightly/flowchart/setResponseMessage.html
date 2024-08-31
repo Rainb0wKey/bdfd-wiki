@@ -24,6 +24,9 @@
         <!-- Discord Components -->
         <script type="module" src="https://unpkg.com/@skyra/discord-components-core"></script>
 
+				<!-- Settings -->
+				<script src="../settings/settings.js"></script>
+
         <!-- Fonts -->
         <link rel="stylesheet" href="../FontAwesome/css/font-awesome.css">
         <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800">
@@ -182,8 +185,8 @@
 <p>Entry Point ➤ - ➤ Set response message (Content: <code>Hello</code>)
 <img src="https://github.com/user-attachments/assets/ed7d4f3d-c753-4cda-a3d6-57d8f8d4564d" alt="example" /></p>
 <discord-messages>
-    <discord-message bot role-color="#748bd4" author="Flowchart">
-        <discord-command command="/test" slot="reply" author="RainbowKey" role-color="#E67E22">
+    <discord-message author="Flowchart" bot role-color="#748bd4">
+        <discord-command slot="reply" author="RainbowKey" role-color="#E67E22" command="/test">
         </discord-command>
         Hello
     </discord-message>

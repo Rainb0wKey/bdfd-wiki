@@ -24,6 +24,9 @@
         <!-- Discord Components -->
         <script type="module" src="https://unpkg.com/@skyra/discord-components-core"></script>
 
+				<!-- Settings -->
+				<script src="../settings/settings.js"></script>
+
         <!-- Fonts -->
         <link rel="stylesheet" href="../FontAwesome/css/font-awesome.css">
         <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800">
@@ -185,16 +188,16 @@ What do you want me to say?
 $awaitFunc[say]
 </code></pre>
 <discord-messages>
-    <discord-message role-color="#EE7908" author="Nicky">
+    <discord-message author="Nicky" role-color="#EE7908">
         !say
     </discord-message>
-    <discord-message bot role-color="#748BD4" author="Wiki Bot" verified>
+    <discord-message verified author="Wiki Bot" role-color="#748BD4" bot>
         What do you want me to say?
     </discord-message>
     <discord-message author="Nicky" role-color="#EE7908">
         I love BDFD!
     </discord-message>
-    <discord-message verified bot author="Wiki Bot" role-color="#748BD4">
+    <discord-message bot author="Wiki Bot" verified role-color="#748BD4">
         I love BDFD!
     </discord-message>
 </discord-messages>

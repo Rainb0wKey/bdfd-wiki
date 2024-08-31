@@ -24,6 +24,9 @@
         <!-- Discord Components -->
         <script type="module" src="https://unpkg.com/@skyra/discord-components-core"></script>
 
+				<!-- Settings -->
+				<script src="../settings/settings.js"></script>
+
         <!-- Fonts -->
         <link rel="stylesheet" href="../FontAwesome/css/font-awesome.css">
         <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800">
@@ -187,14 +190,14 @@ $sendMessage[$username clicked on the reaction]
     <discord-message author="Nicky" role-color="#EE7908">
         !example
     </discord-message>
-    <discord-message role-color="#748BD4" bot author="Wiki Bot" verified>
+    <discord-message bot role-color="#748BD4" author="Wiki Bot" verified>
         Click
         <discord-reactions slot="reactions">
-            <discord-reaction emoji="https://cdn.discordapp.com/emojis/766607515445231637.webp" name=":emoji:" reacted count="2">
+            <discord-reaction name=":emoji:" emoji="https://cdn.discordapp.com/emojis/766607515445231637.webp" count="2" reacted>
             </discord-reaction>
         </discord-reactions>
     </discord-message>
-    <discord-message author="Wiki Bot" bot role-color="#748BD4" verified>
+    <discord-message role-color="#748BD4" verified bot author="Wiki Bot">
         Nicky clicked on the reaction
     </discord-message>
 </discord-messages>

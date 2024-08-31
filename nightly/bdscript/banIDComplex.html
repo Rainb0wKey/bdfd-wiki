@@ -24,6 +24,9 @@
         <!-- Discord Components -->
         <script type="module" src="https://unpkg.com/@skyra/discord-components-core"></script>
 
+				<!-- Settings -->
+				<script src="../settings/settings.js"></script>
+
         <!-- Fonts -->
         <link rel="stylesheet" href="../FontAwesome/css/font-awesome.css">
         <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800">
@@ -194,10 +197,10 @@ $onlyIf[$findUser[$message[1];no]!=;Failed to find user!]
 $banID[$replaceText[$message;$message[1];;1];$findUser[$message[1];no]]
 </code></pre>
 <discord-messages>
-    <discord-message role-color="#E67E22" author="RainbowKey">
+    <discord-message author="RainbowKey" role-color="#E67E22">
         !example 854665455527526421 Hello!
     </discord-message>
-    <discord-message bot verified role-color="#378afa" author="BDFD Support">
+    <discord-message bot author="BDFD Support" role-color="#378afa" verified>
         <discord-mention>Chilli</discord-mention> was banned!
     </discord-message>
     <discord-system-message type="leave">
