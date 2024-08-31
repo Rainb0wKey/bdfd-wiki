@@ -82,6 +82,8 @@ function loadSettings() {
   };
 
   document.querySelector('html').style.fontFamily = data['text-font'];
+  document.querySelector('html').style.fontSize = data['text-size'];
+  document.querySelector('html').style.textShadow = data['text-hg'];
 }
 
 window.onload = loadSettings;
