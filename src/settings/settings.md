@@ -7,10 +7,16 @@ Let's customize your exp in the bdfd wiki world 🌍!
   <h2>Theme</h2>
   <p>Select the theme for wiki:</p>
   <input type="range" id="colorThemeSlider" min="0" max="360" value="270">
-	<div id="colorThemePreview">
-		<div id="colorThemeDisplay"></div>
-		<div id="hexColor"></div>
-	</div>
+  <div id="colorThemePreview">
+    <div id="colorThemeDisplay"></div>
+    <div id="hexColor"></div>
+  </div>
+  <div class="button-container">
+    <button id="useAsBackground">Use as background</button>
+    <button id="resetThemeButton">Reset</button>
+    <button id="dontUseBackground">Dont use as background</button>
+    <button id="gradientThemeButton">Gradient</button>
+  </div>
 </div>
 
 <div class="settingembed">
