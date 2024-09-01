@@ -6,20 +6,11 @@ Let's customize your exp in the bdfd wiki world 🌍!
 <div class="settingembed">
   <h2>Theme</h2>
   <p>Select the theme for wiki:</p>
-  <div class="themebuttons">
-    <button id="bdfd" class="tbutton">BDFD</button>
-    <button id="ios" class="tbutton">iOS</button>
-    <button id="android" class="tbutton">Android</button>
-    <button id="forest" class="tbutton">Forest</button>
-    <button id="bloody-moon" class="tbutton">Bloody Moon</button>
-    <button id="dark" class="tbutton">Dark</button>
-    <button id="discord" class="tbutton">Discord</button>
-    <button id="cyber" class="tbutton">Cyber</button>
-    <button id="lemonade" class="tbutton">Lemonade</button>
-    <button id="coffee" class="tbutton">Coffee</button>
-    <button id="modern" class="tbutton">Modern</button>
-    <button id="light" class="tbutton">Light</button>
-  </div>
+  <input type="range" id="colorThemeSlider" min="0" max="360" value="270">
+	<div id="colorThemePreview">
+		<div id="colorThemeDisplay"></div>
+		<div id="hexColor"></div>
+	</div>
 </div>
 
 <div class="settingembed">
