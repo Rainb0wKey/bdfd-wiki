@@ -178,10 +178,16 @@
   <h2 id="theme"><a class="header" href="#theme">Theme</a></h2>
   <p>Select the theme for wiki:</p>
   <input type="range" id="colorThemeSlider" min="0" max="360" value="270">
-	<div id="colorThemePreview">
-		<div id="colorThemeDisplay"></div>
-		<div id="hexColor"></div>
-	</div>
+  <div id="colorThemePreview">
+    <div id="colorThemeDisplay"></div>
+    <div id="hexColor"></div>
+  </div>
+  <div class="button-container">
+    <button id="useAsBackground">Use as background</button>
+    <button id="resetThemeButton">Reset</button>
+    <button id="dontUseBackground">Dont use as background</button>
+    <button id="gradientThemeButton">Gradient</button>
+  </div>
 </div>
 <div class="settingembed">
   <h2 id="text-highlighting"><a class="header" href="#text-highlighting">Text Highlighting</a></h2>
@@ -279,11 +285,11 @@
     <discord-message role-color="#E67E22" author="RainbowKey">
         !example ❤️
         <discord-reactions slot="reactions">
-            <discord-reaction name=":emoji:" emoji="https://upload.wikimedia.org/wikipedia/commons/7/70/Symbolic_Love_Heart.png" count="1">
+            <discord-reaction name=":emoji:" count="1" emoji="https://upload.wikimedia.org/wikipedia/commons/7/70/Symbolic_Love_Heart.png">
             </discord-reaction>
         </discord-reactions>
     </discord-message>
-    <discord-message verified bot author="BDFD Support" role-color="#378afa">
+    <discord-message author="BDFD Support" role-color="#378afa" bot verified>
         Added!
     </discord-message>
 </discord-messages>
