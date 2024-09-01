@@ -164,4 +164,81 @@ function loadSettings() {
   }
 }
 
+const colorSlider = document.getElementById('colorThemeSlider');
+const colorPreview = document.getElementById('colorThemePreview');
+const colorDisplay = document.getElementById('colorThemeDisplay');
+const hexColor = document.getElementById('hexColor');
+const useAsBackgroundButton = document.getElementById('useAsBackground');
+const resetButton = document.getElementById('resetThemeButton');
+const dontUseBackgroundButton = document.getElementById('dontUseBackground');
+const gradientButton = document.getElementById('gradientThemeButton');
+
+let isGradient = false;
+
+function updateColor() { 
+    const hue = colorSlider.value;
+    const saturation = 80; 
+    const lightness = 50;
+
+    const color1 = `hsl(${hue}, ${saturation}%, ${lightness}%)`;
+    const color2 = `hsl(${hue}, ${saturation}%, ${lightness - 20}%)`; 
+
+    colorPreview.style.background = `linear-gradient(to bottom right, ${color1}, ${color2})`;
+    colorSlider.style.background = `linear-gradient(to right, ${color1}, ${color2})`;
+
+    colorDisplay.style.backgroundColor = color1; 
+    hexColor.textContent = rgbToHex(color1); 
+  }
+
+    colorSlider.addEventListener('input', updateColor);
+
+    useAsBackgroundButton.addEventListener('click', () => {
+      const hue = colorSlider.value;
+      const saturation = 80;
+      const lightness = 5; 
+
+      const backgroundColor = `hsl(${hue}, ${saturation}%, ${lightness}%)`;
+      document.body.style.background = backgroundColor;
+      isGradient = false;
+      gradientButton.classList.add('active');
+    });
+
+    resetButton.addEventListener('click', () => {
+      colorSlider.value = 270;
+      updateColor();
+      document.body.style.background = '#f0f0f0';
+      isGradient = false;
+      gradientButton.classList.remove('active');
+    });
+
+    dontUseBackgroundButton.addEventListener('click', () => {
+      document.body.style.background = '#f0f0f0';
+      isGradient = false;
+      gradientButton.classList.remove('active');
+    });
+
+  gradientButton.addEventListener('click', () => {
+    if (gradientButton.classList.contains('active')) {
+	    const hue = colorSlider.value;
+	  	const saturation = 80;
+	  	const lightness1 = 15;
+		  const lightness2 = 5;
+		
+  	  const color1 = `hsl(${hue}, ${saturation}%, ${lightness1}%)`;
+	    const color2 = `hsl(${hue}, ${saturation}%, ${lightness2}%)`;
+        
+      const currentBackgroundColor = document.body.style.backgroundColor;
+      if (currentBackgroundColor !== '' && currentBackgroundColor !== '#f0f0f0') {
+        document.body.style.background = `linear-gradient(to bottom right, ${color1}, ${color2})`;
+      }
+    }
+  });
+
+  function rgbToHex(rgb) {
+    const c = rgb.match(/\d+/g).map(Number);
+    return '#' + ('000000' + ((c[0] << 16) | (c[1] << 8) | c[2]).toString(16)).slice(-6);
+}
+
+updateColor();
+
 window.onload = loadSettings;
