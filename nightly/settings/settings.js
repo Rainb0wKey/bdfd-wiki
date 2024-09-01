@@ -1,47 +1,47 @@
 const themes = {
-  'light-button': {
+  'light': {
     exampleColor: '#FFF',
     reactionColor: '#F2F3F5',
     messageTextColor: '#313338'
   },
-  'dark-button': {
+  'dark': {
     exampleColor: '#000',
     reactionColor: '#131318',
     messageTextColor: '#DDDEE1'
   },
-  'redmoon-button': {
+  'redmoon': {
     reactionColor: '#4e0505',
     background: 'linear-gradient(-25deg, #240000, #740606)'
   },
-  'nightsapphire-button': {
+  'nightsapphire': {
     reactionColor: '#11054e',
     background: 'linear-gradient(-25deg, #000124, #260674)'
   },
-  'emeraldearth-button': {
+  'emeraldearth': {
     reactionColor: '#0c4e05',
     background: 'linear-gradient(-25deg, #0c2400, #067446)'
   },
-  'nightviolet-button': {
+  'nightviolet': {
     reactionColor: '#3c054e',
     background: 'linear-gradient(-25deg, #1d0024, #350674)'
   },
-  'oldwood-button': {
+  'oldwood': {
     reactionColor: '#4e3b05',
     background: 'linear-gradient(-25deg, #240f00, #744806)'
   },
-  'azuresky-button': {
+  'azuresky': {
     reactionColor: '#05474e',
     background: 'linear-gradient(-25deg, #001a24, #067465)'
   },
-  'cherryvelvety-button': {
+  'cherryvelvety': {
     reactionColor: '#4e0537',
     background: 'linear-gradient(-25deg, #240017, #74064d)'
   },
-  'forestdepth-button': {
+  'forestdepth': {
     reactionColor: '#4c4e05',
     background: 'linear-gradient(-25deg, #222400, #687406)'
   },
-  'nightchestnut-button': {
+  'nightchestnut': {
     reactionColor: '#4e0505',
     background: 'linear-gradient(-25deg, #190024, #740606)'
   }
@@ -56,15 +56,15 @@ const fonts = {
 }
 
 const textHighlights = {
-  'high-blue': '257df0',
-  'high-red': 'f02525',
-  'high-green': '25f03e',
-  'high-yellow': 'f0ea25',
-  'high-purple': '8f25f0',
-  'high-white': 'ffffff',
-  'high-black': '000000',
-  'high-pink': 'f025d7',
-  'high-orange': 'f07025'
+  'blue': '257df0',
+  'red': 'f02525',
+  'green': '25f03e',
+  'yellow': 'f0ea25',
+  'purple': '8f25f0',
+  'white': 'ffffff',
+  'black': '000000',
+  'pink': 'f025d7',
+  'orange': 'f07025'
 }
 
 function changeFontSize() {
@@ -83,8 +83,7 @@ function copyHGInput() {
   navigator.clipboard.writeText(textarea.value).catch((err) => console.error("Failed copying to clipboard", err));
 }
 
-function changeDiscordTheme(ev) {
-  const buttonId = ev.target.id;
+function changeDiscordTheme(colorId) {
   const discordMessages = document.querySelector('.discord-messages');
   const reaction = document.querySelector('.discord-reaction');
   const messageColor = document.querySelector('.discord-message-markup');
@@ -94,7 +93,7 @@ function changeDiscordTheme(ev) {
     reactionColor: '#202226',
     messageTextColor: '#C6C7CC',
     // get styles for this button ID
-    ...(themes[buttonId] || {})
+    ...(themes[colorId] || {})
   }
 
   if (discordMessages) {
@@ -105,10 +104,9 @@ function changeDiscordTheme(ev) {
   }
 }
 
-function changeTextFont(ev) {
-  const id = ev.target.id;
+function changeTextFont(fontId) {
   const fontHtml = document.querySelector('html');
-  let font = fonts[id] || 'Open Sans, sans-serif'
+  let font = fonts[fontId] || 'Open Sans, sans-serif'
 
   fontHtml.style.fontFamily = font;
 
@@ -124,10 +122,9 @@ function updateJsonFile(key, value) {
   localStorage.setItem('json', JSON.stringify(data, null, 2));
 }
 
-function changeTextHigh(ev) {
-  const id = ev.target.id;
+function changeTextHigh(colorId) {
   const fonntHtml = document.querySelector('html');
-  let color = textHighlights[id] || 'none';
+  let color = textHighlights[colorId] || 'none';
 
   if (color == 'none')
     fonntHtml.style.textShadow = color;
