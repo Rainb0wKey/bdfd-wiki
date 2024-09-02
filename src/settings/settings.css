@@ -369,6 +369,16 @@
     text-overflow: ellipsis;
 }
 
+#themePreview .lock-text {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: white;
+    cursor: pointer;
+}
+
 #themeSlider {
     background: linear-gradient(to right, #ddd, #ddd);
 }
