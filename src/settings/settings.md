@@ -19,68 +19,6 @@ Let's customize your exp in the bdfd wiki world 🌍!
 	</div>
 </div>
 
-<script>
-function updateColor() {
-  const colorSlider = document.getElementById('themeSlider');
-  const colorPreview = document.getElementById('themePreview');
-  const colorDisplay = document.getElementById('colorThemeDisplay');
-	
-  const hue = colorSlider.value;
-  const saturation = 80; 
-  const lightness = 50;
-
-  const color1 = `hsl(${hue}, ${saturation}%, ${lightness}%)`;
-  const color2 = `hsl(${hue}, ${saturation}%, ${lightness - 20}%)`; 
-
-  colorPreview.style.background = `linear-gradient(to bottom right, ${color1}, ${color2})`;
-  colorSlider.style.background = `linear-gradient(to right, ${color1}, ${color2})`;
-  colorDisplay.style.background = color1; 
-}
-
-function useBackground() {
-  const colorSlider = document.getElementById('themeSlider');
-
-  const hue = colorSlider.value;
-  const saturation = 80;
-  const lightness = 5; 
-
-  const backgroundColor = `hsl(${hue}, ${saturation}%, ${lightness}%)`;
-  document.body.style.background = backgroundColor;
-};
-
-function resetTheme() {
-  const colorSlider = document.getElementById('themeSlider');
-
-  colorSlider.value = 270;
-  document.body.style.background = '#f0f0f0';
-};
-
-function resetBackground() {
-  document.body.style.background = '#f0f0f0';
-};
-
-function gradientBackground() {
-  const colorSlider = document.getElementById('themeSlider');
-	
-  const hue = colorSlider.value;
-  const saturation = 80;
-  const lightness1 = 20;
-  const lightness2 = 5;
-		
-  const color1 = `hsl(${hue}, ${saturation}%, ${lightness1}%)`; // Create the brighter color
-  const color2 = `hsl(${hue}, ${saturation}%, ${lightness2}%)`; // Create the darker color
-
-  document.body.style.background = `linear-gradient(to bottom right, ${color1}, ${color2})`; // Apply gradient
-};
-
-function rgbToHex(rgb) {
-  const c = rgb.match(/\d+/g).map(Number);
-  return '#' + ('000000' + ((c[0] << 16) | (c[1] << 8) | c[2]).toString(16)).slice(-6);
-}
-
-updateColor();
-</script>
-
 <div class="settingembed">
   <h2>Text Highlighting</h2>
   <p>Color?!</p>
