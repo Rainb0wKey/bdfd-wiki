@@ -53,9 +53,9 @@
 
 .textfontbuttons {
     display: block;
+    margin-top: -20px;
     user-select: none;
     -webkit-user-select : none;
-    margin-top: -20px;
 }
 
 .hbutton {
@@ -130,7 +130,7 @@
     margin-top: 3%;
     transition: .4s;
     background-color: var(--bg);
-    color: var(--fg);
+    color: #fff;
     box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
 }
 
@@ -180,7 +180,7 @@
     -webkit-user-select : none;
     user-select: none;
     font-size: 0.8em;
-    color: var(--sidebar-fg);
+    color: #fff;
     margin-top: 5px;
     margin-bottom: -2px;
     margin-left: auto;
@@ -239,7 +239,7 @@
     background: linear-gradient(-25deg, #190024, #740606);
 }
 .display-text {
-    color: var(--fg);
+    color: #fff;
     font-size: 1.75rem;
     font-weight: bold;
 }
@@ -281,7 +281,7 @@
 
 .texthighbuttons .hbutton {
     background-color: var(--bg);
-    color: var(--fg);
+    color: #fff;
 }
 
 .texthighbuttons .hbutton#high-blue {
@@ -360,7 +360,7 @@
     box-shadow: 0;
     font-size: 2rem;
     font-weight: bold;
-    color: white;
+    color: #fff;
     width: 100%;
     text-align: center;
     top: 25%;
@@ -375,7 +375,7 @@
     right: 10px;
     font-size: 1.2rem;
     font-weight: bold;
-    color: white;
+    color: #fff;
     cursor: pointer;
 }
 
@@ -396,7 +396,7 @@
     left: 5px;
     top: 5px;
     font-size: 1.1rem;
-    color: white;
+    color: #fff;
     background: #000;
     padding-left: 5px;
     padding-right: 5px;
