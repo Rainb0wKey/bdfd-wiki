@@ -271,7 +271,7 @@ function loadSettings() {
   const mainHue = data['theme-main']; // Мяу
 
   if (themeChangerRange) {
-    range.value = parseInt(data['theme-main'].replace('%', ''));
+    themeChangerRange.value = parseInt(data['theme-main'].replace('%', ''));
   }
 
   const setSaturation = 80; 
