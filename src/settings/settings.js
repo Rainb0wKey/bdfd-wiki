@@ -135,62 +135,42 @@ function changeTextHigh(colorId) {
   updateJsonFile("text-hg", fonntHtml.style.textShadow);
 }
 
-function loadSettings() {
-  const displaySize = document.getElementById("display-size");
-  const range = document.getElementById("textsize");
-
-  let data
-
-  try {
-    // json parse breaks if it can't parse, it should have a try catch
-    data = JSON.parse(localStorage.getItem('json'));
-  } catch { }
-
-  data ??= {
-    "theme": "bdfd",
-    "discord-example-theme": "light",
-    "text-size": "60%",
-    "text-hg": "none",
-    "text-font": "Open Sans, sans-serif",
-  }
-
-  document.querySelector('html').style.fontFamily = data['text-font'];
-  document.querySelector('html').style.fontSize = data['text-size'];
-  document.querySelector('html').style.textShadow = data['text-hg'];
-
-  if (displaySize) {
-    displaySize.textContent = data['text-size'].replace('%', '');
-    range.value = parseInt(data['text-size'].replace('%', ''));
-  }
-}
-
 let isLocked = true;
 
 function updateColor() {
+  // Settings page
   const colorSlider = document.getElementById('themeSlider');
   const colorPreview = document.getElementById('themePreview');
   const colorDisplay = document.getElementById('colorThemeDisplay');
   const settingEmbed = document.querySelectorAll('.settingembed');
+
+  // Main changes
   const menuBar = document.getElementById('menu-bar-sticky-container');
   const breadcrumbText = document.querySelectorAll('.breadcrumb a');
   const sideBar = document.querySelector('.sidebar');
   const sideChapterBar = document.querySelector('.chapter li a.active')
   const setButtons = document.querySelectorAll('button');
-	
+
+  // Color Settings
   const hue = colorSlider.value;
   const saturation = 80; 
   const lightness = 50;
 
+  // Creating cute HSL colors
   const color1 = `hsl(${hue}, ${saturation}%, ${lightness}%)`;
   const color2 = `hsl(${hue}, ${saturation}%, ${lightness - 20}%)`; 
   const color3 = `hsl(${hue}, 80%, 15%)`;
 
 
+  // Locked text gameplay
   if (isLocked) {
     document.body.style.background = `hsl(${hue}, 80%, 5%)`;
     document.body.style.color = `hsl(${hue}, 100%, 90%)`;
+    updateJsonFile("theme-bg", document.body.style.background);
+    updateJsonFile("theme-text", document.body.style.color);
   };
-	
+
+  // Updating design
   colorPreview.style.background = `linear-gradient(to bottom right, ${color1}, ${color2})`;
   colorSlider.style.background = `linear-gradient(to right, ${color1}, ${color2})`;
   colorDisplay.textContent = hue + '°';
@@ -211,8 +191,11 @@ function updateColor() {
   breadcrumbText.forEach(link => {
     link.style.color = color1;
   });
+
+  updateJsonFile("theme-main", hue);
 }
 
+// Lock is used to sync text color and background with main color
 function lockTheme() {
   const lockText = document.getElementById('lockText');
   if (!isLocked) {
@@ -261,6 +244,54 @@ function gradientBackground() {
 function rgbToHex(rgb) {
   const c = rgb.match(/\d+/g).map(Number);
   return '#' + ('000000' + ((c[0] << 16) | (c[1] << 8) | c[2]).toString(16)).slice(-6);
+}
+
+function loadSettings() {
+  const displaySize = document.getElementById("display-size");
+  const range = document.getElementById("textsize");
+
+  let data
+
+  try {
+    data = JSON.parse(localStorage.getItem('json'));
+  } catch { }
+
+  data ??= {
+    "theme-main": "270",
+    "theme-bg": "270",
+    "theme-text": "270",
+    "discord-example-theme": "light",
+    "text-size": "60%",
+    "text-hg": "none",
+    "text-font": "Open Sans, sans-serif",
+  }
+
+  const mainHue = data['theme-main']; // Мяу
+  const bgHue = data['theme-bg'];
+  const textHue = data['theme-text'];
+
+  const colorTheme1 = `hsl(${mainHue}, ${saturation}%, ${lightness}%)`;
+  const colorTheme2 = `hsl(${mainHue}, ${saturation}%, ${lightness - 20}%)`; 
+  const colorTheme3 = `hsl(${mainHue}, 80%, 15%)`;
+	
+  document.querySelector('html').style.fontFamily = data['text-font'];
+  document.querySelector('html').style.fontSize = data['text-size'];
+  document.querySelector('html').style.textShadow = data['text-hg'];
+
+  document.querySelector('.sidebar').style.background = colorTheme3; 
+  document.querySelector('.chapter li a.active').style.color = colorTheme1;
+  document.querySelectorAll('.breadcrumb a').forEach(link => {
+    link.style.color = colorTheme1;
+  });
+  document.getElementById('menu-bar-sticky-container')style.background = `linear-gradient(to bottom right, ${colorTheme1}, ${colorTheme2})`;
+  
+  document.body.style.background = `hsl(${bgHue}, 80%, 5%)`;
+  document.body.style.color = `hsl(${textHue}, 100%, 90%)`;
+
+  if (displaySize) {
+    displaySize.textContent = data['text-size'].replace('%', '');
+    range.value = parseInt(data['text-size'].replace('%', ''));
+  }
 }
 
 updateColor();
