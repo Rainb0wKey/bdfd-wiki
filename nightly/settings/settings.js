@@ -149,7 +149,7 @@ function loadSettings() {
   data ??= {
     "theme": "bdfd",
     "discord-example-theme": "light",
-    "text-size": "62%",
+    "text-size": "60%",
     "text-hg": "none",
     "text-font": "Open Sans, sans-serif",
   }
