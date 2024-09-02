@@ -373,10 +373,22 @@
     position: absolute;
     bottom: 10px;
     right: 10px;
-    font-size: 1.2rem;
-    font-weight: bold;
+    font-size: .9rem;
     color: #fff;
     cursor: pointer;
+    border-color: #fff;
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 10px;
+    padding: 2.5px;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+#themePreview .lock-text:hover {
+    color: #bbb;
+    border-color: #bbb;
+    transition: .4s;
 }
 
 #themeSlider {
