@@ -173,8 +173,8 @@
 <link rel="stylesheet" href="./settings.css">
 <script src="{{path_to_root}}settings/settings.js" defer></script>
 <div class="settingembed">
-  <h2 id="theme"><a class="header" href="#theme">Theme</a></h2>
-  <p>Select the theme for wiki:</p>
+  <h2 id="wiki-theme"><a class="header" href="#wiki-theme">Wiki Theme</a></h2>
+  <p>Select the theme color for wiki❤️</p>
     <input type="range" id="themeSlider" min="0" max="360" oninput="updateColor()">
     <div id="themePreview">
       <div id="colorThemeDisplay"></div>
@@ -214,7 +214,7 @@
 </div>
 <div class="settingembed">
   <h2 id="text-font"><a class="header" href="#text-font">Text Font</a></h2>
-  <p>Let's change the font!</p>
+  <p>Let's change the font for texts!</p>
   <div class="textfontbuttons">
   	<button id="font1" class="fbutton" onClick="changeTextFont('font1')">Open Sans</button>
     <button id="font2" class="fbutton" onClick="changeTextFont('font2')">Serif</button>
@@ -283,11 +283,11 @@
     <discord-message role-color="#E67E22" author="RainbowKey">
         !example ❤️
         <discord-reactions slot="reactions">
-            <discord-reaction count="1" name=":emoji:" emoji="https://upload.wikimedia.org/wikipedia/commons/7/70/Symbolic_Love_Heart.png">
+            <discord-reaction count="1" emoji="https://upload.wikimedia.org/wikipedia/commons/7/70/Symbolic_Love_Heart.png" name=":emoji:">
             </discord-reaction>
         </discord-reactions>
     </discord-message>
-    <discord-message verified author="BDFD Support" bot role-color="#378afa">
+    <discord-message bot author="BDFD Support" role-color="#378afa" verified>
         Added!
     </discord-message>
 </discord-messages>
