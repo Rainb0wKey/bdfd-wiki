@@ -178,7 +178,8 @@ function updateColor() {
 
   colorPreview.style.background = `linear-gradient(to bottom right, ${color1}, ${color2})`;
   colorSlider.style.background = `linear-gradient(to right, ${color1}, ${color2})`;
-  colorDisplay.style.background = color1; 
+  colorDisplay.textContent = hue + '°';
+  hexColor.textContent = rgbToHex(color1);
 }
 
 function useBackground() {
