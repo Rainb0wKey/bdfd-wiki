@@ -172,6 +172,7 @@ function updateColor() {
   const menuBar = document.getElementById('menu-bar-sticky-container');
   const breadcrumbText = document.querySelectorAll('.breadcrumb a');
   const sideBar = document.querySelector('.sidebar');
+  const sideChapterBar = document.querySelector('.chapter li a.active')
   const setButtons = document.querySelectorAll('button');
 	
   const hue = colorSlider.value;
@@ -198,6 +199,7 @@ function updateColor() {
   });
 
   hexColor.textContent = rgbToHex(color1);
+  sideChapterBar.style.color = color1;
   breadcrumbText.forEach(link => {
     link.style.color = color1;
   });
