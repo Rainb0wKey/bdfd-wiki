@@ -200,7 +200,7 @@ function useBackground() {
 
   const hue = colorSlider.value;
   const saturation = 80;
-  const lightness = 5; 
+  const lightness = 8; 
 
   const backgroundColor = `hsl(${hue}, ${saturation}%, ${lightness}%)`;
   document.body.style.background = backgroundColor;
@@ -208,16 +208,17 @@ function useBackground() {
 
 function resetTheme() {
   const colorSlider = document.getElementById('themeSlider');
-
-  colorSlider.value = 270;
-
-  updateColor()
 	
-  document.body.style.background = '#f0f0f0';
+  colorSlider.value = 270;
+  
+  updateColor()
+  useBackground()
 };
 
 function resetBackground() {
-  document.body.style.background = '#f0f0f0';
+  const resetBackgroundColor = `hsl(270, 80%, 8%)`;
+	
+  document.body.style.background = resetBackgroundColor;
 };
 
 function gradientBackground() {
