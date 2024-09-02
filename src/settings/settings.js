@@ -270,6 +270,10 @@ function loadSettings() {
 
   const mainHue = data['theme-main']; // Мяу
 
+  if (themeChangerRange) {
+    range.value = parseInt(data['theme-main'].replace('%', ''));
+  }
+
   const setSaturation = 80; 
   const setLightness = 50;
 	
@@ -290,10 +294,6 @@ function loadSettings() {
   
   document.body.style.background = data['theme-bg'];
   document.body.style.color = data['theme-text'];
-
-  if (themeChangerRange) {
-    range.value = parseInt(data['theme-main'].replace('%', ''));
-  }
 
   if (displaySize) {
     displaySize.textContent = data['text-size'].replace('%', '');
