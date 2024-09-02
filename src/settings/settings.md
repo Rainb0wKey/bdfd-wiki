@@ -10,7 +10,7 @@ Let's customize your exp in the bdfd wiki world 🌍!
     <div id="themePreview">
       <div id="colorThemeDisplay"></div>
       <div id="hexColor"></div>
-      <div class="lock-text" id="lockText" onClick="lockTheme()">Unlocked</div>
+      <div class="lock-text" id="lockText" onClick="lockTheme()">Locked</div>
     </div>
     <div class="themebuttons">
       <button class="tbutton" id="setBackground" onClick="useBackground()">Use as background</button>
