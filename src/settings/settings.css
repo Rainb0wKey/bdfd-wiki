@@ -20,7 +20,7 @@
     border-radius: 10px;
     color: var(--sidebar-fg);
     margin-top: -4.5rem;
-    padding-bottom: 15px;
+    padding-bottom: 1.5rem;
     padding-left: 15px;
     padding-right: 15px;
     box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
@@ -59,14 +59,14 @@
 }
 
 .hbutton {
-    padding-left: 1.25rem;
-    padding-right: 1.25rem;
-    height: 4rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    height: 3.5rem;
     border-style: solid;
     border-width: 0px;
     border-radius: 18px;
     cursor: pointer;
-    font-size: 1.5rem;
+    font-size: 1.4rem;
     margin: .5%;
     font-weight: bold;
     transition: .2s;
@@ -128,10 +128,10 @@
     font-size: 1.5rem;
     margin: .25%;
     margin-top: 3%;
-    transition: .4s;
     background-color: var(--bg);
     color: #fff;
     box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+    transition: .2s;
 }
 
 .hgButton {
@@ -163,7 +163,7 @@
     background-color: var(--bg);
     cursor: pointer;
     box-shadow: 0 3px 20px rgba(0, 0, 0, 0.3);
-    transition: .4s;
+    transition: .2s;
 }
 
 .display-color {
@@ -250,7 +250,7 @@
     border-style: solid;
     border-width: 3px;
     box-shadow: 0 3px 20px rgba(0, 0, 0, 0.3);
-    transition: .4s;
+    transition: .2s;
 }
 
 .tbutton:hover,
