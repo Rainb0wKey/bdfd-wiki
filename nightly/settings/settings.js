@@ -182,8 +182,8 @@ function updateColor() {
   colorSlider.style.background = `linear-gradient(to right, ${color1}, ${color2})`;
   colorDisplay.textContent = hue + '°';
   colorDisplay.style.background = color2;
-  settingembed.style.background = color2;
-  menuBarStickyContainer.style.background = `linear-gradient(to bottom right, ${color1}, ${color2})`;
+  settingEmbed.style.background = color2;
+  menuBar.style.background = `linear-gradient(to bottom right, ${color1}, ${color2})`;
 
   hexColor.textContent = rgbToHex(color1);
 }
