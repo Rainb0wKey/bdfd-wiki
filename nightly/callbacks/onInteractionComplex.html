@@ -24,9 +24,6 @@
         <!-- Discord Components -->
         <script type="module" src="https://unpkg.com/@skyra/discord-components-core"></script>
 
-	<!-- Settings -->
-	<script src="../settings/settings.js" defer></script>
-
         <!-- Fonts -->
         <link rel="stylesheet" href="../FontAwesome/css/font-awesome.css">
         <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800">
@@ -222,7 +219,7 @@ $sendMessage[Hello $displayName!]
             </discord-action-row>
         </discord-attachments>
     </discord-message>
-    <discord-message bot role-color="#748BD4" verified author="Wiki Bot">
+    <discord-message verified bot author="Wiki Bot" role-color="#748BD4">
         Hello Nicky!
     </discord-message>
 </discord-messages>
@@ -278,5 +275,7 @@ $sendMessage[Hello $displayName!]
         <!-- Custom JS scripts -->
 
 
+        <!-- Override some theme attributes with the custom settings -->
+        <script src="../settings/apply-settings.js"></script>
     </body>
 </html>

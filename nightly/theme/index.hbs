@@ -30,9 +30,6 @@
         <!-- Discord Components -->
         <script type="module" src="https://unpkg.com/@skyra/discord-components-core"></script>
 
-	<!-- Settings -->
-	<script src="{{ path_to_root }}settings/settings.js" defer></script>
-
         <!-- Fonts -->
         <link rel="stylesheet" href="{{ path_to_root }}FontAwesome/css/font-awesome.css">
         <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800">
@@ -307,5 +304,7 @@
         {{/if}}
         {{/if}}
 
+        <!-- Override some theme attributes with the custom settings -->
+        <script src="{{ path_to_root }}settings/apply-settings.js"></script>
     </body>
 </html>

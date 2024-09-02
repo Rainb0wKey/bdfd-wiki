@@ -24,9 +24,6 @@
         <!-- Discord Components -->
         <script type="module" src="https://unpkg.com/@skyra/discord-components-core"></script>
 
-	<!-- Settings -->
-	<script src="../settings/settings.js" defer></script>
-
         <!-- Fonts -->
         <link rel="stylesheet" href="../FontAwesome/css/font-awesome.css">
         <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800">
@@ -191,7 +188,7 @@ $guildExists[$message[1]]
     <discord-message author="RainbowKey" avatar="https://github.com/NilPointer-Software/bdfd-wiki/assets/113303649/a9034fd5-40c2-4320-a408-2f2ee0071d9d" role-color="#E67E22">
         !example 566363823137882154
     </discord-message>
-    <discord-message bot avatar="https://github.com/NilPointer-Software/bdfd-wiki/assets/113303649/e5fdc906-6c14-4e19-91c0-4ce95b852c61" verified author="BDFD Support" role-color="#378afa">
+    <discord-message author="BDFD Support" bot avatar="https://github.com/NilPointer-Software/bdfd-wiki/assets/113303649/e5fdc906-6c14-4e19-91c0-4ce95b852c61" role-color="#378afa" verified>
         true
     </discord-message>
 </discord-messages>
@@ -242,5 +239,7 @@ $guildExists[$message[1]]
         <!-- Custom JS scripts -->
 
 
+        <!-- Override some theme attributes with the custom settings -->
+        <script src="../settings/apply-settings.js"></script>
     </body>
 </html>

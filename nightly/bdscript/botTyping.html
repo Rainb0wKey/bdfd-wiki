@@ -24,9 +24,6 @@
         <!-- Discord Components -->
         <script type="module" src="https://unpkg.com/@skyra/discord-components-core"></script>
 
-	<!-- Settings -->
-	<script src="../settings/settings.js" defer></script>
-
         <!-- Fonts -->
         <link rel="stylesheet" href="../FontAwesome/css/font-awesome.css">
         <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800">
@@ -189,10 +186,10 @@ Hello $username!
 <li>Command completed:</li>
 </ul>
 <discord-messages>
-    <discord-message author="RainbowKey" role-color="#E67E22">
+    <discord-message role-color="#E67E22" author="RainbowKey">
         !example
     </discord-message>
-    <discord-message author="BDFD Support" role-color="#378afa" bot verified>
+    <discord-message bot verified author="BDFD Support" role-color="#378afa">
         Hello RainbowKey!
     </discord-message>
 </discord-messages>
@@ -243,5 +240,7 @@ Hello $username!
         <!-- Custom JS scripts -->
 
 
+        <!-- Override some theme attributes with the custom settings -->
+        <script src="../settings/apply-settings.js"></script>
     </body>
 </html>

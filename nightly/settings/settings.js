@@ -153,12 +153,12 @@ function updateColor() {
 
   // Color Settings
   const hue = colorSlider.value;
-  const saturation = 80; 
+  const saturation = 80;
   const lightness = 50;
 
   // Creating cute HSL colors
   const color1 = `hsl(${hue}, ${saturation}%, ${lightness}%)`;
-  const color2 = `hsl(${hue}, ${saturation}%, ${lightness - 20}%)`; 
+  const color2 = `hsl(${hue}, ${saturation}%, ${lightness - 20}%)`;
   const color3 = `hsl(${hue}, 80%, 15%)`;
 
 
@@ -176,7 +176,7 @@ function updateColor() {
   colorDisplay.textContent = hue + '°';
   colorDisplay.style.background = color2;
   menuBar.style.background = `linear-gradient(to bottom right, ${color1}, ${color2})`;
-  sideBar.style.background = color3; 
+  sideBar.style.background = color3;
   settingEmbed.forEach(element => {
     element.style.background = color3;
   });
@@ -212,7 +212,7 @@ function useBackground() {
 
   const hue = colorSlider.value;
   const saturation = 80;
-  const lightness = 8; 
+  const lightness = 8;
 
   const backgroundColor = `hsl(${hue}, ${saturation}%, ${lightness}%)`;
   document.body.style.background = backgroundColor;
@@ -221,21 +221,21 @@ function useBackground() {
 
 function resetTheme() {
   const colorSlider = document.getElementById('themeSlider');
-	
+
   colorSlider.value = 270;
-  
+
   updateColor()
   useBackground()
 };
 
 function gradientBackground() {
   const colorSlider = document.getElementById('themeSlider');
-	
+
   const hue = colorSlider.value;
   const saturation = 80;
   const lightness1 = 20;
   const lightness2 = 5;
-		
+
   const color1 = `hsl(${hue}, ${saturation}%, ${lightness1}%)`; // Create the brighter color
   const color2 = `hsl(${hue}, ${saturation}%, ${lightness2}%)`; // Create the darker color
 
@@ -251,7 +251,7 @@ function loadSettings() {
   const displaySize = document.getElementById("display-size");
   const range = document.getElementById("textsize");
   const themeChangerRange = document.getElementById("themeSlider");
-	
+
   let data
 
   try {
@@ -268,32 +268,9 @@ function loadSettings() {
     "text-font": "Open Sans, sans-serif",
   }
 
-  const mainHue = data['theme-main']; // Мяу
-
   if (themeChangerRange) {
     themeChangerRange.value = parseInt(data['theme-main'].replace('%', ''));
   }
-
-  const setSaturation = 80; 
-  const setLightness = 50;
-	
-  const colorTheme1 = `hsl(${mainHue}, ${setSaturation}%, ${setLightness}%)`;
-  const colorTheme2 = `hsl(${mainHue}, ${setSaturation}%, ${setLightness - 20}%)`; 
-  const colorTheme3 = `hsl(${mainHue}, 80%, 15%)`;
-	
-  document.querySelector('html').style.fontFamily = data['text-font'];
-  document.querySelector('html').style.fontSize = data['text-size'];
-  document.querySelector('html').style.textShadow = data['text-hg'];
-
-  document.querySelector('.sidebar').style.background = colorTheme3; 
-  document.querySelector('.chapter li a.active').style.color = colorTheme1;
-  document.querySelectorAll('.breadcrumb a').forEach(link => {
-    link.style.color = colorTheme1;
-  });
-  document.getElementById('menu-bar-sticky-container').style.background = `linear-gradient(to bottom right, ${colorTheme1}, ${colorTheme2})`;
-  
-  document.body.style.background = data['theme-bg'];
-  document.body.style.color = data['theme-text'];
 
   if (displaySize) {
     displaySize.textContent = data['text-size'].replace('%', '');
@@ -301,9 +278,9 @@ function loadSettings() {
   }
 }
 
-window.onload = function() {
-loadSettings()
+loadSettings();
 try {
   updateColor();
-} catch { }
+} catch (err) {
+  console.error("Failed to update color", err);
 }

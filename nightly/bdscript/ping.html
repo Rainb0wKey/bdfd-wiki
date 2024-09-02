@@ -24,9 +24,6 @@
         <!-- Discord Components -->
         <script type="module" src="https://unpkg.com/@skyra/discord-components-core"></script>
 
-	<!-- Settings -->
-	<script src="../settings/settings.js" defer></script>
-
         <!-- Fonts -->
         <link rel="stylesheet" href="../FontAwesome/css/font-awesome.css">
         <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800">
@@ -184,7 +181,7 @@ Pong! $pingms
     <discord-message role-color="#E67E22" author="RainbowKey">
         !example
     </discord-message>
-    <discord-message author="BDFD Support" role-color="#378afa" verified bot>
+    <discord-message author="BDFD Support" bot role-color="#378afa" verified>
         Pong! 5ms
     </discord-message>
 </discord-messages>
@@ -235,5 +232,7 @@ Pong! $pingms
         <!-- Custom JS scripts -->
 
 
+        <!-- Override some theme attributes with the custom settings -->
+        <script src="../settings/apply-settings.js"></script>
     </body>
 </html>

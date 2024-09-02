@@ -24,9 +24,6 @@
         <!-- Discord Components -->
         <script type="module" src="https://unpkg.com/@skyra/discord-components-core"></script>
 
-	<!-- Settings -->
-	<script src="../settings/settings.js" defer></script>
-
         <!-- Fonts -->
         <link rel="stylesheet" href="../FontAwesome/css/font-awesome.css">
         <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800">
@@ -207,7 +204,7 @@
     <discord-message author="RainbowKey" role-color="#E67E22">
         !example main-chat
     </discord-message>
-    <discord-message author="BDFD Support" bot verified role-color="#378afa">
+    <discord-message author="BDFD Support" verified role-color="#378afa" bot>
         <discord-inline-code>hype_squad_balance</discord-inline-code> <discord-inline-code>partner</discord-inline-code>
     </discord-message>
 </discord-messages>
@@ -258,5 +255,7 @@
         <!-- Custom JS scripts -->
 
 
+        <!-- Override some theme attributes with the custom settings -->
+        <script src="../settings/apply-settings.js"></script>
     </body>
 </html>

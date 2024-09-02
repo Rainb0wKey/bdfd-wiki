@@ -24,9 +24,6 @@
         <!-- Discord Components -->
         <script type="module" src="https://unpkg.com/@skyra/discord-components-core"></script>
 
-	<!-- Settings -->
-	<script src="../settings/settings.js" defer></script>
-
         <!-- Fonts -->
         <link rel="stylesheet" href="../FontAwesome/css/font-awesome.css">
         <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800">
@@ -187,12 +184,12 @@ $description[⬅️ That is the embed color border!]
 $color[#673ab7]
 </code></pre>
 <discord-messages>
-    <discord-message author="Nicky" role-color="#EE7908">
+    <discord-message role-color="#EE7908" author="Nicky">
         !example
     </discord-message>
-    <discord-message author="Wiki Bot" bot verified role-color="#748BD4">
+    <discord-message author="Wiki Bot" bot role-color="#748BD4" verified>
         <none>
-        <discord-embed slot="embeds" color="#673ab7">
+        <discord-embed color="#673ab7" slot="embeds">
             <discord-embed-description slot="description">
                 ⬅️ That is the embed color border!
             </discord-embed-description>
@@ -246,5 +243,7 @@ $color[#673ab7]
         <!-- Custom JS scripts -->
 
 
+        <!-- Override some theme attributes with the custom settings -->
+        <script src="../settings/apply-settings.js"></script>
     </body>
 </html>

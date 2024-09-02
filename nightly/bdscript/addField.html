@@ -24,9 +24,6 @@
         <!-- Discord Components -->
         <script type="module" src="https://unpkg.com/@skyra/discord-components-core"></script>
 
-	<!-- Settings -->
-	<script src="../settings/settings.js" defer></script>
-
         <!-- Fonts -->
         <link rel="stylesheet" href="../FontAwesome/css/font-awesome.css">
         <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800">
@@ -200,7 +197,7 @@ $addField[The field name 3!;The field value 3!]
     <discord-message author="Nicky" role-color="#EE7908">
         !example
     </discord-message>
-    <discord-message author="Wiki Bot" role-color="#748BD4" verified bot>
+    <discord-message bot verified role-color="#748BD4" author="Wiki Bot">
         <none>
         <discord-embed slot="embeds">
             <discord-embed-fields slot="fields">
@@ -224,17 +221,17 @@ $addField[The field name 2!;The field value 2!;yes]
 $addField[The field name 3!;The field value 3!;yes]
 </code></pre>
 <discord-messages>
-    <discord-message author="Nicky" role-color="#EE7908">
+    <discord-message role-color="#EE7908" author="Nicky">
         !example
     </discord-message>
-    <discord-message role-color="#748BD4" bot verified author="Wiki Bot">
+    <discord-message author="Wiki Bot" role-color="#748BD4" bot verified>
         <none>
         <discord-embed slot="embeds">
             <discord-embed-fields slot="fields">
-                <discord-embed-field inline field-title="The field name 1!" inline-index="1">
+                <discord-embed-field inline-index="1" field-title="The field name 1!" inline>
                     The field value 1!
                 </discord-embed-field>
-                <discord-embed-field inline-index="2" field-title="The field name 2!" inline>
+                <discord-embed-field field-title="The field name 2!" inline inline-index="2">
                     The field value 2!
                 </discord-embed-field>
                 <discord-embed-field field-title="The field name 3!" inline inline-index="3">
@@ -291,5 +288,7 @@ $addField[The field name 3!;The field value 3!;yes]
         <!-- Custom JS scripts -->
 
 
+        <!-- Override some theme attributes with the custom settings -->
+        <script src="../settings/apply-settings.js"></script>
     </body>
 </html>

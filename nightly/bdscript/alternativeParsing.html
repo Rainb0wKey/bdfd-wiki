@@ -24,9 +24,6 @@
         <!-- Discord Components -->
         <script type="module" src="https://unpkg.com/@skyra/discord-components-core"></script>
 
-	<!-- Settings -->
-	<script src="../settings/settings.js" defer></script>
-
         <!-- Fonts -->
         <link rel="stylesheet" href="../FontAwesome/css/font-awesome.css">
         <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800">
@@ -200,10 +197,10 @@ $description["helloworld"]
 <p>Execute commands.</p>
 <h3 id="with-alternativeparsing"><a class="header" href="#with-alternativeparsing">With <code>$alternativeParsing</code></a></h3>
 <discord-messages>
-    <discord-message author="Nicky" role-color="#EE7908">
+    <discord-message role-color="#EE7908" author="Nicky">
         hello
     </discord-message>
-    <discord-message role-color="#748BD4" author="Wiki Bot" bot verified>
+    <discord-message bot role-color="#748BD4" verified author="Wiki Bot">
         <none>
         <discord-embed slot="embeds">
             <discord-embed-description slot="description">
@@ -214,7 +211,7 @@ $description["helloworld"]
     <discord-message author="Nicky" role-color="#EE7908">
         helloworld
     </discord-message>
-    <discord-message author="Wiki Bot" bot role-color="#748BD4" verified>
+    <discord-message author="Wiki Bot" bot verified role-color="#748BD4">
         <none>
         <discord-embed slot="embeds">
             <discord-embed-description slot="description">
@@ -225,10 +222,10 @@ $description["helloworld"]
 </discord-messages>
 <h3 id="without-alternativeparsing"><a class="header" href="#without-alternativeparsing">Without <code>$alternativeParsing</code></a></h3>
 <discord-messages>
-    <discord-message author="Nicky" role-color="#EE7908">
+    <discord-message role-color="#EE7908" author="Nicky">
         hello
     </discord-message>
-    <discord-message role-color="#748BD4" author="Wiki Bot" bot verified>
+    <discord-message bot verified author="Wiki Bot" role-color="#748BD4">
         <none>
         <discord-embed slot="embeds">
             <discord-embed-description slot="description">
@@ -236,7 +233,7 @@ $description["helloworld"]
             </discord-embed-description>
         </discord-embed>
     </discord-message>
-    <discord-message role-color="#EE7908" author="Nicky">
+    <discord-message author="Nicky" role-color="#EE7908">
         helloworld
     </discord-message>
     <discord-message author="Wiki Bot" verified role-color="#748BD4" bot>
@@ -302,5 +299,7 @@ $description["helloworld"]
         <!-- Custom JS scripts -->
 
 
+        <!-- Override some theme attributes with the custom settings -->
+        <script src="../settings/apply-settings.js"></script>
     </body>
 </html>

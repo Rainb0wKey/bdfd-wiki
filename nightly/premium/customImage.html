@@ -24,9 +24,6 @@
         <!-- Discord Components -->
         <script type="module" src="https://unpkg.com/@skyra/discord-components-core"></script>
 
-	<!-- Settings -->
-	<script src="../settings/settings.js" defer></script>
-
         <!-- Fonts -->
         <link rel="stylesheet" href="../FontAwesome/css/font-awesome.css">
         <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800">
@@ -186,11 +183,11 @@
 $customImage[NiceImage]
 </code></pre>
 <discord-messages>
-    <discord-message author="Nicky" role-color="#EE7908">
+    <discord-message role-color="#EE7908" author="Nicky">
         !example
     </discord-message>
-    <discord-message author="Wiki Bot" role-color="#748BD4" verified bot>
-        <discord-embed slot="embeds" image="https://user-images.githubusercontent.com/111157596/257596077-9836bafb-1c2a-4e1e-9cb3-9ca7725dcbf3.png">
+    <discord-message role-color="#748BD4" author="Wiki Bot" bot verified>
+        <discord-embed image="https://user-images.githubusercontent.com/111157596/257596077-9836bafb-1c2a-4e1e-9cb3-9ca7725dcbf3.png" slot="embeds">
         </discord-embed>
     </discord-message>
 </discord-messages>
@@ -244,5 +241,7 @@ $customImage[NiceImage]
         <!-- Custom JS scripts -->
 
 
+        <!-- Override some theme attributes with the custom settings -->
+        <script src="../settings/apply-settings.js"></script>
     </body>
 </html>

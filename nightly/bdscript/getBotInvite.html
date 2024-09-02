@@ -24,9 +24,6 @@
         <!-- Discord Components -->
         <script type="module" src="https://unpkg.com/@skyra/discord-components-core"></script>
 
-	<!-- Settings -->
-	<script src="../settings/settings.js" defer></script>
-
         <!-- Fonts -->
         <link rel="stylesheet" href="../FontAwesome/css/font-awesome.css">
         <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800">
@@ -190,10 +187,10 @@
 Invite Me! $getBotInvite
 </code></pre>
 <discord-messages>
-    <discord-message author="RainbowKey" role-color="#E67E22">
+    <discord-message role-color="#E67E22" author="RainbowKey">
         !example
     </discord-message>
-    <discord-message role-color="#378afa" author="kubastick" bot>
+    <discord-message bot author="kubastick" role-color="#378afa">
         Invite Me! <a href="https://discordapp.com/oauth2/authorize?client_id=390515191819010058&scope=bot&permissions=2146958847">https://discordapp.com/oauth2/authorize?client_id=390515191819010058&scope=bot&permissions=2146958847</a>
     </discord-message>
 </discord-messages>
@@ -247,5 +244,7 @@ Invite Me! $getBotInvite
         <!-- Custom JS scripts -->
 
 
+        <!-- Override some theme attributes with the custom settings -->
+        <script src="../settings/apply-settings.js"></script>
     </body>
 </html>

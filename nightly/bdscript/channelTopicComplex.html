@@ -24,9 +24,6 @@
         <!-- Discord Components -->
         <script type="module" src="https://unpkg.com/@skyra/discord-components-core"></script>
 
-	<!-- Settings -->
-	<script src="../settings/settings.js" defer></script>
-
         <!-- Fonts -->
         <link rel="stylesheet" href="../FontAwesome/css/font-awesome.css">
         <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800">
@@ -188,7 +185,7 @@
     <discord-message author="Nicky" role-color="#EE7908">
         !example 860870690323300359
     </discord-message>
-    <discord-message author="Wiki Bot" bot role-color="#748BD4" verified>
+    <discord-message role-color="#748BD4" bot author="Wiki Bot" verified>
         <discord-mention type="channel">demo</discord-mention>'s channel topic is: Demos, examples and more!
     </discord-message>
 </discord-messages>
@@ -239,5 +236,7 @@
         <!-- Custom JS scripts -->
 
 
+        <!-- Override some theme attributes with the custom settings -->
+        <script src="../settings/apply-settings.js"></script>
     </body>
 </html>
