@@ -2,6 +2,7 @@
 Let's customize your experience in the Bot Designer For Discord wiki world!
 
 <link rel="stylesheet" href="./settings.css">
+<script src="./settings/settings.js" defer></script>
 
 <div class="settingembed">
   <h2>Theme</h2>
@@ -150,5 +151,3 @@ Let's customize your experience in the Bot Designer For Discord wiki world!
     <textarea id="jsonhginput"></textarea>
   </div>
 </div>
-
-<script src="./settings/settings.js"></script>
