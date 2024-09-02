@@ -186,7 +186,7 @@ function updateColor() {
   const color3 = `hsl(${hue}, 80%, 15%)`;
 
 
-  if (!isLocked) {
+  if (isLocked) {
     document.body.style.background = `hsl(${hue}, 80%, 5%)`;
     document.body.style.color = `hsl(${hue}, 100%, 90%)`;
   };
@@ -215,12 +215,12 @@ function updateColor() {
 
 function lockTheme() {
   const lockText = document.getElementById('lockText');
-  if (isLocked) {
-    lockText.textContent = "Unlock";
-    isLocked = false;
-  } else {
+  if (!isLocked) {
     lockText.textContent = "Lock";
     isLocked = true;
+  } else {
+    lockText.textContent = "Unlock";
+    isLocked = false;
   }
 }
 
