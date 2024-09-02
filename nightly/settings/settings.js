@@ -178,7 +178,7 @@ function updateColor() {
 
   const color1 = `hsl(${hue}, ${saturation}%, ${lightness}%)`;
   const color2 = `hsl(${hue}, ${saturation}%, ${lightness - 20}%)`; 
-  const color3 = `hsl(${hue}, 90%, 35%)`;
+  const color3 = `hsl(${hue}, 80%, 15%)`;
 
   colorPreview.style.background = `linear-gradient(to bottom right, ${color1}, ${color2})`;
   colorSlider.style.background = `linear-gradient(to right, ${color1}, ${color2})`;
