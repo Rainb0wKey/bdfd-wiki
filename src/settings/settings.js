@@ -164,17 +164,11 @@ function loadSettings() {
   }
 }
 
-const colorSlider = document.getElementById('themeSlider');
-const colorPreview = document.getElementById('themePreview');
-const colorDisplay = document.getElementById('colorThemeDisplay');
-const hexColor = document.getElementById('hexColor');
-const useAsBackgroundButton = document.getElementById('setBackground');
-const resetButton = document.getElementById('resetTheme');
-const dontUseBackgroundButton = document.getElementById('resetBackground');
-const gradientButton = document.getElementById('gradientTheme');
-
-
 function updateColor() {
+  const colorSlider = document.getElementById('themeSlider');
+  const colorPreview = document.getElementById('themePreview');
+  const colorDisplay = document.getElementById('colorThemeDisplay');
+	
   const hue = colorSlider.value;
   const saturation = 80; 
   const lightness = 50;
@@ -188,6 +182,8 @@ function updateColor() {
 }
 
 function useBackground() {
+  const colorSlider = document.getElementById('themeSlider');
+
   const hue = colorSlider.value;
   const saturation = 80;
   const lightness = 5; 
@@ -197,6 +193,8 @@ function useBackground() {
 };
 
 function resetTheme() {
+  const colorSlider = document.getElementById('themeSlider');
+
   colorSlider.value = 270;
   document.body.style.background = '#f0f0f0';
 };
@@ -206,13 +204,15 @@ function resetBackground() {
 };
 
 function gradientBackground() {
-	const hue = colorSlider.value;
-	const saturation = 80;
-	const lightness1 = 20;
-	const lightness2 = 5;
+  const colorSlider = document.getElementById('themeSlider');
+	
+  const hue = colorSlider.value;
+  const saturation = 80;
+  const lightness1 = 20;
+  const lightness2 = 5;
 		
-	const color1 = `hsl(${hue}, ${saturation}%, ${lightness1}%)`; // Create the brighter color
-	const color2 = `hsl(${hue}, ${saturation}%, ${lightness2}%)`; // Create the darker color
+  const color1 = `hsl(${hue}, ${saturation}%, ${lightness1}%)`; // Create the brighter color
+  const color2 = `hsl(${hue}, ${saturation}%, ${lightness2}%)`; // Create the darker color
 
   document.body.style.background = `linear-gradient(to bottom right, ${color1}, ${color2})`; // Apply gradient
 };
