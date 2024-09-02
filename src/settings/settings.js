@@ -301,8 +301,7 @@ function loadSettings() {
   }
 }
 
-window.onload = loadSettings;
-
+loadSettings()
 try {
   updateColor();
 } catch { }
