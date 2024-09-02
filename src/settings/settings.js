@@ -171,6 +171,7 @@ function updateColor() {
   const settingEmbed = document.querySelectorAll('.settingembed');
   const menuBar = document.getElementById('menu-bar-sticky-container');
   const breadcrumbText = document.querySelectorAll('.breadcrumb a');
+  const sideBar = document.querySelector('.sidebar');
 	
   const hue = colorSlider.value;
   const saturation = 80; 
@@ -185,6 +186,7 @@ function updateColor() {
   colorDisplay.textContent = hue + '°';
   colorDisplay.style.background = color2;
   menuBar.style.background = `linear-gradient(to bottom right, ${color1}, ${color2})`;
+  sideBar.style.background = color3; 
   settingEmbed.forEach(element => {
     element.style.background = color3;
   });
