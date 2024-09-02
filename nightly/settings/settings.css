@@ -388,14 +388,6 @@
 	width: auto;
 	text-align: center;
 	border-radius: 10px;
-	transition: .3s;
-}
-
-#colorThemeDisplay:hover {
-	left: 8px;
-	top: 7px;
-	transform: scale(1.1);
-	transition: .3s;
 }
 
 #hexColor {
