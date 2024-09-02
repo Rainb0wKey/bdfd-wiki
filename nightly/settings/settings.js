@@ -170,6 +170,7 @@ function updateColor() {
   const colorDisplay = document.getElementById('colorThemeDisplay');
   const settingEmbed = document.querySelectorAll('.settingembed');
   const menuBar = document.getElementById('menu-bar-sticky-container');
+  const breadcrumbText = document.querySelectorAll('.breadcrumb a');
 	
   const hue = colorSlider.value;
   const saturation = 80; 
@@ -177,17 +178,21 @@ function updateColor() {
 
   const color1 = `hsl(${hue}, ${saturation}%, ${lightness}%)`;
   const color2 = `hsl(${hue}, ${saturation}%, ${lightness - 20}%)`; 
+  const color3 = `hsl(${hue}, 90%, 35%)`;
 
   colorPreview.style.background = `linear-gradient(to bottom right, ${color1}, ${color2})`;
   colorSlider.style.background = `linear-gradient(to right, ${color1}, ${color2})`;
   colorDisplay.textContent = hue + '°';
   colorDisplay.style.background = color2;
-  settingEmbed.forEach(element => {
-    element.style.backgroundColor = color1;
-  });
   menuBar.style.background = `linear-gradient(to bottom right, ${color1}, ${color2})`;
+  settingEmbed.forEach(element => {
+    element.style.background = color3;
+  });
 
   hexColor.textContent = rgbToHex(color1);
+  breadcrumbText.forEach(link => {
+    link.style.color = color1;
+  });
 }
 
 function useBackground() {
