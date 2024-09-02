@@ -6,7 +6,7 @@ Let's customize your exp in the bdfd wiki world 🌍!
 <div class="settingembed">
   <h2>Theme</h2>
   <p>Select the theme for wiki:</p>
-    <input type="range" id="themeSlider" min="0" max="360" value="270" oninput="updateColor()">
+    <input type="range" id="themeSlider" min="0" max="360" oninput="updateColor()">
     <div id="themePreview">
       <div id="colorThemeDisplay"></div>
       <div id="hexColor"></div>
