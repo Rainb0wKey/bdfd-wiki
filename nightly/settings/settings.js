@@ -283,7 +283,7 @@ function loadSettings() {
   document.querySelectorAll('.breadcrumb a').forEach(link => {
     link.style.color = colorTheme1;
   });
-  document.getElementById('menu-bar-sticky-container')style.background = `linear-gradient(to bottom right, ${colorTheme1}, ${colorTheme2})`;
+  document.getElementById('menu-bar-sticky-container').style.background = `linear-gradient(to bottom right, ${colorTheme1}, ${colorTheme2})`;
   
   document.body.style.background = `hsl(${bgHue}, 80%, 5%)`;
   document.body.style.color = `hsl(${textHue}, 100%, 90%)`;
