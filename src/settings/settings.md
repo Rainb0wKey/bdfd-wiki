@@ -19,6 +19,10 @@ Let's customize your exp in the bdfd wiki world 🌍!
 	</div>
 </div>
 
+<script>
+
+</script>
+
 <div class="settingembed">
   <h2>Text Highlighting</h2>
   <p>Color?!</p>
