@@ -344,82 +344,84 @@
 }
 
 #themePreview {
-	width: 100%;
-	height: 75px;
-	border: none;
-	margin-top: 10px;
-	position: relative;
-	border-radius: 10px;
-	box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    height: 75px;
+    border: none;
+    margin-top: 10px;
+    position: relative;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
 #themePreview::before {
-	content: "Bot Designer For Discord";
-	position: absolute;
-	top: 50%;
-	left: 50%;
-	transform: translate(-50%, -50%);
-	font-size: 18px;
-	font-weight: bold;
-	color: white;
+    content: "Bot Designer For Discord";
+    box-shadow: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 18px;
+    font-weight: bold;
+    color: white;
 }
 
 #themeSlider {
-	background: linear-gradient(to right, #ddd, #ddd);
+    background: linear-gradient(to right, #ddd, #ddd);
 }
 
 #themeSlider::-webkit-slider-thumb {
-	background-color: #333;
+    background-color: #333;
 }
 
 #themeSlider::-moz-range-thumb {
-	background-color: #333;
+    background-color: #333;
 }
 
 #colorThemeDisplay {
-	position: absolute;
-	left: 5px;
-	top: 5px;
-	font-size: 1.1rem;
-	color: white;
-	background: #000000;
-	padding-left: 5px;
-	padding-right: 5px;
-	width: auto;
-	text-align: center;
-	border-radius: 10px;
+    position: absolute;
+    left: 5px;
+    top: 5px;
+    font-size: 1.1rem;
+    color: white;
+    background: #000;
+    padding-left: 5px;
+    padding-right: 5px;
+    width: auto;
+    text-align: center;
+    border-radius: 10px;
 }
 
 #hexColor {
-	position: absolute;
-	bottom: 10px;
-	left: 10px;
-	font-size: 9px;
-	color: white ;
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    font-size: 9px;
+    color: white ;
 }
 
 input[type="range"] {
-	-webkit-appearance: none;
-	width: 100%;
-	height: 10px;
-	outline: none;
-	border-radius: 10px;
+    -webkit-appearance: none;
+    width: 100%;
+    height: 10px;
+    outline: none;
+    border-radius: 10px;
 }
 
 input[type="range"]::-webkit-slider-thumb {
-	-webkit-appearance: none;
-	appearance: none;
+    -webkit-appearance: none;
+    appearance: none;
     width: 20px;
-	height: 20px;
-	cursor: pointer;
-	border-radius: 50%;
-	box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+    height: 20px;
+    cursor: pointer;
+    border-radius: 50%;
+    box-shadow: 0 0 5px #FFF;
+    background-color: #fff !important;
 }
 
 input[type="range"]::-moz-range-thumb {
-	width: 20px;
-	height: 20px;
-	cursor: pointer;
-	border-radius: 50%;
-	box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+    border-radius: 50%;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
 }
