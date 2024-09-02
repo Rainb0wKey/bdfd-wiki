@@ -168,6 +168,8 @@ function updateColor() {
   const colorSlider = document.getElementById('themeSlider');
   const colorPreview = document.getElementById('themePreview');
   const colorDisplay = document.getElementById('colorThemeDisplay');
+  const settingEmbed = document.querySelector('.settingembed');
+  const menuBar = document.getElementById('menu-bar-sticky-container');
 	
   const hue = colorSlider.value;
   const saturation = 80; 
@@ -179,7 +181,10 @@ function updateColor() {
   colorPreview.style.background = `linear-gradient(to bottom right, ${color1}, ${color2})`;
   colorSlider.style.background = `linear-gradient(to right, ${color1}, ${color2})`;
   colorDisplay.textContent = hue + '°';
-  colorDisplay.style.background = color1;
+  colorDisplay.style.background = color2;
+  settingembed.style.background = color2;
+  menuBarStickyContainer.style.background = `linear-gradient(to bottom right, ${color1}, ${color2})`;
+
   hexColor.textContent = rgbToHex(color1);
 }
 
