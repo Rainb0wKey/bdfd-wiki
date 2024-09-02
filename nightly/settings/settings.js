@@ -164,6 +164,8 @@ function loadSettings() {
   }
 }
 
+let isLocked = true;
+
 function updateColor() {
   const colorSlider = document.getElementById('themeSlider');
   const colorPreview = document.getElementById('themePreview');
@@ -183,6 +185,12 @@ function updateColor() {
   const color2 = `hsl(${hue}, ${saturation}%, ${lightness - 20}%)`; 
   const color3 = `hsl(${hue}, 80%, 15%)`;
 
+
+  if (!isLocked) {
+    document.body.style.background = `hsl(${hue}, 80%, 5%)`;
+    document.body.style.color = `hsl(${hue}, 100%, 90%)`;
+  };
+	
   colorPreview.style.background = `linear-gradient(to bottom right, ${color1}, ${color2})`;
   colorSlider.style.background = `linear-gradient(to right, ${color1}, ${color2})`;
   colorDisplay.textContent = hue + '°';
@@ -203,6 +211,17 @@ function updateColor() {
   breadcrumbText.forEach(link => {
     link.style.color = color1;
   });
+}
+
+function lockTheme() {
+  const lockText = document.getElementById('lockText');
+  if (isLocked) {
+    lockText.textContent = "Unlock";
+    isLocked = false;
+  } else {
+    lockText.textContent = "Lock";
+    isLocked = true;
+  }
 }
 
 function useBackground() {
