@@ -217,12 +217,6 @@ function resetTheme() {
   useBackground()
 };
 
-function resetBackground() {
-  const resetBackgroundColor = `hsl(270, 80%, 8%)`;
-	
-  document.body.style.background = resetBackgroundColor;
-};
-
 function gradientBackground() {
   const colorSlider = document.getElementById('themeSlider');
 	
