@@ -13,8 +13,8 @@ Let's customize your exp in the bdfd wiki world 🌍!
 	</div>
 	<div class="themebuttons">
 		<button id="setBackground" onClick="useBackground()">Use as background</button>
-		<button id="resetTheme" onCllick="resetTheme()">Reset</button>
-		<button id="resetBackground" onCllick="resetBackground()">Dont use as background</button>
+		<button id="resetTheme" onClick="resetTheme()">Reset</button>
+		<button id="resetBackground" onClick="resetBackground()">Dont use as background</button>
 		<button id="gradientTheme" onClick="gradientBackground()">Gradient</button>
 	</div>
 </div>
