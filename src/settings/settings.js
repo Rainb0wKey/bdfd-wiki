@@ -270,8 +270,11 @@ function loadSettings() {
   const bgHue = data['theme-bg'];
   const textHue = data['theme-text'];
 
-  const colorTheme1 = `hsl(${mainHue}, ${saturation}%, ${lightness}%)`;
-  const colorTheme2 = `hsl(${mainHue}, ${saturation}%, ${lightness - 20}%)`; 
+  const setSaturation = 80; 
+  const setLightness = 50;
+	
+  const colorTheme1 = `hsl(${mainHue}, ${setSaturation}%, ${setLightness}%)`;
+  const colorTheme2 = `hsl(${mainHue}, ${setSaturation}%, ${setLightness - 20}%)`; 
   const colorTheme3 = `hsl(${mainHue}, 80%, 15%)`;
 	
   document.querySelector('html').style.fontFamily = data['text-font'];
