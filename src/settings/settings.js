@@ -150,7 +150,6 @@ function updateColor() {
   const sideBar = document.querySelector('.sidebar');
   const sideChapterBar = document.querySelector('.chapter li a.active')
   const setButtons = document.querySelectorAll('button');
-  const bdsCode = document.querySelectorAll('pre code.hljs code-highlight');
 
   // Color Settings
   const hue = colorSlider.value;
@@ -172,9 +171,6 @@ function updateColor() {
   };
 
   // Updating design
-  if (bdsCode) {
-    bdsCode.style.background = `hsl(${hue}, 90%, 10%)`;
-  }
   colorPreview.style.background = `linear-gradient(to bottom right, ${color1}, ${color2})`;
   colorSlider.style.background = `linear-gradient(to right, ${color1}, ${color2})`;
   colorDisplay.textContent = hue + '°';
@@ -255,7 +251,6 @@ function loadSettings() {
   const displaySize = document.getElementById("display-size");
   const range = document.getElementById("textsize");
   const themeChangerRange = document.getElementById("themeSlider");
-  const bdsThemeCode = document.querySelectorAll('pre code.hljs code-highlight');
 	
   let data
 
@@ -290,11 +285,6 @@ function loadSettings() {
   document.querySelector('html').style.fontSize = data['text-size'];
   document.querySelector('html').style.textShadow = data['text-hg'];
 
-  if (bdsThemeCode) {
-    bdsThemeCode.forEach(codeUI => {
-      codeUI.style.background = `hsl(${mainHue}, 90%, 10%)`;
-    });
-  }
   document.querySelector('.sidebar').style.background = colorTheme3; 
   document.querySelector('.chapter li a.active').style.color = colorTheme1;
   document.querySelectorAll('.breadcrumb a').forEach(link => {
