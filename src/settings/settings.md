@@ -40,8 +40,8 @@ Let's customize your exp in the bdfd wiki world 🌍!
   <p>Can't see well? Let's edit the text size:</p>
   <div class="textsizebuttons">
     <label id="display-size">62</label>
-    <input type="range" id="textsize" min="50" max="100" value="62" oninput="changeFontSize()"/>
-    <p id="default-is">62%</p>
+    <input type="range" id="textsize" min="50" max="100" value="60" oninput="changeFontSize()"/>
+    <p id="default-is">60%</p>
   </div>
 </div>
 
