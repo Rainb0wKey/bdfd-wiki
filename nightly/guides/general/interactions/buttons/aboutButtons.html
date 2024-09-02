@@ -9,7 +9,7 @@
 
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
         <meta name="description" content="The official documentation of BDFD. It covers guides, examples related to BDScript, BDJS and as well features too.">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
         <meta name="theme-color" content="#748bd4">
         <meta name="og:image" content="https://botdesignerdiscord.com/logo512.png">
 
@@ -193,14 +193,14 @@ Here, are all possible values for the <code>style</code> function argument.</p>
 <li><code>link</code> - Redirect button</li>
 </ul>
 <discord-messages>
-    <discord-message author="BDFD Support" role-color="#378afa" verified bot>
+    <discord-message bot role-color="#378afa" verified author="BDFD Support">
         Buttons:
         <discord-attachments slot="components">
             <discord-action-row>
                 <discord-button type="primary">
                     Primary
                 </discord-button>
-                <discord-button type="primary" disabled>
+                <discord-button disabled type="primary">
                     Primary
                 </discord-button>
             </discord-action-row>
@@ -208,7 +208,7 @@ Here, are all possible values for the <code>style</code> function argument.</p>
                 <discord-button type="success">
                     Success
                 </discord-button>
-                <discord-button disabled type="success">
+                <discord-button type="success" disabled>
                     Success
                 </discord-button>
             </discord-action-row>
@@ -216,7 +216,7 @@ Here, are all possible values for the <code>style</code> function argument.</p>
                 <discord-button type="destructive">
                     Danger
                 </discord-button>
-                <discord-button disabled type="destructive">
+                <discord-button type="destructive" disabled>
                     Danger
                 </discord-button>
             </discord-action-row>
@@ -224,20 +224,20 @@ Here, are all possible values for the <code>style</code> function argument.</p>
                 <discord-button type="secondary">
                     Secondary
                 </discord-button>
-                <discord-button type="secondary" disabled>
+                <discord-button disabled type="secondary">
                     Secondary
                 </discord-button>
             </discord-action-row>
         </discord-attachments>
     </discord-message>
-    <discord-message role-color="#378afa" author="BDFD Support" verified bot>
+    <discord-message author="BDFD Support" bot role-color="#378afa" verified>
         Other Buttons:
         <discord-attachments slot="components">
             <discord-action-row>
-                <discord-button type="secondary" url="https://nilpointer-software.github.io/bdfd-wiki/nightly/">
+                <discord-button url="https://nilpointer-software.github.io/bdfd-wiki/nightly/" type="secondary">
                     Link
                 </discord-button>
-                <discord-button type="secondary" disabled url="https://nilpointer-software.github.io/bdfd-wiki/nightly/">
+                <discord-button url="https://nilpointer-software.github.io/bdfd-wiki/nightly/" disabled type="secondary">
                     Link
                 </discord-button>
             </discord-action-row>
@@ -300,7 +300,7 @@ Hello
 $addButton[no;test;Say hello!;primary;no;]
 </code></pre>
 <discord-messages>
-    <discord-message role-color="#E67E22" author="RainbowKey">
+    <discord-message author="RainbowKey" role-color="#E67E22">
         !example
     </discord-message>
     <discord-message bot role-color="#378afa" author="BDFD Support" verified>
