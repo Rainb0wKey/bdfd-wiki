@@ -216,10 +216,10 @@ function updateColor() {
 function lockTheme() {
   const lockText = document.getElementById('lockText');
   if (!isLocked) {
-    lockText.textContent = "Lock";
+    lockText.textContent = "Locked";
     isLocked = true;
   } else {
-    lockText.textContent = "Unlock";
+    lockText.textContent = "Unlocked";
     isLocked = false;
   }
 }
