@@ -184,8 +184,8 @@
 	</div>
 	<div class="themebuttons">
 		<button id="setBackground" onClick="useBackground()">Use as background</button>
-		<button id="resetTheme" onCllick="resetTheme()">Reset</button>
-		<button id="resetBackground" onCllick="resetBackground()">Dont use as background</button>
+		<button id="resetTheme" onClick="resetTheme()">Reset</button>
+		<button id="resetBackground" onClick="resetBackground()">Dont use as background</button>
 		<button id="gradientTheme" onClick="gradientBackground()">Gradient</button>
 	</div>
 </div>
@@ -282,14 +282,14 @@
   </div>
 </div>
 <discord-messages>
-    <discord-message author="RainbowKey" role-color="#E67E22">
+    <discord-message role-color="#E67E22" author="RainbowKey">
         !example ❤️
         <discord-reactions slot="reactions">
-            <discord-reaction count="1" name=":emoji:" emoji="https://upload.wikimedia.org/wikipedia/commons/7/70/Symbolic_Love_Heart.png">
+            <discord-reaction emoji="https://upload.wikimedia.org/wikipedia/commons/7/70/Symbolic_Love_Heart.png" count="1" name=":emoji:">
             </discord-reaction>
         </discord-reactions>
     </discord-message>
-    <discord-message author="BDFD Support" bot role-color="#378afa" verified>
+    <discord-message verified author="BDFD Support" role-color="#378afa" bot>
         Added!
     </discord-message>
 </discord-messages>
