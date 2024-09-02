@@ -172,6 +172,7 @@ function updateColor() {
   const menuBar = document.getElementById('menu-bar-sticky-container');
   const breadcrumbText = document.querySelectorAll('.breadcrumb a');
   const sideBar = document.querySelector('.sidebar');
+  const setButtons = document.querySelectorAll('button');
 	
   const hue = colorSlider.value;
   const saturation = 80; 
@@ -189,6 +190,9 @@ function updateColor() {
   sideBar.style.background = color3; 
   settingEmbed.forEach(element => {
     element.style.background = color3;
+  });
+  setButtons.forEach(button => {
+    button.style.background = color2;
   });
 
   hexColor.textContent = rgbToHex(color1);
