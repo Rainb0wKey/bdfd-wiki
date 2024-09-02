@@ -181,6 +181,7 @@
     <div id="themePreview">
       <div id="colorThemeDisplay"></div>
       <div id="hexColor"></div>
+      <div class="lock-text" id="lockText" onClick="lockTheme()">Lock</div>
     </div>
     <div class="themebuttons">
       <button class="tbutton" id="setBackground" onClick="useBackground()">Use as background</button>
@@ -284,11 +285,11 @@
     <discord-message role-color="#E67E22" author="RainbowKey">
         !example ❤️
         <discord-reactions slot="reactions">
-            <discord-reaction emoji="https://upload.wikimedia.org/wikipedia/commons/7/70/Symbolic_Love_Heart.png" name=":emoji:" count="1">
+            <discord-reaction count="1" emoji="https://upload.wikimedia.org/wikipedia/commons/7/70/Symbolic_Love_Heart.png" name=":emoji:">
             </discord-reaction>
         </discord-reactions>
     </discord-message>
-    <discord-message author="BDFD Support" role-color="#378afa" verified bot>
+    <discord-message bot role-color="#378afa" author="BDFD Support" verified>
         Added!
     </discord-message>
 </discord-messages>
