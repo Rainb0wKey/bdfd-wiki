@@ -2,7 +2,7 @@
 Let's customize your experience in the Bot Designer For Discord wiki world!
 
 <link rel="stylesheet" href="./settings.css">
-<script src="./settings.js" defer></script>
+<script src="{{path_to_root}}settings/settings.js" defer></script>
 
 <div class="settingembed">
   <h2>Theme</h2>
