@@ -356,14 +356,17 @@
 
 #themePreview::before {
     content: "Bot Designer For Discord";
-    box-shadow: 0;
     position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    font-size: 18px;
+    box-shadow: 0;
+    font-size: 2rem;
     font-weight: bold;
     color: white;
+    width: 100%;
+    text-align: center;
+    top: 25%;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 
 #themeSlider {
