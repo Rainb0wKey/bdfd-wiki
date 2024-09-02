@@ -32,9 +32,6 @@ a > .hljs {
     display: flex;
     flex-wrap: wrap;
     background-color: var(--bg);
-    border-bottom-color: var(--bg);
-    border-bottom-width: 1px;
-    border-bottom-style: solid;
     border-radius: 10px;
 }
 .js #menu-bar > #menu-bar-sticky-container {
