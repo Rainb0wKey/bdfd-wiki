@@ -216,6 +216,7 @@ function useBackground() {
 
   const backgroundColor = `hsl(${hue}, ${saturation}%, ${lightness}%)`;
   document.body.style.background = backgroundColor;
+  updateJsonFile("theme-bg", backgroundColor);
 };
 
 function resetTheme() {
@@ -249,6 +250,7 @@ function rgbToHex(rgb) {
 function loadSettings() {
   const displaySize = document.getElementById("display-size");
   const range = document.getElementById("textsize");
+  const themeChangerRange = document.getElementById("themeSlider");
 
   let data
 
@@ -267,8 +269,6 @@ function loadSettings() {
   }
 
   const mainHue = data['theme-main']; // Мяу
-  const bgHue = data['theme-bg'];
-  const textHue = data['theme-text'];
 
   const setSaturation = 80; 
   const setLightness = 50;
@@ -288,8 +288,12 @@ function loadSettings() {
   });
   document.getElementById('menu-bar-sticky-container').style.background = `linear-gradient(to bottom right, ${colorTheme1}, ${colorTheme2})`;
   
-  document.body.style.background = `hsl(${bgHue}, 80%, 5%)`;
-  document.body.style.color = `hsl(${textHue}, 100%, 90%)`;
+  document.body.style.background = data['theme-bg'];
+  document.body.style.color = data['theme-text'];
+
+  if (themeChangerRange) {
+    range.value = parseInt(data['theme-main'].replace('%', ''));
+  }
 
   if (displaySize) {
     displaySize.textContent = data['text-size'].replace('%', '');
