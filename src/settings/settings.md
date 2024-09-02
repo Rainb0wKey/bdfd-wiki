@@ -150,3 +150,5 @@ Let's customize your experience in the Bot Designer For Discord wiki world!
     <textarea id="jsonhginput"></textarea>
   </div>
 </div>
+
+<script src="./settings/settings.js"></script>
