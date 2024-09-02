@@ -180,6 +180,7 @@ function updateColor() {
   colorSlider.style.background = `linear-gradient(to right, ${color1}, ${color2})`;
   colorDisplay.textContent = hue + '°';
   hexColor.textContent = rgbToHex(color1);
+  hexColor.style.background = color1;
 }
 
 function useBackground() {
@@ -197,6 +198,9 @@ function resetTheme() {
   const colorSlider = document.getElementById('themeSlider');
 
   colorSlider.value = 270;
+
+  updateColor()
+	
   document.body.style.background = '#f0f0f0';
 };
 
