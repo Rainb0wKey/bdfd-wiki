@@ -24,8 +24,8 @@
         <!-- Discord Components -->
         <script type="module" src="https://unpkg.com/@skyra/discord-components-core"></script>
 
-				<!-- Settings -->
-				<script src="../settings/settings.js"></script>
+	<!-- Settings -->
+	<script src="../settings/settings.js" defer></script>
 
         <!-- Fonts -->
         <link rel="stylesheet" href="../FontAwesome/css/font-awesome.css">
@@ -188,7 +188,7 @@ Your message has $charCount[$message] characters.
     <discord-message author="RainbowKey" role-color="#E67E22">
         !example Hello World!
     </discord-message>
-    <discord-message role-color="#378afa" author="BDFD Support" bot verified>
+    <discord-message bot verified role-color="#378afa" author="BDFD Support">
         Your message has 12 characters.
     </discord-message>
 </discord-messages>

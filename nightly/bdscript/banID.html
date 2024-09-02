@@ -24,8 +24,8 @@
         <!-- Discord Components -->
         <script type="module" src="https://unpkg.com/@skyra/discord-components-core"></script>
 
-				<!-- Settings -->
-				<script src="../settings/settings.js"></script>
+	<!-- Settings -->
+	<script src="../settings/settings.js" defer></script>
 
         <!-- Fonts -->
         <link rel="stylesheet" href="../FontAwesome/css/font-awesome.css">
@@ -184,10 +184,10 @@ $onlyPerms[ban;You need the `ban` permission to use that command!]
 $banID
 </code></pre>
 <discord-messages>
-    <discord-message role-color="#E67E22" author="RainbowKey">
+    <discord-message author="RainbowKey" role-color="#E67E22">
         !example 854665455527526421
     </discord-message>
-    <discord-message author="BDFD Support" role-color="#378afa" verified bot>
+    <discord-message author="BDFD Support" bot verified role-color="#378afa">
         <discord-mention>Chilli</discord-mention> was banned!
     </discord-message>
     <discord-system-message type="leave">

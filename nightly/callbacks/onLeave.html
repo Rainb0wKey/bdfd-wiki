@@ -24,8 +24,8 @@
         <!-- Discord Components -->
         <script type="module" src="https://unpkg.com/@skyra/discord-components-core"></script>
 
-				<!-- Settings -->
-				<script src="../settings/settings.js"></script>
+	<!-- Settings -->
+	<script src="../settings/settings.js" defer></script>
 
         <!-- Fonts -->
         <link rel="stylesheet" href="../FontAwesome/css/font-awesome.css">
@@ -206,7 +206,7 @@
     <discord-system-message type="leave">
         Goodbye <font color="white">User</font>.
     </discord-system-message>
-    <discord-message verified author="Wiki Bot" role-color="#748BD4" bot>
+    <discord-message author="Wiki Bot" role-color="#748BD4" verified bot>
         <discord-mention>User</discord-mention> just left the server :c
     </discord-message>
 </discord-messages>
