@@ -222,6 +222,5 @@ function rgbToHex(rgb) {
   return '#' + ('000000' + ((c[0] << 16) | (c[1] << 8) | c[2]).toString(16)).slice(-6);
 }
 
-updateColor();
-
+window.onload = updateColor;
 window.onload = loadSettings;
