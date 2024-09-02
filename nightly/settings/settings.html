@@ -177,17 +177,16 @@
 <div class="settingembed">
   <h2 id="theme"><a class="header" href="#theme">Theme</a></h2>
   <p>Select the theme for wiki:</p>
-	<input type="range" id="themeSlider" min="0" max="360" value="270" oninput="updateColor()">
-	<div id="themePreview">
-		<div id="colorThemeDisplay"></div>
-		<div id="hexColor"></div>
-	</div>
-	<div class="themebuttons">
-		<button class="tbutton" id="setBackground" onClick="useBackground()">Use as background</button>
-		<button class="tbutton" id="resetTheme" onClick="resetTheme()">Reset</button>
-		<button class="tbutton" id="resetBackground" onClick="resetBackground()">Dont use as background</button>
-		<button class="tbutton" id="gradientTheme" onClick="gradientBackground()">Gradient</button>
-	</div>
+    <input type="range" id="themeSlider" min="0" max="360" value="270" oninput="updateColor()">
+    <div id="themePreview">
+      <div id="colorThemeDisplay"></div>
+      <div id="hexColor"></div>
+    </div>
+    <div class="themebuttons">
+      <button class="tbutton" id="setBackground" onClick="useBackground()">Use as background</button>
+      <button class="tbutton" id="gradientTheme" onClick="gradientBackground()">Gradient</button>
+      <button class="tbutton" id="resetTheme" onClick="resetTheme()">Reset</button>
+  </div>
 </div>
 <div class="settingembed">
   <h2 id="text-highlighting"><a class="header" href="#text-highlighting">Text Highlighting</a></h2>
@@ -285,11 +284,11 @@
     <discord-message role-color="#E67E22" author="RainbowKey">
         !example ❤️
         <discord-reactions slot="reactions">
-            <discord-reaction emoji="https://upload.wikimedia.org/wikipedia/commons/7/70/Symbolic_Love_Heart.png" name=":emoji:" count="1">
+            <discord-reaction name=":emoji:" emoji="https://upload.wikimedia.org/wikipedia/commons/7/70/Symbolic_Love_Heart.png" count="1">
             </discord-reaction>
         </discord-reactions>
     </discord-message>
-    <discord-message verified bot role-color="#378afa" author="BDFD Support">
+    <discord-message bot role-color="#378afa" verified author="BDFD Support">
         Added!
     </discord-message>
 </discord-messages>
