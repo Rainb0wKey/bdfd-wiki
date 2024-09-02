@@ -192,7 +192,9 @@ function updateColor() {
     element.style.background = color3;
   });
   setButtons.forEach(button => {
-    button.style.background = color2;
+    if (!button.matches('#menu-bar i') && !button.matches('#menu-bar .icon-button')) {
+      button.style.background = color1;
+    }
   });
 
   hexColor.textContent = rgbToHex(color1);
