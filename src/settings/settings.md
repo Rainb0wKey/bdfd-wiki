@@ -5,8 +5,8 @@ Let's customize your experience in the Bot Designer For Discord wiki world!
 <script src="{{path_to_root}}settings/settings.js" defer></script>
 
 <div class="settingembed">
-  <h2>Theme</h2>
-  <p>Select the theme for wiki:</p>
+  <h2>Wiki Theme</h2>
+  <p>Select the theme color for wiki❤️</p>
     <input type="range" id="themeSlider" min="0" max="360" oninput="updateColor()">
     <div id="themePreview">
       <div id="colorThemeDisplay"></div>
@@ -49,7 +49,7 @@ Let's customize your experience in the Bot Designer For Discord wiki world!
 
 <div class="settingembed">
   <h2>Text Font</h2>
-  <p>Let's change the font!</p>
+  <p>Let's change the font for texts!</p>
   <div class="textfontbuttons">
   	<button id="font1" class="fbutton" onClick="changeTextFont('font1')">Open Sans</button>
     <button id="font2" class="fbutton" onClick="changeTextFont('font2')">Serif</button>
