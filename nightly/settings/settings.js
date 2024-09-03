@@ -252,6 +252,11 @@ function useBackground() {
   updateJsonFile("theme-bg", backgroundColor);
 };
 
+function useFontColor() {
+  document.body.style.color = `#fff`;
+  updateJsonFile("theme-text", document.body.style.color);
+}
+
 function resetTheme() {
   const colorSlider = document.getElementById('themeSlider');
 
