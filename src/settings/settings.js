@@ -104,7 +104,7 @@ function changeDiscordTheme(colorId) {
     reactionColor: '#131318',
     messageTextColor: '#DDDEE1',
     background: '#000',
-    // get styles for this button ID
+    // Get styles for this button ID
     ...(themes[colorId] || {})
   }
 
@@ -114,6 +114,8 @@ function changeDiscordTheme(colorId) {
     reaction.style.backgroundColor = styles.reactionColor;
     messageColor.style.color = styles.messageTextColor;
   }
+
+  updateJsonFile("discord-example-theme", colorId);
 }
 
 function changeTextFont(fontId) {
@@ -291,12 +293,14 @@ function loadSettings() {
     "theme-main": "270",
     "theme-bg": "270",
     "theme-text": "270",
-    "discord-example-theme": "light",
+    "discord-example-theme": "dark",
     "text-size": "60%",
     "text-hg": "none",
     "text-font": "Open Sans, sans-serif",
   }
 
+  changeDiscordTheme(data['discord-example-theme']);
+  
   if (themeChangerRange) {
     themeChangerRange.value = parseInt(data['theme-main'].replace('%', ''));
   }
@@ -310,7 +314,6 @@ function loadSettings() {
 loadSettings();
 try {
   updateColor();
-  changeDiscordTheme('dark');
 } catch (err) {
-  console.error("Failed to update color or discord theme", err);
+  console.error("Failed to update color", err);
 }
