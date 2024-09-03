@@ -7,16 +7,18 @@ Let's customize your experience in the Bot Designer For Discord wiki world!
 <div class="settingembed">
   <h2>Wiki Theme</h2>
   <p>Select the theme color for wiki❤️</p>
-    <input type="range" id="themeSlider" min="0" max="360" oninput="updateColor()">
-    <div id="themePreview">
-      <div id="colorThemeDisplay"></div>
-      <div id="hexColor"></div>
-      <div class="lock-text" id="lockText" onClick="lockTheme()">Locked</div>
-    </div>
-    <div class="themebuttons">
-      <button class="tbutton" id="setBackground" onClick="useBackground()">Use as background</button>
-      <button class="tbutton" id="gradientTheme" onClick="gradientBackground()">Gradient</button>
-      <button class="tbutton" id="resetTheme" onClick="resetTheme()">Reset</button>
+  <button class="resetSettingButton" id="resetTheme" onClick="resetHGInput()">
+    <i class="fa fa-refresh" aria-hidden="true"></i>
+  </button>
+  <input type="range" id="themeSlider" min="0" max="360" oninput="updateColor()">
+  <div id="themePreview">
+    <div id="colorThemeDisplay"></div>
+    <div id="hexColor"></div>
+    <div class="lock-text" id="lockText" onClick="lockTheme()">Locked</div>
+  </div>
+  <div class="themebuttons">
+    <button class="tbutton" id="setBackground" onClick="useBackground()">Use as background</button>
+    <button class="tbutton" id="gradientTheme" onClick="gradientBackground()">Gradient</button>
   </div>
 </div>
 
@@ -40,6 +42,9 @@ Let's customize your experience in the Bot Designer For Discord wiki world!
 <div class="settingembed">
   <h2>Text Size</h2>
   <p>Can't see well? Let's edit the text size:</p>
+  <button class="resetSettingButton" id="textResetButton" onClick="resetTextSize()">
+    <i class="fa fa-refresh" aria-hidden="true"></i>
+  </button>
   <div class="textsizebuttons">
     <label id="display-size">62</label>
     <input type="range" id="textsize" min="50" max="100" value="60" oninput="changeFontSize()"/>
@@ -50,6 +55,9 @@ Let's customize your experience in the Bot Designer For Discord wiki world!
 <div class="settingembed">
   <h2>Text Font</h2>
   <p>Let's change the font for texts!</p>
+  <button class="resetSettingButton" id="font1" onClick="changeTextFont('font1')">
+    <i class="fa fa-refresh" aria-hidden="true"></i>
+  </button>
   <div class="textfontbuttons">
   	<button id="font1" class="fbutton" onClick="changeTextFont('font1')">Open Sans</button>
     <button id="font2" class="fbutton" onClick="changeTextFont('font2')">Serif</button>
@@ -138,15 +146,15 @@ Let's customize your experience in the Bot Designer For Discord wiki world!
 <div class="settingembed">
   <h2>Code Highlighting</h2>
   <p>Input your  highlighting code here!</p>
+  <button class="resetSettingButton" id="resetHG" onClick="resetHGInput()">
+    <i class="fa fa-refresh" aria-hidden="true"></i>
+  </button>
   <div class="codehighlighting">
     <button id="copyHG" onClick="copyHGInput()" class="hgButton">
       <p><i class="fa fa-clipboard" aria-hidden="true"></i> Copy</p>
     </button>
     <button class="hgButton">
       <p><i class="fa fa-book" aria-hidden="true"></i> What is this?</p>
-    </button>
-    <button id="resetHG" onClick="resetHGInput()" class="hgButton">
-      <p><i class="fa fa-refresh" aria-hidden="true"></i> Reset</p>
     </button>
     <textarea id="jsonhginput"></textarea>
   </div>
