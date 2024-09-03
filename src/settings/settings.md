@@ -7,7 +7,7 @@ Let's customize your experience in the Bot Designer For Discord wiki world!
 <div class="settingembed">
   <h2>Wiki Theme</h2>
   <p>Select the theme color for wiki❤️</p>
-  <button class="resetSettingButton" id="resetTheme" onClick="resetHGInput()">
+  <button class="resetSettingButton" id="resetTheme" onClick="resetTheme()">
     <i class="fa fa-refresh" aria-hidden="true"></i>
   </button>
   <input type="range" id="themeSlider" min="0" max="360" oninput="updateColor()">
