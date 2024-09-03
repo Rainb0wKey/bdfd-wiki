@@ -168,10 +168,11 @@ function updateColor() {
       const colorGradient1 = `hsl(${hue}, 80%, 20%)`;
       const colorGradient2 = `hsl(${hue}, 80%, 5%)`;
       document.body.style.background = `linear-gradient(to bottom right, ${colorGradient1}, ${colorGradient2})`;
+      document.querySelector('meta[name="theme-color"]').setAttribute('content', colorGradient1);
     } else {
       document.body.style.background = `hsl(${hue}, 80%, 8%)`;
+      document.querySelector('meta[name="theme-color"]').setAttribute('content', `hsl(${hue}, 80%, 8%)`);
     }
-    document.querySelector('meta[name="theme-color"]').setAttribute('content', `hsl(${hue}, 80%, 8%)`);
     document.body.style.color = `hsl(${hue}, 100%, 90%)`;
     updateJsonFile("theme-bg", document.body.style.background);
     updateJsonFile("theme-text", document.body.style.color);
