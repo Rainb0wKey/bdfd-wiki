@@ -164,7 +164,13 @@ function updateColor() {
 
   // Locked text gameplay
   if (isLocked) {
-    document.body.style.background = `hsl(${hue}, 80%, 5%)`;
+    if (document.body.style.background.includes('linear-gradient')) {
+      const colorGradient1 = `hsl(${hue}, 80%, 20%)`;
+      const colorGradient2 = `hsl(${hue}, 80%, 5%)`;
+      document.body.style.background = `linear-gradient(to bottom right, ${colorGradient1}, ${colorGradient2})`;
+    } else {
+      document.body.style.background = `hsl(${hue}, 80%, 5%)`;
+    }
     document.body.style.color = `hsl(${hue}, 100%, 90%)`;
     updateJsonFile("theme-bg", document.body.style.background);
     updateJsonFile("theme-text", document.body.style.color);
