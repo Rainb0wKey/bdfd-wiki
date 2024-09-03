@@ -66,7 +66,8 @@ function setDiscordTheme(colorId) {
         if (styles.background) mutation.target.style.background = styles.background;
         mutation.target.style.backgroundColor = styles.exampleColor;
         for (const reaction of reactions) {
-          reaction.style.backgroundColor = styles.reactionColor;
+          // change the div which is the actual reaction
+          reaction.firstChild.style.backgroundColor = styles.reactionColor;
         }
         for (const markup of messageColors) {
           markup.style.color = styles.messageTextColor;
