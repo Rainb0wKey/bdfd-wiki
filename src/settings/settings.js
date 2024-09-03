@@ -139,7 +139,7 @@ let isLocked = true;
 
   // Used in status bar (iPhone).
 function setStatusBar(StatusBar) {
-  document.querySelector('meta[name="theme-color"]').setAttribute('content', ${StatusBar});
+  document.querySelector('meta[name="theme-color"]').setAttribute('content', '${StatusBar}');
 }
 
 function updateColor() {
