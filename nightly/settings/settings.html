@@ -175,16 +175,18 @@
 <div class="settingembed">
   <h2 id="wiki-theme"><a class="header" href="#wiki-theme">Wiki Theme</a></h2>
   <p>Select the theme color for wiki❤️</p>
-    <input type="range" id="themeSlider" min="0" max="360" oninput="updateColor()">
-    <div id="themePreview">
-      <div id="colorThemeDisplay"></div>
-      <div id="hexColor"></div>
-      <div class="lock-text" id="lockText" onClick="lockTheme()">Locked</div>
-    </div>
-    <div class="themebuttons">
-      <button class="tbutton" id="setBackground" onClick="useBackground()">Use as background</button>
-      <button class="tbutton" id="gradientTheme" onClick="gradientBackground()">Gradient</button>
-      <button class="tbutton" id="resetTheme" onClick="resetTheme()">Reset</button>
+  <button class="resetSettingButton" id="resetTheme" onClick="resetHGInput()">
+    <i class="fa fa-refresh" aria-hidden="true"></i>
+  </button>
+  <input type="range" id="themeSlider" min="0" max="360" oninput="updateColor()">
+  <div id="themePreview">
+    <div id="colorThemeDisplay"></div>
+    <div id="hexColor"></div>
+    <div class="lock-text" id="lockText" onClick="lockTheme()">Locked</div>
+  </div>
+  <div class="themebuttons">
+    <button class="tbutton" id="setBackground" onClick="useBackground()">Use as background</button>
+    <button class="tbutton" id="gradientTheme" onClick="gradientBackground()">Gradient</button>
   </div>
 </div>
 <div class="settingembed">
@@ -206,6 +208,9 @@
 <div class="settingembed">
   <h2 id="text-size"><a class="header" href="#text-size">Text Size</a></h2>
   <p>Can't see well? Let's edit the text size:</p>
+  <button class="resetSettingButton" id="textResetButton" onClick="resetTextSize()">
+    <i class="fa fa-refresh" aria-hidden="true"></i>
+  </button>
   <div class="textsizebuttons">
     <label id="display-size">62</label>
     <input type="range" id="textsize" min="50" max="100" value="60" oninput="changeFontSize()"/>
@@ -215,6 +220,9 @@
 <div class="settingembed">
   <h2 id="text-font"><a class="header" href="#text-font">Text Font</a></h2>
   <p>Let's change the font for texts!</p>
+  <button class="resetSettingButton" id="font1" onClick="changeTextFont('font1')">
+    <i class="fa fa-refresh" aria-hidden="true"></i>
+  </button>
   <div class="textfontbuttons">
   	<button id="font1" class="fbutton" onClick="changeTextFont('font1')">Open Sans</button>
     <button id="font2" class="fbutton" onClick="changeTextFont('font2')">Serif</button>
@@ -280,29 +288,29 @@
   </div>
 </div>
 <discord-messages>
-    <discord-message role-color="#E67E22" author="RainbowKey">
+    <discord-message author="RainbowKey" role-color="#E67E22">
         !example ❤️
         <discord-reactions slot="reactions">
             <discord-reaction emoji="https://upload.wikimedia.org/wikipedia/commons/7/70/Symbolic_Love_Heart.png" count="1" name=":emoji:">
             </discord-reaction>
         </discord-reactions>
     </discord-message>
-    <discord-message verified bot author="BDFD Support" role-color="#378afa">
+    <discord-message author="BDFD Support" role-color="#378afa" bot verified>
         Added!
     </discord-message>
 </discord-messages>
 <div class="settingembed">
   <h2 id="code-highlighting"><a class="header" href="#code-highlighting">Code Highlighting</a></h2>
   <p>Input your  highlighting code here!</p>
+  <button class="resetSettingButton" id="resetHG" onClick="resetHGInput()">
+    <i class="fa fa-refresh" aria-hidden="true"></i>
+  </button>
   <div class="codehighlighting">
     <button id="copyHG" onClick="copyHGInput()" class="hgButton">
       <p><i class="fa fa-clipboard" aria-hidden="true"></i> Copy</p>
     </button>
     <button class="hgButton">
       <p><i class="fa fa-book" aria-hidden="true"></i> What is this?</p>
-    </button>
-    <button id="resetHG" onClick="resetHGInput()" class="hgButton">
-      <p><i class="fa fa-refresh" aria-hidden="true"></i> Reset</p>
     </button>
     <textarea id="jsonhginput"></textarea>
   </div>
