@@ -1,3 +1,72 @@
+const DiscordThemes = {
+  'light': {
+    reactionColor: '#F2F3F5',
+    messageTextColor: '#313338',
+    background: '#FFF',
+  },
+  'dark': {
+    reactionColor: '#202226',
+    messageTextColor: '#C6C7CC',
+    background: '#1C1D22',
+  },
+  'redmoon': {
+    reactionColor: '#4e0505',
+    background: 'linear-gradient(-25deg, #240000, #740606)'
+  },
+  'nightsapphire': {
+    reactionColor: '#11054e',
+    background: 'linear-gradient(-25deg, #000124, #260674)'
+  },
+  'emeraldearth': {
+    reactionColor: '#0c4e05',
+    background: 'linear-gradient(-25deg, #0c2400, #067446)'
+  },
+  'nightviolet': {
+    reactionColor: '#2c054e',
+    background: 'linear-gradient(-25deg, #1d0024, #350674)'
+  },
+  'oldwood': {
+    reactionColor: '#4e2e05',
+    background: 'linear-gradient(-25deg, #240f00, #744806)'
+  },
+  'azuresky': {
+    reactionColor: '#05474e',
+    background: 'linear-gradient(-25deg, #001a24, #067465)'
+  },
+  'cherryvelvety': {
+    reactionColor: '#4e0537',
+    background: 'linear-gradient(-25deg, #240017, #74064d)'
+  },
+  'forestdepth': {
+    reactionColor: '#4c4e05',
+    background: 'linear-gradient(-25deg, #222400, #687406)'
+  },
+  'nightchestnut': {
+    reactionColor: '#4e0505',
+    background: 'linear-gradient(-25deg, #190024, #740606)'
+  }
+}
+
+function setDiscordTheme(colorId) {
+  const discordMessages = document.querySelector('.discord-messages');
+  const reaction = document.querySelector('.discord-reaction');
+  const messageColor = document.querySelector('.discord-message-markup');
+
+  const styles = {
+    reactionColor: '#131318',
+    messageTextColor: '#DDDEE1',
+    background: '#000',
+    ...(DiscordThemes[colorId] || {})
+  }
+
+  if (discordMessages) {
+    if (styles.background) discordMessages.style.background = styles.background;
+    discordMessages.style.backgroundColor = styles.exampleColor;
+    reaction.style.backgroundColor = styles.reactionColor;
+    messageColor.style.color = styles.messageTextColor;
+  }
+}
+
 function applySettings() {
     let data;
 
@@ -39,6 +108,8 @@ function applySettings() {
 
     document.body.style.background = data['theme-bg'];
     document.body.style.color = data['theme-text'];
+
+    setDiscordTheme(data['discord-example-theme']);
 }
 
 applySettings();
