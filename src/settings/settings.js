@@ -1,13 +1,13 @@
 const themes = {
   'light': {
-    exampleColor: '#FFF',
     reactionColor: '#F2F3F5',
-    messageTextColor: '#313338'
+    messageTextColor: '#313338',
+    background: '#FFF',
   },
   'dark': {
-    exampleColor: '#000',
     reactionColor: '#131318',
-    messageTextColor: '#DDDEE1'
+    messageTextColor: '#DDDEE1',
+    background: '#000',
   },
   'redmoon': {
     reactionColor: '#4e0505',
@@ -22,7 +22,7 @@ const themes = {
     background: 'linear-gradient(-25deg, #0c2400, #067446)'
   },
   'nightviolet': {
-    reactionColor: '#3c054e',
+    reactionColor: '#2c054e',
     background: 'linear-gradient(-25deg, #1d0024, #350674)'
   },
   'oldwood': {
@@ -101,9 +101,9 @@ function changeDiscordTheme(colorId) {
   const messageColor = document.querySelector('.discord-message-markup');
 
   const styles = {
-    exampleColor: '#1C1D22',
     reactionColor: '#202226',
     messageTextColor: '#C6C7CC',
+    background: '#1C1D22',
     // get styles for this button ID
     ...(themes[colorId] || {})
   }
