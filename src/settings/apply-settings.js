@@ -61,7 +61,7 @@ function setDiscordTheme(colorId) {
   const callback = (mutationList, observer) => {
     for (const mutation of mutationList) {
       if (mutation.type === 'attributes' && mutation.attributeName === 'class') {
-        const reactions = document.getElementsByTagName('discord-reactions');
+        const reactions = document.getElementsByTagName('discord-reaction');
         const messageColors = document.getElementsByTagName('discord-message-markup');
         if (styles.background) mutation.target.style.background = styles.background;
         mutation.target.style.backgroundColor = styles.exampleColor;
