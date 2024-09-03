@@ -154,7 +154,7 @@ Let's customize your experience in the Bot Designer For Discord wiki world!
       <p><i class="fa fa-clipboard" aria-hidden="true"></i> Copy</p>
     </button>
     <button class="hgButton">
-      <p><i class="fa fa-book" aria-hidden="true"></i> What is this?</p>
+      <p><a href="https://www.youtube.com/watch?v=xvFZjo5PgG0"><i class="fa fa-book" aria-hidden="true"></i> What is this?</a></p>
     </button>
     <textarea id="jsonhginput"></textarea>
   </div>
