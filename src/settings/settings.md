@@ -165,3 +165,8 @@ Let's customize your experience in the Bot Designer For Discord wiki world!
     <textarea id="jsonhginput"></textarea>
   </div>
 </div>
+
+```
+$nomention
+$sendMessage[Hello, $username 👋, ping: $pingms]
+```
