@@ -175,7 +175,7 @@
 <div class="settingembed">
   <h2 id="wiki-theme"><a class="header" href="#wiki-theme">Wiki Theme</a></h2>
   <p>Select the theme color for wiki❤️</p>
-  <button class="resetSettingButton" id="resetTheme" onClick="resetHGInput()">
+  <button class="resetSettingButton" id="resetTheme" onClick="resetTheme()">
     <i class="fa fa-refresh" aria-hidden="true"></i>
   </button>
   <input type="range" id="themeSlider" min="0" max="360" oninput="updateColor()">
@@ -288,14 +288,14 @@
   </div>
 </div>
 <discord-messages>
-    <discord-message author="RainbowKey" role-color="#E67E22">
+    <discord-message role-color="#E67E22" author="RainbowKey">
         !example ❤️
         <discord-reactions slot="reactions">
-            <discord-reaction name=":emoji:" emoji="https://upload.wikimedia.org/wikipedia/commons/7/70/Symbolic_Love_Heart.png" count="1">
+            <discord-reaction emoji="https://upload.wikimedia.org/wikipedia/commons/7/70/Symbolic_Love_Heart.png" count="1" name=":emoji:">
             </discord-reaction>
         </discord-reactions>
     </discord-message>
-    <discord-message bot role-color="#378afa" verified author="BDFD Support">
+    <discord-message bot verified role-color="#378afa" author="BDFD Support">
         Added!
     </discord-message>
 </discord-messages>
