@@ -165,7 +165,8 @@ function updateColor() {
   const menuBar = document.getElementById('menu-bar-sticky-container');
   const breadcrumbText = document.querySelectorAll('.breadcrumb a');
   const sideBar = document.querySelector('.sidebar');
-  const sideChapterBar = document.querySelector('.chapter li a.active')
+  const sideChapterBar = document.querySelector('.chapter li a.active');
+  const sideSpacerBar = document.querySelector('.chapter .spacer');
   const setButtons = document.querySelectorAll('button');
 
   // Color Settings
@@ -201,6 +202,7 @@ function updateColor() {
   colorDisplay.style.background = color2;
   menuBar.style.background = `linear-gradient(to bottom right, ${color1}, ${color2})`;
   sideBar.style.background = color3;
+  sideSpacerBar.style.background = `hsl(${hue}, 100%, 80%)`;
   settingEmbed.forEach(element => {
     element.style.background = color3;
   });
