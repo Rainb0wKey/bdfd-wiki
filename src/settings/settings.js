@@ -298,8 +298,6 @@ function loadSettings() {
     "text-hg": "none",
     "text-font": "Open Sans, sans-serif",
   }
-
-  changeDiscordTheme(data['discord-example-theme']);
   
   if (themeChangerRange) {
     themeChangerRange.value = parseInt(data['theme-main'].replace('%', ''));
