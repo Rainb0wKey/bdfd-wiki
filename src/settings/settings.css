@@ -25,20 +25,6 @@
     padding-right: 15px;
     box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
     transition: .3s;
-    animation: SettingAppear linear;
-    animation-timeline: view();
-    animation-range: entry 0;
-}
-
-@keyframes SettingAppear {
-    from {
-        opacity: 0;
-        transform: translateX(-20%);
-    }
-    to {
-        opacity: 1;
-        transform: translateX(0px);
-    }
 }
 
 .settingembed:hover {
