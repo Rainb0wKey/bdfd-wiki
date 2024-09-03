@@ -137,6 +137,11 @@ function changeTextHigh(colorId) {
 
 let isLocked = true;
 
+  // Used in status bar (iPhone).
+function setStatusBar(StatusBar) {
+  document.querySelector('meta[name="theme-color"]').setAttribute('content', ${StatusBar});
+}
+
 function updateColor() {
   // Settings page
   const colorSlider = document.getElementById('themeSlider');
@@ -171,7 +176,7 @@ function updateColor() {
     } else {
       document.body.style.background = `hsl(${hue}, 80%, 8%)`;
     }
-    document.querySelector('meta[name="theme-color"]').setAttribute('content', document.body.style.background);
+    setStatusBar(`hsl(${hue}, 80%, 8%)`);
     document.body.style.color = `hsl(${hue}, 100%, 90%)`;
     updateJsonFile("theme-bg", document.body.style.background);
     updateJsonFile("theme-text", document.body.style.color);
@@ -222,6 +227,7 @@ function useBackground() {
   const lightness = 8;
 
   const backgroundColor = `hsl(${hue}, ${saturation}%, ${lightness}%)`;
+  setStatusBar(backgroundColor);
   document.body.style.background = backgroundColor;
   updateJsonFile("theme-bg", backgroundColor);
 };
@@ -231,6 +237,7 @@ function resetTheme() {
 
   colorSlider.value = 270;
 
+  setStatusBar(`hsl(colorSlider.value, 80%, 8%)`);
   updateColor()
   useBackground()
 };
