@@ -78,6 +78,18 @@ function changeFontSize() {
   updateJsonFile("text-size", range.value + "%");
 }
 
+function resetFontSize() {
+  const range = document.getElementById("textsize");
+  const displaySize = document.getElementById("display-size");
+  const webSize = document.documentElement;
+  range.value = 60;
+  displaySize.textContent = range.value;
+  webSize.style.fontSize = `${range.value}%`;
+
+  // Save in Storage
+  updateJsonFile("text-size", range.value + "%");
+};
+
 function copyHGInput() {
   const textarea = document.getElementById('jsonhginput');
   navigator.clipboard.writeText(textarea.value).catch((err) => console.error("Failed copying to clipboard", err));
