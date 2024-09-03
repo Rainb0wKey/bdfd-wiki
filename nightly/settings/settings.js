@@ -253,6 +253,7 @@ function gradientBackground() {
   const color1 = `hsl(${hue}, ${saturation}%, ${lightness1}%)`; // Create the brighter color
   const color2 = `hsl(${hue}, ${saturation}%, ${lightness2}%)`; // Create the darker color
 
+  setStatusBar(hue);
   document.body.style.background = `linear-gradient(to bottom right, ${color1}, ${color2})`; // Apply gradient
 };
 
