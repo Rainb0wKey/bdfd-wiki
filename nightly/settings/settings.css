@@ -458,6 +458,7 @@ input[type="range"]::-moz-range-thumb {
     color: #fff;
     cursor: pointer;
     font-size: 1.75rem;
+    text-align: center;
     transition: .2s;
   }
 
