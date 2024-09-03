@@ -5,9 +5,9 @@ const themes = {
     background: '#FFF',
   },
   'dark': {
-    reactionColor: '#131318',
-    messageTextColor: '#DDDEE1',
-    background: '#000',
+    reactionColor: '#202226',
+    messageTextColor: '#C6C7CC',
+    background: '#1C1D22',
   },
   'redmoon': {
     reactionColor: '#4e0505',
@@ -101,9 +101,9 @@ function changeDiscordTheme(colorId) {
   const messageColor = document.querySelector('.discord-message-markup');
 
   const styles = {
-    reactionColor: '#202226',
-    messageTextColor: '#C6C7CC',
-    background: '#1C1D22',
+    reactionColor: '#131318',
+    messageTextColor: '#DDDEE1',
+    background: '#000',
     // get styles for this button ID
     ...(themes[colorId] || {})
   }
