@@ -188,7 +188,7 @@ function updateColor() {
   });
   setButtons.forEach(button => {
     if (!button.matches('#menu-bar i') && !button.matches('#menu-bar .icon-button')) {
-      button.style.background = color1;
+      button.style.background = `hsl(${hue}, 45%, 15%)`;
     }
   });
 
