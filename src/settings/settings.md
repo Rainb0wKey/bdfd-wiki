@@ -73,7 +73,10 @@ Let's customize your experience in the Bot Designer For Discord wiki world!
 
 <div class="settingembed">
   <h2>Discord Example</h2>
-  <p>Let's change the theme for discord examples!</p>
+  <p>Let’s give our Discord example previews a color makeover to make them look better.</p>
+  <button class="resetSettingButton" onClick="changeDiscordTheme('dark')">
+    <i class="fa fa-refresh" aria-hidden="true"></i>
+  </button>
   <div class="discordexamplebuttons">
     <button id="light-button" class="dbutton" onClick="changeDiscordTheme('light')">
       <div class="display-color" id="light"></div>
