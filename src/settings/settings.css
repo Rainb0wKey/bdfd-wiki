@@ -269,7 +269,7 @@
 }
 
 .hgButton#resetHG:hover {
-    background-color: #320000;
+    background-color: #320000 !important;
     color: #FFF;
 }
 
