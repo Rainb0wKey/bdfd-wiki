@@ -17,7 +17,8 @@ Let's customize your experience in the Bot Designer For Discord wiki world!
     <div class="lock-text" id="lockText" onClick="lockTheme()">Locked</div>
   </div>
   <div class="themebuttons">
-    <button class="tbutton" id="setBackground" onClick="useBackground()">Use as background</button>
+    <button class="tbutton" id="setBackground" onClick="useBackground()">Set background</button>
+    <button class="tbutton" id="setWhiteColor" onClick="useFontColor()">White text</button>
     <button class="tbutton" id="gradientTheme" onClick="gradientBackground()">Gradient</button>
   </div>
 </div>
