@@ -9,7 +9,7 @@ function applySettings() {
         "theme-main": "270",
         "theme-bg": "270",
         "theme-text": "270",
-        "discord-example-theme": "light",
+        "discord-example-theme": "dark",
         "text-size": "60%",
         "text-hg": "none",
         "text-font": "Open Sans, sans-serif",
