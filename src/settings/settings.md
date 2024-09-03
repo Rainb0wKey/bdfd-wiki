@@ -42,7 +42,7 @@ Let's customize your experience in the Bot Designer For Discord wiki world!
 
 <div class="settingembed">
   <h2>Text Size</h2>
-  <p>Can't see well? Let's edit the text size:</p>
+  <p>Easily modify the size of text for optimal viewing and readability.</p>
   <button class="resetSettingButton" id="textResetButton" onClick="resetFontSize()">
     <i class="fa fa-refresh" aria-hidden="true"></i>
   </button>
