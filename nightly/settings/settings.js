@@ -310,6 +310,7 @@ function loadSettings() {
 loadSettings();
 try {
   updateColor();
+  changeDiscordTheme('dark');
 } catch (err) {
-  console.error("Failed to update color", err);
+  console.error("Failed to update color or discord theme", err);
 }
