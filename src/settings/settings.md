@@ -127,6 +127,7 @@ Let's customize your experience in the Bot Designer For Discord wiki world!
       <div class="display-text">Night Chestnut</div>
     </button>
   </div>
+  <p id="default-is">Dark</p>
 </div>
 
 ``` discord yaml
