@@ -96,23 +96,27 @@ function copyHGInput() {
 }
 
 function changeDiscordTheme(colorId) {
-  const discordMessages = document.querySelector('.discord-messages');
-  const reaction = document.querySelector('.discord-reaction');
-  const messageColor = document.querySelector('.discord-message-markup');
+  const discordMessages = document.getElementsByTagName('discord-messages');
 
   const styles = {
     reactionColor: '#131318',
     messageTextColor: '#DDDEE1',
     background: '#000',
-    // Get styles for this button ID
-    ...(themes[colorId] || {})
+    ...(DiscordThemes[colorId] || {})
   }
 
-  if (discordMessages) {
-    if (styles.background) discordMessages.style.background = styles.background;
-    discordMessages.style.backgroundColor = styles.exampleColor;
-    reaction.style.backgroundColor = styles.reactionColor;
-    messageColor.style.color = styles.messageTextColor;
+  for (const message of discordMessages) {
+    const reactions = document.getElementsByTagName('discord-reactions');
+    const messageColors = document.getElementsByTagName('discord-message-markup');
+    if (styles.background) message.style.background = styles.background;
+    message.style.backgroundColor = styles.exampleColor;
+    for (const reaction of reactions) {
+      // change the div which is the actual reaction
+      reaction.firstChild.style.backgroundColor = styles.reactionColor;
+    }
+    for (const markup of messageColors) {
+      markup.style.color = styles.messageTextColor;
+    }
   }
 
   updateJsonFile("discord-example-theme", colorId);
@@ -151,7 +155,7 @@ function changeTextHigh(colorId) {
 
 let isLocked = true;
 
-  // Used in status bar (iPhone).
+// Used in status bar (iPhone).
 function setStatusBar(HueInput) {
   document.querySelector('meta[name="theme-color"]').setAttribute('content', `hsl(${HueInput}, 80%, 8%)`);
 }
@@ -298,7 +302,7 @@ function loadSettings() {
     "text-hg": "none",
     "text-font": "Open Sans, sans-serif",
   }
-  
+
   if (themeChangerRange) {
     themeChangerRange.value = parseInt(data['theme-main'].replace('%', ''));
   }
