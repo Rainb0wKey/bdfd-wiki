@@ -26,7 +26,7 @@ const themes = {
     background: 'linear-gradient(-25deg, #1d0024, #350674)'
   },
   'oldwood': {
-    reactionColor: '#4e3b05',
+    reactionColor: '#4e2e05',
     background: 'linear-gradient(-25deg, #240f00, #744806)'
   },
   'azuresky': {
