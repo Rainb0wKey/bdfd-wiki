@@ -25,7 +25,7 @@ Let's customize your experience in the Bot Designer For Discord wiki world!
 
 <div class="settingembed">
   <h2>Text Highlighting</h2>
-  <p>Color?!</p>
+  <p>Improve readability and make your text stand out with  text highlighting.</p>
   <div class="texthighbuttons">
     <button id="high-none" onClick="changeTextHigh('none')" class="hbutton">Disable</button>
     <button id="high-white" onClick="changeTextHigh('white')" class="hbutton">White</button>
