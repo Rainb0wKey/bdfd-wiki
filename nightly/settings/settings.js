@@ -171,6 +171,7 @@ function updateColor() {
     } else {
       document.body.style.background = `hsl(${hue}, 80%, 8%)`;
     }
+    document.querySelector('meta[name="theme-color"]').setAttribute('content', `hsl(${hue}, 80%, 8%)`);
     document.body.style.color = `hsl(${hue}, 100%, 90%)`;
     updateJsonFile("theme-bg", document.body.style.background);
     updateJsonFile("theme-text", document.body.style.color);
