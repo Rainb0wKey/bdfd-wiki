@@ -106,7 +106,7 @@ function changeDiscordTheme(colorId) {
   }
 
   for (const message of discordMessages) {
-    const reactions = document.getElementsByTagName('discord-reactions');
+    const reactions = document.getElementsByTagName('discord-reaction');
     const messageColors = document.getElementsByTagName('discord-message-markup');
     if (styles.background) message.style.background = styles.background;
     message.style.backgroundColor = styles.exampleColor;
