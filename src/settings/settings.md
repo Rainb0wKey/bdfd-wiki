@@ -55,7 +55,7 @@ Let's customize your experience in the Bot Designer For Discord wiki world!
 
 <div class="settingembed">
   <h2>Text Font</h2>
-  <p>Let's change the font for texts!</p>
+  <p>Select the font that makes text more understandable.</p>
   <button class="resetSettingButton" id="font1" onClick="changeTextFont('font1')">
     <i class="fa fa-refresh" aria-hidden="true"></i>
   </button>
