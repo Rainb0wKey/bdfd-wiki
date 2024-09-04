@@ -70,8 +70,11 @@ const textHighlights = {
 function changeFontSize() {
   const range = document.getElementById("textsize");
   const displaySize = document.getElementById("display-size");
+  const bdsCodeSize = document.querySelector('code.hljs');
   const webSize = document.documentElement;
   displaySize.textContent = range.value;
+  
+  bdsCodeSize.style.fontSize = range.value + 2 + `%`;
   webSize.style.fontSize = `${range.value}%`;
 
   // Save in Storage
