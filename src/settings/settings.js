@@ -74,7 +74,7 @@ function changeFontSize() {
   const webSize = document.documentElement;
   displaySize.textContent = range.value;
   
-  bdsCodeSize.style.fontSize = range.value + 2 + `%`;
+  bdsCodeSize.style.fontSize = range.value + 0.5 + `%`;
   webSize.style.fontSize = `${range.value}%`;
 
   // Save in Storage
@@ -84,9 +84,12 @@ function changeFontSize() {
 function resetFontSize() {
   const range = document.getElementById("textsize");
   const displaySize = document.getElementById("display-size");
+  const bdsCodeSize = document.querySelector('code.hljs');
   const webSize = document.documentElement;
   range.value = 60;
   displaySize.textContent = range.value;
+  
+  bdsCodeSize.style.fontSize = range.value + 0.5 + `%`;
   webSize.style.fontSize = `${range.value}%`;
 
   // Save in Storage
