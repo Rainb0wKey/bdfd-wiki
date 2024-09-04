@@ -128,10 +128,7 @@ Let's customize your experience in the Bot Designer For Discord wiki world!
       <div class="display-text">Night Chestnut</div>
     </button>
   </div>
-  <p id="default-is">Dark</p>
-</div>
-
-``` discord yaml
+  ``` discord yaml
 - user_id: 803569638084313098
   username: RainbowKey
   color: "#E67E22"
@@ -149,6 +146,8 @@ Let's customize your experience in the Bot Designer For Discord wiki world!
   content: |
     Added!
 ```
+  <p id="default-is">Dark</p>
+</div>
 
 <div class="settingembed">
   <h2>Code Highlighting</h2>
