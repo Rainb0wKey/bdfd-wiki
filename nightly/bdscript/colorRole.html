@@ -21,8 +21,6 @@
         <link rel="stylesheet" href="../theme/css/chrome.css">
         <link rel="stylesheet" href="../theme/css/print.css" media="print">
 
-				<script src="../settings/code-hg.js"></script>
-
         <!-- Discord Components -->
         <script type="module" src="https://unpkg.com/@skyra/discord-components-core"></script>
 
@@ -190,7 +188,7 @@ $colorRole[$noMentionMessage]
     <discord-message author="Nicky" role-color="#EE7908">
         !example <discord-mention type="role" color="#E11F0E">cool role</discord-mention> #E11F0E
     </discord-message>
-    <discord-message role-color="#748BD4" verified author="Wiki Bot" bot>
+    <discord-message role-color="#748BD4" author="Wiki Bot" verified bot>
         ✅ Changed the role color of <discord-mention type="role" color="#E11F0E">cool role</discord-mention> to <code>#E11F0E</code>!
     </discord-message>
 </discord-messages>
@@ -241,6 +239,8 @@ $colorRole[$noMentionMessage]
 
         <!-- Custom JS scripts -->
 
+
+				<script src="../settings/code-hg.js"></script>
 
         <!-- Override some theme attributes with the custom settings -->
         <script src="../settings/apply-settings.js"></script>

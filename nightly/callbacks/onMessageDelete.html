@@ -21,8 +21,6 @@
         <link rel="stylesheet" href="../theme/css/chrome.css">
         <link rel="stylesheet" href="../theme/css/print.css" media="print">
 
-				<script src="../settings/code-hg.js"></script>
-
         <!-- Discord Components -->
         <script type="module" src="https://unpkg.com/@skyra/discord-components-core"></script>
 
@@ -210,7 +208,7 @@
     <discord-message role-color="#EE7908" author="Nicky">
         Hey
     </discord-message>
-    <discord-message role-color="#748BD4" bot author="Wiki Bot" verified>
+    <discord-message verified role-color="#748BD4" bot author="Wiki Bot">
         A message was deleted!<br />Message ID: 1133145902865985646
     </discord-message>
 </discord-messages>
@@ -287,6 +285,8 @@ $setServerVar[logs;$mentionedChannels[1]]
 
         <!-- Custom JS scripts -->
 
+
+				<script src="../settings/code-hg.js"></script>
 
         <!-- Override some theme attributes with the custom settings -->
         <script src="../settings/apply-settings.js"></script>

@@ -21,8 +21,6 @@
         <link rel="stylesheet" href="../theme/css/chrome.css">
         <link rel="stylesheet" href="../theme/css/print.css" media="print">
 
-				<script src="../settings/code-hg.js"></script>
-
         <!-- Discord Components -->
         <script type="module" src="https://unpkg.com/@skyra/discord-components-core"></script>
 
@@ -190,7 +188,7 @@ Channel ID: $findChannel[$mentionedChannels[1]]
     <discord-message author="RainbowKey" role-color="#E67E22">
         !example <discord-mention type="channel">main-chat</discord-mention>
     </discord-message>
-    <discord-message verified role-color="#378afa" bot author="BDFD Support">
+    <discord-message author="BDFD Support" bot verified role-color="#378afa">
         Channel ID: 566370477967147018
     </discord-message>
 </discord-messages>
@@ -243,6 +241,8 @@ Channel ID: $findChannel[$mentionedChannels[1]]
 
         <!-- Custom JS scripts -->
 
+
+				<script src="../settings/code-hg.js"></script>
 
         <!-- Override some theme attributes with the custom settings -->
         <script src="../settings/apply-settings.js"></script>

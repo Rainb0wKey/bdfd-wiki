@@ -21,8 +21,6 @@
         <link rel="stylesheet" href="../../theme/css/chrome.css">
         <link rel="stylesheet" href="../../theme/css/print.css" media="print">
 
-				<script src="../../settings/code-hg.js"></script>
-
         <!-- Discord Components -->
         <script type="module" src="https://unpkg.com/@skyra/discord-components-core"></script>
 
@@ -205,13 +203,13 @@ $awaitFunc[say]
     <discord-message author="RainbowKey" role-color="#E67E22">
         !example
     </discord-message>
-    <discord-message bot verified role-color="#378afa" author="BDFD Support">
+    <discord-message author="BDFD Support" bot role-color="#378afa" verified>
         What do you want me to say?
     </discord-message>
-    <discord-message author="RainbowKey" role-color="#E67E22">
+    <discord-message role-color="#E67E22" author="RainbowKey">
         I love BDFD
     </discord-message>
-    <discord-message verified author="BDFD Support" role-color="#378afa" bot>
+    <discord-message role-color="#378afa" bot verified author="BDFD Support">
         I love BDFD
     </discord-message>
 </discord-messages>
@@ -236,13 +234,13 @@ $message
     <discord-message author="RainbowKey" role-color="#E67E22">
         !example
     </discord-message>
-    <discord-message bot verified role-color="#378afa" author="BDFD Support">
+    <discord-message verified author="BDFD Support" role-color="#378afa" bot>
         What do you want me to say?
     </discord-message>
     <discord-message role-color="#E67E22" author="RainbowKey">
         I love BDFD
     </discord-message>
-    <discord-message role-color="#378afa" verified author="BDFD Support" bot>
+    <discord-message role-color="#378afa" author="BDFD Support" bot verified>
         I love BDFD
     </discord-message>
 </discord-messages>
@@ -387,6 +385,8 @@ You have provided a number: $message
 
         <!-- Custom JS scripts -->
 
+
+				<script src="../../settings/code-hg.js"></script>
 
         <!-- Override some theme attributes with the custom settings -->
         <script src="../../settings/apply-settings.js"></script>

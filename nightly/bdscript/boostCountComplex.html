@@ -21,8 +21,6 @@
         <link rel="stylesheet" href="../theme/css/chrome.css">
         <link rel="stylesheet" href="../theme/css/print.css" media="print">
 
-				<script src="../settings/code-hg.js"></script>
-
         <!-- Discord Components -->
         <script type="module" src="https://unpkg.com/@skyra/discord-components-core"></script>
 
@@ -187,10 +185,10 @@ This server currently has $boostCount[$message[1]] boost(s).
     <discord-system-message type="boost">
         <discord-bold>RainbowKey</discord-bold> just boosted the server!
     </discord-system-message>
-    <discord-message role-color="#E67E22" author="RainbowKey">
+    <discord-message author="RainbowKey" role-color="#E67E22">
         !example 566363823137882154
     </discord-message>
-    <discord-message role-color="#378afa" author="BDFD Support" verified bot>
+    <discord-message verified author="BDFD Support" bot role-color="#378afa">
         This server currently has 38 boost(s).
     </discord-message>
 </discord-messages>
@@ -240,6 +238,8 @@ This server currently has $boostCount[$message[1]] boost(s).
 
         <!-- Custom JS scripts -->
 
+
+				<script src="../settings/code-hg.js"></script>
 
         <!-- Override some theme attributes with the custom settings -->
         <script src="../settings/apply-settings.js"></script>
