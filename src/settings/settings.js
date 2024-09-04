@@ -174,7 +174,8 @@ function updateColor() {
   const sideChapterBar = document.querySelector('.chapter li a.active');
   const sideSpacerBar = document.querySelector('.chapter .spacer');
   const setButtons = document.querySelectorAll('button');
-
+  const bdsCode = document.querySelector('code.hljs');
+  
   // Color Settings
   const hue = colorSlider.value;
   const saturation = 80;
@@ -209,6 +210,7 @@ function updateColor() {
   menuBar.style.background = `linear-gradient(to bottom right, ${color1}, ${color2})`;
   sideBar.style.background = color3;
   sideSpacerBar.style.background = `hsl(${hue}, 100%, 80%)`;
+  bdsCode.style.background = color3;
   settingEmbed.forEach(element => {
     element.style.background = color3;
   });
