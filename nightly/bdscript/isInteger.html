@@ -21,6 +21,8 @@
         <link rel="stylesheet" href="../theme/css/chrome.css">
         <link rel="stylesheet" href="../theme/css/print.css" media="print">
 
+				<script src="../settings/code-hg.js"></script>
+
         <!-- Discord Components -->
         <script type="module" src="https://unpkg.com/@skyra/discord-components-core"></script>
 
@@ -196,19 +198,19 @@ Integer?: $isInteger[$message]
     <discord-message role-color="#E67E22" author="RainbowKey">
         !example number
     </discord-message>
-    <discord-message role-color="#378afa" bot author="BDFD Support" verified>
+    <discord-message author="BDFD Support" bot role-color="#378afa" verified>
         Integer?: false
     </discord-message>
     <discord-message role-color="#E67E22" author="RainbowKey">
         !example 1.8
     </discord-message>
-    <discord-message bot author="BDFD Support" verified role-color="#378afa">
+    <discord-message author="BDFD Support" bot role-color="#378afa" verified>
         Integer?: false
     </discord-message>
-    <discord-message role-color="#E67E22" author="RainbowKey">
+    <discord-message author="RainbowKey" role-color="#E67E22">
         !example 4
     </discord-message>
-    <discord-message author="BDFD Support" bot role-color="#378afa" verified>
+    <discord-message role-color="#378afa" verified bot author="BDFD Support">
         Integer?: true
     </discord-message>
 </discord-messages>
