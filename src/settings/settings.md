@@ -1,5 +1,5 @@
 # Settings
-Let's customize your experience in the Bot Designer For Discord wiki world!
+Let's customize your experience in our Bot Designer For Discord wiki world!
 
 <link rel="stylesheet" href="./settings.css">
 <script src="./settings.js" defer></script>
