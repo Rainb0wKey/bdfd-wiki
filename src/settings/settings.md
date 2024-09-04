@@ -131,7 +131,7 @@ Let's customize your experience in our Bot Designer For Discord wiki world!
   <p id="default-is">Dark</p>
 </div>
 
-  ``` discord yaml
+```discord yaml
 - user_id: 803569638084313098
   username: RainbowKey
   color: "#E67E22"
