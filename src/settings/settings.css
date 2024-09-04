@@ -18,8 +18,8 @@
 .settingembed {
     position: relative;
     background-color: var(--sidebar-bg);
+    color: #fff;
     border-radius: 10px;
-    color: var(--sidebar-fg);
     margin-top: -4.5rem;
     padding-bottom: 1.5rem;
     padding-left: 15px;
