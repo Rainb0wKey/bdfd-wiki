@@ -261,7 +261,7 @@ function useFontColor() {
 
 function useDarkBackground() {
   document.body.style.background = `#000`;
-  updateJsonFile("theme-bg", backgroundColor);
+  updateJsonFile("theme-bg", document.body.style.background);
   
 }
 
