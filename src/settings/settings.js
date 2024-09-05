@@ -301,10 +301,10 @@ function updateCodeHG() {
   const jsonHG = textarea.value;
 
   if (isJson(jsonHG)) {
-    console.log("JSON correct");
+    jsonhginput.style.boxShadow = '0 0 10px green';
     updateJsonFile("code-hg", jsonHG);
   } else {
-    console.log("JSON invalid");
+    jsonhginput.style.boxShadow = '0 0 10px red';
   }
 }
 
