@@ -84,13 +84,12 @@ button {
 #jsonhginput {
     width: 96%;
     height: 40rem;
-    background-color: var(--bg);
+    background-color: hsl(270, 60%, 20%);
     border-radius: 10px;
-    border-width: 1px;
+    border-width: 0;
     color: var(--fg);
     padding: 7px;
     font-size: 1.5rem;
-    border-color: var(--icons);
     resize: vertical;
     margin: 0 auto;
     display: block;
