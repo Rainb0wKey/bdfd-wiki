@@ -296,6 +296,27 @@ function gradientBackground() {
   document.body.style.background = `linear-gradient(to bottom right, ${color1}, ${color2})`; // Apply gradient
 };
 
+function updateCodeHG() {
+  const textarea = document.getElementById('jsonhginput');
+  const jsonHG = textarea.value;
+
+  if (isJson(jsonHG)) {
+    console.log("JSON correct");
+    updateJsonFile("code-hg", jsonHG);
+  } else {
+    console.log("JSON invalid");
+  }
+}
+
+function isJson(str) {
+  try {
+    JSON.parse(str);
+    return true;
+  } catch (e) {
+    return false;
+  }
+}
+
 function rgbToHex(rgb) {
   const c = rgb.match(/\d+/g).map(Number);
   return '#' + ('000000' + ((c[0] << 16) | (c[1] << 8) | c[2]).toString(16)).slice(-6);
