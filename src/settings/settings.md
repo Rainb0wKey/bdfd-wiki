@@ -170,5 +170,17 @@ Let's customize your experience in our Bot Designer For Discord wiki world!
 
 ```
 $nomention
-$sendMessage[Hello, $username 👋, ping: $pingms]
+$allowUserMentions[]
+$reply
+$botTyping
+
+$try
+  $sendMessage[Hello, $username 👋, ping: $pingms]
+  $if[$toLowercase[$message]==secret]
+    $footer[BDFD 🤩]
+  $endif
+$catch
+  $sendMessage[Bye!]
+  $botLeave
+$endtry
 ```
