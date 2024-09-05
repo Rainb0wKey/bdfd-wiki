@@ -84,6 +84,8 @@ button {
 #jsonhginput {
     width: 96%;
     height: 40rem;
+    font-size: 1.5rem;
+    max-height: 35em;
     background-color: hsl(270, 60%, 20%);
     border-radius: 10px;
     border-width: 0;
