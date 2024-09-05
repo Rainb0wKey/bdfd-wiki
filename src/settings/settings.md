@@ -95,6 +95,10 @@ Let's customize your experience in our Bot Designer For Discord wiki world!
       <div class="display-color" id="redmoon"></div>
       <div class="display-text">Red Moon</div>
     </button>
+    <button id="oldwood-button" class="dbutton" onClick="changeDiscordTheme('oldwood')">
+      <div class="display-color" id="oldwood"></div>
+      <div class="display-text">Old Wood</div>
+    </button>
     <button id="nightsapphire-button" class="dbutton" onClick="changeDiscordTheme('nightsapphire')">
       <div class="display-color" id="nightsapphire"></div>
       <div class="display-text">Night Sapphire</div>
@@ -102,18 +106,6 @@ Let's customize your experience in our Bot Designer For Discord wiki world!
     <button id="emeraldearth-button" class="dbutton" onClick="changeDiscordTheme('emeraldearth')">
       <div class="display-color" id="emeraldearth"></div>
       <div class="display-text">Emerald Earth</div>
-    </button>
-    <button id="nightviolet-button" class="dbutton" onClick="changeDiscordTheme('nightviolet')">
-      <div class="display-color" id="nightviolet"></div>
-      <div class="display-text">Night Violet</div>
-    </button>
-    <button id="oldwood-button" class="dbutton" onClick="changeDiscordTheme('oldwood')">
-      <div class="display-color" id="oldwood"></div>
-      <div class="display-text">Old Wood</div>
-    </button>
-    <button id="azuresky-button" class="dbutton" onClick="changeDiscordTheme('azuresky')">
-      <div class="display-color" id="azuresky"></div>
-      <div class="display-text">Azure Sky</div>
     </button>
     <button id="cherryvelvety-button" class="dbutton" onClick="changeDiscordTheme('cherryvelvety')">
       <div class="display-color" id="cherryvelvety"></div>
@@ -126,6 +118,14 @@ Let's customize your experience in our Bot Designer For Discord wiki world!
     <button id="nightchestnut-button" class="dbutton" onClick="changeDiscordTheme('nightchestnut')">
       <div class="display-color" id="nightchestnut"></div>
       <div class="display-text">Night Chestnut</div>
+    </button>
+    <button id="azuresky-button" class="dbutton" onClick="changeDiscordTheme('azuresky')">
+      <div class="display-color" id="azuresky"></div>
+      <div class="display-text">Azure Sky</div>
+    </button>
+    <button id="nightviolet-button" class="dbutton" onClick="changeDiscordTheme('nightviolet')">
+      <div class="display-color" id="nightviolet"></div>
+      <div class="display-text">Night Violet</div>
     </button>
   </div>
   <p id="default-is">Dark</p>
