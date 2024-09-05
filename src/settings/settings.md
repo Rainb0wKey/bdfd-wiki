@@ -165,6 +165,7 @@ Let's customize your experience in our Bot Designer For Discord wiki world!
     </button>
     <textarea id="jsonhginput" oninput="updateCodeHG()" maxlength="10000"></textarea>
   </div>
+  <p class="charCount">0 / 10000</p>
 </div>
 
 ```
