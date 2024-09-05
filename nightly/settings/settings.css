@@ -3,6 +3,10 @@
 
 /* Settings */
 
+body {
+    background-color: hsl(270, 80%, 8%);
+}
+
 .discord-messages {
     margin-top: 1.7rem;
     margin-bottom: 2rem;
