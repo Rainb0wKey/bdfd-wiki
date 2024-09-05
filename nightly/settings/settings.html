@@ -298,11 +298,11 @@
     <discord-message author="RainbowKey" role-color="#E67E22">
         !example ❤️
         <discord-reactions slot="reactions">
-            <discord-reaction name=":emoji:" emoji="https://upload.wikimedia.org/wikipedia/commons/7/70/Symbolic_Love_Heart.png" count="1">
+            <discord-reaction name=":emoji:" count="1" emoji="https://upload.wikimedia.org/wikipedia/commons/7/70/Symbolic_Love_Heart.png">
             </discord-reaction>
         </discord-reactions>
     </discord-message>
-    <discord-message verified role-color="#378afa" author="BDFD Support" bot>
+    <discord-message author="BDFD Support" verified role-color="#378afa" bot>
         Added!
     </discord-message>
 </discord-messages>
@@ -329,7 +329,7 @@ $reply
 $botTyping
 
 $try
-  $sendMessage[Hello, $username 👋, ping: $pingms]
+  $sendMessage[Hello, $username 👋, ping: $ping ms]
   $if[$toLowercase[$message]==secret]
     $footer[BDFD 🤩]
   $endif
