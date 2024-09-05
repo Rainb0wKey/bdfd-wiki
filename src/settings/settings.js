@@ -297,14 +297,14 @@ function gradientBackground() {
 };
 
 function updateCodeHG() {
-  const textarea = document.getElementById('jsonhginput');
-  const jsonHG = textarea.value;
+  const codeInput = document.getElementById('jsonhginput');
+  const jsonHG = codeInput.value;
 
   if (isJson(jsonHG)) {
-    jsonhginput.style.boxShadow = '0 0 10px green';
+    codeInput.style.boxShadow = '0 0 10px green';
     updateJsonFile("code-hg", jsonHG);
   } else {
-    jsonhginput.style.boxShadow = '0 0 10px red';
+    codeInput.style.boxShadow = '0 0 10px red';
   }
 }
 
