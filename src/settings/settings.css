@@ -84,6 +84,8 @@
     font-size: 1.5rem;
     border-color: var(--icons);
     resize: vertical;
+    margin: 0 auto;
+    display: block;
 }
 
 .textsizebuttons input[type='range'] {
