@@ -295,14 +295,14 @@
   <p id="default-is">Dark</p>
 </div>
 <discord-messages>
-    <discord-message author="RainbowKey" role-color="#E67E22">
+    <discord-message role-color="#E67E22" author="RainbowKey">
         !example ❤️
         <discord-reactions slot="reactions">
             <discord-reaction emoji="https://upload.wikimedia.org/wikipedia/commons/7/70/Symbolic_Love_Heart.png" count="1" name=":emoji:">
             </discord-reaction>
         </discord-reactions>
     </discord-message>
-    <discord-message author="BDFD Support" role-color="#378afa" bot verified>
+    <discord-message role-color="#378afa" author="BDFD Support" bot verified>
         Added!
     </discord-message>
 </discord-messages>
@@ -321,6 +321,7 @@
     </button>
     <textarea id="jsonhginput" oninput="updateCodeHG()" maxlength="10000"></textarea>
   </div>
+  <p class="charCount">0 / 10000</p>
 </div>
 <pre><code>$nomention
 $sendMessage[Hello, $username 👋, ping: $pingms]
