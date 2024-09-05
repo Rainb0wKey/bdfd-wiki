@@ -308,7 +308,9 @@ function updateCodeHG() {
 
   if (charCount >= 10000) {
     charCountElement.style.color = 'red'; 
-  } 
+  } else {
+    charCountElement.style.color = document.body.style.color; 
+  }  
   
   if (isJson(jsonHG)) {
     codeInput.style.boxShadow = '0 0 10px green';
