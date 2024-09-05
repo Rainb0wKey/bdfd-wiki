@@ -337,6 +337,7 @@ function loadSettings() {
   const range = document.getElementById("textsize");
   const themeChangerRange = document.getElementById("themeSlider");
   const codeTextInput = document.getElementById('jsonhginput');
+  const charCountElement = document.querySelector('.charCount');
 
   let data
 
@@ -409,8 +410,10 @@ function loadSettings() {
    }
 }
   }
-
+  
   if (codeTextInput) {
+    const charJSONCount = data['code-hg'].length; 
+    charCountElement.textContent = `${charJSONCount} / 10000`;
     codeTextInput.value =  data['code-hg'];
   }
   
