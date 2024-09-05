@@ -295,14 +295,14 @@
   <p id="default-is">Dark</p>
 </div>
 <discord-messages>
-    <discord-message role-color="#E67E22" author="RainbowKey">
+    <discord-message author="RainbowKey" role-color="#E67E22">
         !example ❤️
         <discord-reactions slot="reactions">
-            <discord-reaction emoji="https://upload.wikimedia.org/wikipedia/commons/7/70/Symbolic_Love_Heart.png" name=":emoji:" count="1">
+            <discord-reaction name=":emoji:" emoji="https://upload.wikimedia.org/wikipedia/commons/7/70/Symbolic_Love_Heart.png" count="1">
             </discord-reaction>
         </discord-reactions>
     </discord-message>
-    <discord-message author="BDFD Support" role-color="#378afa" verified bot>
+    <discord-message role-color="#378afa" verified author="BDFD Support" bot>
         Added!
     </discord-message>
 </discord-messages>
@@ -319,7 +319,7 @@
     <button class="hgButton">
       <p><a href="https://www.youtube.com/watch?v=xvFZjo5PgG0"><i class="fa fa-book" aria-hidden="true"></i> What is this?</a></p>
     </button>
-    <textarea id="jsonhginput"></textarea>
+    <textarea id="jsonhginput" oninput="updateCoodeHG()"></textarea>
   </div>
 </div>
 <pre><code>$nomention
