@@ -334,6 +334,7 @@ function loadSettings() {
   const displaySize = document.getElementById("display-size");
   const range = document.getElementById("textsize");
   const themeChangerRange = document.getElementById("themeSlider");
+  const codeTextInput = document.getElementById('jsonhginput');
 
   let data
 
@@ -407,6 +408,10 @@ function loadSettings() {
 }
   }
 
+  if (codeTextInput) {
+    codeTextInput.value =  data['code-hg'];
+  }
+  
   if (themeChangerRange) {
     themeChangerRange.value = parseInt(data['theme-main'].replace('%', ''));
   }
