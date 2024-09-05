@@ -1,7 +1,7 @@
 const DiscordThemes = {
   'light': {
     reactionColor: '#F2F3F5',
-    messageTextColor: '#313338',
+    messageTextColor: '#35373C',
     background: '#FFF',
   },
   'dark': {
