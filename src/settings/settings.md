@@ -181,6 +181,6 @@ $try
   $endif
 $catch
   $sendMessage[Bye!]
-  $botLeave
+  $botLeave $c[Kicks the bot😉]
 $endtry
 ```
