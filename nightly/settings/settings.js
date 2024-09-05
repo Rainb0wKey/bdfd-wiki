@@ -304,6 +304,10 @@ function updateCodeHG() {
   const charCount = codeInput.value.length; 
   charCountElement.textContent = `${charCount} / 10000`;
 
+  if (charCount >= 10000) {
+    charCountElement.style.color = 'red'; 
+  } 
+  
   if (isJson(jsonHG)) {
     codeInput.style.boxShadow = '0 0 10px green';
     updateJsonFile("code-hg", jsonHG);
