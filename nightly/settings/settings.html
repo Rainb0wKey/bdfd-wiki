@@ -259,6 +259,10 @@
       <div class="display-color" id="redmoon"></div>
       <div class="display-text">Red Moon</div>
     </button>
+    <button id="oldwood-button" class="dbutton" onClick="changeDiscordTheme('oldwood')">
+      <div class="display-color" id="oldwood"></div>
+      <div class="display-text">Old Wood</div>
+    </button>
     <button id="nightsapphire-button" class="dbutton" onClick="changeDiscordTheme('nightsapphire')">
       <div class="display-color" id="nightsapphire"></div>
       <div class="display-text">Night Sapphire</div>
@@ -266,18 +270,6 @@
     <button id="emeraldearth-button" class="dbutton" onClick="changeDiscordTheme('emeraldearth')">
       <div class="display-color" id="emeraldearth"></div>
       <div class="display-text">Emerald Earth</div>
-    </button>
-    <button id="nightviolet-button" class="dbutton" onClick="changeDiscordTheme('nightviolet')">
-      <div class="display-color" id="nightviolet"></div>
-      <div class="display-text">Night Violet</div>
-    </button>
-    <button id="oldwood-button" class="dbutton" onClick="changeDiscordTheme('oldwood')">
-      <div class="display-color" id="oldwood"></div>
-      <div class="display-text">Old Wood</div>
-    </button>
-    <button id="azuresky-button" class="dbutton" onClick="changeDiscordTheme('azuresky')">
-      <div class="display-color" id="azuresky"></div>
-      <div class="display-text">Azure Sky</div>
     </button>
     <button id="cherryvelvety-button" class="dbutton" onClick="changeDiscordTheme('cherryvelvety')">
       <div class="display-color" id="cherryvelvety"></div>
@@ -291,18 +283,26 @@
       <div class="display-color" id="nightchestnut"></div>
       <div class="display-text">Night Chestnut</div>
     </button>
+    <button id="azuresky-button" class="dbutton" onClick="changeDiscordTheme('azuresky')">
+      <div class="display-color" id="azuresky"></div>
+      <div class="display-text">Azure Sky</div>
+    </button>
+    <button id="nightviolet-button" class="dbutton" onClick="changeDiscordTheme('nightviolet')">
+      <div class="display-color" id="nightviolet"></div>
+      <div class="display-text">Night Violet</div>
+    </button>
   </div>
   <p id="default-is">Dark</p>
 </div>
 <discord-messages>
-    <discord-message role-color="#E67E22" author="RainbowKey">
+    <discord-message author="RainbowKey" role-color="#E67E22">
         !example ❤️
         <discord-reactions slot="reactions">
-            <discord-reaction emoji="https://upload.wikimedia.org/wikipedia/commons/7/70/Symbolic_Love_Heart.png" name=":emoji:" count="1">
+            <discord-reaction emoji="https://upload.wikimedia.org/wikipedia/commons/7/70/Symbolic_Love_Heart.png" count="1" name=":emoji:">
             </discord-reaction>
         </discord-reactions>
     </discord-message>
-    <discord-message role-color="#378afa" bot verified author="BDFD Support">
+    <discord-message verified author="BDFD Support" bot role-color="#378afa">
         Added!
     </discord-message>
 </discord-messages>
