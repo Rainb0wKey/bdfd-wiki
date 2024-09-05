@@ -175,7 +175,7 @@ $reply
 $botTyping
 
 $try
-  $sendMessage[Hello, $username 👋, ping: $pingms]
+  $sendMessage[Hello, $username 👋, ping: $ping ms]
   $if[$toLowercase[$message]==secret]
     $footer[BDFD 🤩]
   $endif
