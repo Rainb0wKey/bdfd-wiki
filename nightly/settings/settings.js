@@ -298,7 +298,11 @@ function gradientBackground() {
 
 function updateCodeHG() {
   const codeInput = document.getElementById('jsonhginput');
+  const charCountElement = document.querySelector('.charCount');
   const jsonHG = codeInput.value;
+
+  const charCount = codeInput.value.length; 
+  charCountElement.textContent = `${charCount} / 10000`;
 
   if (isJson(jsonHG)) {
     codeInput.style.boxShadow = '0 0 10px green';
