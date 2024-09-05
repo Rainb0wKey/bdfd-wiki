@@ -117,15 +117,11 @@
     content: " %";
 }
 
-.hbutton {
-    border: none;
-    border-width: 1px !important;
-    border-color: var(--icons);
-}
-
 .tbutton,
 .fbutton,
 .hgButton {
+    -webkit-user-select: none;
+    user-select: none;
     padding-left: 1rem;
     padding-right: 1rem;
     height: 4rem;
