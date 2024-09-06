@@ -124,6 +124,7 @@ button {
     resize: vertical;
     margin: 0 auto;
     display: block;
+    outline: none;
 }
 
 .textsizebuttons input[type='range'] {
