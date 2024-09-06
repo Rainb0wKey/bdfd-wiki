@@ -208,7 +208,8 @@ function updateColor() {
   const bdsCode = document.querySelector('code.hljs');
   const previousPage = document.querySelector('.previous');
   const nextPage = document.querySelector('.next');
-
+  const headers = document.querySelectorAll('.content .header:link');
+  
   // Search changes
   const searchBar = document.getElementById('searchbar');
   const searchPages = document.querySelectorAll('ul#searchresults li'); 
@@ -235,6 +236,9 @@ function updateColor() {
     }
     setStatusBar(hue);
     document.body.style.color = `hsl(${hue}, 100%, 90%)`;
+    headers.forEach(head => {
+      head.style.color = `#fff`;
+    });
     document.documentElement.style.scrollbarColor = `hsl(${hue}, 70%, 25%)` + `hsl(${hue}, 80%, 8%)`;
     updateJsonFile("theme-bg", document.body.style.background);
     updateJsonFile("theme-text", document.body.style.color);
@@ -311,10 +315,14 @@ function useBackground() {
 };
 
 function useFontColor() {
+  const headers = document.querySelectorAll('.content .header:link');
   const searchBar = document.getElementById('searchbar');
   if (searchBar) {
     searchBar.style.color = `#fff`;
   }
+  headers.forEach(head => {
+    head.style.color = `#fff`;
+  });
   document.body.style.color = `#fff`;
   updateJsonFile("theme-text", document.body.style.color);
 }
