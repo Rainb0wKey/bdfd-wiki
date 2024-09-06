@@ -163,7 +163,11 @@ let isLocked = true;
 
 // Used in status bar (iPhone).
 function setStatusBar(HueInput) {
-  document.querySelector('meta[name="theme-color"]').setAttribute('content', `hsl(${HueInput}, 80%, 8%)`);
+  if (HueInput != 'dark' ) {
+    document.querySelector('meta[name="theme-color"]').setAttribute('content', `hsl(${HueInput}, 80%, 8%)`);
+  } else {
+    document.querySelector('meta[name="theme-color"]').setAttribute('content', `#000`);
+  }
 }
 
 function updateColor() {
@@ -207,6 +211,7 @@ function updateColor() {
     }
     setStatusBar(hue);
     document.body.style.color = `hsl(${hue}, 100%, 90%)`;
+    document.documentElement.style.scrollbarColor = `hsl(${hue}, 80%, 8%)` + `hsl(${hue}, 70%, 25%)`;
     updateJsonFile("theme-bg", document.body.style.background);
     updateJsonFile("theme-text", document.body.style.color);
   };
@@ -218,7 +223,6 @@ function updateColor() {
     previousPage.style.background = `hsl(${hue}, 45%, 25%)`;
     nextPage.style.background = `hsl(${hue}, 45%, 25%)`;
   }
-  document.documentElement.style.scrollbarColor = `hsl(${hue}, 70%, 25%)` + `hsl(${hue}, 80%, 15%)`;
   colorDisplay.textContent = hue + '°';
   colorDisplay.style.background = color2;
   menuBar.style.background = `linear-gradient(to bottom right, ${color1}, ${color2})`;
@@ -276,6 +280,8 @@ function useFontColor() {
 
 function useDarkBackground() {
   document.body.style.background = `#000`;
+  document.documentElement.style.scrollbarColor = `#000` + `#fff`;
+  setStatusBar('dark');
   updateJsonFile("theme-bg", document.body.style.background);
   
 }
