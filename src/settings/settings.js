@@ -208,6 +208,9 @@ function updateColor() {
   const bdsCode = document.querySelector('code.hljs');
   const previousPage = document.querySelector('.previous');
   const nextPage = document.querySelector('.next');
+
+  // Search changes
+  const searchBar = document.getElementById('searchbar');
   
   // Color Settings
   const hue = colorSlider.value;
@@ -241,7 +244,13 @@ function updateColor() {
   colorSlider.style.background = `linear-gradient(to right, ${color1}, ${color2})`;
   if (previousPage) {
     previousPage.style.background = `hsl(${hue}, 45%, 25%)`;
+    previousPage.style.color = color1;
     nextPage.style.background = `hsl(${hue}, 45%, 25%)`;
+    nextPage.style.color = color1;
+  }
+  if (searchBar) {
+    searchBar.style.background = `hsl(${hue}, 60%, 20%)`;
+    searchBar.style.borderColor = color1;
   }
   colorDisplay.textContent = hue + '°';
   colorDisplay.style.background = color2;
