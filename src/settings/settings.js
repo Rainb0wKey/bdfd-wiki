@@ -182,6 +182,8 @@ function updateColor() {
   const sideSpacerBar = document.querySelector('.chapter .spacer');
   const setButtons = document.querySelectorAll('button');
   const bdsCode = document.querySelector('code.hljs');
+  const previousPage = document.querySelector('.previous');
+  const nextPage = document.querySelector('.next');
   
   // Color Settings
   const hue = colorSlider.value;
@@ -212,6 +214,11 @@ function updateColor() {
   // Updating design
   colorPreview.style.background = `linear-gradient(to bottom right, ${color1}, ${color2})`;
   colorSlider.style.background = `linear-gradient(to right, ${color1}, ${color2})`;
+  if (previousPage) {
+    previousPage.style.background = `hsl(${hue}, 45%, 25%)`;
+    nextPage.style.background = `hsl(${hue}, 45%, 25%)`;
+  }
+  document.documentElement.style.scrollbarColor = `hsl(${hue}, 70%, 25%)` + `hsl(${hue}, 80%, 15%)`;
   colorDisplay.textContent = hue + '°';
   colorDisplay.style.background = color2;
   menuBar.style.background = `linear-gradient(to bottom right, ${color1}, ${color2})`;
