@@ -251,7 +251,7 @@ function updateColor() {
   if (searchBar) {
     searchBar.style.background = `hsl(${hue}, 60%, 20%)`;
     searchBar.style.borderColor = color1;
-    searchBar.style.color = `hsl(${hue}, 100%, 90%)`;
+    searchBar.style.color = document.body.style.color;
   }
   colorDisplay.textContent = hue + '°';
   colorDisplay.style.background = color2;
