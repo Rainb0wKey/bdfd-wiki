@@ -217,6 +217,22 @@ button {
     background: linear-gradient(-25deg, #190024 25%, #740606);
 }
 
+.display-color#mosscovered {
+    background: linear-gradient(-25deg, #1c2400, #4c7406);
+}
+
+.display-color#deepruby {
+    background: linear-gradient(-25deg, #1f0024, #74066e);
+}
+
+.display-color#fernvalley {
+    background: linear-gradient(-25deg, #00240a, #247406);
+}
+
+.display-color#forestshadows {
+    background: linear-gradient(-25deg, #000624 25%, #0e7406);
+}
+
 .tbutton:hover, .fbutton:hover, .hgButton:hover, .hbutton:hover{
     transform: scale(1.1);
     border-radius: 8px;
