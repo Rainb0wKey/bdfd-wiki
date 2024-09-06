@@ -14,23 +14,23 @@ const DiscordThemes = {
     background: 'linear-gradient(-25deg, #240000, #740606)'
   },
   'nightsapphire': {
-    reactionColor: '#11054e',
+    reactionColor: '#29008e',
     background: 'linear-gradient(-25deg, #000124, #260674)'
   },
   'emeraldearth': {
-    reactionColor: '#0c4e05',
+    reactionColor: '#067446',
     background: 'linear-gradient(-25deg, #0c2400, #067446)'
   },
   'nightviolet': {
-    reactionColor: '#2c054e',
+    reactionColor: '#390085',
     background: 'linear-gradient(-25deg, #1d0024, #350674)'
   },
   'oldwood': {
-    reactionColor: '#4e2e05',
+    reactionColor: '#744806',
     background: 'linear-gradient(-25deg, #240f00, #744806)'
   },
   'azuresky': {
-    reactionColor: '#05474e',
+    reactionColor: '#067465',
     background: 'linear-gradient(-25deg, #001a24, #067465)'
   },
   'cherryvelvety': {
@@ -38,12 +38,32 @@ const DiscordThemes = {
     background: 'linear-gradient(-25deg, #240017, #74064d)'
   },
   'forestdepth': {
-    reactionColor: '#4c4e05',
+    reactionColor: '#687406',
     background: 'linear-gradient(-25deg, #222400, #687406)'
   },
   'nightchestnut': {
     reactionColor: '#4e0505',
     background: 'linear-gradient(-25deg, #190024, #740606)'
+  },
+  'mosscovered': {
+    reactionColor: '#4c7406',
+    background: 'linear-gradient(-25deg, #1c2400, #4c7406)'
+  },
+  'deepruby': {
+    reactionColor: '#74066e',
+    background: 'linear-gradient(-25deg, #1f0024, #74066e)'
+  },
+  'fernvalley': {
+    reactionColor: '#247406',
+    background: 'linear-gradient(-25deg, #00240a, #247406)'
+  },
+  'forestshadows': {
+    reactionColor: '#0b9000',
+    background: 'linear-gradient(-25deg, #000624, #086700 , #0a7f01)'
+  },
+  'autumnblaze': {
+    reactionColor: '#742006',
+    background: 'linear-gradient(-25deg, #240800, #742006)'
   }
 }
 
