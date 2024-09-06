@@ -1,7 +1,7 @@
 const themes = {
   'light': {
     reactionColor: '#F2F3F5',
-    messageTextColor: '#1C1D22',
+    messageTextColor: '#1b1b1d',
     background: '#FFF',
   },
   'dark': {
