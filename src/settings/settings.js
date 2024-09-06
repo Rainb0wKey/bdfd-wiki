@@ -304,6 +304,10 @@ function useBackground() {
 };
 
 function useFontColor() {
+  const searchBar = document.getElementById('searchbar');
+  if (searchBar) {
+    searchBar.style.color = `#fff`;
+  }
   document.body.style.color = `#fff`;
   updateJsonFile("theme-text", document.body.style.color);
 }
