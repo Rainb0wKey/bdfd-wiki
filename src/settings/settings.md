@@ -127,6 +127,22 @@ Let's customize your experience in our Bot Designer For Discord wiki world!
       <div class="display-color" id="nightviolet"></div>
       <div class="display-text">Night Violet</div>
     </button>
+    <button id="mosscovered-button" class="dbutton" onClick="changeDiscordTheme('mosscovered')">
+      <div class="display-color" id="mosscovered"></div>
+      <div class="display-text">Moss Covered</div>
+    </button>
+    <button id="deepruby-button" class="dbutton" onClick="changeDiscordTheme('deepruby')">
+      <div class="display-color" id="deepruby"></div>
+      <div class="display-text">Deep Ruby</div>
+    </button>
+    <button id="fernvalley-button" class="dbutton" onClick="changeDiscordTheme('fernvalley')">
+      <div class="display-color" id="fernvalley"></div>
+      <div class="display-text">Fern Valley</div>
+    </button>
+    <button id="forestshadows-button" class="dbutton" onClick="changeDiscordTheme('forestshadows')">
+      <div class="display-color" id="forestshadows"></div>
+      <div class="display-text">Forest Shadows</div>
+    </button>
   </div>
   <p id="default-is">Dark</p>
 </div>
