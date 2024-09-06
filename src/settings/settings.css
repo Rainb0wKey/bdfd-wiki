@@ -1,11 +1,10 @@
-/* Import */
-@import '../theme/css/variables.css';
-
 /* Settings */
 
 body {
     background-color: hsl(270, 80%, 8%);
 }
+
+/* Discord Message Preview*/
 
 .discord-messages {
     margin-top: 1.7rem;
@@ -19,6 +18,7 @@ body {
     transition: .5s;
 }
 
+/* Main Setting UI */
 .settingembed {
     position: relative;
     background-color: hsl(270, 80%, 15%);
@@ -45,13 +45,13 @@ body {
     margin-top: -15px;
 }
 
+/* Buttons */
+
 button {
     background-color: hsl(270, 45%, 25%);
 }
 
-.themebuttons,
-.texthighbuttons,
-.discordexamplebuttons {
+.themebuttons, .texthighbuttons, .discordexamplebuttons {
     user-select: none;
     -webkit-user-select: none;
     display: flex;
@@ -66,69 +66,7 @@ button {
     margin-top: -20px;
 }
 
-.hbutton {
-    padding-left: 1rem;
-    padding-right: 1rem;
-    height: 3.5rem;
-    border-style: solid;
-    border-width: 0px;
-    border-radius: 18px;
-    cursor: pointer;
-    font-size: 1.4rem;
-    margin: .5%;
-    font-weight: bold;
-    transition: .2s;
-    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
-}
-
-#jsonhginput {
-    width: 96%;
-    height: 40rem;
-    font-size: 1.5rem;
-    max-height: 35em;
-    background-color: hsl(270, 60%, 20%);
-    border-radius: 10px;
-    border-width: 0;
-    color: var(--fg);
-    padding: 7px;
-    font-size: 1.5rem;
-    resize: vertical;
-    margin: 0 auto;
-    display: block;
-}
-
-.textsizebuttons input[type='range'] {
-    -webkit-appearance: none;
-    background:var(--fg);
-    height: 1px;
-    width: 100%;
-}
-
-.textsizebuttons input[type='range']::-webkit-slider-thumb {
-    -webkit-appearance: none;
-    background: var(--links);
-    border-radius: 10px;
-    height:25px;
-    width:10px;
-}
-
-.textsizebuttons input[type='range']::-webkit-slider-thumb:hover {
-    -webkit-appearance: none;
-    cursor: e-resize;
-}
-
-.textsizebuttons label {
-    -webkit-user-select: none;
-    user-select: none;
-}
-
-.textsizebuttons label:after {
-    content: " %";
-}
-
-.tbutton,
-.fbutton,
-.hgButton {
+.tbutton, .fbutton, .hgButton, .hbutton {
     -webkit-user-select: none;
     user-select: none;
     padding-left: 1rem;
@@ -140,10 +78,14 @@ button {
     font-size: 1.5rem;
     margin: .25%;
     margin-top: 3%;
-    background-color: var(--bg);
+    background-color: hsl(270, 45%, 25%);
     color: #fff;
     box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
     transition: .2s;
+}
+
+.hbutton {
+    margin: .75%;
 }
 
 .hgButton {
@@ -164,6 +106,52 @@ button {
 .tbutton {
     font-weight: bold;
     margin-left: 1rem;
+}
+
+/* Json HG Input*/
+
+#jsonhginput {
+    width: 96%;
+    height: 40rem;
+    font-size: 1.5rem;
+    max-height: 35em;
+    background-color: hsl(270, 60%, 20%);
+    border-radius: 10px;
+    border-width: 0;
+    color: #bbb;
+    padding: 7px;
+    font-size: 1.5rem;
+    resize: vertical;
+    margin: 0 auto;
+    display: block;
+}
+
+.textsizebuttons input[type='range'] {
+    -webkit-appearance: none;
+    background-color: #828282;
+    height: 1px;
+    width: 100%;
+}
+
+.textsizebuttons input[type='range']::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    border-radius: 10px;
+    height: 25px;
+    width: 10px;
+}
+
+.textsizebuttons input[type='range']::-webkit-slider-thumb:hover {
+    -webkit-appearance: none;
+    cursor: e-resize;
+}
+
+.textsizebuttons label {
+    -webkit-user-select: none;
+    user-select: none;
+}
+
+.textsizebuttons label:after {
+    content: " %";
 }
 
 #default-is {
@@ -235,18 +223,7 @@ button {
     font-weight: bold;
 }
 
-.hbutton:hover {
-    transform: scale(1.05);
-    border-radius: 13px;
-    border-style: solid;
-    border-width: 3px;
-    box-shadow: 0 3px 20px rgba(0, 0, 0, 0.3);
-    transition: .2s;
-}
-
-.tbutton:hover,
-.fbutton:hover,
-.hgButton:hover {
+.tbutton:hover, .fbutton:hover, .hgButton:hover, .hbutton:hover{
     transform: scale(1.1);
     border-radius: 8px;
     border-width: 1px;
@@ -254,37 +231,37 @@ button {
 }
 
 .dbutton {
-    width: 12rem;
-    height: 15rem;
-    margin: 1%;
+    width: 11rem;
+    height: 11rem;
+    margin: .75%;
     border: none;
     border-radius: 15px;
-    background-color: var(--bg);
+    background-color: hsl(270, 45%, 25%);
     cursor: pointer;
     box-shadow: 0 3px 20px rgba(0, 0, 0, 0.3);
-    transition: .2s;
     position: relative; 
     display: flex; 
     flex-direction: column;
     justify-content: flex-end;
+    transition: .2s;
+}
+
+.dbutton:hover {
+    transform: scale(1.05);
+    transition: .4s;
 }
 
 .display-color {
     width: 8rem;
     height: 8rem;
     border-radius: 50%;
-    margin-top: 15px;
-    box-shadow: 0 3px 20px rgba(0, 0, 0, 0.3);
-    transition: .4s;
+    margin-top: 5px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.3);
     position: absolute;
     top: 0;
     left: 50%; 
     transform: translateX(-50%); 
-}
-
-.dbutton:hover {
-    transform: scale(1.04);
-    transition: .3s;
+    transition: .5s;
 }
 
 .dbutton:hover > .display-color {
@@ -292,8 +269,9 @@ button {
     height: 100%;
     border-radius: 15px;
     transform: none; 
-    top: -15px;
+    top: -5px;
     left: 0;
+    transition: .4s;
 }
 
 .dbutton#light-button:hover > .display-text {
@@ -302,17 +280,12 @@ button {
 }
 
 .display-text {
-    padding: 1rem;
+    padding: .25rem;
     text-align: center;
     z-index: 1;
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
-}
-
-.texthighbuttons .hbutton {
-    background-color: var(--bg);
-    color: #fff;
 }
 
 .texthighbuttons .hbutton#high-blue {
@@ -425,15 +398,15 @@ button {
 }
 
 #themeSlider {
-    background: linear-gradient(to right, #ddd, #ddd);
+    background: linear-gradient(to right, hsl(270, 80%, 50%), hsl(270, 80%, 30%));
 }
 
 #themeSlider::-webkit-slider-thumb {
-    background-color: #333;
+    background-color: #fff ;
 }
 
 #themeSlider::-moz-range-thumb {
-    background-color: #333;
+    background-color: #fff;
 }
 
 #colorThemeDisplay {
