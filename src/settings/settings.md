@@ -81,15 +81,15 @@ Let's customize your experience in our Bot Designer For Discord wiki world!
   <div class="discordexamplebuttons">
     <button id="light-button" class="dbutton" onClick="changeDiscordTheme('light')">
       <div class="display-color" id="light"></div>
-      <div class="display-text">Light</div>
+      <div class="display-text"> Discord Light</div>
     </button>
     <button id="dark-button" class="dbutton" onClick="changeDiscordTheme('dark')">
       <div class="display-color" id="dark"></div>
-      <div class="display-text">Dark</div>
+      <div class="display-text"> Discord Dark</div>
     </button>
     <button id="midnight-button" class="dbutton" onClick="changeDiscordTheme('midnight')">
       <div class="display-color" id="midnight"></div>
-      <div class="display-text">Midnight</div>
+      <div class="display-text">Discord Midnight</div>
     </button>
     <button id="redmoon-button" class="dbutton" onClick="changeDiscordTheme('redmoon')">
       <div class="display-color" id="redmoon"></div>
