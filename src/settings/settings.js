@@ -280,7 +280,7 @@ function useFontColor() {
 
 function useDarkBackground() {
   document.body.style.background = `#000`;
-  document.documentElement.style.scrollbarColor = `#000` + `#fff`;
+  document.documentElement.style.scrollbarColor = `#fff` + `#000`;
   setStatusBar('dark');
   updateJsonFile("theme-bg", document.body.style.background);
   
