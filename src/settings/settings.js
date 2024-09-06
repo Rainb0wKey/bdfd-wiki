@@ -263,6 +263,7 @@ function updateColor() {
   colorDisplay.style.background = color2;
   menuBar.style.background = `linear-gradient(to bottom right, ${color1}, ${color2})`;
   sideBar.style.background = color3;
+  jsonInput.style.scrollbarColor = `hsl(${hue}, 80%, 35%)` + `hsl(${hue}, 60%, 20%)`;
   jsonInput.style.background = `hsl(${hue}, 60%, 20%)`;
   sideSpacerBar.style.background = `hsl(${hue}, 100%, 80%)`;
   bdsCode.style.background = color3;
