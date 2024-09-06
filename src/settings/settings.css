@@ -231,8 +231,8 @@ button {
 }
 
 .dbutton {
-    width: 11rem;
-    height: 11rem;
+    width: 10rem;
+    height: 10rem;
     margin: .75%;
     border: none;
     border-radius: 15px;
@@ -274,17 +274,16 @@ button {
     transition: .4s;
 }
 
-.dbutton#light-button:hover > .display-text {
-    transition-delay: .2s;
+.dbutton#light-button > .display-text {
     color: #000;
 }
 
 .display-text {
-    padding: .25rem;
     text-align: center;
     z-index: 1;
     position: absolute;
     left: 50%;
+    top: 30%;
     transform: translateX(-50%);
 }
 
