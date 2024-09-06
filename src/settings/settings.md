@@ -143,6 +143,10 @@ Let's customize your experience in our Bot Designer For Discord wiki world!
       <div class="display-color" id="forestshadows"></div>
       <div class="display-text">Forest Shadows</div>
     </button>
+    <button id="autumnblaze-button" class="dbutton" onClick="changeDiscordTheme('autumnblaze')">
+      <div class="display-color" id="autumnblaze"></div>
+      <div class="display-text">Autumn Blaze</div>
+    </button>
   </div>
   <p id="default-is">Dark</p>
 </div>
