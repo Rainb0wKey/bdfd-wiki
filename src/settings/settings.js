@@ -211,6 +211,7 @@ function updateColor() {
 
   // Search changes
   const searchBar = document.getElementById('searchbar');
+  const searchPages = document.querySelectorAll('ul#searchresults li'); 
   
   // Color Settings
   const hue = colorSlider.value;
@@ -252,6 +253,11 @@ function updateColor() {
     searchBar.style.background = `hsl(${hue}, 60%, 20%)`;
     searchBar.style.borderColor = color1;
     searchBar.style.color = document.body.style.color;
+  }
+  if (searchPages) {
+    searchPages.forEach(searchUI => {
+      searchUI.style.background = color3;
+    });
   }
   colorDisplay.textContent = hue + '°';
   colorDisplay.style.background = color2;
