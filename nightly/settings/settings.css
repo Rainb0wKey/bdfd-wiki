@@ -233,6 +233,10 @@ button {
     background: linear-gradient(-25deg, #000624 25%, #0e7406);
 }
 
+.display-color#autumnblaze {
+    background: linear-gradient(-25deg, #240800, #742006);
+}
+
 .tbutton:hover, .fbutton:hover, .hgButton:hover, .hbutton:hover{
     transform: scale(1.1);
     border-radius: 8px;
