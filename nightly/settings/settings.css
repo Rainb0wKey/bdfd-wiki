@@ -214,7 +214,7 @@ button {
 }
 
 .display-color#nightchestnut {
-    background: linear-gradient(-25deg, #190024, #740606);
+    background: linear-gradient(-25deg, #190024 25%, #740606);
 }
 
 .tbutton:hover, .fbutton:hover, .hgButton:hover, .hbutton:hover{
