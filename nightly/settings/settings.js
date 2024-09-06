@@ -163,7 +163,7 @@ let isLocked = true;
 
 // Used in status bar (iPhone).
 function setStatusBar(HueInput) {
-  if (HueInput != 'dark' ) {
+  if (HueInput != 'dark') {
     document.querySelector('meta[name="theme-color"]').setAttribute('content', `hsl(${HueInput}, 80%, 8%)`);
   } else {
     document.querySelector('meta[name="theme-color"]').setAttribute('content', `#000`);
@@ -211,7 +211,7 @@ function updateColor() {
     }
     setStatusBar(hue);
     document.body.style.color = `hsl(${hue}, 100%, 90%)`;
-    document.documentElement.style.scrollbarColor = `hsl(${hue}, 80%, 8%)` + `hsl(${hue}, 70%, 25%)`;
+    document.documentElement.style.scrollbarColor = `hsl(${hue}, 70%, 25%)` + `hsl(${hue}, 80%, 8%)`;
     updateJsonFile("theme-bg", document.body.style.background);
     updateJsonFile("theme-text", document.body.style.color);
   };
