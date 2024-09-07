@@ -206,6 +206,7 @@ function updateColor() {
   const previousPage = document.querySelector('.previous');
   const nextPage = document.querySelector('.next');
   const headers = document.querySelectorAll('.content .header:link');
+  const searchResultHeader = document.querySelectorAll('#searchresults a');
 
   // Sidebar
   const sideBar = document.querySelector('.sidebar');
@@ -242,6 +243,9 @@ function updateColor() {
     document.body.style.color = `hsl(${hue}, 100%, 90%)`;
     headers.forEach(head => {
       head.style.color = `#fff`;
+    });
+    searchResultHeader.forEach(result => {
+      result.style.color = color1;
     });
     document.documentElement.style.scrollbarColor = `hsl(${hue}, 70%, 25%)` + `hsl(${hue}, 80%, 8%)`;
     updateJsonFile("theme-bg", document.body.style.background);
