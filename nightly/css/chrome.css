@@ -94,6 +94,7 @@ html:not(.sidebar-visible) #menu-bar:not(:hover).folded > #menu-bar-sticky-conta
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
+    color: #fff;
 }
 .js .menu-title {
     cursor: pointer;
@@ -107,14 +108,14 @@ html:not(.sidebar-visible) #menu-bar:not(:hover).folded > #menu-bar-sticky-conta
 .mobile-nav-chapters:visited,
 .menu-bar .icon-button,
 .menu-bar a i {
-    color: var(--icons);
+    color: #cbc;
 }
 
 .menu-bar i:hover,
 .menu-bar .icon-button:hover,
 .nav-chapters:hover,
 .mobile-nav-chapters i:hover {
-    color: var(--icons-hover);
+    color: #cbc;
 }
 
 /* Nav Icons */
