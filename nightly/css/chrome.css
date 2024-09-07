@@ -108,7 +108,7 @@ html:not(.sidebar-visible) #menu-bar:not(:hover).folded > #menu-bar-sticky-conta
 .mobile-nav-chapters:visited,
 .menu-bar .icon-button,
 .menu-bar a i {
-    color: #cbc;
+    color: #fff;
 }
 
 .menu-bar i:hover,
