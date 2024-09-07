@@ -315,12 +315,11 @@ function useBackground() {
   const colorSlider = document.getElementById('themeSlider');
 
   const hue = colorSlider.value;
-  const saturation = 80;
-  const lightness = 8;
 
-  const backgroundColor = `hsl(${hue}, ${saturation}%, ${lightness}%)`;
+  const backgroundColor = `hsl(${hue}, 80%, 8%)`;
   setStatusBar(hue);
   document.body.style.background = backgroundColor;
+  document.documentElement.style.scrollbarColor = `hsl(${hue}, 70%, 25%)` + `hsl(${hue}, 80%, 8%)`;
   updateJsonFile("theme-bg", backgroundColor);
 };
 
