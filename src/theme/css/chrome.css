@@ -3,7 +3,7 @@
 @import 'variables.css';
 
 :root {
-    --search-bg: white;
+    --search-bg: hsl(270, 80%, 15%);
     --header-color: white;
     --search-focus: white;
 }
