@@ -244,6 +244,7 @@ function updateColor() {
       head.style.color = `#fff`;
     });
     document.documentElement.style.scrollbarColor = `hsl(${hue}, 70%, 25%)` + `hsl(${hue}, 80%, 8%)`;
+    sideChapterBar.style.color = color1;
     updateJsonFile("theme-bg", document.body.style.background);
     updateJsonFile("theme-text", document.body.style.color);
   };
@@ -291,7 +292,6 @@ function updateColor() {
   });
 
   hexColor.textContent = rgbToHex(color1);
-  sideChapterBar.style.color = color1;
   breadcrumbText.forEach(link => {
     link.style.color = color1;
   });
