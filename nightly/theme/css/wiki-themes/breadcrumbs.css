@@ -13,23 +13,19 @@
 
 .breadcrumb a {
     text-decoration: none;
-    font-size: 14px;
     text-align: center;
+    padding: 5px;
+    text-decoration: none;
+    transition: .3s;
+    border-radius: 12px;
+    text-transform: capitalize;
 }
 
 .breadcrumb a:hover{
     padding: 6px;
-    font-size: 15px;
+    font-size: 105%;
     text-decoration: none;
     transition: .3s;
     background-color: var(--sidebar-bg);
     border-radius: 10px;
-}
-
-.breadcrumb a:not(:hover){
-    padding: 5px;
-    font-size: 14px;
-    text-decoration: none;
-    transition: .3s;
-    border-radius: 12px;
 }
