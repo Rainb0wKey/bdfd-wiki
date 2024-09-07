@@ -307,6 +307,7 @@ mark.fade-out {
     background-color: var(--searchbar-bg);
     color: var(--searchbar-fg);
     font-style: italic;
+    outline: none;
 }
 #searchbar:focus,
 #searchbar.active {
