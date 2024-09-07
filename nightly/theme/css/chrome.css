@@ -343,10 +343,10 @@ ul#searchresults li {
 ul#searchresults li.focus {
     border-radius: 10px;
     padding: 9px;
-    background: var(--sidebar-bg);
-    font-size: 16.5px;
+    font-size: 105%;
+    outline: none;
     border-width: 1px;
-    border-color: var(--icons);
+    border-color: #fff;
     border-style: solid;
 
 }
