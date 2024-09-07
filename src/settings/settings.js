@@ -201,14 +201,18 @@ function updateColor() {
   // Main changes
   const menuBar = document.getElementById('menu-bar-sticky-container');
   const breadcrumbText = document.querySelectorAll('.breadcrumb a');
-  const sideBar = document.querySelector('.sidebar');
-  const sideChapterBar = document.querySelector('.chapter li a.active');
-  const sideSpacerBar = document.querySelector('.chapter .spacer');
   const setButtons = document.querySelectorAll('button');
   const bdsCode = document.querySelector('code.hljs');
   const previousPage = document.querySelector('.previous');
   const nextPage = document.querySelector('.next');
   const headers = document.querySelectorAll('.content .header:link');
+
+  // Sidebar
+  const sideBar = document.querySelector('.sidebar');
+  const sideChapterBar = document.querySelector('.chapter li a.active');
+  const sideSpacerBar = document.querySelector('.chapter .spacer');
+  const sidePages = document.querySelectorAll('.chapter li a');
+  const sideMainPages = document.querySelectorAll('.chapter li');
   
   // Search changes
   const searchBar = document.getElementById('searchbar');
@@ -247,6 +251,12 @@ function updateColor() {
   // Updating design
   colorPreview.style.background = `linear-gradient(to bottom right, ${color1}, ${color2})`;
   colorSlider.style.background = `linear-gradient(to right, ${color1}, ${color2})`;
+  sidePages.forEach(page => {
+    page.style.color = document.body.style.color;
+  });
+  sideMainPages.forEach(mainPage => {
+    mainPage.style.color = document.body.style.color;
+  });
   if (previousPage) {
     previousPage.style.background = `hsl(${hue}, 45%, 25%)`;
     previousPage.style.color = color1;
@@ -316,10 +326,19 @@ function useBackground() {
 
 function useFontColor() {
   const headers = document.querySelectorAll('.content .header:link');
+  const sidePages = document.querySelectorAll('.chapter li a');
+  const sideMainPages = document.querySelectorAll('.chapter li');
   const searchBar = document.getElementById('searchbar');
+  
   if (searchBar) {
     searchBar.style.color = `#fff`;
   }
+  sidePages.forEach(page => {
+    page.style.color = `#fff`;
+  });
+  sideMainPages.forEach(mainPage => {
+    mainPage.style.color = `#fff`;
+  });
   headers.forEach(head => {
     head.style.color = `#fff`;
   });
