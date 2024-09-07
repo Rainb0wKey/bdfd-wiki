@@ -244,9 +244,6 @@ function updateColor() {
     headers.forEach(head => {
       head.style.color = `#fff`;
     });
-    searchResultHeader.forEach(result => {
-      result.style.color = color1;
-    });
     document.documentElement.style.scrollbarColor = `hsl(${hue}, 70%, 25%)` + `hsl(${hue}, 80%, 8%)`;
     updateJsonFile("theme-bg", document.body.style.background);
     updateJsonFile("theme-text", document.body.style.color);
@@ -255,6 +252,9 @@ function updateColor() {
   // Updating design
   colorPreview.style.background = `linear-gradient(to bottom right, ${color1}, ${color2})`;
   colorSlider.style.background = `linear-gradient(to right, ${color1}, ${color2})`;
+  searchResultHeader.forEach(result => {
+    result.style.color = color1;
+  });
   sidePages.forEach(page => {
     page.style.color = document.body.style.color;
   });
