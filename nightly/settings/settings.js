@@ -375,15 +375,13 @@ function gradientBackground() {
   const colorSlider = document.getElementById('themeSlider');
 
   const hue = colorSlider.value;
-  const saturation = 80;
-  const lightness1 = 20;
-  const lightness2 = 5;
 
-  const color1 = `hsl(${hue}, ${saturation}%, ${lightness1}%)`; // Create the brighter color
-  const color2 = `hsl(${hue}, ${saturation}%, ${lightness2}%)`; // Create the darker color
+  const color1 = `hsl(${hue}, 80%, 20%)`;
+  const color2 = `hsl(${hue}, 80%, 5%)`;
 
   setStatusBar(hue);
-  document.body.style.background = `linear-gradient(to bottom right, ${color1}, ${color2})`; // Apply gradient
+  document.body.style.background = `linear-gradient(to bottom right, ${color1}, ${color2})`;
+  document.documentElement.style.scrollbarColor = `hsl(${hue}, 70%, 25%)` + `hsl(${hue}, 80%, 8%)`;
 };
 
 function updateCodeHG() {
