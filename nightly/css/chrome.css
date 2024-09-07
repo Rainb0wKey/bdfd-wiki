@@ -2,6 +2,12 @@
 
 @import 'variables.css';
 
+:root {
+    --search-bg: white;
+    --header-color: white;
+    --search-focus: white;
+}
+
 ::-webkit-scrollbar {
     background: var(--bg);
 }
@@ -336,17 +342,18 @@ ul#searchresults {
 ul#searchresults li {
     margin: 10px 0px;
     padding: 2px;
-    background-color: var(--theme-hover);
+    background-color: var(--search-bg);
     border-radius: 8px;
     padding: 7px;
 }
+
 ul#searchresults li.focus {
     border-radius: 10px;
     padding: 9px;
     font-size: 105%;
     outline: none;
     border-width: 1px;
-    border-color: #fff;
+    border-color: var(--search-focus);
     border-style: solid;
 
 }
