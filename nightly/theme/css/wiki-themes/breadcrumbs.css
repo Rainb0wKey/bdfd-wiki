@@ -1,4 +1,6 @@
 .breadcrumb {
+    user-select: none;
+    -webkit-user-select: none;
     display: -webkit-box;
     color: #fff;
     padding-top: 10px;
