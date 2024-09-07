@@ -314,11 +314,10 @@ mark.fade-out {
 }
 
 .searchresults-header {
-    font-weight: bold;
-    font-size: 1em;
+    font-size: 1.1em;
     text-align: center;
     padding: 18px 0 0 18px;
-    color: var(--searchresults-header-fg);
+    color: #fff;
 }
 
 .searchresults-outer {
