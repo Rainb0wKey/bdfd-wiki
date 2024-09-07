@@ -207,6 +207,7 @@ function updateColor() {
   const nextPage = document.querySelector('.next');
   const headers = document.querySelectorAll('.content .header:link');
   const searchResultHeader = document.querySelectorAll('#searchresults a');
+  const searchResultFocus = document.querySelectorAll('ul#searchresults li.focus');
 
   // Sidebar
   const sideBar = document.querySelector('.sidebar');
@@ -254,6 +255,9 @@ function updateColor() {
   colorSlider.style.background = `linear-gradient(to right, ${color1}, ${color2})`;
   searchResultHeader.forEach(result => {
     result.style.color = color1;
+  });
+  searchResultFocus.forEach(focus => {
+    focus.style.borderColor = color1;
   });
   sidePages.forEach(page => {
     page.style.color = document.body.style.color;
