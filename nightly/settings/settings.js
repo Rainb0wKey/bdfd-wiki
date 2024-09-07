@@ -208,7 +208,7 @@ function updateColor() {
   const headers = document.querySelectorAll('.content .header:link');
   const searchResultHeader = document.querySelectorAll('#searchresults a');
   const searchResultFocus = document.querySelectorAll('ul#searchresults li.focus');
-  const searchResultBG = querySelectorAll('ul#searchresults li');
+  const searchResultBG = document.querySelectorAll('ul#searchresults li');
 
   // Sidebar
   const sideBar = document.querySelector('.sidebar');
