@@ -39,7 +39,7 @@ function highlight(scheme) {
       data = JSON.parse(localStorage.getItem('json'));
     } catch { }
     
-    let schema = data['code-hg'];
+    let scheme = data['code-hg'];
 
     codeBlocks.forEach(codeBlock => {
         let code = escapeHtml(codeBlock.textContent);
@@ -61,5 +61,5 @@ function highlight(scheme) {
     });
 }
 
-// schema here
-highlight(schema)
+// scheme here
+highlight(scheme)
