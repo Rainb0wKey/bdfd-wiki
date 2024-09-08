@@ -409,7 +409,7 @@ function updateCodeHG() {
   
   if (isJson(jsonHG)) {
     codeInput.style.boxShadow = '0 0 10px green';
-    updateJsonFile("code-hg", jsonHG);
+    localStorage.setItem("code-hg", jsonHG);
   } else {
     codeInput.style.boxShadow = '0 0 10px red';
   }
