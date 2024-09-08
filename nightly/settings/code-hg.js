@@ -31,7 +31,7 @@ function escapeHtml(unsafe) {
         .replace(/"/g, "&quot");
 }
 
-function highlight(scheme) {
+function highlight() {
     const codeBlocks = document.querySelectorAll('pre code');
 
     try {
@@ -60,4 +60,4 @@ function highlight(scheme) {
 }
 
 // Scheme here
-highlight(scheme)
+highlight()
