@@ -71,6 +71,7 @@ button {
 .tbutton, .fbutton, .hgButton, .hbutton {
     -webkit-user-select: none;
     user-select: none;
+    touch-action: manipulation;
     padding-left: 1rem;
     padding-right: 1rem;
     height: 4rem;
