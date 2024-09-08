@@ -96,7 +96,7 @@ function highlight(scheme) {
     const codeBlocks = document.querySelectorAll('pre code');
 
     try {
-      scheme = JSON.parse(localStorage.getItem("code-hg"));
+      if(localStorage.getItem("code-hg")) scheme = JSON.parse(localStorage.getItem("code-hg"));
     } catch { }
 
     codeBlocks.forEach(codeBlock => {
