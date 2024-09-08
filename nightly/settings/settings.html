@@ -169,7 +169,8 @@
                             <script src="../theme/breadcrumbs.js"></script>
                         </nav>
                         <div class="tag-beta">
-  <p>⚠️ Experimental Feature!</p>
+  <p id="head">⚠️ Experimental Feature!</p>
+  <p id="desc">If you faced  with the error, please contact us on the official BDFD Support Server</p>
 </div>
 <h1 id="settings"><a class="header" href="#settings">Settings</a></h1>
 <p>Let’s customize your experience in our Bot Designer For Discord wiki world!</p>
@@ -318,14 +319,14 @@
   <p id="default-is">Dark</p>
 </div>
 <discord-messages>
-    <discord-message role-color="#E67E22" author="RainbowKey">
+    <discord-message author="RainbowKey" role-color="#E67E22">
         !example ❤️
         <discord-reactions slot="reactions">
-            <discord-reaction emoji="https://upload.wikimedia.org/wikipedia/commons/7/70/Symbolic_Love_Heart.png" count="1" name=":emoji:">
+            <discord-reaction name=":emoji:" emoji="https://upload.wikimedia.org/wikipedia/commons/7/70/Symbolic_Love_Heart.png" count="1">
             </discord-reaction>
         </discord-reactions>
     </discord-message>
-    <discord-message bot author="BDFD Support" role-color="#378afa" verified>
+    <discord-message verified role-color="#378afa" author="BDFD Support" bot>
         Added!
     </discord-message>
 </discord-messages>
