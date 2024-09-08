@@ -1,5 +1,6 @@
 <div class="tag-beta">
-  <p id="head">⚠️ Experimental Feature!</p>
+  <p id="warn">⚠️</p>
+  <p id="head">Experimental Feature!</p>
   <p id="desc">If you faced  with the error, please contact us on the official BDFD Support Server.</p>
 </div>
 
