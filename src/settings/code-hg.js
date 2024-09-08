@@ -31,17 +31,15 @@ function escapeHtml(unsafe) {
         .replace(/"/g, "&quot");
 }
 
-function highlight(schema) {
+function highlight(scheme) {
     const codeBlocks = document.querySelectorAll('pre code');
     let data;
     
     try {
-    data = JSON.parse(localStorage.getItem('json'));
-  } catch { }
-    
-    try {
-      schema = data['code-hg'];
+      data = JSON.parse(localStorage.getItem('json'));
     } catch { }
+    
+    let schema = data['code-hg'];
 
     codeBlocks.forEach(codeBlock => {
         let code = escapeHtml(codeBlock.textContent);
