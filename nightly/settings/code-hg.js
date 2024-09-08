@@ -5,9 +5,12 @@ function functionHighlight(func, scheme) {
 }
 
 function styling(type, scheme) {
-    let color = ((scheme[type].color & 0xFFFFFF)).toString(16).padStart(6, '0').toUpperCase();
-    let style = fontStyle(scheme[type].style);
-    return `<span style="color: #${color}; ${style}">$&</span>`;
+    if (scheme[type]) {
+      let color = ((scheme[type].color & 0xFFFFFF)).toString(16).padStart(6, '0').toUpperCase();
+      let style = fontStyle(scheme[type].style);
+      return `<span style="color: #${color}; ${style}">$&</span>`;
+    }
+    return `<span>$&</span>`;
 }
 
 function fontStyle(style) {
