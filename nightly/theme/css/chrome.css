@@ -137,19 +137,19 @@ html:not(.sidebar-visible) #menu-bar:not(:hover).folded > #menu-bar-sticky-conta
     margin: 0;
     max-width: 150px;
     min-width: 90px;
-
+    
     display: flex;
     justify-content: center;
     align-content: center;
     flex-direction: column;
-
-    transition: color 0.5s, background-color 0.5s;
+    
+    transition: .5s;
 }
 
 .nav-chapters:hover {
     text-decoration: none;
-    background-color: var(--chapter-hover-bg);
-    transition: background-color 0.15s, color 0.15s;
+    background: rgba(0, 0, 0, 0.2);
+    transition: .5s;
 }
 
 .nav-wrapper {
