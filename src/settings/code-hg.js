@@ -35,8 +35,8 @@ function highlight(scheme) {
     const codeBlocks = document.querySelectorAll('pre code');
 
     try {
-      const data = JSON.parse(localStorage.getItem("data"));
-      if (data["code_hg"]) scheme = data["code_hg"];
+      const data = JSON.parse(localStorage.getItem("json"));
+      if (data["code-hg"]) scheme = data["code-hg"];
     } catch { }
 
     codeBlocks.forEach(codeBlock => {
