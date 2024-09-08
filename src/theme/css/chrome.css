@@ -121,7 +121,7 @@ html:not(.sidebar-visible) #menu-bar:not(:hover).folded > #menu-bar-sticky-conta
 .menu-bar .icon-button:hover,
 .nav-chapters:hover,
 .mobile-nav-chapters i:hover {
-    color: #cbc;
+    color: #ded;
 }
 
 /* Nav Icons */
@@ -316,6 +316,12 @@ mark.fade-out {
     font-style: italic;
     outline: none;
 }
+
+#searchbar::placeholder {
+  color: #bcb;
+}
+
+
 #searchbar:focus,
 #searchbar.active {
     box-shadow: 0 0 3px var(--searchbar-shadow-color);
