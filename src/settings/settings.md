@@ -1,7 +1,9 @@
+<div class="tag-beta">
+  <p>⚠️ Experimental Feature!</p>
+</div>
+
 # Settings
 Let's customize your experience in our Bot Designer For Discord wiki world!
-
-**⚠️ Experimental Feature! ⚠️**
 
 <link rel="stylesheet" href="./settings.css">
 <script src="./settings.js" defer></script>
