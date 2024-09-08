@@ -252,7 +252,8 @@ function updateColor() {
   };
 
   // Updating design
-  document.documentElement.style.setProperty('--search-bg', color3); 
+  document.documentElement.style.setProperty('--search-bg', color3);
+  document.documentElement.style.setProperty('--header-color', color1);
   colorPreview.style.background = `linear-gradient(to bottom right, ${color1}, ${color2})`;
   colorSlider.style.background = `linear-gradient(to right, ${color1}, ${color2})`;
   searchResultHeader.forEach(result => {
