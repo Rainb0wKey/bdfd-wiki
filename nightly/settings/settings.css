@@ -11,6 +11,7 @@ body {
     user-select: none;
     -webkit-user-select: none;
     border-style: solid;
+    margin: auto;
     margin-top: 15px;
     width: fit-content;
     padding: 10px 10px;
