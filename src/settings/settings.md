@@ -1,5 +1,6 @@
 # Settings
 Let's customize your experience in our Bot Designer For Discord wiki world!
+
 **⚠️ Experimental feature ⚠️**
 
 <link rel="stylesheet" href="./settings.css">
