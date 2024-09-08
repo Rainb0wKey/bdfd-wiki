@@ -2,7 +2,7 @@
   <span class="warn">⚠️</span>
   <span class="text">
     <span class="head">Experimental Feature!</span>
-    <span class="desc">If you faced  with the error, please contact us on the official BDFD Support Server.</span>
+    <span class="desc">If you encountered an error, please contact us on the official BDFD Support Server.</span>
   </span>
 </div>
 
