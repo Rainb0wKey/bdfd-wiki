@@ -119,6 +119,4 @@ const scheme = {
   }
 }
 
-window.addEventListener('load', function() {
-  highlight(scheme);
-});
+highlight(scheme)
