@@ -49,6 +49,7 @@ body {
 
 button {
     background-color: hsl(270, 45%, 25%);
+    touch-action: manipulation;
 }
 
 .themebuttons, .texthighbuttons, .discordexamplebuttons {
