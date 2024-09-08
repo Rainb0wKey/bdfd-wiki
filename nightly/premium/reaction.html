@@ -187,14 +187,14 @@ $sendMessage[$username clicked on the reaction]
     <discord-message author="Nicky" role-color="#EE7908">
         !example
     </discord-message>
-    <discord-message verified author="Wiki Bot" bot role-color="#748BD4">
+    <discord-message bot role-color="#748BD4" verified author="Wiki Bot">
         Click
         <discord-reactions slot="reactions">
-            <discord-reaction emoji="https://cdn.discordapp.com/emojis/766607515445231637.webp" name=":emoji:" count="2" reacted>
+            <discord-reaction emoji="https://cdn.discordapp.com/emojis/766607515445231637.webp" reacted name=":emoji:" count="2">
             </discord-reaction>
         </discord-reactions>
     </discord-message>
-    <discord-message verified bot author="Wiki Bot" role-color="#748BD4">
+    <discord-message bot verified role-color="#748BD4" author="Wiki Bot">
         Nicky clicked on the reaction
     </discord-message>
 </discord-messages>
@@ -248,7 +248,7 @@ $sendMessage[$username clicked on the reaction]
         <!-- Custom JS scripts -->
 
 
-				<script src="../settings/code-hg.js"></script>
+        <script src="../settings/code-hg.js" defer></script>
 
         <!-- Override some theme attributes with the custom settings -->
         <script src="../settings/apply-settings.js"></script>

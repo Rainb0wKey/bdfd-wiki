@@ -203,7 +203,7 @@
     <discord-system-message type="join">
         Welcome <font color="white">Nicky</font>. Say hi!
     </discord-system-message>
-    <discord-message author="Wiki Bot" highlight role-color="#748BD4" verified bot>
+    <discord-message author="Wiki Bot" bot verified role-color="#748BD4" highlight>
         <discord-mention>Nicky</discord-mention>, welcome to Cool Server!
     </discord-message>
 </discord-messages>
@@ -314,7 +314,7 @@ $setServerVar[welcome;$mentionedChannels[1]]
         <!-- Custom JS scripts -->
 
 
-				<script src="../settings/code-hg.js"></script>
+        <script src="../settings/code-hg.js" defer></script>
 
         <!-- Override some theme attributes with the custom settings -->
         <script src="../settings/apply-settings.js"></script>
