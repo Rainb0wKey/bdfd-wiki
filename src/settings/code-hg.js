@@ -31,12 +31,16 @@ function escapeHtml(unsafe) {
         .replace(/"/g, "&quot");
 }
 
-function highlight() {
+function highlight(schema) {
     const codeBlocks = document.querySelectorAll('pre code');
+
+    try {
+      schema = JSON.parse(localStorage.getItem("code-hg"));
+    } catch { }
 
     codeBlocks.forEach(codeBlock => {
         let code = escapeHtml(codeBlock.textContent);
-	
+    
         code = code
             .replace(/\;/g, styling("semicolonHighlight"))
             .replace(/\[/g, styling("bracketHighlight"))
@@ -54,61 +58,5 @@ function highlight() {
     });
 }
 
-scheme = {
-   "defaultTextHighlight":{
-      "color":4288341353,
-      "style":0
-   },
-   "fallbackHighlight":{
-      "color":4285791231,
-      "style":0
-   },
-   "bracketHighlight":{
-      "color":4294921292,
-      "style":1
-   },
-   "semicolonHighlight":{
-      "color":4294920266,
-      "style":1
-   },
-   "functionsHighlights":{
-      "$nomention":{
-         "color":4294932473,
-         "style":0
-      },
-      "$catch":{
-         "color":4288905212,
-         "style":0
-      },
-      "$else":{
-         "color":4288905212,
-         "style":0
-      },
-      "$elseif":{
-         "color":4288905212,
-         "style":0
-      },
-      "$endif":{
-         "color":4288905212,
-         "style":0
-      },
-      "$endtry":{
-         "color":4288905212,
-         "style":0
-      },
-      "$error":{
-         "color":4288905212,
-         "style":0
-      },
-      "$if":{
-         "color":4288905212,
-         "style":0
-      },
-      "$try":{
-         "color":4288905212,
-         "style":0
-      }
-   }
-}
-
-highlight()
+// schema here
+highlight(schema)
