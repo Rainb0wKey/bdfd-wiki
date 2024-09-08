@@ -60,4 +60,4 @@ function highlight(scheme) {
 }
 
 // Scheme here
-highlight(scheme);
+highlight(scheme)
