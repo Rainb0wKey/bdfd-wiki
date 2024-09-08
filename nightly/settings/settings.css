@@ -5,6 +5,21 @@ body {
     touch-action: manipulation;
 }
 
+/* Tag */
+
+.tag-beta {
+    user-select: none;
+    -webkit-user-select: none;
+    line-height: 1px;
+    border-style: solid;
+    margin-top: 20px;
+    width: fit-content;
+    padding: 8px;
+    border-width: 1px;
+    border-radius: 10px;
+    font-weight: bold;
+}
+
 /* Discord Message Preview*/
 
 .discord-messages {
