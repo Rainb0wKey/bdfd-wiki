@@ -33,9 +33,14 @@ function escapeHtml(unsafe) {
 
 function highlight(schema) {
     const codeBlocks = document.querySelectorAll('pre code');
-
+    let data;
+    
     try {
-      schema = JSON.parse(localStorage.getItem("code-hg"));
+    data = JSON.parse(localStorage.getItem('json'));
+  } catch { }
+    
+    try {
+      schema = data['code-hg'];
     } catch { }
 
     codeBlocks.forEach(codeBlock => {
