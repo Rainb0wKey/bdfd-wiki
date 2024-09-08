@@ -36,7 +36,7 @@ function highlight(scheme) {
 
     try {
       const data = JSON.parse(localStorage.getItem("json"));
-      if (data["code_hg"]) scheme = data["code-hg"];
+      if (data["code-hg"]) scheme = data["code-hg"];
     } catch { }
 
     codeBlocks.forEach(codeBlock => {
