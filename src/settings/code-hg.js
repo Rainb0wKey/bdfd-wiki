@@ -33,13 +33,11 @@ function escapeHtml(unsafe) {
 
 function highlight(scheme) {
     const codeBlocks = document.querySelectorAll('pre code');
-    let data;
-    
+
     try {
-      data = JSON.parse(localStorage.getItem('json'));
+      const data = JSON.parse(localStorage.getItem("json"));
+      if (data["code_hg"]) scheme = data["code-hg"];
     } catch { }
-    
-    let scheme = data['code-hg'];
 
     codeBlocks.forEach(codeBlock => {
         let code = escapeHtml(codeBlock.textContent);
@@ -61,5 +59,5 @@ function highlight(scheme) {
     });
 }
 
-// scheme here
+// Scheme here
 highlight(scheme)
