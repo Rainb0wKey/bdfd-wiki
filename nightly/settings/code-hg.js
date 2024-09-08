@@ -1,10 +1,10 @@
-function functionHighlight(func) {
-    let color = ((scheme.functionsHighlights[func].color & 0xFFFFFF)).toString(16).padStart(6, '0').toUpperCase(); // convert dec to hex
+function functionHighlight(func, scheme) {
+    let color = ((scheme.functionsHighlights[func].color & 0xFFFFFF)).toString(16).padStart(6, '0').toUpperCase();
     let style = fontStyle(scheme.functionsHighlights[func].style);
     return `<span class="function" style="color: #${color}; ${style}">$&</span>`;
 }
 
-function styling(type) {
+function styling(type, scheme) {
     let color = ((scheme[type].color & 0xFFFFFF)).toString(16).padStart(6, '0').toUpperCase();
     let style = fontStyle(scheme[type].style);
     return `<span style="color: #${color}; ${style}">$&</span>`;
@@ -43,15 +43,15 @@ function highlight(scheme) {
         let code = escapeHtml(codeBlock.textContent);
     
         code = code
-            .replace(/\;/g, styling("semicolonHighlight"))
-            .replace(/\[/g, styling("bracketHighlight"))
-            .replace(/\]/g, styling("bracketHighlight"))
-            .replace(/\$[a-zA-Z]*/g, styling("fallbackHighlight"))
-            .replace(/.*/g, styling("defaultTextHighlight"))
+            .replace(/\;/g, styling("semicolonHighlight", scheme))
+            .replace(/\[/g, styling("bracketHighlight", scheme))
+            .replace(/\]/g, styling("bracketHighlight", scheme))
+            .replace(/\$[a-zA-Z]*/g, styling("fallbackHighlight", scheme))
+            .replace(/.*/g, styling("defaultTextHighlight", scheme))
 
         let keys = Object.keys(scheme.functionsHighlights).sort((a, b) => b.length - a.length);
         keys.forEach(key => {
-            code = code.replace(new RegExp(`\\${key}`, 'g'), functionHighlight(key));
+            code = code.replace(new RegExp(`\\${key}`, 'g'), functionHighlight(key, scheme));
         });
 
         codeBlock.innerHTML = code;
