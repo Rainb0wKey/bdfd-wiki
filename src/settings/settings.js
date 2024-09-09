@@ -253,8 +253,6 @@ function updateColor() {
   document.documentElement.style.setProperty('--color2', color2);
   document.documentElement.style.setProperty('--color3', color3);
   
-  colorPreview.style.background = `linear-gradient(to bottom right, ${color1}, ${color2})`;
-  colorSlider.style.background = `linear-gradient(to right, ${color1}, ${color2})`;
   sidePages.forEach(page => {
     page.style.color = document.body.style.color;
   });
