@@ -455,6 +455,7 @@ ul#searchresults span.teaser em {
 
 .chapter li a:hover {
     color: var(--sidebar-hover) !important;
+    font-weight: bold;
 }
 
 .chapter li a.active {
