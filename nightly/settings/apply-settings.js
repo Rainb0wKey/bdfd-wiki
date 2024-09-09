@@ -128,8 +128,6 @@ function applySettings() {
   html.style.fontSize = data['text-size'];
   html.style.textShadow = data['text-hg'];
 
-  document.querySelector('.sidebar').style.background = colorTheme3;
-  document.querySelector('.chapter li a.active').style.color = colorTheme1;
   document.getElementById('menu-bar-sticky-container').style.background = `linear-gradient(to bottom right, ${colorTheme1}, ${colorTheme2})`;
 
   document.body.style.background = data['theme-bg'];
