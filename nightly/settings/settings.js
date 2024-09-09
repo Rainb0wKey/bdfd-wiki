@@ -273,7 +273,6 @@ function updateColor() {
   colorDisplay.textContent = hue + '°';
   jsonInput.style.scrollbarColor = `hsl(${hue}, 70%, 25%)` + `hsl(${hue}, 60%, 20%)`;
   jsonInput.style.background = `hsl(${hue}, 60%, 20%)`;
-  sideSpacerBar.style.background = `hsl(${hue}, 100%, 80%)`;
   bdsCode.style.scrollbarColor = `hsl(${hue}, 70%, 25%)` + color3;
   setButtons.forEach(button => {
     if (!button.matches('#menu-bar i') && !button.matches('#menu-bar .icon-button')) {
