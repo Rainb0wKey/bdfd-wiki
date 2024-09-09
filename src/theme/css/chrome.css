@@ -158,7 +158,7 @@ html:not(.sidebar-visible) #menu-bar:not(:hover).folded > #menu-bar-sticky-conta
     width: 60px;
     border-radius: 10px;
     background-color: var(--chapter-hover-bg);
-    color: var(--color1);
+    color: var(--color1) !important;
 }
 
 .previous {
