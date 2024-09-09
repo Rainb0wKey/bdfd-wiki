@@ -103,6 +103,14 @@ function setDiscordTheme(colorId) {
 }
 
 function applySettings() {
+  const bdsCode = document.querySelector('code.hljs');
+  const previousPage = document.querySelector('.previous');
+  const nextPage = document.querySelector('.next');
+  const headers = document.querySelectorAll('.content .header:link');
+  const sidePages = document.querySelectorAll('.chapter li a');
+  const sideMainPages = document.querySelectorAll('.chapter li');
+  const searchBar = document.getElementById('searchbar');
+  
   let data;
 
   try {
@@ -134,7 +142,31 @@ function applySettings() {
   
   document.body.style.background = data['theme-bg'];
   document.body.style.color = data['theme-text'];
-
+  document.documentElement.style.scrollbarColor = `hsl(${mainHue}, 70%, 25%)` + `hsl(${mainHue}, 80%, 8%)`;
+  
+  sidePages.forEach(page => {
+    page.style.color = document.body.style.color;
+  });
+  sideMainPages.forEach(mainPage => {
+    mainPage.style.color = document.body.style.color;
+  });
+  if (previousPage) {
+    previousPage.style.background = `hsl(${hue}, 45%, 25%)`;
+    nextPage.style.background = `hsl(${hue}, 45%, 25%)`;
+  }
+  if (searchBar) {
+    searchBar.style.background = `hsl(${hue}, 60%, 20%)`;
+    searchBar.style.color = document.body.style.color;
+  }
+  if (bdsCode) {
+    bdsCode.forEach(codeBDS => {
+      codeBDS.style.scrollbarColor = `hsl(${hue}, 70%, 25%)` + colorTheme3;
+    });
+  }
+  headers.forEach(head => {
+    head.style.color = document.body.style.color;
+  });
+  
   setDiscordTheme(data['discord-example-theme']);
 }
 
