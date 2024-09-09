@@ -193,14 +193,10 @@ function setStatusBar(HueInput) {
 function updateColor() {
   // Settings page
   const colorSlider = document.getElementById('themeSlider');
-  const colorPreview = document.getElementById('themePreview');
   const colorDisplay = document.getElementById('colorThemeDisplay');
   const jsonInput = document.getElementById('jsonhginput');
-  const settingEmbed = document.querySelectorAll('.settingembed');
 
   // Main changes
-  const menuBar = document.getElementById('menu-bar-sticky-container');
-  const breadcrumbText = document.querySelectorAll('.breadcrumb a');
   const setButtons = document.querySelectorAll('button');
   const bdsCode = document.querySelector('code.hljs');
   const previousPage = document.querySelector('.previous');
@@ -208,15 +204,11 @@ function updateColor() {
   const headers = document.querySelectorAll('.content .header:link');
 
   // Sidebar
-  const sideBar = document.querySelector('.sidebar');
-  const sideChapterBar = document.querySelector('.chapter li a.active');
-  const sideSpacerBar = document.querySelector('.chapter .spacer');
   const sidePages = document.querySelectorAll('.chapter li a');
   const sideMainPages = document.querySelectorAll('.chapter li');
-  
+
   // Search changes
   const searchBar = document.getElementById('searchbar');
-  const searchPages = document.querySelectorAll('ul#searchresults li'); 
   
   // Color Settings
   const hue = colorSlider.value;
