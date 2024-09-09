@@ -241,7 +241,7 @@ function updateColor() {
     setStatusBar(hue);
     document.body.style.color = `hsl(${hue}, 100%, 90%)`;
     headers.forEach(head => {
-      head.style.color = `#fff`;
+      head.style.color = document.body.style.color;
     });
     document.documentElement.style.scrollbarColor = `hsl(${hue}, 70%, 25%)` + `hsl(${hue}, 80%, 8%)`;
     updateJsonFile("theme-bg", document.body.style.background);
