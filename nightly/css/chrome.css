@@ -390,6 +390,7 @@ ul#searchresults span.teaser em {
     -webkit-overflow-scrolling: touch;
     overscroll-behavior-y: contain;
     background-color: var(--color3);
+    box-shadow: 0 12px 15px rgba(0, 0, 0, 0.3);
     color: var(--sidebar-fg);
     scrollbar-color: var(--scrollbar) rgba(255, 0, 0, 0);
 }
@@ -408,7 +409,7 @@ ul#searchresults span.teaser em {
 }
 
 .sidebar-hidden .sidebar {
-    transform: translateX(calc(-5px - var(--sidebar-width)));
+    transform: translateX(calc(-10px - var(--sidebar-width)));
     transition: transform 0.3s;
 }
 
@@ -465,7 +466,7 @@ ul#searchresults span.teaser em {
     margin-left: auto;
     padding: 0 10px;
     user-select: none;
-    opacity: 0.68;
+    opacity: 0.58;
 }
 
 .chapter li > a.toggle div {
