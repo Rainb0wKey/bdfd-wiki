@@ -4,9 +4,7 @@
 
 :root {
     --search-bg: hsl(270, 80%, 15%);
-    --header-color: white;
-    --search-focus: white;
-    --sidebar-hover: white;
+    --color1: white;
 }
 
 ::-webkit-scrollbar {
@@ -232,8 +230,8 @@ pre > .buttons {
 }
 
 pre > .buttons :hover {
-    color: var(--sidebar-active);
-    border-color: var(--sidebar-active);
+    color: var(--color1);
+    border-color: var(--color1);
     border-radius: 9px;
     
     width: 3.75rem;
@@ -278,7 +276,7 @@ pre > .result {
 
 #searchresults a {
     text-decoration: none;
-    color: var(--header-color);
+    color: var(--color1);
 }
 
 mark {
@@ -359,7 +357,7 @@ ul#searchresults li.focus {
     font-size: 105%;
     outline: none;
     border-width: 1px;
-    border-color: var(--search-focus);
+    border-color: var(--color1);
     border-style: solid;
 
 }
@@ -452,7 +450,7 @@ ul#searchresults span.teaser em {
 }
 
 .chapter li a:hover {
-    color: var(--sidebar-hover) !important;
+    color: var(--color1) !important;
     font-weight: bold;
 }
 
