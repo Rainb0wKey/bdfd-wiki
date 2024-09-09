@@ -60,7 +60,7 @@ body {
 /* Main Setting UI */
 .settingembed {
     position: relative;
-    background-color: hsl(270, 80%, 15%);
+    background-color: var(--color3);
     border-radius: 10px;
     margin-top: -4.5rem;
     padding-bottom: 1.5rem;
@@ -477,7 +477,7 @@ button {
     top: 5px;
     font-size: 1.1rem;
     color: #fff;
-    background: #000;
+    background: var(--color2);
     padding-left: 5px;
     padding-right: 5px;
     width: auto;
