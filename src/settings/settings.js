@@ -206,9 +206,6 @@ function updateColor() {
   const previousPage = document.querySelector('.previous');
   const nextPage = document.querySelector('.next');
   const headers = document.querySelectorAll('.content .header:link');
-  const searchResultHeader = document.querySelectorAll('#searchresults a');
-  const searchResultFocus = document.querySelectorAll('ul#searchresults li.focus');
-  const searchResultBG = document.querySelectorAll('ul#searchresults li');
 
   // Sidebar
   const sideBar = document.querySelector('.sidebar');
@@ -254,17 +251,9 @@ function updateColor() {
   // Updating design
   document.documentElement.style.setProperty('--search-bg', color3);
   document.documentElement.style.setProperty('--header-color', color1);
+  document.documentElement.style.setProperty('--search-focus', color1);
   colorPreview.style.background = `linear-gradient(to bottom right, ${color1}, ${color2})`;
   colorSlider.style.background = `linear-gradient(to right, ${color1}, ${color2})`;
-  searchResultHeader.forEach(result => {
-    result.style.color = color1;
-  });
-  searchResultBG.forEach(search => {
-    search.style.background = color3;
-  });
-  searchResultFocus.forEach(focus => {
-    focus.style.borderColor = color1;
-  });
   sidePages.forEach(page => {
     page.style.color = document.body.style.color;
   });
