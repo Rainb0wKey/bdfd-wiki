@@ -159,9 +159,7 @@ function applySettings() {
     searchBar.style.color = document.body.style.color;
   }
   if (bdsCode) {
-    bdsCode.forEach(codeBDS => {
-      codeBDS.style.scrollbarColor = `hsl(${mainHue}, 70%, 25%)` + colorTheme3;
-    });
+    bdsCode.style.scrollbarColor = `hsl(${mainHue}, 70%, 25%)` + colorTheme3;
   }
   headers.forEach(head => {
     head.style.color = document.body.style.color;
