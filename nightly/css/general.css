@@ -152,11 +152,12 @@ table tbody tr:last-child td:last-child {
 
 blockquote {
     margin: 20px 0;
-    padding: 0 20px;
-    color: var(--fg);
-    background-color: var(--color2);
-    border-top: .1em solid var(--quote-border);
-    border-bottom: .1em solid var(--quote-border);
+    padding: .1px 20px;
+    background-color: var(--color3);
+    border: solid !important;
+    border-radius: 0 10px 10px 0 !important;
+    border-width: 0 0 0 4px !important;
+    border-color: var(--color1) !important;
 }
 
 
