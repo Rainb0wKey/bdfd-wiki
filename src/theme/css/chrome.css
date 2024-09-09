@@ -6,6 +6,7 @@
     --search-bg: hsl(270, 80%, 15%);
     --header-color: white;
     --search-focus: white;
+    --sidebar-hover: white;
 }
 
 ::-webkit-scrollbar {
@@ -453,7 +454,7 @@ ul#searchresults span.teaser em {
 }
 
 .chapter li a:hover {
-    color: var(--sidebar-active);
+    color: var(--sidebar-hover) !important;
 }
 
 .chapter li a.active {
