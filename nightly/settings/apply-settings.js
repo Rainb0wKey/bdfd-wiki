@@ -128,6 +128,10 @@ function applySettings() {
   html.style.fontSize = data['text-size'];
   html.style.textShadow = data['text-hg'];
 
+  document.documentElement.style.setProperty('--color1', colorTheme1);
+  document.documentElement.style.setProperty('--color2', colorTheme2);
+  document.documentElement.style.setProperty('--color3', colorTheme3);
+  
   document.body.style.background = data['theme-bg'];
   document.body.style.color = data['theme-text'];
 
