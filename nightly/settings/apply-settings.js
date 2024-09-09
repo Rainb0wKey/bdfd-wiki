@@ -130,9 +130,6 @@ function applySettings() {
 
   document.querySelector('.sidebar').style.background = colorTheme3;
   document.querySelector('.chapter li a.active').style.color = colorTheme1;
-  document.querySelectorAll('.breadcrumb a').forEach(link => {
-    link.style.color = colorTheme1;
-  });
   document.getElementById('menu-bar-sticky-container').style.background = `linear-gradient(to bottom right, ${colorTheme1}, ${colorTheme2})`;
 
   document.body.style.background = data['theme-bg'];
