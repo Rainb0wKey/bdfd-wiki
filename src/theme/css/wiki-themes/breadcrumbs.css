@@ -2,7 +2,7 @@
     user-select: none;
     -webkit-user-select: none;
     display: -webkit-box;
-    color: #fff;
+    color: var(--color1);
     padding-top: 10px;
 }
 
