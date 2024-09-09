@@ -285,6 +285,7 @@ function updateColor() {
   jsonInput.style.background = `hsl(${hue}, 60%, 20%)`;
   sideSpacerBar.style.background = `hsl(${hue}, 100%, 80%)`;
   bdsCode.style.background = color3;
+  bdsCode.style.scrollbarColor = `hsl(${hue}, 70%, 25%)` + color3;
   settingEmbed.forEach(element => {
     element.style.background = color3;
   });
