@@ -109,7 +109,7 @@ table td {
 
 table td:hover {
     transform: scale(1.02);
-    border-color: var(--sidebar-active);
+    border-color: var(--color1);
     border-radius: 10px !important;
     transition: .5s
 }
@@ -120,7 +120,7 @@ table thead {
 }
 
 table:hover {
-    box-shadow: 0 0 5px 2px var(--sidebar-active);
+    box-shadow: 0 0 5px 2px var(--color1);
     transition: .3s
 }
 
@@ -138,7 +138,6 @@ table thead tr {
     border-radius: 10px 10px 0 0;
 }
 
-/* Alternate background colors for rows */
 table tbody tr:nth-child(2n) {
     background: var(--table-alternate-bg);
 }
@@ -150,7 +149,6 @@ table tbody tr:last-child td:first-child {
 table tbody tr:last-child td:last-child {
     border-radius: 0 0 10px 0;
 }
-
 
 blockquote {
     margin: 20px 0;
