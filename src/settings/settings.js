@@ -249,8 +249,10 @@ function updateColor() {
   };
 
   // Updating design
-  document.documentElement.style.setProperty('--search-bg', color3);
   document.documentElement.style.setProperty('--color1', color1);
+  document.documentElement.style.setProperty('--color2', color2);
+  document.documentElement.style.setProperty('--color3', color3);
+  
   colorPreview.style.background = `linear-gradient(to bottom right, ${color1}, ${color2})`;
   colorSlider.style.background = `linear-gradient(to right, ${color1}, ${color2})`;
   sidePages.forEach(page => {
@@ -267,15 +269,10 @@ function updateColor() {
     searchBar.style.background = `hsl(${hue}, 60%, 20%)`;
     searchBar.style.color = document.body.style.color;
   }
-  if (searchPages) {
-    searchPages.forEach(searchUI => {
-      searchUI.style.background = color3;
-    });
-  }
+  
   colorDisplay.textContent = hue + '°';
   colorDisplay.style.background = color2;
   menuBar.style.background = `linear-gradient(to bottom right, ${color1}, ${color2})`;
-  sideBar.style.background = color3;
   jsonInput.style.scrollbarColor = `hsl(${hue}, 70%, 25%)` + `hsl(${hue}, 60%, 20%)`;
   jsonInput.style.background = `hsl(${hue}, 60%, 20%)`;
   sideSpacerBar.style.background = `hsl(${hue}, 100%, 80%)`;
@@ -291,7 +288,6 @@ function updateColor() {
   });
 
   hexColor.textContent = rgbToHex(color1);
-  sideChapterBar.style.color = color1;
 
   updateJsonFile("theme-main", hue);
 }
