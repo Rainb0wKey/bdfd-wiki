@@ -109,7 +109,7 @@ function highlight(scheme) {
             .replace(/\$[a-zA-Z]*/g, styling("fallbackHighlight", scheme))
             .replace(/.*/g, styling("defaultTextHighlight", scheme))
 
-        let keys = Object.keys(scheme.functionsHighlights || {}).sort((a, b) => a.length - b.length);
+        let keys = Object.keys(scheme.functionsHighlights || {}).sort((a, b) => b.length - a.length);
         keys.forEach(key => {
             code = code.replace(new RegExp(`\\${key}`, 'g'), functionHighlight(key, scheme));
         });
