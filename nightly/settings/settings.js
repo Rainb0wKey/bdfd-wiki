@@ -243,7 +243,7 @@ function updateColor() {
     headers.forEach(head => {
       head.style.color = `#fff`;
     });
-    document.documentElement.style.scrollbarColor = `hsl(${hue}, 70%, 25%)` + `rgba(0, 0, 0, 0)`;
+    document.documentElement.style.scrollbarColor = `hsl(${hue}, 70%, 25%)` + `hsl(${hue}, 80%, 8%)`;
     updateJsonFile("theme-bg", document.body.style.background);
     updateJsonFile("theme-text", document.body.style.color);
   };
@@ -382,7 +382,7 @@ function gradientBackground() {
 
   setStatusBar(hue);
   document.body.style.background = `linear-gradient(to bottom right, ${color1}, ${color2})`;
-  document.documentElement.style.scrollbarColor = `hsl(${hue}, 70%, 25%)` + `rgba(0, 0, 0, 0)`;
+  document.documentElement.style.scrollbarColor = `hsl(${hue}, 70%, 25%)` + `hsl(${hue}, 80%, 8%)`;
 };
 
 function updateCodeHG() {
