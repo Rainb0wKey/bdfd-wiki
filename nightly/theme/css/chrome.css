@@ -206,6 +206,10 @@ pre {
     padding: 10px;
 }
 
+code.hljs {
+    background: var(--color3);
+}
+
 pre:hover > .buttons {
     visibility: visible;
     opacity: 1;
