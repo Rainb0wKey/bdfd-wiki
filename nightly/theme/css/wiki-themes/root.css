@@ -4,8 +4,9 @@
     --content-max-width: 750px;
     --menu-bar-height: 45px;
     --menu-bar-border-radius: 10px;
-    --search-bg: hsl(270, 80%, 15%);
-    --color1: white;
+    --color1: hsl(270, 80%, 50%);
+    --color2: hsl(270, 80%, 30%);
+    --color3: hsl(270, 80%, 15%);
 }
 
 :root code {
