@@ -215,6 +215,7 @@ pre {
 code.hljs {
     background: var(--color3);
     margin-top: 10%;
+    border-radius: 0 10px 10px 10px;
 }
 
 code.hljs:before {
