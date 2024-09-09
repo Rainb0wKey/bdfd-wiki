@@ -385,7 +385,7 @@ ul#searchresults span.teaser em {
     height: 97%;
     -webkit-overflow-scrolling: touch;
     overscroll-behavior-y: contain;
-    background-color: var(--sidebar-bg);
+    background-color: var(--color3);
     color: var(--sidebar-fg);
     scrollbar-color: var(--scrollbar) rgba(255, 0, 0, 0);
 }
@@ -452,7 +452,7 @@ ul#searchresults span.teaser em {
 }
 
 .chapter li a.active {
-    color: var(--sidebar-active);
+    color: var(--color1);
 }
 
 .chapter li > a.toggle {
