@@ -207,6 +207,7 @@ a:hover > .hljs {
 pre {
     position: relative;
 }
+
 .hljs {
     padding: 10px;
 }
@@ -233,45 +234,42 @@ pre > .buttons {
 pre > .buttons :hover {
     color: var(--sidebar-active);
     border-color: var(--sidebar-active);
-    border-radius: 8px;
+    border-radius: 9px;
     
-    width: 32px;
-    height: 32px;
+    width: 3.75rem;
+    height: 3.75rem;
     
     opacity: .85;
     
-    transition: 100ms;
-    transition-property: width,height,border-radius;
-}
-
-pre > .buttons :active {
-    color: #60f36b;
-    border-color: #60f36b;
+    transition: .1s;
 }
 
 pre > .buttons i {
     margin-left: 8px;
 }
+
 pre > .buttons button {
     color: #aeaeae;
     margin: 0px 5px;
     padding: 3px 5px;
     cursor: inherit;
+    font-size: 2rem;
 
-    width: 30px;
-    height: 30px;
+    width: 3.5rem;
+    height: 3.5rem;
     
     border-style: solid;
     border-width: 1px;
-    border-radius: 9px;
+    border-radius: 10px;
     border-color: #aeaeae;
     
     background-color: var(--theme-popup-bg);
     opacity: .75;
     
-    transition: 100ms;
-    transition-property: color,border-color,background-color;
+    transition: .1s;
+
 }
+
 pre > .result {
     margin-top: 10px;
 }
