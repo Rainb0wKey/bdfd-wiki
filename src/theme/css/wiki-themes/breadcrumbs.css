@@ -2,8 +2,9 @@
     user-select: none;
     -webkit-user-select: none;
     display: -webkit-box;
-    color: var(--color1);
+
     padding-top: 10px;
+    transition: .3s;
 }
 
 .breadcrumb :nth-child(n+3)::before {
@@ -17,6 +18,7 @@
     padding: 5px;
     text-decoration: none;
     transition: .3s;
+    color: var(--color1) !important;
     border-radius: 12px;
     text-transform: capitalize;
 }
