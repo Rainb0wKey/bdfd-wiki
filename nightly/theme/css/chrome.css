@@ -219,8 +219,8 @@ code.hljs:before {
     color: #fff;
     padding: 6px;
     border-radius: 10px 10px 0 0;
-    content: "🔴🟢🟡 !example";
-    padding-right: 15px;
+    content: "🔴 🟢 🟡 !example";
+    padding-right: 10px;
 }
 
 pre:hover > .buttons {
