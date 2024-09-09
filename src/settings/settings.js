@@ -261,9 +261,7 @@ function updateColor() {
   });
   if (previousPage) {
     previousPage.style.background = `hsl(${hue}, 45%, 25%)`;
-    previousPage.style.color = color1;
     nextPage.style.background = `hsl(${hue}, 45%, 25%)`;
-    nextPage.style.color = color1;
   }
   if (searchBar) {
     searchBar.style.background = `hsl(${hue}, 60%, 20%)`;
