@@ -21,6 +21,8 @@ a > .hljs {
 /* Menu Bar */
 
 #menu-bar {
+    user-select: none;
+    -webkit-user-select: none;
     position: -webkit-sticky;
     position: sticky;
     top: 0;
@@ -28,18 +30,22 @@ a > .hljs {
     margin: auto calc(0px - var(--page-padding));
     padding: 10px;
 }
+
 #menu-bar > #menu-bar-sticky-container {
     display: flex;
     flex-wrap: wrap;
     background: linear-gradient(to bottom right, var(--color1), var(--color2));
     border-radius: 10px;
 }
+
 .js #menu-bar > #menu-bar-sticky-container {
     transition: transform 0.3s;
 }
+
 #menu-bar.bordered > #menu-bar-sticky-container  {
     border-bottom-color: var(--table-border-color);
 }
+
 #menu-bar i, #menu-bar .icon-button {
     position: relative;
     padding: 0 8px;
