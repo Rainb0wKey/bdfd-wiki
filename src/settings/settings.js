@@ -295,9 +295,6 @@ function updateColor() {
 
   hexColor.textContent = rgbToHex(color1);
   sideChapterBar.style.color = color1;
-  breadcrumbText.forEach(link => {
-    link.style.color = color1;
-  });
 
   updateJsonFile("theme-main", hue);
 }
