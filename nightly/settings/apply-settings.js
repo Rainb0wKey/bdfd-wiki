@@ -151,16 +151,16 @@ function applySettings() {
     mainPage.style.color = document.body.style.color;
   });
   if (previousPage) {
-    previousPage.style.background = `hsl(${hue}, 45%, 25%)`;
-    nextPage.style.background = `hsl(${hue}, 45%, 25%)`;
+    previousPage.style.background = `hsl(${mainHue}, 45%, 25%)`;
+    nextPage.style.background = `hsl(${mainHue}, 45%, 25%)`;
   }
   if (searchBar) {
-    searchBar.style.background = `hsl(${hue}, 60%, 20%)`;
+    searchBar.style.background = `hsl(${mainHue}, 60%, 20%)`;
     searchBar.style.color = document.body.style.color;
   }
   if (bdsCode) {
     bdsCode.forEach(codeBDS => {
-      codeBDS.style.scrollbarColor = `hsl(${hue}, 70%, 25%)` + colorTheme3;
+      codeBDS.style.scrollbarColor = `hsl(${mainHue}, 70%, 25%)` + colorTheme3;
     });
   }
   headers.forEach(head => {
