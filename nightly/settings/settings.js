@@ -265,7 +265,6 @@ function updateColor() {
   }
   if (searchBar) {
     searchBar.style.background = `hsl(${hue}, 60%, 20%)`;
-    searchBar.style.borderColor = color1;
     searchBar.style.color = document.body.style.color;
   }
   if (searchPages) {
