@@ -20,7 +20,6 @@
     transition: .3s;
     color: var(--color1) !important;
     border-radius: 12px;
-    text-transform: capitalize;
 }
 
 .breadcrumb a:hover{
