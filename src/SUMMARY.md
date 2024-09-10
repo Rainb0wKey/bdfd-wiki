@@ -1,11 +1,23 @@
 # Summary
 
-[Foreword](./foreword.md)
-[Settings](./settings/settings.md)
-[Changelog](./CHANGELOG.md)
-[Flowchart Changelog](./FLOWCHART_CHANGELOG.md)
-[Terms of Service](./terms.md)
-[Entity Transfer Policy](./entityTransferPolicy.md)
+<div class="sidebar-menus">
+  <div class="foreword-side">
+    <span class="sideemoji">🏠</span>
+    <span class="sidename">Home</span>
+  </div>
+  <div class="news-side">
+    <span class="sideemoji">📢</span>
+    <span class="sidename">Announcements</span>
+  </div>
+  <div class="rules-side">
+    <span class="sideemoji">📚</span>
+    <span class="sidename">ToS & ETP</span>
+  </div>
+  <div class="news-side">
+    <span class="sideemoji">⚙️</span>
+    <span class="sidename">Settings</span>
+  </div>
+</div>
 
 ---
 
