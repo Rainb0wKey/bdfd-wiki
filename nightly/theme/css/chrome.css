@@ -46,47 +46,26 @@ a > .hljs {
     border-bottom-color: var(--table-border-color);
 }
 
+
 #menu-bar i, #menu-bar .icon-button {
     position: relative;
-    padding: 0 8px;
-    z-index: 10;
-    line-height: var(--menu-bar-height);
+    padding: 0 5.5px;
     cursor: pointer;
     transition: color 0.2s;
 }
-@media only screen and (max-width: 420px) {
-    #menu-bar i, #menu-bar .icon-button {
-        padding: 0 5px;
-    }
-}
 
 .icon-button {
-    border: none;
+    border: 0;
     background: none;
-    padding: 0;
-    color: inherit;
-}
-.icon-button i {
-    margin: 0;
 }
 
-.right-buttons {
-    margin: 0 15px;
-}
-.right-buttons a {
-    text-decoration: none;
+html #menu-bar:not(:hover).folded > #menu-bar-sticky-container {
+    transform: translateY(calc(-10px - 45px));
 }
 
-html:not(.sidebar-visible) #menu-bar:not(:hover).folded > #menu-bar-sticky-container {
-    transform: translateY(calc(-10px - var(--menu-bar-height)));
-}
-
-.left-buttons {
+.menu-buttons {
     display: flex;
-    margin: 0 5px;
-}
-.no-js .left-buttons {
-    display: none;
+    margin: 0 10px;
 }
 
 .menu-title {
@@ -102,6 +81,7 @@ html:not(.sidebar-visible) #menu-bar:not(:hover).folded > #menu-bar-sticky-conta
     text-overflow: ellipsis;
     color: #fff;
 }
+
 .js .menu-title {
     cursor: pointer;
 }
@@ -122,6 +102,22 @@ html:not(.sidebar-visible) #menu-bar:not(:hover).folded > #menu-bar-sticky-conta
 .nav-chapters:hover,
 .mobile-nav-chapters i:hover {
     color: #ded;
+}
+
+@media (min-width: 750px) {
+    #sidebar-toggle {
+        display: none;
+    }
+    
+    #search-toggle {
+        border: solid;
+        border-radius: 10px;
+        border-width: 0;
+        height: 80%;
+        margin-top: 15%;
+        margin-left: -15%;
+        background: var(--color2);
+    }
 }
 
 /* Nav Icons */
