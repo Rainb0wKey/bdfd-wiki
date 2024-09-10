@@ -472,6 +472,7 @@ ul#searchresults span.teaser em {
     width: 100%;
     height: 3px;
     margin: 5px 0px;
+    border-radius: 10px;
 }
 
 .chapter .spacer {
