@@ -228,6 +228,17 @@ code.hljs:before {
     font-style: normal !important;
 }
 
+/* Warnings */
+
+:is(.admonition) {
+    background-color: var(--color3) !important;
+    border-radius: 0 10px 10px 0 !important;
+}
+
+.admonition-title, summary.admonition-title {
+    border-top-right-radius: 10px !important;
+}
+
 /* Buttons */
 
 pre:hover > .buttons {
