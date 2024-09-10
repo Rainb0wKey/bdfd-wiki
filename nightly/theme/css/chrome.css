@@ -222,6 +222,12 @@ code.hljs:before {
     padding-right: 10px;
 }
 
+.nostyle {
+    color: inherit !important;
+    font-weight: inherit !important;
+    font-style: normal !important;
+}
+
 /* Buttons */
 
 pre:hover > .buttons {
