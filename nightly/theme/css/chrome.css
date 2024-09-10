@@ -417,7 +417,7 @@ ul#searchresults span.teaser em {
 }
 
 .sidebar-hidden .sidebar {
-    transform: translateX(calc(-1rem - 320px;));
+    transform: translateX(calc(-10px - 320px));
     transition: transform 0.3s;
 }
 
