@@ -9,8 +9,8 @@
 
 html {
     font-family: "Open Sans", sans-serif;
-    color: var(--fg);
-    background-color: var(--bg);
+    color: #fff;
+    background-color: hsl(270, 80%, 8%);;
     text-size-adjust: none;
 }
 
@@ -23,7 +23,7 @@ body {
 
 code {
     font-family: "Source Code Pro", Consolas, "Ubuntu Mono", Menlo, "DejaVu Sans Mono", monospace, monospace !important;
-    font-size: 0.875em; /* please adjust the ace font size accordingly in editor.js */
+    font-size: 0.875em;
 }
 
 .left { float: left; }
@@ -55,18 +55,15 @@ h1 a.header:target,
 h2 a.header:target,
 h3 a.header:target,
 h4 a.header:target {
-    scroll-margin-top: calc(var(--menu-bar-height) + 0.5em);
+    scroll-margin-top: calc(45px + 0.5em);
 }
 
 .page {
     outline: 0;
-    padding: 0 var(--page-padding);
+    padding: 0 5px;
 }
 .page-wrapper {
     box-sizing: border-box;
-}
-.js:not(.sidebar-resizing) .page-wrapper {
-    transition: margin-left 0.3s ease, transform 0.3s ease; /* Animation: slide away */
 }
 
 .content {
@@ -74,17 +71,19 @@ h4 a.header:target {
     padding: 0 15px;
     padding-bottom: 50px;
 }
+
 .content main {
     margin-left: auto;
     margin-right: auto;
-    max-width: var(--content-max-width);
+    max-width: 750px;
 }
+
 .content a { text-decoration: none; }
 .content a:hover { text-decoration: underline; }
 .content img { max-width: 100%; }
 .content .header:link,
 .content .header:visited {
-    color: var(--fg);
+    color: #fff;
 }
 .content .header:link,
 .content .header:visited:hover {
@@ -178,15 +177,15 @@ blockquote {
     position: absolute;
     visibility: hidden;
     color: #fff;
-    background-color: #333;
-    transform: translateX(-50%); /* Center by moving tooltip 50% of its width left */
-    left: 55px;
-    top: -35px;
-    font-size: .6em;
+    background-color: var(--color3);
+    transform: translateX(-50%);
+    left: 80%;
+    top: -122%;
+    font-size: 80%;
     font-style: normal;
     font-family: system-ui;
     text-align: center;
-    border-radius: 6px;
+    border-radius: 10px;
     padding: 5px 8px;
     margin: 5px;
     z-index: 1000;
