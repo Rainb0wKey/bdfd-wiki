@@ -155,7 +155,7 @@ a > .hljs {
     text-decoration: none;
     width: 60px;
     border-radius: 10px;
-    background-color: var(--chapter-hover-bg);
+    background-color: var(--color3) !important;
     color: var(--color1) !important;
 }
 
