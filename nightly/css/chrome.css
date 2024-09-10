@@ -371,7 +371,7 @@ ul#searchresults span.teaser em {
     left: 5px;
     top: 10px;
     bottom: 0;
-    width: 33.5rem;
+    width: 320px;
     font-size: 95%;
     box-sizing: border-box;
     border-radius: 10px;
@@ -380,7 +380,7 @@ ul#searchresults span.teaser em {
     overscroll-behavior-y: contain;
     background-color: var(--color3);
     box-shadow: 0 12px 15px rgba(0, 0, 0, 0.3);
-    scrollbar-color: var(--scrollbar) rgba(255, 0, 0, 0);
+    scrollbar-color: var(--color2) rgba(255, 0, 0, 0) !important;
 }
 
 .sidebar code {
@@ -397,7 +397,7 @@ ul#searchresults span.teaser em {
 }
 
 .sidebar-hidden .sidebar {
-    transform: translateX(calc(-1rem - 33.5rem));
+    transform: translateX(calc(-1rem - 320px;));
     transition: transform 0.3s;
 }
 
@@ -407,13 +407,13 @@ ul#searchresults span.teaser em {
 }
 
 .sidebar-visible .page-wrapper {
-    transform: translateX(33.5rem);
+    transform: translateX(320px);
 }
 
 @media only screen and (min-width: 620px) {
     .sidebar-visible .page-wrapper {
         transform: none;
-        margin-left: 33.5rem;
+        margin-left: 320px;
     }
 }
 
