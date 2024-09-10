@@ -36,8 +36,14 @@ if (window.playground_copyable) {
 			wrapButton.title = 'Wrap code'
 			wrapButton.setAttribute('aria-label', wrapButton.title);
 
+			const syntaxButton = document.createElement('button');
+			syntaxButton.className = 'fa fa-header syntax-button';
+			syntaxButton.title = 'Highlighting'
+			syntaxButton.setAttribute('aria-label', syntaxButton.title);
+
 			buttons.insertBefore(clipButton, buttons.firstChild);
 			buttons.insertBefore(wrapButton, buttons.firstChild);
+			buttons.insertBefore(syntaxButton, buttons.firstChild);
 		}
 	});
 }
@@ -222,6 +228,20 @@ if (window.playground_copyable) {
 			}
 		});
 	});
+})();
+
+(function syntax() {
+    const syntaxButtons = document.querySelectorAll(".syntax-button");
+    syntaxButtons.forEach((hgButton) => {
+        hgButton.addEventListener('click', (e) => {
+            const playground = hgButton.closest("pre");
+            const codeBlock = playground.querySelector("code");
+            const spans = codeBlock.querySelectorAll("span"); 
+            spans.forEach((span) => {
+                span.classList.toggle('nostyle');
+            });
+        });
+    });
 })();
 
 (function scrollToTop() {
