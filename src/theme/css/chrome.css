@@ -252,7 +252,7 @@ pre > .buttons :hover {
     border-color: var(--color1);
     border-radius: 9px;
     opacity: .9;
-    transition: .1s;
+    transition: .2s;
 }
 
 pre > .buttons button {
@@ -269,7 +269,7 @@ pre > .buttons button {
     border-color: #aeaeae;
     background: rgb(255 255 255 / 10%);
     opacity: .8;
-    transition: .1s;
+    transition: .2s;
 }
 
 pre > .result {
