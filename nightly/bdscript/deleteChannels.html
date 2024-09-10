@@ -78,7 +78,7 @@
         <!-- Hide / unhide sidebar before it is displayed -->
         <script>
             var html = document.querySelector('html');
-            var sidebar = 'hidden';
+            var sidebar = 'visible';
             if (document.body.clientWidth >= 1080) {
                 try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
                 sidebar = sidebar || 'visible';
@@ -160,7 +160,7 @@ $deleteChannels[$mentionedChannels[1]]
     <discord-message role-color="#E67E22" author="RainbowKey">
         !example <discord-mention type="channel">main-chat</discord-mention>
     </discord-message>
-    <discord-message verified role-color="#378afa" author="BDFD Support" bot>
+    <discord-message bot verified role-color="#378afa" author="BDFD Support">
         Successfully deleted #main-chat
     </discord-message>
 </discord-messages>

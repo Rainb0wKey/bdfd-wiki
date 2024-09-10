@@ -78,7 +78,7 @@
         <!-- Hide / unhide sidebar before it is displayed -->
         <script>
             var html = document.querySelector('html');
-            var sidebar = 'hidden';
+            var sidebar = 'visible';
             if (document.body.clientWidth >= 1080) {
                 try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
                 sidebar = sidebar || 'visible';
@@ -154,7 +154,7 @@ Category ID: $categoryID[$message]
     <discord-message author="Nicky" role-color="#EE7908">
         !categoryID Information
     </discord-message>
-    <discord-message bot author="Wiki Bot" role-color="#748BD4" verified>
+    <discord-message author="Wiki Bot" verified bot role-color="#748BD4">
         Category ID: 790620501927526462
     </discord-message>
 </discord-messages>

@@ -78,7 +78,7 @@
         <!-- Hide / unhide sidebar before it is displayed -->
         <script>
             var html = document.querySelector('html');
-            var sidebar = 'hidden';
+            var sidebar = 'visible';
             if (document.body.clientWidth >= 1080) {
                 try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
                 sidebar = sidebar || 'visible';
@@ -147,12 +147,12 @@
 $image[$authorAvatar]
 </code></pre>
 <discord-messages>
-    <discord-message role-color="#EE7908" author="Nicky">
+    <discord-message author="Nicky" role-color="#EE7908">
         !authorAvatar
     </discord-message>
-    <discord-message role-color="#748BD4" verified bot author="Wiki Bot">
+    <discord-message role-color="#748BD4" author="Wiki Bot" verified bot>
         <none>
-        <discord-embed slot="embeds" image="https://user-images.githubusercontent.com/111157596/257052136-4b8d5715-b381-4d5f-8c46-8ae0be53c8d8.png">
+        <discord-embed image="https://user-images.githubusercontent.com/111157596/257052136-4b8d5715-b381-4d5f-8c46-8ae0be53c8d8.png" slot="embeds">
         </discord-embed>
     </discord-message>
 </discord-messages>

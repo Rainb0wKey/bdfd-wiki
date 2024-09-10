@@ -78,7 +78,7 @@
         <!-- Hide / unhide sidebar before it is displayed -->
         <script>
             var html = document.querySelector('html');
-            var sidebar = 'hidden';
+            var sidebar = 'visible';
             if (document.body.clientWidth >= 1080) {
                 try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
                 sidebar = sidebar || 'visible';
@@ -171,19 +171,19 @@ $and[$nickname==MineBartekSA;$message==Update]
     <discord-message role-color="#E67E22" author="RainbowKey">
         !example
     </discord-message>
-    <discord-message bot role-color="#378afa" author="BDFD Support" verified>
-        false
-    </discord-message>
-    <discord-message role-color="#f1bdee" author="MineBartekSA">
-        !example 
-    </discord-message>
     <discord-message author="BDFD Support" role-color="#378afa" bot verified>
         false
     </discord-message>
-    <discord-message role-color="#f1bdee" author="MineBartekSA">
+    <discord-message author="MineBartekSA" role-color="#f1bdee">
+        !example 
+    </discord-message>
+    <discord-message author="BDFD Support" bot role-color="#378afa" verified>
+        false
+    </discord-message>
+    <discord-message author="MineBartekSA" role-color="#f1bdee">
         !example Update
     </discord-message>
-    <discord-message bot author="BDFD Support" role-color="#378afa" verified>
+    <discord-message verified author="BDFD Support" bot role-color="#378afa">
         true
     </discord-message>
 </discord-messages>

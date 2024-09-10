@@ -78,7 +78,7 @@
         <!-- Hide / unhide sidebar before it is displayed -->
         <script>
             var html = document.querySelector('html');
-            var sidebar = 'hidden';
+            var sidebar = 'visible';
             if (document.body.clientWidth >= 1080) {
                 try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
                 sidebar = sidebar || 'visible';
@@ -172,7 +172,7 @@
     <discord-system-message type="leave">
         Goodbye <font color="white">User</font>.
     </discord-system-message>
-    <discord-message verified author="Wiki Bot" bot role-color="#748BD4">
+    <discord-message bot role-color="#748BD4" author="Wiki Bot" verified>
         <discord-mention>User</discord-mention> just left the server :c
     </discord-message>
 </discord-messages>

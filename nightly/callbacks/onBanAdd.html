@@ -78,7 +78,7 @@
         <!-- Hide / unhide sidebar before it is displayed -->
         <script>
             var html = document.querySelector('html');
-            var sidebar = 'hidden';
+            var sidebar = 'visible';
             if (document.body.clientWidth >= 1080) {
                 try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
                 sidebar = sidebar || 'visible';
@@ -166,7 +166,7 @@
 <li>
 <p>Now you have a ban message! ✨</p>
 <discord-messages>
-    <discord-message role-color="#748BD4" verified bot author="Wiki Bot">
+    <discord-message verified author="Wiki Bot" role-color="#748BD4" bot>
         <discord-mention>User</discord-mention> was struck with the ban hammer!
     </discord-message>
     <discord-system-message type="leave">

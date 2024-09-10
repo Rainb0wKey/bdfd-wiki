@@ -78,7 +78,7 @@
         <!-- Hide / unhide sidebar before it is displayed -->
         <script>
             var html = document.querySelector('html');
-            var sidebar = 'hidden';
+            var sidebar = 'visible';
             if (document.body.clientWidth >= 1080) {
                 try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
                 sidebar = sidebar || 'visible';
@@ -155,7 +155,7 @@ $c[This is a say command. You are reading a comment!]
     <discord-message role-color="#EE7908" author="Nicky">
         !say As you can see, the comment doesn't appear! Pretty cool; right?
     </discord-message>
-    <discord-message bot author="Wiki Bot" verified role-color="#748BD4">
+    <discord-message role-color="#748BD4" author="Wiki Bot" bot verified>
         As you can see, the comment doesn't appear! Pretty cool; right?
     </discord-message>
 </discord-messages>

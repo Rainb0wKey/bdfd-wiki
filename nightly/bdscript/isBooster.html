@@ -78,7 +78,7 @@
         <!-- Hide / unhide sidebar before it is displayed -->
         <script>
             var html = document.querySelector('html');
-            var sidebar = 'hidden';
+            var sidebar = 'visible';
             if (document.body.clientWidth >= 1080) {
                 try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
                 sidebar = sidebar || 'visible';
@@ -154,7 +154,7 @@ Booster? $isBooster[$mentioned[1]]
     <discord-message role-color="#E67E22" author="RainbowKey">
         !example <discord-mention>kubastick</discord-mention>
     </discord-message>
-    <discord-message author="BDFD Support" bot verified role-color="#378afa">
+    <discord-message bot role-color="#378afa" author="BDFD Support" verified>
         Booster? true
     </discord-message>
 </discord-messages>
