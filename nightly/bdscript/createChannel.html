@@ -79,11 +79,10 @@
         <script>
             var html = document.querySelector('html');
             var sidebar = 'visible';
-            if (document.body.clientWidth >= 1080) {
-                try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
-                sidebar = sidebar || 'visible';
+
+            if (window.innerWidth > 768) {
+                var sidebar = 'hidden';
             }
-            html.classList.remove('sidebar-visible');
             html.classList.add("sidebar-" + sidebar);
         </script>
 
@@ -179,7 +178,7 @@ New channel created!
     <discord-message role-color="#E67E22" author="RainbowKey">
         !example
     </discord-message>
-    <discord-message author="BDFD Support" bot verified role-color="#378afa">
+    <discord-message verified role-color="#378afa" author="BDFD Support" bot>
         New channel created!
     </discord-message>
 </discord-messages>

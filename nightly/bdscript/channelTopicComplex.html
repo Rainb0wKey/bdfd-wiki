@@ -79,11 +79,10 @@
         <script>
             var html = document.querySelector('html');
             var sidebar = 'visible';
-            if (document.body.clientWidth >= 1080) {
-                try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
-                sidebar = sidebar || 'visible';
+
+            if (window.innerWidth > 768) {
+                var sidebar = 'hidden';
             }
-            html.classList.remove('sidebar-visible');
             html.classList.add("sidebar-" + sidebar);
         </script>
 
@@ -154,7 +153,7 @@
     <discord-message author="Nicky" role-color="#EE7908">
         !example 860870690323300359
     </discord-message>
-    <discord-message verified author="Wiki Bot" bot role-color="#748BD4">
+    <discord-message verified role-color="#748BD4" author="Wiki Bot" bot>
         <discord-mention type="channel">demo</discord-mention>'s channel topic is: Demos, examples and more!
     </discord-message>
 </discord-messages>

@@ -79,11 +79,10 @@
         <script>
             var html = document.querySelector('html');
             var sidebar = 'visible';
-            if (document.body.clientWidth >= 1080) {
-                try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
-                sidebar = sidebar || 'visible';
+
+            if (window.innerWidth > 768) {
+                var sidebar = 'hidden';
             }
-            html.classList.remove('sidebar-visible');
             html.classList.add("sidebar-" + sidebar);
         </script>
 
@@ -166,7 +165,7 @@
 <li>
 <p>Now you have an unban message! ✨</p>
 <discord-messages>
-    <discord-message author="Wiki Bot" verified role-color="#748BD4" bot>
+    <discord-message bot author="Wiki Bot" role-color="#748BD4" verified>
         Carl-bot (235148962103951360) was unbanned!
     </discord-message>
 </discord-messages>

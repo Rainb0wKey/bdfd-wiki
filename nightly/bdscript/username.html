@@ -79,11 +79,10 @@
         <script>
             var html = document.querySelector('html');
             var sidebar = 'visible';
-            if (document.body.clientWidth >= 1080) {
-                try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
-                sidebar = sidebar || 'visible';
+
+            if (window.innerWidth > 768) {
+                var sidebar = 'hidden';
             }
-            html.classList.remove('sidebar-visible');
             html.classList.add("sidebar-" + sidebar);
         </script>
 
@@ -150,7 +149,7 @@ Hello $username!
     <discord-message author="Spen" role-color="#b9a0e0">
         !echo
     </discord-message>
-    <discord-message author="Wiki Bot" bot role-color="#b9a0e0">
+    <discord-message author="Wiki Bot" role-color="#b9a0e0" bot>
         Hello Spen!
     </discord-message>
 </discord-messages>

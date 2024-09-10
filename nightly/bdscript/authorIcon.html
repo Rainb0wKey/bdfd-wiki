@@ -79,11 +79,10 @@
         <script>
             var html = document.querySelector('html');
             var sidebar = 'visible';
-            if (document.body.clientWidth >= 1080) {
-                try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
-                sidebar = sidebar || 'visible';
+
+            if (window.innerWidth > 768) {
+                var sidebar = 'hidden';
             }
-            html.classList.remove('sidebar-visible');
             html.classList.add("sidebar-" + sidebar);
         </script>
 
@@ -159,7 +158,7 @@ $author[⬅️ That is the author icon. This is the author text.]
     <discord-message author="Nicky" role-color="#EE7908">
         !example
     </discord-message>
-    <discord-message role-color="#748BD4" verified author="Wiki Bot" bot>
+    <discord-message role-color="#748BD4" author="Wiki Bot" bot verified>
         <none>
         <discord-embed author-name="⬅️ That is the author icon. This is the author text." author-image="https://user-images.githubusercontent.com/111157596/257052136-4b8d5715-b381-4d5f-8c46-8ae0be53c8d8.png" slot="embeds">
         </discord-embed>

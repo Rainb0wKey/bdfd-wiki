@@ -79,11 +79,10 @@
         <script>
             var html = document.querySelector('html');
             var sidebar = 'visible';
-            if (document.body.clientWidth >= 1080) {
-                try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
-                sidebar = sidebar || 'visible';
+
+            if (window.innerWidth > 768) {
+                var sidebar = 'hidden';
             }
-            html.classList.remove('sidebar-visible');
             html.classList.add("sidebar-" + sidebar);
         </script>
 
@@ -158,7 +157,7 @@ $description[This bot is made with [Bot Designer For Discord\](https://botdesign
     <discord-message author="RainbowKey" role-color="#E67E22">
         !example abc
     </discord-message>
-    <discord-message bot role-color="#378afa" verified author="BDFD Support">
+    <discord-message bot author="BDFD Support" role-color="#378afa" verified>
         <discord-embed slot="embeds">
             <discord-embed-description slot="description">
                 This bot is made with <a href="https://botdesignerdiscord.com">Bot Designer For Discord</a>!

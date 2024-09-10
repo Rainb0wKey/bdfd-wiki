@@ -79,11 +79,10 @@
         <script>
             var html = document.querySelector('html');
             var sidebar = 'visible';
-            if (document.body.clientWidth >= 1080) {
-                try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
-                sidebar = sidebar || 'visible';
+
+            if (window.innerWidth > 768) {
+                var sidebar = 'hidden';
             }
-            html.classList.remove('sidebar-visible');
             html.classList.add("sidebar-" + sidebar);
         </script>
 
@@ -157,10 +156,10 @@ Successfully deleted #$channelName[$mentionedChannels[1]]
 $deleteChannels[$mentionedChannels[1]]
 </code></pre>
 <discord-messages>
-    <discord-message role-color="#E67E22" author="RainbowKey">
+    <discord-message author="RainbowKey" role-color="#E67E22">
         !example <discord-mention type="channel">main-chat</discord-mention>
     </discord-message>
-    <discord-message bot verified role-color="#378afa" author="BDFD Support">
+    <discord-message author="BDFD Support" role-color="#378afa" bot verified>
         Successfully deleted #main-chat
     </discord-message>
 </discord-messages>

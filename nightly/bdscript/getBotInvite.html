@@ -79,11 +79,10 @@
         <script>
             var html = document.querySelector('html');
             var sidebar = 'visible';
-            if (document.body.clientWidth >= 1080) {
-                try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
-                sidebar = sidebar || 'visible';
+
+            if (window.innerWidth > 768) {
+                var sidebar = 'hidden';
             }
-            html.classList.remove('sidebar-visible');
             html.classList.add("sidebar-" + sidebar);
         </script>
 
@@ -159,7 +158,7 @@ Invite Me! $getBotInvite
     <discord-message author="RainbowKey" role-color="#E67E22">
         !example
     </discord-message>
-    <discord-message role-color="#378afa" author="kubastick" bot>
+    <discord-message author="kubastick" role-color="#378afa" bot>
         Invite Me! <a href="https://discordapp.com/oauth2/authorize?client_id=390515191819010058&scope=bot&permissions=2146958847">https://discordapp.com/oauth2/authorize?client_id=390515191819010058&scope=bot&permissions=2146958847</a>
     </discord-message>
 </discord-messages>

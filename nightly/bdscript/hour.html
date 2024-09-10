@@ -79,11 +79,10 @@
         <script>
             var html = document.querySelector('html');
             var sidebar = 'visible';
-            if (document.body.clientWidth >= 1080) {
-                try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
-                sidebar = sidebar || 'visible';
+
+            if (window.innerWidth > 768) {
+                var sidebar = 'hidden';
             }
-            html.classList.remove('sidebar-visible');
             html.classList.add("sidebar-" + sidebar);
         </script>
 
@@ -153,7 +152,7 @@
 Current Hour: $hour
 </code></pre>
 <discord-messages>
-    <discord-message author="Nicky" role-color="#EE7908">
+    <discord-message role-color="#EE7908" author="Nicky">
         !hour
     </discord-message>
     <discord-message role-color="#748BD4" author="Wiki Bot" bot>

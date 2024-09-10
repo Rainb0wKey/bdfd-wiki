@@ -79,11 +79,10 @@
         <script>
             var html = document.querySelector('html');
             var sidebar = 'visible';
-            if (document.body.clientWidth >= 1080) {
-                try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
-                sidebar = sidebar || 'visible';
+
+            if (window.innerWidth > 768) {
+                var sidebar = 'hidden';
             }
-            html.classList.remove('sidebar-visible');
             html.classList.add("sidebar-" + sidebar);
         </script>
 
@@ -150,10 +149,10 @@
 Today's Date: $date
 </code></pre>
 <discord-messages>
-    <discord-message author="Nicky" role-color="#EE7908">
+    <discord-message role-color="#EE7908" author="Nicky">
         !example
     </discord-message>
-    <discord-message bot role-color="#748BD4" author="Wiki Bot">
+    <discord-message author="Wiki Bot" bot role-color="#748BD4">
         Today's Date: 2024-06-22
     </discord-message>
 </discord-messages>

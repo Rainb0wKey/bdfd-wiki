@@ -79,11 +79,10 @@
         <script>
             var html = document.querySelector('html');
             var sidebar = 'visible';
-            if (document.body.clientWidth >= 1080) {
-                try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
-                sidebar = sidebar || 'visible';
+
+            if (window.innerWidth > 768) {
+                var sidebar = 'hidden';
             }
-            html.classList.remove('sidebar-visible');
             html.classList.add("sidebar-" + sidebar);
         </script>
 
@@ -153,13 +152,13 @@ $varExistError[Cool;Add the 'Cool' variable in the app.]
 You are now cool!
 </code></pre>
 <discord-messages>
-    <discord-message author="RainbowKey" role-color="#E67E22">
+    <discord-message role-color="#E67E22" author="RainbowKey">
         !example
     </discord-message>
-    <discord-message author="BDFD Support" role-color="#378afa" verified bot>
+    <discord-message author="BDFD Support" bot role-color="#378afa" verified>
         Add the 'Cool' variable in the app.
     </discord-message>
-    <discord-message role-color="#E67E22" author="RainbowKey">
+    <discord-message author="RainbowKey" role-color="#E67E22">
         !example
     </discord-message>
     <discord-message role-color="#378afa" bot author="BDFD Support" verified>

@@ -79,11 +79,10 @@
         <script>
             var html = document.querySelector('html');
             var sidebar = 'visible';
-            if (document.body.clientWidth >= 1080) {
-                try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
-                sidebar = sidebar || 'visible';
+
+            if (window.innerWidth > 768) {
+                var sidebar = 'hidden';
             }
-            html.classList.remove('sidebar-visible');
             html.classList.add("sidebar-" + sidebar);
         </script>
 
@@ -150,7 +149,7 @@ There are $categoryCount categories in this server!
     <discord-message author="Nicky" role-color="#EE7908">
         !categories
     </discord-message>
-    <discord-message verified role-color="#748BD4" bot author="Wiki Bot">
+    <discord-message author="Wiki Bot" bot role-color="#748BD4" verified>
         There are 3 categories in this server!
     </discord-message>
 </discord-messages>

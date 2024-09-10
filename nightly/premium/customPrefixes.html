@@ -79,11 +79,10 @@
         <script>
             var html = document.querySelector('html');
             var sidebar = 'visible';
-            if (document.body.clientWidth >= 1080) {
-                try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
-                sidebar = sidebar || 'visible';
+
+            if (window.innerWidth > 768) {
+                var sidebar = 'hidden';
             }
-            html.classList.remove('sidebar-visible');
             html.classList.add("sidebar-" + sidebar);
         </script>
 
@@ -164,10 +163,10 @@ Set $serverName[$guildID]'s prefix to `$noMentionMessage`
 <li>
 <p>You’re all set, enjoy!</p>
 <discord-messages>
-    <discord-message role-color="#EE7908" author="Nicky">
+    <discord-message author="Nicky" role-color="#EE7908">
         !prefix .
     </discord-message>
-    <discord-message bot verified author="Wiki Bot" role-color="#748BD4">
+    <discord-message author="Wiki Bot" verified bot role-color="#748BD4">
         Set Testing's prefix to <code>.</code>
     </discord-message>
 </discord-messages>
