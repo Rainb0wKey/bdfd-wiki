@@ -251,7 +251,7 @@ pre > .buttons :hover {
     color: var(--color1);
     border-color: var(--color1);
     border-radius: 9px;
-    opacity: 1;
+    opacity: .9;
     transition: .1s;
 }
 
@@ -260,9 +260,9 @@ pre > .buttons button {
     margin: 0px 5px;
     padding: 5px;
     cursor: inherit;
-    width: 3.25rem;
-    height: 3.25rem;
-    font-size: 1.9rem;
+    width: 2.7rem;
+    height: 2.7rem;
+    font-size: 1.5rem;
     border-style: solid;
     border-width: 1px;
     border-radius: 10px;
