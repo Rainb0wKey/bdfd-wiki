@@ -3,14 +3,15 @@
 @import 'variables.css';
 
 ::-webkit-scrollbar {
-    background: var(--bg);
+    background: var(--color3);
 }
 ::-webkit-scrollbar-thumb {
-    background: var(--scrollbar);
+    background: var(--color2);
 }
 html {
-    scrollbar-color: var(--scrollbar) var(--bg);
+    scrollbar-color: var(--color2) var(--color3);
 }
+
 #searchresults a,
 .content a:link,
 a:visited,
