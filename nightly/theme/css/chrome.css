@@ -222,6 +222,8 @@ code.hljs:before {
     padding-right: 10px;
 }
 
+/* Buttons */
+
 pre:hover > .buttons {
     visibility: visible;
     opacity: 1;
@@ -230,9 +232,9 @@ pre:hover > .buttons {
 pre > .buttons {
     position: absolute;
     z-index: 100;
-    right: -2px;
-    margin: 2px;
-    padding: 2px;
+    right: -3px;
+    margin: 1px;
+    padding: 1px;
     visibility: hidden;
     opacity: 0;
     transition: visibility 0.1s linear, opacity 0.1s linear;
@@ -259,6 +261,7 @@ pre > .buttons button {
     border-width: 1px;
     border-radius: 10px;
     border-color: #aeaeae;
+    background: rgb(255 255 255 / 5%);
     opacity: .75;
     transition: .1s;
 }
