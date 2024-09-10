@@ -27,7 +27,6 @@ a > .hljs {
     position: sticky;
     top: 0;
     z-index: 101;
-    margin: auto calc(0px - var(--page-padding));
     padding: 10px;
 }
 
@@ -42,11 +41,6 @@ a > .hljs {
     transition: transform 0.3s;
 }
 
-#menu-bar.bordered > #menu-bar-sticky-container  {
-    border-bottom-color: var(--table-border-color);
-}
-
-
 #menu-bar i, #menu-bar .icon-button {
     position: relative;
     padding: 0 5.5px;
@@ -59,7 +53,7 @@ a > .hljs {
     background: none;
 }
 
-html #menu-bar:not(:hover).folded > #menu-bar-sticky-container {
+#menu-bar:not(:hover).folded  > #menu-bar-sticky-container{
     transform: translateY(calc(-10px - 45px));
 }
 
@@ -70,12 +64,13 @@ html #menu-bar:not(:hover).folded > #menu-bar-sticky-container {
 
 .menu-title {
     display: inline-block;
-    font-weight: 200;
+    font-weight: 400;
     font-size: 2rem;
-    line-height: var(--menu-bar-height);
+    line-height: 45px;
     text-align: center;
     margin: 0;
     flex: 1;
+    margin-right: 5%;
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
