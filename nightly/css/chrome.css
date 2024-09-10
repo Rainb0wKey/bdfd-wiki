@@ -256,7 +256,7 @@ pre > .buttons :hover {
 }
 
 pre > .buttons button {
-    color: #aeaeae;
+    color: #fff;
     margin: 0px 5px;
     padding: 5px;
     cursor: inherit;
@@ -267,8 +267,8 @@ pre > .buttons button {
     border-width: 1px;
     border-radius: 10px;
     border-color: #aeaeae;
-    background: rgb(255 255 255 / 5%);
-    opacity: .75;
+    background: rgb(255 255 255 / 10%);
+    opacity: .8;
     transition: .1s;
 }
 
