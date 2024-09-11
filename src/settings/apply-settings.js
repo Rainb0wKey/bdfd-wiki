@@ -164,6 +164,12 @@ function applySettings() {
   headers.forEach(head => {
     head.style.color = document.body.style.color;
   });
+
+  if (document.body.style.background != '#000') {
+    document.querySelector('meta[name="theme-color"]').setAttribute('content', `hsl(${mainHue}, 80%, 8%)`);
+  } else {
+    document.querySelector('meta[name="theme-color"]').setAttribute('content', `#000`);
+  }
   
   setDiscordTheme(data['discord-example-theme']);
 }
