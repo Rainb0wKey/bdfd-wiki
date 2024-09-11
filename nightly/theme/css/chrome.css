@@ -100,6 +100,8 @@ a > .hljs {
     color: #ded;
 }
 
+/* Hide sidebar button for PC & Add text in the menu bar */
+
 @media (min-width: 750px) {
     #sidebar-toggle {
         display: none;
@@ -113,6 +115,10 @@ a > .hljs {
         margin-top: 15%;
         margin-left: -15%;
         background: var(--color2);
+    }
+
+    .menu-title:after {
+        content: " ·  Wiki"
     }
 }
 
