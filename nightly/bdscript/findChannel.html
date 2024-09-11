@@ -80,7 +80,7 @@
             var html = document.querySelector('html');
             var sidebar = 'visible';
 
-            if (window.innerWidth > 768) {
+            if (window.innerWidth <= 750) {
                 html.classList.remove('sidebar-visible');
                 var sidebar = 'hidden';
             }
@@ -158,7 +158,7 @@ Channel ID: $findChannel[$mentionedChannels[1]]
     <discord-message author="RainbowKey" role-color="#E67E22">
         !example <discord-mention type="channel">main-chat</discord-mention>
     </discord-message>
-    <discord-message role-color="#378afa" bot author="BDFD Support" verified>
+    <discord-message bot verified role-color="#378afa" author="BDFD Support">
         Channel ID: 566370477967147018
     </discord-message>
 </discord-messages>

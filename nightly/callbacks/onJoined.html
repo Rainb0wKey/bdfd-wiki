@@ -80,7 +80,7 @@
             var html = document.querySelector('html');
             var sidebar = 'visible';
 
-            if (window.innerWidth > 768) {
+            if (window.innerWidth <= 750) {
                 html.classList.remove('sidebar-visible');
                 var sidebar = 'hidden';
             }
@@ -173,7 +173,7 @@
     <discord-system-message type="join">
         Welcome <font color="white">Nicky</font>. Say hi!
     </discord-system-message>
-    <discord-message author="Wiki Bot" highlight role-color="#748BD4" bot verified>
+    <discord-message bot author="Wiki Bot" highlight role-color="#748BD4" verified>
         <discord-mention>Nicky</discord-mention>, welcome to Cool Server!
     </discord-message>
 </discord-messages>

@@ -80,7 +80,7 @@
             var html = document.querySelector('html');
             var sidebar = 'visible';
 
-            if (window.innerWidth > 768) {
+            if (window.innerWidth <= 750) {
                 html.classList.remove('sidebar-visible');
                 var sidebar = 'hidden';
             }
@@ -154,7 +154,7 @@ $banID
     <discord-message author="RainbowKey" role-color="#E67E22">
         !example 854665455527526421
     </discord-message>
-    <discord-message verified author="BDFD Support" role-color="#378afa" bot>
+    <discord-message role-color="#378afa" verified bot author="BDFD Support">
         <discord-mention>Chilli</discord-mention> was banned!
     </discord-message>
     <discord-system-message type="leave">

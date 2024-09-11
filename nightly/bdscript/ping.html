@@ -80,7 +80,7 @@
             var html = document.querySelector('html');
             var sidebar = 'visible';
 
-            if (window.innerWidth > 768) {
+            if (window.innerWidth <= 750) {
                 html.classList.remove('sidebar-visible');
                 var sidebar = 'hidden';
             }
@@ -151,7 +151,7 @@ Pong! $pingms
     <discord-message role-color="#E67E22" author="RainbowKey">
         !example
     </discord-message>
-    <discord-message verified bot author="BDFD Support" role-color="#378afa">
+    <discord-message verified bot role-color="#378afa" author="BDFD Support">
         Pong! 5ms
     </discord-message>
 </discord-messages>

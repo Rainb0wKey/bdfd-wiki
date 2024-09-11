@@ -80,7 +80,7 @@
             var html = document.querySelector('html');
             var sidebar = 'visible';
 
-            if (window.innerWidth > 768) {
+            if (window.innerWidth <= 750) {
                 html.classList.remove('sidebar-visible');
                 var sidebar = 'hidden';
             }
@@ -148,10 +148,10 @@
 There are $categoryCount categories in this server!
 </code></pre>
 <discord-messages>
-    <discord-message role-color="#EE7908" author="Nicky">
+    <discord-message author="Nicky" role-color="#EE7908">
         !categories
     </discord-message>
-    <discord-message bot verified role-color="#748BD4" author="Wiki Bot">
+    <discord-message author="Wiki Bot" verified role-color="#748BD4" bot>
         There are 3 categories in this server!
     </discord-message>
 </discord-messages>

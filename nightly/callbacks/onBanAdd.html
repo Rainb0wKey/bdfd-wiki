@@ -80,7 +80,7 @@
             var html = document.querySelector('html');
             var sidebar = 'visible';
 
-            if (window.innerWidth > 768) {
+            if (window.innerWidth <= 750) {
                 html.classList.remove('sidebar-visible');
                 var sidebar = 'hidden';
             }
@@ -167,7 +167,7 @@
 <li>
 <p>Now you have a ban message! ✨</p>
 <discord-messages>
-    <discord-message author="Wiki Bot" verified role-color="#748BD4" bot>
+    <discord-message bot author="Wiki Bot" verified role-color="#748BD4">
         <discord-mention>User</discord-mention> was struck with the ban hammer!
     </discord-message>
     <discord-system-message type="leave">

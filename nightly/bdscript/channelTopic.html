@@ -80,7 +80,7 @@
             var html = document.querySelector('html');
             var sidebar = 'visible';
 
-            if (window.innerWidth > 768) {
+            if (window.innerWidth <= 750) {
                 html.classList.remove('sidebar-visible');
                 var sidebar = 'hidden';
             }
@@ -151,7 +151,7 @@
     <discord-message role-color="#EE7908" author="Nicky">
         !example
     </discord-message>
-    <discord-message author="Wiki Bot" role-color="#748BD4" bot verified>
+    <discord-message verified author="Wiki Bot" role-color="#748BD4" bot>
         <discord-mention type="channel">testing</discord-mention>'s channel topic is: A testing channel!
     </discord-message>
 </discord-messages>

@@ -80,7 +80,7 @@
             var html = document.querySelector('html');
             var sidebar = 'visible';
 
-            if (window.innerWidth > 768) {
+            if (window.innerWidth <= 750) {
                 html.classList.remove('sidebar-visible');
                 var sidebar = 'hidden';
             }
@@ -167,7 +167,7 @@
 <li>
 <p>Now you have an unban message! ✨</p>
 <discord-messages>
-    <discord-message role-color="#748BD4" author="Wiki Bot" verified bot>
+    <discord-message author="Wiki Bot" role-color="#748BD4" verified bot>
         Carl-bot (235148962103951360) was unbanned!
     </discord-message>
 </discord-messages>

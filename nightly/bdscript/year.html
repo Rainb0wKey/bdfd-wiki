@@ -80,7 +80,7 @@
             var html = document.querySelector('html');
             var sidebar = 'visible';
 
-            if (window.innerWidth > 768) {
+            if (window.innerWidth <= 750) {
                 html.classList.remove('sidebar-visible');
                 var sidebar = 'hidden';
             }
@@ -154,7 +154,7 @@ Current Year: $year
     <discord-message author="Nicky" role-color="#EE7908">
         !year
     </discord-message>
-    <discord-message author="Wiki Bot" bot role-color="#748BD4">
+    <discord-message bot author="Wiki Bot" role-color="#748BD4">
         Current Year: 2024
     </discord-message>
 </discord-messages>

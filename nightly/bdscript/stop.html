@@ -80,7 +80,7 @@
             var html = document.querySelector('html');
             var sidebar = 'visible';
 
-            if (window.innerWidth > 768) {
+            if (window.innerWidth <= 750) {
                 html.classList.remove('sidebar-visible');
                 var sidebar = 'hidden';
             }
@@ -170,7 +170,7 @@ Expression: $message
     <discord-message author="RainbowKey" role-color="#E67E22">
         !example 6+10
     </discord-message>
-    <discord-message bot verified author="BDFD Support" role-color="#378afa">
+    <discord-message bot verified role-color="#378afa" author="BDFD Support">
         16<br />Expression: 6+10
     </discord-message>
 </discord-messages>

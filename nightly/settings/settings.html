@@ -80,7 +80,7 @@
             var html = document.querySelector('html');
             var sidebar = 'visible';
 
-            if (window.innerWidth > 768) {
+            if (window.innerWidth <= 750) {
                 html.classList.remove('sidebar-visible');
                 var sidebar = 'hidden';
             }
@@ -299,7 +299,7 @@
             </discord-reaction>
         </discord-reactions>
     </discord-message>
-    <discord-message bot author="BDFD Support" role-color="#378afa" verified>
+    <discord-message bot verified role-color="#378afa" author="BDFD Support">
         Added!
     </discord-message>
 </discord-messages>

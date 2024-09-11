@@ -80,7 +80,7 @@
             var html = document.querySelector('html');
             var sidebar = 'visible';
 
-            if (window.innerWidth > 768) {
+            if (window.innerWidth <= 750) {
                 html.classList.remove('sidebar-visible');
                 var sidebar = 'hidden';
             }
@@ -171,10 +171,10 @@
 `$userBadges[$authorID;` `]`
 </code></pre>
 <discord-messages>
-    <discord-message author="RainbowKey" role-color="#E67E22">
+    <discord-message role-color="#E67E22" author="RainbowKey">
         !example main-chat
     </discord-message>
-    <discord-message bot author="BDFD Support" verified role-color="#378afa">
+    <discord-message verified role-color="#378afa" bot author="BDFD Support">
         <discord-inline-code>hype_squad_balance</discord-inline-code> <discord-inline-code>partner</discord-inline-code>
     </discord-message>
 </discord-messages>

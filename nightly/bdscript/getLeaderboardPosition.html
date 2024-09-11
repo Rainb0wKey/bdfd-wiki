@@ -80,7 +80,7 @@
             var html = document.querySelector('html');
             var sidebar = 'visible';
 
-            if (window.innerWidth > 768) {
+            if (window.innerWidth <= 750) {
                 html.classList.remove('sidebar-visible');
                 var sidebar = 'hidden';
             }
@@ -168,7 +168,7 @@ Your position in the leaderboard: $getLeaderboardPosition[user;Coins;desc]
     <discord-message role-color="#E67E22" author="RainbowKey">
         !example
     </discord-message>
-    <discord-message role-color="#378afa" author="BDFD Support" bot verified>
+    <discord-message bot verified author="BDFD Support" role-color="#378afa">
         Your position in the leaderboard: 2
     </discord-message>
 </discord-messages>

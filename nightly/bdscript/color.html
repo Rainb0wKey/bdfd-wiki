@@ -80,7 +80,7 @@
             var html = document.querySelector('html');
             var sidebar = 'visible';
 
-            if (window.innerWidth > 768) {
+            if (window.innerWidth <= 750) {
                 html.classList.remove('sidebar-visible');
                 var sidebar = 'hidden';
             }
@@ -154,10 +154,10 @@ $description[⬅️ That is the embed color border!]
 $color[#673ab7]
 </code></pre>
 <discord-messages>
-    <discord-message author="Nicky" role-color="#EE7908">
+    <discord-message role-color="#EE7908" author="Nicky">
         !example
     </discord-message>
-    <discord-message role-color="#748BD4" verified author="Wiki Bot" bot>
+    <discord-message author="Wiki Bot" bot role-color="#748BD4" verified>
         <none>
         <discord-embed slot="embeds" color="#673ab7">
             <discord-embed-description slot="description">
