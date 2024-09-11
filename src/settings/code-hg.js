@@ -115,7 +115,6 @@ function highlight(scheme) {
         });
 
         codeBlock.innerHTML = code;
-        console.log("Highlighted code: " + code);
     });
 }
 
