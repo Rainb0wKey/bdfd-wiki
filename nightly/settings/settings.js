@@ -473,15 +473,20 @@ function loadSettings() {
   }
 
   var codedesign = data['code-hg'];
-  
+
   if (codeTextInput) {
     try {
-      if(localStorage.getItem("code-hg")) codedesign = JSON.parse(localStorage.getItem("code-hg"));
+        if(localStorage.getItem("code-hg")) codedesign = JSON.parse(localStorage.getItem("code-hg"));
     } catch { }
-    
-    const charJSONCount = codedesign.length; 
-    charCountElement.textContent = `${charJSONCount} / 10000`;
-    codeTextInput.value =  codedesign;
+
+    if (Array.isArray(codedesign)) {
+        const charJSONCount = codedesign.length;
+        charCountElement.textContent = `${charJSONCount} / 10000`;
+    } else if (typeof codedesign === 'object') {
+        codeTextInput.value = JSON.stringify(codedesign);
+    } else {
+        codeTextInput.value = codedesign;
+    }
   }
   
   if (themeChangerRange) {
