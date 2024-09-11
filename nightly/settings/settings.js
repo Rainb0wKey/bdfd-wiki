@@ -361,7 +361,7 @@ function updateCodeHG() {
   const charCountElement = document.querySelector('.charCount');
   const jsonHG = codeInput.value;
   
-  const charCount = codeInput.value.replace(/[\s\n]/g, '').length;
+  const charCount = codeInput.value.replace(/[\s\n]/g, '').length; // Ignore spaces and new rows
   charCountElement.textContent = `${charCount} / 10000`;
 
   if (charCount >= 10000) {
