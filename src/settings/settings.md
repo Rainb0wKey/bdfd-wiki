@@ -57,7 +57,7 @@ Let's customize your experience in our Bot Designer For Discord wiki world!
     <i class="fa fa-refresh" aria-hidden="true"></i>
   </button>
   <div class="textsizebuttons">
-    <label id="display-size">62</label>
+    <label id="display-size">60</label>
     <input type="range" id="textsize" min="50" max="100" value="60" oninput="changeFontSize()"/>
     <p id="default-is">60%</p>
   </div>
