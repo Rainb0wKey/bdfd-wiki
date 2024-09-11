@@ -105,48 +105,6 @@ if (window.playground_copyable) {
 		}
 	});
 
-	sidebarResizeHandle.addEventListener('mousedown', initResize, false);
-
-	function initResize() {
-		window.addEventListener('mousemove', resize, false);
-		window.addEventListener('mouseup', stopResize, false);
-		html.classList.add('sidebar-resizing');
-	}
-	function resize(e) {
-		document.documentElement.style.setProperty('--sidebar-width', (e.clientX - sidebar.offsetLeft) + 'px');
-	}
-	//on mouseup remove windows functions mousemove & mouseup
-	function stopResize() {
-		html.classList.remove('sidebar-resizing');
-		window.removeEventListener('mousemove', resize, false);
-		window.removeEventListener('mouseup', stopResize, false);
-	}
-
-	document.addEventListener('touchstart', (e) => {
-		firstContact = {
-			x: e.touches[0].clientX,
-			time: Date.now()
-		};
-	}, { passive: true });
-
-	document.addEventListener('touchmove', (e) => {
-		if (!firstContact)
-			return;
-
-		var curX = e.touches[0].clientX;
-		var xDiff = curX - firstContact.x,
-			tDiff = Date.now() - firstContact.time;
-
-		if (tDiff < 250 && Math.abs(xDiff) >= 150) {
-			if (xDiff >= 0 && firstContact.x < Math.min(document.body.clientWidth * 0.25, 300))
-				showSidebar();
-			else if (xDiff < 0 && curX < 300)
-				hideSidebar();
-
-			firstContact = null;
-		}
-	}, { passive: true });
-
 	// Scroll sidebar to current active section
 	const activeSection = sidebar.querySelector(".active");
 	if (activeSection) {
