@@ -252,6 +252,14 @@ summary {
     padding: 10px;
     border-radius: 10px;
     cursor: pointer;
+    font-weight: bold;
+    margin-top: 1rem;
+}
+
+details {
+    background-color: var(--color3);
+    border-radius: 10px;
+    padding: 0 10px 5px 10px;
 }
 
 /* Buttons */
