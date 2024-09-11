@@ -471,11 +471,17 @@ function loadSettings() {
    }
 }
   }
+
+  var codedesign = data['code-hg'];
   
   if (codeTextInput) {
-    const charJSONCount = data['code-hg'].length; 
+    try {
+      if(localStorage.getItem("code-hg")) codedesign = JSON.parse(localStorage.getItem("code-hg"));
+    } catch { }
+    
+    const charJSONCount = codedesign.length; 
     charCountElement.textContent = `${charJSONCount} / 10000`;
-    codeTextInput.value =  data['code-hg'];
+    codeTextInput.value =  codedesign;
   }
   
   if (themeChangerRange) {
