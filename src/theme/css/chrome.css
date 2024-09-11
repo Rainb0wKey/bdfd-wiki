@@ -245,6 +245,15 @@ code.hljs:before {
     border-top-right-radius: 10px !important;
 }
 
+/* Summary */
+
+summary {
+    background-color: var(--color3);
+    padding: 10px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
 /* Buttons */
 
 pre:hover > .buttons {
