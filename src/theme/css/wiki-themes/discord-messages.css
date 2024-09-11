@@ -55,6 +55,18 @@
     margin-left: -0.25rem;
 }
 
+.discord-embed .discord-embed-author {
+    -webkit-box-align: center;
+    align-items: center;
+    color: #fff;
+    font-size: 14px;
+    display: flex;
+    font-weight: 600;
+    grid-column: 1 / 1;
+    margin-top: 3px;
+    min-width: 0;
+}
+
 .discord-embed .discord-embed-title {
     -webkit-box-align: center;
     align-items: center;
@@ -72,7 +84,7 @@
     font-weight: 400;
     grid-column: 1 / 1;
     line-height: 1.125rem;
-    margin-top: -10px;
+    margin-top: -19px;
     min-width: 0;
     white-space: pre-line;
     line-height: 20px;
