@@ -81,10 +81,10 @@
             var sidebar = 'visible';
 
             if (window.innerWidth > 768) {
+                html.classList.remove('sidebar-visible');
                 var sidebar = 'hidden';
             }
 
-            html.classList.remove('sidebar-visible');
             html.classList.add("sidebar-" + sidebar);
         </script>
 
@@ -156,7 +156,7 @@ $c[This is a say command. You are reading a comment!]
     <discord-message role-color="#EE7908" author="Nicky">
         !say As you can see, the comment doesn't appear! Pretty cool; right?
     </discord-message>
-    <discord-message author="Wiki Bot" verified role-color="#748BD4" bot>
+    <discord-message verified role-color="#748BD4" bot author="Wiki Bot">
         As you can see, the comment doesn't appear! Pretty cool; right?
     </discord-message>
 </discord-messages>

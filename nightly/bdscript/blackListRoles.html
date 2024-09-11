@@ -81,10 +81,10 @@
             var sidebar = 'visible';
 
             if (window.innerWidth > 768) {
+                html.classList.remove('sidebar-visible');
                 var sidebar = 'hidden';
             }
 
-            html.classList.remove('sidebar-visible');
             html.classList.add("sidebar-" + sidebar);
         </script>
 
@@ -154,10 +154,10 @@ $blackListRoles[Owner;Bot;❌ You can't use this command!]
 Pong! $ping ms
 </code></pre>
 <discord-messages>
-    <discord-message author="RainbowKey" role-color="#E67E22">
+    <discord-message role-color="#E67E22" author="RainbowKey">
         !example
     </discord-message>
-    <discord-message bot verified author="BDFD Support" role-color="#378afa">
+    <discord-message role-color="#378afa" author="BDFD Support" bot verified>
         ❌ You can't use this command!
     </discord-message>
     <discord-message author="RainbowKey" role-color="#E67E22">
@@ -166,7 +166,7 @@ Pong! $ping ms
     <discord-message author="Kito" role-color="#4365ab">
         !example
     </discord-message>
-    <discord-message role-color="#378afa" verified author="BDFD Support" bot>
+    <discord-message author="BDFD Support" bot verified role-color="#378afa">
         Pong! 2 ms
     </discord-message>
 </discord-messages>

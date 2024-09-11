@@ -81,10 +81,10 @@
             var sidebar = 'visible';
 
             if (window.innerWidth > 768) {
+                html.classList.remove('sidebar-visible');
                 var sidebar = 'hidden';
             }
 
-            html.classList.remove('sidebar-visible');
             html.classList.add("sidebar-" + sidebar);
         </script>
 
@@ -168,7 +168,7 @@ Set $serverName[$guildID]'s prefix to `$noMentionMessage`
     <discord-message role-color="#EE7908" author="Nicky">
         !prefix .
     </discord-message>
-    <discord-message author="Wiki Bot" verified role-color="#748BD4" bot>
+    <discord-message verified role-color="#748BD4" author="Wiki Bot" bot>
         Set Testing's prefix to <code>.</code>
     </discord-message>
 </discord-messages>

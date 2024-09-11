@@ -81,10 +81,10 @@
             var sidebar = 'visible';
 
             if (window.innerWidth > 768) {
+                html.classList.remove('sidebar-visible');
                 var sidebar = 'hidden';
             }
 
-            html.classList.remove('sidebar-visible');
             html.classList.add("sidebar-" + sidebar);
         </script>
 
@@ -157,14 +157,14 @@ $sendMessage[$username clicked on the reaction]
     <discord-message author="Nicky" role-color="#EE7908">
         !example
     </discord-message>
-    <discord-message verified role-color="#748BD4" author="Wiki Bot" bot>
+    <discord-message bot role-color="#748BD4" author="Wiki Bot" verified>
         Click
         <discord-reactions slot="reactions">
-            <discord-reaction emoji="https://cdn.discordapp.com/emojis/766607515445231637.webp" name=":emoji:" count="2" reacted>
+            <discord-reaction name=":emoji:" emoji="https://cdn.discordapp.com/emojis/766607515445231637.webp" reacted count="2">
             </discord-reaction>
         </discord-reactions>
     </discord-message>
-    <discord-message author="Wiki Bot" verified role-color="#748BD4" bot>
+    <discord-message author="Wiki Bot" bot verified role-color="#748BD4">
         Nicky clicked on the reaction
     </discord-message>
 </discord-messages>

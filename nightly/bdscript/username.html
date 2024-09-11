@@ -81,10 +81,10 @@
             var sidebar = 'visible';
 
             if (window.innerWidth > 768) {
+                html.classList.remove('sidebar-visible');
                 var sidebar = 'hidden';
             }
 
-            html.classList.remove('sidebar-visible');
             html.classList.add("sidebar-" + sidebar);
         </script>
 
@@ -151,7 +151,7 @@ Hello $username!
     <discord-message author="Spen" role-color="#b9a0e0">
         !echo
     </discord-message>
-    <discord-message author="Wiki Bot" bot role-color="#b9a0e0">
+    <discord-message author="Wiki Bot" role-color="#b9a0e0" bot>
         Hello Spen!
     </discord-message>
 </discord-messages>

@@ -81,10 +81,10 @@
             var sidebar = 'visible';
 
             if (window.innerWidth > 768) {
+                html.classList.remove('sidebar-visible');
                 var sidebar = 'hidden';
             }
 
-            html.classList.remove('sidebar-visible');
             html.classList.add("sidebar-" + sidebar);
         </script>
 
@@ -159,7 +159,7 @@ $channelType[$channelID]
     <discord-message author="Nicky" role-color="#EE7908">
         !channelType
     </discord-message>
-    <discord-message bot role-color="#748BD4" author="Wiki Bot" verified>
+    <discord-message verified author="Wiki Bot" role-color="#748BD4" bot>
         text
     </discord-message>
 </discord-messages>
@@ -168,7 +168,7 @@ $channelType[$channelID]
     <discord-message author="Nicky">
         !channelType
     </discord-message>
-    <discord-message verified author="Wiki Bot" bot>
+    <discord-message author="Wiki Bot" verified bot>
         dm
     </discord-message>
 </discord-messages>

@@ -81,10 +81,10 @@
             var sidebar = 'visible';
 
             if (window.innerWidth > 768) {
+                html.classList.remove('sidebar-visible');
                 var sidebar = 'hidden';
             }
 
-            html.classList.remove('sidebar-visible');
             html.classList.add("sidebar-" + sidebar);
         </script>
 
@@ -171,10 +171,10 @@ $cooldown[10m;Please wait %time-m%!]
     <discord-message verified role-color="#748BD4" author="Wiki Bot" bot>
         Hello Nicky!
     </discord-message>
-    <discord-message author="Nicky" role-color="#EE7908">
+    <discord-message role-color="#EE7908" author="Nicky">
         !hello
     </discord-message>
-    <discord-message verified author="Wiki Bot" bot role-color="#748BD4">
+    <discord-message bot author="Wiki Bot" role-color="#748BD4" verified>
         Please wait 9.9 Mins🕧!
     </discord-message>
 </discord-messages>

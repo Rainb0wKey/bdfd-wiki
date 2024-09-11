@@ -81,10 +81,10 @@
             var sidebar = 'visible';
 
             if (window.innerWidth > 768) {
+                html.classList.remove('sidebar-visible');
                 var sidebar = 'hidden';
             }
 
-            html.classList.remove('sidebar-visible');
             html.classList.add("sidebar-" + sidebar);
         </script>
 
@@ -161,7 +161,7 @@ Successfully deleted $roleName[$findRole[$message]]
     <discord-message author="RainbowKey" role-color="#E67E22">
         !example Cool Role
     </discord-message>
-    <discord-message verified author="BDFD Support" bot role-color="#378afa">
+    <discord-message bot verified role-color="#378afa" author="BDFD Support">
         Successfully deleted Cool Role
     </discord-message>
 </discord-messages>

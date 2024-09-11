@@ -81,10 +81,10 @@
             var sidebar = 'visible';
 
             if (window.innerWidth > 768) {
+                html.classList.remove('sidebar-visible');
                 var sidebar = 'hidden';
             }
 
-            html.classList.remove('sidebar-visible');
             html.classList.add("sidebar-" + sidebar);
         </script>
 
@@ -159,10 +159,10 @@ Author of message: $username[$authorOfMessage[$message[1];$message[2]]]
     <discord-message role-color="#000000" author="Kemi">
         Message ID: 1135158746369245314
     </discord-message>
-    <discord-message role-color="#E67E22" author="RainbowKey">
+    <discord-message author="RainbowKey" role-color="#E67E22">
         !example 566370477967147018 1135158746369245314
     </discord-message>
-    <discord-message bot role-color="#378afa" author="BDFD Support" verified>
+    <discord-message role-color="#378afa" verified bot author="BDFD Support">
         Author of message: Kemi
     </discord-message>
 </discord-messages>

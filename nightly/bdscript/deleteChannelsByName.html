@@ -81,10 +81,10 @@
             var sidebar = 'visible';
 
             if (window.innerWidth > 768) {
+                html.classList.remove('sidebar-visible');
                 var sidebar = 'hidden';
             }
 
-            html.classList.remove('sidebar-visible');
             html.classList.add("sidebar-" + sidebar);
         </script>
 
@@ -161,7 +161,7 @@ $deleteChannelsByName[$message]
     <discord-message author="RainbowKey" role-color="#E67E22">
         !example main-chat
     </discord-message>
-    <discord-message bot author="BDFD Support" role-color="#378afa" verified>
+    <discord-message author="BDFD Support" role-color="#378afa" bot verified>
         Successfully deleted #main-chat
     </discord-message>
 </discord-messages>

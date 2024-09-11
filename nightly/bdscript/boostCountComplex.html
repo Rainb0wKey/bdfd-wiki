@@ -81,10 +81,10 @@
             var sidebar = 'visible';
 
             if (window.innerWidth > 768) {
+                html.classList.remove('sidebar-visible');
                 var sidebar = 'hidden';
             }
 
-            html.classList.remove('sidebar-visible');
             html.classList.add("sidebar-" + sidebar);
         </script>
 
@@ -158,7 +158,7 @@ This server currently has $boostCount[$message[1]] boost(s).
     <discord-message author="RainbowKey" role-color="#E67E22">
         !example 566363823137882154
     </discord-message>
-    <discord-message bot author="BDFD Support" role-color="#378afa" verified>
+    <discord-message role-color="#378afa" author="BDFD Support" verified bot>
         This server currently has 38 boost(s).
     </discord-message>
 </discord-messages>
