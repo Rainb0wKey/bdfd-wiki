@@ -482,10 +482,13 @@ function loadSettings() {
     if (Array.isArray(codedesign)) {
         const charJSONCount = codedesign.length;
         charCountElement.textContent = `${charJSONCount} / 10000`;
+        console.log("count")
     } else if (typeof codedesign === 'object') {
         codeTextInput.value = JSON.stringify(codedesign);
+        console.log("yes")
     } else {
         codeTextInput.value = codedesign;
+        console.log("no")
     }
   }
   
