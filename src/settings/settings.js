@@ -360,8 +360,8 @@ function updateCodeHG() {
   const codeInput = document.getElementById('jsonhginput');
   const charCountElement = document.querySelector('.charCount');
   const jsonHG = codeInput.value;
-
-  const charCount = codeInput.value.length; 
+  
+  const charCount = codeInput.value.replace(/[\s\n]/g, '').length;
   charCountElement.textContent = `${charCount} / 10000`;
 
   if (charCount >= 10000) {
@@ -479,8 +479,7 @@ function loadSettings() {
         if(localStorage.getItem("code-hg")) codedesign = JSON.parse(localStorage.getItem("code-hg"));
     } catch { }
 
-    var inputcodedesign = JSON.stringify(codedesign)
-    
+    var inputcodedesign = JSON.stringify(codedesign);
     const charJSONCount = inputcodedesign.length;
     
     charCountElement.textContent = `${charJSONCount} / 10000`;
