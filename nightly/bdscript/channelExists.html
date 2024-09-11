@@ -83,6 +83,8 @@
             if (window.innerWidth > 768) {
                 var sidebar = 'hidden';
             }
+
+            html.classList.remove('sidebar-visible');
             html.classList.add("sidebar-" + sidebar);
         </script>
 
@@ -153,7 +155,7 @@ $channelExists[$message]
     <discord-message author="RainbowKey" role-color="#E67E22">
         !example 566370477967147018
     </discord-message>
-    <discord-message verified role-color="#378afa" author="BDFD Support" bot>
+    <discord-message bot author="BDFD Support" role-color="#378afa" verified>
         true
     </discord-message>
 </discord-messages>

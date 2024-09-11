@@ -83,6 +83,8 @@
             if (window.innerWidth > 768) {
                 var sidebar = 'hidden';
             }
+
+            html.classList.remove('sidebar-visible');
             html.classList.add("sidebar-" + sidebar);
         </script>
 
@@ -149,7 +151,7 @@ There are $categoryCount categories in this server!
     <discord-message author="Nicky" role-color="#EE7908">
         !categories
     </discord-message>
-    <discord-message author="Wiki Bot" bot verified role-color="#748BD4">
+    <discord-message verified bot author="Wiki Bot" role-color="#748BD4">
         There are 3 categories in this server!
     </discord-message>
 </discord-messages>

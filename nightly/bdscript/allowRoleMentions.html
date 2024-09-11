@@ -83,6 +83,8 @@
             if (window.innerWidth > 768) {
                 var sidebar = 'hidden';
             }
+
+            html.classList.remove('sidebar-visible');
             html.classList.add("sidebar-" + sidebar);
         </script>
 
@@ -151,7 +153,7 @@ $allowRoleMentions[]
 I'm pinging &lt;@&amp;858376972303204362&gt;, but no one got notified; wow!
 </code></pre>
 <discord-messages>
-    <discord-message author="Nicky" role-color="#EE7908">
+    <discord-message role-color="#EE7908" author="Nicky">
         !example
     </discord-message>
     <discord-message author="Wiki Bot" role-color="#748BD4" verified bot>

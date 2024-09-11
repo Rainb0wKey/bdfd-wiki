@@ -83,6 +83,8 @@
             if (window.innerWidth > 768) {
                 var sidebar = 'hidden';
             }
+
+            html.classList.remove('sidebar-visible');
             html.classList.add("sidebar-" + sidebar);
         </script>
 
@@ -162,10 +164,10 @@ $endtry
     <discord-message author="RainbowKey" role-color="#E67E22">
         !example a
     </discord-message>
-    <discord-message author="RainbowKey" role-color="#E67E22">
+    <discord-message role-color="#E67E22" author="RainbowKey">
         !example 10
     </discord-message>
-    <discord-message author="BDFD Support" bot role-color="#378afa" verified>
+    <discord-message verified role-color="#378afa" author="BDFD Support" bot>
         15
     </discord-message>
 </discord-messages>

@@ -83,6 +83,8 @@
             if (window.innerWidth > 768) {
                 var sidebar = 'hidden';
             }
+
+            html.classList.remove('sidebar-visible');
             html.classList.add("sidebar-" + sidebar);
         </script>
 
@@ -151,10 +153,10 @@ $noMentionMessage
 $c[This is a say command. You are reading a comment!]
 </code></pre>
 <discord-messages>
-    <discord-message author="Nicky" role-color="#EE7908">
+    <discord-message role-color="#EE7908" author="Nicky">
         !say As you can see, the comment doesn't appear! Pretty cool; right?
     </discord-message>
-    <discord-message author="Wiki Bot" bot verified role-color="#748BD4">
+    <discord-message role-color="#748BD4" author="Wiki Bot" verified bot>
         As you can see, the comment doesn't appear! Pretty cool; right?
     </discord-message>
 </discord-messages>

@@ -83,6 +83,8 @@
             if (window.innerWidth > 768) {
                 var sidebar = 'hidden';
             }
+
+            html.classList.remove('sidebar-visible');
             html.classList.add("sidebar-" + sidebar);
         </script>
 
@@ -149,7 +151,7 @@ There are $emoteCount emojis in $serverName[$guildID]!
     <discord-message author="RainbowKey" role-color="#E67E22">
         !example
     </discord-message>
-    <discord-message verified author="BDFD Support" bot role-color="#378afa">
+    <discord-message role-color="#378afa" verified bot author="BDFD Support">
         There are 26 emojis in Bot Designer for Discord Official Server!
     </discord-message>
 </discord-messages>

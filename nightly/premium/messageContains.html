@@ -83,6 +83,8 @@
             if (window.innerWidth > 768) {
                 var sidebar = 'hidden';
             }
+
+            html.classList.remove('sidebar-visible');
             html.classList.add("sidebar-" + sidebar);
         </script>
 
@@ -161,13 +163,13 @@
     <discord-message author="noituri" role-color="#F1BDEE">
         Hello
     </discord-message>
-    <discord-message bot role-color="#748BD4" author="Wiki Bot" verified>
+    <discord-message verified author="Wiki Bot" bot role-color="#748BD4">
         Hello there! How are you?
     </discord-message>
-    <discord-message author="Nicky" role-color="#EE7908">
+    <discord-message role-color="#EE7908" author="Nicky">
         Hi Noituri
     </discord-message>
-    <discord-message verified author="Wiki Bot" bot role-color="#748BD4">
+    <discord-message bot author="Wiki Bot" verified role-color="#748BD4">
         Hello there! How are you?
     </discord-message>
 </discord-messages>
