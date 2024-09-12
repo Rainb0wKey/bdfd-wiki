@@ -227,8 +227,10 @@ function updateColor() {
       const colorGradient1 = `hsl(${hue}, 80%, 20%)`;
       const colorGradient2 = `hsl(${hue}, 80%, 5%)`;
       document.body.style.background = `linear-gradient(to bottom right, ${colorGradient1}, ${colorGradient2})`;
+      updateJsonFile("theme-bg", `linear-gradient(to bottom right, ${colorGradient1}, ${colorGradient2})`);
     } else {
       document.body.style.background = `hsl(${hue}, 80%, 8%)`;
+      updateJsonFile("theme-bg", `hsl(${hue}, 80%, 8%)`);
     }
     setStatusBar(hue);
     document.body.style.color = `hsl(${hue}, 100%, 90%)`;
@@ -236,7 +238,6 @@ function updateColor() {
       head.style.color = document.body.style.color;
     });
     document.documentElement.style.scrollbarColor = `hsl(${hue}, 70%, 25%)` + `hsl(${hue}, 80%, 8%)`;
-    updateJsonFile("theme-bg", document.body.style.background);
     updateJsonFile("theme-text", document.body.style.color);
   };
 
