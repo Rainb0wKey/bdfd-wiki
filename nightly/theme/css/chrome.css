@@ -246,6 +246,10 @@ summary {
     margin-top: 1rem;
 }
 
+details > h2 {
+  margin-top: 2rem;
+}
+
 details:hover {
     border-color: var(--color2);
     transition: .3s;
