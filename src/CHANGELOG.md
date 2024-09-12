@@ -1,19 +1,6 @@
 # Changelog
 
 # 2024
-
-## September
-- Added `$byteLenght[]`
-- Added `$serverBanner[]`
-- Added `$lastMessageID[]`
-- Added `$boostingSince[]`
-- Added `$leaderboardLenght[]`
-- Fixed `$ceil[]`
-- Fixed `$floor[]`
-- Fixed `$sqrt[]` not works with `$enableDecimals[]`
-- Fixed `$getLeaderboardPosition[]`
-
-<details><summary>Previous Updates</summary>
    
 ## August
 - Added `$log[]`
@@ -23,7 +10,9 @@
 - Added `$floor[]`
 - Added `$sqrt[]`
 - Added `$isInteger[]`
-   
+
+<details><summary>Previous Updates</summary>
+
 ## July
 - Added `$setUserRoles[]`
 - Added `$getLeaderboardPosition[]`
