@@ -93,28 +93,43 @@ function escapeHtml(unsafe) {
 }
 
 function highlight(scheme) {
-    const codeBlocks = document.querySelectorAll('pre code');
+  const codeBlocks = document.querySelectorAll('pre code');
 
-    try {
-      if(localStorage.getItem("code-hg")) scheme = JSON.parse(localStorage.getItem("code-hg"));
-    } catch { }
+  try {
+    if(localStorage.getItem("code-hg")) scheme = JSON.parse(localStorage.getItem("code-hg"));
+  } catch { }
 
-    codeBlocks.forEach(codeBlock => {
-      let code = escapeHtml(codeBlock.textContent);
+  codeBlocks.forEach(codeBlock => {
+    let code = escapeHtml(codeBlock.textContent);
 
-      let keys = Object.keys(scheme.functionsHighlights || {}).sort((a, b) => a.length - b.length);
-      keys.forEach(key => {
-        code = code.replace(new RegExp(`\\b${key}\\b`, 'g'), functionHighlight(key, scheme));
-      });
+    function replaceKeys(text, keys, scheme, replacedKeys = {}) {
+      if (keys.length === 0) return text;
 
-      code = code
+      const key = keys[0];
+
+      if (replacedKeys[key]) {
+        return replaceKeys(text, keys.slice(1), scheme, replacedKeys);
+      }
+
+      const replacement = functionHighlight(key, scheme);
+      const regex = new RegExp(`\\b${key}\\b`, 'g');
+      const newText = text.replace(regex, replacement);
+
+      replacedKeys[key] = true;
+
+      return replaceKeys(newText, keys.slice(1), scheme, replacedKeys);
+    }
+
+    code = replaceKeys(code, Object.keys(scheme.functionsHighlights || {}).sort((a, b) => a.length - b.length), scheme);
+
+    code = code
         .replace(/\;/g, styling("semicolonHighlight", scheme))
         .replace(/\[/g, styling("bracketHighlight", scheme))
         .replace(/\]/g, styling("bracketHighlight", scheme))
         .replace(/\$[a-zA-Z]*/g, styling("fallbackHighlight", scheme));
 
-        codeBlock.innerHTML = code;
-    });
+    codeBlock.innerHTML = code;
+  });
 }
 
 highlight(scheme)
