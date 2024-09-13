@@ -179,10 +179,10 @@ if (window.playground_copyable) {
 		button.addEventListener('click', (e) => {
 			const playground = button.closest("pre");
 			const codeBlock = playground.querySelector("code");
-			if (!codeBlock.style.textWrap || codeBlock.style.textWrap === 'nowrap') {
-			    codeBlock.style.textWrap = 'wrap';
+			if (!codeBlock.style.wordBreak || codeBlock.style.wordBreak === 'normal') {
+				codeBlock.style.wordBreak = 'break-all';
 			} else {
-			    codeBlock.style.textWrap = 'nowrap';
+				codeBlock.style.wordBreak = 'normal';
 			}
 		});
 	});
