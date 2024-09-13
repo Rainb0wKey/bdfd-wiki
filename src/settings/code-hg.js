@@ -100,22 +100,22 @@ function highlight(scheme) {
     } catch { }
 
     codeBlocks.forEach(codeBlock => {
-        let code = escapeHtml(codeBlock.textContent);
-    
-        code = code
-            .replace(/\;/g, styling("semicolonHighlight", scheme))
-            .replace(/\[/g, styling("bracketHighlight", scheme))
-            .replace(/\]/g, styling("bracketHighlight", scheme))
-            .replace(/\$[a-zA-Z]*/g, styling("fallbackHighlight", scheme))
-            .replace(/.*/g, styling("defaultTextHighlight", scheme))
+      let code = escapeHtml(codeBlock.textContent);
 
-        let keys = Object.keys(scheme.functionsHighlights || {}).sort((a, b) => b.length - a.length);
-        keys.forEach(key => {
-            code = code.replace(new RegExp(`\\${key}`, 'g'), functionHighlight(key, scheme));
-        });
+      let keys = Object.keys(scheme.functionsHighlights || {}).sort((a, b) => b.length - a.length);
+      keys.forEach(key => {
+        code = code.replace(new RegExp(`\\b${key}\\b`, 'g'), functionHighlight(key, scheme));
+      });
 
-        codeBlock.innerHTML = code;
-    });
+      code = code
+        .replace(/\;/g, styling("semicolonHighlight", scheme))
+        .replace(/\[/g, styling("bracketHighlight", scheme))
+        .replace(/\]/g, styling("bracketHighlight", scheme))
+        .replace(/\$[a-zA-Z]*/g, styling("fallbackHighlight", scheme))
+        .replace(/.*/g, styling("defaultTextHighlight", scheme));
+
+    codeBlock.innerHTML = code;
+  });
 }
 
 highlight(scheme)
