@@ -179,8 +179,8 @@ if (window.playground_copyable) {
 		button.addEventListener('click', (e) => {
 			const playground = button.closest("pre");
 			const codeBlock = playground.querySelector("code");
-			if (codeBlock.style.whiteSpace === 'pre-wrap') {
-          			codeBlock.style.whiteSpace = 'none';
+			if (codeBlock.style.whiteSpace == 'pre-wrap') {
+          			codeBlock.style.whiteSpace = 'pre';
         		} else {
           			codeBlock.style.whiteSpace = 'pre-wrap';
         		}
