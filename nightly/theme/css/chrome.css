@@ -289,6 +289,10 @@ pre > .buttons :hover {
 }
 
 pre > .buttons button {
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    outline: none;
     color: #fff;
     margin: 1.5px 5px;
     padding: 5px;
