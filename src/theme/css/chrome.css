@@ -145,6 +145,33 @@ a > .hljs {
     }
 }
 
+/* Edit Page */
+
+.editPage {
+    border: solid;
+    border-width: 1px;
+    border-radius: 10px;
+    border-color: var(--color2);
+    color: var(--color1);
+    width: fit-content;
+    padding: 5px;
+    text-decoration: none;
+    margin-top: -90px;
+    text-align: center;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 95%;
+    transition: .3s;
+}
+
+.editPage:hover {
+    font-size: 100%;
+    border-radius: 8px;
+    border-color: var(--color1);
+    transition: .3s;
+}
+
 /* Nav Icons */
 
 .nav-chapters {
