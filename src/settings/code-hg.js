@@ -102,7 +102,7 @@ function highlight(scheme) {
     codeBlocks.forEach(codeBlock => {
       let code = escapeHtml(codeBlock.textContent);
 
-      let keys = Object.keys(scheme.functionsHighlights || {}).sort((a, b) => b.length - a.length);
+      let keys = Object.keys(scheme.functionsHighlights || {}).sort((a, b) => a.length - b.length);
       keys.forEach(key => {
         code = code.replace(new RegExp(`\\b${key}\\b`, 'g'), functionHighlight(key, scheme));
       });
@@ -113,7 +113,7 @@ function highlight(scheme) {
         .replace(/\]/g, styling("bracketHighlight", scheme))
         .replace(/\$[a-zA-Z]*/g, styling("fallbackHighlight", scheme));
 
-      codeBlock.innerHTML = code;
+        codeBlock.innerHTML = code;
     });
 }
 
