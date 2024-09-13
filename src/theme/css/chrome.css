@@ -23,7 +23,7 @@ a > .hljs {
     text-decoration: none;
 }
 
-.content a::before {
+.content a:link::before {
     content: '';
     position: absolute;
     width: 100%;
@@ -37,7 +37,7 @@ a > .hljs {
     transition: transform .3s ease-in-out;
 }
 
-.content a:hover::before {
+.content a:link:hover::before {
     transform-origin: left;
     transform: scaleX(1);
 }
