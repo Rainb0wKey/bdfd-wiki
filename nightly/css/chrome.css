@@ -172,6 +172,10 @@ a > .hljs {
     transition: .3s;
 }
 
+#editPageIcon {
+    padding-right: .4rem;
+}
+
 /* Nav Icons */
 
 .nav-chapters {
