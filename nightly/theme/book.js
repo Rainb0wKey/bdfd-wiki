@@ -180,7 +180,7 @@ if (window.playground_copyable) {
 			const playground = button.closest("pre");
 			const codeBlock = playground.querySelector("code");
 			if (codeBlock.style.whiteSpace === 'pre-wrap') {
-          			codeBlock.style.whiteSpace = 'normal';
+          			codeBlock.style.whiteSpace = 'none';
         		} else {
           			codeBlock.style.whiteSpace = 'pre-wrap';
         		}
