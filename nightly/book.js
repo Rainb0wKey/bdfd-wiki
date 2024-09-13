@@ -179,11 +179,11 @@ if (window.playground_copyable) {
 		button.addEventListener('click', (e) => {
 			const playground = button.closest("pre");
 			const codeBlock = playground.querySelector("code");
-			if (!codeBlock.style.wordBreak || codeBlock.style.wordBreak === 'normal') {
-				codeBlock.style.wordBreak = 'break-all';
-			} else {
-				codeBlock.style.wordBreak = 'normal';
-			}
+			if (codeBlock.style.wordBreak !== 'break-all') {
+          			codeBlock.style.wordBreak = 'break-all';
+        		} else {
+          			codeBlock.style.wordBreak = 'normal';
+        		}
 		});
 	});
 })();
