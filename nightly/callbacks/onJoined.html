@@ -168,7 +168,7 @@
     <discord-system-message type="join">
         Welcome <font color="white">Nicky</font>. Say hi!
     </discord-system-message>
-    <discord-message highlight verified author="Wiki Bot" bot role-color="#748BD4">
+    <discord-message bot verified highlight role-color="#748BD4" author="Wiki Bot">
         <discord-mention>Nicky</discord-mention>, welcome to Cool Server!
     </discord-message>
 </discord-messages>
@@ -250,6 +250,10 @@ $setServerVar[welcome;$mentionedChannels[1]]
                 </div>
             </div>
 
+            <a href="https://github.com/NilPointer-Software/bdfd-wiki/edit/dev/src/callbacks/onJoined.md">
+                <span>Edit this page</span>
+            </a>
+            
             <nav class="nav-wide-wrapper" aria-label="Page navigation">
                     <a href="../callbacks/awaitedCommandError.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
                         <i class="fa fa-angle-left"></i>
