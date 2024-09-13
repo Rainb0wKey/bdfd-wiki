@@ -188,7 +188,7 @@ a > .hljs {
 
 :not(pre) > .hljs {
     display: inline;
-    padding: 0.1em 0.3em;
+    padding: 0.1em 0.3em !important;
     border-radius: 5px !important;
     box-shadow: none;
 }
@@ -202,20 +202,13 @@ a:hover > .hljs {
     text-decoration: underline;
 }
 
-pre {
-    position: relative;
-}
-
-.hljs {
-    padding: 10px;
-}
-
 code.hljs {
     background: var(--color3);
-    margin-top: 1.5em;
+    padding: .8em;
 }
 
 .nostyle {
+    /* Disabled Code HL style */
     color: inherit !important;
     font-weight: inherit !important;
     font-style: normal !important;
