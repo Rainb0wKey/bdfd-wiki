@@ -27,7 +27,7 @@ if (window.playground_copyable) {
 
 			const clipButton = document.createElement('button');
 			clipButton.className = 'fa fa-regular fa-paste clip-button';
-			clipButton.title = 'Copy to clipboard';
+			clipButton.title = 'Copy';
 			clipButton.setAttribute('aria-label', clipButton.title);
 			clipButton.innerHTML = '<i class=\"tooltiptext\"></i>';
 
