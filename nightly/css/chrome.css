@@ -12,11 +12,34 @@ html {
     scrollbar-color: var(--color2) var(--color3);
 }
 
+/* Links */
+
 #searchresults a,
 .content a:link,
 a:visited,
 a > .hljs {
     color: var(--color1);
+    position: relative;
+    text-decoration: none;
+}
+
+.content a::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 1px;
+    border-radius: 10px;
+    background-color: var(--color1);
+    bottom: 0;
+    left: 0;
+    transform-origin: right;
+    transform: scaleX(0);
+    transition: transform .3s ease-in-out;
+}
+
+.content a:hover::before {
+    transform-origin: left;
+    transform: scaleX(1);
 }
 
 /* Menu Bar */
