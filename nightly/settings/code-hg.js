@@ -111,11 +111,10 @@ function highlight(scheme) {
         .replace(/\;/g, styling("semicolonHighlight", scheme))
         .replace(/\[/g, styling("bracketHighlight", scheme))
         .replace(/\]/g, styling("bracketHighlight", scheme))
-        .replace(/\$[a-zA-Z]*/g, styling("fallbackHighlight", scheme))
-        .replace(/.*/g, styling("defaultTextHighlight", scheme));
+        .replace(/\$[a-zA-Z]*/g, styling("fallbackHighlight", scheme));
 
-    codeBlock.innerHTML = code;
-  });
+      codeBlock.innerHTML = code;
+    });
 }
 
 highlight(scheme)
