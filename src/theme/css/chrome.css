@@ -202,9 +202,14 @@ a:hover > .hljs {
     text-decoration: underline;
 }
 
+pre {
+    position: relative;
+}
+
 code.hljs {
     background: var(--color3);
     padding: .8em;
+    margin-bottom: -.5rem;
 }
 
 .nostyle {
@@ -285,11 +290,11 @@ pre > .buttons :hover {
 
 pre > .buttons button {
     color: #fff;
-    margin: 0px 5px;
+    margin: 1.5px 5px;
     padding: 5px;
     cursor: inherit;
-    width: 2.7rem;
-    height: 2.7rem;
+    width: 3.2rem;
+    height: 3.2rem;
     font-size: 1.5rem;
     border-style: solid;
     border-width: 1px;
