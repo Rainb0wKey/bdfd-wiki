@@ -151,6 +151,11 @@
                         {{{ content }}}
                     </main>
 
+                    <a href="{{git_repository_edit_url}}" class="editPage">
+                        <i class='fa fa-edit' id="editPageIcon"></i>
+                        <span>Edit this page</span>
+                    </a>
+
                     <nav class="nav-wrapper" aria-label="Page navigation">
                         <!-- Mobile navigation buttons -->
                         {{#previous}}
@@ -169,11 +174,6 @@
                     </nav>
                 </div>
             </div>
-
-            <a href="{{git_repository_edit_url}}" class="editPage">
-                <i class='fa fa-edit' id="editPageIcon"></i>
-                <span>Edit this page</span>
-            </a>
             
             <nav class="nav-wide-wrapper" aria-label="Page navigation">
                 {{#previous}}
