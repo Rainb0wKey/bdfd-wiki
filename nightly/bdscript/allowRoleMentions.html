@@ -127,17 +127,16 @@
                         link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
                     });
                 </script>
-
-                <a href="https://github.com/NilPointer-Software/bdfd-wiki/edit/dev/src/bdscript/allowRoleMentions.md" class="editPage">
-                    <i class='fa fa-edit' id="editPageIcon"></i>
-                    <span>Edit this page</span>
-                </a>
                 
                 <div id="content" class="content">
                     <main>
                         <nav class="breadcrumb">
                             <script src="../theme/breadcrumbs.js"></script>
                         </nav>
+                        <a href="https://github.com/NilPointer-Software/bdfd-wiki/edit/dev/src/bdscript/allowRoleMentions.md" class="editPage">
+                            <i class='fa fa-edit' id="editPageIcon"></i>
+                            <span>Edit this page</span>
+                        </a>
                         <h1 id="allowrolementions"><a class="header" href="#allowrolementions">$allowRoleMentions</a></h1>
 <p>Enables role pings only for the provided role IDs, while the roles not provided will be “fake pinged” <em>(the role will be pinged, but users will not be notified)</em>.</p>
 <h2 id="syntax"><a class="header" href="#syntax">Syntax</a></h2>
@@ -153,10 +152,10 @@ $allowRoleMentions[]
 I'm pinging &lt;@&amp;858376972303204362&gt;, but no one got notified; wow!
 </code></pre>
 <discord-messages>
-    <discord-message author="Nicky" role-color="#EE7908">
+    <discord-message role-color="#EE7908" author="Nicky">
         !example
     </discord-message>
-    <discord-message bot role-color="#748BD4" author="Wiki Bot" verified>
+    <discord-message author="Wiki Bot" role-color="#748BD4" verified bot>
         I'm pinging <discord-mention type="role" color="#FFD700">Extremely Cool Role</discord-mention>, but no one got notified; wow!
     </discord-message>
 </discord-messages>

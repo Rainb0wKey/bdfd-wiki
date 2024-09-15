@@ -127,17 +127,16 @@
                         link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
                     });
                 </script>
-
-                <a href="https://github.com/NilPointer-Software/bdfd-wiki/edit/dev/src/bdscript/clearReactions.md" class="editPage">
-                    <i class='fa fa-edit' id="editPageIcon"></i>
-                    <span>Edit this page</span>
-                </a>
                 
                 <div id="content" class="content">
                     <main>
                         <nav class="breadcrumb">
                             <script src="../theme/breadcrumbs.js"></script>
                         </nav>
+                        <a href="https://github.com/NilPointer-Software/bdfd-wiki/edit/dev/src/bdscript/clearReactions.md" class="editPage">
+                            <i class='fa fa-edit' id="editPageIcon"></i>
+                            <span>Edit this page</span>
+                        </a>
                         <h1 id="clearreactions"><a class="header" href="#clearreactions">$clearReactions</a></h1>
 <p>Removes reactions from the provided message.</p>
 <h2 id="syntax"><a class="header" href="#syntax">Syntax</a></h2>
@@ -155,17 +154,17 @@ $clearReactions[$channelID;$message;✅]
 </code></pre>
 <h3 id="before"><a class="header" href="#before">Before</a></h3>
 <discord-messages>
-    <discord-message verified role-color="#378afa" author="BDFD Support" bot>
+    <discord-message verified bot author="BDFD Support" role-color="#378afa">
         Message ID: 1216863258708021248
         <discord-reactions slot="reactions">
-            <discord-reaction emoji="https://upload.wikimedia.org/wikipedia/commons/thumb/3/34/Twemoji12_2705.svg/640px-Twemoji12_2705.svg.png" reacted name=":white_check_mark:" count="179">
+            <discord-reaction name=":white_check_mark:" reacted count="179" emoji="https://upload.wikimedia.org/wikipedia/commons/thumb/3/34/Twemoji12_2705.svg/640px-Twemoji12_2705.svg.png">
             </discord-reaction>
         </discord-reactions>
     </discord-message>
 </discord-messages>
 <h3 id="after"><a class="header" href="#after">After</a></h3>
 <discord-messages>
-    <discord-message verified role-color="#378afa" author="BDFD Support" bot>
+    <discord-message verified author="BDFD Support" role-color="#378afa" bot>
         Message ID: 1216863258708021248
     </discord-message>
     <discord-message author="RainbowKey" role-color="#E67E22">

@@ -127,17 +127,16 @@
                         link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
                     });
                 </script>
-
-                <a href="https://github.com/NilPointer-Software/bdfd-wiki/edit/dev/src/bdscript/isBooster.md" class="editPage">
-                    <i class='fa fa-edit' id="editPageIcon"></i>
-                    <span>Edit this page</span>
-                </a>
                 
                 <div id="content" class="content">
                     <main>
                         <nav class="breadcrumb">
                             <script src="../theme/breadcrumbs.js"></script>
                         </nav>
+                        <a href="https://github.com/NilPointer-Software/bdfd-wiki/edit/dev/src/bdscript/isBooster.md" class="editPage">
+                            <i class='fa fa-edit' id="editPageIcon"></i>
+                            <span>Edit this page</span>
+                        </a>
                         <h1 id="isbooster"><a class="header" href="#isbooster">$isBooster</a></h1>
 <p>Returns if user is boosting guild with nitro.</p>
 <blockquote>
@@ -155,7 +154,7 @@ Booster? $isBooster[$mentioned[1]]
     <discord-message author="RainbowKey" role-color="#E67E22">
         !example <discord-mention>kubastick</discord-mention>
     </discord-message>
-    <discord-message verified bot author="BDFD Support" role-color="#378afa">
+    <discord-message author="BDFD Support" verified role-color="#378afa" bot>
         Booster? true
     </discord-message>
 </discord-messages>

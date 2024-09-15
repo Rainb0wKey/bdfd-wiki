@@ -127,17 +127,16 @@
                         link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
                     });
                 </script>
-
-                <a href="https://github.com/NilPointer-Software/bdfd-wiki/edit/dev/src/guides/general/awaitedCommands.md" class="editPage">
-                    <i class='fa fa-edit' id="editPageIcon"></i>
-                    <span>Edit this page</span>
-                </a>
                 
                 <div id="content" class="content">
                     <main>
                         <nav class="breadcrumb">
                             <script src="../../theme/breadcrumbs.js"></script>
                         </nav>
+                        <a href="https://github.com/NilPointer-Software/bdfd-wiki/edit/dev/src/guides/general/awaitedCommands.md" class="editPage">
+                            <i class='fa fa-edit' id="editPageIcon"></i>
+                            <span>Edit this page</span>
+                        </a>
                         <h1 id="awaited-commands"><a class="header" href="#awaited-commands">Awaited Commands</a></h1>
 <p>Awaited commands are a special type of command where the bot waits for the user’s response.</p>
 <h2 id="content"><a class="header" href="#content">Content</a></h2>
@@ -170,16 +169,16 @@ What do you want me to say?
 $awaitFunc[say]
 </code></pre>
 <discord-messages>
-    <discord-message author="RainbowKey" role-color="#E67E22">
+    <discord-message role-color="#E67E22" author="RainbowKey">
         !example
     </discord-message>
-    <discord-message author="BDFD Support" bot verified role-color="#378afa">
+    <discord-message author="BDFD Support" bot role-color="#378afa" verified>
         What do you want me to say?
     </discord-message>
     <discord-message role-color="#E67E22" author="RainbowKey">
         I love BDFD
     </discord-message>
-    <discord-message author="BDFD Support" bot role-color="#378afa" verified>
+    <discord-message bot author="BDFD Support" verified role-color="#378afa">
         I love BDFD
     </discord-message>
 </discord-messages>
@@ -204,13 +203,13 @@ $message
     <discord-message role-color="#E67E22" author="RainbowKey">
         !example
     </discord-message>
-    <discord-message author="BDFD Support" verified role-color="#378afa" bot>
+    <discord-message bot author="BDFD Support" role-color="#378afa" verified>
         What do you want me to say?
     </discord-message>
     <discord-message author="RainbowKey" role-color="#E67E22">
         I love BDFD
     </discord-message>
-    <discord-message bot author="BDFD Support" role-color="#378afa" verified>
+    <discord-message author="BDFD Support" role-color="#378afa" verified bot>
         I love BDFD
     </discord-message>
 </discord-messages>

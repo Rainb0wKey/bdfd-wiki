@@ -127,17 +127,16 @@
                         link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
                     });
                 </script>
-
-                <a href="https://github.com/NilPointer-Software/bdfd-wiki/edit/dev/src/bdscript/findRole.md" class="editPage">
-                    <i class='fa fa-edit' id="editPageIcon"></i>
-                    <span>Edit this page</span>
-                </a>
                 
                 <div id="content" class="content">
                     <main>
                         <nav class="breadcrumb">
                             <script src="../theme/breadcrumbs.js"></script>
                         </nav>
+                        <a href="https://github.com/NilPointer-Software/bdfd-wiki/edit/dev/src/bdscript/findRole.md" class="editPage">
+                            <i class='fa fa-edit' id="editPageIcon"></i>
+                            <span>Edit this page</span>
+                        </a>
                         <h1 id="findrole"><a class="header" href="#findrole">$findRole</a></h1>
 <p>Finds a role’s ID using the given role name, ID, or mention.</p>
 <blockquote>
@@ -155,10 +154,10 @@
 Role ID: $findRole[$message]
 </code></pre>
 <discord-messages>
-    <discord-message role-color="#E67E22" author="RainbowKey">
+    <discord-message author="RainbowKey" role-color="#E67E22">
         !example Support
     </discord-message>
-    <discord-message author="BDFD Support" bot role-color="#378afa" verified>
+    <discord-message role-color="#378afa" author="BDFD Support" verified bot>
         Role ID: 568155071997542410
     </discord-message>
 </discord-messages>

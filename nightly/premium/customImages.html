@@ -127,17 +127,16 @@
                         link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
                     });
                 </script>
-
-                <a href="https://github.com/NilPointer-Software/bdfd-wiki/edit/dev/src/premium/customImages.md" class="editPage">
-                    <i class='fa fa-edit' id="editPageIcon"></i>
-                    <span>Edit this page</span>
-                </a>
                 
                 <div id="content" class="content">
                     <main>
                         <nav class="breadcrumb">
                             <script src="../theme/breadcrumbs.js"></script>
                         </nav>
+                        <a href="https://github.com/NilPointer-Software/bdfd-wiki/edit/dev/src/premium/customImages.md" class="editPage">
+                            <i class='fa fa-edit' id="editPageIcon"></i>
+                            <span>Edit this page</span>
+                        </a>
                         <h1 id="custom-images"><a class="header" href="#custom-images">Custom Images</a></h1>
 <p><em>(for premium bots)</em></p>
 <p>Upload custom images in the app from your device, without any image links. You can use the custom image as an embed image using <code>$customImage[]</code>.</p>
@@ -174,11 +173,11 @@
 $customImage[NiceImage]
 </code></pre>
 <discord-messages>
-    <discord-message author="Nicky" role-color="#EE7908">
+    <discord-message role-color="#EE7908" author="Nicky">
         !example
     </discord-message>
-    <discord-message bot author="Wiki Bot" role-color="#748BD4" verified>
-        <discord-embed slot="embeds" image="https://user-images.githubusercontent.com/111157596/257596077-9836bafb-1c2a-4e1e-9cb3-9ca7725dcbf3.png">
+    <discord-message author="Wiki Bot" verified bot role-color="#748BD4">
+        <discord-embed image="https://user-images.githubusercontent.com/111157596/257596077-9836bafb-1c2a-4e1e-9cb3-9ca7725dcbf3.png" slot="embeds">
         </discord-embed>
     </discord-message>
 </discord-messages>

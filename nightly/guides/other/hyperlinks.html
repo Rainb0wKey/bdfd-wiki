@@ -127,17 +127,16 @@
                         link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
                     });
                 </script>
-
-                <a href="https://github.com/NilPointer-Software/bdfd-wiki/edit/dev/src/guides/other/hyperlinks.md" class="editPage">
-                    <i class='fa fa-edit' id="editPageIcon"></i>
-                    <span>Edit this page</span>
-                </a>
                 
                 <div id="content" class="content">
                     <main>
                         <nav class="breadcrumb">
                             <script src="../../theme/breadcrumbs.js"></script>
                         </nav>
+                        <a href="https://github.com/NilPointer-Software/bdfd-wiki/edit/dev/src/guides/other/hyperlinks.md" class="editPage">
+                            <i class='fa fa-edit' id="editPageIcon"></i>
+                            <span>Edit this page</span>
+                        </a>
                         <h1 id="hyperlinks"><a class="header" href="#hyperlinks">Hyperlinks</a></h1>
 <p>A hyperlink is clickable-text. When the user clicks on the text, it directs them to a certain URL.</p>
 <h2 id="general-hyperlinks"><a class="header" href="#general-hyperlinks">General Hyperlinks</a></h2>
@@ -156,10 +155,10 @@
 $description[This bot is made with [Bot Designer For Discord\](https://botdesignerdiscord.com)]
 </code></pre>
 <discord-messages>
-    <discord-message author="RainbowKey" role-color="#E67E22">
+    <discord-message role-color="#E67E22" author="RainbowKey">
         !example abc
     </discord-message>
-    <discord-message bot role-color="#378afa" verified author="BDFD Support">
+    <discord-message role-color="#378afa" verified bot author="BDFD Support">
         <discord-embed slot="embeds">
             <discord-embed-description slot="description">
                 This bot is made with <a href="https://botdesignerdiscord.com">Bot Designer For Discord</a>!

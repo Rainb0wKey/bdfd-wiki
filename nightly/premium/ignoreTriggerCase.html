@@ -127,17 +127,16 @@
                         link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
                     });
                 </script>
-
-                <a href="https://github.com/NilPointer-Software/bdfd-wiki/edit/dev/src/premium/ignoreTriggerCase.md" class="editPage">
-                    <i class='fa fa-edit' id="editPageIcon"></i>
-                    <span>Edit this page</span>
-                </a>
                 
                 <div id="content" class="content">
                     <main>
                         <nav class="breadcrumb">
                             <script src="../theme/breadcrumbs.js"></script>
                         </nav>
+                        <a href="https://github.com/NilPointer-Software/bdfd-wiki/edit/dev/src/premium/ignoreTriggerCase.md" class="editPage">
+                            <i class='fa fa-edit' id="editPageIcon"></i>
+                            <span>Edit this page</span>
+                        </a>
                         <h1 id="ignoretriggercase"><a class="header" href="#ignoretriggercase">$ignoreTriggerCase</a></h1>
 <p><em>(for premium bots)</em></p>
 <p><code>$ignoreTriggerCase</code> is a function that makes the command trigger <strong>not</strong> case sensitive. For example, <code>!help</code> and <code>!HeLp</code> would both work.</p>
@@ -155,25 +154,25 @@ Hello World!
     <discord-message role-color="#EE7908" author="Nicky">
         !hello
     </discord-message>
-    <discord-message bot author="Wiki Bot" role-color="#748BD4" verified>
+    <discord-message verified author="Wiki Bot" bot role-color="#748BD4">
         Hello World!
     </discord-message>
     <discord-message role-color="#EE7908" author="Nicky">
         !HeLLo
     </discord-message>
-    <discord-message author="Wiki Bot" bot role-color="#748BD4" verified>
+    <discord-message author="Wiki Bot" verified role-color="#748BD4" bot>
         Hello World!
     </discord-message>
 </discord-messages>
 <h3 id="without-ignoretriggercase"><a class="header" href="#without-ignoretriggercase">Without <code>$ignoreTriggerCase</code></a></h3>
 <discord-messages>
-    <discord-message role-color="#EE7908" author="Nicky">
+    <discord-message author="Nicky" role-color="#EE7908">
         !hello
     </discord-message>
-    <discord-message bot verified author="Wiki Bot" role-color="#748BD4">
+    <discord-message verified author="Wiki Bot" role-color="#748BD4" bot>
         Hello World!
     </discord-message>
-    <discord-message author="Nicky" role-color="#EE7908">
+    <discord-message role-color="#EE7908" author="Nicky">
         !HeLLo
     </discord-message>
 </discord-messages>

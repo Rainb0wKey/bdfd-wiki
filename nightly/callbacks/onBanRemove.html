@@ -127,17 +127,16 @@
                         link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
                     });
                 </script>
-
-                <a href="https://github.com/NilPointer-Software/bdfd-wiki/edit/dev/src/callbacks/onBanRemove.md" class="editPage">
-                    <i class='fa fa-edit' id="editPageIcon"></i>
-                    <span>Edit this page</span>
-                </a>
                 
                 <div id="content" class="content">
                     <main>
                         <nav class="breadcrumb">
                             <script src="../theme/breadcrumbs.js"></script>
                         </nav>
+                        <a href="https://github.com/NilPointer-Software/bdfd-wiki/edit/dev/src/callbacks/onBanRemove.md" class="editPage">
+                            <i class='fa fa-edit' id="editPageIcon"></i>
+                            <span>Edit this page</span>
+                        </a>
                         <h1 id="onbanremove"><a class="header" href="#onbanremove">$onBanRemove</a></h1>
 <p><em>Triggered when a user gets unbanned from the server.</em></p>
 <p><code>$onBanRemove[Channel ID]</code> is a callback, which means it’s used in the command trigger <em>(not the code)</em>. The command is ran when a user is unbanned from the server.</p>
@@ -167,7 +166,7 @@
 <li>
 <p>Now you have an unban message! ✨</p>
 <discord-messages>
-    <discord-message bot role-color="#748BD4" author="Wiki Bot" verified>
+    <discord-message author="Wiki Bot" role-color="#748BD4" verified bot>
         Carl-bot (235148962103951360) was unbanned!
     </discord-message>
 </discord-messages>

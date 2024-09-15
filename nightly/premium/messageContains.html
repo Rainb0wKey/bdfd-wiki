@@ -127,17 +127,16 @@
                         link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
                     });
                 </script>
-
-                <a href="https://github.com/NilPointer-Software/bdfd-wiki/edit/dev/src/premium/messageContains.md" class="editPage">
-                    <i class='fa fa-edit' id="editPageIcon"></i>
-                    <span>Edit this page</span>
-                </a>
                 
                 <div id="content" class="content">
                     <main>
                         <nav class="breadcrumb">
                             <script src="../theme/breadcrumbs.js"></script>
                         </nav>
+                        <a href="https://github.com/NilPointer-Software/bdfd-wiki/edit/dev/src/premium/messageContains.md" class="editPage">
+                            <i class='fa fa-edit' id="editPageIcon"></i>
+                            <span>Edit this page</span>
+                        </a>
                         <h1 id="messagecontains"><a class="header" href="#messagecontains">$messageContains</a></h1>
 <p><em>(for premium bots)</em></p>
 <p><code>$messageContains[]</code> is a <a href="../callbacks/introduction.html">callback</a> that allows you to create a trigger with multiple phrases. In addition, the bot also looks for those phrases anywhere in the author’s message. This feature is great for creating an auto-response or auto-moderation system.</p>
@@ -163,13 +162,13 @@
     <discord-message author="noituri" role-color="#F1BDEE">
         Hello
     </discord-message>
-    <discord-message role-color="#748BD4" author="Wiki Bot" bot verified>
+    <discord-message role-color="#748BD4" bot verified author="Wiki Bot">
         Hello there! How are you?
     </discord-message>
-    <discord-message role-color="#EE7908" author="Nicky">
+    <discord-message author="Nicky" role-color="#EE7908">
         Hi Noituri
     </discord-message>
-    <discord-message bot role-color="#748BD4" verified author="Wiki Bot">
+    <discord-message role-color="#748BD4" verified author="Wiki Bot" bot>
         Hello there! How are you?
     </discord-message>
 </discord-messages>

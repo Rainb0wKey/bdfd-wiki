@@ -127,17 +127,16 @@
                         link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
                     });
                 </script>
-
-                <a href="https://github.com/NilPointer-Software/bdfd-wiki/edit/dev/src/bdscript/banIDComplex.md" class="editPage">
-                    <i class='fa fa-edit' id="editPageIcon"></i>
-                    <span>Edit this page</span>
-                </a>
                 
                 <div id="content" class="content">
                     <main>
                         <nav class="breadcrumb">
                             <script src="../theme/breadcrumbs.js"></script>
                         </nav>
+                        <a href="https://github.com/NilPointer-Software/bdfd-wiki/edit/dev/src/bdscript/banIDComplex.md" class="editPage">
+                            <i class='fa fa-edit' id="editPageIcon"></i>
+                            <span>Edit this page</span>
+                        </a>
                         <h1 id="banid"><a class="header" href="#banid">$banID[]</a></h1>
 <p>Bans a user using their ID.</p>
 <h2 id="syntax"><a class="header" href="#syntax">Syntax</a></h2>
@@ -167,7 +166,7 @@ $banID[$replaceText[$message;$message[1];;1];$findUser[$message[1];no]]
     <discord-message author="RainbowKey" role-color="#E67E22">
         !example 854665455527526421 Hello!
     </discord-message>
-    <discord-message role-color="#378afa" bot author="BDFD Support" verified>
+    <discord-message role-color="#378afa" author="BDFD Support" bot verified>
         <discord-mention>Chilli</discord-mention> was banned!
     </discord-message>
     <discord-system-message type="leave">

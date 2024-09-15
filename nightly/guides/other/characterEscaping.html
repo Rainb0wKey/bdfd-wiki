@@ -127,17 +127,16 @@
                         link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
                     });
                 </script>
-
-                <a href="https://github.com/NilPointer-Software/bdfd-wiki/edit/dev/src/guides/other/characterEscaping.md" class="editPage">
-                    <i class='fa fa-edit' id="editPageIcon"></i>
-                    <span>Edit this page</span>
-                </a>
                 
                 <div id="content" class="content">
                     <main>
                         <nav class="breadcrumb">
                             <script src="../../theme/breadcrumbs.js"></script>
                         </nav>
+                        <a href="https://github.com/NilPointer-Software/bdfd-wiki/edit/dev/src/guides/other/characterEscaping.md" class="editPage">
+                            <i class='fa fa-edit' id="editPageIcon"></i>
+                            <span>Edit this page</span>
+                        </a>
                         <h1 id="character-escaping"><a class="header" href="#character-escaping">Character Escaping</a></h1>
 <p><em>(for advanced users)</em></p>
 <p><strong>What are Escape Characters?</strong></p>
@@ -158,7 +157,7 @@ $sendMessage[[ Hi, this is pretty cool\; right? \]]
     <discord-message author="RainbowKey" role-color="#E67E22">
         !example
     </discord-message>
-    <discord-message role-color="#378afa" author="BDFD Support" bot verified>
+    <discord-message verified author="BDFD Support" role-color="#378afa" bot>
         [ Hi, this is pretty cool; right? ]
     </discord-message>
 </discord-messages>

@@ -127,17 +127,16 @@
                         link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
                     });
                 </script>
-
-                <a href="https://github.com/NilPointer-Software/bdfd-wiki/edit/dev/src/bdscript/color.md" class="editPage">
-                    <i class='fa fa-edit' id="editPageIcon"></i>
-                    <span>Edit this page</span>
-                </a>
                 
                 <div id="content" class="content">
                     <main>
                         <nav class="breadcrumb">
                             <script src="../theme/breadcrumbs.js"></script>
                         </nav>
+                        <a href="https://github.com/NilPointer-Software/bdfd-wiki/edit/dev/src/bdscript/color.md" class="editPage">
+                            <i class='fa fa-edit' id="editPageIcon"></i>
+                            <span>Edit this page</span>
+                        </a>
                         <h1 id="color"><a class="header" href="#color">$color</a></h1>
 <p>Sets the embed border color.</p>
 <h2 id="syntax"><a class="header" href="#syntax">Syntax</a></h2>
@@ -154,12 +153,12 @@ $description[⬅️ That is the embed color border!]
 $color[#673ab7]
 </code></pre>
 <discord-messages>
-    <discord-message author="Nicky" role-color="#EE7908">
+    <discord-message role-color="#EE7908" author="Nicky">
         !example
     </discord-message>
     <discord-message author="Wiki Bot" bot verified role-color="#748BD4">
         <none>
-        <discord-embed color="#673ab7" slot="embeds">
+        <discord-embed slot="embeds" color="#673ab7">
             <discord-embed-description slot="description">
                 ⬅️ That is the embed color border!
             </discord-embed-description>

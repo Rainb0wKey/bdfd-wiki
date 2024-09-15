@@ -127,17 +127,16 @@
                         link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
                     });
                 </script>
-
-                <a href="https://github.com/NilPointer-Software/bdfd-wiki/edit/dev/src/bdscript/checkUserPerms.md" class="editPage">
-                    <i class='fa fa-edit' id="editPageIcon"></i>
-                    <span>Edit this page</span>
-                </a>
                 
                 <div id="content" class="content">
                     <main>
                         <nav class="breadcrumb">
                             <script src="../theme/breadcrumbs.js"></script>
                         </nav>
+                        <a href="https://github.com/NilPointer-Software/bdfd-wiki/edit/dev/src/bdscript/checkUserPerms.md" class="editPage">
+                            <i class='fa fa-edit' id="editPageIcon"></i>
+                            <span>Edit this page</span>
+                        </a>
                         <h1 id="checkuserperms"><a class="header" href="#checkuserperms">$checkUserPerms</a></h1>
 <p>Returns “true” if a user has all of the provided permissions, otherwise “false” is returned.</p>
 <h2 id="syntax"><a class="header" href="#syntax">Syntax</a></h2>
@@ -154,10 +153,10 @@ $onlyIf[$checkUserPerms[$authorID;admin]==false;You can't use this command, beca
 You aren't an admin!
 </code></pre>
 <discord-messages>
-    <discord-message author="Nicky" role-color="#EE7908">
+    <discord-message role-color="#EE7908" author="Nicky">
         !example
     </discord-message>
-    <discord-message verified author="Wiki Bot" bot role-color="#748BD4">
+    <discord-message author="Wiki Bot" role-color="#748BD4" bot verified>
         You can't use this command, because you are an administrator.
     </discord-message>
 </discord-messages>

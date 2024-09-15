@@ -127,17 +127,16 @@
                         link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
                     });
                 </script>
-
-                <a href="https://github.com/NilPointer-Software/bdfd-wiki/edit/dev/src/bdscript/message.md" class="editPage">
-                    <i class='fa fa-edit' id="editPageIcon"></i>
-                    <span>Edit this page</span>
-                </a>
                 
                 <div id="content" class="content">
                     <main>
                         <nav class="breadcrumb">
                             <script src="../theme/breadcrumbs.js"></script>
                         </nav>
+                        <a href="https://github.com/NilPointer-Software/bdfd-wiki/edit/dev/src/bdscript/message.md" class="editPage">
+                            <i class='fa fa-edit' id="editPageIcon"></i>
+                            <span>Edit this page</span>
+                        </a>
                         <h1 id="message"><a class="header" href="#message">$message</a></h1>
 <p>Returns the user’s message <em>(without the command trigger)</em>.</p>
 <h2 id="syntax"><a class="header" href="#syntax">Syntax</a></h2>
@@ -151,7 +150,7 @@ $message
     <discord-message author="Nicky" role-color="#EE7908">
         !say Hello everyone 👋
     </discord-message>
-    <discord-message author="Wiki Bot" bot role-color="#748BD4">
+    <discord-message author="Wiki Bot" role-color="#748BD4" bot>
         Hello everyone 👋
     </discord-message>
 </discord-messages>

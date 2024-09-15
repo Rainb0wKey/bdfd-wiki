@@ -127,17 +127,16 @@
                         link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
                     });
                 </script>
-
-                <a href="https://github.com/NilPointer-Software/bdfd-wiki/edit/dev/src/flowchart/setResponseMessage.md" class="editPage">
-                    <i class='fa fa-edit' id="editPageIcon"></i>
-                    <span>Edit this page</span>
-                </a>
                 
                 <div id="content" class="content">
                     <main>
                         <nav class="breadcrumb">
                             <script src="../theme/breadcrumbs.js"></script>
                         </nav>
+                        <a href="https://github.com/NilPointer-Software/bdfd-wiki/edit/dev/src/flowchart/setResponseMessage.md" class="editPage">
+                            <i class='fa fa-edit' id="editPageIcon"></i>
+                            <span>Edit this page</span>
+                        </a>
                         <h1 id="set-response-message"><a class="header" href="#set-response-message">Set response message</a></h1>
 <p>Sets the response message for the command.</p>
 <h2 id="inputs"><a class="header" href="#inputs">Inputs</a></h2>
@@ -152,8 +151,8 @@
 <p>Entry Point ➤ - ➤ Set response message (Content: <code>Hello</code>)
 <img src="https://github.com/user-attachments/assets/ed7d4f3d-c753-4cda-a3d6-57d8f8d4564d" alt="example" /></p>
 <discord-messages>
-    <discord-message author="Flowchart" role-color="#748bd4" bot>
-        <discord-command slot="reply" command="/test" role-color="#E67E22" author="RainbowKey">
+    <discord-message author="Flowchart" bot role-color="#748bd4">
+        <discord-command command="/test" slot="reply" author="RainbowKey" role-color="#E67E22">
         </discord-command>
         Hello
     </discord-message>

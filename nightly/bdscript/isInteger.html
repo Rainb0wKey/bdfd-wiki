@@ -127,17 +127,16 @@
                         link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
                     });
                 </script>
-
-                <a href="https://github.com/NilPointer-Software/bdfd-wiki/edit/dev/src/bdscript/isInteger.md" class="editPage">
-                    <i class='fa fa-edit' id="editPageIcon"></i>
-                    <span>Edit this page</span>
-                </a>
                 
                 <div id="content" class="content">
                     <main>
                         <nav class="breadcrumb">
                             <script src="../theme/breadcrumbs.js"></script>
                         </nav>
+                        <a href="https://github.com/NilPointer-Software/bdfd-wiki/edit/dev/src/bdscript/isInteger.md" class="editPage">
+                            <i class='fa fa-edit' id="editPageIcon"></i>
+                            <span>Edit this page</span>
+                        </a>
                         <h1 id="isinteger"><a class="header" href="#isinteger">$isInteger</a></h1>
 <p>Checks if the specified value is an integer or not.</p>
 <div id="admonition-tip" class="admonition admonish-tip" role="note" aria-labelledby="admonition-tip-title">
@@ -166,19 +165,19 @@ Integer?: $isInteger[$message]
     <discord-message author="RainbowKey" role-color="#E67E22">
         !example number
     </discord-message>
-    <discord-message bot verified author="BDFD Support" role-color="#378afa">
+    <discord-message author="BDFD Support" role-color="#378afa" verified bot>
         Integer?: false
     </discord-message>
     <discord-message author="RainbowKey" role-color="#E67E22">
         !example 1.8
     </discord-message>
-    <discord-message role-color="#378afa" bot verified author="BDFD Support">
+    <discord-message author="BDFD Support" role-color="#378afa" bot verified>
         Integer?: false
     </discord-message>
-    <discord-message role-color="#E67E22" author="RainbowKey">
+    <discord-message author="RainbowKey" role-color="#E67E22">
         !example 4
     </discord-message>
-    <discord-message author="BDFD Support" bot verified role-color="#378afa">
+    <discord-message bot author="BDFD Support" role-color="#378afa" verified>
         Integer?: true
     </discord-message>
 </discord-messages>

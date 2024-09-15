@@ -127,17 +127,16 @@
                         link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
                     });
                 </script>
-
-                <a href="https://github.com/NilPointer-Software/bdfd-wiki/edit/dev/src/bdscript/author.md" class="editPage">
-                    <i class='fa fa-edit' id="editPageIcon"></i>
-                    <span>Edit this page</span>
-                </a>
                 
                 <div id="content" class="content">
                     <main>
                         <nav class="breadcrumb">
                             <script src="../theme/breadcrumbs.js"></script>
                         </nav>
+                        <a href="https://github.com/NilPointer-Software/bdfd-wiki/edit/dev/src/bdscript/author.md" class="editPage">
+                            <i class='fa fa-edit' id="editPageIcon"></i>
+                            <span>Edit this page</span>
+                        </a>
                         <h1 id="author"><a class="header" href="#author">$author</a></h1>
 <p>Adds author text to an embed.</p>
 <h2 id="syntax"><a class="header" href="#syntax">Syntax</a></h2>
@@ -156,8 +155,8 @@ $author[This is the author text!]
     <discord-message role-color="#EE7908" author="Nicky">
         !author
     </discord-message>
-    <discord-message verified author="Wiki Bot" bot role-color="#748BD4">
-        <discord-embed author-name="This is the author text!" slot="embeds">
+    <discord-message bot verified author="Wiki Bot" role-color="#748BD4">
+        <discord-embed slot="embeds" author-name="This is the author text!">
         </discord-embed>
     </discord-message>
 </discord-messages>

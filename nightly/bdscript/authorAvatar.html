@@ -127,17 +127,16 @@
                         link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
                     });
                 </script>
-
-                <a href="https://github.com/NilPointer-Software/bdfd-wiki/edit/dev/src/bdscript/authorAvatar.md" class="editPage">
-                    <i class='fa fa-edit' id="editPageIcon"></i>
-                    <span>Edit this page</span>
-                </a>
                 
                 <div id="content" class="content">
                     <main>
                         <nav class="breadcrumb">
                             <script src="../theme/breadcrumbs.js"></script>
                         </nav>
+                        <a href="https://github.com/NilPointer-Software/bdfd-wiki/edit/dev/src/bdscript/authorAvatar.md" class="editPage">
+                            <i class='fa fa-edit' id="editPageIcon"></i>
+                            <span>Edit this page</span>
+                        </a>
                         <h1 id="authoravatar"><a class="header" href="#authoravatar">$authorAvatar</a></h1>
 <p>Returns the author’s avatar URL.</p>
 <h2 id="syntax"><a class="header" href="#syntax">Syntax</a></h2>
@@ -151,9 +150,9 @@ $image[$authorAvatar]
     <discord-message author="Nicky" role-color="#EE7908">
         !authorAvatar
     </discord-message>
-    <discord-message author="Wiki Bot" role-color="#748BD4" bot verified>
+    <discord-message author="Wiki Bot" role-color="#748BD4" verified bot>
         <none>
-        <discord-embed image="https://user-images.githubusercontent.com/111157596/257052136-4b8d5715-b381-4d5f-8c46-8ae0be53c8d8.png" slot="embeds">
+        <discord-embed slot="embeds" image="https://user-images.githubusercontent.com/111157596/257052136-4b8d5715-b381-4d5f-8c46-8ae0be53c8d8.png">
         </discord-embed>
     </discord-message>
 </discord-messages>

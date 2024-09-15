@@ -127,17 +127,16 @@
                         link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
                     });
                 </script>
-
-                <a href="https://github.com/NilPointer-Software/bdfd-wiki/edit/dev/src/bdscript/allowUserMentions.md" class="editPage">
-                    <i class='fa fa-edit' id="editPageIcon"></i>
-                    <span>Edit this page</span>
-                </a>
                 
                 <div id="content" class="content">
                     <main>
                         <nav class="breadcrumb">
                             <script src="../theme/breadcrumbs.js"></script>
                         </nav>
+                        <a href="https://github.com/NilPointer-Software/bdfd-wiki/edit/dev/src/bdscript/allowUserMentions.md" class="editPage">
+                            <i class='fa fa-edit' id="editPageIcon"></i>
+                            <span>Edit this page</span>
+                        </a>
                         <h1 id="allowusermentions"><a class="header" href="#allowusermentions">$allowUserMentions</a></h1>
 <p>Enables user pings only for the provided user IDs, while the user not provided will be “fake pinged” <em>(the user will be pinged, but user will not be notified)</em>.</p>
 <h2 id="syntax"><a class="header" href="#syntax">Syntax</a></h2>
@@ -156,7 +155,7 @@ Hi &lt;@696368083517964288&gt;! I mentioned you, but you didn't get pinged.
     <discord-message role-color="#E67E22" author="RainbowKey">
         !example
     </discord-message>
-    <discord-message verified bot role-color="#378afa" author="BDFD Support">
+    <discord-message author="BDFD Support" bot role-color="#378afa" verified>
         Hi <discord-mention>Spen</discord-mention>! I mentioned you, but you didn't get pinged.
     </discord-message>
 </discord-messages>

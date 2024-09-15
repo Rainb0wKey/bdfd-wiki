@@ -127,17 +127,16 @@
                         link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
                     });
                 </script>
-
-                <a href="https://github.com/NilPointer-Software/bdfd-wiki/edit/dev/src/bdscript/changeCooldownTime.md" class="editPage">
-                    <i class='fa fa-edit' id="editPageIcon"></i>
-                    <span>Edit this page</span>
-                </a>
                 
                 <div id="content" class="content">
                     <main>
                         <nav class="breadcrumb">
                             <script src="../theme/breadcrumbs.js"></script>
                         </nav>
+                        <a href="https://github.com/NilPointer-Software/bdfd-wiki/edit/dev/src/bdscript/changeCooldownTime.md" class="editPage">
+                            <i class='fa fa-edit' id="editPageIcon"></i>
+                            <span>Edit this page</span>
+                        </a>
                         <h1 id="changecooldowntime"><a class="header" href="#changecooldowntime">$changeCooldownTime</a></h1>
 <p>Changes the cooldown metrics. These can be used in cooldown error messages. It can be useful for translations.</p>
 <h2 id="syntax"><a class="header" href="#syntax">Syntax</a></h2>
@@ -168,13 +167,13 @@ $cooldown[10m;Please wait %time-m%!]
     <discord-message author="Nicky" role-color="#EE7908">
         !hello
     </discord-message>
-    <discord-message role-color="#748BD4" bot verified author="Wiki Bot">
+    <discord-message verified author="Wiki Bot" role-color="#748BD4" bot>
         Hello Nicky!
     </discord-message>
     <discord-message role-color="#EE7908" author="Nicky">
         !hello
     </discord-message>
-    <discord-message verified role-color="#748BD4" author="Wiki Bot" bot>
+    <discord-message verified role-color="#748BD4" bot author="Wiki Bot">
         Please wait 9.9 Mins🕧!
     </discord-message>
 </discord-messages>

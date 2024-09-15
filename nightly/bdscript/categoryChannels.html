@@ -127,17 +127,16 @@
                         link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
                     });
                 </script>
-
-                <a href="https://github.com/NilPointer-Software/bdfd-wiki/edit/dev/src/bdscript/categoryChannels.md" class="editPage">
-                    <i class='fa fa-edit' id="editPageIcon"></i>
-                    <span>Edit this page</span>
-                </a>
                 
                 <div id="content" class="content">
                     <main>
                         <nav class="breadcrumb">
                             <script src="../theme/breadcrumbs.js"></script>
                         </nav>
+                        <a href="https://github.com/NilPointer-Software/bdfd-wiki/edit/dev/src/bdscript/categoryChannels.md" class="editPage">
+                            <i class='fa fa-edit' id="editPageIcon"></i>
+                            <span>Edit this page</span>
+                        </a>
                         <h1 id="categorychannels"><a class="header" href="#categorychannels">$categoryChannels</a></h1>
 <p>Lists all channels of the given category.</p>
 <h2 id="syntax"><a class="header" href="#syntax">Syntax</a></h2>
@@ -165,10 +164,10 @@
 &lt;#;id]&gt;
 </code></pre>
 <discord-messages>
-    <discord-message role-color="#EE7908" author="Nicky">
+    <discord-message author="Nicky" role-color="#EE7908">
         !example
     </discord-message>
-    <discord-message author="Wiki Bot" bot role-color="#748BD4" verified>
+    <discord-message verified role-color="#748BD4" bot author="Wiki Bot">
         <discord-mention type="channel">rules</discord-mention><br /><discord-mention type="channel">news</discord-mention><br /><discord-mention type="channel">update-logs</discord-mention><br /><discord-mention type="channel">bots</discord-mention><br /><discord-mention type="channel">bdfd-forums</discord-mention>
     </discord-message>
 </discord-messages>

@@ -127,17 +127,16 @@
                         link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
                     });
                 </script>
-
-                <a href="https://github.com/NilPointer-Software/bdfd-wiki/edit/dev/src/bdscript/isBoolean.md" class="editPage">
-                    <i class='fa fa-edit' id="editPageIcon"></i>
-                    <span>Edit this page</span>
-                </a>
                 
                 <div id="content" class="content">
                     <main>
                         <nav class="breadcrumb">
                             <script src="../theme/breadcrumbs.js"></script>
                         </nav>
+                        <a href="https://github.com/NilPointer-Software/bdfd-wiki/edit/dev/src/bdscript/isBoolean.md" class="editPage">
+                            <i class='fa fa-edit' id="editPageIcon"></i>
+                            <span>Edit this page</span>
+                        </a>
                         <h1 id="isboolean"><a class="header" href="#isboolean">$isBoolean</a></h1>
 <p>Returns whether the provided text is a boolean or not.</p>
 <blockquote>
@@ -166,19 +165,19 @@ Is boolean?: `$isBoolean[$message]`
     <discord-message author="RainbowKey" role-color="#E67E22">
         !example yes
     </discord-message>
-    <discord-message author="BDFD Support" role-color="#378afa" verified bot>
-        Is boolean?: <code>true</code>
-    </discord-message>
-    <discord-message author="RainbowKey" role-color="#E67E22">
-        !example false
-    </discord-message>
-    <discord-message author="BDFD Support" role-color="#378afa" bot verified>
+    <discord-message role-color="#378afa" verified author="BDFD Support" bot>
         Is boolean?: <code>true</code>
     </discord-message>
     <discord-message role-color="#E67E22" author="RainbowKey">
+        !example false
+    </discord-message>
+    <discord-message verified bot author="BDFD Support" role-color="#378afa">
+        Is boolean?: <code>true</code>
+    </discord-message>
+    <discord-message author="RainbowKey" role-color="#E67E22">
         !example text
     </discord-message>
-    <discord-message verified bot role-color="#378afa" author="BDFD Support">
+    <discord-message bot verified role-color="#378afa" author="BDFD Support">
         Is boolean?: <code>false</code>
     </discord-message>
 </discord-messages>

@@ -127,17 +127,16 @@
                         link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
                     });
                 </script>
-
-                <a href="https://github.com/NilPointer-Software/bdfd-wiki/edit/dev/src/bdscript/categoryCountComplex.md" class="editPage">
-                    <i class='fa fa-edit' id="editPageIcon"></i>
-                    <span>Edit this page</span>
-                </a>
                 
                 <div id="content" class="content">
                     <main>
                         <nav class="breadcrumb">
                             <script src="../theme/breadcrumbs.js"></script>
                         </nav>
+                        <a href="https://github.com/NilPointer-Software/bdfd-wiki/edit/dev/src/bdscript/categoryCountComplex.md" class="editPage">
+                            <i class='fa fa-edit' id="editPageIcon"></i>
+                            <span>Edit this page</span>
+                        </a>
                         <h1 id="categorycount"><a class="header" href="#categorycount">$categoryCount[]</a></h1>
 <p>Returns the category count of the provided guild.</p>
 <h2 id="syntax"><a class="header" href="#syntax">Syntax</a></h2>
@@ -152,10 +151,10 @@
 There are $categoryCount[$message[1]] categories in the server!
 </code></pre>
 <discord-messages>
-    <discord-message role-color="#EE7908" author="Nicky">
+    <discord-message author="Nicky" role-color="#EE7908">
         !categories 790676954247725106
     </discord-message>
-    <discord-message verified author="Wiki Bot" role-color="#748BD4" bot>
+    <discord-message author="Wiki Bot" bot verified role-color="#748BD4">
         There are 5 categories in the server!
     </discord-message>
 </discord-messages>

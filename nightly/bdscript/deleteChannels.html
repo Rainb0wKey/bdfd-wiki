@@ -127,17 +127,16 @@
                         link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
                     });
                 </script>
-
-                <a href="https://github.com/NilPointer-Software/bdfd-wiki/edit/dev/src/bdscript/deleteChannels.md" class="editPage">
-                    <i class='fa fa-edit' id="editPageIcon"></i>
-                    <span>Edit this page</span>
-                </a>
                 
                 <div id="content" class="content">
                     <main>
                         <nav class="breadcrumb">
                             <script src="../theme/breadcrumbs.js"></script>
                         </nav>
+                        <a href="https://github.com/NilPointer-Software/bdfd-wiki/edit/dev/src/bdscript/deleteChannels.md" class="editPage">
+                            <i class='fa fa-edit' id="editPageIcon"></i>
+                            <span>Edit this page</span>
+                        </a>
                         <h1 id="deletechannels"><a class="header" href="#deletechannels">$deleteChannels</a></h1>
 <p>Deletes the provided channel(s).</p>
 <h2 id="syntax"><a class="header" href="#syntax">Syntax</a></h2>
@@ -158,10 +157,10 @@ Successfully deleted #$channelName[$mentionedChannels[1]]
 $deleteChannels[$mentionedChannels[1]]
 </code></pre>
 <discord-messages>
-    <discord-message author="RainbowKey" role-color="#E67E22">
+    <discord-message role-color="#E67E22" author="RainbowKey">
         !example <discord-mention type="channel">main-chat</discord-mention>
     </discord-message>
-    <discord-message bot role-color="#378afa" author="BDFD Support" verified>
+    <discord-message author="BDFD Support" bot role-color="#378afa" verified>
         Successfully deleted #main-chat
     </discord-message>
 </discord-messages>
