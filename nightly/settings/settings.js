@@ -413,6 +413,7 @@ function loadSettings() {
     "folders": false,
     "discord-example-theme": "dark",
     "text-size": "60%",
+    "language": "en",
     "text-hg": "none",
     "text-font": "Open Sans, sans-serif",
     "code-hg": {
