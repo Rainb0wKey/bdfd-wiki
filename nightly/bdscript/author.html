@@ -128,6 +128,11 @@
                     });
                 </script>
 
+                <a href="https://github.com/NilPointer-Software/bdfd-wiki/edit/dev/src/bdscript/author.md" class="editPage">
+                    <i class='fa fa-edit' id="editPageIcon"></i>
+                    <span>Edit this page</span>
+                </a>
+                
                 <div id="content" class="content">
                     <main>
                         <nav class="breadcrumb">
@@ -148,21 +153,16 @@
 $author[This is the author text!]
 </code></pre>
 <discord-messages>
-    <discord-message author="Nicky" role-color="#EE7908">
+    <discord-message role-color="#EE7908" author="Nicky">
         !author
     </discord-message>
-    <discord-message author="Wiki Bot" bot verified role-color="#748BD4">
-        <discord-embed slot="embeds" author-name="This is the author text!">
+    <discord-message verified author="Wiki Bot" bot role-color="#748BD4">
+        <discord-embed author-name="This is the author text!" slot="embeds">
         </discord-embed>
     </discord-message>
 </discord-messages>
 
                     </main>
-
-                    <a href="https://github.com/NilPointer-Software/bdfd-wiki/edit/dev/src/bdscript/author.md" class="editPage">
-                        <i class='fa fa-edit' id="editPageIcon"></i>
-                        <span>Edit this page</span>
-                    </a>
 
                     <nav class="nav-wrapper" aria-label="Page navigation">
                         <!-- Mobile navigation buttons -->

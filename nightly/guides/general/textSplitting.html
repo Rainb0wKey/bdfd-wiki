@@ -128,6 +128,11 @@
                     });
                 </script>
 
+                <a href="https://github.com/NilPointer-Software/bdfd-wiki/edit/dev/src/guides/general/textSplitting.md" class="editPage">
+                    <i class='fa fa-edit' id="editPageIcon"></i>
+                    <span>Edit this page</span>
+                </a>
+                
                 <div id="content" class="content">
                     <main>
                         <nav class="breadcrumb">
@@ -166,7 +171,7 @@ $textSplit[hello-world-!;-]
     <discord-message role-color="#E67E22" author="RainbowKey">
         !example
     </discord-message>
-    <discord-message verified role-color="#378afa" author="BDFD Support" bot>
+    <discord-message bot verified author="BDFD Support" role-color="#378afa">
         <discord-quote>world</discord-quote>
     </discord-message>
 </discord-messages>
@@ -190,7 +195,7 @@ $textSplit[hello world !; ]
     <discord-message author="RainbowKey" role-color="#E67E22">
         !example
     </discord-message>
-    <discord-message bot role-color="#378afa" author="BDFD Support" verified>
+    <discord-message author="BDFD Support" role-color="#378afa" verified bot>
         <discord-quote>hello<br />world<br />!</discord-quote>
     </discord-message>
 </discord-messages>
@@ -208,7 +213,7 @@ $textSplit[hello%world%!;%]
     <discord-message author="RainbowKey" role-color="#E67E22">
         !example
     </discord-message>
-    <discord-message verified author="BDFD Support" bot role-color="#378afa">
+    <discord-message bot author="BDFD Support" role-color="#378afa" verified>
         <discord-quote>3</discord-quote>
     </discord-message>
 </discord-messages>
@@ -230,13 +235,13 @@ $textSplit[hello_world_!;_]
     <discord-message author="RainbowKey" role-color="#E67E22">
         !example world
     </discord-message>
-    <discord-message verified author="BDFD Support" bot role-color="#378afa">
+    <discord-message verified author="BDFD Support" role-color="#378afa" bot>
         <discord-quote>2</discord-quote>
     </discord-message>
-    <discord-message author="RainbowKey" role-color="#E67E22">
+    <discord-message role-color="#E67E22" author="RainbowKey">
         !example bdfd
     </discord-message>
-    <discord-message author="BDFD Support" bot role-color="#378afa" verified>
+    <discord-message role-color="#378afa" bot verified author="BDFD Support">
         <discord-quote>-1</discord-quote>
     </discord-message>
 </discord-messages>
@@ -259,7 +264,7 @@ $textSplit[hello#world#!;#]
     <discord-message author="RainbowKey" role-color="#E67E22">
         !example
     </discord-message>
-    <discord-message bot author="BDFD Support" role-color="#378afa" verified>
+    <discord-message author="BDFD Support" bot role-color="#378afa" verified>
         <discord-quote>hello<br />world<br />!</discord-quote>
     </discord-message>
 </discord-messages>
@@ -282,7 +287,7 @@ $removeSplitTextElement[3]
     <discord-message author="RainbowKey" role-color="#E67E22">
         !example
     </discord-message>
-    <discord-message role-color="#378afa" verified bot author="BDFD Support">
+    <discord-message bot role-color="#378afa" author="BDFD Support" verified>
         <discord-quote>hello-world</discord-quote>
     </discord-message>
 </discord-messages>
@@ -303,10 +308,10 @@ $editSplitText[2;bdfd]
 &gt; $joinSplitText[-]
 </code></pre>
 <discord-messages>
-    <discord-message role-color="#E67E22" author="RainbowKey">
+    <discord-message author="RainbowKey" role-color="#E67E22">
         !example
     </discord-message>
-    <discord-message verified author="BDFD Support" role-color="#378afa" bot>
+    <discord-message bot role-color="#378afa" verified author="BDFD Support">
         <discord-quote>hello-bdfd-!</discord-quote>
     </discord-message>
 </discord-messages>
@@ -320,20 +325,15 @@ Random word: $splitText[$random[1;$sum[$getTextSplitLength;1]]]
 First word: $splitText[&lt;]
 </code></pre>
 <discord-messages>
-    <discord-message role-color="#E67E22" author="RainbowKey">
+    <discord-message author="RainbowKey" role-color="#E67E22">
         !example Hello world!
     </discord-message>
-    <discord-message verified bot role-color="#378afa" author="BDFD Support">
+    <discord-message author="BDFD Support" bot role-color="#378afa" verified>
         Characters: 12<br />Words: 2<br />Random word: world!<br />First word: Hello
     </discord-message>
 </discord-messages>
 
                     </main>
-
-                    <a href="https://github.com/NilPointer-Software/bdfd-wiki/edit/dev/src/guides/general/textSplitting.md" class="editPage">
-                        <i class='fa fa-edit' id="editPageIcon"></i>
-                        <span>Edit this page</span>
-                    </a>
 
                     <nav class="nav-wrapper" aria-label="Page navigation">
                         <!-- Mobile navigation buttons -->

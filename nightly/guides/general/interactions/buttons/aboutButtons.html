@@ -128,6 +128,11 @@
                     });
                 </script>
 
+                <a href="https://github.com/NilPointer-Software/bdfd-wiki/edit/dev/src/guides/general/interactions/buttons/aboutButtons.md" class="editPage">
+                    <i class='fa fa-edit' id="editPageIcon"></i>
+                    <span>Edit this page</span>
+                </a>
+                
                 <div id="content" class="content">
                     <main>
                         <nav class="breadcrumb">
@@ -158,14 +163,14 @@ Here, are all possible values for the <code>style</code> function argument.</p>
 <li><code>link</code> - Redirect button</li>
 </ul>
 <discord-messages>
-    <discord-message verified bot author="BDFD Support" role-color="#378afa">
+    <discord-message bot author="BDFD Support" verified role-color="#378afa">
         Buttons:
         <discord-attachments slot="components">
             <discord-action-row>
                 <discord-button type="primary">
                     Primary
                 </discord-button>
-                <discord-button disabled type="primary">
+                <discord-button type="primary" disabled>
                     Primary
                 </discord-button>
             </discord-action-row>
@@ -173,7 +178,7 @@ Here, are all possible values for the <code>style</code> function argument.</p>
                 <discord-button type="success">
                     Success
                 </discord-button>
-                <discord-button type="success" disabled>
+                <discord-button disabled type="success">
                     Success
                 </discord-button>
             </discord-action-row>
@@ -181,7 +186,7 @@ Here, are all possible values for the <code>style</code> function argument.</p>
                 <discord-button type="destructive">
                     Danger
                 </discord-button>
-                <discord-button type="destructive" disabled>
+                <discord-button disabled type="destructive">
                     Danger
                 </discord-button>
             </discord-action-row>
@@ -189,25 +194,25 @@ Here, are all possible values for the <code>style</code> function argument.</p>
                 <discord-button type="secondary">
                     Secondary
                 </discord-button>
-                <discord-button disabled type="secondary">
+                <discord-button type="secondary" disabled>
                     Secondary
                 </discord-button>
             </discord-action-row>
         </discord-attachments>
     </discord-message>
-    <discord-message author="BDFD Support" role-color="#378afa" verified bot>
+    <discord-message role-color="#378afa" verified bot author="BDFD Support">
         Other Buttons:
         <discord-attachments slot="components">
             <discord-action-row>
                 <discord-button type="secondary" url="https://nilpointer-software.github.io/bdfd-wiki/nightly/">
                     Link
                 </discord-button>
-                <discord-button type="secondary" url="https://nilpointer-software.github.io/bdfd-wiki/nightly/" disabled>
+                <discord-button disabled type="secondary" url="https://nilpointer-software.github.io/bdfd-wiki/nightly/">
                     Link
                 </discord-button>
             </discord-action-row>
             <discord-action-row>
-                <discord-button type="secondary" emoji="https://em-content.zobj.net/thumbs/120/mozilla/36/heavy-black-heart_2764.png">
+                <discord-button emoji="https://em-content.zobj.net/thumbs/120/mozilla/36/heavy-black-heart_2764.png" type="secondary">
                     Emoji
                 </discord-button>
             </discord-action-row>
@@ -265,10 +270,10 @@ Hello
 $addButton[no;test;Say hello!;primary;no;]
 </code></pre>
 <discord-messages>
-    <discord-message author="RainbowKey" role-color="#E67E22">
+    <discord-message role-color="#E67E22" author="RainbowKey">
         !example
     </discord-message>
-    <discord-message bot author="BDFD Support" verified role-color="#378afa">
+    <discord-message author="BDFD Support" role-color="#378afa" verified bot>
         Hello
         <discord-attachments slot="components">
             <discord-action-row>
@@ -405,11 +410,6 @@ $endif
 </blockquote>
 
                     </main>
-
-                    <a href="https://github.com/NilPointer-Software/bdfd-wiki/edit/dev/src/guides/general/interactions/buttons/aboutButtons.md" class="editPage">
-                        <i class='fa fa-edit' id="editPageIcon"></i>
-                        <span>Edit this page</span>
-                    </a>
 
                     <nav class="nav-wrapper" aria-label="Page navigation">
                         <!-- Mobile navigation buttons -->
