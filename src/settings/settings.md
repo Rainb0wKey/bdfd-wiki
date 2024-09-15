@@ -81,6 +81,14 @@ Let's customize your experience in our Bot Designer For Discord wiki world!
 </div>
 
 <div class="settingembed">
+  <h2>Folders</h2>
+  <p>Folders make it easier to find the functions you need.</p>
+  <div class="folderbuttons">
+  	<button id="manageFolder" class="folderbutton">Enable</button>
+  </div>
+</div>
+
+<div class="settingembed">
   <h2>Discord Example</h2>
   <p>Let’s give our Discord example previews a color makeover to make them look better.</p>
   <button class="resetSettingButton" onClick="changeDiscordTheme('dark')">
