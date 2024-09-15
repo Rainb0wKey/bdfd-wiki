@@ -23,7 +23,7 @@ a > .hljs {
     text-decoration: none;
 }
 
-.content a:link::before {
+:not(.content):not(.editPage):link::before {
     content: '';
     position: absolute;
     width: 100%;
