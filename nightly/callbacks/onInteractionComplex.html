@@ -174,7 +174,7 @@ $sendMessage[Hello $displayName!]
     <discord-message author="Nicky" role-color="#EE7908">
         !example
     </discord-message>
-    <discord-message role-color="#748BD4" bot author="Wiki Bot" verified>
+    <discord-message bot author="Wiki Bot" role-color="#748BD4" verified>
         Click!
         <discord-attachments slot="components">
             <discord-action-row>
@@ -184,7 +184,7 @@ $sendMessage[Hello $displayName!]
             </discord-action-row>
         </discord-attachments>
     </discord-message>
-    <discord-message bot author="Wiki Bot" verified role-color="#748BD4">
+    <discord-message bot role-color="#748BD4" verified author="Wiki Bot">
         Hello Nicky!
     </discord-message>
 </discord-messages>
@@ -195,6 +195,11 @@ $sendMessage[Hello $displayName!]
 </blockquote>
 
                     </main>
+
+                    <a href="https://github.com/NilPointer-Software/bdfd-wiki/edit/dev/src/callbacks/onInteractionComplex.md" class="editPage">
+                        <i class='fa fa-edit' id="editPageIcon"></i>
+                        <span>Edit this page</span>
+                    </a>
 
                     <nav class="nav-wrapper" aria-label="Page navigation">
                         <!-- Mobile navigation buttons -->
@@ -210,11 +215,6 @@ $sendMessage[Hello $displayName!]
                     </nav>
                 </div>
             </div>
-
-            <a href="https://github.com/NilPointer-Software/bdfd-wiki/edit/dev/src/callbacks/onInteractionComplex.md" class="editPage">
-                <i class='fa fa-edit' id="editPageIcon"></i>
-                <span>Edit this page</span>
-            </a>
             
             <nav class="nav-wide-wrapper" aria-label="Page navigation">
                     <a href="../callbacks/onInteraction.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">

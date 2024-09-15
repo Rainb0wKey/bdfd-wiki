@@ -156,10 +156,10 @@ $if[$customID==onlyauthor-$authorID]
 $endif
 </code></pre>
 <discord-messages>
-    <discord-message author="Nicky" role-color="#EE7908">
+    <discord-message role-color="#EE7908" author="Nicky">
         !example
     </discord-message>
-    <discord-message author="Wiki Bot" role-color="#748BD4" bot verified>
+    <discord-message bot author="Wiki Bot" role-color="#748BD4" verified>
         Click
         <discord-attachments slot="components">
             <discord-action-row>
@@ -169,13 +169,13 @@ $endif
             </discord-action-row>
         </discord-attachments>
     </discord-message>
-    <discord-message bot verified author="Wiki Bot" role-color="#748BD4">
+    <discord-message role-color="#748BD4" author="Wiki Bot" bot verified>
         Hello!
     </discord-message>
     <discord-message role-color="#EE7908" author="Nicky">
         !example
     </discord-message>
-    <discord-message bot verified author="Wiki Bot" role-color="#748BD4">
+    <discord-message role-color="#748BD4" author="Wiki Bot" bot verified>
         Click
         <discord-attachments slot="components">
             <discord-action-row>
@@ -193,7 +193,7 @@ $endif
     <discord-message author="MineBartekSA" role-color="#F1BDEE">
         !example
     </discord-message>
-    <discord-message verified bot author="Wiki Bot" role-color="#748BD4">
+    <discord-message bot author="Wiki Bot" role-color="#748BD4" verified>
         Click
         <discord-attachments slot="components">
             <discord-action-row>
@@ -203,7 +203,7 @@ $endif
             </discord-action-row>
         </discord-attachments>
     </discord-message>
-    <discord-message author="Wiki Bot" role-color="#748BD4" bot verified>
+    <discord-message author="Wiki Bot" bot role-color="#748BD4" verified>
         Hello MineBartekSA!
     </discord-message>
     <discord-message role-color="#EE7908" author="Nicky">
@@ -215,6 +215,11 @@ $endif
 </blockquote>
 
                     </main>
+
+                    <a href="https://github.com/NilPointer-Software/bdfd-wiki/edit/dev/src/callbacks/onInteraction.md" class="editPage">
+                        <i class='fa fa-edit' id="editPageIcon"></i>
+                        <span>Edit this page</span>
+                    </a>
 
                     <nav class="nav-wrapper" aria-label="Page navigation">
                         <!-- Mobile navigation buttons -->
@@ -230,11 +235,6 @@ $endif
                     </nav>
                 </div>
             </div>
-
-            <a href="https://github.com/NilPointer-Software/bdfd-wiki/edit/dev/src/callbacks/onInteraction.md" class="editPage">
-                <i class='fa fa-edit' id="editPageIcon"></i>
-                <span>Edit this page</span>
-            </a>
             
             <nav class="nav-wide-wrapper" aria-label="Page navigation">
                     <a href="../callbacks/onMessageDelete.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
