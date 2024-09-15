@@ -99,14 +99,14 @@ button {
     flex-wrap: wrap;
 }
 
-.textfontbuttons {
+.textfontbuttons, .folderbuttons {
     user-select: none;
     -webkit-user-select: none;
     display: block;
     margin-top: -20px;
 }
 
-.tbutton, .fbutton, .hgButton, .hbutton {
+.tbutton, .fbutton, .hgButton, .hbutton, .folderbutton {
     -webkit-user-select: none;
     user-select: none;
     touch-action: manipulation;
@@ -280,7 +280,7 @@ button {
     background: linear-gradient(-25deg, #240800, #742006);
 }
 
-.tbutton:hover, .fbutton:hover, .hgButton:hover, .hbutton:hover{
+.tbutton:hover, .fbutton:hover, .hgButton:hover, .hbutton:hover, .folderbutton:hover {
     transform: scale(1.1);
     border-radius: 8px;
     border-width: 1px;
