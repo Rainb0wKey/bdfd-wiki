@@ -5,6 +5,7 @@
     padding-bottom: 2px;
     border-radius: 10px;
     border-top: 2px solid var(--color3);
+    position: relative;
 }
 
 .changePrev {
@@ -23,7 +24,6 @@
 
 .changePrev:hover {
     border-color: var(--color2);
-    transform: scale(1.005);
     transition: .3s;
 }
 
@@ -34,4 +34,26 @@
 .changePrev p {
     margin-top: -20px;
     margin-bottom: 85px;
+}
+
+.changePrev:hover > #newUpdate {
+    background-color: var(--color2);
+    transform: scale(1.05);
+    transition: .3s;
+}
+
+#newUpdate {
+    user-select: none;
+    -webkit-user-select: none;
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    background-color: var(--color1);
+    padding: 5px 10px;
+    border-radius: 10px;
+    transition: .3s;
+}
+
+#newUpdate:before {
+    content: '🔥'
 }
