@@ -188,7 +188,7 @@ Let's customize your experience in our Bot Designer For Discord wiki world!
 
 <div class="settingembed">
   <h2>Code Highlighting</h2>
-  <p>Input your  highlighting code here!</p>
+  <p>Input your  highlighting code here! Reload the page when you finish.</p>
   <button class="resetSettingButton" id="resetHG" onClick="resetHGInput()">
     <i class="fa fa-refresh" aria-hidden="true"></i>
   </button>
@@ -198,6 +198,9 @@ Let's customize your experience in our Bot Designer For Discord wiki world!
     </button>
     <button class="hgButton">
       <p><a href="https://www.youtube.com/watch?v=xvFZjo5PgG0"><i class="fa fa-book" aria-hidden="true"></i> What is this?</a></p>
+    </button>
+    <button id="reloadHG" class="hgButton">
+      <p><i class="fa fa-circle-o-notch" aria-hidden="true"></i> Reload and save</p>
     </button>
     <textarea id="jsonhginput" oninput="updateCodeHG()" maxlength="10000"></textarea>
   </div>
