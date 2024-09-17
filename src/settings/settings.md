@@ -15,7 +15,7 @@ Let's customize your experience in our Bot Designer For Discord wiki world!
 <div class="settingembed">
   <h2>Wiki Theme</h2>
   <p>You can choose a color scheme that best suits your preferences and requirements.</p>
-  <button class="resetSettingButton" id="resetTheme" onClick="resetTheme()">
+  <button class="resetSettingButton" id="resetTheme" onClick="resetTheme()" title="Reset" aria-label="Reset">
     <i class="fa fa-refresh" aria-hidden="true"></i>
   </button>
   <input type="range" id="themeSlider" min="0" max="360" oninput="updateColor()">
@@ -53,7 +53,7 @@ Let's customize your experience in our Bot Designer For Discord wiki world!
 <div class="settingembed">
   <h2>Text Size</h2>
   <p>Easily modify the size of text for optimal viewing and readability.</p>
-  <button class="resetSettingButton" id="textResetButton" onClick="resetFontSize()">
+  <button class="resetSettingButton" id="textResetButton" onClick="resetFontSize()" title="Reset" aria-label="Reset">
     <i class="fa fa-refresh" aria-hidden="true"></i>
   </button>
   <div class="textsizebuttons">
@@ -66,7 +66,7 @@ Let's customize your experience in our Bot Designer For Discord wiki world!
 <div class="settingembed">
   <h2>Text Font</h2>
   <p>Select the font that makes text more understandable.</p>
-  <button class="resetSettingButton" id="font1" onClick="changeTextFont('font1')">
+  <button class="resetSettingButton" id="font1" onClick="changeTextFont('font1')" title="Reset" aria-label="Reset">
     <i class="fa fa-refresh" aria-hidden="true"></i>
   </button>
   <div class="textfontbuttons">
@@ -91,7 +91,7 @@ Let's customize your experience in our Bot Designer For Discord wiki world!
 <div class="settingembed">
   <h2>Discord Example</h2>
   <p>Let’s give our Discord example previews a color makeover to make them look better.</p>
-  <button class="resetSettingButton" onClick="changeDiscordTheme('dark')">
+  <button class="resetSettingButton" onClick="changeDiscordTheme('dark')" title="Reset" aria-label="Reset">
     <i class="fa fa-refresh" aria-hidden="true"></i>
   </button>
   <div class="discordexamplebuttons">
@@ -189,7 +189,7 @@ Let's customize your experience in our Bot Designer For Discord wiki world!
 <div class="settingembed">
   <h2>Code Highlighting</h2>
   <p>Input your  highlighting code here! Reload the page when you finish.</p>
-  <button class="resetSettingButton" id="resetHG" onClick="resetHGInput()">
+  <button class="resetSettingButton" id="resetHG" onClick="resetHGInput()" title="Reset" aria-label="Reset">
     <i class="fa fa-refresh" aria-hidden="true"></i>
   </button>
   <div class="codehighlighting">
