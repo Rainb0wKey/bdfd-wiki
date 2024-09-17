@@ -151,7 +151,7 @@
 <div class="settingembed">
   <h2 id="wiki-theme"><a class="header" href="#wiki-theme">Wiki Theme</a></h2>
   <p>You can choose a color scheme that best suits your preferences and requirements.</p>
-  <button class="resetSettingButton" id="resetTheme" onClick="resetTheme()">
+  <button class="resetSettingButton" id="resetTheme" onClick="resetTheme()" title="Reset" aria-label="Reset">
     <i class="fa fa-refresh" aria-hidden="true"></i>
   </button>
   <input type="range" id="themeSlider" min="0" max="360" oninput="updateColor()">
@@ -187,7 +187,7 @@
 <div class="settingembed">
   <h2 id="text-size"><a class="header" href="#text-size">Text Size</a></h2>
   <p>Easily modify the size of text for optimal viewing and readability.</p>
-  <button class="resetSettingButton" id="textResetButton" onClick="resetFontSize()">
+  <button class="resetSettingButton" id="textResetButton" onClick="resetFontSize()" title="Reset" aria-label="Reset">
     <i class="fa fa-refresh" aria-hidden="true"></i>
   </button>
   <div class="textsizebuttons">
@@ -199,7 +199,7 @@
 <div class="settingembed">
   <h2 id="text-font"><a class="header" href="#text-font">Text Font</a></h2>
   <p>Select the font that makes text more understandable.</p>
-  <button class="resetSettingButton" id="font1" onClick="changeTextFont('font1')">
+  <button class="resetSettingButton" id="font1" onClick="changeTextFont('font1')" title="Reset" aria-label="Reset">
     <i class="fa fa-refresh" aria-hidden="true"></i>
   </button>
   <div class="textfontbuttons">
@@ -222,7 +222,7 @@
 <div class="settingembed">
   <h2 id="discord-example"><a class="header" href="#discord-example">Discord Example</a></h2>
   <p>Let’s give our Discord example previews a color makeover to make them look better.</p>
-  <button class="resetSettingButton" onClick="changeDiscordTheme('dark')">
+  <button class="resetSettingButton" onClick="changeDiscordTheme('dark')" title="Reset" aria-label="Reset">
     <i class="fa fa-refresh" aria-hidden="true"></i>
   </button>
   <div class="discordexamplebuttons">
@@ -301,18 +301,18 @@
     <discord-message author="RainbowKey" role-color="#E67E22">
         !example ❤️
         <discord-reactions slot="reactions">
-            <discord-reaction emoji="https://upload.wikimedia.org/wikipedia/commons/7/70/Symbolic_Love_Heart.png" name=":emoji:" count="1">
+            <discord-reaction count="1" name=":emoji:" emoji="https://upload.wikimedia.org/wikipedia/commons/7/70/Symbolic_Love_Heart.png">
             </discord-reaction>
         </discord-reactions>
     </discord-message>
-    <discord-message bot author="BDFD Support" role-color="#378afa" verified>
+    <discord-message author="BDFD Support" bot role-color="#378afa" verified>
         Added!
     </discord-message>
 </discord-messages>
 <div class="settingembed">
   <h2 id="code-highlighting"><a class="header" href="#code-highlighting">Code Highlighting</a></h2>
   <p>Input your  highlighting code here! Reload the page when you finish.</p>
-  <button class="resetSettingButton" id="resetHG" onClick="resetHGInput()">
+  <button class="resetSettingButton" id="resetHG" onClick="resetHGInput()" title="Reset" aria-label="Reset">
     <i class="fa fa-refresh" aria-hidden="true"></i>
   </button>
   <div class="codehighlighting">
