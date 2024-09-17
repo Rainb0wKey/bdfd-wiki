@@ -1,7 +1,7 @@
 # Changelog
 
 <div class="changelog">
-  <div id="changePrev">
+  <div class="changePrev">
     <h2>August</h2>
     <p>Aded a lot of useful functions</p>
   </div>
