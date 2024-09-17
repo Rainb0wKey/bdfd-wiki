@@ -67,6 +67,63 @@ const themes = {
   }
 }
 
+const codeScheme = {
+  "defaultTextHighlight": {
+    "color": 4288341353,
+    "style": 0
+  },
+  "fallbackHighlight": {
+    "color": 4285791231,
+    "style": 0
+  },
+  "bracketHighlight": {
+    "color": 4294921292,
+    "style": 1
+  },
+  "semicolonHighlight": {
+    "color": 4294920266,
+    "style": 1
+  },
+  "functionsHighlights": {
+    "$nomention": {
+      "color": 4294932473,
+      "style": 0
+    },
+    "$catch": {
+      "color": 4288905212,
+      "style": 0
+    },
+    "$else": {
+      "color": 4288905212,
+      "style": 0
+    },
+    "$elseif": {
+      "color": 4288905212,
+      "style": 0
+    },
+    "$endif": {
+      "color": 4288905212,
+      "style": 0
+    },
+    "$endtry": {
+      "color": 4288905212,
+      "style": 0
+    },
+    "$error": {
+      "color": 4288905212,
+      "style": 0
+    },
+    "$if": {
+      "color": 4288905212,
+      "style": 0
+    },
+    "$try": {
+      "color": 4288905212,
+      "style": 0
+    }
+  }
+}
+
 const fonts = {
   'font2': 'Georgia, serif',
   'font3': 'Montserrat',
@@ -115,6 +172,19 @@ function resetFontSize() {
   // Save in Storage
   updateJsonFile("text-size", range.value + "%");
 };
+
+function resetHGInput() {
+  const codeInput = document.getElementById('jsonhginput');
+  const charCountElement = document.querySelector('.charCount');
+
+  var inputcodedesign = JSON.stringify(codeScheme);
+  const charJSONCount = inputcodedesign.length;
+    
+  charCountElement.textContent = `${charJSONCount} / 10000`;
+  codeTextInput.value = inputcodedesign;
+
+  localStorage.setItem("code-hg", inputcodedesign);
+}
 
 function copyHGInput() {
   const textarea = document.getElementById('jsonhginput');
