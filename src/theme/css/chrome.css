@@ -176,6 +176,12 @@ a > .hljs {
     padding-right: .4rem;
 }
 
+@media (max-width: 750px) {
+    .editPage {
+        visibility: hidden
+    }
+}
+
 /* Nav Icons */
 
 .nav-chapters {
