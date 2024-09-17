@@ -12,6 +12,30 @@ html {
     scrollbar-color: var(--color2) var(--color3);
 }
 
+/* Arial-Labels */
+
+button[aria-label]::after {
+    content: attr(aria-label);
+    font-family: system-ui;
+    position: absolute;
+    font-size: 13px !important;
+    top: 110%;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 5px 10px;
+    border-radius: 10px;
+    z-index: 100;
+    opacity: 0;
+    background: var(--color2);
+    color: #fff;
+    transition: opacity 0.3s ease;
+    pointer-events: none;
+}
+
+button[aria-label]:hover::after {
+    opacity: 1;
+}
+
 /* Links */
 
 #searchresults a,
