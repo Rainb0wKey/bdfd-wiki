@@ -5,7 +5,7 @@
 <div class="changelog">
   <div class="changePrev">
     <h2>August</h2>
-    <p>Let's start from scratch.</p>
+    <p>Let's start from scratch now</p>
     <span id="newUpdate">NEW</span>
   </div>
   <ul>
