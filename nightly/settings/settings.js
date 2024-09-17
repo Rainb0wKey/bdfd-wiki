@@ -393,6 +393,10 @@ function rgbToHex(rgb) {
   return '#' + ('000000' + ((c[0] << 16) | (c[1] << 8) | c[2]).toString(16)).slice(-6);
 }
 
+function reloadHGPage() {
+  location.reload();
+}
+
 function loadSettings() {
   const displaySize = document.getElementById("display-size");
   const range = document.getElementById("textsize");
