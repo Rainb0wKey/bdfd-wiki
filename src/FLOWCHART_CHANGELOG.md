@@ -1,5 +1,7 @@
 # Changelog
 
+<link rel="stylesheet" href="./theme/css/changelog.css">
+
 <div class="changelog">
   <div class="changePrev">
     <h2>August</h2>
