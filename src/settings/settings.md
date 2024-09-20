@@ -47,6 +47,7 @@ Let's customize your experience in our Bot Designer For Discord wiki world!
     <button id="high-green" onClick="changeTextHigh('green')" class="hbutton">Green</button>
     <button id="high-blue" onClick="changeTextHigh('blue')" class="hbutton">Blue</button>
     <button id="high-purple" onClick="changeTextHigh('purple')" class="hbutton">Purple</button>
+    <button id="high-sync" onClick="changeTextHigh('sync')" class="hbutton">Sync</button>
   </div>
 </div>
 
