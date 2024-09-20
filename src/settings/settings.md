@@ -164,7 +164,7 @@ Let's customize your experience in our Bot Designer For Discord wiki world!
       <div class="display-text">Autumn Blaze</div>
     </button>
   </div>
-  <p id="default-is">Dark</p>
+  <p id="default-is">"Discord Dark"</p>
 </div>
 
 ```discord yaml
