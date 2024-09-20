@@ -387,6 +387,16 @@ button {
     text-shadow: 0 0 10px #f07025;
 }
 
+.texthighbuttons .hbutton#high-sync {
+    text-shadow: -9px -9px 15px red,
+    -6px -6px 10px orange,
+    -3px -3px 5px yellow,
+    0px 0px 5px green,
+    3px 3px 5px #4fadff,
+    6px 6px 5px blue,
+    9px 9px 15px purple;
+}
+
 .textfontbuttons .fbutton#font1 {
     font-family: "Open Sans", sans-serif;
 }
