@@ -425,6 +425,8 @@ function gradientBackground() {
   setStatusBar(hue);
   document.body.style.background = `linear-gradient(to bottom right, ${color1}, ${color2})`;
   document.documentElement.style.scrollbarColor = `hsl(${hue}, 70%, 25%)` + `hsl(${hue}, 80%, 8%)`;
+
+  updateJsonFile("theme-bg", document.body.style.background);
 };
 
 function updateCodeHG() {
