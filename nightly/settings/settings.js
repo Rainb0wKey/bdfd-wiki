@@ -241,7 +241,7 @@ function changeTextHigh(colorId) {
   let color = textHighlights[colorId] || 'none';
 
   if (colorId == 'sync') {
-    fonntHtml.style.textShadow = '0 0 10px' + ' #' + document.body.style.color;
+    fonntHtml.style.textShadow = '0 0 10px' + document.body.style.color;
     console.log(`1`);
   } else {
     if (color == 'none'){
