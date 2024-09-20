@@ -242,7 +242,7 @@ function changeTextHigh(colorId) {
 
   if (colorId == 'sync') {
     const originalShasowColor = document.body.style.color;
-    const [r, g, b] = originalColor.match(/\d+/g).map(Number);
+    const [r, g, b] = originalShasowColor.match(/\d+/g).map(Number);
     const darkerShadowColor = darkenRGB(r, g, b, 0.8);
     fonntHtml.style.textShadow = '0 0 5px ' + darkerShadowColor;
   } else {
