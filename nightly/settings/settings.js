@@ -241,12 +241,12 @@ function changeTextHigh(colorId) {
   let color = textHighlights[colorId] || 'none';
 
   if (colorId == 'sync') {
-    fonntHtml.style.textShadow = '0 0 10px ' + document.body.style.color;
+    fonntHtml.style.textShadow = '0 0 5px ' + document.body.style.color;
   } else {
     if (color == 'none'){
       fonntHtml.style.textShadow = color;
     } else {
-      fonntHtml.style.textShadow = '0 0 10px' + ' #' + color;
+      fonntHtml.style.textShadow = '0 0 5px' + ' #' + color;
     }
   }
 
