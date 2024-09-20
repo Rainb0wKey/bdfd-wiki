@@ -242,13 +242,20 @@ function changeTextHigh(colorId) {
 
   if (colorId == 'sync') {
     fonntHtml.style.textShadow = '0 0 10px' + ' #' + document.body.style.color;
+    console.log(`1`);
   } else {
     if (color == 'none'){
       fonntHtml.style.textShadow = color;
+      console.log(`2`);
     } else {
       fonntHtml.style.textShadow = '0 0 10px' + ' #' + color;
+      console.log(`3`);
     }
   }
+
+  console.log(fonntHtml.style.textShadow);
+  console.log(colorId);
+  
   // Save in Storage
   updateJsonFile("text-hg", fonntHtml.style.textShadow);
 }
