@@ -243,13 +243,13 @@ function changeTextHigh(colorId) {
   if (colorId == 'sync') {
     const originalShasowColor = document.body.style.color;
     const [r, g, b] = originalShasowColor.match(/\d+/g).map(Number);
-    const darkerShadowColor = darkenRGB(r, g, b, 0.5);
-    fonntHtml.style.textShadow = '0 0 5px ' + darkerShadowColor;
+    const darkerShadowColor = darkenRGB(r, g, b, 0.6);
+    fonntHtml.style.textShadow = '0 0 10px ' + darkerShadowColor;
   } else {
     if (color == 'none'){
       fonntHtml.style.textShadow = color;
     } else {
-      fonntHtml.style.textShadow = '0 0 5px' + ' #' + color;
+      fonntHtml.style.textShadow = '0 0 10px' + ' #' + color;
     }
   }
 
