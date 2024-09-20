@@ -142,8 +142,7 @@ a > .hljs {
 
 .menu-bar i:hover,
 .menu-bar .icon-button:hover,
-.nav-chapters:hover,
-.mobile-nav-chapters i:hover {
+.nav-chapters:hover {
     color: #ded;
 }
 
@@ -247,6 +246,12 @@ a > .hljs {
     border-radius: 10px;
     background-color: var(--color3) !important;
     color: var(--color1) !important;
+}
+
+.mobile-nav-chapters:hover i {
+    color: #ded;
+    transform: scale(1.05);
+    transition: .2s;
 }
 
 .previous {
