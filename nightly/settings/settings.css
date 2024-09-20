@@ -57,6 +57,10 @@ body {
     transition: .5s;
 }
 
+.discord-reaction {
+    transition: .1s;
+}
+
 /* Main Setting UI */
 .settingembed {
     position: relative;
