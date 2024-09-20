@@ -240,11 +240,15 @@ function changeTextHigh(colorId) {
   const fonntHtml = document.querySelector('html');
   let color = textHighlights[colorId] || 'none';
 
-  if (color == 'none')
+  if (color == 'none') {
     fonntHtml.style.textShadow = color;
-  else
-    fonntHtml.style.textShadow = '0 0 10px' + ' #' + color;
-
+  } else {
+    if (colorId = 'sync') {
+      fonntHtml.style.textShadow = '0 0 10px' + ' #' + document.body.style.color;
+    } else {
+      fonntHtml.style.textShadow = '0 0 10px' + ' #' + color;
+    }
+  }
   // Save in Storage
   updateJsonFile("text-hg", fonntHtml.style.textShadow);
 }
