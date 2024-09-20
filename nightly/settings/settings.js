@@ -241,7 +241,10 @@ function changeTextHigh(colorId) {
   let color = textHighlights[colorId] || 'none';
 
   if (colorId == 'sync') {
-    fonntHtml.style.textShadow = '0 0 5px ' + document.body.style.color;
+    const originalShasowColor = document.body.style.color;
+    const [r, g, b] = originalColor.match(/\d+/g).map(Number);
+    const darkerShadowColor = darkenRGB(r, g, b, 0.8);
+    fonntHtml.style.textShadow = '0 0 5px ' + darkerShadowColor;
   } else {
     if (color == 'none'){
       fonntHtml.style.textShadow = color;
@@ -470,6 +473,10 @@ function isJson(str) {
 function rgbToHex(rgb) {
   const c = rgb.match(/\d+/g).map(Number);
   return '#' + ('000000' + ((c[0] << 16) | (c[1] << 8) | c[2]).toString(16)).slice(-6);
+}
+
+function darkenRGB(r, g, b) {
+  return `rgb(${Math.round(r * 0.5)}, ${Math.round(g * 0.5)}, ${Math.round(b * 0.5)})`;
 }
 
 function reloadHGPage() {
