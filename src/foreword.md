@@ -34,7 +34,7 @@
     <div class="community">
       <i class="fa fa-info" aria-hidden="true"></i>
       <p id="title">Community</p>
-      <p id="content">We will always be happy to help you on our discord server.</p>
+      <p id="content">We will always be happy to help you on our discord server. (joke)</p>
     </div>
   </div>
 </div>
