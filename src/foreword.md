@@ -13,6 +13,14 @@
   </div>
 </div>
 
+<div class="why-bdfd">
+  <h1>Why BDFD?</h1>
+  <div class="why-bdfd-embed">
+    <div class="hosting">
+    <p>Free hosting. Just watch ads!</p>
+    </div>
+  </div>
+</div>
 ### 📎 Links
 - [Discord Server](https://discord.gg/bot-designer-for-discord-official-server-566363823137882154)
 - [Website](https://botdesignerdiscord.com/)
