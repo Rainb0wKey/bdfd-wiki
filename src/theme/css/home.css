@@ -47,8 +47,7 @@ bold {
     padding-right: .3rem;
 }
 
-.getHelp a, 
-.createMyBot a { 
+.getHelp a, .createMyBot a { 
   color: #fff !important;
   font-weight: 700;
 }
@@ -73,11 +72,12 @@ bold {
     top: -4.1rem;
 }
 
-.hosting, .anywhere {
+.hosting, .anywhere, .alotfunctions {
     touch-action: manipulation;
     white-space: normal;
     background: var(--color3);
     width: 45.5%;
+    height: 13rem;
     margin: 1rem;
     border-radius: 10px;
     box-sizing: border-box;
@@ -86,12 +86,12 @@ bold {
 }
 
 @media (max-width: 900px) {
-    .hosting, .anywhere {
+    .hosting, .anywhere, .alotfunctions {
         width: 100%;
     }
 }
 
-.hosting:hover, .anywhere:hover {
+.hosting:hover, .anywhere:hover, .alotfunctions:hover {
     transform: scale(1.05);
     transition: .3s;
 }
