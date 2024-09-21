@@ -1,6 +1,9 @@
 <div class="bdfd-is">
   <h1 id="bdfd-case">Bot Designer For Disciord</h1>
-  <p id="bdfd-content><bold>BDFD</bold>BDFD allows you to build Discord bots with ease, using beginner-friendly functions. Create everything from simple echo bots to complex multi-purpose administration bots.</p>
+  <p id="bdfd-content><bold>BDFD</bold>BDFD allows you to build Discord bots with ease, using beginner-friendly functions. Create everything from simple echo bots to complex multi-purpose administration bots</p>
+  <button class="getHelp">
+    <p><a href="https://discord.gg/bot-designer-for-discord-official-server-566363823137882154"><i class="fa fa-question" aria-hidden="true"></i> Need support? Join our Discord server!</a></p>
+  </button>
 </div>
 
 What are you waiting for? Create the bot of your dreams today!
