@@ -2,7 +2,7 @@
   <h1 id="bdfd-case">Bot Designer For Discord</h1>
   <p><bold>BDFD</bold> allows you to build Discord bots with ease, using beginner-friendly functions. Create everything from simple echo bots to complex multi-purpose administration bots</p>
   <button class="getHelp">
-    <p><a href="https://discord.gg/bot-designer-for-discord-official-server-566363823137882154"><i class="fa fa-question" aria-hidden="true"></i> Need support? Join our Discord!</a></p>
+    <p><a href="https://discord.gg/bot-designer-for-discord-official-server-566363823137882154"><i class="fa fa-share" aria-hidden="true"></i> Need support? Join our Discord!</a></p>
   </button>
 </div>
 
