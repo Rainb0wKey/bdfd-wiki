@@ -13,10 +13,6 @@
   </div>
 </div>
 
-What are you waiting for? Create the bot of your dreams today!
-
-**Start with [*Bot Designer for Discord*](https://app.botdesignerdiscord.com/)**
-
 ### 📎 Links
 - [Discord Server](https://discord.gg/bot-designer-for-discord-official-server-566363823137882154)
 - [Website](https://botdesignerdiscord.com/)
