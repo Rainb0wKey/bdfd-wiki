@@ -20,6 +20,8 @@
 .getHelp, .createMyBot {
     touch-action: manipulation;
     border-radius: 50px;
+    font-size: 80%;
+    margin-top: 1rem;
     border: solid;
     border-width: 0;
     background-color: var(--color2);
