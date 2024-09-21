@@ -22,7 +22,7 @@
       <p id="content">You can host your bot just by watching ads.</p>
     </div>
     <div class="anywhere">
-      <i class="fa fa-play" aria-hidden="true"></i>
+      <i class="fa fa-television" aria-hidden="true"></i>
       <p id="title">Anywhere</p>
       <p id="content">BDFD is always near you! You can use versions for Phone, Tablet, Computer</p>
     </div>
