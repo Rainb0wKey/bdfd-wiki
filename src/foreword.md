@@ -17,10 +17,18 @@
   <h1>Why BDFD?</h1>
   <div class="why-bdfd-embed">
     <div class="hosting">
-    <p>Free hosting. Just watch ads!</p>
+      <i class="fa fa-play" aria-hidden="true"></i>
+      <p id="title">Free hosting</p>
+      <p id="content">You can host your bot just by watching ads.</p>
+    </div>
+    <div class="anywhere">
+      <i class="fa fa-play" aria-hidden="true"></i>
+      <p id="title">Anywhere</p>
+      <p id="content">BDFD is always near you! You can use versions for Phone, Tablet, Computer</p>
     </div>
   </div>
 </div>
+
 ### 📎 Links
 - [Discord Server](https://discord.gg/bot-designer-for-discord-official-server-566363823137882154)
 - [Website](https://botdesignerdiscord.com/)
