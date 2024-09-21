@@ -22,7 +22,7 @@
       <p id="content">You can host your bot just by watching ads.</p>
     </div>
     <div class="anywhere">
-      <i class="fa fa-television" aria-hidden="true"></i>
+      <i class="fa fa-desktop" aria-hidden="true"></i>
       <p id="title">Anywhere</p>
       <p id="content">BDFD is always near you! You can use versions for Phone, Tablet, Computer.</p>
     </div>
@@ -43,13 +43,13 @@
   <h1 id="bdfd-case">Download</h1>
   <div class="downloadButtons">
     <button>
-      <p><a href="https://apps.apple.com/app/bot-designer-for-discord/id1495536477"><i class="fa fa-android" aria-hidden="true"></i> iOS</a></p>
+      <p><a href="https://apps.apple.com/app/bot-designer-for-discord/id1495536477"><i class="fa fa-apple" aria-hidden="true"></i> iOS</a></p>
     </button>
     <button>
       <p><a href="https://play.google.com/store/apps/details?id=com.jakubtomana.discordbotdesinger"><i class="fa fa-android" aria-hidden="true"></i> Android</a></p>
     </button>
     <button>
-      <p><a href="https://app.botdesignerdiscord.com/"><i class="fa fa-android" aria-hidden="true"></i> Web App</a></p>
+      <p><a href="https://app.botdesignerdiscord.com/"><i class="fa fa-laptop" aria-hidden="true"></i> Web App</a></p>
     </button>
   </div>
 </div>
