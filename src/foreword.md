@@ -1,3 +1,5 @@
+<link rel="stylesheet" href="./theme/css/home.css">
+
 <div class="bdfd-is">
   <h1 id="bdfd-case">Bot Designer For Discord</h1>
   <p><bold>BDFD</bold> allows you to build Discord bots with ease, using beginner-friendly functions. Create everything from simple echo bots to complex multi-purpose administration bots</p>
