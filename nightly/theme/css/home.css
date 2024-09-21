@@ -12,23 +12,40 @@
     border-radius: 10px;
 }
 
-.getHelp {
+.homeButtons {
+    user-select: none;
+    -webkit-user-select: none;
+}
+
+.getHelp, .createMyBot {
     border-radius: 50px;
     border: solid;
     border-width: 0;
     background-color: var(--color2);
+    font-weight: 700;
     padding: 0 10px 0 10px;
+    transition: .3s;
+}
+
+.getHelp:hover, .createMyBot:hover {
+    border-color: var(--color1);
+    transform: scale(1.05);
+    padding: 0 12px 0 12px;
+    margin-right: 1rem;
+    margin-left: 1rem;
+    transition: .3s;
 }
 
 bold {
    font-weight: 800; 
 }
 
-.getHelp i {
+.getHelp i, .createMyBot i {
     padding-right: .3rem;
 }
 
-.getHelp :link {
-    color: #fff !important;
-    font-weight: 700;
+.getHelp a, 
+.createMyBot a { 
+  color: #fff !important;
+  font-weight: 700;
 }
