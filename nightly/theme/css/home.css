@@ -72,7 +72,7 @@ bold {
     top: -4.1rem;
 }
 
-.hosting, .anywhere, .alotfunctions {
+.hosting, .anywhere, .alotfunctions, .community {
     touch-action: manipulation;
     white-space: normal;
     background: var(--color3);
@@ -86,12 +86,12 @@ bold {
 }
 
 @media (max-width: 900px) {
-    .hosting, .anywhere, .alotfunctions {
+    .hosting, .anywhere, .alotfunctions, .community {
         width: 100%;
     }
 }
 
-.hosting:hover, .anywhere:hover, .alotfunctions:hover {
+.hosting:hover, .anywhere:hover, .alotfunctions:hover, .community:hover {
     transform: scale(1.05);
     transition: .3s;
 }
