@@ -88,7 +88,7 @@ bold {
     margin-left: 2.5rem;
     margin-bottom: -5rem;
     position: relative;
-    top: -4.1rem;
+    top: -4.2rem;
 }
 
 .hosting, .anywhere, .alotfunctions, .community {
@@ -96,11 +96,11 @@ bold {
     white-space: normal;
     background: var(--color3);
     width: 45.5%;
-    height: 13rem;
+    height: 17.5rem;
     margin: 1rem;
     border-radius: 10px;
     box-sizing: border-box;
-    padding: 1rem;
+    padding: 2rem;
     transition: .3s;
 }
 
