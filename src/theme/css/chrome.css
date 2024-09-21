@@ -146,6 +146,8 @@ a:link:not(.editPage, .mobile-nav-chapters, .chapter li a):hover::before {
 /* Edit Page */
 
 .editPage {
+    user-select: none;
+    -webkit-user-select: none;
     border: solid;
     border-width: 1px;
     border-radius: 10px;
