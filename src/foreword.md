@@ -1,6 +1,7 @@
-# Home
-### ✨ Imagine An App...
-...That makes building Discord bots easy with beginner-friendly functions. An app that's capable of developing nearly all types of bots - from simple *echo* bots, to advanced multi-purpose administration ones. Where simplicity meets functionality and scalability. That's **Bot Designer for Discord**.
+<div class="bdfd-is">
+  <h1 id="bdfd-case">Bot Designer For Disciord</h1>
+  <span id="bdfd-content><bold>BDFD</bold>BDFD allows you to build Discord bots with ease, using beginner-friendly functions. Create everything from simple echo bots to complex multi-purpose administration bots.</span>
+</div>
 
 What are you waiting for? Create the bot of your dreams today!
 
