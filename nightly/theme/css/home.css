@@ -18,6 +18,7 @@
 }
 
 .getHelp, .createMyBot {
+    touch-action: manipulation;
     border-radius: 50px;
     border: solid;
     border-width: 0;
@@ -48,4 +49,48 @@ bold {
 .createMyBot a { 
   color: #fff !important;
   font-weight: 700;
+}
+
+.why-bdfd h1 {
+    text-align: center;
+}
+
+.why-bdfd-embed {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+#title {
+    font-weight: bold;
+    font-size: 110%;
+    margin-left: 20px;
+    margin-bottom: -4.5rem;
+    position: relative;
+    top: -40px;
+}
+
+
+.hosting, .anywhere {
+    touch-action: manipulation;
+    white-space: normal;
+    background: var(--color3);
+    width: 45.5%;
+    margin: 10px;
+    border-radius: 10px;
+    box-sizing: border-box;
+    padding: 10px;
+    transition: .3s;
+}
+
+@media (max-width: 900px) {
+    .hosting, .anywhere {
+        width: 100%;
+    }
+}
+
+.hosting:hover, .anywhere:hover {
+    transform: scale(1.05);
+    transition: .3s;
 }
