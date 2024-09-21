@@ -17,7 +17,7 @@
   <h1>Why BDFD?</h1>
   <div class="why-bdfd-embed">
     <div class="hosting">
-      <i class="fa fa-play" aria-hidden="true"></i>
+      <i class="fa fa-play-circle" aria-hidden="true"></i>
       <p id="title">Free hosting</p>
       <p id="content">You can host your bot just by watching ads.</p>
     </div>
@@ -25,6 +25,11 @@
       <i class="fa fa-television" aria-hidden="true"></i>
       <p id="title">Anywhere</p>
       <p id="content">BDFD is always near you! You can use versions for Phone, Tablet, Computer</p>
+    </div>
+    <div class="alotfunctions">
+      <i class="fa fa-star" aria-hidden="true"></i>
+      <p id="title">Functions</p>
+      <p id="content">A lot of functions empowers you to build bots with unique capabilities</p>
     </div>
   </div>
 </div>
