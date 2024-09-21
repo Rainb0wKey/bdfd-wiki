@@ -4,14 +4,14 @@
 
 What are you waiting for? Create the bot of your dreams today!
 
-**Start with [*Bot Designer for Discord*](https://botdesignerdiscord.com)**
+**Start with [*Bot Designer for Discord*](https://app.botdesignerdiscord.com/)**
 
 ### 📎 Links
-- [Discord Server](https://botdesignerdiscord.com/discord)
+- [Discord Server](https://discord.gg/bot-designer-for-discord-official-server-566363823137882154)
 - [Website](https://botdesignerdiscord.com/)
 - [Android App](https://play.google.com/store/apps/details?id=com.jakubtomana.discordbotdesinger)
 - [iOS App](https://apps.apple.com/app/bot-designer-for-discord/id1495536477)
-- [Web App](https://botdesignerdiscord.com/app/) *(Alpha Version)*
+- [Web App](https://app.botdesignerdiscord.com/) *(Alpha Version)*
 
 ## 📓 Wiki
 Welcome to our humble abode. You're currently viewing **Bot Designer for Discord**'s wiki.
