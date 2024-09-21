@@ -1,6 +1,6 @@
 <div class="bdfd-is">
   <h1 id="bdfd-case">Bot Designer For Disciord</h1>
-  <span id="bdfd-content><bold>BDFD</bold>BDFD allows you to build Discord bots with ease, using beginner-friendly functions. Create everything from simple echo bots to complex multi-purpose administration bots.</span>
+  <p id="bdfd-content><bold>BDFD</bold>BDFD allows you to build Discord bots with ease, using beginner-friendly functions. Create everything from simple echo bots to complex multi-purpose administration bots.</p>
 </div>
 
 What are you waiting for? Create the bot of your dreams today!
