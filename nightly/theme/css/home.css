@@ -12,12 +12,20 @@
     border-radius: 10px;
 }
 
-.homeButtons {
+.download {
+    text-align: center;
+}
+
+.homeButtons, .downloadButtons {
     user-select: none;
     -webkit-user-select: none;
 }
 
-.getHelp, .createMyBot {
+.downloadButtons {
+    text-align: center;
+}
+
+.getHelp, .createMyBot, button {
     touch-action: manipulation;
     border-radius: 50px;
     font-size: 80%;
@@ -30,7 +38,14 @@
     transition: .3s;
 }
 
-.getHelp:hover, .createMyBot:hover {
+button {
+    font-size: 90%;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin: -1rem .5rem 0 .5rem;
+}
+
+.getHelp:hover, .createMyBot:hover, button:hover {
     border-color: var(--color1);
     transform: scale(1.05);
     padding: 0 12px 0 12px;
@@ -39,15 +54,19 @@
     transition: .3s;
 }
 
+button:hover {
+  padding: 0 18px 0 18px;  
+}
+
 bold {
    font-weight: 800; 
 }
 
-.getHelp i, .createMyBot i {
+.getHelp i, .createMyBot i, button i {
     padding-right: .3rem;
 }
 
-.getHelp a, .createMyBot a { 
+.getHelp a, .createMyBot a, button a { 
   color: #fff !important;
   font-weight: 700;
 }
