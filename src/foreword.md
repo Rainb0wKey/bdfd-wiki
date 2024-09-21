@@ -2,7 +2,7 @@
 
 <div class="bdfd-is">
   <h1 id="bdfd-case">Bot Designer For Discord</h1>
-  <p><bold>BDFD</bold> makes building Discord bots easy, from simple to advanced.</p>
+  <p id="truelol"><bold>BDFD</bold> makes building Discord bots easy, from simple to advanced.</p>
   <div class="homeButtons">
     <button class="createMyBot">
       <p><a href="https://app.botdesignerdiscord.com/"><i class="fa fa-plus" aria-hidden="true"></i> Create bot</a></p>
