@@ -39,15 +39,20 @@
   </div>
 </div>
 
-### 📎 Links
-- [Discord Server](https://discord.gg/bot-designer-for-discord-official-server-566363823137882154)
-- [Website](https://botdesignerdiscord.com/)
-- [Android App](https://play.google.com/store/apps/details?id=com.jakubtomana.discordbotdesinger)
-- [iOS App](https://apps.apple.com/app/bot-designer-for-discord/id1495536477)
-- [Web App](https://app.botdesignerdiscord.com/) *(Alpha Version)*
-
-## 📓 Wiki
-Welcome to our humble abode. You're currently viewing **Bot Designer for Discord**'s wiki.
+<div class="download">
+  <h1 id="bdfd-case">Download</h1>
+  <div class="downloadButtons">
+    <button>
+      <p><a href="https://apps.apple.com/app/bot-designer-for-discord/id1495536477"><i class="fa fa-android" aria-hidden="true"></i> iOS</a></p>
+    </button>
+    <button>
+      <p><a href="https://play.google.com/store/apps/details?id=com.jakubtomana.discordbotdesinger"><i class="fa fa-android" aria-hidden="true"></i> Android</a></p>
+    </button>
+    <button>
+      <p><a href="https://app.botdesignerdiscord.com/"><i class="fa fa-android" aria-hidden="true"></i> Web App</a></p>
+    </button>
+  </div>
+</div>
 
 ### 📂 Wiki Index
 - [Guides](./guides/introduction/aboutSection.md)
