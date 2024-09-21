@@ -23,12 +23,11 @@ a > .hljs {
     text-decoration: none;
 }
 
-:not(.content):not(.editPage):link::before {
+a:link:not(.editPage, .mobile-nav-chapters)::before {
     content: '';
     position: absolute;
     width: 100%;
     height: 1px;
-    border-radius: 10px;
     background-color: var(--color1);
     bottom: 0;
     left: 0;
@@ -37,7 +36,7 @@ a > .hljs {
     transition: transform .3s ease-in-out;
 }
 
-.content a:link:hover::before {
+a:link:not(.editPage, .mobile-nav-chapters):hover::before {
     transform-origin: left;
     transform: scaleX(1);
 }
