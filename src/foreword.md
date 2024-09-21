@@ -31,7 +31,7 @@
       <p id="title">Functions</p>
       <p id="content">A lot of functions empowers you to build bots with unique capabilities.</p>
     </div>
-    <div class="commuunity">
+    <div class="community">
       <i class="fa fa-info" aria-hidden="true"></i>
       <p id="title">Community</p>
       <p id="content">We will always be happy to help you on our discord server.</p>
