@@ -53,11 +53,3 @@
     </button>
   </div>
 </div>
-
-### 📂 Wiki Index
-- [Guides](./guides/introduction/aboutSection.md)
-- [Resources](./resources/introduction.md)
-- [BDScript](./bdscript/introduction.md)
-- [Premium](./premium/introduction.md)
-- [JavaScript](./javascript/introduction.md)
-- [Callbacks](./callbacks/introduction.md)
