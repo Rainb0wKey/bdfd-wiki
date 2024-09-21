@@ -19,17 +19,17 @@
     <div class="hosting">
       <i class="fa fa-play-circle" aria-hidden="true"></i>
       <p id="title">Free hosting</p>
-      <p id="content">You can host your bot just by watching ads.</p>
+      <p id="content">By simply watching ads. No need for complicated setup or expensive hosting plans.</p>
     </div>
     <div class="anywhere">
       <i class="fa fa-desktop" aria-hidden="true"></i>
       <p id="title">Anywhere</p>
-      <p id="content">BDFD is always near you! You can use versions for Phone, Tablet, Computer.</p>
+      <p id="content">Use our app on your phone, tablet, or computer - your bot is always accessible.</p>
     </div>
     <div class="alotfunctions">
       <i class="fa fa-star" aria-hidden="true"></i>
       <p id="title">Functions</p>
-      <p id="content">A lot of functions empowers you to build bots with unique capabilities.</p>
+      <p id="content">From basic "ping! pong!" commands to advanced AI features, BDFD provides everything you need to create unique and engaging bots.</p>
     </div>
     <div class="community">
       <i class="fa fa-info" aria-hidden="true"></i>
