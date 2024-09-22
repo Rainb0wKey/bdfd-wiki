@@ -42,13 +42,13 @@
 <div class="download">
   <h1 id="bdfd-case">Download</h1>
   <div class="downloadButtons">
-    <button>
+    <button class="downButton">
       <p><a href="https://apps.apple.com/app/bot-designer-for-discord/id1495536477"><i class="fa fa-apple" aria-hidden="true"></i> iOS</a></p>
     </button>
-    <button>
+    <button class="downButton">
       <p><a href="https://play.google.com/store/apps/details?id=com.jakubtomana.discordbotdesinger"><i class="fa fa-android" aria-hidden="true"></i> Android</a></p>
     </button>
-    <button>
+    <button class="downButton">
       <p><a href="https://app.botdesignerdiscord.com/"><i class="fa fa-laptop" aria-hidden="true"></i> Web App</a></p>
     </button>
   </div>
