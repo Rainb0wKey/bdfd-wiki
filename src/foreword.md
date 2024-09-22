@@ -39,6 +39,21 @@
   </div>
 </div>
 
+<div class="resources">
+  <h1 id="resources">Resources</h1>
+  <div class="resourcesButtons">
+    <button class="resButton">
+      <p><a href="./resources/api.md"><i class="fa fa-bookmark-o" aria-hidden="true"></i> BDFD API</a></p>
+    </button>
+    <button class="resButton">
+      <p><a href="https://botdesignerdiscord.com/status"><i class="fa fa-user" aria-hidden="true"></i> Node Status</a></p>
+    </button>
+    <button class="resButton">
+      <p><a href="./terms.md"><i class="fa fa-ban" aria-hidden="true"></i> Terms of Service</a></p>
+    </button>
+  </div>
+</div>
+
 <div class="download">
   <h1 id="bdfd-case">Download</h1>
   <div class="downloadButtons">
@@ -51,21 +66,6 @@
     <bold>or use</bold>
     <button class="downButton">
       <p><a href="https://app.botdesignerdiscord.com/"><i class="fa fa-laptop" aria-hidden="true"></i> Web App</a></p>
-    </button>
-  </div>
-</div>
-
-<div class="resources">
-  <h1 id="resources">Resources</h1>
-  <div class="resourcesButtons">
-    <button class="resButton">
-      <p><a href="./resources/api.md"><i class="fa fa-bookmark-o" aria-hidden="true"></i> BDFD API</a></p>
-    </button>
-    <button class="resButton">
-      <p><a href="https://botdesignerdiscord.com/status"><i class="fa fa-user" aria-hidden="true"></i> Node Status</a></p>
-    </button>
-    <button class="resButton">
-      <p><a href="./terms.md"><i class="fa fa-ban" aria-hidden="true"></i> Terms of Service</a></p>
     </button>
   </div>
 </div>
