@@ -42,6 +42,7 @@
 
 .getHelp, .createMyBot, .downButton, .resButton {
     touch-action: manipulation;
+    outline: none;
     border-radius: 50px;
     font-size: 80%;
     margin-top: 1rem;
