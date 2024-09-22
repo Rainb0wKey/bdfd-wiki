@@ -1,5 +1,5 @@
 <div class="tag-beta">
-  <span class="warn">⚠️</span>
+  <span class="warn"><i class="fa fa-exclamation-triangle" aria-hidden="true"></i></span>
   <span class="text">
     <span class="head">Experimental Feature!</span>
     <span class="desc">If you encountered an error, please contact us on the official BDFD Support Server.</span>
