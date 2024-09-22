@@ -38,6 +38,7 @@
 
 .downloadButtons, .resourcesButtons {
     text-align: center;
+    margin-top: -1rem;
 }
 
 .getHelp, .createMyBot, .downButton, .resButton {
@@ -56,6 +57,7 @@
 }
 
 .downButton, .resButton {
+    margin-top: .5rem !important;
     font-size: 90%;
     padding-left: 15px;
     padding-right: 15px;
