@@ -82,16 +82,16 @@ function setDiscordTheme(colorId) {
     for (const mutation of mutationList) {
       if (mutation.type === 'attributes' && mutation.attributeName === 'class') {
         const reactions = document.getElementsByTagName('discord-reaction');
-        const messageColors = document.getElementsByTagName('discord-message-markup');
+        const messageColors = document.querySelectorAll('.discord-message .discord-message-markup');
         if (styles.background) mutation.target.style.background = styles.background;
         mutation.target.style.backgroundColor = styles.exampleColor;
         for (const reaction of reactions) {
           // change the div which is the actual reaction
           reaction.children.item(0).style.backgroundColor = styles.reactionColor;
         }
-        for (const markup of messageColors) {
-          markup.style.color = styles.messageTextColor;
-        }
+        messageColors.forEach(text => {
+          text.style.color = styles.messageTextColor;
+        });
       }
     }
   };
