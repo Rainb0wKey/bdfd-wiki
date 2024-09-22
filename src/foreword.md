@@ -48,7 +48,7 @@
     <button class="downButton">
       <p><a href="https://play.google.com/store/apps/details?id=com.jakubtomana.discordbotdesinger"><i class="fa fa-android" aria-hidden="true"></i> Android</a></p>
     </button>
-    <bold>Or use</bold>
+    <bold>or use</bold>
     <button class="downButton">
       <p><a href="https://app.botdesignerdiscord.com/"><i class="fa fa-laptop" aria-hidden="true"></i> Web App</a></p>
     </button>
@@ -58,13 +58,13 @@
 <div class="resources">
   <h1 id="resources">Resources</h1>
   <div class="resourcesButtons">
-    <button class="api">
+    <button class="resButton">
       <p><a href="./resources/api.md"><i class="fa fa-bookmark-o" aria-hidden="true"></i> BDFD API</a></p>
     </button>
-    <button class="node">
+    <button class="resButton">
       <p><a href="https://botdesignerdiscord.com/status"><i class="fa fa-user" aria-hidden="true"></i> Node Status</a></p>
     </button>
-    <button class="tos">
+    <button class="resButton">
       <p><a href="./terms.md"><i class="fa fa-ban" aria-hidden="true"></i> Terms of Service</a></p>
     </button>
   </div>
