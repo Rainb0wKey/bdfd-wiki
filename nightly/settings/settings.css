@@ -123,7 +123,6 @@ button {
     font-size: 1.5rem;
     margin: .25%;
     margin-top: 3%;
-    background-color: hsl(270, 45%, 25%);
     color: #fff;
     box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
     transition: .2s;
@@ -161,7 +160,6 @@ button {
     font-size: 1.5rem;
     min-height: 1.3rem;
     max-height: 35em;
-    background-color: hsl(270, 60%, 20%);
     border-radius: 10px;
     border-width: 0;
     color: #bbb;
@@ -297,7 +295,6 @@ button {
     margin: .75%;
     border: none;
     border-radius: 15px;
-    background-color: hsl(270, 45%, 25%);
     cursor: pointer;
     box-shadow: 0 3px 20px rgba(0, 0, 0, 0.3);
     position: relative; 
