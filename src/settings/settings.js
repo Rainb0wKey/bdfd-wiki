@@ -489,6 +489,7 @@ function loadSettings() {
   const themeChangerRange = document.getElementById("themeSlider");
   const codeTextInput = document.getElementById('jsonhginput');
   const charCountElement = document.querySelector('.charCount');
+  const settingsButtons = document.querySelectorAll('button');
 
   let data
 
@@ -582,6 +583,14 @@ function loadSettings() {
     themeChangerRange.value = parseInt(data['theme-main'].replace('%', ''));
   }
 
+  var hueM = data['theme-main'];
+
+  settingsButtons.forEach(button => {
+    if (!button.matches('#menu-bar i') && !button.matches('#menu-bar .icon-button')) {
+      button.style.background = `hsl(${hueM}, 45%, 25%)`;
+    }
+  });
+  
   if (displaySize) {
     displaySize.textContent = data['text-size'].replace('%', '');
     range.value = parseInt(data['text-size'].replace('%', ''));
