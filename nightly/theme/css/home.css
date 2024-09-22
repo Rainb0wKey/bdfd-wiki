@@ -115,7 +115,7 @@ bold {
     white-space: normal;
     background: var(--color3);
     width: 45.5%;
-    height: 16rem;
+    height: 16.25rem;
     margin: 1rem;
     border-radius: 10px;
     box-sizing: border-box;
@@ -126,7 +126,8 @@ bold {
 
 @media (max-width: 1025px) {
     .hosting, .anywhere, .alotfunctions, .community {
-        height: 19.5rem;
+        height: 21.65rem;
+        overflow-x: hidden;
     }
 }
 
