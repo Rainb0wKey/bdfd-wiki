@@ -203,16 +203,15 @@ function changeDiscordTheme(colorId) {
 
   for (const message of discordMessages) {
     const reactions = document.getElementsByTagName('discord-reaction');
-    const messageColors = document.getElementsByTagName('discord-message-markup');
+    const messageColors = document.querySelectorAll('.discord-message .discord-message-markup');
     if (styles.background) message.style.background = styles.background;
     message.style.backgroundColor = styles.exampleColor;
     for (const reaction of reactions) {
-      // change the div which is the actual reaction
       reaction.children.item(0).style.backgroundColor = styles.reactionColor;
     }
-    for (const markup of messageColors) {
-      markup.style.color = styles.messageTextColor;
-    }
+    messageColors.forEach(text => {
+      text.style.color = styles.messageTextColor;
+    });
   }
 
   updateJsonFile("discord-example-theme", colorId);
