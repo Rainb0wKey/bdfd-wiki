@@ -225,8 +225,8 @@ $catch
 $endtry
 ```
 
-<button class="button" onClick="resetAllSettings()">
-	<span>Reset all settings</span>
-	<div class="progress"></div> 
+<button class="resetToDefault" onmousedown="resetAllHover()" onmouseup="resettAllNone()" onmouseleave="resetAllLeave()">
+	<span>Reset to default settings</span>
+	<div class="progress"></div>
 </button>
  
