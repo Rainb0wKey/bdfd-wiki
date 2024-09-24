@@ -494,9 +494,9 @@ function resetAllLeave() {
   isMouseDown = false;
 }
 
-document.addEventListener('mouseup', () => {
+function handleGlobalMouseUp() {
   isMouseDown = false;
-});
+}
 
 function updateCodeHG() {
   const codeInput = document.getElementById('jsonhginput');
@@ -654,6 +654,12 @@ function loadSettings() {
     displaySize.textContent = data['text-size'].replace('%', '');
     range.value = parseInt(data['text-size'].replace('%', ''));
   }
+
+  const button = document.querySelector('.resetToDefault');
+  button.addEventListener('mousedown', resetAllHover);
+  button.addEventListener('mouseup', resettAllNone);
+  button.addEventListener('mouseleave', resetAllLeave);
+  document.addEventListener('mouseup', handleGlobalMouseUp);
 }
 
 loadSettings();
