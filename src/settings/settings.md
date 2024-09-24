@@ -225,8 +225,11 @@ $catch
 $endtry
 ```
 
-<button class="resetToDefault" onmousedown="resetAllHover()" onmouseup="resettAllNone()" onmouseleave="resetAllLeave()">
-	<span>Reset to default settings</span>
-	<div class="progress"></div>
-</button>
+<div class="importantReset">
+	<button class="resetToDefault" onmousedown="resetAllHover()" onmouseup="resettAllNone()" onmouseleave="resetAllLeave()">
+		<span>Reset to default settings</span>
+		<div class="progress"></div>
+	</button>
+	<span id="instructionnAndWarning">Press the button for two seconds if you want to reset all settings to default. All settings will be released. You can't cancel it.</span>
+</div>
  
