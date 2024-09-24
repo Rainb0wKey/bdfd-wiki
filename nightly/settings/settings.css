@@ -569,45 +569,82 @@ input[type="range"]::-moz-range-thumb {
     font-size: .9em;
 }
 
-/* Reset tp default settings */
+/* Reset to default settings */
 
 .resetToDefault {
+    touch-action: manipulation;
+    user-select: none;
+    -webkit-user-select: none;
     background: hsl(0deg 0% 100% / 5%) !important;
-	color: white;
-	padding: 10px 15px;
-	text-align: center;
-	text-decoration: none;
-	display: inline-block;
-	margin-top: 2rem;
-	font-size: 1.5rem;
-	cursor: pointer;
-	position: relative;
-	overflow: hidden;
-	transition: transform 0.1s ease;
-	border: solid;
-	border-width: 1px;
-	border-radius: 10px;
-	border-color: var(--color1);
+    color: white;
+    padding: 10px 15px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    margin-top: 2rem;
+    font-size: 1.5rem;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    transition: transform 0.1s ease;
+    border: solid;
+    border-width: 1px;
+    border-radius: 10px;
+    border-color: var(--color1);
     outline: none;
 }
 			
 .resetToDefault.pulsating {
-	transform: scale(1.1);
+    transform: scale(1.1);
 }
 			
 .progress {
-	position: absolute;
-	top: 0;
-	left: 0;
-	width: 0;
-	height: 100%;
-	background-color: var(--color2);
-	transition: 0.5s ease;
-	z-index: 1;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background-color: var(--color2);
+    transition: 0.5s ease;
+    z-index: 1;
 }
 			
 .resetToDefault span {
-	position: relative;
+    position: relative;
     user-select: none;
-	z-index: 2;
+    z-index: 2;
+}
+
+
+.importantReset {
+    display: flex;
+    align-items: center; 
+}
+
+@media (max-width: 750px) {
+    .importantReset {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+	
+    #instructionnAndWarning {
+	margin-top: 1.5rem;
+	transition: .3s;
+	text-align: center;
+    }
+}
+
+@media (min-width: 750px) {
+    #instructionnAndWarning {
+	margin-top: 1.5rem;
+	margin-left: 2rem;
+	transition: .3s;
+	width: 450px;
+    }
+}
+
+.importantReset:hover #instructionnAndWarning {
+    color: #ff3d3d !important;
+	transition: .3s;
 }
