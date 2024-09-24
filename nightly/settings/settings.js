@@ -438,6 +438,66 @@ function gradientBackground() {
   updateJsonFile("theme-bg", document.body.style.background);
 };
 
+let timer;
+let time = 2000; // 2 Seconds
+let interval;
+let isMouseDown = false;
+let buttonMouseDownTime = null;
+
+function resetAllHover() {
+  const button = document.querySelector('.resetToDefault');
+  const progress = document.querySelector('.resetToDefault .progress');
+  progress.style.width = '0%';
+
+  button.mousedownTime = Date.now();
+  isMouseDown = true;
+
+  timer = setTimeout(() => {
+    if (isMouseDown) {
+      console.log("Button held for 2 seconds!");
+    }
+  }, time);
+
+  interval = setInterval(() => {
+    const elapsedTime = Date.now() - button.mousedownTime;
+    const progressPercent = (elapsedTime / time) * 100;
+
+    if (progressPercent < 100) {
+      progress.style.width = progressPercent + 20 + '%';
+    } else {
+      progress.style.width = '100%';
+      clearInterval(interval);
+      button.classList.add('pulsating');
+      setTimeout(() => {
+        button.classList.remove('pulsating');
+      }, 100);
+    }
+
+  }, 100);
+}
+
+function resettAllNone() {
+  clearTimeout(timer);
+  clearInterval(interval);
+  const progress = document.querySelector('.resetToDefault .progress');
+  progress.style.width = '0%';
+  isMouseDown = false;
+}
+
+function resetAllLeave() {
+  if (isMouseDown) {
+    const progress = document.querySelector('.resetToDefault .progress');
+    progress.style.width = '0%';
+    clearInterval(interval);
+    clearTimeout(timer);
+  }
+  isMouseDown = false;
+}
+
+document.addEventListener('mouseup', () => {
+  isMouseDown = false;
+});
+
 function updateCodeHG() {
   const codeInput = document.getElementById('jsonhginput');
   const charCountElement = document.querySelector('.charCount');
