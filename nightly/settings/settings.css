@@ -568,3 +568,46 @@ input[type="range"]::-moz-range-thumb {
     right: 15px;
     font-size: .9em;
 }
+
+/* Reset tp default settings */
+
+.resetToDefault {
+    background: hsl(0deg 0% 100% / 5%) !important;
+	color: white;
+	padding: 10px 15px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	margin-top: 2rem;
+	font-size: 1.5rem;
+	cursor: pointer;
+	position: relative;
+	overflow: hidden;
+	transition: transform 0.1s ease;
+	border: solid;
+	border-width: 1px;
+	border-radius: 10px;
+	border-color: var(--color1);
+    outline: none;
+}
+			
+.resetToDefault.pulsating {
+	transform: scale(1.1);
+}
+			
+.progress {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 0;
+	height: 100%;
+	background-color: var(--color2);
+	transition: 0.5s ease;
+	z-index: 1;
+}
+			
+.resetToDefault span {
+	position: relative;
+    user-select: none;
+	z-index: 2;
+}
