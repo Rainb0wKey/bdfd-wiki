@@ -302,11 +302,11 @@
     <discord-message author="RainbowKey" role-color="#E67E22">
         !example ❤️
         <discord-reactions slot="reactions">
-            <discord-reaction emoji="https://upload.wikimedia.org/wikipedia/commons/7/70/Symbolic_Love_Heart.png" name=":emoji:" count="1">
+            <discord-reaction count="1" name=":emoji:" emoji="https://upload.wikimedia.org/wikipedia/commons/7/70/Symbolic_Love_Heart.png">
             </discord-reaction>
         </discord-reactions>
     </discord-message>
-    <discord-message bot role-color="#378afa" verified author="BDFD Support">
+    <discord-message role-color="#378afa" verified author="BDFD Support" bot>
         Added!
     </discord-message>
 </discord-messages>
@@ -345,9 +345,9 @@ $catch
   $botLeave $c[Kicks the bot😉]
 $endtry
 </code></pre>
-<button class="button" onClick="resetAllSettings()">
-	<span>Reset all settings</span>
-	<div class="progress"></div> 
+<button class="resetToDefault" onmousedown="resetAllHover()" onmouseup="resettAllNone()" onmouseleave="resetAllLeave()">
+	<span>Reset to default settings</span>
+	<div class="progress"></div>
 </button>
 
                     </main>
