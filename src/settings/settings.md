@@ -224,3 +224,9 @@ $catch
   $botLeave $c[Kicks the bot😉]
 $endtry
 ```
+
+<button class="button" onClick="resetAllSettings()">
+	<span>Reset all settings</span>
+	<div class="progress"></div> 
+</button>
+ 
