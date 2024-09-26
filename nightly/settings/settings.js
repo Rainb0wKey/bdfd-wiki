@@ -251,8 +251,6 @@ function changeTextHigh(colorId) {
       fonntHtml.style.textShadow = '0 0 10px' + ' #' + color;
     }
   }
-
-  console.log(fonntHtml.style.textShadow);
   
   // Save in Storage
   updateJsonFile("text-hg", fonntHtml.style.textShadow);
