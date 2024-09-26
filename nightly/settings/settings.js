@@ -460,9 +460,13 @@ function resetAllHover() {
   clearTimeout(timer);
   timer = setTimeout(() => {
     if (isMouseDown) {
+      console.log("Settings Status: Reset")
       location.reload();
       updateJsonFile("text-hg", 'none');
       updateJsonFile("text-size", '60%');
+      updateJsonFile("language", 'en');
+      updateJsonFile("folders", 'false');
+      updateJsonFile("text-font", 'Open Sans, sans-serif');
       updateJsonFile("theme-bg", '270');
       updateJsonFile("theme-main", '270');
       updateJsonFile("theme-text", '270');
@@ -607,7 +611,7 @@ function loadSettings() {
     "text-hg": "none",
     "text-font": "Open Sans, sans-serif",
     "code-hg": {
-   "defaultTextHighlight":{
+    "defaultTextHighlight":{
       "color":4288341353,
       "style":0
    },
