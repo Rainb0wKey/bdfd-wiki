@@ -460,7 +460,7 @@ function resetAllHover() {
   clearTimeout(timer);
   timer = setTimeout(() => {
     if (isMouseDown) {
-      console.log("Button held for 2 seconds!");
+      location.reload();
     }
   }, time);
 
