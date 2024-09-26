@@ -140,7 +140,6 @@ function applySettings() {
   document.documentElement.style.setProperty('--color2', colorTheme2);
   document.documentElement.style.setProperty('--color3', colorTheme3);
 
-  console.log(data['theme-bg']);
   document.body.style.background = data['theme-bg'];
   document.body.style.color = data['theme-text'];
   document.documentElement.style.scrollbarColor = `hsl(${mainHue}, 70%, 25%)` + `hsl(${mainHue}, 80%, 8%)`;
