@@ -461,6 +461,12 @@ function resetAllHover() {
   timer = setTimeout(() => {
     if (isMouseDown) {
       location.reload();
+      updateJsonFile("text-hg", 'none');
+      updateJsonFile("text-size", '60%');
+      updateJsonFile("theme-bg", '270');
+      updateJsonFile("theme-main", '270');
+      updateJsonFile("theme-text", '270');
+      updateJsonFile("discord-example-theme", 'dark');
     }
   }, time);
 
