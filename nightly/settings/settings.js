@@ -439,7 +439,7 @@ function gradientBackground() {
 };
 
 let timer;
-let time = 2000; // 2 Seconds
+let time = 2000;
 let interval;
 let isMouseDown = false;
 let buttonMouseDownTime = null;
@@ -447,33 +447,65 @@ let buttonMouseDownTime = null;
 function resetAllHover() {
   const button = document.querySelector('.resetToDefault');
   const progress = document.querySelector('.resetToDefault .progress');
+
+  if (progress.style.width === '100%') {
+    return;
+  }
+
   progress.style.width = '0%';
 
   button.mousedownTime = Date.now();
   isMouseDown = true;
 
+  clearTimeout(timer);
   timer = setTimeout(() => {
     if (isMouseDown) {
       console.log("Button held for 2 seconds!");
     }
   }, time);
 
-  interval = setInterval(() => {
-    const elapsedTime = Date.now() - button.mousedownTime;
-    const progressPercent = (elapsedTime / time) * 100;
+  function updateProgress() {
+    if (isMouseDown) {
+      const elapsedTime = Date.now() - button.mousedownTime;
+      const progressPercent = (elapsedTime / time) * 100;
 
-    if (progressPercent < 100) {
-      progress.style.width = progressPercent + 20 + '%';
-    } else {
-      progress.style.width = '100%';
-      clearInterval(interval);
-      button.classList.add('pulsating');
-      setTimeout(() => {
-        button.classList.remove('pulsating');
-      }, 100);
+      if (progressPercent < 100) {
+        progress.style.width = progressPercent + 45 + '%';
+      } else {
+        progress.style.width = '0%';
+        clearInterval(interval);
+        if (button.disabled == false) {
+          button.classList.add('pulsating');
+        }
+        setTimeout(() => {
+          button.classList.remove('pulsating');
+        }, 100);
+        button.disabled = true;
+        isMouseDown = false;
+        buttonMouseDownTime = null;
+      }
+      interval = requestAnimationFrame(updateProgress);
     }
+  }
 
-  }, 100);
+  function handleTouchStart() {
+    button.mousedownTime = Date.now();
+    isMouseDown = true;
+    updateProgress();
+  }
+
+  function handleTouchEnd() {
+    clearTimeout(timer);
+    clearInterval(interval);
+    progress.style.width = '0%';
+    isMouseDown = false;
+    buttonMouseDownTime = null;
+  }
+
+  interval = requestAnimationFrame(updateProgress);
+
+  button.addEventListener('touchstart', handleTouchStart);
+  button.addEventListener('touchend', handleTouchEnd);
 }
 
 function resettAllNone() {
@@ -482,6 +514,7 @@ function resettAllNone() {
   const progress = document.querySelector('.resetToDefault .progress');
   progress.style.width = '0%';
   isMouseDown = false;
+  buttonMouseDownTime = null;
 }
 
 function resetAllLeave() {
@@ -490,8 +523,9 @@ function resetAllLeave() {
     progress.style.width = '0%';
     clearInterval(interval);
     clearTimeout(timer);
+    isMouseDown = false;
+    buttonMouseDownTime = null;
   }
-  isMouseDown = false;
 }
 
 function handleGlobalMouseUp() {
@@ -655,11 +689,11 @@ function loadSettings() {
     range.value = parseInt(data['text-size'].replace('%', ''));
   }
 
-  const button = document.querySelector('.resetToDefault');
-  button.addEventListener('mousedown', resetAllHover);
-  button.addEventListener('mouseup', resettAllNone);
-  button.addEventListener('mouseleave', resetAllLeave);
-  document.addEventListener('mouseup', handleGlobalMouseUp);
+const button = document.querySelector('.resetToDefault');
+button.addEventListener('mousedown', resetAllHover);
+button.addEventListener('mouseup', resettAllNone);
+button.addEventListener('mouseleave', resetAllLeave);
+document.addEventListener('mouseup', handleGlobalMouseUp);
 }
 
 loadSettings();
