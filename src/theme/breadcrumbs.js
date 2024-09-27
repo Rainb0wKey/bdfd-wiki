@@ -6,7 +6,7 @@ const MAP = {
     flowchart: "Flowchart",
     premium: "Premium",
     javascript: "JavaScript",
-    settings: "Settings" // Add "settings" to MAP
+    settings: "Settings"
 };
 
 const KEYS = Object.keys(MAP);
@@ -37,7 +37,7 @@ path.split('/').forEach((segment, i, segments) => {
         segment = "introduction.html";
     }
     // Skip the last segment if it's "settings"
-    if (i < segments.length - 1 || segment !== "settings") {
+    if (i < segments.length - 1 || (i === segments.length - 1 && segment !== "settings")) {
         document.write(`<div><a href="${root}${segment}">${name}</a></div>`)
     }
 });
