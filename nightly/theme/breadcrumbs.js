@@ -5,22 +5,23 @@ const MAP = {
     callbacks: "Callbacks",
     flowchart: "Flowchart",
     premium: "Premium",
-    javascript: "JavaScript"
+    javascript: "JavaScript",
+    settings: "Settings" // Add "settings" to MAP
 };
 
 const KEYS = Object.keys(MAP);
 
 function getNameFromTitle() {
     let index = document.title.indexOf('-');
-    return document.title.substring(0, index-1);
+    return document.title.substring(0, index - 1);
 }
 
-let root = "/"
+let root = "/";
 let path = location.pathname.substring(11);
 
 if (path.startsWith("nightly")) {
     path = path.substring(8);
-    root += "nightly/"
+    root += "nightly/";
 }
 if (path.endsWith(".html"))
     path = path.substring(0, path.length - 5);
@@ -35,5 +36,8 @@ path.split('/').forEach((segment, i, segments) => {
     } else {
         segment = "introduction.html";
     }
-    document.write(`<div><a href="${segment}">${name}</a></div>`)
+    // Skip the last segment if it's "settings"
+    if (i < segments.length - 1 || segment !== "settings") {
+        document.write(`<div><a href="${root}${segment}">${name}</a></div>`)
+    }
 });
