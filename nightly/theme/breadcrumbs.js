@@ -6,7 +6,7 @@ const MAP = {
     flowchart: "Flowchart",
     premium: "Premium",
     javascript: "JavaScript",
-    settings: "Settings"
+    settings: "Settings" 
 };
 
 const KEYS = Object.keys(MAP);
@@ -27,17 +27,20 @@ if (path.endsWith(".html"))
     path = path.substring(0, path.length - 5);
 
 document.write(`<a href="${root}">Home</a>`);
-path.split('/').forEach((segment, i, segments) => {
+const segments = path.split('/');
+// Skip the last segment if it's "settings"
+if (segments[segments.length - 1] === "settings") {
+    segments.pop();
+}
+
+segments.forEach((segment, i) => {
     let name = MAP[segment.toLocaleLowerCase()];
     if (!name) {
-        name = segments.length == i + 1 ? getNameFromTitle() : segment;
+        name = segment;
         if (segment != "")
             segment += ".html";
     } else {
         segment = "introduction.html";
     }
-    // Skip the last segment if it's "settings"
-    if (i < segments.length - 1 || (i === segments.length - 1 && segment !== "settings")) {
-        document.write(`<div><a href="${root}${segment}">${name}</a></div>`)
-    }
+    document.write(`<div><a href="${root}${segment}">${name}</a></div>`)
 });
