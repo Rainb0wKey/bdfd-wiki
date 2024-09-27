@@ -1,11 +1,11 @@
 # Summary
 
-[Foreword](./foreword.md)
-[Settings](./settings/settings.md)
-[Changelog](./CHANGELOG.md)
-[Flowchart Changelog](./FLOWCHART_CHANGELOG.md)
-[Terms of Service](./terms.md)
-[Entity Transfer Policy](./entityTransferPolicy.md)
+[🏠 Home](./foreword.md)
+[⚙️ Settings](./settings/settings.md)
+[📢 Changelog](./CHANGELOG.md)
+[📢 Flowchart Changelog](./FLOWCHART_CHANGELOG.md)
+[📚 Terms of Service](./terms.md)
+[📚 Entity Transfer Policy](./entityTransferPolicy.md)
 
 ---
 
