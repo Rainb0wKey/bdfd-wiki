@@ -15,7 +15,7 @@ function getNameFromTitle() {
 }
 
 const domain = location.origin; 
-const path = location.pathname; 
+let path = location.pathname; 
 
 let nightlyPath = '';
 if (path.includes('/nightly/')) {
@@ -29,7 +29,7 @@ if (path.endsWith(".html")) {
 
 document.write(`<a href="${domain}${nightlyPath}">Home</a>`); 
 
-const segments = path.split('/').filter(segment => segment !== '');
+const segments = path.split('/').filter(segment => segment !== ''); 
 segments.forEach((segment, i) => {
     if (MAP.hasOwnProperty(segment.toLocaleLowerCase())) { 
         let name = MAP[segment.toLocaleLowerCase()];
