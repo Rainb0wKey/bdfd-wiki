@@ -455,16 +455,13 @@ function resetAllHover() {
   timer = setTimeout(() => {
     if (isMouseDown) { 
       console.log("Settings Status: Reset")
+      resetTheme();
+      changeTextHigh('none');
+      resetFontSize();
+      changeTextFont('font1');
+      changeDiscordTheme('dark');
+      resetHGInput();
       location.reload();
-      updateJsonFile("text-hg", 'none');
-      updateJsonFile("text-size", '60%');
-      updateJsonFile("language", 'en');
-      updateJsonFile("folders", 'false');
-      updateJsonFile("text-font", 'Open Sans, sans-serif');
-      updateJsonFile("theme-bg", '270');
-      updateJsonFile("theme-main", '270');
-      updateJsonFile("theme-text", '270');
-      updateJsonFile("discord-example-theme", 'dark');
     }
   }, time);
 
