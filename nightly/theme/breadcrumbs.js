@@ -10,27 +10,28 @@ const MAP = {
 const domain = location.origin; // Get the domain dynamically
 let path = location.pathname;
 
+// Split into segments first
+const segments = path.split('/').filter(segment => segment !== '');
+
+// Handle "Nightly" section
 let nightlyPath = '';
-if (path.includes('/nightly/')) {
+if (segments.includes('nightly')) {
     nightlyPath = '/nightly/';
-    path = path.replace('/nightly/', '');
+    // Remove 'nightly' from the segments array
+    segments.splice(segments.indexOf('nightly'), 1);
 }
 
-// Remove the base domain and path from the URL
-path = path.replace(`${domain}${nightlyPath}`, '');
-
-if (path.endsWith(".html")) {
-    path = path.substring(0, path.length - 5);
+// Handle ".html" extension
+if (segments[segments.length - 1].endsWith(".html")) {
+    segments[segments.length - 1] = segments[segments.length - 1].substring(0, segments[segments.length - 1].length - 5);
 }
 
 document.write(`<a href="${domain}${nightlyPath}">Home</a>`);
 
-const segments = path.split('/').filter(segment => segment !== '');
-
 segments.forEach((segment, i) => {
     if (MAP.hasOwnProperty(segment.toLocaleLowerCase())) {
         let name = MAP[segment.toLocaleLowerCase()];
-        let link = "introduction.html"; 
+        let link = "introduction.html";
         document.write(`<div><a href="${domain}${nightlyPath}${link}">${name}</a></div>`);
     } else if (i === segments.length - 1) {
         // Handle the last segment (filename)
