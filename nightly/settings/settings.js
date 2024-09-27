@@ -480,7 +480,6 @@ function resetAllHover() {
         setTimeout(() => {
           button.classList.remove('pulsating');
         }, 100);
-        button.disabled = true;
         isMouseDown = false;
         buttonMouseDownTime = null;
       }
