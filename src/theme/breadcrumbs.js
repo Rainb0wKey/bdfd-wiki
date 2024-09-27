@@ -3,7 +3,7 @@ const MAP = {
     guides: "Guides",
     resources: "Resources",
     callbacks: "Callbacks",
-    fllowchart: "Flowchart",
+    flowchart: "Flowchart",
     premium: "Premium",
     javascript: "JavaScript"
 };
