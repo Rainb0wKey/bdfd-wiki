@@ -461,7 +461,6 @@ function resetAllHover() {
       changeTextFont('font1');
       changeDiscordTheme('dark');
       resetHGInput();
-      location.reload();
     }
   }, time);
 
