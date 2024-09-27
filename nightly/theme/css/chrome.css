@@ -490,7 +490,7 @@ ul#searchresults span.teaser em {
     border-radius: 10px;
     height: 97%;
     -webkit-overflow-scrolling: touch;
-    overscroll-behavior-y: contain;
+    overscroll-behavior: none;
     background-color: var(--color3);
     box-shadow: 0 12px 15px rgba(0, 0, 0, 0.3);
     scrollbar-color: var(--color2) rgba(255, 0, 0, 0) !important;
