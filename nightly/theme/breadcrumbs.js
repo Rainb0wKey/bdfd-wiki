@@ -17,18 +17,22 @@ function getNameFromTitle() {
 }
 
 let root = "/";
-let path = location.pathname.substring(11);
+let path = location.pathname;
+
+if (path.includes("bdfd-wiki")) {
+    root = "/bdfd-wiki/"; 
+}
 
 if (path.startsWith("nightly")) {
     path = path.substring(8);
     root += "nightly/";
 }
+
 if (path.endsWith(".html"))
     path = path.substring(0, path.length - 5);
 
 document.write(`<a href="${root}">Home</a>`);
 const segments = path.split('/');
-// Skip the last segment if it's "settings"
 if (segments[segments.length - 1] === "settings") {
     segments.pop();
 }
