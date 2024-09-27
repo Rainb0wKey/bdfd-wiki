@@ -16,6 +16,9 @@ if (path.includes('/nightly/')) {
     path = path.replace('/nightly/', '');
 }
 
+// Remove the base domain and path from the URL
+path = path.replace(`${domain}${nightlyPath}`, '');
+
 if (path.endsWith(".html")) {
     path = path.substring(0, path.length - 5);
 }
@@ -27,7 +30,7 @@ const segments = path.split('/').filter(segment => segment !== '');
 segments.forEach((segment, i) => {
     if (MAP.hasOwnProperty(segment.toLocaleLowerCase())) {
         let name = MAP[segment.toLocaleLowerCase()];
-        let link = "introduction.html";
+        let link = "introduction.html"; 
         document.write(`<div><a href="${domain}${nightlyPath}${link}">${name}</a></div>`);
     } else if (i === segments.length - 1) {
         // Handle the last segment (filename)
