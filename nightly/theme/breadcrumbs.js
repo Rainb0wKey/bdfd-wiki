@@ -38,7 +38,7 @@ segments.forEach((segment, i) => {
         document.write(`<div><a href="${domain}${nightlyPath}${link}">${name}</a></div>`);
     } else if (i === segments.length - 1) {
         // Handle the last segment (filename)
-        document.write(`<div><a href="${domain}${nightlyPath}${segment}.html">${segment}</a></div>`);
+        document.write(`<div><a href="${domain}${nightlyPath}${segment}.html">${segment}</a></div>`); // Add dollar sign here
     } else {
         let name = segment;
         document.write(`<div><a href="${domain}${nightlyPath}${segment}.html">${name}</a></div>`);
