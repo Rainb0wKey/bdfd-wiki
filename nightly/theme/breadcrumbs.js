@@ -7,40 +7,33 @@ const MAP = {
     javascript: "JavaScript"
 };
 
-const domain = location.origin; // Get the domain dynamically
-let path = location.pathname;
+const KEYS = Object.keys(MAP);
 
-// Split into segments first
-const segments = path.split('/').filter(segment => segment !== '');
-
-// Handle "Nightly" section
-let nightlyPath = '';
-if (segments.includes('nightly')) {
-    nightlyPath = '/nightly/';
-    // Remove 'nightly' from the segments array
-    segments.splice(segments.indexOf('nightly'), 1);
+function getNameFromTitle() {
+    let index = document.title.indexOf('-');
+    return document.title.substring(0, index - 1);
 }
 
-// Remove the base domain and path from the URL
-segments.splice(0, 1); // Remove the first segment (bdfd-wiki)
+let root = "/"; // Start with the root
+let path = location.pathname; 
 
-// Handle ".html" extension
-if (segments[segments.length - 1].endsWith(".html")) {
-    segments[segments.length - 1] = segments[segments.length - 1].substring(0, segments[segments.length - 1].length - 5);
+if (path.startsWith('/nightly/')) {
+    root = "/nightly/";
+    path = path.substring(8); // Remove "/nightly/" from the path
 }
 
-document.write(`<a href="${domain}${nightlyPath}">Home</a>`);
+if (path.endsWith(".html"))
+    path = path.substring(0, path.length - 5);
 
-segments.forEach((segment, i) => {
-    if (MAP.hasOwnProperty(segment.toLocaleLowerCase())) {
-        let name = MAP[segment.toLocaleLowerCase()];
-        let link = "introduction.html";
-        document.write(`<div><a href="${domain}${nightlyPath}${link}">${name}</a></div>`);
-    } else if (i === segments.length - 1) {
-        // Handle the last segment (filename)
-        document.write(`<div><a href="${domain}${nightlyPath}${segment}.html">${segment}</a></div>`); // Add dollar sign here
+document.write(`<a href="${root}">Home</a>`);
+path.split('/').forEach((segment, i, segments) => {
+    let name = MAP[segment.toLocaleLowerCase()];
+    if (!name) {
+        name = segments.length == i + 1 ? getNameFromTitle() : segment;
+        if (segment != "")
+            segment += ".html";
     } else {
-        let name = segment;
-        document.write(`<div><a href="${domain}${nightlyPath}${segment}.html">${name}</a></div>`);
+        segment = "introduction.html";
     }
+    document.write(`<div><a href="${root}${segment}">${name}</a></div>`)
 });
