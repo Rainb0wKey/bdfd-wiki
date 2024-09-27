@@ -628,7 +628,7 @@ input[type="range"]::-moz-range-thumb {
         align-items: center;
     }
 	
-    #instructionnAndWarning {
+    #instructionAndWarning {
 	margin-top: 1.5rem;
 	transition: .3s;
 	text-align: center;
@@ -636,7 +636,7 @@ input[type="range"]::-moz-range-thumb {
 }
 
 @media (min-width: 750px) {
-    #instructionnAndWarning {
+    #instructionAndWarning {
 	margin-top: 1.5rem;
 	margin-left: 2rem;
 	transition: .3s;
@@ -644,7 +644,12 @@ input[type="range"]::-moz-range-thumb {
     }
 }
 
-.importantReset:hover #instructionnAndWarning {
+.importantReset:hover #instructionAndWarning {
     color: #ff3d3d !important;
-	transition: .3s;
+    transition: .3s;
+}
+
+#instructionAndWarning {
+    user-select: none;
+    -webkit-user-select: none;
 }
