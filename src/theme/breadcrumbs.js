@@ -3,22 +3,41 @@ const MAP = {
     guides: "Guides",
     resources: "Resources",
     callbacks: "Callbacks",
+    fllowchart: "Flowchart",
     premium: "Premium",
     javascript: "JavaScript"
 };
 
 const KEYS = Object.keys(MAP);
-const getNameFromTitle = () => document.title.split('-')[0].trim();
-let root = location.pathname.includes("bdfd-wiki") ? "/bdfd-wiki/" : "/";
-let path = location.pathname.substring(11).replace(/\.html$/, '');
+
+function getNameFromTitle() {
+    let index = document.title.indexOf('-');
+    return document.title.substring(0, index-1);
+}
+
+let root = "/";
+let path = location.pathname.substring(11);
+
+if (path.includes("bdfd-wiki")) {
+    root = "/bdfd-wiki/"; 
+}
 
 if (path.startsWith("nightly")) {
     path = path.substring(8);
-    root += "nightly/";
+    root += "nightly/"
 }
+if (path.endsWith(".html"))
+    path = path.substring(0, path.length - 5);
 
 document.write(`<a href="${root}">Home</a>`);
 path.split('/').forEach((segment, i, segments) => {
-    let name = MAP[segment.toLowerCase()] || (segment === "settings" && i === segments.length - 1 ? "Settings" : getNameFromTitle());
-    document.write(`<div><a href="${segment ? segment + ".html" : ""}">${name}</a></div>`);
+    let name = MAP[segment.toLocaleLowerCase()];
+    if (!name) {
+        name = segments.length == i + 1 ? getNameFromTitle() : segment;
+        if (segment != "")
+            segment += ".html";
+    } else {
+        segment = "introduction.html";
+    }
+    document.write(`<div><a href="${segment}">${name}</a></div>`)
 });
