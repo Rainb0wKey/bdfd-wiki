@@ -10,11 +10,16 @@ const MAP = {
 const KEYS = Object.keys(MAP);
 
 function getNameFromTitle() {
-    let index = document.title.indexOf('- ');
+    let index = document.title.indexOf('-'); // Look for hyphen
     if (index !== -1) {
-        return document.title.substring(0, index).trim();
+        return document.title.substring(0, index).trim(); 
     } else {
-        return document.title.trim();
+        index = document.title.indexOf('- '); // Look for hyphen and space
+        if (index !== -1) {
+            return document.title.substring(0, index).trim(); 
+        } else {
+            return document.title.trim(); // If no hyphen, use the whole title
+        }
     }
 }
 
