@@ -230,6 +230,6 @@ $endtry
 		<span>Reset to default settings</span>
 		<div class="progress"></div>
 	</button>
-	<span id="instructionnAndWarning">Press and hold the button for 2 seconds to reset all settings to default. All settings will be permanently reset. This action cannot be undone.</span>
+	<span id="instructionAndWarning">Press and hold the button for 2 seconds to reset all settings to default. All settings will be permanently reset. This action cannot be undone.</span>
 </div>
  
