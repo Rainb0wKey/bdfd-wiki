@@ -10,7 +10,7 @@ const MAP = {
 const KEYS = Object.keys(MAP);
 
 function getNameFromTitle() {
-    let index = document.title.indexOf('-');
+    let index = document.title.indexOf('- ');
     if (index !== -1) {
         return document.title.substring(0, index).trim();
     } else {
