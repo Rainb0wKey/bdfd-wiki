@@ -35,15 +35,21 @@ segments.forEach((segment, i) => {
         let name = MAP[segment.toLocaleLowerCase()];
         let link = "introduction.html"; 
         document.write(`<div><a href="${domain}${nightlyPath}${link}">${name}</a></div>`);
-    } else {
-        if (i === segments.length - 1) {
-            let name = getNameFromTitle();
-            let parentName = i > 0 ? MAP[segments[i - 1].toLocaleLowerCase()] : ""; 
-            if (parentName) {
-                let parentLink = "introduction.html";
-                document.write(`<div><a href="${domain}${nightlyPath}${parentLink}">${parentName}</a></div>`);
-            }
-            document.write(`<div><a href="${domain}${nightlyPath}${segment}.html">${name}</a></div>`);
+    } else if (i === segments.length - 1) {
+        let name = getNameFromTitle();
+        let parentName = i > 0 ? MAP[segments[i - 1].toLocaleLowerCase()] : ""; 
+        if (parentName) {
+            let parentLink = "introduction.html";
+            document.write(`<div><a href="${domain}${nightlyPath}${parentLink}">${parentName}</a></div>`);
         }
+        document.write(`<div><a href="${domain}${nightlyPath}${segment}.html">${name}</a></div>`);
+    } else {
+        let name = segment;
+        let parentName = i > 0 ? MAP[segments[i - 1].toLocaleLowerCase()] : ""; 
+        if (parentName) {
+            let parentLink = "introduction.html";
+            document.write(`<div><a href="${domain}${nightlyPath}${parentLink}">${parentName}</a></div>`);
+        }
+        document.write(`<div><a href="${domain}${nightlyPath}${segment}.html">${name}</a></div>`);
     }
 });
