@@ -18,7 +18,7 @@ function getNameFromTitle() {
 let root = "/";
 let path = location.pathname.substring(11);
 
-if (path.includes("bdfd-wiki")) {
+if (location.pathname.includes("bdfd-wiki")) {
     root = "/bdfd-wiki/"; 
 }
 
