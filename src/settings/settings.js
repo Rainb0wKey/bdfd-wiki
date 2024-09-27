@@ -451,6 +451,7 @@ function resetAllHover() {
   button.mousedownTime = Date.now();
   isMouseDown = true;
 
+  clearTimeout(timer);
   timer = setTimeout(() => {
     if (isMouseDown) { 
       console.log("Settings Status: Reset")
