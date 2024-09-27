@@ -22,7 +22,7 @@ if (segments.includes('nightly')) {
 }
 
 // Remove the base domain and path from the URL
-segments.splice(0, 2); // Remove the first two segments
+segments.splice(0, 1); // Remove the first segment (bdfd-wiki)
 
 // Handle ".html" extension
 if (segments[segments.length - 1].endsWith(".html")) {
@@ -34,7 +34,7 @@ document.write(`<a href="${domain}${nightlyPath}">Home</a>`);
 segments.forEach((segment, i) => {
     if (MAP.hasOwnProperty(segment.toLocaleLowerCase())) {
         let name = MAP[segment.toLocaleLowerCase()];
-        let link = "introduction.html"; 
+        let link = "introduction.html";
         document.write(`<div><a href="${domain}${nightlyPath}${link}">${name}</a></div>`);
     } else if (i === segments.length - 1) {
         // Handle the last segment (filename)
