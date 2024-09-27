@@ -54,6 +54,15 @@
     <button class="resButton">
       <p><a href="./entityTransferPolicy"><i class="fa fa-exclamation" aria-hidden="true"></i> Entity Transfer Policy</a></p>
     </button>
+    <button class="resButton">
+      <p><a href="https://discord.gg/bot-designer-for-discord-official-server-566363823137882154"><i class="fa fa-phone" aria-hidden="true"></i> Discord Server</a></p>
+    </button>
+    <button class="resButton">
+      <p><a href="https://wiki.botdesignerdiscord.com/"><i class="fa fa-sun-o" aria-hidden="true"></i> BDFD Wiki</a></p>
+    </button>
+    <button class="resButton">
+      <p><a href="https://wiki.botdesignerdiscord.com/nightly/"><i class="fa fa-moon-o" aria-hidden="true"></i> BDFD Nightly Wikiy</a></p>
+    </button>
   </div>
 </div>
 
