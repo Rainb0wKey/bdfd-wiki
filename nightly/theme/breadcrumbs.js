@@ -11,17 +11,16 @@ const KEYS = Object.keys(MAP);
 
 function getNameFromTitle() {
     let index = document.title.indexOf('-');
-    return document.title.substring(0, index - 1);
+    return document.title.substring(0, index-1);
 }
 
-let root = "/"; // Start with the root
-let path = location.pathname; 
+let root = "/"
+let path = location.pathname.substring(11);
 
-if (path.startsWith('/nightly/')) {
-    root = "/nightly/";
-    path = path.substring(8); // Remove "/nightly/" from the path
+if (path.startsWith("nightly")) {
+    path = path.substring(8);
+    root += "nightly/"
 }
-
 if (path.endsWith(".html"))
     path = path.substring(0, path.length - 5);
 
@@ -35,5 +34,5 @@ path.split('/').forEach((segment, i, segments) => {
     } else {
         segment = "introduction.html";
     }
-    document.write(`<div><a href="${root}${segment}">${name}</a></div>`)
+    document.write(`<div><a href="${segment}">${name}</a></div>`)
 });
