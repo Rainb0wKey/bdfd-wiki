@@ -31,14 +31,14 @@ document.write(`<a href="${domain}${nightlyPath}">Home</a>`);
 
 const segments = path.split('/').filter(segment => segment !== '');
 segments.forEach((segment, i) => {
-    let name = MAP[segment.toLocaleLowerCase()];
-    if (!name) {
-        name = i === segments.length - 1 ? getNameFromTitle() : segment;
-        if (segment !== "") {
-            segment += ".html";
-        }
+    if (MAP.hasOwnProperty(segment.toLocaleLowerCase())) { 
+        let name = MAP[segment.toLocaleLowerCase()];
+        let link = "introduction.html"; 
+        document.write(`<div><a href="${domain}${nightlyPath}${link}">${name}</a></div>`);
     } else {
-        segment = "introduction.html";
+        if (i === segments.length - 1) {
+            let name = getNameFromTitle();
+            document.write(`<div><a href="${domain}${nightlyPath}${segment}.html">${name}</a></div>`);
+        }
     }
-    document.write(`<div><a href="${domain}${nightlyPath}${segment}">${name}</a></div>`);
 });
