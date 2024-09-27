@@ -121,6 +121,11 @@ a:link:not(.editPage, .mobile-nav-chapters, .chapter li a):hover::before {
     color: #ded;
 }
 
+#sidebar-toggle,
+#search-toggle {
+  touch-action: manipulation;
+}
+
 /* Hide sidebar button for PC & Add text in the menu bar */
 
 @media (min-width: 750px) {
