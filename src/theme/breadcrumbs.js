@@ -21,6 +21,9 @@ if (segments.includes('nightly')) {
     segments.splice(segments.indexOf('nightly'), 1);
 }
 
+// Remove the base domain and path from the URL
+segments.splice(0, 2); // Remove the first two segments
+
 // Handle ".html" extension
 if (segments[segments.length - 1].endsWith(".html")) {
     segments[segments.length - 1] = segments[segments.length - 1].substring(0, segments[segments.length - 1].length - 5);
@@ -31,7 +34,7 @@ document.write(`<a href="${domain}${nightlyPath}">Home</a>`);
 segments.forEach((segment, i) => {
     if (MAP.hasOwnProperty(segment.toLocaleLowerCase())) {
         let name = MAP[segment.toLocaleLowerCase()];
-        let link = "introduction.html";
+        let link = "introduction.html"; 
         document.write(`<div><a href="${domain}${nightlyPath}${link}">${name}</a></div>`);
     } else if (i === segments.length - 1) {
         // Handle the last segment (filename)
