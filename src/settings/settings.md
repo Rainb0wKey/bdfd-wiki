@@ -77,7 +77,7 @@ Let's customize your experience in our Bot Designer For Discord wiki world!
   	<button id="font4" class="fbutton" onClick="changeTextFont('font4')">Cursive</button>
   	<button id="font5" class="fbutton" onClick="changeTextFont('font5')">Monospace</button>
   	<button id="font6" class="fbutton" onClick="changeTextFont('font6')">System UI</button>
-    <p id="default-is">Open Sans</p>
+    <p id="default-is">"Open Sans"</p>
   </div>
 </div>
 
@@ -86,7 +86,7 @@ Let's customize your experience in our Bot Designer For Discord wiki world!
   <p>Folders make it easier to find the functions you need.</p>
   <div class="folderbuttons">
   	<button id="manageFolder" class="folderbutton">Enable</button>
-  </div>
+  <p id="default-is">"Enable" (Disabled)</p>
 </div>
 
 <div class="settingembed">
