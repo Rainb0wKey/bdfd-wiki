@@ -213,6 +213,23 @@ function changeDiscordTheme(colorId) {
   updateJsonFile("discord-example-theme", colorId);
 }
 
+function foldersSetting() {
+  const manageFolderButton = document.getElementById("manageFolder");
+  
+  if (manageFolderButton.textContent === "Enable") {
+    // Enabled
+    var folderStatus = "Disable";
+    var boolFolderStatus = true;
+  } else {
+    // Disabled
+    var folderStatus = "Enable";
+    var boolFolderStatus = false;
+  }
+  
+  manageFolderButton.textContent = folderStatus;
+  updateJsonFile("folders", boolFolderStatus);
+}
+
 function changeTextFont(fontId) {
   const fontHtml = document.querySelector('html');
   let font = fonts[fontId] || 'Open Sans, sans-serif'
