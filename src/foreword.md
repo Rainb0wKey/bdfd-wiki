@@ -121,7 +121,7 @@
   color: "#378afa"
   bot: true
   verified: true
-  content: " "
+  content: |
   embed:
     title: Balance
     description: 🪙 2146 Coins!
