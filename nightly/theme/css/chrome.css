@@ -586,11 +586,6 @@ ul#searchresults span.teaser em {
     transform: rotate(90deg);
 }
 
-.chapter li.expanded + li > ol {
-    border: solid; 
-    border-color: var(--color1);
-}
-
 .chapter-item:not(.section .chapter-item, .chapter-item.affix) {
     user-select: none;
     -webkit-user-select: none;
@@ -628,5 +623,4 @@ ul#searchresults span.teaser em {
     padding-bottom: 1.25rem;
     padding-top: 2rem;
     line-height: 1.9em;
-    margin-bottom: 2rem;
 }
