@@ -118,7 +118,7 @@ Lets see what we can do with BDFD!...
   username: Lelouch Lamperouge
   color: "#39B0E8"
   content: |
-    !bal <@RainboeKey>
+    !bal <@RainbowKey>
 - user_id: 1009018156494368798
   username: BDFD Support
   color: "#378afa"
