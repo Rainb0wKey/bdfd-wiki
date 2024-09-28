@@ -210,7 +210,7 @@
   	<button id="font4" class="fbutton" onClick="changeTextFont('font4')">Cursive</button>
   	<button id="font5" class="fbutton" onClick="changeTextFont('font5')">Monospace</button>
   	<button id="font6" class="fbutton" onClick="changeTextFont('font6')">System UI</button>
-    <p id="default-is">Open Sans</p>
+    <p id="default-is">"Open Sans"</p>
   </div>
 </div>
 <div class="settingembed">
@@ -218,7 +218,7 @@
   <p>Folders make it easier to find the functions you need.</p>
   <div class="folderbuttons">
   	<button id="manageFolder" class="folderbutton">Enable</button>
-  </div>
+  <p id="default-is">"Enable" (Disabled)</p>
 </div>
 <div class="settingembed">
   <h2 id="discord-example"><a class="header" href="#discord-example">Discord Example</a></h2>
@@ -302,11 +302,11 @@
     <discord-message author="RainbowKey" role-color="#E67E22">
         !example ❤️
         <discord-reactions slot="reactions">
-            <discord-reaction name=":emoji:" emoji="https://upload.wikimedia.org/wikipedia/commons/7/70/Symbolic_Love_Heart.png" count="1">
+            <discord-reaction count="1" emoji="https://upload.wikimedia.org/wikipedia/commons/7/70/Symbolic_Love_Heart.png" name=":emoji:">
             </discord-reaction>
         </discord-reactions>
     </discord-message>
-    <discord-message bot verified author="BDFD Support" role-color="#378afa">
+    <discord-message verified role-color="#378afa" bot author="BDFD Support">
         Added!
     </discord-message>
 </discord-messages>
