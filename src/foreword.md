@@ -82,6 +82,9 @@
   </div>
 </div>
 
+### Preview
+Lets see what we can do with BDFD!...
+
 ```discord yaml
 - user_id: 390515191819010058
   username: kubastick
