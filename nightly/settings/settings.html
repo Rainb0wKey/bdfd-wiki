@@ -217,7 +217,7 @@
   <h2 id="folders-soon"><a class="header" href="#folders-soon">Folders (Soon...)</a></h2>
   <p>Folders make it easier to find the functions you need.</p>
   <div class="folderbuttons">
-  	<button id="manageFolder" class="folderbutton">Enable</button>
+  	<button id="manageFolder" class="folderbutton" onClick="foldersSetting()">Enable</button>
   <p id="default-is">"Enable" (Disabled)</p>
 </div>
 <div class="settingembed">
@@ -302,11 +302,11 @@
     <discord-message author="RainbowKey" role-color="#E67E22">
         !example ❤️
         <discord-reactions slot="reactions">
-            <discord-reaction count="1" emoji="https://upload.wikimedia.org/wikipedia/commons/7/70/Symbolic_Love_Heart.png" name=":emoji:">
+            <discord-reaction count="1" name=":emoji:" emoji="https://upload.wikimedia.org/wikipedia/commons/7/70/Symbolic_Love_Heart.png">
             </discord-reaction>
         </discord-reactions>
     </discord-message>
-    <discord-message verified role-color="#378afa" bot author="BDFD Support">
+    <discord-message bot author="BDFD Support" verified role-color="#378afa">
         Added!
     </discord-message>
 </discord-messages>
