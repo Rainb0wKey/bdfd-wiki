@@ -85,7 +85,7 @@ Let's customize your experience in our Bot Designer For Discord wiki world!
   <h2>Folders (Soon...)</h2>
   <p>Folders make it easier to find the functions you need.</p>
   <div class="folderbuttons">
-  	<button id="manageFolder" class="folderbutton">Enable</button>
+  	<button id="manageFolder" class="folderbutton" onClick="foldersSetting()">Enable</button>
   <p id="default-is">"Enable" (Disabled)</p>
 </div>
 
