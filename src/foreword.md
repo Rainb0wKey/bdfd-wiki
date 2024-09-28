@@ -128,6 +128,11 @@ Lets see what we can do with BDFD!...
   embed:
     title: Balance - RainbowKey
     description: 🪙 2146 Coins!
+- user_id: 154148273307910144
+  username: MineBartekSa
+  color: "#FF0000"
+  content: |
+    !ban <@Berk> Breaking BDFD ToS
 - user_id: 1009018156494368798
   username: BDFD Support
   color: "#378afa"
@@ -138,16 +143,16 @@ Lets see what we can do with BDFD!...
     author: MineBartekSa
     color: "#FF0000"
     content: |
-      !ban <@Discord user> Breaking BDFD ToS
+      !ban <@Berk> Breaking BDFD ToS
   content: |
-    <@Discord user> was banned with "Breaking BDFD ToS" reason.
+    <@Berk> was banned with "Breaking BDFD ToS" reason.
     Banned by <@MineBartekSA>
   reactions:
     - emoji: https://upload.wikimedia.org/wikipedia/commons/thumb/3/34/Twemoji12_2705.svg/640px-Twemoji12_2705.svg.png
       name: ":white_check_mark:"
       count: 1
 - content: |
-      <font color="white">Discord User</font> left without pizza.
+      <font color="white">Berk</font> left without pizza.
   type: leave
 - user_id: 311808747141857292
   username: Lelouch Lamperouge
