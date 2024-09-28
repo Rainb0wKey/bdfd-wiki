@@ -12,12 +12,13 @@ html {
     color: #fff;
     background-color: hsl(270, 80%, 8%);;
     text-size-adjust: none;
+    overflow: hidden;
 }
 
 body {
     margin: 0;
     font-size: 1.6rem;
-    overflow-x: hidden;
+    overflow: hidden;
     min-height: 100vh;
 }
 
