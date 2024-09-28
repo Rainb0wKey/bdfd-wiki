@@ -123,7 +123,7 @@
   verified: true
   content: |
   embed:
-    title: Balance
+    title: Balance - RainbowKey
     description: 🪙 2146 Coins!
 - user_id: 1009018156494368798
   username: BDFD Support
