@@ -1,5 +1,16 @@
 /* Foreword (Home) page */
 
+.discord-messages {
+    margin-top: 1.7rem;
+    transition: .5s;
+}
+
+.discord-messages:hover {
+    transform: scale(1.015);
+    border-radius: 12.5px;
+    transition: .5s;
+}
+
 .bdfd-is {
     text-align: center;
     font-size: 110%;
