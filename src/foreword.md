@@ -83,7 +83,7 @@
 </div>
 
 <div class="preview">
-  <h1 id="preview-header">Preview</h1>
+  <h2 id="preview-header">Preview</h2>
   <p>Let’s see what we can do with BDFD! It’s time to dive deep into the world of this powerful tool and unlock its full potential!</p>
 </div>
 
