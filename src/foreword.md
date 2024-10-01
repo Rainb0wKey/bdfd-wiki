@@ -82,8 +82,10 @@
   </div>
 </div>
 
-### Preview
-Lets see what we can do with BDFD!...
+<div class="preview">
+  <h1 id="preview-header">Preview</h1>
+  <p>Let’s see what we can do with BDFD! It’s time to dive deep into the world of this powerful tool and unlock its full potential!</p>
+</div>
 
 ```discord yaml
 - user_id: 390515191819010058
