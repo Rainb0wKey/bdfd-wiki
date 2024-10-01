@@ -549,15 +549,25 @@ ul#searchresults span.teaser em {
     display: flex;
 
 }
+
 .chapter li a {
     display: block;
     padding: 0;
     text-decoration: none;
+    transition: .3s;
 }
 
 .chapter li a:hover {
     color: var(--color1) !important;
+    transition: .3s;
+}
+
+.chapter li a:not(a.toggle):hover {
     font-weight: bold;
+    width: 100%;
+    border-radius: 10px;
+    padding-left: 10px;
+    background: hsl(0deg 0% 100% / 4%);
 }
 
 .chapter li a.active {
