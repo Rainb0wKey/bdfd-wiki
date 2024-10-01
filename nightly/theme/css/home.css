@@ -11,6 +11,10 @@
     transition: .5s;
 }
 
+.discord-left-border {
+    background: var(--color1) !important;
+}
+
 .bdfd-is {
     text-align: center;
     font-size: 110%;
