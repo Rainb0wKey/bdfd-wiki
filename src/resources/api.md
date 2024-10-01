@@ -35,7 +35,7 @@ Public Bot Designer for Discord API.
 </div>
 
 <div class="endpoint">
-  <h2><span id="GET">GET</span>/function_list</h2>
+  <h2><span id="GET">GET</span> /function_list</h2>
   <p>Returns an array of function.</p>
   <pre><code class="hljs">https://botdesignerdiscord.com/public/api/function_list</code></pre>
 </div>
