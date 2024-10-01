@@ -3,9 +3,7 @@ Public Bot Designer for Discord API.
 
 <div class="mainAPI">
   <h2>API URL</h2>
-  <pre>
-    <code class="hljs">https://botdesignerdiscord.com/public/api</code>
-  </pre>
+  <pre><code class="hljs">https://botdesignerdiscord.com/public/api</code></pre>
 </div>
 
 ### GET `/function_list`
