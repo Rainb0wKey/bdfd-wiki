@@ -15,6 +15,13 @@
     background: var(--color1) !important;
 }
 
+.preview {
+    text-align: center;
+}
+
+.preview p {
+    margin-top: -2rem;
+}
 .bdfd-is {
     text-align: center;
     font-size: 110%;
