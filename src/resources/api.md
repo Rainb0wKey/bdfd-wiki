@@ -2,7 +2,7 @@
 Public Bot Designer for Discord API.
 
 <div class="mainAPI">
-  <h2>API - URL</h2>
+  <h2>API URL</h2>
   <pre>
     <div class="buttons">
       <button class="fa fa-regular fa-paste clip-button" title="Copy to clipboard" aria-label="Copy to clipboard">
