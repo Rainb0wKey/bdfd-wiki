@@ -36,7 +36,7 @@ a:link:not(.editPage, .mobile-nav-chapters, .chapter li a)::before {
     transition: transform .3s ease-in-out;
 }
 
-a:link:not(.editPage, .mobile-nav-chapters, .chapter li a, .discord-button):hover::before {
+a:link:not(.editPage, .mobile-nav-chapters, .chapter li a, .discord-button, .discord-embed-grid a):hover::before {
     transform-origin: left;
     transform: scaleX(1);
 }
