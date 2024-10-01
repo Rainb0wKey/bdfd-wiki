@@ -34,18 +34,47 @@ Public Bot Designer for Discord API.
   <pre><code class="hljs">https://botdesignerdiscord.com/public/api</code></pre>
 </div>
 
-### GET `/function_list`
-Returns an array of [functions](#Function)
+<div class="endpoint">
+  <h2><span id="GET">GET</span>/function_list</h2>
+  <p>Returns an array of function.</p>
+  <pre><code class="hljs">https://botdesignerdiscord.com/public/api/function_list</code></pre>
+</div>
 
-### GET `/function_tag_list`
-Returns an array of [function](#Function) tags
+<div class="endpoint">
+  <h2><span id="GET">GET</span> /callback_list</h2>
+  <p>Returns an array of callback.</p>
+  <pre><code class="hljs">https://botdesignerdiscord.com/public/api/callback_list</code></pre>
+</div>
 
-### GET `/function/:function`
-- `:function` - function tag \
-Returns a [function](#Function)
+<div class="endpoint">
+  <h2><span id="GET">GET</span> /function_tag_list</h2>
+  <p>Returns an array of function tags.</p>
+  <pre><code class="hljs">https://botdesignerdiscord.com/public/api/function_tag_list</code></pre>
+</div>
 
-### GET `/emoji_alias_list`
-Returns a map, mapping emoji to a list of its aliases
+<div class="endpoint">
+  <h2><span id="GET">GET</span> /callback_tag_list</h2>
+  <p>Returns an array of callback tags.</p>
+  <pre><code class="hljs">https://botdesignerdiscord.com/public/api/callback_tag_list</code></pre>
+</div>
+
+<div class="endpoint">
+  <h2><span id="GET">GET</span> /function/:function</h2>
+  <p>Returns a function.</p>
+  <pre><code class="hljs">https://botdesignerdiscord.com/public/api/function/$addButton[]</code></pre>
+</div>
+
+<div class="endpoint">
+  <h2><span id="GET">GET</span> /callback/:callback</h2>
+  <p>Returns an array of callback tags.</p>
+  <pre><code class="hljs">https://botdesignerdiscord.com/public/api/callback/$onJoined[]</code></pre>
+</div>
+
+<div class="endpoint">
+  <h2><span id="GET">GET</span> /emoji_alias_list</h2>
+  <p>Returns a map, mapping emoji to a list of its aliases.</p>
+  <pre><code class="hljs">https://botdesignerdiscord.com/public/api/emoji_alias_list</code></pre>
+</div>
 
 ## Data Structures
 - `Can be empty` means the field can be set to a default value.
