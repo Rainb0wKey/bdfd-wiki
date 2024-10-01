@@ -1,6 +1,33 @@
 # BDFD API
 Public Bot Designer for Discord API.
 
+<style>
+.mainAPI {
+    position: relative;
+    background-color: var(--color3);
+    border-radius: 10px;
+    padding-bottom: 1.5rem;
+    padding-left: 15px;
+    padding-right: 15px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+    transition: .3s;
+}
+
+.mainAPI h2 {
+    padding-top: 1rem;
+    margin-top: 1rem;
+}
+
+.mainAPI code {
+    color: var(--color1) !important;
+}
+
+.mainAPI .wrap-button,
+.mainAPI .syntax-button{
+    visibility: hidden;
+}
+</style>
+
 <div class="mainAPI">
   <h2>API URL</h2>
   <pre><code class="hljs">https://botdesignerdiscord.com/public/api</code></pre>
