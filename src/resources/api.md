@@ -1,8 +1,10 @@
-# API
-Public Bot Designer for Discord API
+# BDFD API
+Public Bot Designer for Discord API.
 
-## Endpoints
-The base URL is `https://botdesignerdiscord.com/public/api`
+<div class="mainAPI">
+  <h2>API URL</h2>
+  <code>https://botdesignerdiscord.com/public/api</code>
+</div>
 
 ### GET `/function_list`
 Returns an array of [functions](#Function)
