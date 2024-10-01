@@ -55,43 +55,43 @@ Public Bot Designer for Discord API.
 </div>
 
 <div class="endpoint">
-  <h2><span id="GET">GET</span> /function_list</h2>
+  <h3><span id="GET">GET</span> /function_list</h3>
   <p>Returns an array of function.</p>
   <pre><code class="hljs">https://botdesignerdiscord.com/public/api/function_list</code></pre>
 </div>
 
 <div class="endpoint">
-  <h2><span id="GET">GET</span> /callback_list</h2>
+  <h3><span id="GET">GET</span> /callback_list</h3>
   <p>Returns an array of callback.</p>
   <pre><code class="hljs">https://botdesignerdiscord.com/public/api/callback_list</code></pre>
 </div>
 
 <div class="endpoint">
-  <h2><span id="GET">GET</span> /function_tag_list</h2>
+  <h3><span id="GET">GET</span> /function_tag_list</h3>
   <p>Returns an array of function tags.</p>
   <pre><code class="hljs">https://botdesignerdiscord.com/public/api/function_tag_list</code></pre>
 </div>
 
 <div class="endpoint">
-  <h2><span id="GET">GET</span> /callback_tag_list</h2>
+  <h3><span id="GET">GET</span> /callback_tag_list</h3>
   <p>Returns an array of callback tags.</p>
   <pre><code class="hljs">https://botdesignerdiscord.com/public/api/callback_tag_list</code></pre>
 </div>
 
 <div class="endpoint">
-  <h2><span id="GET">GET</span> /function/:function</h2>
+  <h3><span id="GET">GET</span> /function/:function</h3>
   <p>Returns a function.</p>
   <pre><code class="hljs">https://botdesignerdiscord.com/public/api/function/$addButton[]</code></pre>
 </div>
 
 <div class="endpoint">
-  <h2><span id="GET">GET</span> /callback/:callback</h2>
+  <h3><span id="GET">GET</span> /callback/:callback</h3>
   <p>Returns an array of callback tags.</p>
   <pre><code class="hljs">https://botdesignerdiscord.com/public/api/callback/$onJoined[]</code></pre>
 </div>
 
 <div class="endpoint">
-  <h2><span id="GET">GET</span> /emoji_alias_list</h2>
+  <h3><span id="GET">GET</span> /emoji_alias_list</h3>
   <p>Returns a map, mapping emoji to a list of its aliases.</p>
   <pre><code class="hljs">https://botdesignerdiscord.com/public/api/emoji_alias_list</code></pre>
 </div>
