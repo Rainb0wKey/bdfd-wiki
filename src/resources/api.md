@@ -22,9 +22,29 @@ Public Bot Designer for Discord API.
     color: var(--color1) !important;
 }
 
-.mainAPI .wrap-button,
-.mainAPI .syntax-button{
+.wrap-button,
+.syntax-button{
     visibility: hidden;
+}
+
+.endpoint {
+    position: relative;
+    background: var(--color3);
+    border-radius: 10px;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-bottom: 1.25rem;
+    margin-top: -3rem;
+}
+
+.endpoint h2 {
+    padding-top: 1rem;
+}
+
+.endpoint #GET {
+    background: var(--color2);
+    padding: .25rem;
+    border-radius: 10px;
 }
 </style>
 
