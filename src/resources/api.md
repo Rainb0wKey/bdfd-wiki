@@ -29,7 +29,8 @@ Public Bot Designer for Discord API.
 </style>
 
 <div class="mainAPI">
-  <h2>API URL</h2>
+  <h2>API</h2>
+  <p>Our API domain:</p>
   <pre><code class="hljs">https://botdesignerdiscord.com/public/api</code></pre>
 </div>
 
