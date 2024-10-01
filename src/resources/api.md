@@ -37,8 +37,8 @@ Public Bot Designer for Discord API.
     margin-top: -3rem;
 }
 
-.endpoint h2 {
-    padding-top: 2rem;
+.endpoint h3 {
+    padding-top: 1rem;
 }
 
 .endpoint #GET {
