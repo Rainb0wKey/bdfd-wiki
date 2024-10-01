@@ -23,7 +23,7 @@ Public Bot Designer for Discord API.
 }
 
 .wrap-button,
-.syntax-button{
+.syntax-button {
     visibility: hidden;
 }
 
@@ -38,7 +38,7 @@ Public Bot Designer for Discord API.
 }
 
 .endpoint h2 {
-    padding-top: 1rem;
+    padding-top: 2rem;
 }
 
 .endpoint #GET {
