@@ -560,6 +560,10 @@ ul#searchresults span.teaser em {
     transition: .3s;
 }
 
+.chapter li a:not(a.toggle) {
+    width: 100%;
+}
+
 .chapter li a:hover {
     color: var(--color1) !important;
     transition: .3s;
@@ -567,7 +571,6 @@ ul#searchresults span.teaser em {
 
 .chapter li a:not(a.toggle):hover {
     font-weight: bold;
-    width: 100%;
     border-radius: 10px;
     padding-left: 10px;
     background: hsl(0deg 0% 100% / 4%);
