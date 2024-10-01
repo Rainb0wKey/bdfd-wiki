@@ -53,6 +53,9 @@ You also understand, we may ban any user that breaks [Discord's Terms of Service
 12. You agree we shall not be held liable for users that abuse our service to perform malicious, or otherwise unlawful ventures. However, as stated previously in these Terms; we do uphold the right to warn/ban in these circumstances.
 
 ---
+
+*Effective Date: 3 January, 2023.*
+
 We reserve the right to change, modify, add, or remove portions of our Terms at any time, and you will still be expected to comply. It is recommended to check this page periodically for changes.
 
 We may warn/ban users if we discover they didn't comply with these Terms.
@@ -68,7 +71,3 @@ If you have questions/concerns about these Terms or our service, you may contact
 
 Support for regular users is available at [`support@mail.botdesignerdiscord.com`](mailto:support@mail.botdesignerdiscord.com)
 and for paying users at [`premium-support@mail.botdesignerdiscord.com`](mailto:premium-support@mail.botdesignerdiscord.com).
-
----
-
-*Effective Date: 3 January, 2023.*
