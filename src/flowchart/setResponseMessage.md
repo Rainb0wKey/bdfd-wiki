@@ -17,7 +17,7 @@ Entry Point ➤ - ➤ Set response message (Content: `Hello`)
   color: "#748bd4"
   bot: true
   command:
-    user_id: 1009018156494368798
+    user_id: 803569638084313098
     author: RainbowKey
     command: /test
     color: "#E67E22"
