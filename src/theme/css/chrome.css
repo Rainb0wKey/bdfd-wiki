@@ -504,6 +504,7 @@ ul#searchresults span.teaser em {
 .sidebar code {
     line-height: 2em;
 }
+
 .sidebar .sidebar-scrollbox {
     overflow-y: auto;
     position: absolute;
@@ -553,6 +554,7 @@ ul#searchresults span.teaser em {
 .chapter li a {
     display: block;
     padding: 0;
+    color: hsl(0deg 0% 100% / 85%);
     text-decoration: none;
     -webkit-tap-highlight-color: transparent;
     transition: .3s;
