@@ -30,7 +30,15 @@ After a successful purchase of premium points, here's how to redeem them :
 ### Premium Perks
 #### AI
 - Access to [`$ai[]`](./ai.md) and [`$aiQuota`](./aiQuota.md) functions.
-  
+- 5000 Tokens per month
+
+#### Logs
+- Access to `$log[]`, `$disableErrorLogging` and `$logQuota` functions.
+- 1500 Logs per day
+
+#### Variables
+- Increased server and global variable character limits to 4999 characters.
+
 #### Main
 - `$getServerVar[]` in triggers [(custom prefixes)](./customPrefixes.md).
 - Awaited reactions.
@@ -41,7 +49,6 @@ After a successful purchase of premium points, here's how to redeem them :
 - Ad-free hosting time.
 - Priority bot hosting and startup.
 - Maximum 120 minutes duration in `$replyIn` & `$editEmbedIn`.
-- Increased server and global variable character limits.
 - Bot guild list.
 - Embed builder.
 - Sharding.
