@@ -3,7 +3,14 @@ Public Bot Designer for Discord API.
 
 <div class="mainAPI">
   <h2>API - URL</h2>
-  <pre>https://botdesignerdiscord.com/public/api</pre>
+  <pre>
+    <div class="buttons">
+      <button class="fa fa-regular fa-paste clip-button" title="Copy to clipboard" aria-label="Copy to clipboard">
+        <i class="tooltiptext"></i>
+      </button>
+    </div>
+    <code class="hljs">https://botdesignerdiscord.com/public/api</code>
+  </pre>
 </div>
 
 ### GET `/function_list`
