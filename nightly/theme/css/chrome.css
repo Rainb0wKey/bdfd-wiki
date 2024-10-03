@@ -38,14 +38,9 @@ html {
     color: #e5e501;
 }
 
-.functionTags #CallbackTag {
-    border-color: #01d8e5;
-    color: #01d8e5;
-}
-
-.functionTags #FlowchartTag {
-    border-color: #8626ff;
-    color: #8626ff;
+.functionTags #CallbackTag, .functionTags #FlowchartTag {
+    border-color: var(--color1);
+    color: var(--color1);
 }
 
 #PremiumTag:hover, #CallbackTag:hover, #FlowchartTag:hover {
