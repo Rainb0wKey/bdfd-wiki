@@ -63,6 +63,9 @@
     <button class="resButton">
       <p><a href="https://wiki.botdesignerdiscord.com/nightly/"><i class="fa fa-moon-o" aria-hidden="true"></i> BDFD Nightly Wikiy</a></p>
     </button>
+    <button class="resButton">
+      <p><a href="https://nilpointer.software/"><i class="fa fa-users" aria-hidden="true"></i> NilPointer Software</a></p>
+    </button>
   </div>
 </div>
 
