@@ -71,6 +71,8 @@ summary {
   <pre><code class="hljs">https://botdesignerdiscord.com/public/api</code></pre>
 </div>
 
+## Endpoints
+
 <div class="endpoint">
   <h3><span id="GET">GET</span> /function_list</h3>
   <p>Returns an array of function.</p>
