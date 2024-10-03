@@ -9,11 +9,11 @@ Mutes the mentioned user.
 
 ## Syntax
 ```
-$mute[mutedRoleName]
+$mute[Muted Role Name]
 ```
 
 ### Parameters
-- `mutedRoleName` `(Type: String || Flag: Required)`: The name of the 'Muted' role (case sensitive).
+- `Muted Role Name` `(Type: String || Flag: Required)`: The name of the 'Muted' role (case sensitive).
 
 ## Example
 ```
