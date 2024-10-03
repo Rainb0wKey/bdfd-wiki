@@ -490,6 +490,8 @@
 - Added `$findChannel[]` and `$channelExists[]`
 - Added `$userJoined[]` and `$userJoinedDiscord[]`
 
+</details>
+
 # 2020
 
 ## December
@@ -501,6 +503,8 @@
 - Added `userID` option to `$resetUserVar`
 - Added `serverID` option to `$serverOwner`
 - Added `$premiumExpireTime`
+
+<details><summary>Previous Updates</summary>
 
 ## November
 - Fixed disappearing bot status
