@@ -240,6 +240,10 @@ summary {
 - `2`: Member Intent
 - `256`: Presence Intent
 
+```admonish faq title="What is this?"
+Read more about intents in the our "[Gateway Intents](../guides/introduction/gatewayIntents.md)" guide.
+```
+
 ## Data Structures
 - `Can be empty` means the field can be set to a default value.
 - `Can be omitted` means the field might not be included in the response.
