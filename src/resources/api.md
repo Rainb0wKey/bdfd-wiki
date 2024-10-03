@@ -227,6 +227,12 @@ Public Bot Designer for Discord API.
   </details>
 </div>
 
+
+## Intents
+- `0`: None
+- `2`: Member Intent
+- `256`: Presence Intent
+
 ## Data Structures
 - `Can be empty` means the field can be set to a default value.
 - `Can be omitted` means the field might not be included in the response.
