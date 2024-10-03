@@ -138,7 +138,9 @@
                             <span>Edit this page</span>
                         </a>
                         <h1 id="usedemoji"><a class="header" href="#usedemoji">$usedEmoji</a></h1>
-<p><em>(for premium bots)</em></p>
+<div class="functionTags">
+  <span id="PremiumTag">Premium</span>
+</div>
 <p>This function returns the emoji which triggered a <a href="./reaction.html"><code>$reaction[]</code></a> callback.</p>
 <blockquote>
 <p>This function can only be used inside a <code>$reaction[]</code> callback.</p>
@@ -151,10 +153,10 @@
 $sendMessage[Emoji: $usedEmoji]
 </code></pre>
 <discord-messages>
-    <discord-message author="Nicky" role-color="#EE7908">
+    <discord-message role-color="#EE7908" author="Nicky">
         !example
     </discord-message>
-    <discord-message author="Wiki Bot" bot verified role-color="#748BD4">
+    <discord-message author="Wiki Bot" verified role-color="#748BD4" bot>
         Yes or No?
         <discord-reactions slot="reactions">
             <discord-reaction emoji="https://upload.wikimedia.org/wikipedia/commons/thumb/3/34/Twemoji12_2705.svg/640px-Twemoji12_2705.svg.png" count="2" reacted name=":white_check_mark:">
@@ -163,7 +165,7 @@ $sendMessage[Emoji: $usedEmoji]
             </discord-reaction>
         </discord-reactions>
     </discord-message>
-    <discord-message verified bot role-color="#748BD4" author="Wiki Bot">
+    <discord-message role-color="#748BD4" author="Wiki Bot" verified bot>
         Emoji: ✅
     </discord-message>
 </discord-messages>
