@@ -1,6 +1,7 @@
 # $alwaysReply
 <div class="functionTags">
   <span id="PremiumTag">Premium</span>
+  <span id="CallbackTag">Callback</span>
 </div>
 
 *Triggered whenever a user sends a message.*
