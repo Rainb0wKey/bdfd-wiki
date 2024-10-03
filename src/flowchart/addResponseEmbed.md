@@ -1,4 +1,8 @@
 # Add response embed
+<div class="functionTags">
+  <span id="FlowchartTag">Flowchart Bot</span>
+</div>
+
 Adds embed to the response message for the command.
 
 ## Inputs
