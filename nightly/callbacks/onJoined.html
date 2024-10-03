@@ -138,6 +138,9 @@
                             <span>Edit this page</span>
                         </a>
                         <h1 id="onjoined"><a class="header" href="#onjoined">$onJoined</a></h1>
+<div class="functionTags">
+  <span id="CallbackTag">Callback</span>
+</div>
 <p><em>Triggered when a user joins the server.</em></p>
 <p><code>$onJoined[Channel ID]</code> is a callback, which means it’s used in the command trigger <em>(not the code)</em>. The command is ran when a user joins the server.</p>
 <blockquote>
@@ -172,7 +175,7 @@
     <discord-system-message type="join">
         Welcome <font color="white">Nicky</font>. Say hi!
     </discord-system-message>
-    <discord-message bot role-color="#748BD4" author="Wiki Bot" verified highlight>
+    <discord-message author="Wiki Bot" bot role-color="#748BD4" highlight verified>
         <discord-mention>Nicky</discord-mention>, welcome to Cool Server!
     </discord-message>
 </discord-messages>

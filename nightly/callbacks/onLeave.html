@@ -138,6 +138,9 @@
                             <span>Edit this page</span>
                         </a>
                         <h1 id="onleave"><a class="header" href="#onleave">$onLeave</a></h1>
+<div class="functionTags">
+  <span id="CallbackTag">Callback</span>
+</div>
 <p><em>Triggered when a user leaves the server.</em></p>
 <p><code>$onLeave[Channel ID]</code> is a callback, which means it’s used in the command trigger <em>(not the code)</em>. The command is ran when a user leaves the server.</p>
 <blockquote>
@@ -172,7 +175,7 @@
     <discord-system-message type="leave">
         Goodbye <font color="white">User</font>.
     </discord-system-message>
-    <discord-message author="Wiki Bot" bot verified role-color="#748BD4">
+    <discord-message role-color="#748BD4" bot verified author="Wiki Bot">
         <discord-mention>User</discord-mention> just left the server :c
     </discord-message>
 </discord-messages>
