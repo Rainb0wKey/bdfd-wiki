@@ -138,7 +138,9 @@
                             <span>Edit this page</span>
                         </a>
                         <h1 id="messagecontains"><a class="header" href="#messagecontains">$messageContains</a></h1>
-<p><em>(for premium bots)</em></p>
+<div class="functionTags">
+  <span id="PremiumTag">Premium</span>
+</div>
 <p><code>$messageContains[]</code> is a <a href="../callbacks/introduction.html">callback</a> that allows you to create a trigger with multiple phrases. In addition, the bot also looks for those phrases anywhere in the author’s message. This feature is great for creating an auto-response or auto-moderation system.</p>
 <h2 id="syntax"><a class="header" href="#syntax">Syntax</a></h2>
 <pre><code>$messageContains[Word;...]
@@ -159,16 +161,16 @@
 <li>
 <p>Now, let’s say in chat someone types : <code>Hello Bot!</code>, <code>Hello</code>, <code>Hey Everyone!</code>, <code>Hi Noituri</code> etc. The bot will respond with “Hello there! How are you?”.</p>
 <discord-messages>
-    <discord-message role-color="#F1BDEE" author="noituri">
+    <discord-message author="noituri" role-color="#F1BDEE">
         Hello
     </discord-message>
-    <discord-message role-color="#748BD4" verified author="Wiki Bot" bot>
+    <discord-message bot role-color="#748BD4" verified author="Wiki Bot">
         Hello there! How are you?
     </discord-message>
     <discord-message role-color="#EE7908" author="Nicky">
         Hi Noituri
     </discord-message>
-    <discord-message author="Wiki Bot" verified bot role-color="#748BD4">
+    <discord-message author="Wiki Bot" bot verified role-color="#748BD4">
         Hello there! How are you?
     </discord-message>
 </discord-messages>
