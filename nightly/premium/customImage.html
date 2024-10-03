@@ -138,7 +138,9 @@
                             <span>Edit this page</span>
                         </a>
                         <h1 id="customimage"><a class="header" href="#customimage">$customImage</a></h1>
-<p><em>(for premium bots)</em></p>
+<div class="functionTags">
+  <span id="PremiumTag">Premium</span>
+</div>
 <p>This function is used to return the URL of an image uploaded in the app.</p>
 <h2 id="syntax"><a class="header" href="#syntax">Syntax</a></h2>
 <pre><code>$customImage[Custom image tag]
@@ -155,8 +157,8 @@ $customImage[NiceImage]
     <discord-message role-color="#EE7908" author="Nicky">
         !example
     </discord-message>
-    <discord-message role-color="#748BD4" bot author="Wiki Bot" verified>
-        <discord-embed slot="embeds" image="https://user-images.githubusercontent.com/111157596/257596077-9836bafb-1c2a-4e1e-9cb3-9ca7725dcbf3.png">
+    <discord-message author="Wiki Bot" verified bot role-color="#748BD4">
+        <discord-embed image="https://user-images.githubusercontent.com/111157596/257596077-9836bafb-1c2a-4e1e-9cb3-9ca7725dcbf3.png" slot="embeds">
         </discord-embed>
     </discord-message>
 </discord-messages>
