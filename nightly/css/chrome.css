@@ -12,6 +12,33 @@ html {
     scrollbar-color: var(--color2) var(--color3);
 }
 
+/* Tags */
+
+.functionTags {
+    user-select: none;
+    -webkit-user-select: none;
+    margin-top: -1rem;
+}
+
+.functionTags #PremiumTag {
+    user-select: none;
+    -webkit-user-select: none;
+    position: relative;
+    border-radius: 10px;
+    background: #e5e501;
+    font-size: 1.5rem;
+    color: #6d6d00;
+    font-weight: bold;
+    padding: .25rem .5rem .25rem .5rem;
+    box-shadow: 0 0px 15px rgb(233 255 51 / 50%);
+    transition: .3s;
+}
+
+.functionTags #PremiumTag:hover {
+    border-radius: 12.5px;
+    transition: .3s;
+}
+
 /* Links */
 
 #searchresults a,
