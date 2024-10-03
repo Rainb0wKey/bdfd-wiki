@@ -35,6 +35,7 @@ Public Bot Designer for Discord API.
     padding-right: 15px;
     padding-bottom: 1.25rem;
     margin-top: -3rem;
+    transition: .3s;
 }
 
 .endpoint h3 {
@@ -45,6 +46,17 @@ Public Bot Designer for Discord API.
     background: var(--color2);
     padding: .25rem;
     border-radius: 10px;
+    transition: .3s;
+}
+
+.endpoint:hover {
+    transform: scale(1.01);
+    transition: .3s;
+}
+
+.endpoint:hover #GET {
+    border-radius: 7px;
+    transition: .3s;
 }
 </style>
 
