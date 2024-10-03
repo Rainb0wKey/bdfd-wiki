@@ -1,6 +1,6 @@
 # $unmute
 <div class="functionTags">
-  <span id="DeprectedTag">Deprecated</span>
+  <span id="DeprecatedTag">Deprecated</span>
 </div>
 
 > As of December 2021, this function has been deprecated in favor of [`$untimeout[]`](./untimeout.md).
