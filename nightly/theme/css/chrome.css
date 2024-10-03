@@ -25,6 +25,7 @@ html {
     -webkit-user-select: none;
     position: relative;
     border: solid;
+    border-width: 1px;
     border-radius: 10px;
     font-size: 1.5rem;
     font-weight: bold;
