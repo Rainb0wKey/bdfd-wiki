@@ -2,6 +2,10 @@
 Public Bot Designer for Discord API.
 
 <style>
+summary {
+    background: hsl(0deg 0% 100% / 5%) !important;
+}
+    
 .mainAPI {
     position: relative;
     background-color: var(--color3);
@@ -28,6 +32,7 @@ Public Bot Designer for Discord API.
 }
 
 .endpoint {
+    box-shadow: 0 12px 15px rgba(0, 0, 0, 0.3);
     position: relative;
     background: var(--color3);
     border-radius: 10px;
