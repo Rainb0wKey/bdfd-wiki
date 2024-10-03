@@ -140,6 +140,7 @@
                         <h1 id="reaction"><a class="header" href="#reaction">$reaction</a></h1>
 <div class="functionTags">
   <span id="PremiumTag">Premium</span>
+  <span id="CallbackTag">Callback</span>
 </div>
 <p>This is a <a href="../callbacks/introduction.html">callback</a>. It gets triggered whenever an awaited reaction occurs.</p>
 <h2 id="syntax"><a class="header" href="#syntax">Syntax</a></h2>
@@ -158,14 +159,14 @@ $sendMessage[$username clicked on the reaction]
     <discord-message role-color="#EE7908" author="Nicky">
         !example
     </discord-message>
-    <discord-message author="Wiki Bot" role-color="#748BD4" bot verified>
+    <discord-message bot verified author="Wiki Bot" role-color="#748BD4">
         Click
         <discord-reactions slot="reactions">
-            <discord-reaction name=":emoji:" emoji="https://cdn.discordapp.com/emojis/766607515445231637.webp" reacted count="2">
+            <discord-reaction count="2" name=":emoji:" emoji="https://cdn.discordapp.com/emojis/766607515445231637.webp" reacted>
             </discord-reaction>
         </discord-reactions>
     </discord-message>
-    <discord-message verified author="Wiki Bot" role-color="#748BD4" bot>
+    <discord-message verified author="Wiki Bot" bot role-color="#748BD4">
         Nicky clicked on the reaction
     </discord-message>
 </discord-messages>
