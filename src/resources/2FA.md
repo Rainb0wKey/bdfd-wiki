@@ -17,5 +17,5 @@ The permissions assigned to these actions are referred to as *"Elevated permissi
 - `managewebhooks`
 
 ```admonish info
-More infor about enabling 2FA can be found in [Discord's support article](https://support.discord.com/hc/en-us/articles/219576828-Setting-up-Two-Factor-Authentication).
+More info about enabling 2FA can be found in [Discord's support article](https://support.discord.com/hc/en-us/articles/219576828-Setting-up-Two-Factor-Authentication).
 ```
