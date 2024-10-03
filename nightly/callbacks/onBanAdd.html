@@ -138,6 +138,9 @@
                             <span>Edit this page</span>
                         </a>
                         <h1 id="onbanadd"><a class="header" href="#onbanadd">$onBanAdd</a></h1>
+<div class="functionTags">
+  <span id="CallbackTag">Callback</span>
+</div>
 <p><em>Triggered when a user gets banned from the server.</em></p>
 <p><code>$onBanAdd[Channel ID]</code> is a callback, which means it’s used in the command trigger <em>(not the code)</em>. The command is ran when a user is banned from the server.</p>
 <h2 id="syntax"><a class="header" href="#syntax">Syntax</a></h2>
@@ -166,7 +169,7 @@
 <li>
 <p>Now you have a ban message! ✨</p>
 <discord-messages>
-    <discord-message author="Wiki Bot" verified role-color="#748BD4" bot>
+    <discord-message bot verified author="Wiki Bot" role-color="#748BD4">
         <discord-mention>User</discord-mention> was struck with the ban hammer!
     </discord-message>
     <discord-system-message type="leave">
