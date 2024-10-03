@@ -1,7 +1,9 @@
 # $unmute
-*(deprecated)*
+<div class="functionTags">
+  <span id="DeprectedTag">Deprecated</span>
+</div>
 
-> 📌 As of December 2021, this function has been deprecated in favor of [`$untimeout[]`](./untimeout.md).
+> As of December 2021, this function has been deprecated in favor of [`$untimeout[]`](./untimeout.md).
 
 Unmutes the mentioned user.
 
