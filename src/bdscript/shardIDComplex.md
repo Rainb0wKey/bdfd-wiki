@@ -30,4 +30,6 @@ Shard: $shardID[$message]
     Shard: 2
 ```
 
-> [How does `$message` work?](./message.md)
+```admonish question title="What is this?"
+How [`$message`](./message.md) works?
+```
