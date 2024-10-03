@@ -71,7 +71,8 @@ Public Bot Designer for Discord API.
   <p>Returns an array of function.</p>
   <pre><code class="hljs">https://botdesignerdiscord.com/public/api/function_list</code></pre>
   <details><summary>Answer Example - 200</summary>
-  <pre><code class="hljs">[ 
+  <pre><code class="hljs">[
+      ...,
       {
         "tag": "$aiQuota",
         "shortDescription": "Get remaining AI quota for this bot",
@@ -89,6 +90,25 @@ Public Bot Designer for Discord API.
   <h3><span id="GET">GET</span> /callback_list</h3>
   <p>Returns an array of callback.</p>
   <pre><code class="hljs">https://botdesignerdiscord.com/public/api/callback_list</code></pre>
+  <details><summary>Answer Example - 200</summary>
+  <pre><code class="hljs">[
+      ...,
+      {
+        "name": "$onMessageDelete[channel ID]",
+        "description": "Triggers command when user deletes message",
+        "arguments": [
+            {
+                "name": "Channel ID",
+                "description": "Channel ID of the log channel",
+                "type": "Snowflake",
+                "required": true
+            }
+        ],
+        "intents": 0,
+        "is_premium": false
+    }, ... 
+]</code></pre>
+  </details>
 </div>
 
 <div class="endpoint">
@@ -184,6 +204,27 @@ Public Bot Designer for Discord API.
   <h3><span id="GET">GET</span> /emoji_alias_list</h3>
   <p>Returns a map, mapping emoji to a list of its aliases.</p>
   <pre><code class="hljs">https://botdesignerdiscord.com/public/api/emoji_alias_list</code></pre>
+  <details><summary>Answer Example - 200</summary>
+  <pre><code class="hljs">{
+    "#️⃣": [
+        ":hash:",
+        ":keycap_hash:"
+    ],
+    "*️⃣": [
+        ":keycap_asterisk:",
+        ":asterisk:"
+    ],
+    "0️⃣": [
+        ":keycap_0:",
+        ":zero:"
+    ],
+    "1️⃣": [
+        ":keycap_1:",
+        ":one:"
+    ], 
+    ... 
+}</code></pre>
+  </details>
 </div>
 
 ## Data Structures
