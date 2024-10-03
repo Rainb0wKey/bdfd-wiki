@@ -20,7 +20,7 @@ html {
     margin-top: -1rem;
 }
 
-.functionTags #PremiumTag, .functionTags #CallbackTag {
+.functionTags #PremiumTag, .functionTags #CallbackTag, .functionTags #FlowchartTag {
     user-select: none;
     -webkit-user-select: none;
     position: relative;
@@ -43,7 +43,12 @@ html {
     color: #01d8e5;
 }
 
-#PremiumTag:hover, #CallbackTag:hover {
+.functionTags #FlowchartTag {
+    border-color: #8626ff;
+    color: #8626ff;
+}
+
+#PremiumTag:hover, #CallbackTag:hover, #FlowchartTag:hover {
     border-radius: 12.5px;
     transition: .3s;
 }
