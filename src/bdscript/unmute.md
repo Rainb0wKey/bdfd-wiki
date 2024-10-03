@@ -9,11 +9,11 @@ Unmutes the mentioned user.
 
 ## Syntax
 ```
-$unmute[Muted]
+$unmute[Muted Role Name]
 ```
 
 ### Parameters
-- `Muted` `(Type: String || Flag: Required)`: The name of the "Muted" role (case sensitive).
+- `Muted Role Name` `(Type: String || Flag: Required)`: The name of the "Muted" role (case sensitive).
 
 ### Permissions
 Required permissions that the bot must have for this function to work properly:
