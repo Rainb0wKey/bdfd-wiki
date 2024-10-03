@@ -24,6 +24,7 @@ html {
     user-select: none;
     -webkit-user-select: none;
     position: relative;
+    border: solid;
     border-radius: 10px;
     font-size: 1.5rem;
     font-weight: bold;
@@ -32,14 +33,14 @@ html {
 }
 
 .functionTags #PremiumTag {
-    background: #e5e501;
-    color: #6d6d00;
+    border-color: #e5e501;
+    color: #e5e501;
     box-shadow: 0 0px 15px rgb(233 255 51 / 50%);
 }
 
 .functionTags #CallbackTag {
-    background: #01d8e5;
-    color: #006f76;
+    border-color: #01d8e5;
+    color: #01d8e5;
     box-shadow: 0 0px 15px rgb(51 255 226 / 50%);
 }
 
