@@ -1,6 +1,7 @@
 # $reaction
 <div class="functionTags">
   <span id="PremiumTag">Premium</span>
+  <span id="CallbackTag">Callback</span>
 </div>
 
 This is a [callback](../callbacks/introduction.md). It gets triggered whenever an awaited reaction occurs.
