@@ -1,5 +1,7 @@
 # $alwaysReply
-*(for premium users)*
+<div class="functionTags">
+  <span id="PremiumTag">Premium</span>
+</div>
 
 *Triggered whenever a user sends a message.*
 
