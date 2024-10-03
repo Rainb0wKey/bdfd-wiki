@@ -29,3 +29,5 @@ Shard: $shardID[$message]
   content: |
     Shard: 2
 ```
+
+> [How does `$message` work?](./message.md)
