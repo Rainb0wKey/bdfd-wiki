@@ -1,6 +1,6 @@
 # $mute
 <div class="functionTags">
-  <span id="DeprectedTag">Deprecated</span>
+  <span id="DeprecatedTag">Deprecated</span>
 </div>
 
 > This function is deprecated, instead better use [`$timeout[]`](https://nilpointer-software.github.io/bdfd-wiki/bdscript/timeout.html).
