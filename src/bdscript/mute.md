@@ -1,7 +1,9 @@
 # $mute
-*(deprecated)*
+<div class="functionTags">
+  <span id="DeprectedTag">Deprecated</span>
+</div>
 
-> 🧙‍♂️ This command is deprecated, instead better use [`$timeout[]`](https://nilpointer-software.github.io/bdfd-wiki/bdscript/timeout.html).
+> This function is deprecated, instead better use [`$timeout[]`](https://nilpointer-software.github.io/bdfd-wiki/bdscript/timeout.html).
 
 Mutes the mentioned user.
 
