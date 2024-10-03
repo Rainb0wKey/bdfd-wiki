@@ -1,6 +1,6 @@
 # $channelDFromName
 <div class="functionTags">
-  <span id="DeprectedTag">Deprecated</span>
+  <span id="DeprecatedTag">Deprecated</span>
 </div>
 
 > This function is deprecated, instead better use [`$channelID[]`](./channelIDComplex.md).
