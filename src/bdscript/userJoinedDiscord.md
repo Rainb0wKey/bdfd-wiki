@@ -1,6 +1,6 @@
 # $userJoinedDiscord
 <div class="functionTags">
-  <span id="DeprectedTag">Deprecated</span>
+  <span id="DeprecatedTag">Deprecated</span>
 </div>
 
 > As of November 2022, this function has been deprecated in favor of [`$creationDate[]`](./creationDate.md).
