@@ -40,6 +40,19 @@ html {
     color: #e5e501;
 }
 
+.functionTags #PremiumTag:before {
+    content: '💰 '
+}
+.functionTags #CallbackTag:before {
+    content: '⚡ '
+}
+.functionTags #FlowchartTag:before {
+    content: '🤖 '
+}
+.functionTags #Deprecated:before {
+    content: '⌛ '
+}
+
 .functionTags span:hover {
     border-radius: 12.5px;
     transition: .3s;
