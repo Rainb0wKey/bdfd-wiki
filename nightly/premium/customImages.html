@@ -138,7 +138,9 @@
                             <span>Edit this page</span>
                         </a>
                         <h1 id="custom-images"><a class="header" href="#custom-images">Custom Images</a></h1>
-<p><em>(for premium bots)</em></p>
+<div class="functionTags">
+  <span id="PremiumTag">Premium</span>
+</div>
 <p>Upload custom images in the app from your device, without any image links. You can use the custom image as an embed image using <code>$customImage[]</code>.</p>
 <h2 id="uploading"><a class="header" href="#uploading">Uploading</a></h2>
 <ol>
@@ -176,8 +178,8 @@ $customImage[NiceImage]
     <discord-message role-color="#EE7908" author="Nicky">
         !example
     </discord-message>
-    <discord-message bot author="Wiki Bot" role-color="#748BD4" verified>
-        <discord-embed slot="embeds" image="https://user-images.githubusercontent.com/111157596/257596077-9836bafb-1c2a-4e1e-9cb3-9ca7725dcbf3.png">
+    <discord-message verified author="Wiki Bot" bot role-color="#748BD4">
+        <discord-embed image="https://user-images.githubusercontent.com/111157596/257596077-9836bafb-1c2a-4e1e-9cb3-9ca7725dcbf3.png" slot="embeds">
         </discord-embed>
     </discord-message>
 </discord-messages>
