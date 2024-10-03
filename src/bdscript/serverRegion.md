@@ -1,5 +1,7 @@
 # $serverRegion
-*(deprecated)*
+<div class="functionTags">
+  <span id="DeprectedTag">Deprecated</span>
+</div>
 
 > This function is deprecated, because Discord removed the server region setting. For more information, [click here](https://support.discord.com/hc/en-us/articles/360060570993).
 
