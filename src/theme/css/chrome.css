@@ -49,7 +49,7 @@ html {
 .functionTags #FlowchartTag:before {
     content: '🤖 '
 }
-.functionTags #Deprecated:before {
+.functionTags #DeprecatedTag:before {
     content: '⌛ '
 }
 
