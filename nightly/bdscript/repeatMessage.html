@@ -147,20 +147,29 @@
 <li><code>Amount</code> <code>(Type: Integer || Flag: Required)</code>: The number of times to repeat the given text (max <code>10</code> times).</li>
 <li><code>Message</code> <code>(Type: String || Flag: Emptiable)</code>: The text to repeat.</li>
 </ul>
-<h2 id="examples"><a class="header" href="#examples">Examples</a></h2>
-<h3 id="example-1"><a class="header" href="#example-1">Example #1</a></h3>
+<h2 id="example"><a class="header" href="#example">Example</a></h2>
 <pre><code>$nomention
-$repeatMessage[5;Hello World]
+$repeatMessage[5;Hello World!]
 </code></pre>
-<p><img src="https://user-images.githubusercontent.com/69215413/126245014-85c3953b-ad54-4658-95df-fb83719dcfa0.png" alt="example1" /></p>
-<h3 id="example-2"><a class="header" href="#example-2">Example #2</a></h3>
-<blockquote>
-<p>🧙‍♂️ You can use a space at the end of “text”, so there are spaces in-between repeats.</p>
-</blockquote>
-<pre><code>$nomention
-$repeatMessage[5;Hello World! ]
-</code></pre>
-<p><img src="https://user-images.githubusercontent.com/69215413/126245000-6bac6c11-39d2-40ec-a6d3-0d8123c6a2fd.png" alt="example2" /></p>
+<discord-messages>
+    <discord-message role-color="#E67E22" author="RainbowKey">
+        !example
+    </discord-message>
+    <discord-message verified role-color="#378afa" bot author="BDFD Support">
+        Hello World!Hello World!Hello World!Hello World!Hello World!
+    </discord-message>
+</discord-messages>
+<div id="admonition-info" class="admonition admonish-info" role="note" aria-labelledby="admonition-info-title">
+<div class="admonition-title">
+<div id="admonition-info-title">
+<p>Info</p>
+</div>
+<a class="admonition-anchor-link" href="#admonition-info"></a>
+</div>
+<div>
+<p>You can use a space at the end of “text” in the “Message” parameter, so there are spaces in-between repeats.</p>
+</div>
+</div>
 
                     </main>
 
