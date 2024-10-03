@@ -70,17 +70,18 @@ Public Bot Designer for Discord API.
   <h3><span id="GET">GET</span> /function_list</h3>
   <p>Returns an array of function.</p>
   <pre><code class="hljs">https://botdesignerdiscord.com/public/api/function_list</code></pre>
-  <details><summary>Example - 200</summary>
-  <pre><code class="hljs">[ {
-    "tag": "$aiQuota",
-    "shortDescription": "Get remaining AI quota for this bot",
-    "longDescription": "",
-    "arguments": null,
-    "intents": 0,
-    "premium": true,
-    "color": 0
-}, ... ]</code></pre>
-      <pre><code class="hljs">https://botdesignerdiscord.com/public/api/function_list</code></pre>
+  <details><summary>Answer Example - 200</summary>
+  <pre><code class="hljs">[ 
+      {
+        "tag": "$aiQuota",
+        "shortDescription": "Get remaining AI quota for this bot",
+        "longDescription": "",
+        "arguments": null,
+        "intents": 0,
+        "premium": true,
+        "color": 0
+    }, ... 
+]</code></pre>
   </details>
 </div>
 
@@ -94,6 +95,22 @@ Public Bot Designer for Discord API.
   <h3><span id="GET">GET</span> /function_tag_list</h3>
   <p>Returns an array of function tags.</p>
   <pre><code class="hljs">https://botdesignerdiscord.com/public/api/function_tag_list</code></pre>
+  <details><summary>Example - 200</summary>
+  <pre><code class="hljs">[
+    "$addButton[]",
+    "$addCmdReactions[]",
+    "$addEmoji[]",
+    "$addField[]",
+    "$addMessageReactions[]",
+    "$addReactions[]",
+    "$addSelectMenuOption[]",
+    "$addTextInput[]",
+    "$addTimestamp",
+    "$addTimestamp[]",
+    "$aiQuota", 
+    ... 
+]</code></pre>
+  </details>
 </div>
 
 <div class="endpoint">
