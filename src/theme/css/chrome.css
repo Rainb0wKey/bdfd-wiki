@@ -35,13 +35,11 @@ html {
 .functionTags #PremiumTag {
     border-color: #e5e501;
     color: #e5e501;
-    box-shadow: 0 0px 15px rgb(233 255 51 / 50%);
 }
 
 .functionTags #CallbackTag {
     border-color: #01d8e5;
     color: #01d8e5;
-    box-shadow: 0 0px 15px rgb(51 255 226 / 50%);
 }
 
 #PremiumTag:hover, #CallbackTag:hover {
