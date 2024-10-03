@@ -92,6 +92,15 @@ function setDiscordTheme(colorId) {
         messageColors.forEach(text => {
           text.style.color = styles.messageTextColor;
         });
+        // Changes "00/00/0000" to "Today at 00:00".
+        const timestamps = document.querySelectorAll('.discord-message-timestamp');
+        timestamps.forEach(timestamp => {
+          const date = new Date(timestamp.textContent);
+          const hours = date.getHours().toString().padStart(2, '0');
+          const minutes = date.getMinutes().toString().padStart(2, '0');
+          const formattedTime = `Today at ${hours}:${minutes}`;
+          timestamp.textContent = formattedTime;
+        });
       }
     }
   };
