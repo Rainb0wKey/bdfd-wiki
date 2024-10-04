@@ -166,13 +166,13 @@ $message
     <discord-message role-color="#EE7908" author="Nicky">
         !say
     </discord-message>
-    <discord-message verified role-color="#748BD4" author="Wiki Bot" bot>
+    <discord-message author="Wiki Bot" role-color="#748BD4" bot verified>
         What do you want me to say?
     </discord-message>
     <discord-message author="Nicky" role-color="#EE7908">
         I love BDFD!
     </discord-message>
-    <discord-message bot author="Wiki Bot" role-color="#748BD4" verified>
+    <discord-message author="Wiki Bot" bot role-color="#748BD4" verified>
         I love BDFD!
     </discord-message>
 </discord-messages>
@@ -188,6 +188,30 @@ $elseif[$message==cancel]
 $endif
 </code></pre>
 <discord-messages>
+    <discord-message role-color="#EE7908" author="Nicky">
+        !odd
+    </discord-message>
+    <discord-message verified bot author="Wiki Bot" role-color="#748BD4">
+        Is "19" an odd number?
+    </discord-message>
+    <discord-message author="Nicky" role-color="#EE7908">
+        yes
+    </discord-message>
+    <discord-message author="Wiki Bot" verified role-color="#748BD4" bot>
+        Your answer is correct!
+    </discord-message>
+    <discord-message author="Nicky" role-color="#EE7908">
+        !odd
+    </discord-message>
+    <discord-message verified bot author="Wiki Bot" role-color="#748BD4">
+        Is "19" an odd number?
+    </discord-message>
+    <discord-message role-color="#EE7908" author="Nicky">
+        no
+    </discord-message>
+    <discord-message bot author="Wiki Bot" role-color="#748BD4" verified>
+        Your answer is incorrect!
+    </discord-message>
     <discord-message author="Nicky" role-color="#EE7908">
         !odd
     </discord-message>
@@ -195,33 +219,9 @@ $endif
         Is "19" an odd number?
     </discord-message>
     <discord-message author="Nicky" role-color="#EE7908">
-        yes
-    </discord-message>
-    <discord-message bot author="Wiki Bot" role-color="#748BD4" verified>
-        Your answer is correct!
-    </discord-message>
-    <discord-message author="Nicky" role-color="#EE7908">
-        !odd
-    </discord-message>
-    <discord-message author="Wiki Bot" role-color="#748BD4" verified bot>
-        Is "19" an odd number?
-    </discord-message>
-    <discord-message author="Nicky" role-color="#EE7908">
-        no
-    </discord-message>
-    <discord-message author="Wiki Bot" verified bot role-color="#748BD4">
-        Your answer is incorrect!
-    </discord-message>
-    <discord-message author="Nicky" role-color="#EE7908">
-        !odd
-    </discord-message>
-    <discord-message bot author="Wiki Bot" verified role-color="#748BD4">
-        Is "19" an odd number?
-    </discord-message>
-    <discord-message role-color="#EE7908" author="Nicky">
         cancel
     </discord-message>
-    <discord-message bot author="Wiki Bot" role-color="#748BD4" verified>
+    <discord-message verified bot author="Wiki Bot" role-color="#748BD4">
         Command cancelled!
     </discord-message>
 </discord-messages>
@@ -234,13 +234,13 @@ You have provided a number: $message
     <discord-message author="Nicky" role-color="#EE7908">
         !number
     </discord-message>
-    <discord-message author="Wiki Bot" role-color="#748BD4" bot verified>
+    <discord-message bot author="Wiki Bot" verified role-color="#748BD4">
         Provide a number!
     </discord-message>
-    <discord-message author="Nicky" role-color="#EE7908">
+    <discord-message role-color="#EE7908" author="Nicky">
         7
     </discord-message>
-    <discord-message role-color="#748BD4" verified author="Wiki Bot" bot>
+    <discord-message author="Wiki Bot" bot role-color="#748BD4" verified>
         You have provided a number: 7
     </discord-message>
 </discord-messages>
