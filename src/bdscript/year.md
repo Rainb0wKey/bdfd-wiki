@@ -1,8 +1,6 @@
 # $year
 Returns the current year.
 
-> You can use [`$time`](./time.md) to change the timezone.
-
 ## Syntax
 ```
 $year
@@ -26,4 +24,8 @@ Current Year: $year
   bot: true
   content: |
     Current Year: 2024
+```
+
+```admonish info title="Timezone"
+You can use [`$time`](./time.md) to change the timezone.
 ```
