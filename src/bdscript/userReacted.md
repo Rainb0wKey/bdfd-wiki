@@ -67,3 +67,7 @@ $userReacted[$channelID;$message;$authorID;❤️]
   content: |
     Reacted?: <code>false</code>
 ```
+
+```admonish question title="What is this?"
+How [`$channelID`](./channelID.md), [`$message`](./message.md) and [`$authorID`](./authorID.md) works?
+```
