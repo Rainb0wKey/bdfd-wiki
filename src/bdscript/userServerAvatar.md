@@ -14,4 +14,7 @@ $userServerAvatar[User ID]
 $nomention
 $image[$userServerAvatar[$authorID]?size=4096]
 ```
-![example](https://user-images.githubusercontent.com/95774950/187596435-e7d3308a-8723-4750-bb3b-df9325f99637.png)
+
+``` discord yaml
+
+```
