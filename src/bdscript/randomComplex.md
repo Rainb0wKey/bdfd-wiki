@@ -1,7 +1,9 @@
 # $random[]
-Returns a random number between 'minimum' and 'maximum'.
+Returns a random number between `Minimum` and `Maximum`.
 
-> `$random[]` never returns the 'maximum' value, as it's right side exclusive range. Basically, to get a random number between 1 and 10; you'd put 11 as the 'maximum' instead of 10 i.e `$random[1;11]`.
+```admonish warning
+`$random[]` never returns the 'maximum' value, as it's right side exclusive range. Basically, to get a random number between 1 and 5; you'd put 6 as the `Maximum` instead of 5 i.e `$random[1;6]` will return: 1, 2, 3, 4, 5.
+```
 
 ## Syntax
 ```
@@ -11,6 +13,12 @@ $random[Minimum;Maximum]
 ### Parameters 
 - `Minimum` `(Type: Integer, Float || Flag: Required)`: The minimum value.
 - `Maximum` `(Type: Integer, Float || Flag: Required)`: The maximum value.
+
+```admonish failure
+The `Maximum` value cannot be greater than or equal to the `Minimum` value.
+- ❌ `Maximum` <= `Minimum`
+- ✅ `Maximum` > `Minimum`
+```
 
 ## Example
 ```
