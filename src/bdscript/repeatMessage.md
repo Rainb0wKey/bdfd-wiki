@@ -32,5 +32,5 @@ $repeatMessage[5;Hello World!]
 ```
 
 ```admonish info
-You can use a space at the end of "text" in the "Message" parameter, so there are spaces in-between repeats.
+You can use a space at the end of "text" in the `Message` parameter, so there are spaces in-between repeats.
 ```
