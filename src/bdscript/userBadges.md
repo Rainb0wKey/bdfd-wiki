@@ -51,3 +51,6 @@ $nomention
     <discord-inline-code>hype_squad_balance</discord-inline-code> <discord-inline-code>partner</discord-inline-code>
 ```
 
+```admonish question title="What is this?"
+How [`$authorID`](./authorID.md) works?
+```
