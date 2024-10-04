@@ -60,7 +60,7 @@ html {
     content: '📢 '
 }
 .functionTags #DangerousTag:before {
-    content: '⚠️ '
+    content: '❗ '
 }
 
 .functionTags span:hover {
