@@ -1,5 +1,5 @@
 # $userExists
-Checks if a user exists in Discord using thier ID. Returns "true" if the user exists, otherwise "false" is returned.
+Checks if a user exists in Discord using thier ID. Returns `true` if the user exists, otherwise `false` is returned.
 
 ## Syntax
 ```
