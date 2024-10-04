@@ -153,6 +153,7 @@ table tbody tr:last-child td:last-child {
 blockquote {
     margin: 20px 0;
     padding: .1px 20px;
+    padding-bottom: 1.5rem;
     background-color: var(--color3);
     border: solid !important;
     border-radius: 0 10px 10px 0 !important;
