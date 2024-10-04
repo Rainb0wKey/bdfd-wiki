@@ -16,5 +16,17 @@ $image[$userServerAvatar[$authorID]?size=4096]
 ```
 
 ``` discord yaml
+- user_id: 803569638084313098
+  username: RainbowKey
+  color: "#E67E22"
+  content: |
+    !example
+- username: BDFD Support
+  user_id: 1009018156494368798
+  color: "#378afa"
+  bot: true
+  verified: true
+  embed:
+    image: https://github.com/user-attachments/assets/3f669ece-44b2-441d-9051-014c13720978
 
 ```
