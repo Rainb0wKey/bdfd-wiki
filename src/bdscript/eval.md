@@ -1,4 +1,8 @@
 # $eval
+<div class="functionTags">
+  <span id="DangerousTag">Dangerous</span>
+</div>
+
 Evaluates the provided BDScript code. **Can only be used in BDScript 2.**
 
 > ⚠️ **Should be used with caution!** ⚠️
