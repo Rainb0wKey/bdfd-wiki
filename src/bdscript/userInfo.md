@@ -11,11 +11,14 @@ $userInfo[Message]
 ### Parameters
 - `Message` `(Type: String || Flag: Required)`: The message format. Check below for more information.
 
-   > 📌 Following are sub-functions which you can use inside [`$userInfo`](./userInfo.md) to return information of the mentioned user :
-   > - `{username}` : Returns the user's username.
-   > - `{ID}` : Returns the ID of the user.
-   > - `{BOT}` : Returns "true" if the user is a bot otherwise, "false".
-   > - `{discriminator}` : Returns the user's discriminator.
+#### Sub-functions
+Following are sub-functions which you can use inside `$userInfo[]` to return information of **the mentioned** user:
+Name              | Description                                               | Replacement
+------------------|-----------------------------------------------------------|-------------
+`{username}`      | Returns the user's username.                              | [`$username[]`](./usernameComplex.md)
+`{ID}`            | Returns the ID of the user.                               | [`$findUser[]`](./findUser.md)
+`{BOT}`           | Returns `true` if the user is a bot otherwise, `false`.   | [`$isBot[]`](./isBot.md)
+`{discriminator}` | Returns the user's discriminator. *(Depreacted)*          | [`$discriminator[]`](./discriminator.md) *(Deprecated)*
 
 ## Example
 ```
