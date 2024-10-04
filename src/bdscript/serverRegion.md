@@ -25,6 +25,7 @@ Server Region: $serverRegion
   content: |
     !example
 - username: BDFD Support
+  user_id: 1009018156494368798
   color: "#378afa"
   bot: true
   verified: true
