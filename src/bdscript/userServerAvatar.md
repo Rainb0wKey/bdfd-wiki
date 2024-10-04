@@ -28,5 +28,8 @@ $image[$userServerAvatar[$authorID]?size=4096]
   verified: true
   embed:
     image: https://github.com/user-attachments/assets/3f669ece-44b2-441d-9051-014c13720978
+```
 
+```admonish question title="What is this?"
+How [`$image[]`](./image.md) and [`$authorID`](./authorID.md) works?
 ```
