@@ -16,4 +16,18 @@ $nomention
 $serverNames[3;
 ]
 ```
-![example](https://user-images.githubusercontent.com/111157596/232112782-0912f671-eb2b-4c5b-814d-df6544a710cd.png)
+
+``` discord yaml
+- user_id: 803569638084313098
+  username: RainbowKey
+  color: "#E67E22"
+  content: |
+    !example
+- username: BDFD Support
+  color: "#378afa"
+  bot: true
+  verified: true
+  content: "Bot Designer for Discord Official Server\n
+    B. Support\n
+    Bot Designer List"
+```
