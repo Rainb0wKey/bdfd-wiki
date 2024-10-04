@@ -146,13 +146,16 @@
 <li><code>Message</code> <code>(Type: String || Flag: Required)</code>: The message format. Check below for more information.</li>
 </ul>
 <h4 id="sub-functions"><a class="header" href="#sub-functions">Sub-functions</a></h4>
-<p>Following are sub-functions which you can use inside <code>$userInfo[]</code> to return information of <strong>the mentioned</strong> user:
-Name              | Description                                               | Replacement
-——————|———————————————————–|———––
-<code>{username}</code>      | Returns the user’s username.                              | <a href="./usernameComplex.html"><code>$username[]</code></a>
-<code>{ID}</code>            | Returns the ID of the user.                               | <a href="./findUser.html"><code>$findUser[]</code></a>
-<code>{BOT}</code>           | Returns <code>true</code> if the user is a bot otherwise, <code>false</code>.   | <a href="./isBot.html"><code>$isBot[]</code></a>
-<code>{discriminator}</code> | Returns the user’s discriminator. <em>(Depreacted)</em>          | <a href="./discriminator.html"><code>$discriminator[]</code></a> <em>(Deprecated)</em></p>
+<ul>
+<li>Following are sub-functions which you can use inside <code>$userInfo[]</code> to return information of <strong>the mentioned</strong> user:</li>
+</ul>
+<div class="table-wrapper"><table><thead><tr><th>Name</th><th>Description</th><th>Replacement</th></tr></thead><tbody>
+<tr><td><code>{username}</code></td><td>Returns the user’s username.</td><td><a href="./usernameComplex.html"><code>$username[]</code></a></td></tr>
+<tr><td><code>{ID}</code></td><td>Returns the ID of the user.</td><td><a href="./findUser.html"><code>$findUser[]</code></a></td></tr>
+<tr><td><code>{BOT}</code></td><td>Returns <code>true</code> if the user is a bot otherwise, <code>false</code>.</td><td><a href="./isBot.html"><code>$isBot[]</code></a></td></tr>
+<tr><td><code>{discriminator}</code></td><td>Returns the user’s discriminator. <em>(Depreacted)</em></td><td><a href="./discriminator.html"><code>$discriminator[]</code></a> <em>(Deprecated)</em></td></tr>
+</tbody></table>
+</div>
 <h2 id="example"><a class="header" href="#example">Example</a></h2>
 <pre><code>$nomention
 $title[User Info]
