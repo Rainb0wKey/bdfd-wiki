@@ -1,4 +1,9 @@
 # $alternativeParsing
+<div class="functionTags">
+  <span id="DangerousTag">Dangerous</span>
+  <span id="ExperimentTag">Experiment</span>
+</div>
+
 Changes the way how triggers are read.
 
 ## Syntax
