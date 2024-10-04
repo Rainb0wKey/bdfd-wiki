@@ -69,7 +69,7 @@ a > .hljs {
     text-decoration: none;
 }
 
-a:link:not(.editPage, .mobile-nav-chapters, .chapter li a)::before {
+a:link:not(.editPage, .mobile-nav-chapters, .chapter li a, .discord-button, .discord-embed-grid a, .discord-embed-grid a)::before {
     content: '';
     position: absolute;
     width: 100%;
@@ -82,7 +82,7 @@ a:link:not(.editPage, .mobile-nav-chapters, .chapter li a)::before {
     transition: transform .3s ease-in-out;
 }
 
-a:link:not(.editPage, .mobile-nav-chapters, .chapter li a, .discord-button, .discord-embed-grid a):hover::before {
+a:link:not(.editPage, .mobile-nav-chapters, .chapter li a, .discord-button, .discord-embed-grid a, .discord-embed-grid a):hover::before {
     transform-origin: left;
     transform: scaleX(1);
 }
