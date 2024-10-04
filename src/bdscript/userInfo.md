@@ -12,7 +12,8 @@ $userInfo[Message]
 - `Message` `(Type: String || Flag: Required)`: The message format. Check below for more information.
 
 #### Sub-functions
-Following are sub-functions which you can use inside `$userInfo[]` to return information of **the mentioned** user:
+- Following are sub-functions which you can use inside `$userInfo[]` to return information of **the mentioned** user:
+
 Name              | Description                                               | Replacement
 ------------------|-----------------------------------------------------------|-------------
 `{username}`      | Returns the user's username.                              | [`$username[]`](./usernameComplex.md)
