@@ -30,6 +30,25 @@ User ID: {ID}
 Bot?: {BOT}
 Discriminator: {discriminator}]
 ```
-![example](https://user-images.githubusercontent.com/69215413/122833288-b6597c80-d2ba-11eb-88b8-9d1d5368b4f5.png)
+
+``` discord yaml
+- user_id: 803569638084313098
+  username: RainbowKey
+  color: "#E67E22"
+  content: |
+    !example <@RainbowKey>
+- user_id: 1009018156494368798
+  username: BDFD Support
+  color: "#378afa"
+  bot: true
+  verified: true
+  content: |
+  embed:
+    title: User Info
+    description: "Username: rainbow_key\n
+      User ID: 803569638084313098\n
+      Bot?: false\n
+      Discriminator: 0000"
+```
 
 > 📌 [`$userInfo`](./userInfo.md) automatically generates a thumbnail of the mentioned user. If you want to remove it, put [`$thumbnail[]`](./thumbnail.md) (with empty argument) below [`$userInfo`](./userInfo.md) function.
