@@ -19,19 +19,19 @@ $url[Mode;Text]
    https://example.url/encode?convert=$url[encode;Hello world!!]
    ```
    
-   ``` discord yaml
-   - user_id: 803569638084313098
-  username: RainbowKey
-  color: "#E67E22"
-  content: |
-    !example
-   - user_id: 1009018156494368798
-  username: BDFD Support
-  color: "#378afa"
-  bot: true
-  verified: true
-  content: <a href="https://example.url/encode?convert=Hello+world%21%21">https://example.url/encode?convert=Hello+world%21%21</a>
-  ```
+``` discord yaml
+- user_id: 803569638084313098
+username: RainbowKey
+color: "#E67E22"
+content: |
+  !example
+- user_id: 1009018156494368798
+username: BDFD Support
+color: "#378afa"
+bot: true
+verified: true
+content: <a href="https://example.url/encode?convert=Hello+world%21%21">https://example.url/encode?convert=Hello+world%21%21</a>
+```
 
 - Decoding
    ```
@@ -39,16 +39,16 @@ $url[Mode;Text]
    $url[decode;https://example.url/decode?convert=Hello+world%21%21]
    ```
 
-   ``` discord yaml
-   - user_id: 803569638084313098
-  username: RainbowKey
-  color: "#E67E22"
-  content: |
-    !example
-   - user_id: 1009018156494368798
-  username: BDFD Support
-  color: "#378afa"
-  bot: true
-  verified: true
-  content: <a href="https://example.url/encode?convert=Hello world!!">https://example.url/encode?convert=Hello</a> world!!
-  ```
+``` discord yaml
+- user_id: 803569638084313098
+username: RainbowKey
+color: "#E67E22"
+content: |
+  !example
+- user_id: 1009018156494368798
+username: BDFD Support
+color: "#378afa"
+bot: true
+verified: true
+content: <a href="https://example.url/encode?convert=Hello world!!">https://example.url/encode?convert=Hello</a> world!!
+```
