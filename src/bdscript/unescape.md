@@ -65,3 +65,7 @@ $randomText[$unescape[$message]]
   content: |
     c
 ```
+
+```admonish question title="What is this?"
+How [`$randomText[]`](./randomText.md) and [`$message`](./message.md) works?
+```
