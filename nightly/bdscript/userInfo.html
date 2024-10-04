@@ -164,7 +164,18 @@ User ID: {ID}
 Bot?: {BOT}
 Discriminator: {discriminator}]
 </code></pre>
-<p><img src="https://user-images.githubusercontent.com/69215413/122833288-b6597c80-d2ba-11eb-88b8-9d1d5368b4f5.png" alt="example" /></p>
+<discord-messages>
+    <discord-message role-color="#E67E22" author="RainbowKey">
+        !example <discord-mention>RainbowKey</discord-mention>
+    </discord-message>
+    <discord-message bot role-color="#378afa" verified author="BDFD Support">
+        <discord-embed embed-title="User Info" slot="embeds">
+            <discord-embed-description slot="description">
+                Username: rainbow_key<br /> User ID: 803569638084313098<br /> Bot?: false<br /> Discriminator: 0000
+            </discord-embed-description>
+        </discord-embed>
+    </discord-message>
+</discord-messages>
 <blockquote>
 <p>📌 <a href="./userInfo.html"><code>$userInfo</code></a> automatically generates a thumbnail of the mentioned user. If you want to remove it, put <a href="./thumbnail.html"><code>$thumbnail[]</code></a> (with empty argument) below <a href="./userInfo.html"><code>$userInfo</code></a> function.</p>
 </blockquote>
