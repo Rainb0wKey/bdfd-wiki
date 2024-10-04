@@ -145,6 +145,7 @@
     border: 1.2px solid #1e1f22;
     background: #191919;
     color: #d5d3d1 !important;
+    background: hsl(0deg 0% 0% / 75%) !important;
     box-shadow: none;
 }
 
