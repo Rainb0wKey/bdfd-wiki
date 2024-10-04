@@ -362,6 +362,10 @@ code.hljs {
     border-top-right-radius: 10px !important;
 }
 
+.admonition-title {
+    background: hsl(0deg 0% 100% / 5%) !important;
+}
+
 /* Summary */
 
 summary {
