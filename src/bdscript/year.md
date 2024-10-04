@@ -27,5 +27,5 @@ Current Year: $year
 ```
 
 ```admonish info title="Timezone"
-You can use [`$time`](./time.md) to change the timezone.
+You can use [`$time[]`](./time.md) to change the timezone.
 ```
