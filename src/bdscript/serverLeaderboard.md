@@ -1,7 +1,9 @@
 # $serverLeaderboard
 Creates a server leaderboard (top-10).
 
-> `$serverLeaderboard` automatically generates a description. So, `$description` should not be used in the code.
+```admonish warning
+`$serverLeaderboard[]` automatically generates a description. So, [`$description[]`](./description.md) of index `1` **should be avoided** in the code.
+```
 
 ## Syntax
 ```
