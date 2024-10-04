@@ -30,3 +30,7 @@ $toTitleCase[$message]
   content: |
     Bot Designer For Discord
 ```
+
+```admonish question title="What is this?"
+How [`$message`](./message.md) works?
+```
