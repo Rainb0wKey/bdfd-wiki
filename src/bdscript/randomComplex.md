@@ -5,12 +5,12 @@ Returns a random number between 'minimum' and 'maximum'.
 
 ## Syntax
 ```
-$random[minimum;maximum]
+$random[Minimum;Maximum]
 ````
 
 ### Parameters 
-- `minimum` `(Type: Integer, Float || Flag: Required)`: The minimum value.
-- `maximum` `(Type: Integer, Float || Flag: Required)`: The maximum value.
+- `Minimum` `(Type: Integer, Float || Flag: Required)`: The minimum value.
+- `Maximum` `(Type: Integer, Float || Flag: Required)`: The maximum value.
 
 ## Example
 ```
