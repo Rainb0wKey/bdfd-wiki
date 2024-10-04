@@ -10,6 +10,8 @@ $userBadges[User ID;(Separator)]
 - `User ID` `(Type: Snowflake || Flag: Required)`: The user to get the badges from.
 - `Separator` `(Type: String || Flag: Optional)`: Will be used to separate each badge.
 
+#### Supported Outputs
+
 | Returns                | Name
 | ---------------------- | ----------------------
 | staff                  | Discord Employee
