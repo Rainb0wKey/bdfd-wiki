@@ -144,10 +144,39 @@
 </ul>
 <h2 id="example"><a class="header" href="#example">Example</a></h2>
 <pre><code>$nomention
-$description[&lt;@$mentioned[1;yes]&gt;'s roles: 
-$userRoles[$mentioned[1;yes]]]
+**My roles**:
+$userRoles[$authorID]
 </code></pre>
-<p><img src="https://user-images.githubusercontent.com/69215413/125122358-4e30d600-e0c3-11eb-8930-07276f1bfbbd.png" alt="example" /></p>
+<discord-messages>
+    <discord-message role-color="#E67E22" author="RainbowKey">
+        !example
+    </discord-message>
+    <discord-message verified bot role-color="#378afa" author="BDFD Support">
+        <b>My roles</b>:<br /> Support <br /> Wiki Contributor <br /> User
+    </discord-message>
+</discord-messages>
+<div id="admonition-what-is-this" class="admonition admonish-question" role="note" aria-labelledby="admonition-what-is-this-title">
+<div class="admonition-title">
+<div id="admonition-what-is-this-title">
+<p>What is this?</p>
+</div>
+<a class="admonition-anchor-link" href="#admonition-what-is-this"></a>
+</div>
+<div>
+<p>How <a href="./authorID.html"><code>$authorID</code></a> works?</p>
+</div>
+</div>
+<div id="admonition-tip" class="admonition admonish-tip" role="note" aria-labelledby="admonition-tip-title">
+<div class="admonition-title">
+<div id="admonition-tip-title">
+<p>Tip</p>
+</div>
+<a class="admonition-anchor-link" href="#admonition-tip"></a>
+</div>
+<div>
+<p>You can use <a href="./textSplit.html"><code>$textSplit[]</code></a> to specify a different separator.</p>
+</div>
+</div>
 
                     </main>
 
