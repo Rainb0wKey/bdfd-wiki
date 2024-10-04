@@ -41,36 +41,6 @@
     </head>
   
     <body>
-        <!-- Provide site root to javascript -->
-        <script>
-            var path_to_root = "../";
-            var default_theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? "bdfd" : "bdfd";
-        </script>
-
-        <!-- Work around some values being stored in localStorage wrapped in quotes -->
-        <script>
-            try {
-                var theme = localStorage.getItem('mdbook-theme');
-
-                if (theme.startsWith('"') && theme.endsWith('"')) {
-                    localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
-                }
-
-            } catch (e) { }
-        </script>
-
-        <!-- Set the theme before any content is loaded, prevents flash -->
-        <script>
-            var theme;
-            try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { }
-            if (theme === null || theme === undefined) { theme = default_theme; }
-            var html = document.querySelector('html');
-            html.classList.remove('no-js')
-            html.classList.remove('bdfd')
-            html.classList.add(theme);
-            html.classList.add('js');
-        </script>
-
         <!-- Hide / unhide sidebar before it is displayed -->
         <script>
             var html = document.querySelector('html');
@@ -186,7 +156,7 @@ Here, are all possible values for the <code>style</code> function argument.</p>
 <li><code>link</code> - Redirect button</li>
 </ul>
 <discord-messages>
-    <discord-message author="BDFD Support" bot role-color="#378afa" verified>
+    <discord-message role-color="#378afa" bot author="BDFD Support" verified>
         Buttons:
         <discord-attachments slot="components">
             <discord-action-row>
@@ -201,7 +171,7 @@ Here, are all possible values for the <code>style</code> function argument.</p>
                 <discord-button type="success">
                     Success
                 </discord-button>
-                <discord-button disabled type="success">
+                <discord-button type="success" disabled>
                     Success
                 </discord-button>
             </discord-action-row>
@@ -217,25 +187,25 @@ Here, are all possible values for the <code>style</code> function argument.</p>
                 <discord-button type="secondary">
                     Secondary
                 </discord-button>
-                <discord-button disabled type="secondary">
+                <discord-button type="secondary" disabled>
                     Secondary
                 </discord-button>
             </discord-action-row>
         </discord-attachments>
     </discord-message>
-    <discord-message author="BDFD Support" role-color="#378afa" verified bot>
+    <discord-message verified role-color="#378afa" bot author="BDFD Support">
         Other Buttons:
         <discord-attachments slot="components">
             <discord-action-row>
-                <discord-button type="secondary" url="https://nilpointer-software.github.io/bdfd-wiki/nightly/">
+                <discord-button url="https://nilpointer-software.github.io/bdfd-wiki/nightly/" type="secondary">
                     Link
                 </discord-button>
-                <discord-button type="secondary" url="https://nilpointer-software.github.io/bdfd-wiki/nightly/" disabled>
+                <discord-button disabled url="https://nilpointer-software.github.io/bdfd-wiki/nightly/" type="secondary">
                     Link
                 </discord-button>
             </discord-action-row>
             <discord-action-row>
-                <discord-button emoji="https://em-content.zobj.net/thumbs/120/mozilla/36/heavy-black-heart_2764.png" type="secondary">
+                <discord-button type="secondary" emoji="https://em-content.zobj.net/thumbs/120/mozilla/36/heavy-black-heart_2764.png">
                     Emoji
                 </discord-button>
             </discord-action-row>
@@ -254,7 +224,7 @@ $addButton[no;test;Say hello!;primary;no;]
     <discord-message author="RainbowKey" role-color="#E67E22">
         !example
     </discord-message>
-    <discord-message author="BDFD Support" role-color="#378afa" bot verified>
+    <discord-message bot verified author="BDFD Support" role-color="#378afa">
         Hello
         <discord-attachments slot="components">
             <discord-action-row>

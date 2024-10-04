@@ -41,36 +41,6 @@
     </head>
   
     <body>
-        <!-- Provide site root to javascript -->
-        <script>
-            var path_to_root = "../";
-            var default_theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? "bdfd" : "bdfd";
-        </script>
-
-        <!-- Work around some values being stored in localStorage wrapped in quotes -->
-        <script>
-            try {
-                var theme = localStorage.getItem('mdbook-theme');
-
-                if (theme.startsWith('"') && theme.endsWith('"')) {
-                    localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
-                }
-
-            } catch (e) { }
-        </script>
-
-        <!-- Set the theme before any content is loaded, prevents flash -->
-        <script>
-            var theme;
-            try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { }
-            if (theme === null || theme === undefined) { theme = default_theme; }
-            var html = document.querySelector('html');
-            html.classList.remove('no-js')
-            html.classList.remove('bdfd')
-            html.classList.add(theme);
-            html.classList.add('js');
-        </script>
-
         <!-- Hide / unhide sidebar before it is displayed -->
         <script>
             var html = document.querySelector('html');
@@ -156,10 +126,10 @@ $authorIcon[$authorAvatar]
 $author[⬅️ That is the author icon. This is the author text.]
 </code></pre>
 <discord-messages>
-    <discord-message role-color="#EE7908" author="Nicky">
+    <discord-message author="Nicky" role-color="#EE7908">
         !example
     </discord-message>
-    <discord-message verified author="Wiki Bot" bot role-color="#748BD4">
+    <discord-message role-color="#748BD4" bot author="Wiki Bot" verified>
         <none>
         <discord-embed author-image="https://user-images.githubusercontent.com/111157596/257052136-4b8d5715-b381-4d5f-8c46-8ae0be53c8d8.png" slot="embeds" author-name="⬅️ That is the author icon. This is the author text.">
         </discord-embed>

@@ -41,36 +41,6 @@
     </head>
   
     <body>
-        <!-- Provide site root to javascript -->
-        <script>
-            var path_to_root = "../";
-            var default_theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? "bdfd" : "bdfd";
-        </script>
-
-        <!-- Work around some values being stored in localStorage wrapped in quotes -->
-        <script>
-            try {
-                var theme = localStorage.getItem('mdbook-theme');
-
-                if (theme.startsWith('"') && theme.endsWith('"')) {
-                    localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
-                }
-
-            } catch (e) { }
-        </script>
-
-        <!-- Set the theme before any content is loaded, prevents flash -->
-        <script>
-            var theme;
-            try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { }
-            if (theme === null || theme === undefined) { theme = default_theme; }
-            var html = document.querySelector('html');
-            html.classList.remove('no-js')
-            html.classList.remove('bdfd')
-            html.classList.add(theme);
-            html.classList.add('js');
-        </script>
-
         <!-- Hide / unhide sidebar before it is displayed -->
         <script>
             var html = document.querySelector('html');
@@ -151,10 +121,10 @@
 &lt;#$noMentionMessage&gt;'s channel topic is: $channelTopic[$noMentionMessage]
 </code></pre>
 <discord-messages>
-    <discord-message author="Nicky" role-color="#EE7908">
+    <discord-message role-color="#EE7908" author="Nicky">
         !example 860870690323300359
     </discord-message>
-    <discord-message author="Wiki Bot" bot verified role-color="#748BD4">
+    <discord-message bot role-color="#748BD4" author="Wiki Bot" verified>
         <discord-mention type="channel">demo</discord-mention>'s channel topic is: Demos, examples and more!
     </discord-message>
 </discord-messages>
