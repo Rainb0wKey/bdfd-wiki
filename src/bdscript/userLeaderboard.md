@@ -2,7 +2,7 @@
 Returns the top 10 users' usernames and values for a given user variable.
 
 ```admonish warning
-`$userLeaderboard[]` automatically generates a description. So, [`$description[]`](./description.md) of index `1` should be avoided in the code.
+`$userLeaderboard[]` automatically generates a description. So, [`$description[]`](./description.md) of index `1` **should be avoided** in the code.
 ```
 
 ## Syntax
