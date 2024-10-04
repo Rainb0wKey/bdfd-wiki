@@ -69,6 +69,10 @@ a > .hljs {
     text-decoration: none;
 }
 
+.discord-message-markup a:link:hover, .discord-embed-grid a:link:hover {
+    text-decoration: underline;
+}
+
 a:link:not(.editPage, .mobile-nav-chapters, .chapter li a, .discord-button, .discord-embed-grid a, .discord-embed-grid a)::before {
     content: '';
     position: absolute;
