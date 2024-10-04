@@ -30,3 +30,7 @@ Server Name: $serverName[$guildID]
   content: |
     Server Name: Bot Designer for Discord Official Server
 ```
+
+```admonish question title="What is this?"
+How [`$guildID`](./guildID.md) works?
+```
