@@ -29,3 +29,7 @@ $username just hugged $username[$mentioned[1]]!
   content: |
     RainbowKey just hugged <@MineBartekSA>!
 ```
+
+```admonish question title="What is this?"
+How [`$username`](./username.md) and [`$mentioned[]`](./mentioned.md) works?
+```
