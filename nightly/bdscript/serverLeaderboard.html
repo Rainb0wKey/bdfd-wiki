@@ -136,7 +136,7 @@
                         <h1 id="serverleaderboard"><a class="header" href="#serverleaderboard">$serverLeaderboard</a></h1>
 <p>Creates a server leaderboard (top-10).</p>
 <blockquote>
-<p>🧙‍♂️ <code>$serverLeaderboard</code> automatically generates a description. So, <code>$description</code> should not be used in the code.</p>
+<p><code>$serverLeaderboard</code> automatically generates a description. So, <code>$description</code> should not be used in the code.</p>
 </blockquote>
 <h2 id="syntax"><a class="header" href="#syntax">Syntax</a></h2>
 <pre><code>$serverLeaderboard[Variable name;(Sort type)]
@@ -151,6 +151,33 @@
 </ul>
 </li>
 </ul>
+<h2 id="example"><a class="header" href="#example">Example</a></h2>
+<pre><code>$nomention
+$serverLeaderboard[Reputation;asc]
+</code></pre>
+<discord-messages>
+    <discord-message author="RainbowKey" role-color="#E67E22">
+        !example
+    </discord-message>
+    <discord-message verified author="BDFD Support" bot role-color="#378afa">
+        <discord-embed slot="embeds">
+            <discord-embed-description slot="description">
+                1. Bot Designer for Discord Official Server - 89<br /> 2. Bot Designer List - 63<br /> 3. B. Support - 60<br /> 4. BDFD Appeals Server - 42
+            </discord-embed-description>
+        </discord-embed>
+    </discord-message>
+</discord-messages>
+<div id="admonition-why-is-my-leaderboard-showing-inaccurate-values" class="admonition admonish-question" role="note" aria-labelledby="admonition-why-is-my-leaderboard-showing-inaccurate-values-title">
+<div class="admonition-title">
+<div id="admonition-why-is-my-leaderboard-showing-inaccurate-values-title">
+<p>Why is my leaderboard showing inaccurate values?</p>
+</div>
+<a class="admonition-anchor-link" href="#admonition-why-is-my-leaderboard-showing-inaccurate-values"></a>
+</div>
+<div>
+<p>Leaderboard values are not updated in real-time. The previous values are cached for a short duration. It will take about 5 minutes to show the updated values.</p>
+</div>
+</div>
 
                     </main>
 
