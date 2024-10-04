@@ -134,10 +134,18 @@
                             <span>Edit this page</span>
                         </a>
                         <h1 id="random"><a class="header" href="#random">$random[]</a></h1>
-<p>Returns a random number between ‘minimum’ and ‘maximum’.</p>
-<blockquote>
-<p><code>$random[]</code> never returns the ‘maximum’ value, as it’s right side exclusive range. Basically, to get a random number between 1 and 10; you’d put 11 as the ‘maximum’ instead of 10 i.e <code>$random[1;11]</code>.</p>
-</blockquote>
+<p>Returns a random number between <code>Minimum</code> and <code>Maximum</code>.</p>
+<div id="admonition-warning" class="admonition admonish-warning" role="note" aria-labelledby="admonition-warning-title">
+<div class="admonition-title">
+<div id="admonition-warning-title">
+<p>Warning</p>
+</div>
+<a class="admonition-anchor-link" href="#admonition-warning"></a>
+</div>
+<div>
+<p><code>$random[]</code> never returns the ‘maximum’ value, as it’s right side exclusive range. Basically, to get a random number between 1 and 5; you’d put 6 as the <code>Maximum</code> instead of 5 i.e <code>$random[1;6]</code> will return: 1, 2, 3, 4, 5.</p>
+</div>
+</div>
 <h2 id="syntax"><a class="header" href="#syntax">Syntax</a></h2>
 <pre><code>$random[Minimum;Maximum]
 </code></pre>
@@ -146,15 +154,30 @@
 <li><code>Minimum</code> <code>(Type: Integer, Float || Flag: Required)</code>: The minimum value.</li>
 <li><code>Maximum</code> <code>(Type: Integer, Float || Flag: Required)</code>: The maximum value.</li>
 </ul>
+<div id="admonition-failure" class="admonition admonish-failure" role="note" aria-labelledby="admonition-failure-title">
+<div class="admonition-title">
+<div id="admonition-failure-title">
+<p>Failure</p>
+</div>
+<a class="admonition-anchor-link" href="#admonition-failure"></a>
+</div>
+<div>
+<p>The <code>Maximum</code> value cannot be greater than or equal to the <code>Minimum</code> value.</p>
+<ul>
+<li>❌ <code>Maximum</code> &lt;= <code>Minimum</code></li>
+<li>✅ <code>Maximum</code> &gt; <code>Minimum</code></li>
+</ul>
+</div>
+</div>
 <h2 id="example"><a class="header" href="#example">Example</a></h2>
 <pre><code>$nomention
 The random number is **$random[1;21]**
 </code></pre>
 <discord-messages>
-    <discord-message role-color="#E67E22" author="RainbowKey">
+    <discord-message author="RainbowKey" role-color="#E67E22">
         !example
     </discord-message>
-    <discord-message verified role-color="#378afa" author="BDFD Support" bot>
+    <discord-message verified author="BDFD Support" role-color="#378afa" bot>
         The random number is <b>16</b>
     </discord-message>
 </discord-messages>
