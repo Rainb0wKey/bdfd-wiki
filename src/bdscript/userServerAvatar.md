@@ -12,7 +12,7 @@ $userServerAvatar[User ID]
 ## Example
 ```
 $nomention
-$image[$userServerAvatar[$authorID]?size=4096]
+$image[$userServerAvatar[$authorID]]
 ```
 
 ``` discord yaml
@@ -32,4 +32,9 @@ $image[$userServerAvatar[$authorID]?size=4096]
 
 ```admonish question title="What is this?"
 How [`$image[]`](./image.md) and [`$authorID`](./authorID.md) works?
+```
+
+```admonish tip title="Image size"
+You can use `?size=size` at the end of the banner URL to increase/decrease the image size. Example sizes: 1024, 2048, 4096.
+(e.g. `$image[$userServerAvatar[$authorID]?size=4096]`)
 ```
