@@ -31,3 +31,7 @@ This server is owned by <@$serverOwner[$guildID]>!
     This server is owned by <@RainbowKey>!
   highlight: true
 ```
+
+```admonish question title="What is this?"
+How [`$guildID`](./guildID.md) works?
+```
