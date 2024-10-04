@@ -135,9 +135,17 @@
                         </a>
                         <h1 id="userleaderboard"><a class="header" href="#userleaderboard">$userLeaderboard</a></h1>
 <p>Returns the top 10 users’ usernames and values for a given user variable.</p>
-<blockquote>
-<p><a href="./userLeaderboard.html"><code>$userLeaderboard</code></a> automatically generates a description. So, <a href="./description.html"><code>$description</code></a> of index <code>1</code> should be avoided in the code.</p>
-</blockquote>
+<div id="admonition-warning" class="admonition admonish-warning" role="note" aria-labelledby="admonition-warning-title">
+<div class="admonition-title">
+<div id="admonition-warning-title">
+<p>Warning</p>
+</div>
+<a class="admonition-anchor-link" href="#admonition-warning"></a>
+</div>
+<div>
+<p><code>$userLeaderboard[]</code> automatically generates a description. So, <a href="./description.html"><code>$description[]</code></a> of index <code>1</code> should be avoided in the code.</p>
+</div>
+</div>
 <h2 id="syntax"><a class="header" href="#syntax">Syntax</a></h2>
 <pre><code>$userLeaderboard[Variable name;(Sort)]
 </code></pre>
@@ -154,7 +162,7 @@ $userLeaderboard[Money;asc]
     <discord-message author="RainbowKey" role-color="#E67E22">
         !example
     </discord-message>
-    <discord-message author="BDFD Support" bot verified role-color="#378afa">
+    <discord-message bot verified role-color="#378afa" author="BDFD Support">
         <discord-embed slot="embeds">
             <discord-embed-description slot="description">
                 1. RainbowKey - 2146<br /> 2. MineBartekSA - 1987<br /> 3. Menhera Bread - 863
@@ -162,10 +170,17 @@ $userLeaderboard[Money;asc]
         </discord-embed>
     </discord-message>
 </discord-messages>
-<blockquote>
-<p><strong>Why is my leaderboard showing inaccurate values?</strong><br />
-Leaderboard values are not updated in real-time. The previous values are cached for a short duration. It will take about 5 minutes to show the updated values.</p>
-</blockquote>
+<div id="admonition-why-is-my-leaderboard-showing-inaccurate-values" class="admonition admonish-question" role="note" aria-labelledby="admonition-why-is-my-leaderboard-showing-inaccurate-values-title">
+<div class="admonition-title">
+<div id="admonition-why-is-my-leaderboard-showing-inaccurate-values-title">
+<p>Why is my leaderboard showing inaccurate values?</p>
+</div>
+<a class="admonition-anchor-link" href="#admonition-why-is-my-leaderboard-showing-inaccurate-values"></a>
+</div>
+<div>
+<p>Leaderboard values are not updated in real-time. The previous values are cached for a short duration. It will take about 5 minutes to show the updated values.</p>
+</div>
+</div>
 
                     </main>
 
