@@ -144,13 +144,13 @@
 </ul>
 <h2 id="example"><a class="header" href="#example">Example</a></h2>
 <pre><code>$nomention
-$image[$userServerAvatar[$authorID]?size=4096]
+$image[$userServerAvatar[$authorID]]
 </code></pre>
 <discord-messages>
-    <discord-message role-color="#E67E22" author="RainbowKey">
+    <discord-message author="RainbowKey" role-color="#E67E22">
         !example
     </discord-message>
-    <discord-message role-color="#378afa" verified author="BDFD Support" bot>
+    <discord-message bot role-color="#378afa" author="BDFD Support" verified>
         <discord-embed slot="embeds" image="https://github.com/user-attachments/assets/3f669ece-44b2-441d-9051-014c13720978">
         </discord-embed>
     </discord-message>
@@ -164,6 +164,18 @@ $image[$userServerAvatar[$authorID]?size=4096]
 </div>
 <div>
 <p>How <a href="./image.html"><code>$image[]</code></a> and <a href="./authorID.html"><code>$authorID</code></a> works?</p>
+</div>
+</div>
+<div id="admonition-image-size" class="admonition admonish-tip" role="note" aria-labelledby="admonition-image-size-title">
+<div class="admonition-title">
+<div id="admonition-image-size-title">
+<p>Image size</p>
+</div>
+<a class="admonition-anchor-link" href="#admonition-image-size"></a>
+</div>
+<div>
+<p>You can use <code>?size=size</code> at the end of the banner URL to increase/decrease the image size. Example sizes: 1024, 2048, 4096.
+(e.g. <code>$image[$userServerAvatar[$authorID]?size=4096]</code>)</p>
 </div>
 </div>
 
