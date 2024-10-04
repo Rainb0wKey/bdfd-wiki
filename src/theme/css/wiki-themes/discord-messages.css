@@ -117,13 +117,13 @@
     color: #fff;
     font-weight: 500;
     font-size: 13.98px;
-    line-height: 1.125rem;
+    line-height: 1.5rem;
     min-width: 0;
     margin-bottom: 9px;
 }
 .discord-embed .discord-embed-field {
     font-size: 13px;
-    line-height: 1.125rem;
+    line-height: 1.25rem;
     min-width: 0;
     font-weight: 400;
     grid-column: 1 / 13;
