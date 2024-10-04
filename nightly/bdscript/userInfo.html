@@ -143,19 +143,16 @@
 </code></pre>
 <h3 id="parameters"><a class="header" href="#parameters">Parameters</a></h3>
 <ul>
-<li>
-<p><code>Message</code> <code>(Type: String || Flag: Required)</code>: The message format. Check below for more information.</p>
-<blockquote>
-<p>📌 Following are sub-functions which you can use inside <a href="./userInfo.html"><code>$userInfo</code></a> to return information of the mentioned user :</p>
-<ul>
-<li><code>{username}</code> : Returns the user’s username.</li>
-<li><code>{ID}</code> : Returns the ID of the user.</li>
-<li><code>{BOT}</code> : Returns “true” if the user is a bot otherwise, “false”.</li>
-<li><code>{discriminator}</code> : Returns the user’s discriminator.</li>
+<li><code>Message</code> <code>(Type: String || Flag: Required)</code>: The message format. Check below for more information.</li>
 </ul>
-</blockquote>
-</li>
-</ul>
+<h4 id="sub-functions"><a class="header" href="#sub-functions">Sub-functions</a></h4>
+<p>Following are sub-functions which you can use inside <code>$userInfo[]</code> to return information of <strong>the mentioned</strong> user:
+Name              | Description                                               | Replacement
+——————|———————————————————–|———––
+<code>{username}</code>      | Returns the user’s username.                              | <a href="./usernameComplex.html"><code>$username[]</code></a>
+<code>{ID}</code>            | Returns the ID of the user.                               | <a href="./findUser.html"><code>$findUser[]</code></a>
+<code>{BOT}</code>           | Returns <code>true</code> if the user is a bot otherwise, <code>false</code>.   | <a href="./isBot.html"><code>$isBot[]</code></a>
+<code>{discriminator}</code> | Returns the user’s discriminator. <em>(Depreacted)</em>          | <a href="./discriminator.html"><code>$discriminator[]</code></a> <em>(Deprecated)</em></p>
 <h2 id="example"><a class="header" href="#example">Example</a></h2>
 <pre><code>$nomention
 $title[User Info]
