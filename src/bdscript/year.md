@@ -17,7 +17,7 @@ Current Year: $year
   username: Nicky
   color: "#EE7908"
   content: |
-    !year
+    !example
 - user_id: 566613317972394004
   username: Wiki Bot
   color: "#748BD4"
