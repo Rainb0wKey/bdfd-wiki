@@ -1,7 +1,9 @@
 # $userLeaderboard
 Returns the top 10 users' usernames and values for a given user variable.
 
-> [`$userLeaderboard`](./userLeaderboard.md) automatically generates a description. So, [`$description`](./description.md) of index `1` should be avoided in the code.
+```admonish warning
+`$userLeaderboard[]` automatically generates a description. So, [`$description[]`](./description.md) of index `1` should be avoided in the code.
+```
 
 ## Syntax
 ```
@@ -36,5 +38,6 @@ $userLeaderboard[Money;asc]
 3. Menhera Bread - 863"
 ```
 
-> **Why is my leaderboard showing inaccurate values?**\
+```admonish question title="Why is my leaderboard showing inaccurate values?"
 Leaderboard values are not updated in real-time. The previous values are cached for a short duration. It will take about 5 minutes to show the updated values.
+```
