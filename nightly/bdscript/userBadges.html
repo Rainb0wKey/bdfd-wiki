@@ -143,6 +143,7 @@
 <li><code>User ID</code> <code>(Type: Snowflake || Flag: Required)</code>: The user to get the badges from.</li>
 <li><code>Separator</code> <code>(Type: String || Flag: Optional)</code>: Will be used to separate each badge.</li>
 </ul>
+<h4 id="supported-outputs"><a class="header" href="#supported-outputs">Supported Outputs</a></h4>
 <div class="table-wrapper"><table><thead><tr><th>Returns</th><th>Name</th></tr></thead><tbody>
 <tr><td>staff</td><td>Discord Employee</td></tr>
 <tr><td>partner</td><td>Partnered Server Owner</td></tr>
@@ -169,7 +170,7 @@
     <discord-message role-color="#E67E22" author="RainbowKey">
         !example main-chat
     </discord-message>
-    <discord-message verified bot role-color="#378afa" author="BDFD Support">
+    <discord-message author="BDFD Support" verified role-color="#378afa" bot>
         <discord-inline-code>hype_squad_balance</discord-inline-code> <discord-inline-code>partner</discord-inline-code>
     </discord-message>
 </discord-messages>
