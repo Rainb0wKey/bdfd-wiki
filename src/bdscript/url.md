@@ -21,16 +21,16 @@ $url[Mode;Text]
    
 ``` discord yaml
 - user_id: 803569638084313098
-username: RainbowKey
-color: "#E67E22"
-content: |
-  !example
+  username: RainbowKey
+  color: "#E67E22"
+  content: |
+    !example
 - user_id: 1009018156494368798
-username: BDFD Support
-color: "#378afa"
-bot: true
-verified: true
-content: <a href="https://example.url/encode?convert=Hello+world%21%21">https://example.url/encode?convert=Hello+world%21%21</a>
+  username: BDFD Support
+  color: "#378afa"
+  bot: true
+  verified: true
+  content: <a href="https://example.url/encode?convert=Hello+world%21%21">https://example.url/encode?convert=Hello+world%21%21</a>
 ```
 
 - Decoding
@@ -41,14 +41,14 @@ content: <a href="https://example.url/encode?convert=Hello+world%21%21">https://
 
 ``` discord yaml
 - user_id: 803569638084313098
-username: RainbowKey
-color: "#E67E22"
-content: |
-  !example
+  username: RainbowKey
+  color: "#E67E22"
+  content: |
+    !example
 - user_id: 1009018156494368798
-username: BDFD Support
-color: "#378afa"
-bot: true
-verified: true
-content: <a href="https://example.url/encode?convert=Hello world!!">https://example.url/encode?convert=Hello</a> world!!
+  username: BDFD Support
+  color: "#378afa"
+  bot: true
+  verified: true
+  content: <a href="https://example.url/encode?convert=Hello world!!">https://example.url/encode?convert=Hello</a> world!!
 ```
