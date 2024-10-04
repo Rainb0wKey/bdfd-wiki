@@ -39,6 +39,10 @@ html {
     border-color: #e5e501;
     color: #e5e501;
 }
+.functionTags #DangerousTag {
+    color: #ff0000;
+    border-color: #ff0000;
+}
 
 .functionTags #PremiumTag:before {
     content: '💰 '
@@ -51,6 +55,12 @@ html {
 }
 .functionTags #DeprecatedTag:before {
     content: '⌛ '
+}
+.functionTags #ExperimentTag:before {
+    content: '📢 '
+}
+.functionTags #DangerousTag:before {
+    content: '⚠️ '
 }
 
 .functionTags span:hover {
