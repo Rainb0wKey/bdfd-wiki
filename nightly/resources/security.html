@@ -39,18 +39,44 @@
            <link rel="stylesheet" href=".././src/theme/mdbook-admonish.css">
 
     </head>
-  
+
     <body>
+        <!-- Provide site root to javascript -->
+        <script>
+            var path_to_root = "../";
+            var default_theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? "bdfd" : "bdfd";
+        </script>
+
+        <!-- Work around some values being stored in localStorage wrapped in quotes -->
+        <script>
+            try {
+                var theme = localStorage.getItem('mdbook-theme');
+                if (theme.startsWith('"') && theme.endsWith('"')) {
+                    localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
+                }
+            } catch (e) { }
+        </script>
+
+        <!-- Set the theme before any content is loaded, prevents flash -->
+        <script>
+            var theme;
+            try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { }
+            if (theme === null || theme === undefined) { theme = default_theme; }
+            var html = document.querySelector('html');
+            html.classList.remove('no-js')
+            html.classList.remove('bdfd')
+            html.classList.add(theme);
+            html.classList.add('js');
+        </script>
+
         <!-- Hide / unhide sidebar before it is displayed -->
         <script>
             var html = document.querySelector('html');
             var sidebar = 'visible';
-
             if (window.innerWidth <= 750) {
                 html.classList.remove('sidebar-visible');
                 var sidebar = 'hidden';
             }
-
             html.classList.add("sidebar-" + sidebar);
         </script>
 
@@ -97,7 +123,7 @@
                         link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
                     });
                 </script>
-                
+
                 <div id="content" class="content">
                     <main>
                         <nav class="breadcrumb">
@@ -211,12 +237,14 @@ For more info about setting up a secure account, read <a href="https://discord.c
                     </nav>
                 </div>
             </div>
-            
+
             <nav class="nav-wide-wrapper" aria-label="Page navigation">
+                    <a href="../resources/permissions.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
                     <a href="../resources/permissions.html" class="nav-chapters previous" title="Previous page" aria-label="Previous page" aria-keyshortcuts="Left">
                         <i class="fa fa-angle-left"></i>
                     </a>
 
+                    <a href="../resources/sharding.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
                     <a href="../resources/sharding.html" class="nav-chapters next" title="Next page" aria-label="Next page" aria-keyshortcuts="Right">
                         <i class="fa fa-angle-right"></i>
                     </a>
