@@ -136,7 +136,7 @@
                         <h1 id="random"><a class="header" href="#random">$random[]</a></h1>
 <p>Returns a random number between ‘minimum’ and ‘maximum’.</p>
 <blockquote>
-<p>📌 <code>$random[]</code> never returns the ‘maximum’ value, as it’s right side exclusive range. Basically, to get a random number between 1 and 10; you’d put 11 as the ‘maximum’ instead of 10 i.e <code>$random[1;11]</code>.</p>
+<p><code>$random[]</code> never returns the ‘maximum’ value, as it’s right side exclusive range. Basically, to get a random number between 1 and 10; you’d put 11 as the ‘maximum’ instead of 10 i.e <code>$random[1;11]</code>.</p>
 </blockquote>
 <h2 id="syntax"><a class="header" href="#syntax">Syntax</a></h2>
 <pre><code>$random[Minimum;Maximum]
@@ -148,9 +148,16 @@
 </ul>
 <h2 id="example"><a class="header" href="#example">Example</a></h2>
 <pre><code>$nomention
-🎲 You rolled `$random[1;7]`!
+The random number is **$random[1;21]**
 </code></pre>
-<p><img src="https://user-images.githubusercontent.com/69215413/123555172-0d939d00-d752-11eb-9d30-975bf6e8e99f.png" alt="example" /></p>
+<discord-messages>
+    <discord-message role-color="#E67E22" author="RainbowKey">
+        !example
+    </discord-message>
+    <discord-message verified role-color="#378afa" author="BDFD Support" bot>
+        The random number is <b>16</b>
+    </discord-message>
+</discord-messages>
 
                     </main>
 
