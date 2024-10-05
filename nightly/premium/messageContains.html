@@ -158,16 +158,16 @@
 <li>
 <p>Now, let’s say in chat someone types : <code>Hello Bot!</code>, <code>Hello</code>, <code>Hey Everyone!</code>, <code>Hi Noituri</code> etc. The bot will respond with “Hello there! How are you?”.</p>
 <discord-messages>
-    <discord-message role-color="#F1BDEE" author="noituri">
+    <discord-message author="noituri" role-color="#F1BDEE">
         Hello
     </discord-message>
-    <discord-message verified bot author="Wiki Bot" role-color="#748BD4">
+    <discord-message author="Wiki Bot" role-color="#748BD4" bot verified>
         Hello there! How are you?
     </discord-message>
     <discord-message author="Nicky" role-color="#EE7908">
         Hi Noituri
     </discord-message>
-    <discord-message role-color="#748BD4" author="Wiki Bot" bot verified>
+    <discord-message bot role-color="#748BD4" author="Wiki Bot" verified>
         Hello there! How are you?
     </discord-message>
 </discord-messages>
@@ -218,6 +218,7 @@
         <script src="../clipboard.min.js" charset="utf-8"></script>
         <script src="../highlight.js" charset="utf-8"></script>
         <script src="../book.js" charset="utf-8"></script>
+        <script src="../theme/playground.js" defer></script>
 
         <!-- Custom JS scripts -->
 
