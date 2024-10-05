@@ -78,7 +78,10 @@ playInput.addEventListener('input', () => {
     const result = Math.ceil(inputValue);
     playOutput.textContent = `Result: ${result}`;
   } else {
-    playOutput.textContent = `❌ Function $ceil at 3:15 returned an error: expected integer in position 1, got '${inputValue}'`;
+    let nonNumericIndex = inputValue.search(/[^0-9\.]/);
+    nonNumericIndex = nonNumericIndex === -1 ? inputValue.length : nonNumericIndex;
+
+    playOutput.textContent = `❌ Function $ceil at 1:${nonNumericIndex} returned an error: expected integer in position 1, got '${inputValue}'`;
   }
 });
 </script>
