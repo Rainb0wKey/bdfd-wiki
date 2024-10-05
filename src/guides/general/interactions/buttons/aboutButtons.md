@@ -197,10 +197,25 @@ $removeButtons
 #### Trigger: `$onInteraction[test]`
 ```
 $nomention
-$username removed all buttons from this message
+$username removed all buttons from this message.
 $removeButtons
 ```
-![example](https://user-images.githubusercontent.com/113303649/210621352-ae7334a6-a2de-4fbe-8749-7134f9a73af3.png)
+
+```discord yaml
+- user_id: 803569638084313098
+  username: RainbowKey
+  color: "#E67E22"
+  content: |
+    !example
+- user_id: 1009018156494368798
+  username: BDFD Support
+  color: "#378afa"
+  bot: true
+  verified: true
+  edited: true
+  content: |
+    rainbow_key removed all buttons from this message.
+```
 
 # $removeButtons[]
 Removes all buttons from the specified message.
