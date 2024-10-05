@@ -59,29 +59,10 @@ Result: $ceil[$message]
   <p>Here you can understand how this function works.</p>
   <div class="function-input">
     <p>Input:</p>
-    <span id="play-code">$ceil[<textarea id="play-input" rows="1" maxlength="25">1</textarea>]</span>
+    <span id="play-code">$ceil[<textarea id="play-input" rows="1" maxlength="25" oninput="updateOutput(this.value)">1</textarea>]</span>
   </div>
   <div class="function-output">
     <p>Output:</p>
     <span id="play-output">Result: 1</span>
   </div>
 </div>
-
-<script>
-const playInput = document.getElementById('play-input');
-const playOutput = document.getElementById('play-output');
-
-playInput.addEventListener('input', () => {
-  const inputValue = playInput.value;
-
-  if (!isNaN(inputValue) && inputValue !== "") {
-    const result = Math.ceil(inputValue);
-    playOutput.textContent = `Result: ${result}`;
-  } else {
-    let nonNumericIndex = inputValue.search(/[^0-9\.]/);
-    nonNumericIndex = nonNumericIndex === -1 ? inputValue.length : nonNumericIndex;
-
-    playOutput.textContent = `❌ Function $ceil at 1:${nonNumericIndex} returned an error: expected integer in position 1, got '${inputValue}'`;
-  }
-});
-</script>
