@@ -59,7 +59,7 @@ Result: $ceil[$message]
   <p>Here you can understand how this function works.</p>
   <div class="function-input">
     <p>Input:</p>
-    <span id="play-code">$ceil[<textarea id="play-input" rows="1" maxlength="25"">1</textarea>]</span>
+    <span id="play-code">$ceil[<textarea id="play-input" rows="1" maxlength="25">1</textarea>]</span>
   </div>
   <div class="function-output">
     <p>Output:</p>
