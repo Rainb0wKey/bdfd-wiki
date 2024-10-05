@@ -1,5 +1,5 @@
 // $ceil[]
-function updateOutput(inputValue) {
+function ceilPlayground(inputValue) {
   const playOutput = document.getElementById('play-output');
 
   if (!isNaN(inputValue) && inputValue !== "") {
