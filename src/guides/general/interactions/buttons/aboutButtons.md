@@ -230,10 +230,33 @@ $removeButtons[Message ID]
 ## Example
 ```
 $nomention
-$username removed all buttons from the specified message id
+$username removed all buttons from the specified message ID.
 $removeButtons[$message]
 ```
-![example](https://user-images.githubusercontent.com/113303649/210875885-aa20517e-1c37-4206-8eee-eefa765eb40a.png)
+
+```discord yaml
+- user_id: 1009018156494368798
+  username: BDFD Support
+  color: "#378afa"
+  bot: true
+  verified: true
+  edited: true
+  content: |
+    Message ID: 1291982295888166974
+- user_id: 803569638084313098
+  username: RainbowKey
+  color: "#E67E22"
+  content: |
+    !example 1291982295888166974
+- user_id: 1009018156494368798
+  username: BDFD Support
+  color: "#378afa"
+  bot: true
+  verified: true
+  edited: true
+  content: |
+    rainbow_key removed all buttons from the specified message ID.
+```
 
 # $removeComponent
 Removes a certain component from a message.
