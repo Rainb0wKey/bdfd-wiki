@@ -36,3 +36,10 @@ function sqrtPlayground(inputValue) {
 function roundPlayground(inputValue) {
   handlePlaygroundInput(inputValue, '$round', Math.round); 
 }
+
+// $charCount[]
+function charCountPlayground(inputValue) {
+  const playOutput = document.getElementById('play-output');
+  const charCount = inputValue.length;
+  playOutput.textContent = `Your message has ${charCount} characters.`;
+}
