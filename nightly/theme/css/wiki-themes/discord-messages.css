@@ -13,9 +13,9 @@
 }
 
 @media only screen and (max-width: 768px) {
-.discord-message .discord-message-timestamp {
-    font-size: 10px;
-}
+    .discord-message .discord-message-timestamp {
+        font-size: 10px;
+    }
 }
 
 .discord-message .discord-message-timestamp {
@@ -207,4 +207,8 @@
     transition-property: background-color, border-color;
     background-color: #272727;
     border: 1px solid transparent;
+}
+
+.discord-replied-message-content {
+    margin-left: -3rem;
 }
