@@ -29,7 +29,7 @@ Hello, $displayName!
     author: RainbowKey
     mentions: true
     content: "!example"
-  highight: true
+  highlight: true
   content: |
     Hello, RainbowKey!
 ```
