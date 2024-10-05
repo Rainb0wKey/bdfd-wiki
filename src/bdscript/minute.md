@@ -30,3 +30,5 @@ Current Minute: $minute
 ```admonish info title="Timezone"
 You can use [`$time[]`](./time.md) to change the timezone.
 ```
+
+<script src="../theme/livetime.js"></script>
