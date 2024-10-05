@@ -4,6 +4,7 @@ document.addEventListener("DOMContentLoaded", function() {
     var second = new Date().getSeconds();
     var minute = new Date().getMinutes();
     var hour = new Date().getHours();
+    var year = new Date().getFullYear();
     var month = new Date().toLocaleString('en', { month: 'long' });
 
     var dayElement = document.getElementById('day-mark');
@@ -31,6 +32,11 @@ document.addEventListener("DOMContentLoaded", function() {
         hourElement.innerHTML = "Current Hour: " + hour;
     }
 
+    var yearElement = document.getElementById('year-mark');
+    if (yearElement) {
+        yearElement.innerHTML = "Current Year: " + year;
+    }
+    
     var hourElement = document.getElementById('month-mark');
     if (monthElement) {
         monthElement.innerHTML = "Current Month: " + month;
