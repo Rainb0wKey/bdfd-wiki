@@ -1,18 +1,28 @@
-// $ceil[]
-function ceilPlayground(inputValue) {
+// Math
+function handlePlaygroundInput(inputValue, functionName, operation) {
   const playOutput = document.getElementById('play-output');
 
   if (!isNaN(inputValue) && inputValue !== "") {
-    const result = Math.ceil(inputValue);
+    const result = operation(inputValue); 
     playOutput.textContent = `Result: ${result}`;
   } else {
     if (inputValue === "") {
-      playOutput.textContent = `❌ Function $ceil at 1:7 returned an error: expected valid value in position 1, got empty value`;
+      playOutput.textContent = `❌ Function ${functionName} at 1:7 returned an error: expected valid value in position 1, got empty value`;
     } else {
       let nonNumericIndex = inputValue.search(/[^0-9\.]/); 
       nonNumericIndex = nonNumericIndex === -1 ? inputValue.length : nonNumericIndex + 8;
 
-      playOutput.textContent = `❌ Function $ceil at 1:${nonNumericIndex} returned an error: expected integer in position 1, got '${inputValue}'`;
+      playOutput.textContent = `❌ Function ${functionName} at 1:${nonNumericIndex} returned an error: expected integer in position 1, got '${inputValue}'`;
     }
   }
+}
+
+// $ceil[]
+function ceilPlayground(inputValue) {
+  handlePlaygroundInput(inputValue, '$ceil', Math.ceil);
+}
+
+// $floor[]
+function floorPlayground(inputValue) {
+  handlePlaygroundInput(inputValue, '$floor', Math.floor);
 }
