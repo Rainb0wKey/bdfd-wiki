@@ -147,22 +147,22 @@
 Result: $ceil[$message]
 </code></pre>
 <discord-messages>
-    <discord-message role-color="#E67E22" author="RainbowKey">
+    <discord-message author="RainbowKey" role-color="#E67E22">
         !example 6.3
     </discord-message>
-    <discord-message role-color="#378afa" verified author="BDFD Support" bot>
+    <discord-message bot verified role-color="#378afa" author="BDFD Support">
         Result: 7
     </discord-message>
     <discord-message author="RainbowKey" role-color="#E67E22">
         !example -6.4
     </discord-message>
-    <discord-message bot author="BDFD Support" role-color="#378afa" verified>
+    <discord-message author="BDFD Support" role-color="#378afa" verified bot>
         Result: -6
     </discord-message>
     <discord-message author="RainbowKey" role-color="#E67E22">
         !example 8
     </discord-message>
-    <discord-message bot author="BDFD Support" verified role-color="#378afa">
+    <discord-message role-color="#378afa" bot verified author="BDFD Support">
         Result: 8
     </discord-message>
 </discord-messages>
@@ -187,8 +187,11 @@ const inputValue = playInput.value;</p>
 const result = Math.ceil(inputValue);
 playOutput.textContent = <code>Result: ${result}</code>;
 } else {
-playOutput.textContent = <code>❌ Function $ceil at 3:15 returned an error: expected integer in position 1, got '${inputValue}'</code>;
-}
+let nonNumericIndex = inputValue.search(/[^0-9.]/);
+nonNumericIndex = nonNumericIndex === -1 ? inputValue.length : nonNumericIndex;</p>
+<pre><code>playOutput.textContent = `❌ Function $ceil at 1:${nonNumericIndex} returned an error: expected integer in position 1, got '${inputValue}'`;
+</code></pre>
+<p>}
 });
 </script></p>
 
