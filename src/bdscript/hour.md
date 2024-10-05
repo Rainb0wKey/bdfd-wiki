@@ -32,3 +32,4 @@ Current Hour: $hour
 You can use [`$time[]`](./time.md) to change the timezone.
 ```
 
+<script src="../theme/livetime.js"></script>
