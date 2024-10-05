@@ -135,9 +135,17 @@
                         </a>
                         <h1 id="usechannel"><a class="header" href="#usechannel">$useChannel</a></h1>
 <p>Redirects the bot’s response message to a different channel.</p>
-<blockquote>
-<p>📌 <a href="./useChannel.html"><code>$useChannel</code></a> cannot redirect the original slash command response.</p>
-</blockquote>
+<div id="admonition-warning" class="admonition admonish-warning" role="note" aria-labelledby="admonition-warning-title">
+<div class="admonition-title">
+<div id="admonition-warning-title">
+<p>Warning</p>
+</div>
+<a class="admonition-anchor-link" href="#admonition-warning"></a>
+</div>
+<div>
+<p><code>$useChannel[]</code> <strong>cannot</strong> redirect the original slash command response.</p>
+</div>
+</div>
 <h2 id="syntax"><a class="header" href="#syntax">Syntax</a></h2>
 <pre><code>$useChannel[Channel ID]
 </code></pre>
@@ -148,8 +156,7 @@
 <h2 id="example"><a class="header" href="#example">Example</a></h2>
 <pre><code>$nomention
 $useChannel[$mentionedChannels[1]]
-$title[hello]
-$description[hi]
+$description[Hello!]
 </code></pre>
 <p><img src="https://user-images.githubusercontent.com/69215413/125665386-b0458227-97d7-4aaa-9ca8-b1d869245bce.png" alt="ex1" /><br />
 <img src="https://user-images.githubusercontent.com/69215413/125665365-ade65a36-0c1e-4e1c-a5c5-ad9929f769bc.png" alt="ex2" /></p>
