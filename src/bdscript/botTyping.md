@@ -1,6 +1,16 @@
 # $botTyping
 This function tells Discord that the bot is typing.
 
+<style>
+.discord-messages:first-of-type > .discord-message:after {
+    user-select: none;
+    -webkit-user-select: none;
+    margin-left: .5rem;
+    font-size: 10px;
+    content: '••• BDFD Support is typing...';
+}
+</style>
+
 ## Syntax
 ```
 $botTyping
