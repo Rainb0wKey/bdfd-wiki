@@ -161,7 +161,7 @@ Here, are all possible values for the <code>style</code> function argument.</p>
 <li><code>link</code> - Redirect button</li>
 </ul>
 <discord-messages>
-    <discord-message role-color="#378afa" author="BDFD Support" verified bot>
+    <discord-message bot verified role-color="#378afa" author="BDFD Support">
         Buttons:
         <discord-attachments slot="components">
             <discord-action-row>
@@ -176,7 +176,7 @@ Here, are all possible values for the <code>style</code> function argument.</p>
                 <discord-button type="success">
                     Success
                 </discord-button>
-                <discord-button disabled type="success">
+                <discord-button type="success" disabled>
                     Success
                 </discord-button>
             </discord-action-row>
@@ -184,7 +184,7 @@ Here, are all possible values for the <code>style</code> function argument.</p>
                 <discord-button type="destructive">
                     Danger
                 </discord-button>
-                <discord-button type="destructive" disabled>
+                <discord-button disabled type="destructive">
                     Danger
                 </discord-button>
             </discord-action-row>
@@ -198,19 +198,19 @@ Here, are all possible values for the <code>style</code> function argument.</p>
             </discord-action-row>
         </discord-attachments>
     </discord-message>
-    <discord-message role-color="#378afa" verified bot author="BDFD Support">
+    <discord-message author="BDFD Support" bot role-color="#378afa" verified>
         Other Buttons:
         <discord-attachments slot="components">
             <discord-action-row>
                 <discord-button type="secondary" url="https://nilpointer-software.github.io/bdfd-wiki/nightly/">
                     Link
                 </discord-button>
-                <discord-button type="secondary" disabled url="https://nilpointer-software.github.io/bdfd-wiki/nightly/">
+                <discord-button url="https://nilpointer-software.github.io/bdfd-wiki/nightly/" disabled type="secondary">
                     Link
                 </discord-button>
             </discord-action-row>
             <discord-action-row>
-                <discord-button type="secondary" emoji="https://em-content.zobj.net/thumbs/120/mozilla/36/heavy-black-heart_2764.png">
+                <discord-button emoji="https://em-content.zobj.net/thumbs/120/mozilla/36/heavy-black-heart_2764.png" type="secondary">
                     Emoji
                 </discord-button>
             </discord-action-row>
@@ -271,7 +271,7 @@ $addButton[no;test;Say hello!;primary;no;]
     <discord-message author="RainbowKey" role-color="#E67E22">
         !example
     </discord-message>
-    <discord-message bot verified role-color="#378afa" author="BDFD Support">
+    <discord-message bot role-color="#378afa" verified author="BDFD Support">
         Hello
         <discord-attachments slot="components">
             <discord-action-row>
@@ -303,10 +303,10 @@ $username said hello!
 $editButton[test;Say hello!;danger;yes;]
 </code></pre>
 <discord-messages>
-    <discord-message role-color="#E67E22" author="RainbowKey">
+    <discord-message author="RainbowKey" role-color="#E67E22">
         !example
     </discord-message>
-    <discord-message verified edited role-color="#378afa" author="BDFD Support" bot>
+    <discord-message bot edited author="BDFD Support" verified role-color="#378afa">
         rainbow_key said hello!
         <discord-attachments slot="components">
             <discord-action-row>
@@ -329,10 +329,10 @@ $username removed all buttons from this message.
 $removeButtons
 </code></pre>
 <discord-messages>
-    <discord-message role-color="#E67E22" author="RainbowKey">
+    <discord-message author="RainbowKey" role-color="#E67E22">
         !example
     </discord-message>
-    <discord-message bot edited verified author="BDFD Support" role-color="#378afa">
+    <discord-message bot author="BDFD Support" edited role-color="#378afa" verified>
         rainbow_key removed all buttons from this message.
     </discord-message>
 </discord-messages>
@@ -347,10 +347,20 @@ $removeButtons
 </ul>
 <h2 id="example-3"><a class="header" href="#example-3">Example</a></h2>
 <pre><code>$nomention
-$username removed all buttons from the specified message id
+$username removed all buttons from the specified message ID.
 $removeButtons[$message]
 </code></pre>
-<p><img src="https://user-images.githubusercontent.com/113303649/210875885-aa20517e-1c37-4206-8eee-eefa765eb40a.png" alt="example" /></p>
+<discord-messages>
+    <discord-message author="BDFD Support" edited verified role-color="#378afa" bot>
+        Message ID: 1291982295888166974
+    </discord-message>
+    <discord-message author="RainbowKey" role-color="#E67E22">
+        !example 1291982295888166974
+    </discord-message>
+    <discord-message role-color="#378afa" author="BDFD Support" edited verified bot>
+        rainbow_key removed all buttons from the specified message ID.
+    </discord-message>
+</discord-messages>
 <h1 id="removecomponent"><a class="header" href="#removecomponent">$removeComponent</a></h1>
 <p>Removes a certain component from a message.</p>
 <h2 id="syntax-4"><a class="header" href="#syntax-4">Syntax</a></h2>
