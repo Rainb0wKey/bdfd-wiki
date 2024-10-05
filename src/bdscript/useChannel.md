@@ -1,7 +1,9 @@
 # $useChannel
 Redirects the bot's response message to a different channel.
 
-> 📌 [`$useChannel`](./useChannel.md) cannot redirect the original slash command response.
+```admonish warning
+`$useChannel[]` **cannot** redirect the original slash command response.
+```
 
 ## Syntax
 ```
@@ -15,8 +17,7 @@ $useChannel[Channel ID]
 ```
 $nomention
 $useChannel[$mentionedChannels[1]]
-$title[hello]
-$description[hi]
+$description[Hello!]
 ```
 ![ex1](https://user-images.githubusercontent.com/69215413/125665386-b0458227-97d7-4aaa-9ca8-b1d869245bce.png)\
 ![ex2](https://user-images.githubusercontent.com/69215413/125665365-ade65a36-0c1e-4e1c-a5c5-ad9929f769bc.png)
