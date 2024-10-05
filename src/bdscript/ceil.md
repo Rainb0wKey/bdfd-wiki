@@ -55,7 +55,8 @@ Result: $ceil[$message]
 ```
 
 <div class=function-playground>
-  <h3>Playground</h3>
+  <h3>🤖 Playground</h3>
+  <p>Here you can understand how this function works.</p>
   <div class="function-input">
     <p>Input:</p>
     <span id="play-code">$ceil[<textarea id="play-input" rows="1" maxlength="25">1</textarea>]</span>
