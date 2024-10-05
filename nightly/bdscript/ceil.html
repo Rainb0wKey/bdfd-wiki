@@ -147,22 +147,22 @@
 Result: $ceil[$message]
 </code></pre>
 <discord-messages>
-    <discord-message author="RainbowKey" role-color="#E67E22">
+    <discord-message role-color="#E67E22" author="RainbowKey">
         !example 6.3
     </discord-message>
-    <discord-message verified role-color="#378afa" author="BDFD Support" bot>
+    <discord-message role-color="#378afa" verified author="BDFD Support" bot>
         Result: 7
     </discord-message>
     <discord-message author="RainbowKey" role-color="#E67E22">
         !example -6.4
     </discord-message>
-    <discord-message bot role-color="#378afa" verified author="BDFD Support">
+    <discord-message bot author="BDFD Support" role-color="#378afa" verified>
         Result: -6
     </discord-message>
-    <discord-message role-color="#E67E22" author="RainbowKey">
+    <discord-message author="RainbowKey" role-color="#E67E22">
         !example 8
     </discord-message>
-    <discord-message role-color="#378afa" verified author="BDFD Support" bot>
+    <discord-message bot author="BDFD Support" verified role-color="#378afa">
         Result: 8
     </discord-message>
 </discord-messages>
@@ -171,7 +171,7 @@ Result: $ceil[$message]
   <p>Here you can understand how this function works.</p>
   <div class="function-input">
     <p>Input:</p>
-    <span id="play-code">$ceil[<textarea id="play-input" rows="1" maxlength="25" oninput="updateOutput(this.value)">1</textarea>]</span>
+    <span id="play-code">$ceil[<textarea id="play-input" rows="1" maxlength="25"">1</textarea>]</span>
   </div>
   <div class="function-output">
     <p>Output:</p>
@@ -179,17 +179,18 @@ Result: $ceil[$message]
   </div>
 </div>
 <script>
-    function updateOutput(inputValue) {
-      const playOutput = document.getElementById('play-output');
-<pre><code>  if (!isNaN(inputValue) &amp;&amp; inputValue !== "") {
-    const result = Math.ceil(inputValue);
-    playOutput.textContent = `Result: ${result}`;
-  } else {
-    playOutput.textContent = `❌ Function $ceil at 1:15 returned an error: expected integer in position 1, got '${inputValue}'`; 
-  }
+const playInput = document.getElementById('play-input');
+const playOutput = document.getElementById('play-output');
+<p>playInput.addEventListener(‘input’, () =&gt; {
+const inputValue = playInput.value;</p>
+<p>if (!isNaN(inputValue) &amp;&amp; inputValue !== “”) {
+const result = Math.ceil(inputValue);
+playOutput.textContent = <code>Result: ${result}</code>;
+} else {
+playOutput.textContent = <code>❌ Function $ceil at 3:15 returned an error: expected integer in position 1, got '${inputValue}'</code>;
 }
-</code></pre>
-</script>
+});
+</script></p>
 
                     </main>
 
