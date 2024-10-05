@@ -240,7 +240,6 @@ $removeButtons[$message]
   color: "#378afa"
   bot: true
   verified: true
-  edited: true
   content: |
     Message ID: 1291982295888166974
 - user_id: 803569638084313098
@@ -253,7 +252,6 @@ $removeButtons[$message]
   color: "#378afa"
   bot: true
   verified: true
-  edited: true
   content: |
     rainbow_key removed all buttons from the specified message ID.
 ```
