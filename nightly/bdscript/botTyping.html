@@ -135,6 +135,15 @@
                         </a>
                         <h1 id="bottyping"><a class="header" href="#bottyping">$botTyping</a></h1>
 <p>This function tells Discord that the bot is typing.</p>
+<style>
+.discord-messages:first-of-type > .discord-message:after {
+    user-select: none;
+    -webkit-user-select: none;
+    margin-left: .5rem;
+    font-size: 10px;
+    content: '••• BDFD Support is typing...';
+}
+</style>
 <h2 id="syntax"><a class="header" href="#syntax">Syntax</a></h2>
 <pre><code>$botTyping
 </code></pre>
@@ -155,10 +164,10 @@ Hello $username!
 <li>Command completed:</li>
 </ul>
 <discord-messages>
-    <discord-message role-color="#E67E22" author="RainbowKey">
+    <discord-message author="RainbowKey" role-color="#E67E22">
         !example
     </discord-message>
-    <discord-message verified author="BDFD Support" role-color="#378afa" bot>
+    <discord-message bot verified role-color="#378afa" author="BDFD Support">
         Hello RainbowKey!
     </discord-message>
 </discord-messages>
