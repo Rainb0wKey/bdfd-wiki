@@ -31,3 +31,8 @@ function floorPlayground(inputValue) {
 function sqrtPlayground(inputValue) {
   handlePlaygroundInput(inputValue, '$sqrt', Math.sqrt);
 }
+
+// $round[]
+function roundPlayground(inputValue) {
+  handlePlaygroundInput(inputValue, '$round', Math.round); 
+}
