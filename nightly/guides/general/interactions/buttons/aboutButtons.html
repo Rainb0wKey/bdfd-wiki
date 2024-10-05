@@ -161,14 +161,14 @@ Here, are all possible values for the <code>style</code> function argument.</p>
 <li><code>link</code> - Redirect button</li>
 </ul>
 <discord-messages>
-    <discord-message role-color="#378afa" author="BDFD Support" bot verified>
+    <discord-message role-color="#378afa" verified author="BDFD Support" bot>
         Buttons:
         <discord-attachments slot="components">
             <discord-action-row>
                 <discord-button type="primary">
                     Primary
                 </discord-button>
-                <discord-button disabled type="primary">
+                <discord-button type="primary" disabled>
                     Primary
                 </discord-button>
             </discord-action-row>
@@ -176,7 +176,7 @@ Here, are all possible values for the <code>style</code> function argument.</p>
                 <discord-button type="success">
                     Success
                 </discord-button>
-                <discord-button disabled type="success">
+                <discord-button type="success" disabled>
                     Success
                 </discord-button>
             </discord-action-row>
@@ -192,20 +192,20 @@ Here, are all possible values for the <code>style</code> function argument.</p>
                 <discord-button type="secondary">
                     Secondary
                 </discord-button>
-                <discord-button disabled type="secondary">
+                <discord-button type="secondary" disabled>
                     Secondary
                 </discord-button>
             </discord-action-row>
         </discord-attachments>
     </discord-message>
-    <discord-message verified role-color="#378afa" bot author="BDFD Support">
+    <discord-message author="BDFD Support" verified role-color="#378afa" bot>
         Other Buttons:
         <discord-attachments slot="components">
             <discord-action-row>
-                <discord-button url="https://nilpointer-software.github.io/bdfd-wiki/nightly/" type="secondary">
+                <discord-button type="secondary" url="https://nilpointer-software.github.io/bdfd-wiki/nightly/">
                     Link
                 </discord-button>
-                <discord-button disabled type="secondary" url="https://nilpointer-software.github.io/bdfd-wiki/nightly/">
+                <discord-button url="https://nilpointer-software.github.io/bdfd-wiki/nightly/" type="secondary" disabled>
                     Link
                 </discord-button>
             </discord-action-row>
@@ -271,7 +271,7 @@ $addButton[no;test;Say hello!;primary;no;]
     <discord-message author="RainbowKey" role-color="#E67E22">
         !example
     </discord-message>
-    <discord-message bot author="BDFD Support" role-color="#378afa" verified>
+    <discord-message bot role-color="#378afa" verified author="BDFD Support">
         Hello
         <discord-attachments slot="components">
             <discord-action-row>
@@ -306,7 +306,7 @@ $editButton[test;Say hello!;danger;yes;]
     <discord-message author="RainbowKey" role-color="#E67E22">
         !example
     </discord-message>
-    <discord-message author="BDFD Support" edited role-color="#378afa" bot verified>
+    <discord-message verified bot author="BDFD Support" role-color="#378afa" edited>
         rainbow_key said hello!
         <discord-attachments slot="components">
             <discord-action-row>
@@ -332,7 +332,7 @@ $removeButtons
     <discord-message author="RainbowKey" role-color="#E67E22">
         !example
     </discord-message>
-    <discord-message edited role-color="#378afa" bot verified author="BDFD Support">
+    <discord-message author="BDFD Support" verified edited bot role-color="#378afa">
         rainbow_key removed all buttons from this message.
     </discord-message>
 </discord-messages>
@@ -351,13 +351,13 @@ $username removed all buttons from the specified message ID.
 $removeButtons[$message]
 </code></pre>
 <discord-messages>
-    <discord-message author="BDFD Support" bot role-color="#378afa" verified>
+    <discord-message author="BDFD Support" role-color="#378afa" bot verified>
         Message ID: 1291982295888166974
     </discord-message>
     <discord-message role-color="#E67E22" author="RainbowKey">
         !example 1291982295888166974
     </discord-message>
-    <discord-message role-color="#378afa" author="BDFD Support" bot verified>
+    <discord-message bot author="BDFD Support" verified role-color="#378afa">
         rainbow_key removed all buttons from the specified message ID.
     </discord-message>
 </discord-messages>
