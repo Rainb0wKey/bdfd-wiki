@@ -37,7 +37,7 @@ document.addEventListener("DOMContentLoaded", function() {
         yearElement.innerHTML = "Current Year: " + year;
     }
     
-    var hourElement = document.getElementById('month-mark');
+    var monthElement = document.getElementById('month-mark');
     if (monthElement) {
         monthElement.innerHTML = "Current Month: " + month;
     }
