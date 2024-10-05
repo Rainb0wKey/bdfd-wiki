@@ -144,6 +144,9 @@
 <li><a href="../../../../bdscript/removeButtons.html"><code>$removeButtons</code></a></li>
 <li><a href="../../../../bdscript/removeButtonsComplex.html"><code>$removeButtons[]</code></a></li>
 <li><a href="../../../../bdscript/removeComponent.html"><code>$removeComponent[]</code></a></li>
+</ul>
+<h2 id="support-callbacks-used"><a class="header" href="#support-callbacks-used">Support Callbacks Used</a></h2>
+<ul>
 <li><a href="../../../../callbacks/onInteraction.html"><code>$onInteraction</code></a></li>
 <li><a href="../../../../callbacks/onInteractionComplex.html"><code>$onInteraction[]</code></a></li>
 </ul>
@@ -158,14 +161,14 @@ Here, are all possible values for the <code>style</code> function argument.</p>
 <li><code>link</code> - Redirect button</li>
 </ul>
 <discord-messages>
-    <discord-message bot author="BDFD Support" verified role-color="#378afa">
+    <discord-message role-color="#378afa" author="BDFD Support" verified bot>
         Buttons:
         <discord-attachments slot="components">
             <discord-action-row>
                 <discord-button type="primary">
                     Primary
                 </discord-button>
-                <discord-button disabled type="primary">
+                <discord-button type="primary" disabled>
                     Primary
                 </discord-button>
             </discord-action-row>
@@ -173,7 +176,7 @@ Here, are all possible values for the <code>style</code> function argument.</p>
                 <discord-button type="success">
                     Success
                 </discord-button>
-                <discord-button type="success" disabled>
+                <discord-button disabled type="success">
                     Success
                 </discord-button>
             </discord-action-row>
@@ -189,17 +192,17 @@ Here, are all possible values for the <code>style</code> function argument.</p>
                 <discord-button type="secondary">
                     Secondary
                 </discord-button>
-                <discord-button type="secondary" disabled>
+                <discord-button disabled type="secondary">
                     Secondary
                 </discord-button>
             </discord-action-row>
         </discord-attachments>
     </discord-message>
-    <discord-message bot verified author="BDFD Support" role-color="#378afa">
+    <discord-message role-color="#378afa" verified bot author="BDFD Support">
         Other Buttons:
         <discord-attachments slot="components">
             <discord-action-row>
-                <discord-button url="https://nilpointer-software.github.io/bdfd-wiki/nightly/" type="secondary">
+                <discord-button type="secondary" url="https://nilpointer-software.github.io/bdfd-wiki/nightly/">
                     Link
                 </discord-button>
                 <discord-button type="secondary" disabled url="https://nilpointer-software.github.io/bdfd-wiki/nightly/">
@@ -265,10 +268,10 @@ Hello
 $addButton[no;test;Say hello!;primary;no;]
 </code></pre>
 <discord-messages>
-    <discord-message role-color="#E67E22" author="RainbowKey">
+    <discord-message author="RainbowKey" role-color="#E67E22">
         !example
     </discord-message>
-    <discord-message author="BDFD Support" verified role-color="#378afa" bot>
+    <discord-message bot verified role-color="#378afa" author="BDFD Support">
         Hello
         <discord-attachments slot="components">
             <discord-action-row>
@@ -303,7 +306,7 @@ $editButton[test;Say hello!;danger;yes;]
     <discord-message role-color="#E67E22" author="RainbowKey">
         !example
     </discord-message>
-    <discord-message role-color="#378afa" author="BDFD Support" bot edited verified>
+    <discord-message verified edited role-color="#378afa" author="BDFD Support" bot>
         rainbow_key said hello!
         <discord-attachments slot="components">
             <discord-action-row>
@@ -326,10 +329,10 @@ $username removed all buttons from this message.
 $removeButtons
 </code></pre>
 <discord-messages>
-    <discord-message author="RainbowKey" role-color="#E67E22">
+    <discord-message role-color="#E67E22" author="RainbowKey">
         !example
     </discord-message>
-    <discord-message role-color="#378afa" bot verified edited author="BDFD Support">
+    <discord-message bot edited verified author="BDFD Support" role-color="#378afa">
         rainbow_key removed all buttons from this message.
     </discord-message>
 </discord-messages>
