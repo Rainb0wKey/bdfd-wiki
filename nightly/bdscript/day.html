@@ -135,9 +135,6 @@
                         </a>
                         <h1 id="day"><a class="header" href="#day">$day</a></h1>
 <p>Returns the current day of the month.</p>
-<blockquote>
-<p>You can use <a href="./time.html"><code>$time</code></a> to change the timezone.</p>
-</blockquote>
 <h2 id="syntax"><a class="header" href="#syntax">Syntax</a></h2>
 <pre><code>$day
 </code></pre>
@@ -149,10 +146,21 @@ Current Day: $day
     <discord-message author="Nicky" role-color="#EE7908">
         !example
     </discord-message>
-    <discord-message role-color="#748BD4" bot author="Wiki Bot">
+    <discord-message role-color="#748BD4" author="Wiki Bot" bot>
         <div id="day-mark"></div>
     </discord-message>
 </discord-messages>
+<div id="admonition-timezone" class="admonition admonish-info" role="note" aria-labelledby="admonition-timezone-title">
+<div class="admonition-title">
+<div id="admonition-timezone-title">
+<p>Timezone</p>
+</div>
+<a class="admonition-anchor-link" href="#admonition-timezone"></a>
+</div>
+<div>
+<p>You can use <a href="./time.html"><code>$time[]</code></a> to change the timezone.</p>
+</div>
+</div>
 <script src="../theme/livetime.js"></script>
 
                     </main>
