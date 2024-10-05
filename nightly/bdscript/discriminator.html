@@ -135,32 +135,58 @@
                         </a>
                         <h1 id="discriminator"><a class="header" href="#discriminator">$discriminator</a></h1>
 <p>Returns a user’s discriminator (the 4 digit number at the end of their username).</p>
+<div id="admonition-fail" class="admonition admonish-failure" role="note" aria-labelledby="admonition-fail-title">
+<div class="admonition-title">
+<div id="admonition-fail-title">
+<p>Fail</p>
+</div>
+<a class="admonition-anchor-link" href="#admonition-fail"></a>
+</div>
+<div>
+<p>Discord has updated the username system, removing discriminators for users. Discriminators will only work for bots. For user it will return <code>0000</code>.</p>
+</div>
+</div>
 <h2 id="syntax"><a class="header" href="#syntax">Syntax</a></h2>
 <pre><code>$discriminator[User ID]
 </code></pre>
-<blockquote>
-<p>Discord has updated the username system, removing discriminators for users. Discriminators will only work for bots. For user it will return <code>0000</code>.</p>
-</blockquote>
 <h3 id="parameters"><a class="header" href="#parameters">Parameters</a></h3>
 <ul>
 <li><code>User ID</code> <code>(Type: Snowflake || Flag: Emptiable)</code>: The user to get the discriminator from.</li>
 </ul>
 <h2 id="example"><a class="header" href="#example">Example</a></h2>
 <pre><code>$nomention
-Discriminator: $discriminator[$mentioned[1]]
+Discriminator: #$discriminator[$mentioned[1]]
 </code></pre>
 <discord-messages>
     <discord-message author="RainbowKey" role-color="#E67E22">
         !example <discord-mention>BDFD Support</discord-mention>
     </discord-message>
-    <discord-message author="BDFD Support" bot role-color="#378afa" verified>
+    <discord-message role-color="#378afa" verified author="BDFD Support" bot>
         Discriminator: #7678
     </discord-message>
 </discord-messages>
-<blockquote>
-<p>You can use <code>$discriminator[]</code> get the discriminator of the author.<br />
-<a href="./mentioned.html">How <code>$mentioned[]</code> works?</a>)</p>
-</blockquote>
+<div id="admonition-note" class="admonition admonish-note" role="note" aria-labelledby="admonition-note-title">
+<div class="admonition-title">
+<div id="admonition-note-title">
+<p>Note</p>
+</div>
+<a class="admonition-anchor-link" href="#admonition-note"></a>
+</div>
+<div>
+<p>You can use <code>$discriminator[]</code> get the discriminator of the author.</p>
+</div>
+</div>
+<div id="admonition-what-is-this" class="admonition admonish-question" role="note" aria-labelledby="admonition-what-is-this-title">
+<div class="admonition-title">
+<div id="admonition-what-is-this-title">
+<p>What is this?</p>
+</div>
+<a class="admonition-anchor-link" href="#admonition-what-is-this"></a>
+</div>
+<div>
+<p>How <a href="./mentioned.html"><code>$mentioned[]</code></a> works?</p>
+</div>
+</div>
 
                     </main>
 
