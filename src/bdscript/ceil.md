@@ -75,7 +75,7 @@ Result: $ceil[$message]
         const result = Math.ceil(inputValue);
         playOutput.textContent = `Result: ${result}`;
       } else {
-        playOutput.textContent = "This is not a number";
+        playOutput.textContent = `❌ Function $ceil at 1:15 returned an error: expected integer in position 1, got '${inputValue}'`; 
       }
     }
 </script>
