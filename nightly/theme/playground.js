@@ -3,7 +3,7 @@ function handlePlaygroundInput(inputValue, functionName, operation) {
   const playOutput = document.getElementById('play-output');
 
   if (!isNaN(inputValue) && inputValue !== "") {
-    const result = operation(inputValue); 
+    const result = operation(inputValue); // Apply the operation
     playOutput.textContent = `Result: ${result}`;
   } else {
     if (inputValue === "") {
@@ -19,10 +19,15 @@ function handlePlaygroundInput(inputValue, functionName, operation) {
 
 // $ceil[]
 function ceilPlayground(inputValue) {
-  handlePlaygroundInput(inputValue, '$ceil', Math.ceil);
+  handlePlaygroundInput(inputValue, '$ceil', Math.ceil); 
 }
 
-// $floor[]
+// floor[]
 function floorPlayground(inputValue) {
-  handlePlaygroundInput(inputValue, '$floor', Math.floor);
+  handlePlaygroundInput(inputValue, 'floor', Math.floor); 
+}
+
+// $sqrt[]
+function sqrtPlayground(inputValue) {
+  handlePlaygroundInput(inputValue, '$sqrt', Math.sqrt);
 }
