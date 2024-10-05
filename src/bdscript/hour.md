@@ -1,8 +1,6 @@
 # $hour
 Returns the current hour.
 
-> You can use [`$time`](./time.md) to change the timezone.
-
 > The `$hour` function uses the twenty-four-hour clock instead of two groups of twelve hours; this is also known as "Military Time".
 
 ## Syntax
@@ -30,4 +28,7 @@ Current Hour: $hour
     <div id="hour-mark"></div>
 ```
 
-<script src="../theme/livetime.js"></script>
+```admonish info title="Timezone"
+You can use [`$time[]`](./time.md) to change the timezone.
+```
+
