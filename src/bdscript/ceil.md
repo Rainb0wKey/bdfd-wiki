@@ -58,10 +58,10 @@ Result: $ceil[$message]
   <h3>Playground</h3>
   <div class="function-input">
     <p>Input:</p>
-    <span id="play-code">$ceil[<span id="play-input">1</span>]</span>
+    <span id="play-code">$ceil[<textarea id="play-input" rows="1" maxlength="25">1</textarea>]</span>
   </div>
   <div class="function-output">
     <p>Input:</p>
-    <span id="play-code">Result: <span id="play-input">1</span></span>
+    <span id="play-output">Result: 1</span>
   </div>
 </div>
