@@ -96,13 +96,17 @@ html {
     padding-top: 1rem;
 }
 
-.function-input #play-code {
+.function-input #play-code, .function-output #play-output {
     display: inline-block;
     background: hsl(0deg 0% 0% / 65%);
     padding: .5rem;
     border-radius: 10px;
     color: var(--color1);
     width: 98.5%;
+}
+
+.function-output #play-output {
+    color: #c1c1c1;
 }
 
 .function-input textarea {
