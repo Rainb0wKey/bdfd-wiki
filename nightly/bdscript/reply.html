@@ -141,10 +141,19 @@
 <h2 id="example"><a class="header" href="#example">Example</a></h2>
 <pre><code>$nomention
 $reply
-$allowUserMentions[]
 Hello $displayName 👋🏻
 </code></pre>
-<p><img src="https://user-images.githubusercontent.com/42785890/151721130-51524143-b136-4cfc-b028-694b1d09e84a.png" alt="image" /></p>
+<discord-messages>
+    <discord-message role-color="#E67E22" author="RainbowKey">
+        !example
+    </discord-message>
+    <discord-message verified author="BDFD Support" bot role-color="#378afa">
+        <discord-reply slot="reply" mentions author="RainbowKey">
+            !example
+        </discord-reply>
+        Hello, RainbowKey!
+    </discord-message>
+</discord-messages>
 
                     </main>
 
