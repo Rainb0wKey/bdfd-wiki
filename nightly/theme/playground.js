@@ -7,7 +7,7 @@ function ceilPlayground(inputValue) {
     playOutput.textContent = `Result: ${result}`;
   } else {
     if (inputValue === "") {
-      playOutput.textContent = `❌ Function $ceil at 1:1 returned an error: expected valid value in position 1, got empty value`;
+      playOutput.textContent = `❌ Function $ceil at 1:7 returned an error: expected valid value in position 1, got empty value`;
     } else {
       let nonNumericIndex = inputValue.search(/[^0-9\.]/); 
       nonNumericIndex = nonNumericIndex === -1 ? inputValue.length : nonNumericIndex + 8;
