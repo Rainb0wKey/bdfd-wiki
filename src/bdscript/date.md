@@ -1,8 +1,6 @@
 # $date
 Returns the current date.
 
-> You can use [`$time`](./time.md) to change the timezone.
-
 ## Syntax
 ```
 $date
@@ -26,4 +24,8 @@ Today's Date: $date
   bot: true
   content: |
     Today's Date: 2024-06-22
+```
+
+```admonish info title="Timezone"
+You can use [`$time[]`](./time.md) to change the timezone.
 ```
