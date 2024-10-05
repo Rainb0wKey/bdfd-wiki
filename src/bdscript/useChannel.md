@@ -37,3 +37,7 @@ $description[Hello!]
   embed: 
     description: Hello!
 ```
+
+```admonish question title="What is this?"
+How [`$description[]`](./description.md) and [`$mentionedChannels[]`](./mentionedChannels.md) works?
+```
