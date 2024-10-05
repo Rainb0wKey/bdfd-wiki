@@ -135,9 +135,6 @@
                         </a>
                         <h1 id="minute"><a class="header" href="#minute">$minute</a></h1>
 <p>Returns the current minute of this hour.</p>
-<blockquote>
-<p>You can use <a href="./time.html"><code>$time</code></a> to change the timezone.</p>
-</blockquote>
 <h2 id="syntax"><a class="header" href="#syntax">Syntax</a></h2>
 <pre><code>$minute
 </code></pre>
@@ -149,11 +146,21 @@ Current Minute: $minute
     <discord-message author="RainbowKey" role-color="#E67E22">
         !example 
     </discord-message>
-    <discord-message bot verified role-color="#378afa" author="BDFD Support">
+    <discord-message author="BDFD Support" bot verified role-color="#378afa">
         <div id="minute-mark"></div>
     </discord-message>
 </discord-messages>
-<script src="../theme/livetime.js"></script>
+<div id="admonition-timezone" class="admonition admonish-info" role="note" aria-labelledby="admonition-timezone-title">
+<div class="admonition-title">
+<div id="admonition-timezone-title">
+<p>Timezone</p>
+</div>
+<a class="admonition-anchor-link" href="#admonition-timezone"></a>
+</div>
+<div>
+<p>You can use <a href="./time.html"><code>$time[]</code></a> to change the timezone.</p>
+</div>
+</div>
 
                     </main>
 
