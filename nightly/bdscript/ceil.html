@@ -150,19 +150,19 @@ Result: $ceil[$message]
     <discord-message author="RainbowKey" role-color="#E67E22">
         !example 6.3
     </discord-message>
-    <discord-message author="BDFD Support" role-color="#378afa" verified bot>
+    <discord-message verified role-color="#378afa" author="BDFD Support" bot>
         Result: 7
     </discord-message>
     <discord-message author="RainbowKey" role-color="#E67E22">
         !example -6.4
     </discord-message>
-    <discord-message verified bot author="BDFD Support" role-color="#378afa">
+    <discord-message bot role-color="#378afa" verified author="BDFD Support">
         Result: -6
     </discord-message>
-    <discord-message author="RainbowKey" role-color="#E67E22">
+    <discord-message role-color="#E67E22" author="RainbowKey">
         !example 8
     </discord-message>
-    <discord-message verified author="BDFD Support" bot role-color="#378afa">
+    <discord-message role-color="#378afa" verified author="BDFD Support" bot>
         Result: 8
     </discord-message>
 </discord-messages>
@@ -185,7 +185,7 @@ Result: $ceil[$message]
     const result = Math.ceil(inputValue);
     playOutput.textContent = `Result: ${result}`;
   } else {
-    playOutput.textContent = "This is not a number";
+    playOutput.textContent = `❌ Function $ceil at 1:15 returned an error: expected integer in position 1, got '${inputValue}'`; 
   }
 }
 </code></pre>
