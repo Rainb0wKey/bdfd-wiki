@@ -158,14 +158,14 @@ Here, are all possible values for the <code>style</code> function argument.</p>
 <li><code>link</code> - Redirect button</li>
 </ul>
 <discord-messages>
-    <discord-message verified bot author="BDFD Support" role-color="#378afa">
+    <discord-message bot author="BDFD Support" role-color="#378afa" verified>
         Buttons:
         <discord-attachments slot="components">
             <discord-action-row>
                 <discord-button type="primary">
                     Primary
                 </discord-button>
-                <discord-button type="primary" disabled>
+                <discord-button disabled type="primary">
                     Primary
                 </discord-button>
             </discord-action-row>
@@ -181,7 +181,7 @@ Here, are all possible values for the <code>style</code> function argument.</p>
                 <discord-button type="destructive">
                     Danger
                 </discord-button>
-                <discord-button type="destructive" disabled>
+                <discord-button disabled type="destructive">
                     Danger
                 </discord-button>
             </discord-action-row>
@@ -189,20 +189,20 @@ Here, are all possible values for the <code>style</code> function argument.</p>
                 <discord-button type="secondary">
                     Secondary
                 </discord-button>
-                <discord-button disabled type="secondary">
+                <discord-button type="secondary" disabled>
                     Secondary
                 </discord-button>
             </discord-action-row>
         </discord-attachments>
     </discord-message>
-    <discord-message role-color="#378afa" verified author="BDFD Support" bot>
+    <discord-message role-color="#378afa" verified bot author="BDFD Support">
         Other Buttons:
         <discord-attachments slot="components">
             <discord-action-row>
-                <discord-button url="https://nilpointer-software.github.io/bdfd-wiki/nightly/" type="secondary">
+                <discord-button type="secondary" url="https://nilpointer-software.github.io/bdfd-wiki/nightly/">
                     Link
                 </discord-button>
-                <discord-button disabled type="secondary" url="https://nilpointer-software.github.io/bdfd-wiki/nightly/">
+                <discord-button disabled url="https://nilpointer-software.github.io/bdfd-wiki/nightly/" type="secondary">
                     Link
                 </discord-button>
             </discord-action-row>
@@ -270,7 +270,7 @@ $addButton[no;http://botdesignerdiscord.com;Check our website;link;no;👀]
         <script src="../clipboard.min.js" charset="utf-8"></script>
         <script src="../highlight.js" charset="utf-8"></script>
         <script src="../book.js" charset="utf-8"></script>
-        <script src="../theme/playground.js" defer></script>
+        <script src="../theme/playground.js"></script>
 
         <!-- Custom JS scripts -->
 
