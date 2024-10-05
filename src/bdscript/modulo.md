@@ -54,3 +54,7 @@ $modulo[$message[1];$message[2]]
   content: |
     Result: 0
 ```
+
+```admonish question title="What is this?"
+How [`$message[]`](./messageComplex.md) works?
+```
