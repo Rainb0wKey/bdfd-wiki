@@ -10,7 +10,7 @@ $reply
 ```
 $nomention
 $reply
-Hello $displayName 👋🏻
+Hello, $displayName!
 ```
 
 ``` discord yaml
@@ -32,4 +32,8 @@ Hello $displayName 👋🏻
   highight: true
   content: |
     Hello, RainbowKey!
+```
+
+```admonish note
+You can use [`$allowUserMentions[]`](./allowUserMentions.md) to disable the reply ping (mention).
 ```
