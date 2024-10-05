@@ -19,5 +19,19 @@ $nomention
 $useChannel[$mentionedChannels[1]]
 $description[Hello!]
 ```
-![ex1](https://user-images.githubusercontent.com/69215413/125665386-b0458227-97d7-4aaa-9ca8-b1d869245bce.png)\
-![ex2](https://user-images.githubusercontent.com/69215413/125665365-ade65a36-0c1e-4e1c-a5c5-ad9929f769bc.png)
+
+``` discord yaml
+- user_id: 803569638084313098
+  username: RainbowKey
+  color: "#E67E22"
+  content: |
+    !example <#secret-channel>
+```
+
+``` discord yaml
+- user_id: 803569638084313098
+  username: RainbowKey
+  color: "#E67E22"
+  content: |
+    !example
+```
