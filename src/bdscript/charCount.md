@@ -29,3 +29,16 @@ Your message has $charCount[$message] characters.
   content: |
     Your message has 12 characters.
 ```
+
+<div class=function-playground>
+  <h3>🤖 Playground</h3>
+  <p>Here you can understand how this function works.</p>
+  <div class="function-input">
+    <p>Input:</p>
+    <span id="play-code">$charCount[<textarea id="play-input" rows="1" maxlength="20" oninput="charCountPlayground(this.value)">Text</textarea>]</span>
+  </div>
+  <div class="function-output">
+    <p>Output:</p>
+    <span id="play-output">Your message has 4 characters.</span>
+  </div>
+</div>
