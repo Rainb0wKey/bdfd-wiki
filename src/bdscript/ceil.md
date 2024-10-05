@@ -53,3 +53,15 @@ Result: $ceil[$message]
   content: |
     Result: 8
 ```
+
+<div class=function-playground>
+  <h3>Playground</h3>
+  <div class="function-input">
+    <p>Input:</p>
+    <span id="play-code">$ceil[<span id="play-input">1</span>]</span>
+  </div>
+  <div class="function-output">
+    <p>Input:</p>
+    <span id="play-code">Result: <span id="play-input">1</span></span>
+  </div>
+</div>
