@@ -10,6 +10,8 @@ In this section, you'll learn how to use the button component.
 - [`$removeButtons`](../../../../bdscript/removeButtons.md)
 - [`$removeButtons[]`](../../../../bdscript/removeButtonsComplex.md)
 - [`$removeComponent[]`](../../../../bdscript/removeComponent.md)
+
+## Support Callbacks Used
 - [`$onInteraction`](../../../../callbacks/onInteraction.md)
 - [`$onInteraction[]`](../../../../callbacks/onInteractionComplex.md)
 
