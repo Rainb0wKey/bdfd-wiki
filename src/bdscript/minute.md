@@ -1,8 +1,6 @@
 # $minute
 Returns the current minute of this hour.
 
-> You can use [`$time`](./time.md) to change the timezone.
-
 ## Syntax
 ```
 $minute
@@ -29,4 +27,6 @@ Current Minute: $minute
     <div id="minute-mark"></div>
 ```
 
-<script src="../theme/livetime.js"></script>
+```admonish info title="Timezone"
+You can use [`$time[]`](./time.md) to change the timezone.
+```
