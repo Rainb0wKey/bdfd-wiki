@@ -35,7 +35,7 @@ Your message has $charCount[$message] characters.
   <p>Here you can understand how this function works.</p>
   <div class="function-input">
     <p>Input:</p>
-    <span id="play-code">$charCount[<textarea id="play-input" rows="1" maxlength="20" oninput="charCountPlayground(this.value)">Text</textarea>]</span>
+    <span id="play-code">$charCount[<textarea id="play-input" rows="1" maxlength="150" oninput="charCountPlayground(this.value)">Text</textarea>]</span>
   </div>
   <div class="function-output">
     <p>Output:</p>
