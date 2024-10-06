@@ -134,7 +134,7 @@
                             <span>Edit this page</span>
                         </a>
                         <h1 id="random"><a class="header" href="#random">$random[]</a></h1>
-<p>Returns a random number between <code>Minimum</code> and <code>Maximum</code>.</p>
+<p>Returns a random number between <code>min</code> and <code>max</code>.</p>
 <div id="admonition-warning" class="admonition admonish-warning" role="note" aria-labelledby="admonition-warning-title">
 <div class="admonition-title">
 <div id="admonition-warning-title">
@@ -143,16 +143,16 @@
 <a class="admonition-anchor-link" href="#admonition-warning"></a>
 </div>
 <div>
-<p><code>$random[]</code> never returns the ‘maximum’ value, as it’s right side exclusive range. Basically, to get a random number between 1 and 5; you’d put 6 as the <code>Maximum</code> instead of 5 i.e <code>$random[1;6]</code> will return: 1, 2, 3, 4, 5.</p>
+<p><code>$random[]</code> never returns the ‘max’ value, as it’s right side exclusive range. Basically, to get a random number between 1 and 5; you’d put 6 as the <code>Max</code> instead of 5 i.e <code>$random[1;6]</code> will return: 1, 2, 3, 4, 5.</p>
 </div>
 </div>
 <h2 id="syntax"><a class="header" href="#syntax">Syntax</a></h2>
-<pre><code>$random[Minimum;Maximum]
+<pre><code>$random[Min;Max]
 </code></pre>
 <h3 id="parameters"><a class="header" href="#parameters">Parameters</a></h3>
 <ul>
-<li><code>Minimum</code> <code>(Type: Integer, Float || Flag: Required)</code>: The minimum value.</li>
-<li><code>Maximum</code> <code>(Type: Integer, Float || Flag: Required)</code>: The maximum value.</li>
+<li><code>Min</code> <code>(Type: Integer, Float || Flag: Required)</code>: The minimum value.</li>
+<li><code>Max</code> <code>(Type: Integer, Float || Flag: Required)</code>: The maximum value.</li>
 </ul>
 <div id="admonition-failure" class="admonition admonish-failure" role="note" aria-labelledby="admonition-failure-title">
 <div class="admonition-title">
@@ -162,10 +162,10 @@
 <a class="admonition-anchor-link" href="#admonition-failure"></a>
 </div>
 <div>
-<p>The <code>Maximum</code> value cannot be greater than or equal to the <code>Minimum</code> value.</p>
+<p>The <code>Max</code> value cannot be greater than or equal to the <code>Min</code> value.</p>
 <ul>
-<li>❌ <code>Maximum</code> &lt;= <code>Minimum</code></li>
-<li>✅ <code>Maximum</code> &gt; <code>Minimum</code></li>
+<li>❌ <code>Max</code> &lt;= <code>Min</code></li>
+<li>✅ <code>Max</code> &gt; <code>Min</code></li>
 </ul>
 </div>
 </div>
@@ -177,7 +177,7 @@ The random number is **$random[1;21]**
     <discord-message role-color="#E67E22" author="RainbowKey">
         !example
     </discord-message>
-    <discord-message role-color="#378afa" verified author="BDFD Support" bot>
+    <discord-message author="BDFD Support" bot role-color="#378afa" verified>
         The random number is <b>16</b>
     </discord-message>
 </discord-messages>
