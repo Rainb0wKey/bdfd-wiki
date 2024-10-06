@@ -48,5 +48,5 @@ function charCountPlayground(inputValue) {
 function argCountPlayground(inputValue) {
   const playOutput = document.getElementById('play-output');
   const spaceCount = inputValue.split(' ').length - 1;
-  playOutput.textContent = `Result: ${spaceCount}`;
+  playOutput.textContent = `Word count: ${spaceCount}`;
 }
