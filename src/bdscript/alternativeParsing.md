@@ -28,7 +28,6 @@ $alternativeParsing
     $description["helloworld"]
     ```
 3. Execute commands.
-    ### With `$alternativeParsing`
     ``` discord yaml
     - user_id: 729343563401265193
       username: Nicky
@@ -60,8 +59,8 @@ $alternativeParsing
       embed:
         description: "\"helloworld\""
     ```
-    \
-    ### Without `$alternativeParsing`
+
+    - Without `$alternativeParsing`
     ``` discord yaml
     - user_id: 729343563401265193
       username: Nicky
