@@ -67,3 +67,6 @@ $channelSendMessage[$mentionedChannels[1];Hello!]
     Hello!
 ```
 
+```admonish question title="What is this?"
+How [`$mentionedChannels[]`](./mentionedChannels.md) works?
+```
