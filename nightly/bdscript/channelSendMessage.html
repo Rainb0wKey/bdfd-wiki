@@ -135,6 +135,39 @@
                         </a>
                         <h1 id="channelsendmessage"><a class="header" href="#channelsendmessage">$channelSendMessage</a></h1>
 <p>Sends a message in the provided channel.</p>
+<style>
+.discord-messages {
+    margin-top: 1.5rem;
+}
+
+.discord-messages > .discord-message:before {
+    color: var(--color1);
+    background: var(--color3);
+    border-radius: 10px;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    margin-left: -1.8rem;
+    margin-top: -.9rem;
+    width: fit-content;
+    transition: .3s;
+    z-index: 1000;
+}
+
+.discord-messages > .discord-message:before {
+    content: '#secret-channel';
+}
+
+.discord-messages:first-of-type > .discord-message:before {
+    content: '#main-chat';
+}
+
+.discord-messages > .discord-message:hover:before {
+    transform: scale(1.025);
+    transform: rotate(-2.5deg);
+    border-radius: 12.5px;
+    transition: .3s;
+}
+</style>
 <h2 id="syntax"><a class="header" href="#syntax">Syntax</a></h2>
 <pre><code>$channelSendMessage[Channel ID;Message]
 </code></pre>
@@ -152,12 +185,12 @@ $channelSendMessage[$mentionedChannels[1];Hello!]
     <discord-message author="RainbowKey" role-color="#E67E22">
         !example <discord-mention type="channel">secret-channel</discord-mention>
     </discord-message>
-    <discord-message role-color="#378afa" verified author="BDFD Support" bot>
+    <discord-message role-color="#378afa" author="BDFD Support" verified bot>
         The message was sent to  the channel: <discord-mention type="channel">secret-channel</discord-mention>
     </discord-message>
 </discord-messages>
 <discord-messages>
-    <discord-message bot verified role-color="#378afa" author="BDFD Support">
+    <discord-message author="BDFD Support" role-color="#378afa" verified bot>
         Hello!
     </discord-message>
 </discord-messages>
