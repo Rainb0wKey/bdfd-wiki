@@ -149,6 +149,17 @@
     box-shadow: none;
 }
 
+.discord-message-markup .hydrated blockquote {
+    line-height: 17px;
+    box-shadow: none;
+}
+
+.discord-message-markup .hydrated .discord-quote-divider {
+    padding-bottom: 10px !important; 
+    padding-top: 10px !important;
+    margin-top: -.5px !important;
+}
+
 .discord-message .discord-message-body {
     font-size: 1rem;
     font-weight: 400;
