@@ -135,9 +135,6 @@
                         </a>
                         <h1 id="ephemeral"><a class="header" href="#ephemeral">$ephemeral</a></h1>
 <p>Makes the bot’s response ephemeral.</p>
-<blockquote>
-<p>🧙‍♂️ <a href="https://support.discord.com/hc/en-us/articles/1500000580222-Ephemeral-Messages-FAQ">What are ephemeral responses? (click-me)</a></p>
-</blockquote>
 <h2 id="syntax"><a class="header" href="#syntax">Syntax</a></h2>
 <pre><code>$ephemeral
 </code></pre>
@@ -147,10 +144,25 @@
 <h2 id="example"><a class="header" href="#example">Example</a></h2>
 <pre><code>$nomention
 $ephemeral
-hello!
+Hello!
 </code></pre>
-<p><img src="https://user-images.githubusercontent.com/69215413/122575265-91e17400-d01e-11eb-9789-de224722f3ab.png" alt="example1" /><br />
-<img src="https://user-images.githubusercontent.com/69215413/122575261-90b04700-d01e-11eb-942c-1cd5096998d0.png" alt="example2" /></p>
+<discord-messages>
+    <discord-message author="BDFD Support" bot verified ephemeral role-color="#378afa">
+        <discord-command role-color="#E67E22" slot="reply" command="/example" author="RainbowKey">
+        </discord-command>
+        Hello!
+    </discord-message>
+</discord-messages>
+<ul>
+<li>Without <code>$ephemeral</code>:</li>
+</ul>
+<discord-messages>
+    <discord-message bot verified role-color="#378afa" author="BDFD Support">
+        <discord-command slot="reply" author="RainbowKey" role-color="#E67E22" command="/example">
+        </discord-command>
+        Hello!
+    </discord-message>
+</discord-messages>
 
                     </main>
 

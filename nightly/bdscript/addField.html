@@ -138,9 +138,17 @@
 <h2 id="syntax"><a class="header" href="#syntax">Syntax</a></h2>
 <pre><code>$addField[Name;Value;(Inline?;Index)]
 </code></pre>
-<blockquote>
-<p>📌 You can add up to 25 fields per embed.</p>
-</blockquote>
+<div id="admonition-limit" class="admonition admonish-warning" role="note" aria-labelledby="admonition-limit-title">
+<div class="admonition-title">
+<div id="admonition-limit-title">
+<p>Limit</p>
+</div>
+<a class="admonition-anchor-link" href="#admonition-limit"></a>
+</div>
+<div>
+<p>You can add up to 25 fields per embed.</p>
+</div>
+</div>
 <h3 id="parameters"><a class="header" href="#parameters">Parameters</a></h3>
 <ul>
 <li><code>Name</code> <code>(Type: String || Flag: Required)</code>: The name of the field. It cannot exceed more than 256 characters.</li>
@@ -148,11 +156,18 @@
 <li><code>Inline?</code> <code>(Type: Bool || Flag: Optional)</code>: If <code>yes</code>, fields will appear in the same line. However, if you have more than 3 fields (or the fields are just too long) with inline enabled, the bot will return rows with 3 fields (2 if there is a thumbnail) in each row. It is set to <code>no</code> by default.</li>
 <li><code>Index</code> <code>(Type: Integer || Flag: Optional)</code>: Adds the field to a specified embed index number. <a href="../resources/embedIndexes.html">(learn more)</a></li>
 </ul>
-<blockquote>
-<p>💡 Inline fields may not appear inline on some mobile devices.</p>
-</blockquote>
-<h2 id="examples"><a class="header" href="#examples">Examples</a></h2>
-<h3 id="without-inline-fields"><a class="header" href="#without-inline-fields">Without inline fields</a></h3>
+<div id="admonition-failure" class="admonition admonish-failure" role="note" aria-labelledby="admonition-failure-title">
+<div class="admonition-title">
+<div id="admonition-failure-title">
+<p>Failure</p>
+</div>
+<a class="admonition-anchor-link" href="#admonition-failure"></a>
+</div>
+<div>
+<p>Inline fields may not appear inline on some <strong>mobile devices</strong>.</p>
+</div>
+</div>
+<h2 id="example"><a class="header" href="#example">Example</a></h2>
 <pre><code>$nomention
 $addField[The field name 1!;The field value 1!]
 $addField[The field name 2!;The field value 2!]
@@ -162,7 +177,7 @@ $addField[The field name 3!;The field value 3!]
     <discord-message author="Nicky" role-color="#EE7908">
         !example
     </discord-message>
-    <discord-message bot author="Wiki Bot" role-color="#748BD4" verified>
+    <discord-message author="Wiki Bot" role-color="#748BD4" verified bot>
         <none>
         <discord-embed slot="embeds">
             <discord-embed-fields slot="fields">
@@ -179,7 +194,9 @@ $addField[The field name 3!;The field value 3!]
         </discord-embed>
     </discord-message>
 </discord-messages>
-<h3 id="with-inline-fields"><a class="header" href="#with-inline-fields">With inline fields</a></h3>
+<ul>
+<li>With inline fields:</li>
+</ul>
 <pre><code>$nomention
 $addField[The field name 1!;The field value 1!;yes]
 $addField[The field name 2!;The field value 2!;yes]
@@ -189,17 +206,17 @@ $addField[The field name 3!;The field value 3!;yes]
     <discord-message author="Nicky" role-color="#EE7908">
         !example
     </discord-message>
-    <discord-message verified role-color="#748BD4" author="Wiki Bot" bot>
+    <discord-message bot verified role-color="#748BD4" author="Wiki Bot">
         <none>
         <discord-embed slot="embeds">
             <discord-embed-fields slot="fields">
-                <discord-embed-field inline field-title="The field name 1!" inline-index="1">
+                <discord-embed-field field-title="The field name 1!" inline inline-index="1">
                     The field value 1!
                 </discord-embed-field>
-                <discord-embed-field inline inline-index="2" field-title="The field name 2!">
+                <discord-embed-field field-title="The field name 2!" inline inline-index="2">
                     The field value 2!
                 </discord-embed-field>
-                <discord-embed-field field-title="The field name 3!" inline-index="3" inline>
+                <discord-embed-field inline inline-index="3" field-title="The field name 3!">
                     The field value 3!
                 </discord-embed-field>
             </discord-embed-fields>
