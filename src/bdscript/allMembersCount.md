@@ -24,5 +24,5 @@ I'm serving $allMembersCount users!
   bot: true
   verified: true
   content: |
-    I'm serving 8560 users!
+    I'm serving 20560 users!
 ```
