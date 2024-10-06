@@ -1,6 +1,10 @@
 # $allMembersCount
 Returns the total number of users from every server the bot is in.
 
+```admonish failure
+You can’t display the member count in the bot’s status with `$allMembersCount`. Use [`$membersCount`](./membersCount.md) function instead!
+```
+
 ## Syntax
 ```
 $allMembersCount
