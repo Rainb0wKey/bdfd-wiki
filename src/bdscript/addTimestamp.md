@@ -26,5 +26,5 @@ $addTimestamp
   verified: true
   embed: 
     footer:
-      text: That is the timestamp =>
+      text: That is the timestamp => <span class="discord-message-timestamp">Today at 00:00</span>
 ```
