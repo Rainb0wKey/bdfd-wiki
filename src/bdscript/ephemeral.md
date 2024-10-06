@@ -13,7 +13,38 @@ $ephemeral
 ```
 $nomention
 $ephemeral
-hello!
+Hello!
 ```
-![example1](https://user-images.githubusercontent.com/69215413/122575265-91e17400-d01e-11eb-9789-de224722f3ab.png)\
-![example2](https://user-images.githubusercontent.com/69215413/122575261-90b04700-d01e-11eb-942c-1cd5096998d0.png)
+
+``` discord yaml
+- user_id: 1009018156494368798
+  username: BDFD Support
+  color: "#378afa"
+  bot: true
+  verified: true
+  ephemeral: true
+  command:
+    user_id: 803569638084313098
+    author: RainbowKey
+    color: "#E67E22"
+    command: /example
+  content: |
+    Hello!
+```
+
+- Without `$ephemeral`:
+
+``` discord yaml
+- user_id: 1009018156494368798
+  username: BDFD Support
+  color: "#378afa"
+  bot: true
+  verified: true
+  command:
+    user_id: 803569638084313098
+    author: RainbowKey
+    color: "#E67E22"
+    command: /example
+  content: |
+    Hello!
+```
