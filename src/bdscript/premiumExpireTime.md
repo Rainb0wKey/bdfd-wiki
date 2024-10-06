@@ -1,15 +1,15 @@
 # $premiumExpireTime
 Returns how long until premium expires.
 
-> 🧙‍♂️ Returns "expired" if the bot is not premium.
+> Returns "expired" if the bot is not premium.
 
 ## Syntax
 ```
-$premiumExpireTime[(Unix timestamp)]
+$premiumExpireTime[(Return unix timestamp?)]
 ```
 
 ### Parameters 
-- `Unix timestamp` `(Type: Bool || Flag: Optional)`: If "yes" is written, it will return the premium expiration value in UNIX timestamp and if "no", it will output as normal time format. Defaults to "no".
+- `Return unix timestamp?` `(Type: Bool || Flag: Optional)`: If "yes" is written, it will return the premium expiration value in UNIX timestamp and if "no", it will output as normal time format. Defaults to "no".
 
 ## Example
 
