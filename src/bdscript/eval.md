@@ -3,7 +3,11 @@
   <span id="DangerousTag">Dangerous</span>
 </div>
 
-Evaluates the provided BDScript code. **Can only be used in BDScript 2.**
+Evaluates the provided BDScript code.
+
+```admonish danger title="BDScript 2"
+Can only be used in **[BDScript 2](../guides/general/bds2/aboutBDScript2.md)**.
+```
 
 > ⚠️ **Should be used with caution!** ⚠️
 
