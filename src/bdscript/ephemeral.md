@@ -1,8 +1,6 @@
 # $ephemeral
 Makes the bot's response ephemeral.
 
-> 🧙‍♂️ [What are ephemeral responses? (click-me)](https://support.discord.com/hc/en-us/articles/1500000580222-Ephemeral-Messages-FAQ)
-
 ## Syntax
 ```
 $ephemeral
