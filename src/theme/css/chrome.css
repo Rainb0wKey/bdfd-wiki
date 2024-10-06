@@ -738,7 +738,7 @@ ul#searchresults span.teaser em {
 .chapter-item a[href="../bdscript/mute.html"]:after,
 .chapter-item a[href="../bdscript/unmute.html"]:after,
 .chapter-item a[href="../bdscript/modifyChannelPerms.html"]:after,
-.chapter-item a[href="../bdscript/channelDFromName.html"]:after,
+.chapter-item a[href="../bdscript/channelIDFromName.html"]:after,
 .chapter-item a[href="../bdscript/giveRole.html"]:after, 
 .chapter-item a[href="../bdscript/takeRole.html"]:after, 
 .chapter-item a[href="../bdscript/serverRegion.html"]:after,
