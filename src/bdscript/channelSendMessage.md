@@ -47,7 +47,6 @@ $channelSendMessage[Channel ID;Message]
 ## Example
 ```
 $nomention
-The message was sent to  the channel: <#$mentionedChannels[1]>
 $channelSendMessage[$mentionedChannels[1];Hello!]
 ```
 
@@ -57,12 +56,6 @@ $channelSendMessage[$mentionedChannels[1];Hello!]
   color: "#E67E22"
   content: |
     !example <#secret-channel>
-- username: BDFD Support
-  color: "#378afa"
-  bot: true
-  verified: true
-  content: |
-    The message was sent to  the channel: <#secret-channel>
 ```
 
 ``` discord yaml
