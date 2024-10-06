@@ -34,18 +34,6 @@ My premium expires in: $premiumExpireTime (Unix Timestamp: $premiumExpireTime[ye
   username: RainbowKey
   color: "#E67E22"
   content: |
-    !example
-- user_id: 1009018156494368798
-  username: BDFD Support
-  color: "#378afa"
-  bot: true
-  verified: true
-  content: |
-    My premium expires in: Mon, Nov 03 2025 12:02:09 UTC (Unix Timestamp: 1762171329)
-- user_id: 803569638084313098
-  username: RainbowKey
-  color: "#E67E22"
-  content: |
     !bot
 - user_id: 566613317972394004
   username: Wiki Bot
