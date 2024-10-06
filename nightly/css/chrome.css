@@ -781,3 +781,12 @@ ul#searchresults span.teaser em {
     padding-top: 2rem;
     line-height: 1.9em;
 }
+
+/* Selection */
+
+::selection {
+    background: hsl(0deg 0% 100% / 8%);
+}
+::-moz-selection {
+    background: hsl(0deg 0% 100% / 8%);
+}
