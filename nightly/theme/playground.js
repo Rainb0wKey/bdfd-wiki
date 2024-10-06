@@ -43,3 +43,10 @@ function charCountPlayground(inputValue) {
   const charCount = inputValue.length;
   playOutput.textContent = `Your message has ${charCount} characters.`;
 }
+
+// $argCount[]
+function argCountPlayground(inputValue) {
+  const playOutput = document.getElementById('play-output');
+  const spaceCount = inputValue.split(' ').length - 1;
+  playOutput.textContent = `Result: ${spaceCount}`;
+}
