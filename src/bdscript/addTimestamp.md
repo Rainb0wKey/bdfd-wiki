@@ -33,6 +33,6 @@ $addTimestamp
 How [`$footer[]`](./footer.md) works?
 ```
 
-```admonish question note
+```admonish note
 [`$footer[]`](./footer.md) is not required to use with `$addTimestamp`.
 ```
