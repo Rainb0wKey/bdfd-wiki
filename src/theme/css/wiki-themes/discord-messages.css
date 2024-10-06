@@ -220,6 +220,6 @@
     border: 1px solid transparent;
 }
 
-.discord-replied-message-content {
+.discord-replied-message-content:not(.discord-command-name) {
     margin-left: -3rem;
 }
