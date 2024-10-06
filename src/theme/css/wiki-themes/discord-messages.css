@@ -92,6 +92,17 @@
     line-height: 20px;
 }
 
+.discord-embed-footer .discord-message-timestamp {
+    user-select: auto;
+    -webkit-user-select: auto;
+    color: #d0d2d3;
+}
+
+.discord-embed-footer .discord-message-timestamp:before {
+    user-select: auto;
+    content: '• ';
+    color: #d0d2d3;
+}
 
 .discord-embed .discord-embed-wrapper .discord-embed-grid {
     display: inline-grid;
