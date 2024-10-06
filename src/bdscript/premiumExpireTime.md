@@ -12,17 +12,22 @@ $premiumExpireTime[(Return unix timestamp?)]
 - `Return unix timestamp?` `(Type: Bool || Flag: Optional)`: If "yes" is written, it will return the premium expiration value in UNIX timestamp and if "no", it will output as normal time format. Defaults to "no".
 
 ## Example
-
-#### When no premium
 ```
 $nomention
-My premium expires in: $premiumExpireTime
+My premium expires in: $premiumExpireTime (Unix Timestamp: $premiumExpireTime[yes])
 ```
-![example](https://user-images.githubusercontent.com/69215413/123555040-38c9bc80-d751-11eb-963d-92c7b36f9d38.png)
 
-#### When premium
+``` discord yaml
+- user_id: 803569638084313098
+  username: RainbowKey
+  color: "#E67E22"
+  content: |
+    !example
+- user_id: 1009018156494368798
+  username: BDFD Support
+  color: "#378afa"
+  bot: true
+  verified: true
+  content: |
+    My premium expires in: Mon, Nov 03 2025 12:02:09 UTC (Unix Timestamp: 1762171329)
 ```
-$nomention
-My premium expires in: $premiumExpireTime (UNIX Timestamp : $premiumExpireTime[yes])
-```
-![example](https://user-images.githubusercontent.com/95774950/180188899-4a28bfcf-5180-4f35-9491-525c9a9c2c32.png)
