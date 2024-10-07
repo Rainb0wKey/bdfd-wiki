@@ -15,6 +15,10 @@ function getNameFromTitle() {
     return document.title.substring(0, index-1);
 }
 
+if (window.location.href.endsWith("foreword.html")) {
+    return;
+}
+
 let root = "/";
 let path = location.pathname.substring(11);
 
