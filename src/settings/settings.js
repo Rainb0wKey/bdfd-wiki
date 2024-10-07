@@ -287,7 +287,6 @@ function updateColor() {
   const jsonInput = document.getElementById('jsonhginput');
 
   // Main changes
-  const setButtons = document.querySelectorAll('button');
   const bdsCode = document.querySelector('code.hljs');
   const previousPage = document.querySelector('.previous');
   const nextPage = document.querySelector('.next');
@@ -354,11 +353,6 @@ function updateColor() {
   colorDisplay.textContent = hue + '°';
   jsonInput.style.scrollbarColor = `hsl(${hue}, 70%, 25%)` + `hsl(${hue}, 60%, 20%)`;
   bdsCode.style.scrollbarColor = `hsl(${hue}, 70%, 25%)` + color3;
-  setButtons.forEach(button => {
-    if (!button.matches('#menu-bar i') && !button.matches('#menu-bar .icon-button')) {
-      button.style.background = `hsl(${hue}, 45%, 25%)`;
-    }
-  });
 
   hexColor.textContent = rgbToHex(color1);
 
@@ -597,7 +591,6 @@ function loadSettings() {
   const themeChangerRange = document.getElementById("themeSlider");
   const codeTextInput = document.getElementById('jsonhginput');
   const charCountElement = document.querySelector('.charCount');
-  const settingsButtons = document.querySelectorAll('button');
 
   let data
 
@@ -690,14 +683,6 @@ function loadSettings() {
   if (themeChangerRange) {
     themeChangerRange.value = parseInt(data['theme-main'].replace('%', ''));
   }
-
-  var hueM = data['theme-main'];
-
-  settingsButtons.forEach(button => {
-    if (!button.matches('#menu-bar i') && !button.matches('#menu-bar .icon-button')) {
-      button.style.background = `hsl(${hueM}, 45%, 25%)`;
-    }
-  });
   
   if (displaySize) {
     displaySize.textContent = data['text-size'].replace('%', '');
