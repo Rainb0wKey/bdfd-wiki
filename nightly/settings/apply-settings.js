@@ -244,11 +244,7 @@ function applySettings() {
   if (document.body.style.background == '#000') {
     document.querySelector('meta[name="theme-color"]').setAttribute('content', `#000`);
   } else {
-    try {
-      document.querySelector('meta[name="theme-color"]').setAttribute('content', `hsl(${mainHue}, 80%, 8%)`);
-    } catch (error) {
-      document.querySelector('meta[name="theme-color"]').setAttribute('content', `270, 80%, 8%)`);
-    }
+    document.querySelector('meta[name="theme-color"]').setAttribute('content', `hsl(${mainHue}, 80%, 8%)`);
   }
   
   setDiscordTheme(data['discord-example-theme']);
