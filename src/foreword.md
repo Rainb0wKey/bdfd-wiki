@@ -102,7 +102,7 @@
   bot: true
   verified: true
   content: |
-    <@kubastick> Level up! Now you current level is <b>5</b>
+    <@kubastick> Level up! Now your current level is <b>5</b>
 - user_id: 1009018156494368798
   username: BDFD Support
   color: "#378afa"
