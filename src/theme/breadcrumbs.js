@@ -41,7 +41,3 @@ path.split('/').forEach((segment, i, segments) => {
     }
     document.write(`<div><a href="${segment}">${name}</a></div>`)
 });
-
-if (window.location.href.endsWith("foreword.html")) {
-    document.querySelector(".breadcrumb").remove;
-}
