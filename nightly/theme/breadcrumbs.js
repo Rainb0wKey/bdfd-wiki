@@ -43,5 +43,5 @@ path.split('/').forEach((segment, i, segments) => {
 });
 
 if (window.location.href.endsWith("foreword.html")) {
-    document.querySelector(".breadcrumb"):remove;
+    document.querySelector(".breadcrumb").remove;
 }
