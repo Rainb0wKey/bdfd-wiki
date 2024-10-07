@@ -15,7 +15,7 @@
     background: var(--color1) !important;
 }
 
-.editPage {
+.editPage, .breadcrumb {
     visibility: hidden;
 }
 
