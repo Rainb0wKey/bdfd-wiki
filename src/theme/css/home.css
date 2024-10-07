@@ -15,6 +15,10 @@
     background: var(--color1) !important;
 }
 
+.editPage {
+    visibility: hidden;
+}
+
 .preview {
     text-align: center;
 }
