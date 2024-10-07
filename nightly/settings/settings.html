@@ -190,6 +190,10 @@
   <div class="textsizebuttons">
     <label id="display-size">60</label>
     <input type="range" id="textsize" min="50" max="100" value="60" oninput="changeFontSize()"/>
+    <div class="display-aA">
+	<span id="small-aA">aA</span>
+	<span id="big-aA">aA</span>
+    </div>
     <p id="default-is">60%</p>
   </div>
 </div>
@@ -299,11 +303,11 @@
     <discord-message role-color="#E67E22" author="RainbowKey">
         !example ❤️
         <discord-reactions slot="reactions">
-            <discord-reaction count="1" name=":emoji:" emoji="https://upload.wikimedia.org/wikipedia/commons/7/70/Symbolic_Love_Heart.png">
+            <discord-reaction name=":emoji:" emoji="https://upload.wikimedia.org/wikipedia/commons/7/70/Symbolic_Love_Heart.png" count="1">
             </discord-reaction>
         </discord-reactions>
     </discord-message>
-    <discord-message role-color="#378afa" author="BDFD Support" verified bot>
+    <discord-message verified author="BDFD Support" role-color="#378afa" bot>
         Added!
     </discord-message>
 </discord-messages>
