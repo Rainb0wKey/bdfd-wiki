@@ -61,8 +61,8 @@ Let's customize your experience in our Bot Designer For Discord wiki world!
     <label id="display-size">60</label>
     <input type="range" id="textsize" min="50" max="100" value="60" oninput="changeFontSize()"/>
     <div class="display-aA">
-	<span id="small-aA">aA</span>
-	<span id="big-aA">aA</span>
+	<span id="small-a">a</span>
+	<span id="big-A">A</span>
     </div>
     <p id="default-is">60%</p>
   </div>
