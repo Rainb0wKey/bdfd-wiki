@@ -15,10 +15,6 @@ function getNameFromTitle() {
     return document.title.substring(0, index-1);
 }
 
-if (window.location.href.endsWith("foreword.html")) {
-    return;
-}
-
 let root = "/";
 let path = location.pathname.substring(11);
 
@@ -45,3 +41,7 @@ path.split('/').forEach((segment, i, segments) => {
     }
     document.write(`<div><a href="${segment}">${name}</a></div>`)
 });
+
+if (window.location.href.endsWith("foreword.html")) {
+    document.querySelector(".breadcrumb"):remove;
+}
