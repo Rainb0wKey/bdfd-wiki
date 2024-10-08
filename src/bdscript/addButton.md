@@ -112,4 +112,6 @@ $addButton[no;test;Say hello!;primary;no;]
        label: Say hello!
 ```
 
-> For more info, see the [Buttons Guide](../guides/general/interactions/buttons/aboutButtons.md).
+```admonish info title="Read more"
+For more information, read the the [Buttons Guide](../guides/general/interactions/buttons/aboutButtons.md).
+```
