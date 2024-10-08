@@ -20,7 +20,7 @@ Direct messages the user who runs the command.
 }
 
 .discord-messages > .discord-message:before {
-    content: 'RainbowKey's DM';
+    content: 'RainbowKey\\'s DM';
 }
 
 .discord-messages:first-of-type > .discord-message:before {
