@@ -168,10 +168,10 @@ Successfully added the reactions to the message.
 <ol>
 <li>Type <code>\:TheEmojiName:</code></li>
 <li>Send the message.</li>
-<li>Copy the ID it returns. (The emoji ID should be in this format: <code>&lt;:emojiName:ID&gt;</code>. If the emoji is animated, it should look like this: <code>&lt;a:emojiName:ID&gt;</code>)</li>
-<li>Input the emoji ID into <code>$addMessageReactions[]</code>. (e.g. <code>$addMessageReactions[$channelID;1123254137547653222;&lt;:hollyDab:828628880629825546&gt;]</code>)</li>
+<li>Copy the ID it returns. (The emoji ID should be in this format: <code>&lt;:emojiName:emojiID&gt;</code>. If the emoji is animated, it should look like this: <code>&lt;a:emojiName:emojiID&gt;</code>)</li>
+<li>Input the emoji ID into <code>$addMessageReactions[]</code>. Example:</li>
 </ol>
-<p><img src="https://media.discordapp.net/attachments/609162277312266280/745309789491298415/My_Movie_0.gif" alt="example2" /></p>
+<p><code>$addMessageReactions[$channelID;1123254137547653222;&lt;:hollyDab:828628880629825546&gt;]</code></p>
 <blockquote>
 <p>If you’re still having issues, check the <a href="../resources/troubleshooting.html#the-bot-fails-to-add-reactions">Troubleshooting</a> page.</p>
 </blockquote>
