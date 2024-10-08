@@ -16,14 +16,16 @@ This function tells Discord that the bot is typing.
 $botTyping
 ```
 
+```admonish info
+Using `$botTyping` will add a 2-3 second delay before your bot’s response, simulating the typing process.
+```
+
 ## Example
 ```
 $nomention
 $botTyping
 Hello $username!
 ```
-
-- Command started:
 
 ``` discord yaml
 - user_id: 803569638084313098
