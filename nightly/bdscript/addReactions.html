@@ -160,12 +160,12 @@ $addReactions[✅;:x:]
     <discord-message role-color="#EE7908" author="Nicky">
         !reactions
     </discord-message>
-    <discord-message bot author="Wiki Bot" role-color="#748BD4" verified>
+    <discord-message verified author="Wiki Bot" role-color="#748BD4" bot>
         Yes or No?
         <discord-reactions slot="reactions">
-            <discord-reaction emoji="https://upload.wikimedia.org/wikipedia/commons/thumb/3/34/Twemoji12_2705.svg/640px-Twemoji12_2705.svg.png" count="1" name=":white_check_mark:">
+            <discord-reaction count="1" name=":white_check_mark:" emoji="https://upload.wikimedia.org/wikipedia/commons/thumb/3/34/Twemoji12_2705.svg/640px-Twemoji12_2705.svg.png">
             </discord-reaction>
-            <discord-reaction count="1" name=":x:" emoji="https://upload.wikimedia.org/wikipedia/commons/thumb/5/53/Twemoji2_274c.svg/640px-Twemoji2_274c.svg.png">
+            <discord-reaction emoji="https://upload.wikimedia.org/wikipedia/commons/thumb/5/53/Twemoji2_274c.svg/640px-Twemoji2_274c.svg.png" name=":x:" count="1">
             </discord-reaction>
         </discord-reactions>
     </discord-message>
@@ -177,10 +177,11 @@ $addReactions[✅;:x:]
 <ol>
 <li>Type <code>\:TheEmojiName:</code></li>
 <li>Send the message.</li>
-<li>Copy the ID it returns. (The emoji ID should be in this format: <code>&lt;:emojiName:ID&gt;</code>. If the emoji is animated, it should look like this: <code>&lt;a:emojiName:ID&gt;</code>)</li>
-<li>Input the emoji ID into <code>$addReactions[]</code>. (e.g. <code>$addReactions[&lt;:hollyDab:828628880629825546&gt;]</code>)</li>
+<li>Copy the ID it returns. (The emoji ID should be in this format: <code>&lt;:emojiName:emojiID&gt;</code>. If the emoji is animated, it should look like this: <code>&lt;a:emojiName:emojiID&gt;</code>)</li>
+<li>Input the emoji ID into <code>$addReactions[]</code>. Example:</li>
 </ol>
-<p><img src="https://media.discordapp.net/attachments/609162277312266280/745309789491298415/My_Movie_0.gif" alt="example" /></p>
+<pre><code>$addReactions[&lt;:hollyDab:828628880629825546&gt;]
+</code></pre>
 <blockquote>
 <p>If you’re still having issues, check the <a href="../resources/troubleshooting.html#the-bot-fails-to-add-reactions">Troubleshooting</a> page.</p>
 </blockquote>
