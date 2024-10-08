@@ -41,7 +41,8 @@ $addCmdReactions[$message]
 1. Type `\:TheEmojiName:`
 2. Send the message.
 3. Copy the ID it returns. (The emoji ID should be in this format: `<:emojiName:emojiID>`. If the emoji is animated, it should look like this: `<a:emojiName:emojiID>`)
-4. Input the emoji ID into `$addCmdReactions[]`. Example: 
+4. Input the emoji ID into `$addCmdReactions[]`. Example:
+
 ```$addCmdReactions[<:hollyDab:828628880629825546>]```
 
 > If you're still having issues, check the [Troubleshooting](../resources/troubleshooting.md#the-bot-fails-to-add-reactions) page.
