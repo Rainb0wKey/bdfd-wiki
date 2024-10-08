@@ -422,7 +422,9 @@ code.hljs {
 }
 
 .admonition-title {
-    background: hsl(0deg 0% 100% / 5%) !important;
+    background: hsl(0deg 0% 100% / 0%) !important;
+    font-size: 1.55rem;
+    margin-bottom: -1.75rem !important;
 }
 
 /* Summary */
