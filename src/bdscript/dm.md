@@ -62,6 +62,10 @@ Hello!
   verified: true
   content: |
     Hello!
+- user_id: 803569638084313098
+  username: RainbowKey
+  content: |
+    Hello bot!
 ```
 
 ## Note
