@@ -12,8 +12,23 @@ $nomention
 $dm
 Hello!
 ```
-![example](https://user-images.githubusercontent.com/111157596/250920927-01f8c481-ab76-4810-a940-e060f7396003.png)\
-![example](https://user-images.githubusercontent.com/111157596/250920959-d1d8ecda-5a3a-4b65-9135-0502d13c6520.png)
+
+``` discord yaml
+- user_id: 803569638084313098
+  username: RainbowKey
+  color: "#E67E22"
+  content: |
+    !example
+```
+
+``` discord yaml
+- user_id: 1009018156494368798
+  username: BDFD Support
+  bot: true
+  verified: true
+  content: |
+    Hello!
+```
 
 ## Note
 If the command fails to send the message, make sure you allow direct messages from everyone.
