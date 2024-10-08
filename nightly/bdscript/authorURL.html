@@ -138,9 +138,17 @@
 <h2 id="syntax"><a class="header" href="#syntax">Syntax</a></h2>
 <pre><code>$authorURL[URL;(Index)]
 </code></pre>
-<blockquote>
+<div id="admonition-failure" class="admonition admonish-failure" role="note" aria-labelledby="admonition-failure-title">
+<div class="admonition-title">
+<div id="admonition-failure-title">
+<p>Failure</p>
+</div>
+<a class="admonition-anchor-link" href="#admonition-failure"></a>
+</div>
+<div>
 <p><code>$authorURL[]</code> will not work if there is no text provided in <a href="./author.html"><code>$author[]</code></a>.</p>
-</blockquote>
+</div>
+</div>
 <h3 id="parameters"><a class="header" href="#parameters">Parameters</a></h3>
 <ul>
 <li><code>URL</code> <code>(Type: URL || Flag: Emptiable)</code>: The link to set as the author hyperlink.</li>
@@ -152,12 +160,12 @@ $author[Click me to visit the BDFD website!]
 $authorURL[https://botdesignerdiscord.com]
 </code></pre>
 <discord-messages>
-    <discord-message author="Nicky" role-color="#EE7908">
+    <discord-message role-color="#EE7908" author="Nicky">
         !example
     </discord-message>
-    <discord-message role-color="#748BD4" author="Wiki Bot" bot verified>
+    <discord-message author="Wiki Bot" verified bot role-color="#748BD4">
         <none>
-        <discord-embed slot="embeds" author-name="Click me to visit the BDFD website!" author-url="https://botdesignerdiscord.com">
+        <discord-embed slot="embeds" author-url="https://botdesignerdiscord.com" author-name="Click me to visit the BDFD website!">
         </discord-embed>
     </discord-message>
 </discord-messages>
