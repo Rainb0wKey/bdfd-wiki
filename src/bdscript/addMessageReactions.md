@@ -37,7 +37,9 @@ Successfully added the reactions to the message.
 3. Copy the ID it returns. (The emoji ID should be in this format: `<:emojiName:emojiID>`. If the emoji is animated, it should look like this: `<a:emojiName:emojiID>`)
 4. Input the emoji ID into `$addMessageReactions[]`. Example:
 
- ```$addMessageReactions[$channelID;1123254137547653222;<:hollyDab:828628880629825546>]```
+```
+$addMessageReactions[$channelID;1123254137547653222;<:hollyDab:828628880629825546>]
+```
 
 
 > If you're still having issues, check the [Troubleshooting](../resources/troubleshooting.md#the-bot-fails-to-add-reactions) page.
