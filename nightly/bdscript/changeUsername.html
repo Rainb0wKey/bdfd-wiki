@@ -144,19 +144,28 @@
 </ul>
 <h2 id="example"><a class="header" href="#example">Example</a></h2>
 <pre><code>$nomention
-$onlyPerms[managenicknames;Missing permission 'manage nicknames'!]
-$argsCheck[&gt;2;Wrong usage! Correct Usage: `!nickname (user) (text)`]
 $changeUsername[$noMentionMessage]
 Changed &lt;@$mentioned[1]&gt;'s nickname to **$noMentionMessage**.
 </code></pre>
 <discord-messages>
     <discord-message author="Nicky" role-color="#EE7908">
-        !nickname <discord-mention>Cool Bot</discord-mention> Cool Bot
+        !example <discord-mention>Cool Bot</discord-mention> Cool Bot
     </discord-message>
-    <discord-message bot role-color="#748BD4" author="Wiki Bot" verified>
+    <discord-message role-color="#748BD4" verified author="Wiki Bot" bot>
         Changed <discord-mention>Cool Bot</discord-mention>'s nickname to <b>Cool Bot</b>.
     </discord-message>
 </discord-messages>
+<div id="admonition-what-is-this" class="admonition admonish-question" role="note" aria-labelledby="admonition-what-is-this-title">
+<div class="admonition-title">
+<div id="admonition-what-is-this-title">
+<p>What is this?</p>
+</div>
+<a class="admonition-anchor-link" href="#admonition-what-is-this"></a>
+</div>
+<div>
+<p>How <a href="./noMentionMessage.html"><code>$noMentionMessage</code></a> and <a href="./mentioned.html"><code>$mentioned[]</code></a> works?</p>
+</div>
+</div>
 
                     </main>
 
