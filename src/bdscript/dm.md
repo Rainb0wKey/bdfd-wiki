@@ -68,5 +68,6 @@ Hello!
     Hello bot!
 ```
 
-## Note
+```admonish failure
 If the command fails to send the message, make sure you allow direct messages from everyone.
+```
