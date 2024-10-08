@@ -30,6 +30,10 @@ Your message has $charCount[$message] characters.
     Your message has 12 characters.
 ```
 
+```admonish question title="What is this?"
+How [`$message`](./message.md) works?
+```
+
 <div class=function-playground>
   <h3>🤖 Playground</h3>
   <p>Here you can understand how this function works.</p>
