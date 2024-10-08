@@ -60,7 +60,8 @@ $alternativeParsing
         description: "\"helloworld\""
     ```
 
-    - Without `$alternativeParsing`
+    - Without `$alternativeParsing`:
+
     ``` discord yaml
     - user_id: 729343563401265193
       username: Nicky
