@@ -135,6 +135,39 @@
                         </a>
                         <h1 id="dm"><a class="header" href="#dm">$dm</a></h1>
 <p>Direct messages the user who runs the command.</p>
+<style>
+.discord-messages {
+    margin-top: 1.5rem;
+}
+
+.discord-messages > .discord-message:before {
+    color: var(--color1);
+    background: var(--color3);
+    border-radius: 10px;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    margin-left: -1.8rem;
+    margin-top: -.9rem;
+    width: fit-content;
+    transition: .3s;
+    z-index: 1000;
+}
+
+.discord-messages > .discord-message:before {
+    content: 'RainbowKey's DM';
+}
+
+.discord-messages:first-of-type > .discord-message:before {
+    content: '#main-chat';
+}
+
+.discord-messages > .discord-message:hover:before {
+    transform: scale(1.025);
+    transform: rotate(-2.5deg);
+    border-radius: 12.5px;
+    transition: .3s;
+}
+</style>
 <h2 id="syntax"><a class="header" href="#syntax">Syntax</a></h2>
 <pre><code>$dm
 </code></pre>
@@ -144,12 +177,12 @@ $dm
 Hello!
 </code></pre>
 <discord-messages>
-    <discord-message author="RainbowKey" role-color="#E67E22">
+    <discord-message role-color="#E67E22" author="RainbowKey">
         !example
     </discord-message>
 </discord-messages>
 <discord-messages>
-    <discord-message author="BDFD Support" verified bot>
+    <discord-message bot verified author="BDFD Support">
         Hello!
     </discord-message>
 </discord-messages>
