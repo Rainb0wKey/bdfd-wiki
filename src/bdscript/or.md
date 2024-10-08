@@ -79,4 +79,8 @@ $or[$nickname==MineBartekSA;$message==Update]
   verified: true
   content: |
     true
-  ```
+```
+
+```admonish info title="Read more"
+For more information, read the the [If Statements Guide](../guides/ifStatements.md).
+```
