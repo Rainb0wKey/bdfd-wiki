@@ -81,4 +81,6 @@ $and[$nickname==MineBartekSA;$message==Update]
     true
   ```
 
-> For more info, see the [If Guide](../guides/ifStatements.md).
+```admonish info title="Read more"
+For more information, read the the [If Statements Guide](../guides/ifStatements.md).
+```
