@@ -147,16 +147,24 @@
 <h2 id="syntax"><a class="header" href="#syntax">Syntax</a></h2>
 <pre><code>$botTyping
 </code></pre>
+<div id="admonition-info" class="admonition admonish-info" role="note" aria-labelledby="admonition-info-title">
+<div class="admonition-title">
+<div id="admonition-info-title">
+<p>Info</p>
+</div>
+<a class="admonition-anchor-link" href="#admonition-info"></a>
+</div>
+<div>
+<p>Using <code>$botTyping</code> will add a 2-3 second delay before your bot’s response, simulating the typing process.</p>
+</div>
+</div>
 <h2 id="example"><a class="header" href="#example">Example</a></h2>
 <pre><code>$nomention
 $botTyping
 Hello $username!
 </code></pre>
-<ul>
-<li>Command started:</li>
-</ul>
 <discord-messages>
-    <discord-message role-color="#E67E22" author="RainbowKey">
+    <discord-message author="RainbowKey" role-color="#E67E22">
         !example
     </discord-message>
 </discord-messages>
@@ -167,7 +175,7 @@ Hello $username!
     <discord-message author="RainbowKey" role-color="#E67E22">
         !example
     </discord-message>
-    <discord-message bot author="BDFD Support" verified role-color="#378afa">
+    <discord-message author="BDFD Support" bot verified role-color="#378afa">
         Hello RainbowKey!
     </discord-message>
 </discord-messages>
