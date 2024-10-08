@@ -135,6 +135,39 @@
                         </a>
                         <h1 id="blacklistservers"><a class="header" href="#blacklistservers">$blackListServers</a></h1>
 <p>Blocks certain servers from using the command.</p>
+<style>
+.discord-messages {
+    margin-top: 1.5rem;
+}
+
+.discord-messages > .discord-message:before {
+    color: var(--color1);
+    background: var(--color3);
+    border-radius: 10px;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    margin-left: -1.8rem;
+    margin-top: -.9rem;
+    width: fit-content;
+    transition: .3s;
+    z-index: 1000;
+}
+
+.discord-messages > .discord-message:before {
+    content: 'Discord Server';
+}
+
+.discord-messages:first-of-type > .discord-message:before {
+    content: 'BDFD Support Server';
+}
+
+.discord-messages > .discord-message:hover:before {
+    transform: scale(1.025);
+    transform: rotate(-2.5deg);
+    border-radius: 12.5px;
+    transition: .3s;
+}
+</style>
 <h2 id="syntax"><a class="header" href="#syntax">Syntax</a></h2>
 <pre><code>$blackListServers[Guild IDs;...;Error message]
 </code></pre>
@@ -157,18 +190,18 @@ Pong! $ping ms
 *Guild ID: $guildID*
 </code></pre>
 <discord-messages>
-    <discord-message role-color="#E67E22" author="RainbowKey">
+    <discord-message author="RainbowKey" role-color="#E67E22">
         !example
     </discord-message>
-    <discord-message role-color="#378afa" author="BDFD Support" verified bot>
+    <discord-message bot author="BDFD Support" role-color="#378afa" verified>
         ❌ You can't use this command!
     </discord-message>
 </discord-messages>
 <discord-messages>
-    <discord-message author="RainbowKey" role-color="#E67E22">
+    <discord-message role-color="#E67E22" author="RainbowKey">
         !example
     </discord-message>
-    <discord-message verified role-color="#378afa" author="BDFD Support" bot>
+    <discord-message verified bot author="BDFD Support" role-color="#378afa">
         Pong! 1 ms<br /><i>Guild ID: 1009018669982031912</i>
     </discord-message>
 </discord-messages>
