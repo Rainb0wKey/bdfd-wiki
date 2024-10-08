@@ -138,9 +138,17 @@
 <h2 id="syntax"><a class="header" href="#syntax">Syntax</a></h2>
 <pre><code>$authorIcon[Image URL;(Index)]
 </code></pre>
-<blockquote>
+<div id="admonition-failure" class="admonition admonish-failure" role="note" aria-labelledby="admonition-failure-title">
+<div class="admonition-title">
+<div id="admonition-failure-title">
+<p>Failure</p>
+</div>
+<a class="admonition-anchor-link" href="#admonition-failure"></a>
+</div>
+<div>
 <p><code>$authorIcon[]</code> will not work if there is no text provided in <a href="./author.html"><code>$author[]</code></a>.</p>
-</blockquote>
+</div>
+</div>
 <h3 id="parameters"><a class="header" href="#parameters">Parameters</a></h3>
 <ul>
 <li><code>Image URL</code> <code>(Type: URL || Flag: Emptiable)</code>: The image for the author icon. This must be a valid image URL.</li>
@@ -152,12 +160,12 @@ $authorIcon[$authorAvatar]
 $author[⬅️ That is the author icon. This is the author text.]
 </code></pre>
 <discord-messages>
-    <discord-message role-color="#EE7908" author="Nicky">
+    <discord-message author="Nicky" role-color="#EE7908">
         !example
     </discord-message>
-    <discord-message verified role-color="#748BD4" bot author="Wiki Bot">
+    <discord-message role-color="#748BD4" author="Wiki Bot" bot verified>
         <none>
-        <discord-embed author-name="⬅️ That is the author icon. This is the author text." author-image="https://user-images.githubusercontent.com/111157596/257052136-4b8d5715-b381-4d5f-8c46-8ae0be53c8d8.png" slot="embeds">
+        <discord-embed author-image="https://user-images.githubusercontent.com/111157596/257052136-4b8d5715-b381-4d5f-8c46-8ae0be53c8d8.png" slot="embeds" author-name="⬅️ That is the author icon. This is the author text.">
         </discord-embed>
     </discord-message>
 </discord-messages>
