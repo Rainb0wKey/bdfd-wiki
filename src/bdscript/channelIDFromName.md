@@ -35,3 +35,7 @@ Channel ID: $channelIDFromName[$mesaage]
   content: |
     Channel ID: 1014546423032860754
 ```
+
+```admonish question title="What is this?"
+How [`$message`](./message.md) works?
+```
