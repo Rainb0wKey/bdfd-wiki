@@ -4,6 +4,13 @@
   <span id="ExperimentTag">Experiment</span>
 </div>
 
+<style>
+.discord-messages {
+    margin-top: .5rem;
+    margin-bottom: .5rem;
+}
+</style>
+
 Changes the way how triggers are read.
 
 ## Syntax
