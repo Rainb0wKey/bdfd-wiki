@@ -13,7 +13,7 @@ $if[$message==BDFD]
   I love BDFD!
 $endif
 ```
-### With `$endif`
+
 ``` discord yaml
 - user_id: 803569638084313098
   username: RainbowKey
@@ -27,8 +27,9 @@ $endif
   content: |
     I love BDFD!
 ```
-\
-### Without `$endif`
+
+- Without `$endif`:
+
 ``` discord yaml
 - user_id: 803569638084313098
   username: RainbowKey
@@ -44,6 +45,8 @@ $endif
   content: |
     <code>$if</code> not closed with <code>$endif</code>
 ```
-\
 
-> For more info, see the [If Guide](../guides/ifStatements.md).
+
+```admonish info title="Read more"
+For more information, read the the [If Statements Guide](../guides/ifStatements.md).
+```
