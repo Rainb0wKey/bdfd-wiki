@@ -45,5 +45,6 @@ $awaitFunc[say]
     I love BDFD!
 ```
 
-
-> For more info, see the [Awaited Commands Guide](../guides/general/awaitedCommands.md).
+```admonish info title="Read more"
+For more information, read the the [Awaited Commands Guide](../guides/general/awaitedCommands.md).
+```
