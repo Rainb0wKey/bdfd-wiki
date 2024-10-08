@@ -158,14 +158,14 @@ Here, are all possible values for the <code>style</code> function argument.</p>
 <li><code>link</code> - Redirect button</li>
 </ul>
 <discord-messages>
-    <discord-message verified role-color="#378afa" author="BDFD Support" bot>
+    <discord-message bot author="BDFD Support" role-color="#378afa" verified>
         Buttons:
         <discord-attachments slot="components">
             <discord-action-row>
                 <discord-button type="primary">
                     Primary
                 </discord-button>
-                <discord-button disabled type="primary">
+                <discord-button type="primary" disabled>
                     Primary
                 </discord-button>
             </discord-action-row>
@@ -181,7 +181,7 @@ Here, are all possible values for the <code>style</code> function argument.</p>
                 <discord-button type="destructive">
                     Danger
                 </discord-button>
-                <discord-button type="destructive" disabled>
+                <discord-button disabled type="destructive">
                     Danger
                 </discord-button>
             </discord-action-row>
@@ -195,19 +195,19 @@ Here, are all possible values for the <code>style</code> function argument.</p>
             </discord-action-row>
         </discord-attachments>
     </discord-message>
-    <discord-message role-color="#378afa" verified bot author="BDFD Support">
+    <discord-message role-color="#378afa" bot author="BDFD Support" verified>
         Other Buttons:
         <discord-attachments slot="components">
             <discord-action-row>
-                <discord-button url="https://nilpointer-software.github.io/bdfd-wiki/nightly/" type="secondary">
+                <discord-button type="secondary" url="https://nilpointer-software.github.io/bdfd-wiki/nightly/">
                     Link
                 </discord-button>
-                <discord-button disabled type="secondary" url="https://nilpointer-software.github.io/bdfd-wiki/nightly/">
+                <discord-button type="secondary" disabled url="https://nilpointer-software.github.io/bdfd-wiki/nightly/">
                     Link
                 </discord-button>
             </discord-action-row>
             <discord-action-row>
-                <discord-button emoji="https://em-content.zobj.net/thumbs/120/mozilla/36/heavy-black-heart_2764.png" type="secondary">
+                <discord-button type="secondary" emoji="https://em-content.zobj.net/thumbs/120/mozilla/36/heavy-black-heart_2764.png">
                     Emoji
                 </discord-button>
             </discord-action-row>
