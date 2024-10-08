@@ -41,5 +41,5 @@ $calculate[$message] 🧠
 ```
 
 ```admonish question title="What is this?"
-How [`$enableDecimals[]`](./enableDecimals.md) works?
+How [`$enableDecimals[]`](./enableDecimals.md) and [`$message`](./message.md) works?
 ```
