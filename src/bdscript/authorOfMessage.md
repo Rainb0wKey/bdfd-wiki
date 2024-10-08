@@ -38,3 +38,5 @@ Author of message: $username[$authorOfMessage[$message[1];$message[2]]]
     Author of message: Kemi
 ```
 
+```admonish note
+You can disable mention with the [`$allowUserMentions[]`](./allowUserMentions.md) function.
