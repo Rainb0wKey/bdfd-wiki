@@ -1,6 +1,7 @@
 # Summary
 
 [Home](./foreword.md)
+[404](./404.md)
 [Settings](./settings/settings.md)
 [Changelog](./CHANGELOG.md)
 [Flowchart Changelog](./FLOWCHART_CHANGELOG.md)
