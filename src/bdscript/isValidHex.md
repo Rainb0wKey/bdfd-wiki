@@ -67,7 +67,7 @@ How [`$message`](./message.md) works?
   <p>Here you can understand how this function works.</p>
   <div class="function-input">
     <p>Input:</p>
-    <span id="play-code">$isInteger[<textarea id="play-input" rows="1" maxlength="20" oninput="isValidHexPlayground(inputValue)">#E67E22</textarea>]</span>
+    <span id="play-code">$isValidHex[<textarea id="play-input" rows="1" maxlength="20" oninput="isValidHexPlayground(this.value)">#E67E22</textarea>]</span>
   </div>
   <div class="function-output">
     <p>Output:</p>
