@@ -3,7 +3,7 @@ function handlePlaygroundInput(inputValue, functionName, operation) {
   const playOutput = document.getElementById('play-output');
 
   if (!isNaN(inputValue) && inputValue !== "") {
-    const result = operation(inputValue); // Apply the operation
+    const result = operation(inputValue);
     playOutput.textContent = `Result: ${result}`;
   } else {
     if (inputValue === "") {
@@ -60,7 +60,11 @@ function isNumberPlayground(inputValue) {
 // $isInteger[]
 function isIntegerPlayground(inputValue) {
   const playOutput = document.getElementById('play-output');
-  playOutput.textContent = `Is integer? ${Number.isInteger(parseFloat(inputValue))}`;
+  if (inputValue === "") {
+    playOutput.textContent = `❌ Function $isInteger at 1:7 returned an error: expected valid value in position 1, got empty value`;
+  } else {
+    playOutput.textContent = `Is integer? ${Number.isInteger(parseFloat(inputValue))}`;
+  }
 }
 
 // $isValidHex[]
