@@ -1,7 +1,7 @@
 # $isInteger
 Checks if the specified value is an integer or not.
 
-```admonish tip
+```admonish note
 `true` means the value is an integer, `false` means it isn’t.
 ```
 
