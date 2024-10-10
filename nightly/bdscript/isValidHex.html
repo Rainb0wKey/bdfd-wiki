@@ -161,19 +161,19 @@ Is valid HEX? $isValidHex[$message]
     <discord-message role-color="#E67E22" author="RainbowKey">
         !example #E67E22
     </discord-message>
-    <discord-message bot author="BDFD Support" role-color="#378afa" verified>
+    <discord-message verified author="BDFD Support" bot role-color="#378afa">
         Is valid HEX? true
     </discord-message>
     <discord-message author="RainbowKey" role-color="#E67E22">
         !example E67E22
     </discord-message>
-    <discord-message role-color="#378afa" author="BDFD Support" verified bot>
+    <discord-message role-color="#378afa" bot author="BDFD Support" verified>
         Is valid HEX? true
     </discord-message>
     <discord-message author="RainbowKey" role-color="#E67E22">
         !example text
     </discord-message>
-    <discord-message verified bot author="BDFD Support" role-color="#378afa">
+    <discord-message verified role-color="#378afa" author="BDFD Support" bot>
         Is valid HEX? false
     </discord-message>
 </discord-messages>
@@ -193,7 +193,7 @@ Is valid HEX? $isValidHex[$message]
   <p>Here you can understand how this function works.</p>
   <div class="function-input">
     <p>Input:</p>
-    <span id="play-code">$isInteger[<textarea id="play-input" rows="1" maxlength="20" oninput="isValidHexPlayground(inputValue)">#E67E22</textarea>]</span>
+    <span id="play-code">$isValidHex[<textarea id="play-input" rows="1" maxlength="20" oninput="isValidHexPlayground(this.value)">#E67E22</textarea>]</span>
   </div>
   <div class="function-output">
     <p>Output:</p>
