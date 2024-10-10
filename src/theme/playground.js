@@ -69,7 +69,9 @@ function isValidHexPlayground(inputValue) {
   playOutput.textContent = `Is valid HEX? ${/^#?[0-9a-fA-F]+$/.test(inputValue)}`;
 }
 
+// $isBoolean[]
 function isBooleanPlayground(inputValue) {
   const playOutput = document.getElementById('play-output');
-  playOutput.textContent = `Is boolean? ${inputValue.toLowerCase() === 'true' || inputValue.toLowerCase() === 'false'}`;
+  const booleanValues = ['true', 'false', 'on', 'off', 'enable', 'disable', 'yes', 'no'];
+  playOutput.textContent = `Is valid HEX? ${booleanValues.includes(inputValue)}`;
 }
