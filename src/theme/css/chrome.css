@@ -117,6 +117,7 @@ html {
     border-color: var(--color2);
     padding-left: .5rem;
     padding-right: .5rem;
+    max-width: 97%;
     resize: none;
     border-radius: 5px;
     outline: none;
