@@ -1,7 +1,9 @@
 # $isValidHex
 Checks whether the given color hex is valid or not.
 
-> 🧙‍♂️ "true" means the color hex is valid, "false" means it isn't.
+```admonish tip
+`true` means the color hex is valid, `false` means it isn’t.
+```
 
 ## Syntax
 ```
