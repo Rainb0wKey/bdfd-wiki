@@ -22,7 +22,7 @@ enable | disable
 ## Example
 ```
 $nomention
-Is boolean?: `$isBoolean[$message]`
+Is boolean? `$isBoolean[$message]`
 ```
 
 ``` discord yaml
@@ -37,7 +37,7 @@ Is boolean?: `$isBoolean[$message]`
   bot: true
   verified: true
   content: |
-    Is boolean?: <code>true</code>
+    Is boolean? <code>true</code>
 - user_id: 803569638084313098
   username: RainbowKey
   color: "#E67E22"
@@ -49,7 +49,7 @@ Is boolean?: `$isBoolean[$message]`
   bot: true
   verified: true
   content: |
-    Is boolean?: <code>true</code>
+    Is boolean? <code>true</code>
 - user_id: 803569638084313098
   username: RainbowKey
   color: "#E67E22"
@@ -61,5 +61,22 @@ Is boolean?: `$isBoolean[$message]`
   bot: true
   verified: true
   content: |
-    Is boolean?: <code>false</code>
+    Is boolean? <code>false</code>
 ```
+
+```admonish question title="What is this?"
+How [`$message`](./message.md) works?
+```
+
+<div class=function-playground>
+  <h3>🤖 Playground</h3>
+  <p>Here you can understand how this function works.</p>
+  <div class="function-input">
+    <p>Input:</p>
+    <span id="play-code">$isBoolean[<textarea id="play-input" rows="1" maxlength="20" oninput="isBooleanPlayground(this.value)">true</textarea>]</span>
+  </div>
+  <div class="function-output">
+    <p>Output:</p>
+    <span id="play-output">Is boolean? true</span>
+  </div>
+</div>
