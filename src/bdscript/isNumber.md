@@ -16,7 +16,7 @@ $isNumber[Value]
 ## Example
 ```
 $nomention
-Number? $isNumber[$message]
+Is number? $isNumber[$message]
 ```
 
 ``` discord yaml
@@ -31,7 +31,7 @@ Number? $isNumber[$message]
   bot: true
   verified: true
   content: |
-    Number? true
+    Is number? true
 - user_id: 803569638084313098
   username: RainbowKey
   color: "#E67E22"
@@ -43,7 +43,7 @@ Number? $isNumber[$message]
   bot: true
   verified: true
   content: |
-    Number? true
+    Is number? true
 - user_id: 803569638084313098
   username: RainbowKey
   color: "#E67E22"
@@ -55,7 +55,7 @@ Number? $isNumber[$message]
   bot: true
   verified: true
   content: |
-    Number? false
+    Is number? false
 ```
 
 ```admonish question title="What is this?"
@@ -71,6 +71,6 @@ How [`$message`](./message.md) works?
   </div>
   <div class="function-output">
     <p>Output:</p>
-    <span id="play-output">Number? true</span>
+    <span id="play-output">Is number? true</span>
   </div>
 </div>
