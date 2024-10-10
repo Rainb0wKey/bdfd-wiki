@@ -54,17 +54,22 @@ function argCountPlayground(inputValue) {
 // $isNumber[]
 function isNumberPlayground(inputValue) {
   const playOutput = document.getElementById('play-output');
-  playOutput.textContent = `Result: ${!isNaN(parseFloat(inputValue)) && isFinite(inputValue)}`; 
+  playOutput.textContent = `Is number? ${!isNaN(parseFloat(inputValue)) && isFinite(inputValue)}`; 
 }
 
 // $isInteger[]
 function isIntegerPlayground(inputValue) {
   const playOutput = document.getElementById('play-output');
-  playOutput.textContent = `Result: ${Number.isInteger(parseFloat(inputValue))}`;
+  playOutput.textContent = `Is integer? ${Number.isInteger(parseFloat(inputValue))}`;
 }
 
 // $isValidHex[]
 function isValidHexPlayground(inputValue) {
   const playOutput = document.getElementById('play-output');
-  playOutput.textContent = `Result: ${/^[0-9a-fA-F]+$/.test(inputValue)}`;
+  playOutput.textContent = `Is valid HEX? ${/^[0-9a-fA-F]+$/.test(inputValue)}`;
+}
+
+function isBooleanPlayground(inputValue) {
+  const playOutput = document.getElementById('play-output');
+  playOutput.textContent = `Is boolean? ${inputValue.toLowerCase() === 'true' || inputValue.toLowerCase() === 'false'}`;
 }
