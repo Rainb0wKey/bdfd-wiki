@@ -156,7 +156,7 @@ List of supported emoji aliases: <a href="https://botdesignerdiscord.com/public/
 $addCmdReactions[$message]
 </code></pre>
 <discord-messages>
-    <discord-message role-color="#E67E22" author="RainbowKey">
+    <discord-message author="RainbowKey" role-color="#E67E22">
         !example ❤️
         <discord-reactions slot="reactions">
             <discord-reaction count="1" name=":emoji:" emoji="https://upload.wikimedia.org/wikipedia/commons/7/70/Symbolic_Love_Heart.png">
@@ -174,7 +174,8 @@ $addCmdReactions[$message]
 <li>Copy the ID it returns. (The emoji ID should be in this format: <code>&lt;:emojiName:emojiID&gt;</code>. If the emoji is animated, it should look like this: <code>&lt;a:emojiName:emojiID&gt;</code>)</li>
 <li>Input the emoji ID into <code>$addCmdReactions[]</code>. Example:</li>
 </ol>
-<p><code>$addCmdReactions[&lt;:hollyDab:828628880629825546&gt;]</code></p>
+<pre><code>$addCmdReactions[&lt;:hollyDab:828628880629825546&gt;]
+</code></pre>
 <blockquote>
 <p>If you’re still having issues, check the <a href="../resources/troubleshooting.html#the-bot-fails-to-add-reactions">Troubleshooting</a> page.</p>
 </blockquote>
