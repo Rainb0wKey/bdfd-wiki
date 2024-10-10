@@ -22,7 +22,7 @@ enable | disable
 ## Example
 ```
 $nomention
-Is boolean? `$isBoolean[$message]`
+Is boolean? $isBoolean[$message]
 ```
 
 ``` discord yaml
@@ -37,7 +37,7 @@ Is boolean? `$isBoolean[$message]`
   bot: true
   verified: true
   content: |
-    Is boolean? <code>true</code>
+    Is boolean? true
 - user_id: 803569638084313098
   username: RainbowKey
   color: "#E67E22"
@@ -49,7 +49,7 @@ Is boolean? `$isBoolean[$message]`
   bot: true
   verified: true
   content: |
-    Is boolean? <code>true</code>
+    Is boolean? true
 - user_id: 803569638084313098
   username: RainbowKey
   color: "#E67E22"
@@ -61,7 +61,7 @@ Is boolean? `$isBoolean[$message]`
   bot: true
   verified: true
   content: |
-    Is boolean? <code>false</code>
+    Is boolean? false
 ```
 
 ```admonish question title="What is this?"
