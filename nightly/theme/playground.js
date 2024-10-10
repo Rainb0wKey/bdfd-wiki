@@ -66,7 +66,7 @@ function isIntegerPlayground(inputValue) {
 // $isValidHex[]
 function isValidHexPlayground(inputValue) {
   const playOutput = document.getElementById('play-output');
-  playOutput.textContent = `Is valid HEX? ${/^[0-9a-fA-F]+$/.test(inputValue)}`;
+  playOutput.textContent = `Is valid HEX? ${/^#?[0-9a-fA-F]+$/.test(inputValue)}`;
 }
 
 function isBooleanPlayground(inputValue) {
