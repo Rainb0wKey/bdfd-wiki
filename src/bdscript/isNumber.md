@@ -57,3 +57,20 @@ Number? $isNumber[$message]
   content: |
     Number? false
 ```
+
+```admonish question title="What is this?"
+How [`$message`](./message.md) works?
+```
+
+<div class=function-playground>
+  <h3>🤖 Playground</h3>
+  <p>Here you can understand how this function works.</p>
+  <div class="function-input">
+    <p>Input:</p>
+    <span id="play-code">$isNumber[<textarea id="play-input" rows="1" maxlength="20" oninput="isNumberPlayground(this.value)">1</textarea>]</span>
+  </div>
+  <div class="function-output">
+    <p>Output:</p>
+    <span id="play-output">Number? true</span>
+  </div>
+</div>
