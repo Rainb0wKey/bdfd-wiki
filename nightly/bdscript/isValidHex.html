@@ -135,9 +135,17 @@
                         </a>
                         <h1 id="isvalidhex"><a class="header" href="#isvalidhex">$isValidHex</a></h1>
 <p>Checks whether the given color hex is valid or not.</p>
-<blockquote>
-<p>🧙‍♂️ “true” means the color hex is valid, “false” means it isn’t.</p>
-</blockquote>
+<div id="admonition-tip" class="admonition admonish-tip" role="note" aria-labelledby="admonition-tip-title">
+<div class="admonition-title">
+<div id="admonition-tip-title">
+<p>Tip</p>
+</div>
+<a class="admonition-anchor-link" href="#admonition-tip"></a>
+</div>
+<div>
+<p><code>true</code> means the color hex is valid, <code>false</code> means it isn’t.</p>
+</div>
+</div>
 <h2 id="syntax"><a class="header" href="#syntax">Syntax</a></h2>
 <pre><code>$isValidHex[Color hex]
 </code></pre>
@@ -153,19 +161,19 @@ Is valid HEX? $isValidHex[$message]
     <discord-message role-color="#E67E22" author="RainbowKey">
         !example #E67E22
     </discord-message>
-    <discord-message verified role-color="#378afa" author="BDFD Support" bot>
+    <discord-message bot author="BDFD Support" role-color="#378afa" verified>
         Is valid HEX? true
     </discord-message>
-    <discord-message role-color="#E67E22" author="RainbowKey">
+    <discord-message author="RainbowKey" role-color="#E67E22">
         !example E67E22
     </discord-message>
-    <discord-message role-color="#378afa" author="BDFD Support" bot verified>
+    <discord-message role-color="#378afa" author="BDFD Support" verified bot>
         Is valid HEX? true
     </discord-message>
     <discord-message author="RainbowKey" role-color="#E67E22">
         !example text
     </discord-message>
-    <discord-message author="BDFD Support" role-color="#378afa" verified bot>
+    <discord-message verified bot author="BDFD Support" role-color="#378afa">
         Is valid HEX? false
     </discord-message>
 </discord-messages>
