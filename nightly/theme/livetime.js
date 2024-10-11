@@ -56,6 +56,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
   var timeElement = document.getElementById('time-mark');
   if (timeElement) {
-    timeElement.innerHTML = `New York Time: ${getFormattedTime('America/New_York').split(',')[0]}, ${new Date().getDate()} | Moscow Time: ${getFormattedTime('Europe/Moscow').split(',')[0]}, ${new Date().getDate()}`;
+    timeElement.innerHTML = `New York Time: ${getFormattedTime('America/New_York').split(',')[0]}, ${new Date().getDate()}
+<br>Moscow Time: ${getFormattedTime('Europe/Moscow').split(',')[0]}, ${new Date().getDate()}`; // Добавлено <br> для новой строки
   }
 });
