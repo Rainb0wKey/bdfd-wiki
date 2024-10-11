@@ -138,6 +138,17 @@
 <h2 id="syntax"><a class="header" href="#syntax">Syntax</a></h2>
 <pre><code>$enableDecimals[Enable?]
 </code></pre>
+<div id="admonition-note" class="admonition admonish-note" role="note" aria-labelledby="admonition-note-title">
+<div class="admonition-title">
+<div id="admonition-note-title">
+<p>Note</p>
+</div>
+<a class="admonition-anchor-link" href="#admonition-note"></a>
+</div>
+<div>
+<p>You can use <a href="./round.html"><code>$round[]</code></a>, <a href="./ceil.html"><code>$ceil[]</code></a>, <a href="./floor.html"><code>$floor[]</code></a> for work with decimal numbers.</p>
+</div>
+</div>
 <h3 id="parameters"><a class="header" href="#parameters">Parameters</a></h3>
 <ul>
 <li><code>Enable?</code> <code>(Type: Bool || Flag: Required)</code>: Whether to enable decimals in math functions or not, <code>yes</code> means it’s enabled and <code>no</code> means it’s disabled.</li>
@@ -150,10 +161,10 @@ $enableDecimals[yes]
 Result: $random[1;5]
 </code></pre>
 <discord-messages>
-    <discord-message author="RainbowKey" role-color="#E67E22">
+    <discord-message role-color="#E67E22" author="RainbowKey">
         !example
     </discord-message>
-    <discord-message bot role-color="#378afa" verified author="BDFD Support">
+    <discord-message verified bot author="BDFD Support" role-color="#378afa">
         Result: 3.381
     </discord-message>
 </discord-messages>
@@ -161,16 +172,24 @@ Result: $random[1;5]
 <li>Without <code>$enableDecimals[]</code> (or result with <code>$enableDecimals[no]</code>):</li>
 </ul>
 <discord-messages>
-    <discord-message role-color="#E67E22" author="RainbowKey">
+    <discord-message author="RainbowKey" role-color="#E67E22">
         !example
     </discord-message>
-    <discord-message bot role-color="#378afa" author="BDFD Support" verified>
+    <discord-message author="BDFD Support" role-color="#378afa" verified bot>
         Result: 3
     </discord-message>
 </discord-messages>
-<blockquote>
-<p><a href="./randomComplex.html">How <code>$random[]</code> works?</a></p>
-</blockquote>
+<div id="admonition-what-is-this" class="admonition admonish-question" role="note" aria-labelledby="admonition-what-is-this-title">
+<div class="admonition-title">
+<div id="admonition-what-is-this-title">
+<p>What is this?</p>
+</div>
+<a class="admonition-anchor-link" href="#admonition-what-is-this"></a>
+</div>
+<div>
+<p>How <a href="./randomComplex.html"><code>$random[]</code></a> works?</p>
+</div>
+</div>
 
                     </main>
 
