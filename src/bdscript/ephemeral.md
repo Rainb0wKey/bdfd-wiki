@@ -1,11 +1,14 @@
 # $ephemeral
 Makes the bot's response ephemeral.
 
+```admonish warning
+Can only be used in **[Slash Commands](../guides/general/interactions/slashCommands/aboutSlashCommands.md)**, **[`$onInteraction`](../callbacks/onInteraction.md)** and **[`$onInteraction[]`](../callbacks/onInteractionComplex.md)**.
+```
+
 ## Syntax
 ```
 $ephemeral
 ```
-> ⚠️ You can get an ephemeral response only through an interaction (slash commands, buttons, select menus, etc.)
 
 ## Example
 ```
