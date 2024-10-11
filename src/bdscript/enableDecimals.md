@@ -6,6 +6,10 @@ Enables/disables decimals in math functions.
 $enableDecimals[Enable?]
 ```
 
+```admonish note
+You can use [`$round[]`](./round.md), [`$ceil[]`](./ceil.md), [`$floor[]`](./floor.md) for work with decimal numbers.
+```
+
 ### Parameters
 - `Enable?` `(Type: Bool || Flag: Required)`: Whether to enable decimals in math functions or not, `yes` means it's enabled and `no` means it's disabled.
 
@@ -49,4 +53,6 @@ Result: $random[1;5]
     Result: 3
 ```
 
-> [How `$random[]` works?](./randomComplex.md)
+```admonish question title="What is this?"
+How [`$random[]`](./randomComplex.md) works?
+```
