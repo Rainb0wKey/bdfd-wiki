@@ -2,7 +2,7 @@
 Makes the bot's response ephemeral.
 
 ```admonish warning
-Can only be used in **[Slash Commands](../guides/general/interactions/slashCommands/aboutSlashCommands.md)**, **[`$onInteraction`](../callbacks/onInteraction.md)** and **[`$onInteraction[]`](../callbacks/onInteractionComplex.md)**.
+Can only be used in [Slash Commands](../guides/general/interactions/slashCommands/aboutSlashCommands.md), [`$onInteraction`](../callbacks/onInteraction.md) and [`$onInteraction[]`](../callbacks/onInteractionComplex.md).
 ```
 
 ## Syntax
