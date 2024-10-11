@@ -144,14 +144,20 @@
 </ul>
 <h2 id="example"><a class="header" href="#example">Example</a></h2>
 <pre><code>$nomention
-
 $time[America/New_York]
-New York : $hour:$minute:$second
-
-$time[Europe/Warsaw]
-Warsaw : $optOff[$hour:$minute:$second]
+New York Time: $hour:$minute, $day
+$time[Europe/Moscow]
+Moscow Time: $optOff[$hour:$minute, $day]
 </code></pre>
-<p><img src="https://user-images.githubusercontent.com/95774950/198847125-b093d143-7890-4478-a437-1c80c35c4c41.png" alt="Screenshot_20221029_234758" /></p>
+<discord-messages>
+    <discord-message author="RainbowKey" role-color="#E67E22">
+        !example 
+    </discord-message>
+    <discord-message author="BDFD Support" bot verified role-color="#378afa">
+        <div id="time-mark"></div>
+    </discord-message>
+</discord-messages>
+<script src="../theme/livetime.js"></script>
 
                     </main>
 
