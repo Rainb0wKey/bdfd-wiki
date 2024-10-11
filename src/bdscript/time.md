@@ -12,11 +12,25 @@ $time[Timezone]
 ## Example
 ```
 $nomention
-
 $time[America/New_York]
-New York : $hour:$minute:$second
-
-$time[Europe/Warsaw]
-Warsaw : $optOff[$hour:$minute:$second]
+New York Time: $hour:$minute, $day
+$time[Europe/Moscow]
+Moscow Time: $optOff[$hour:$minute, $day]
 ```
-![Screenshot_20221029_234758](https://user-images.githubusercontent.com/95774950/198847125-b093d143-7890-4478-a437-1c80c35c4c41.png)
+
+```discord yaml
+- user_id: 803569638084313098
+  username: RainbowKey
+  color: "#E67E22"
+  content: |
+    !example 
+- user_id: 1009018156494368798
+  username: BDFD Support
+  color: "#378afa"
+  bot: true
+  verified: true
+  content: |
+    <div id="time-mark"></div>
+```
+
+<script src="../theme/livetime.js"></script>
