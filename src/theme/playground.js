@@ -79,3 +79,21 @@ function isBooleanPlayground(inputValue) {
   const booleanValues = ['true', 'false', 'on', 'off', 'enable', 'disable', 'yes', 'no'];
   playOutput.textContent = `Is valid HEX? ${booleanValues.includes(inputValue)}`;
 }
+
+// $toLowercase[]
+function toLowercasePlayground(inputValue) {
+  const playOutput = document.getElementById('play-output');
+  playOutput.textContent = `${inputValue.toLowerCase()}`;
+}
+
+// $toUppercase[]
+function toUppercasePlayground(inputValue) {
+  const playOutput = document.getElementById('play-output');
+  playOutput.textContent = `${inputValue.toUpperCase()}`;
+}
+
+// $toTitleCase[]
+function toTitleCasePlayground(inputValue) {
+  const playOutput = document.getElementById('play-output');
+  playOutput.textContent = `${inputValue.replace(/\w\S*/g, (txt) => txt.charAt(0).toUpperCase() + txt.substr(1).toLowerCase())}`;
+}
