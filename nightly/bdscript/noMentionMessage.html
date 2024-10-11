@@ -140,9 +140,27 @@
 </code></pre>
 <h2 id="example"><a class="header" href="#example">Example</a></h2>
 <pre><code>$nomention
-$noMentionMessage
+Message: $noMentionMessage
 </code></pre>
-<p><img src="https://user-images.githubusercontent.com/69215413/123551762-2182d300-d741-11eb-8d98-1d2e4619dfb0.png" alt="example" /></p>
+<discord-messages>
+    <discord-message author="RainbowKey" role-color="#E67E22">
+        !example Hello <discord-mention>MineBartekSA</discord-mention>!
+    </discord-message>
+    <discord-message verified author="BDFD Support" bot role-color="#378afa">
+        Hello !
+    </discord-message>
+</discord-messages>
+<ul>
+<li>Lets use <a href="./message.html"><code>$message</code></a> instead of <code>$noMentionMessage</code>:</li>
+</ul>
+<discord-messages>
+    <discord-message role-color="#E67E22" author="RainbowKey">
+        !example Hello <discord-mention>MineBartekSA</discord-mention>!
+    </discord-message>
+    <discord-message author="BDFD Support" role-color="#378afa" verified bot>
+        Hello @MineBartekSA!
+    </discord-message>
+</discord-messages>
 
                     </main>
 
