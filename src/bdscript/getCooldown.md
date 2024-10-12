@@ -47,5 +47,5 @@ Hello world!
   bot: true
   verified: true
   content: |
-    You're on cooldown! (In 1 hour)
+    You're on cooldown! (<div class="discord-time-mark">In 1 hour</div>)
 ```
