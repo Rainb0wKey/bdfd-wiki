@@ -131,7 +131,6 @@
                         </nav>
                         <a href="https://github.com/NilPointer-Software/bdfd-wiki/edit/dev/src/bdscript/author.md" class="editPage">
                             <i class='fa fa-edit' id="editPageIcon"></i>
-                            <span>Edit this page</span>
                         </a>
                         <h1 id="author"><a class="header" href="#author">$author</a></h1>
 <p>Adds author text to an embed.</p>
@@ -148,11 +147,11 @@
 $author[This is the author text!]
 </code></pre>
 <discord-messages>
-    <discord-message role-color="#EE7908" author="Nicky">
+    <discord-message author="Nicky" role-color="#EE7908">
         !author
     </discord-message>
-    <discord-message author="Wiki Bot" bot role-color="#748BD4" verified>
-        <discord-embed slot="embeds" author-name="This is the author text!">
+    <discord-message author="Wiki Bot" verified role-color="#748BD4" bot>
+        <discord-embed author-name="This is the author text!" slot="embeds">
         </discord-embed>
     </discord-message>
 </discord-messages>

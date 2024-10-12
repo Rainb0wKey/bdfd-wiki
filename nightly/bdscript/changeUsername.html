@@ -131,7 +131,6 @@
                         </nav>
                         <a href="https://github.com/NilPointer-Software/bdfd-wiki/edit/dev/src/bdscript/changeUsername.md" class="editPage">
                             <i class='fa fa-edit' id="editPageIcon"></i>
-                            <span>Edit this page</span>
                         </a>
                         <h1 id="changeusername"><a class="header" href="#changeusername">$changeUsername</a></h1>
 <p>Changes the mentioned user’s nickname.</p>
@@ -151,7 +150,7 @@ Changed &lt;@$mentioned[1]&gt;'s nickname to **$noMentionMessage**.
     <discord-message author="Nicky" role-color="#EE7908">
         !example <discord-mention>Cool Bot</discord-mention> Cool Bot
     </discord-message>
-    <discord-message bot verified author="Wiki Bot" role-color="#748BD4">
+    <discord-message author="Wiki Bot" verified role-color="#748BD4" bot>
         Changed <discord-mention>Cool Bot</discord-mention>'s nickname to <b>Cool Bot</b>.
     </discord-message>
 </discord-messages>

@@ -131,7 +131,6 @@
                         </nav>
                         <a href="https://github.com/NilPointer-Software/bdfd-wiki/edit/dev/src/bdscript/reply.md" class="editPage">
                             <i class='fa fa-edit' id="editPageIcon"></i>
-                            <span>Edit this page</span>
                         </a>
                         <h1 id="reply"><a class="header" href="#reply">$reply</a></h1>
 <p>Replies to the author’s message.</p>
@@ -144,11 +143,11 @@ $reply
 Hello, $displayName!
 </code></pre>
 <discord-messages>
-    <discord-message role-color="#E67E22" author="RainbowKey">
+    <discord-message author="RainbowKey" role-color="#E67E22">
         !example
     </discord-message>
-    <discord-message bot highlight verified author="BDFD Support" role-color="#378afa">
-        <discord-reply mentions author="RainbowKey" slot="reply">
+    <discord-message highlight author="BDFD Support" bot role-color="#378afa" verified>
+        <discord-reply author="RainbowKey" slot="reply" mentions>
             !example
         </discord-reply>
         Hello, RainbowKey!
