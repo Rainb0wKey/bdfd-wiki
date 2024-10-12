@@ -1,11 +1,13 @@
 # $footerIcon
 Sets the embed footer icon.
 
-> 🧙‍♂️ There must be footer text in order to set the footer icon.
-
 ## Syntax
 ```
 $footerIcon[Icon URL;(Index)]
+```
+
+```admonish failure
+`$footerIcon[]` will not work if there is no text provided in [`$footer[]`](./footer.md).
 ```
 
 ### Parameters
