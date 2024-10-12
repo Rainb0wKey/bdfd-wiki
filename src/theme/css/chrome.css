@@ -547,8 +547,9 @@ mark.fade-out {
     margin: 5px auto 0px;
     margin-left: 3%;
     width: 95%;
-    height: 30px;
+    height: 3rem;
     padding: 2%;
+    font-size: 80%;
     transition: box-shadow 300ms ease-in-out;
     border: 1px solid var(--color1);
     border-radius: 10px;
