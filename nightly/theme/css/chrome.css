@@ -110,6 +110,7 @@ html {
     color: #c1c1c1;
     word-break: break-all;
     max-width: 97%;
+    min-height: 2.2rem;
 }
 
 .function-input textarea {
