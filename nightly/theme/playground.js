@@ -89,6 +89,12 @@ function limitLines(text, maxLines) {
   return lines.slice(0, maxLines).join('\n');
 }
 
+// $trimSpace[]
+function trimSpacePlayground(inputValue) {
+  const playOutput = document.getElementById('play-output');
+  playOutput.innerHTML = preserveLineBreaks(limitLines(inputValue.trim(), 20)); 
+}
+
 // $toLowercase[]
 function toLowercasePlayground(inputValue) {
   const playOutput = document.getElementById('play-output');
