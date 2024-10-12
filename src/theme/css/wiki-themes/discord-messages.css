@@ -239,3 +239,8 @@
 .discord-replied-message-content:not(.discord-command-name) {
     margin-left: -3rem;
 }
+
+/* Time marks */
+.discord-message [id$="-mark"] {
+    line-height: 19px;
+}
