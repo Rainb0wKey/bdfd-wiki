@@ -30,4 +30,6 @@ Command used `$getChannelVar[Uses]` times in this channel
     Command used <discord-inline-code>1</discord-inline-code> times in this channel
 ```
 
-> For more info, see the [Variables Guide](../guides/introduction/variables.md).
+```admonish info title="Read more"
+For more information, read the the [Variables Guide](../guides/introduction/variables.md).
+```
