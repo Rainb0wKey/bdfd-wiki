@@ -84,22 +84,27 @@ function preserveLineBreaks(text) {
   return text.replace(/\n/g, '<br>');
 }
 
+function limitLines(text, maxLines) {
+  const lines = text.split('\n');
+  return lines.slice(0, maxLines).join('\n');
+}
+
 // $toLowercase[]
 function toLowercasePlayground(inputValue) {
   const playOutput = document.getElementById('play-output');
-  playOutput.innerHTML = preserveLineBreaks(inputValue.toLowerCase());
+  playOutput.innerHTML = preserveLineBreaks(limitLines(inputValue.toLowerCase(), 20)); 
 }
 
 // $toUppercase[]
 function toUppercasePlayground(inputValue) {
   const playOutput = document.getElementById('play-output');
-  playOutput.innerHTML = preserveLineBreaks(inputValue.toUpperCase());
+  playOutput.innerHTML = preserveLineBreaks(limitLines(inputValue.toUpperCase(), 20)); 
 }
 
 // $toTitleCase[]
 function toTitleCasePlayground(inputValue) {
   const playOutput = document.getElementById('play-output');
-  playOutput.innerHTML = preserveLineBreaks(inputValue.replace(/\w\S*/g, (word) => 
+  playOutput.innerHTML = preserveLineBreaks(limitLines(inputValue.replace(/\w\S*/g, (word) => 
     word.charAt(0).toUpperCase() + word.slice(1).toLowerCase() 
-  ));
+  ), 20));
 }
