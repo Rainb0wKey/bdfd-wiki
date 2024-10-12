@@ -19,7 +19,7 @@ $getCooldown[Cooldown type (normal/server/global)]
 ## Example
 ```
 $nomention
-$cooldown[1h;You're on cooldown! (<t:$sum[$getTimestamp;$getCooldown[normal]]>)]
+$cooldown[1h;You're on cooldown! (<t:$sum[$getTimestamp;$getCooldown[normal]]:R>)]
 Hello world!
 ```
 
