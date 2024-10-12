@@ -17,8 +17,24 @@ $footerIcon[Icon URL;(Index)]
 ## Example
 ```
 $nomention
-$footer[⬅️ That is a footer icon!]
+$footer[⬅️ That is the footer icon. This is the footer text.]
 $footerIcon[$authorAvatar]
 ```
 
-![example](https://user-images.githubusercontent.com/69215413/123020288-1544f180-d3a0-11eb-9378-3e83e1d1cb60.png)
+``` discord yaml
+- user_id: 729343563401265193
+  username: Nicky
+  color: "#EE7908"
+  content: |
+    !example
+- user_id: 566613317972394004
+  username: Wiki Bot
+  color: "#748BD4"
+  bot: true
+  verified: true
+  content: <none>
+  embed:
+    footer:
+      text: ⬅️ That is the footer icon. This is the footer text.
+      image: https://user-images.githubusercontent.com/111157596/257052136-4b8d5715-b381-4d5f-8c46-8ae0be53c8d8.png
+```
