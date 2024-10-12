@@ -240,6 +240,14 @@
     margin-left: -3rem;
 }
 
+.discord-time-mark {
+    display: inline;
+    background: hsl(0deg 0% 29.22% / 50%);
+    border-radius: 5px;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
 /* Time marks */
 .discord-message [id$="-mark"] {
     line-height: 19px;
