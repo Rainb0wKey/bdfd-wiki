@@ -98,7 +98,9 @@ function setDiscordTheme(colorId) {
           var time = new Date().getTime();
           var minuteExample = new Date().getMinutes();
           var hourExample = new Date().getHours();
-          const formattedTime = `Today at ${hourExample}:${minuteExample}`;
+          const formattedMinute = minuteExample < 10 ? `0${minuteExample}` : minuteExample; 
+          const formattedHour = hourExample < 10 ? `0${hourExample}` : hourExample;
+          const formattedTime = `Today at ${formattedHour}:${formattedMinute}`;
           timestamp.textContent = formattedTime;
         });
       }
