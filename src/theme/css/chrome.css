@@ -583,7 +583,7 @@ ul#searchresults {
 }
 
 ul#searchresults li {
-    margin: 10px 0px;
+    margin: 1rem 1rem;
     padding: 2px;
     background-color: var(--color3);
     border-radius: 8px;
