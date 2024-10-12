@@ -301,14 +301,18 @@ a:link:not(.editPage, .mobile-nav-chapters, .chapter li a, .discord-button, .dis
     transition: .3s;
 }
 
-#editPageIcon {
-    padding-right: .4rem;
+@media (min-width: 750px) {
+    .editPage:after {
+        content: 'Edit this page'
+    }
+
+    #editPageIcon {
+        padding-right: .4rem;
+    }
 }
 
-@media (max-width: 750px) {
-    .editPage {
-        visibility: hidden
-    }
+#editPageIcon {
+    padding: .4rem;
 }
 
 /* Nav Icons */
