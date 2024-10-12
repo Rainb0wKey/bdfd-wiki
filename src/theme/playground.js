@@ -80,20 +80,26 @@ function isBooleanPlayground(inputValue) {
   playOutput.textContent = `Is valid HEX? ${booleanValues.includes(inputValue)}`;
 }
 
+function preserveLineBreaks(text) {
+  return text.replace(/\n/g, '<br>');
+}
+
 // $toLowercase[]
 function toLowercasePlayground(inputValue) {
   const playOutput = document.getElementById('play-output');
-  playOutput.textContent = `${inputValue.toLowerCase()}`;
+  playOutput.innerHTML = preserveLineBreaks(inputValue.toLowerCase());
 }
 
 // $toUppercase[]
 function toUppercasePlayground(inputValue) {
   const playOutput = document.getElementById('play-output');
-  playOutput.textContent = `${inputValue.toUpperCase()}`;
+  playOutput.innerHTML = preserveLineBreaks(inputValue.toUpperCase());
 }
 
 // $toTitleCase[]
 function toTitleCasePlayground(inputValue) {
   const playOutput = document.getElementById('play-output');
-  playOutput.textContent = `${inputValue.replace(/\w\S*/g, (txt) => txt.charAt(0).toUpperCase() + txt.substr(1).toLowerCase())}`;
+  playOutput.innerHTML = preserveLineBreaks(inputValue.replace(/\w\S*/g, (word) => 
+    word.charAt(0).toUpperCase() + word.slice(1).toLowerCase() 
+  ));
 }
