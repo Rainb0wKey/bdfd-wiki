@@ -1,7 +1,9 @@
 # $getCooldown
 Returns how long is left on the cooldown, in seconds.
 
-> This function can be used in the "Error message" field of cooldown functions.
+```admonish note
+This function can be used in the "Error message" field of cooldown functions.
+```
 
 ## Syntax
 ```
@@ -18,6 +20,32 @@ $getCooldown[Cooldown type (normal/server/global)]
 ```
 $nomention
 $cooldown[1h;You're on cooldown! (<t:$sum[$getTimestamp;$getCooldown[normal]]>)]
-Hello World!
-$c[This example should be used in BDScript 2 only.]
+Hello world!
+```
+
+``` discord yaml
+- user_id: 803569638084313098
+  username: RainbowKey
+  color: "#E67E22"
+  content: |
+    !example
+- username: BDFD Support
+  user_id: 1009018156494368798
+  color: "#378afa"
+  bot: true
+  verified: true
+  content: |
+    Hello world!
+- user_id: 803569638084313098
+  username: RainbowKey
+  color: "#E67E22"
+  content: |
+    !example
+- username: BDFD Support
+  user_id: 1009018156494368798
+  color: "#378afa"
+  bot: true
+  verified: true
+  content: |
+    You're on cooldown! (In 1 hour)
 ```
