@@ -10,11 +10,14 @@ $time[Timezone]
 - `Timezone` `(Type: String || Flag: Required)`: The timezone to use in the date/time functions. Accepts [TZ database](https://en.wikipedia.org/wiki/List_of_tz_database_time_zones) timezone name as input.
 
 #### Popular Timezons
-TZ identifier     | UTC
+`Timezone`        | UTC
 ------------------|-----
 `Europe/Moscow`   | +03:00
-`Europe/Warsaw`   | +03:00
+`Europe/Athens`   | +03:00
 `Europe/Istanbul` | +03:00
+`Europe/Warsaw`   | +02:00
+`Europe/Paris`    | +02:00
+`Europe/Berlin`   | +02:00
 
 ## Example
 ```
