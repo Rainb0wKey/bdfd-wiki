@@ -21,7 +21,7 @@ function ceilPlayground(inputValue) {
   handlePlaygroundInput(inputValue, '$ceil', Math.ceil); 
 }
 
-// floor[]
+// $floor[]
 function floorPlayground(inputValue) {
   handlePlaygroundInput(inputValue, '$floor', Math.floor); 
 }
