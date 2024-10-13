@@ -30,5 +30,5 @@ $changeUsernameWithID[$message[1];$message[2]]
 ```
 
 ```admonish question title="What is this?"
-How [`$addCmdReactions[]`](./addCmdReactions.md) works?
+How [`$addCmdReactions[]`](./addCmdReactions.md) and [`$message[]`](./messageComplex.md) works?
 ```
