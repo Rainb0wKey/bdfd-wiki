@@ -30,7 +30,9 @@ Channel ID: $channelID[$message]
     Channel ID: 566370477967147018
 ```
 
-> It supports category names.
+```admonish note
+It supports category names:
+```
 
 ``` discord yaml
 - user_id: 803569638084313098
