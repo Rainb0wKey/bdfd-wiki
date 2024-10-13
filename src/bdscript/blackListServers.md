@@ -84,3 +84,7 @@ Pong! $ping ms
       Pong! 1 ms
       <i>Guild ID: 1009018669982031912</i>
 ```
+
+```admonish question title="What is this?"
+How [`$ping`](./ping.md) works?
+```
