@@ -7,7 +7,7 @@ function handlePlaygroundInput(inputValue, functionName, operation) {
       playOutput.innerHTML = `❌ Function <p id="errorFunctionName">${functionName}</p> at <p id="errorLineNumber">1:${functionName.length + 4}</p> returned an error: the input number can't be negative`;
     } else {
       const result = operation(inputValue);
-      playOutput.innerHTML = `Result: ${result}`;
+      playOutput.textContent = `Result: ${result}`;
     }
   } else {
     if (inputValue === "") {
