@@ -384,6 +384,7 @@
     - [$slowmode](./bdscript/slowmode.md)
     - [$sort](./bdscript/sort.md)
     - [$splitText](./bdscript/splitText.md)
+    - [$sqrt](./bdscript/sqrt.md)
     - [$startThread](./bdscript/startThread.md)
     - [$stop](./bdscript/stop.md)
     - [$sub](./bdscript/sub.md)
