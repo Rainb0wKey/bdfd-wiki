@@ -30,3 +30,7 @@ $ban
       <font color="white">Spen</font> left without pizza.
   type: leave
 ```
+
+```admonish question title="What is this?"
+How [`$mentioned`](./mentioned.md) works?
+```
