@@ -16,9 +16,10 @@ $addButton[New row?;Interaction ID/URL;Label;Style;(Disable?;Emoji;Message ID)]
 - `Emoji` `(Type: Emoji || Flag: Vacantable)`: Adds an emoji inside the button. Emojis have to be either pasted as *unicode*, *alias* or be in the following format `<:emoji name:emoji ID>`.
 - `Message ID` `(Type: Snowflake || Flag: Vacantable)`: Adds the button to the provided message ID. It's important to note that the provided message ID author **has to** be the bot.
 
-> Interactive buttons can't have duplicated `ID`'s in the same message. So for example, you can't have two buttons with the ID set to `test`.
-
-> If `URL` is used in the `Interaction ID/URL` argument, it **has to** start with `http://` or `https://`.
+```admonish warning
+**1.** Interactive buttons can't have duplicated `ID`'s in the same message. So for example, you can't have two buttons with the ID set to `test`.
+**2.** If `URL` is used in the `Interaction ID/URL` argument, it **has to** start with `http://` or `https://`.
+```
 
 ## Button Style
 Buttons can have different styles _(background colors)_.
@@ -84,7 +85,9 @@ Here, are all possible values for the `style` function argument.
         emoji: https://em-content.zobj.net/thumbs/120/mozilla/36/heavy-black-heart_2764.png
 ```
 
-> If `link` style is used, the button **won't send** any interactions!
+```admonish failure
+If `link` style is used, the button **won't send** any interactions!
+```
 
 ## Example
 ```
