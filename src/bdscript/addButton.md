@@ -22,6 +22,7 @@ A message can have a maximum of 25 buttons (5 rows of 5 buttons).
 
 ```admonish warning
 **1.** Interactive buttons can't have duplicated `ID`'s in the same message. So for example, you can't have two buttons with the ID set to `test`.
+
 **2.** If `URL` is used in the `Interaction ID/URL` argument, it **has to** start with `http://` or `https://`.
 ```
 
