@@ -3,8 +3,12 @@ function handlePlaygroundInput(inputValue, functionName, operation) {
   const playOutput = document.getElementById('play-output');
 
   if (!isNaN(inputValue) && inputValue !== "") {
-    const result = operation(inputValue);
-    playOutput.textContent = `Result: ${result}`;
+    if (functionName === '$sqrt' && parseFloat(inputValue) < 0) {
+      playOutput.textContent = `❌ Function ${functionName} at 1:${functionName.length + 3} returned an error: the input number can't be negative`;
+    } else {
+      const result = operation(inputValue);
+      playOutput.textContent = `Result: ${result}`;
+    }
   } else {
     if (inputValue === "") {
       outputEmptyValueError(functionName, 1, 1);
