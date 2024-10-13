@@ -14,11 +14,8 @@ $banID[Reason;(User ID)]
 ## Example
 ```
 $nomention
-$onlyAdmin[You need the `admim` permission to use that command!]
-$argsCheck[>1;Please provide a `user`. Syntax: `!ban (user) <reason>`]
-$onlyIf[$findUser[$message[1];no]!=;Failed to find user!]
-<@$findUser[$message;no]> was banned!
-$banID[$replaceText[$message;$message[1];;1];$findUser[$message[1];no]]
+<@$mentioned[1]> was banned!
+$banID[$noMentionMessage;$mentioned[1]]
 ```
 
 ``` discord yaml
@@ -39,4 +36,6 @@ $banID[$replaceText[$message;$message[1];;1];$findUser[$message[1];no]]
   type: leave
 ```
 
-> [How `$findUser[]` works?](./findUser.md)
+```admonish question title="What is this?"
+How [`$mentioned[]`](./mentioned.md) and [`$noMentionMessage`](./noMentionMessage.md) works?
+```
