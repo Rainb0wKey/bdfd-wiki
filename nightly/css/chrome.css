@@ -132,6 +132,19 @@ html {
     min-width: 1rem;
 }
 
+#errorFunctionName, #errorLineNumber {
+    display: inline;
+    font-weight: 400;
+    border-radius: 4.3px;
+    background: #191919;
+    color: #d5d3d1;
+    border: .1px solid #1e1f22;
+    padding: .1rem;
+    padding-left: .4rem;
+    padding-right: .4rem;
+    box-shadow: none;
+}
+
 /* Links */
 
 #searchresults a,
