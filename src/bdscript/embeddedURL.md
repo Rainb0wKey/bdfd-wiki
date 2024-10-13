@@ -1,7 +1,9 @@
 # $embeddedURL
 Sets the title to be a hyperlink.
 
-> 📝 Only works if `$title` is also used.
+```admonish failure
+`$embeddedURL[]` will not work if there is no text provided in [`$title[]`](./title.md).
+```
 
 ## Syntax
 ```
