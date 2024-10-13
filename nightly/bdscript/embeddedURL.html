@@ -147,12 +147,22 @@
 </ul>
 <h2 id="example"><a class="header" href="#example">Example</a></h2>
 <pre><code>$nomention
-$title[Bot Designer For Discord]
-$embeddedURL[https://botdesignerdiscord.com]
-$description[Hello World!]
-$color[#683cb4]
+$title[Google]
+$embeddedURL[https://google.com]
+$footer[⬆️ Title hyperlink]
 </code></pre>
-<p><img src="https://user-images.githubusercontent.com/69215413/125976626-45a94f29-cd9b-445f-a0ae-5dba6f49d2a6.png" alt="example" /></p>
+<discord-messages>
+    <discord-message author="RainbowKey" role-color="#E67E22">
+        !example
+    </discord-message>
+    <discord-message bot verified author="BDFD Support" role-color="#378afa">
+        <discord-embed embed-title="Google" url="https://google.com" slot="embeds">
+            <discord-embed-footer slot="footer">
+                ⬆️ Title hyperlink
+            </discord-embed-footer>
+        </discord-embed>
+    </discord-message>
+</discord-messages>
 
                     </main>
 
