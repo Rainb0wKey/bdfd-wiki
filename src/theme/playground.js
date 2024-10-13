@@ -117,5 +117,5 @@ function toTitleCasePlayground(inputValue) {
 // Empty value error
 function outputEmptyValueError(functionName, lineNumber, position) {
   const playOutput = document.getElementById('play-output');
-  playOutput.innerHTML  = `❌ Function <p id="errorFunctionName">${functionName}</p> at <p id="errorLineNumber">${lineNumber}:${functionName.length + 2}<p> returned an error: expected valid value in position ${position}, got empty value`;
+  playOutput.innerHTML  = `❌ Function <p id="errorFunctionName">${functionName}</p> at <p id="errorLineNumber">${lineNumber}:${functionName.length + 2}</p> returned an error: expected valid value in position ${position}, got empty value`;
 }
