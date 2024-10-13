@@ -151,26 +151,31 @@
 </ul>
 <h2 id="example"><a class="header" href="#example">Example</a></h2>
 <pre><code>$nomention
-$onlyAdmin[You need the `admim` permission to use that command!]
-$argsCheck[&gt;1;Please provide a `user`. Syntax: `!ban (user) &lt;reason&gt;`]
-$onlyIf[$findUser[$message[1];no]!=;Failed to find user!]
-&lt;@$findUser[$message;no]&gt; was banned!
-$banID[$replaceText[$message;$message[1];;1];$findUser[$message[1];no]]
+&lt;@$mentioned[1]&gt; was banned!
+$banID[$noMentionMessage;$mentioned[1]]
 </code></pre>
 <discord-messages>
-    <discord-message role-color="#E67E22" author="RainbowKey">
+    <discord-message author="RainbowKey" role-color="#E67E22">
         !example 854665455527526421 Hello!
     </discord-message>
-    <discord-message verified role-color="#378afa" author="BDFD Support" bot>
+    <discord-message author="BDFD Support" role-color="#378afa" bot verified>
         <discord-mention>Chilli</discord-mention> was banned!
     </discord-message>
     <discord-system-message type="leave">
         <font color="white">Chilli</font> left without pizza.
     </discord-system-message>
 </discord-messages>
-<blockquote>
-<p><a href="./findUser.html">How <code>$findUser[]</code> works?</a></p>
-</blockquote>
+<div id="admonition-what-is-this" class="admonition admonish-question" role="note" aria-labelledby="admonition-what-is-this-title">
+<div class="admonition-title">
+<div id="admonition-what-is-this-title">
+<p>What is this?</p>
+</div>
+<a class="admonition-anchor-link" href="#admonition-what-is-this"></a>
+</div>
+<div>
+<p>How <a href="./mentioned.html"><code>$mentioned[]</code></a> and <a href="./noMentionMessage.html"><code>$noMentionMessage</code></a> works?</p>
+</div>
+</div>
 
                     </main>
 
