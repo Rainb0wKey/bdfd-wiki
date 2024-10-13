@@ -8,7 +8,11 @@ $addButton[New row?;Interaction ID/URL;Label;Style;(Disable?;Emoji;Message ID)]
 
 ### Parameters
 - `New row?` `(Type: Bool || Flag: Required)`: If set to `yes`, the button will appear in a new row. If set to `no`, the button will appear in the same row as the previous button.
-    > A message can have a maximum of 25 buttons (5 rows of 5 buttons).
+
+```admonish warning title="Limit"
+A message can have a maximum of 25 buttons (5 rows of 5 buttons).
+```
+
 - `Interaction ID/URL` `(Type: String, URL || Flag: Required)`: Depending on the button type, you either set it to `Interaction ID` which is then used in `$onInteraction[ID]` callback or `URL` if it's a link button.
 - `Label` `(Type: String || Flag: Emptiable)`: The text value visible on the button.
 - `Style` `(Type: Enum || Flag: Required)`: It's used to specify the button's background color. If the button has a link/URL, you **have to** set the value to `link`. Check [this section](#button-style) for more details.
