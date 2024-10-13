@@ -7,7 +7,7 @@ function handlePlaygroundInput(inputValue, functionName, operation) {
     playOutput.textContent = `Result: ${result}`;
   } else {
     if (inputValue === "") {
-      playOutput.textContent = `❌ Function ${functionName} at 1:${functionName.length + 2} returned an error: expected valid value in position 1, got empty value`;
+      outputEmptyValueError(functionName, 1, 1);
     } else {
       let nonNumericIndex = inputValue.search(/[^0-9\.]/); 
       nonNumericIndex = nonNumericIndex === -1 ? inputValue.length : nonNumericIndex + functionName.length + 1;
@@ -24,7 +24,7 @@ function ceilPlayground(inputValue) {
 
 // floor[]
 function floorPlayground(inputValue) {
-  handlePlaygroundInput(inputValue, 'floor', Math.floor); 
+  handlePlaygroundInput(inputValue, '$floor', Math.floor); 
 }
 
 // $sqrt[]
@@ -61,7 +61,7 @@ function isNumberPlayground(inputValue) {
 function isIntegerPlayground(inputValue) {
   const playOutput = document.getElementById('play-output');
   if (inputValue === "") {
-    playOutput.textContent = `❌ Function $isInteger at 1:12 returned an error: expected valid value in position 1, got empty value`;
+    outputEmptyValueError(`$isInteger`, 1, 1);
   } else {
     playOutput.textContent = `Is integer? ${Number.isInteger(parseFloat(inputValue))}`;
   }
@@ -113,4 +113,10 @@ function toTitleCasePlayground(inputValue) {
   playOutput.innerHTML = preserveLineBreaks(limitLines(inputValue.replace(/\w\S*/g, (word) => 
     word.charAt(0).toUpperCase() + word.slice(1).toLowerCase() 
   ), 20));
+}
+
+// Empty value error
+function outputEmptyValueError(functionName, lineNumber, position) {
+  const playOutput = document.getElementById('play-output');
+  playOutput.textContent = `❌ Function ${functionName} at ${lineNumber}:${functionName.length + 1} returned an error: expected valid value in position ${position}, got empty value`;
 }
