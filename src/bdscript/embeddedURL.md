@@ -15,10 +15,25 @@ $embeddedURL[Link;(Index)]
 ## Example
 ```
 $nomention
-$title[Bot Designer For Discord]
-$embeddedURL[https://botdesignerdiscord.com]
-$description[Hello World!]
-$color[#683cb4]
+$title[Google]
+$embeddedURL[https://google.com]
+$footer[⬆️ Title hyperlink]
 ```
 
-![example](https://user-images.githubusercontent.com/69215413/125976626-45a94f29-cd9b-445f-a0ae-5dba6f49d2a6.png)
+``` discord yaml
+- user_id: 803569638084313098
+  username: RainbowKey
+  color: "#E67E22"
+  content: |
+    !example
+- username: BDFD Support
+  user_id: 1009018156494368798
+  color: "#378afa"
+  bot: true
+  verified: true
+  embed:
+    title: Google
+    url: https://google.com
+    footer:
+      text: ⬆️ Title hyperlink
+```
