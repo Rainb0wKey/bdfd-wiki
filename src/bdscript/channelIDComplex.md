@@ -48,3 +48,7 @@ It supports category names:
   content: |
     Channel ID: 1009019011545178132
 ```
+
+```admonish question title="What is this?"
+How [`$message`](./message.md) works?
+```
