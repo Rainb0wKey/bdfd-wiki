@@ -143,22 +143,33 @@
 <li><code>Role  ID</code> <code>(Type: Snowflake || Flag: Required)</code>: Roles to be given to the user. Separate roles using <code>;</code>.</li>
 </ul>
 <h2 id="example"><a class="header" href="#example">Example</a></h2>
+<ol>
+<li>Create two commands and set the trigger <code>!example</code> for one command and <code>!roles</code> for the other. (<code>!roles</code> is not required)</li>
+</ol>
+<ul>
+<li>Code with trigger <code>!example</code>:</li>
+</ul>
 <pre><code>$nomention
 $setUserRoles[$authorID;$roleID[Support]]
 We've reset all your roles! Now you have "Support" role.
 </code></pre>
-<p><em>In this example, we will remove all roles and give one role with “Support” name</em>.</p>
+<ul>
+<li>Code with trigger <code>!roles</code>:</li>
+</ul>
+<pre><code>$nomention
+$userRoles[$authorID]
+</code></pre>
 <discord-messages>
     <discord-message author="RainbowKey">
         !roles
     </discord-message>
-    <discord-message author="BDFD Support" bot verified>
+    <discord-message author="BDFD Support" verified bot role-color="#378afa">
         Cool<br />BDFD<br />Moderator
     </discord-message>
     <discord-message author="RainbowKey">
         !example
     </discord-message>
-    <discord-message bot author="BDFD Support" verified>
+    <discord-message author="BDFD Support" bot verified role-color="#378afa">
         We've reset all your roles! Now you have "Support" role.
     </discord-message>
     <discord-message author="RainbowKey">
@@ -168,16 +179,18 @@ We've reset all your roles! Now you have "Support" role.
         Support
     </discord-message>
 </discord-messages>
-<blockquote>
-<p>How <a href="./roleID.html">$roleID[]</a> and <a href="./authorID.html">$authorID</a> works?</p>
-</blockquote>
-<h3 id="code-for-roles-command"><a class="header" href="#code-for-roles-command">Code for <code>!roles</code> command:</a></h3>
-<pre><code>$nomention
-$userRoles[$authorID]
-</code></pre>
-<blockquote>
-<p><a href="./userRoles.html">How $userRoles[] works?</a></p>
-</blockquote>
+<p><em>In this example, we will remove all roles and give one role with “Support” name</em>.</p>
+<div id="admonition-what-is-this" class="admonition admonish-question" role="note" aria-labelledby="admonition-what-is-this-title">
+<div class="admonition-title">
+<div id="admonition-what-is-this-title">
+<p>What is this?</p>
+</div>
+<a class="admonition-anchor-link" href="#admonition-what-is-this"></a>
+</div>
+<div>
+<p>How <a href="./roleID.html"><code>$roleID[]</code></a>, <a href="./authorID.html"><code>$authorID</code></a> and <a href="./userRoles.html"><code>$userRoled[]</code></a> works?</p>
+</div>
+</div>
 
                     </main>
 
