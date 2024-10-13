@@ -134,9 +134,17 @@
                         </a>
                         <h1 id="embeddedurl"><a class="header" href="#embeddedurl">$embeddedURL</a></h1>
 <p>Sets the title to be a hyperlink.</p>
-<blockquote>
-<p>📝 Only works if <code>$title</code> is also used.</p>
-</blockquote>
+<div id="admonition-failure" class="admonition admonish-failure" role="note" aria-labelledby="admonition-failure-title">
+<div class="admonition-title">
+<div id="admonition-failure-title">
+<p>Failure</p>
+</div>
+<a class="admonition-anchor-link" href="#admonition-failure"></a>
+</div>
+<div>
+<p><code>$embeddedURL[]</code> will not work if there is no text provided in <a href="./title.html"><code>$title[]</code></a>.</p>
+</div>
+</div>
 <h2 id="syntax"><a class="header" href="#syntax">Syntax</a></h2>
 <pre><code>$embeddedURL[Link;(Index)]
 </code></pre>
@@ -152,10 +160,10 @@ $embeddedURL[https://google.com]
 $footer[⬆️ Title hyperlink]
 </code></pre>
 <discord-messages>
-    <discord-message author="RainbowKey" role-color="#E67E22">
+    <discord-message role-color="#E67E22" author="RainbowKey">
         !example
     </discord-message>
-    <discord-message bot verified author="BDFD Support" role-color="#378afa">
+    <discord-message verified role-color="#378afa" author="BDFD Support" bot>
         <discord-embed embed-title="Google" url="https://google.com" slot="embeds">
             <discord-embed-footer slot="footer">
                 ⬆️ Title hyperlink
