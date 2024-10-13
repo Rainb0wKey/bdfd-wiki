@@ -7,7 +7,7 @@ function handlePlaygroundInput(inputValue, functionName, operation) {
     playOutput.textContent = `Result: ${result}`;
   } else {
     if (inputValue === "") {
-      playOutput.textContent = `❌ Function ${functionName} at 1:${functionName.length + 1} returned an error: expected valid value in position 1, got empty value`;
+      playOutput.textContent = `❌ Function ${functionName} at 1:${functionName.length + 2} returned an error: expected valid value in position 1, got empty value`;
     } else {
       let nonNumericIndex = inputValue.search(/[^0-9\.]/); 
       nonNumericIndex = nonNumericIndex === -1 ? inputValue.length : nonNumericIndex + functionName.length + 1;

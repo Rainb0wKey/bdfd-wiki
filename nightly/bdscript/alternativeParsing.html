@@ -173,7 +173,7 @@ $description["helloworld"]
     <discord-message author="Nicky" role-color="#EE7908">
         hello
     </discord-message>
-    <discord-message bot verified role-color="#748BD4" author="Wiki Bot">
+    <discord-message role-color="#748BD4" verified author="Wiki Bot" bot>
         <none>
         <discord-embed slot="embeds">
             <discord-embed-description slot="description">
@@ -184,7 +184,7 @@ $description["helloworld"]
     <discord-message author="Nicky" role-color="#EE7908">
         helloworld
     </discord-message>
-    <discord-message author="Wiki Bot" role-color="#748BD4" verified bot>
+    <discord-message verified author="Wiki Bot" bot role-color="#748BD4">
         <none>
         <discord-embed slot="embeds">
             <discord-embed-description slot="description">
@@ -196,7 +196,7 @@ $description["helloworld"]
 <ul>
 <li>Without <code>$alternativeParsing</code>:
 <discord-messages>
-<discord-message role-color="#EE7908" author="Nicky">
+<discord-message author="Nicky" role-color="#EE7908">
 hello
 </discord-message>
 <discord-message bot role-color="#748BD4" author="Wiki Bot" verified>
@@ -210,7 +210,7 @@ hello
 <discord-message author="Nicky" role-color="#EE7908">
 helloworld
 </discord-message>
-<discord-message bot verified role-color="#748BD4" author="Wiki Bot">
+<discord-message author="Wiki Bot" bot role-color="#748BD4" verified>
 <none>
 <discord-embed slot="embeds">
 <discord-embed-description slot="description">
