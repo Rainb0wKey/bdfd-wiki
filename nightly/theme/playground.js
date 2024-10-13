@@ -61,7 +61,7 @@ function isNumberPlayground(inputValue) {
 function isIntegerPlayground(inputValue) {
   const playOutput = document.getElementById('play-output');
   if (inputValue === "") {
-    playOutput.textContent = `❌ Function $isInteger at 1:7 returned an error: expected valid value in position 1, got empty value`;
+    playOutput.textContent = `❌ Function $isInteger at 1:12 returned an error: expected valid value in position 1, got empty value`;
   } else {
     playOutput.textContent = `Is integer? ${Number.isInteger(parseFloat(inputValue))}`;
   }
