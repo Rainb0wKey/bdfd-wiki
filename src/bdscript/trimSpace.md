@@ -36,8 +36,7 @@ $nomention
   <p>Here you can understand how this function works.</p>
   <div class="function-input">
     <p>Input:</p>
-    <span id="play-code">$trimSpace[<textarea id="play-input" rows="1" maxlength="150" oninput="trimSpacePlayground(this.value)">Hello 
-        world</textarea>]</span>
+    <span id="play-code">$trimSpace[<textarea id="play-input" rows="1" maxlength="150" oninput="trimSpacePlayground(this.value)">  Hello world</textarea>]</span>
   </div>
   <div class="function-output">
     <p>Output:</p>
