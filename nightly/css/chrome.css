@@ -394,7 +394,7 @@ a:link:not(.editPage, .mobile-nav-chapters, .chapter li a, .discord-button, .dis
     box-shadow: none;
 }
 
-:not(pre):not(a) > .hljs {
+:not(pre):not(a) > .hljs:not(.discord-message code) {
     color: var(--color1);
     overflow-x: initial;
 }
@@ -408,7 +408,7 @@ pre {
     word-break: break-all;
 }
 
-code.hljs {
+code.hljs:not(.discord-message code) {
     background: var(--color3);
     padding: .8em;
     margin-bottom: -.5rem;
