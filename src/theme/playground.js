@@ -4,7 +4,7 @@ function handlePlaygroundInput(inputValue, functionName, operation) {
 
   if (!isNaN(inputValue) && inputValue !== "") {
     if (functionName === '$sqrt' && parseFloat(inputValue) < 0) {
-      playOutput.textContent = `❌ Function ${functionName} at 1:${functionName.length + 3} returned an error: the input number can't be negative`;
+      playOutput.textContent = `❌ Function <p id="errorFunctionName">${functionName}</p> at <p id="errorLineNumber">1:${functionName.length + 4}</p> returned an error: the input number can't be negative`;
     } else {
       const result = operation(inputValue);
       playOutput.textContent = `Result: ${result}`;
@@ -15,7 +15,7 @@ function handlePlaygroundInput(inputValue, functionName, operation) {
     } else {
       let nonNumericIndex = inputValue.search(/[^0-9\.]/); 
       nonNumericIndex = nonNumericIndex === -1 ? inputValue.length : nonNumericIndex + functionName.length + 3;
-      playOutput.textContent = `❌ Function ${functionName} at 1:${nonNumericIndex} returned an error: expected integer in position 1, got '${inputValue}'`;
+      playOutput.textContent = `❌ Function <p id="errorFunctionName">${functionName}</p> at <p id="errorLineNumber">1:${nonNumericIndex}</p> returned an error: expected integer in position 1, got '${inputValue}'`;
     }
   }
 }
