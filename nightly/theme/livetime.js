@@ -18,6 +18,14 @@ document.addEventListener("DOMContentLoaded", function () {
     unixElement.innerHTML = "Current Unix-time: " + time;
   }
 
+  var moreUnixElement = document.getElementById('moreunix-mark');
+  if (moreUnixElement) {
+    moreUnixElement.innerHTML = `Unix Timestamp
+In Seconds - ${time}
+In Milliseconds - ${time * 1000}
+In Nanoseconds - ${time * 1000000000}`;
+  }
+
   var secondElement = document.getElementById('second-mark');
   if (secondElement) {
     secondElement.innerHTML = "Current Second: " + second;
