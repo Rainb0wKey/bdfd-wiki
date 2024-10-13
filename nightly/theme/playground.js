@@ -4,10 +4,10 @@ function handlePlaygroundInput(inputValue, functionName, operation) {
 
   if (!isNaN(inputValue) && inputValue !== "") {
     if (functionName === '$sqrt' && parseFloat(inputValue) < 0) {
-      playOutput.textContent = `❌ Function <p id="errorFunctionName">${functionName}</p> at <p id="errorLineNumber">1:${functionName.length + 4}</p> returned an error: the input number can't be negative`;
+      playOutput.innerHTML = `❌ Function <p id="errorFunctionName">${functionName}</p> at <p id="errorLineNumber">1:${functionName.length + 4}</p> returned an error: the input number can't be negative`;
     } else {
       const result = operation(inputValue);
-      playOutput.textContent = `Result: ${result}`;
+      playOutput.innerHTML = `Result: ${result}`;
     }
   } else {
     if (inputValue === "") {
