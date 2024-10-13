@@ -79,7 +79,11 @@ $and[$nickname==MineBartekSA;$message==Update]
   verified: true
   content: |
     true
-  ```
+```
+
+```admonish question title="What is this?"
+How [`$message`](./message.md) works?
+```
 
 ```admonish info title="Read more"
 For more information, read the the [If Statements Guide](../guides/ifStatements.md).
