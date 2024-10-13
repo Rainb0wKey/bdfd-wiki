@@ -20,9 +20,9 @@ document.addEventListener("DOMContentLoaded", function () {
 
   var moreUnixElement = document.getElementById('moreunix-mark');
   if (moreUnixElement) {
-    moreUnixElement.innerHTML = `Unix Timestamp
-In Seconds - ${time}
-In Milliseconds - ${time * 1000}
+    moreUnixElement.innerHTML = `Unix Timestamp<br>
+In Seconds - ${time}<br>
+In Milliseconds - ${time * 1000}<br>
 In Nanoseconds - ${time * 1000000000}`;
   }
 
