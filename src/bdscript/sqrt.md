@@ -3,7 +3,7 @@ Returns the square root of the specified number.
 
 ## Syntax
 ```
-$ceil[Number]
+$sqrt[Number]
 ```
 
 ### Parameters
