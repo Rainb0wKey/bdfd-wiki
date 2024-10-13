@@ -38,3 +38,7 @@ $author[⬅️ That is the author icon. This is the author text.]
       text: ⬅️ That is the author icon. This is the author text.
       image: https://user-images.githubusercontent.com/111157596/257052136-4b8d5715-b381-4d5f-8c46-8ae0be53c8d8.png
 ```
+
+```admonish question title="What is this?"
+How [`$authorAvatar`](./authorAvatar.md) works?
+```
