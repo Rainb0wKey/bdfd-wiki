@@ -29,6 +29,10 @@ Word count: $argCount[$message]
     Word count: 2
 ```
 
+```admonish question title="What is this?"
+How [`$message`](./message.md) works?
+```
+
 <div class=function-playground>
   <h3>🤖 Playground</h3>
   <p>Here you can understand how this function works.</p>
