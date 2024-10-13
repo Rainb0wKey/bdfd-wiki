@@ -27,3 +27,7 @@ ID: $dmChannelID[$authorID]
   content: |
     ID: 1011919618610311189
 ```
+
+```admonish question title="What is this?"
+How [`$authorID`](./authorID.md) works?
+```
