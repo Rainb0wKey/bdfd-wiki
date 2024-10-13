@@ -67,7 +67,7 @@ When calculating roots, use [`$enableDecimals[]`](..enableDecimals.md) to get de
   <p>Here you can understand how this function works.</p>
   <div class="function-input">
     <p>Input:</p>
-    <span id="play-code">$sqrt[<textarea id="play-input" rows="1" maxlength="20" oninput="sqrtPlayground(this.value)">24</textarea>]</span>
+    <span id="play-code">$sqrt[<textarea id="play-input" rows="1" maxlength="38" oninput="sqrtPlayground(this.value)">24</textarea>]</span>
   </div>
   <div class="function-output">
     <p>Output:</p>
