@@ -32,5 +32,5 @@ $ban
 ```
 
 ```admonish question title="What is this?"
-How [`$mentioned`](./mentioned.md) works?
+How [`$mentioned[]`](./mentioned.md) works?
 ```
