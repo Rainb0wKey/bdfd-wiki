@@ -11,7 +11,6 @@ function handlePlaygroundInput(inputValue, functionName, operation) {
     } else {
       let nonNumericIndex = inputValue.search(/[^0-9\.]/); 
       nonNumericIndex = nonNumericIndex === -1 ? inputValue.length : nonNumericIndex + functionName.length + 1;
-
       playOutput.textContent = `❌ Function ${functionName} at 1:${nonNumericIndex} returned an error: expected integer in position 1, got '${inputValue}'`;
     }
   }
@@ -22,7 +21,7 @@ function ceilPlayground(inputValue) {
   handlePlaygroundInput(inputValue, '$ceil', Math.ceil); 
 }
 
-// floor[]
+// $floor[]
 function floorPlayground(inputValue) {
   handlePlaygroundInput(inputValue, '$floor', Math.floor); 
 }
