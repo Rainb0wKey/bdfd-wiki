@@ -10,7 +10,7 @@ function handlePlaygroundInput(inputValue, functionName, operation) {
       outputEmptyValueError(functionName, 1, 1);
     } else {
       let nonNumericIndex = inputValue.search(/[^0-9\.]/); 
-      nonNumericIndex = nonNumericIndex === -1 ? inputValue.length : nonNumericIndex + functionName.length + 1;
+      nonNumericIndex = nonNumericIndex === -1 ? inputValue.length : nonNumericIndex + functionName.length + 3;
       playOutput.textContent = `❌ Function ${functionName} at 1:${nonNumericIndex} returned an error: expected integer in position 1, got '${inputValue}'`;
     }
   }
