@@ -131,8 +131,10 @@ function outputEmptyValueError(functionName, lineNumber, position) {
 // Better input size for large values
 function editInputHeight() {
   const playInputt = document.getElementById('play-input');
-  playInputt.style.height = "1.75rem";
-  playInputt.style.height = playInputt.scrollHeight + "px";
+  if (playInputt.scrollHeight / 16 <= 20) {
+    playInputt.style.height = "1.75rem";
+    playInputt.style.height = playInputt.scrollHeight + "px";
+  }
   if (playInputt.scrollHeight > 36) {
     playInputt.style.width = "97.75%";
   } else {
