@@ -132,7 +132,7 @@ function outputEmptyValueError(functionName, lineNumber, position) {
 function editInputHeight() {
   const playInputt = document.getElementById('play-input');
   if (playInputt.scrollHeight / 16 <= 20) {
-    playInputt.style.height = "1.75rem";
+    playInputt.style.height = "1.7rem";
     playInputt.style.height = playInputt.scrollHeight + "px";
   }
   if (playInputt.scrollHeight > 36) {
