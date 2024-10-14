@@ -4,7 +4,7 @@ function handlePlaygroundInput(inputValue, functionName, operation) {
 
   if (!isNaN(inputValue) && inputValue !== "") {
     if (functionName === '$sqrt' && parseFloat(inputValue) < 0) {
-      playOutput.innerText = `❌ Function <p id="errorFunctionName">${functionName}</p> at <p id="errorLineNumber">1:${functionName.length + 4}</p> returned an error: the input number can't be negative`;
+      playOutput.innerHTML = `❌ Function <p id="errorFunctionName">${functionName}</p> at <p id="errorLineNumber">1:${functionName.length + 4}</p> returned an error: the input number can't be negative`;
     } else {
       const result = operation(inputValue);
       playOutput.textContent = `Result: ${result}`;
@@ -15,7 +15,7 @@ function handlePlaygroundInput(inputValue, functionName, operation) {
     } else {
       let nonNumericIndex = inputValue.search(/[^0-9\.]/); 
       nonNumericIndex = nonNumericIndex === -1 ? inputValue.length : nonNumericIndex + functionName.length + 3;
-      playOutput.innerText = `❌ Function <p id="errorFunctionName">${functionName}</p> at <p id="errorLineNumber">1:${nonNumericIndex}</p> returned an error: expected integer in position 1, got '${inputValue}'`;
+      playOutput.innerHTML = `❌ Function <p id="errorFunctionName">${functionName}</p> at <p id="errorLineNumber">1:${nonNumericIndex}</p> returned an error: expected integer in position 1, got '${inputValue}'`;
     }
   }
 }
@@ -95,19 +95,19 @@ function limitLines(text, maxLines) {
 // $trimSpace[]
 function trimSpacePlayground(inputValue) {
   const playOutput = document.getElementById('play-output');
-  playOutput.innerText = preserveLineBreaks(limitLines(inputValue.trim(), 20)); 
+  playOutput.innerHTML = preserveLineBreaks(limitLines(inputValue.trim(), 20)); 
 }
 
 // $toLowercase[]
 function toLowercasePlayground(inputValue) {
   const playOutput = document.getElementById('play-output');
-  playOutput.innerText = preserveLineBreaks(limitLines(inputValue.toLowerCase(), 20)); 
+  playOutput.innerHTML = preserveLineBreaks(limitLines(inputValue.toLowerCase(), 20)); 
 }
 
 // $toUppercase[]
 function toUppercasePlayground(inputValue) {
   const playOutput = document.getElementById('play-output');
-  playOutput.innerText = preserveLineBreaks(limitLines(inputValue.toUpperCase(), 20)); 
+  playOutput.innerHTML = preserveLineBreaks(limitLines(inputValue.toUpperCase(), 20)); 
 }
 
 // $toTitleCase[]
@@ -121,5 +121,5 @@ function toTitleCasePlayground(inputValue) {
 // Empty value error
 function outputEmptyValueError(functionName, lineNumber, position) {
   const playOutput = document.getElementById('play-output');
-  playOutput.innerText  = `❌ Function <p id="errorFunctionName">${functionName}</p> at <p id="errorLineNumber">${lineNumber}:${functionName.length + 2}</p> returned an error: expected valid value in position ${position}, got empty value`;
+  playOutput.innerHTML  = `❌ Function <p id="errorFunctionName">${functionName}</p> at <p id="errorLineNumber">${lineNumber}:${functionName.length + 2}</p> returned an error: expected valid value in position ${position}, got empty value`;
 }
