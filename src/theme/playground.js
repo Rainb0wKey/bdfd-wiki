@@ -113,7 +113,7 @@ function toUppercasePlayground(inputValue) {
 // $toTitleCase[]
 function toTitleCasePlayground(inputValue) {
   const playOutput = document.getElementById('play-output');
-  playOutput.innerText = preserveLineBreaks(limitLines(inputValue.replace(/\w\S*/g, (word) => 
+  playOutput.innerHTML = preserveLineBreaks(limitLines(inputValue.replace(/\w\S*/g, (word) => 
     word.charAt(0).toUpperCase() + word.slice(1).toLowerCase() 
   ), 20));
 }
