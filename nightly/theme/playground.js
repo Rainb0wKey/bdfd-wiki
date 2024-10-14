@@ -95,19 +95,22 @@ function limitLines(text, maxLines) {
 // $trimSpace[]
 function trimSpacePlayground(inputValue) {
   const playOutput = document.getElementById('play-output');
-  playOutput.innerHTML = preserveLineBreaks(limitLines(inputValue.trim(), 20)); 
+  playOutput.innerHTML = preserveLineBreaks(limitLines(inputValue.trim(), 20));
+  editInputHeight()
 }
 
 // $toLowercase[]
 function toLowercasePlayground(inputValue) {
   const playOutput = document.getElementById('play-output');
-  playOutput.innerHTML = preserveLineBreaks(limitLines(inputValue.toLowerCase(), 20)); 
+  playOutput.innerHTML = preserveLineBreaks(limitLines(inputValue.toLowerCase(), 20));
+  editInputHeight()
 }
 
 // $toUppercase[]
 function toUppercasePlayground(inputValue) {
   const playOutput = document.getElementById('play-output');
-  playOutput.innerHTML = preserveLineBreaks(limitLines(inputValue.toUpperCase(), 20)); 
+  playOutput.innerHTML = preserveLineBreaks(limitLines(inputValue.toUpperCase(), 20));
+  editInputHeight()
 }
 
 // $toTitleCase[]
@@ -116,10 +119,23 @@ function toTitleCasePlayground(inputValue) {
   playOutput.innerHTML = preserveLineBreaks(limitLines(inputValue.replace(/\w\S*/g, (word) => 
     word.charAt(0).toUpperCase() + word.slice(1).toLowerCase() 
   ), 20));
+  editInputHeight()
 }
 
 // Empty value error
 function outputEmptyValueError(functionName, lineNumber, position) {
   const playOutput = document.getElementById('play-output');
   playOutput.innerHTML  = `❌ Function <p id="errorFunctionName">${functionName}</p> at <p id="errorLineNumber">${lineNumber}:${functionName.length + 2}</p> returned an error: expected valid value in position ${position}, got empty value`;
+}
+
+// Better input size for large values
+function editInputHeight() {
+  const playInputt = document.getElementById('play-input');
+  playInputt.style.height = "1.75rem";
+  playInputt.style.height = playInputt.scrollHeight + "px";
+  if (playInputt.scrollHeight > 36) {
+    playInputt.style.width = "97.75%";
+  } else {
+    playInputt.style.width = "fit-content";
+  }
 }
