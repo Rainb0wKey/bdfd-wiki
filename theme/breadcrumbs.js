@@ -3,6 +3,7 @@ const MAP = {
     guides: "Guides",
     resources: "Resources",
     callbacks: "Callbacks",
+    flowchart: "Flowchart",
     premium: "Premium",
     javascript: "JavaScript"
 };
@@ -14,8 +15,12 @@ function getNameFromTitle() {
     return document.title.substring(0, index-1);
 }
 
-let root = "/bdfd-wiki/"
+let root = "/";
 let path = location.pathname.substring(11);
+
+if (location.pathname.includes("bdfd-wiki")) {
+    root = "/bdfd-wiki/"; 
+}
 
 if (path.startsWith("nightly")) {
     path = path.substring(8);
