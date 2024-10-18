@@ -10,6 +10,10 @@
     position: relative;
 }
 
+.changelog .hljs {
+    box-shadow: none;
+}
+
 .changePrev {
     margin-top: 10px;
     border: solid;
