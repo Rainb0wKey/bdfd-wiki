@@ -14,7 +14,7 @@ smart-punctuation = true
 git-repository-url = "https://github.com/NilPointer-Software/bdfd-wiki"
 edit-url-template = "https://github.com/NilPointer-Software/bdfd-wiki/edit/dev/{path}"
 no-section-label = true
-additional-css = ["src/theme/css/chrome.css", "src/theme/css/general.css", "src/theme/css/variables.css", "src/theme/css/print.css", "src/theme/css/wiki-themes/breadcrumbs.css", "src/theme/css/wiki-themes/discord-messages.css", "src/theme/css/wiki-themes/root.css"]
+additional-css = ["src/theme/css/chrome.css", "src/theme/css/general.css", "src/theme/css/variables.css", "src/theme/css/wiki-themes/breadcrumbs.css", "src/theme/css/wiki-themes/discord-messages.css", "src/theme/css/wiki-themes/root.css"]
 
 [output.html.fold]
 enable = true
