@@ -36,6 +36,13 @@
         <link rel="stylesheet" href="../ayu-highlight.css">
 
         <!-- Custom theme stylesheets -->
+           <link rel="stylesheet" href="../src/theme/css/chrome.css">
+           <link rel="stylesheet" href="../src/theme/css/general.css">
+           <link rel="stylesheet" href="../src/theme/css/variables.css">
+           <link rel="stylesheet" href="../src/theme/css/print.css">
+           <link rel="stylesheet" href="../src/theme/css/wiki-themes/breadcrumbs.css">
+           <link rel="stylesheet" href="../src/theme/css/wiki-themes/discord-messages.css">
+           <link rel="stylesheet" href="../src/theme/css/wiki-themes/root.css">
            <link rel="stylesheet" href=".././src/theme/mdbook-admonish.css">
 
     </head>
@@ -160,11 +167,11 @@ $embeddedURL[https://google.com]
 $footer[⬆️ Title hyperlink]
 </code></pre>
 <discord-messages>
-    <discord-message author="RainbowKey" role-color="#E67E22">
+    <discord-message role-color="#E67E22" author="RainbowKey">
         !example
     </discord-message>
-    <discord-message author="BDFD Support" bot verified role-color="#378afa">
-        <discord-embed embed-title="Google" url="https://google.com" slot="embeds">
+    <discord-message role-color="#378afa" author="BDFD Support" bot verified>
+        <discord-embed slot="embeds" url="https://google.com" embed-title="Google">
             <discord-embed-footer slot="footer">
                 ⬆️ Title hyperlink
             </discord-embed-footer>
