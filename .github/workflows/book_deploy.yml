@@ -142,12 +142,12 @@ jobs:
               **__Content__**
 
               ${{ env.MESSAGE }}
-            component:
-              - type: 2
-                style: 5
-                label: View commit
-                url: ${{ github.event.head_commit.url }}
-              - type: 2
-                style: 5
-                label: Preview site
-                url: https://nilpointer-software.github.io/bdfd-wiki/${{ env.LINK }}
+          component: |-
+            - type: 2
+              style: 5
+              label: View commit
+              url: ${{ github.event.head_commit.url }}
+            - type: 2
+              style: 5
+              label: Preview site
+              url: https://nilpointer-software.github.io/bdfd-wiki/${{ env.LINK }}

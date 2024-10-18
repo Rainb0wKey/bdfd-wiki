@@ -1,5 +1,14 @@
 {
     "2024": {
+        "august": [
+            "Added `$log[]`",
+            "Added `$logQuota`",
+            "Added `$suppressErrorLogging`",
+            "Added `$ceil[]`",
+            "Added `$floor[]`",
+            "Added `$sqrt[]`",
+            "Added `$isInteger[]`"
+        ],
         "july": [
             "Added `$isBooster[]`",
             "Added `$setUserRoles[]`",

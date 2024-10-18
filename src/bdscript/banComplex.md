@@ -33,3 +33,7 @@ $ban[$noMentionMessage]
       <font color="white">Spen</font> left without pizza.
   type: leave
 ```
+
+```admonish question title="What is this?"
+How [`$noMentionMessage`](./noMentionMessage.md) and [`$mentioned[]`](./mentioned.md) works?
+```
