@@ -39,7 +39,6 @@
            <link rel="stylesheet" href="../src/theme/css/chrome.css">
            <link rel="stylesheet" href="../src/theme/css/general.css">
            <link rel="stylesheet" href="../src/theme/css/variables.css">
-           <link rel="stylesheet" href="../src/theme/css/print.css">
            <link rel="stylesheet" href="../src/theme/css/wiki-themes/breadcrumbs.css">
            <link rel="stylesheet" href="../src/theme/css/wiki-themes/discord-messages.css">
            <link rel="stylesheet" href="../src/theme/css/wiki-themes/root.css">
@@ -152,7 +151,7 @@ Message: $noMentionMessage
     <discord-message role-color="#E67E22" author="RainbowKey">
         !example Hello <discord-mention>MineBartekSA</discord-mention>!
     </discord-message>
-    <discord-message bot verified role-color="#378afa" author="BDFD Support">
+    <discord-message bot verified author="BDFD Support" role-color="#378afa">
         Hello !
     </discord-message>
 </discord-messages>
@@ -160,10 +159,10 @@ Message: $noMentionMessage
 <li>Lets use <a href="./message.html"><code>$message</code></a> instead of <code>$noMentionMessage</code>:</li>
 </ul>
 <discord-messages>
-    <discord-message role-color="#E67E22" author="RainbowKey">
+    <discord-message author="RainbowKey" role-color="#E67E22">
         !example Hello <discord-mention>MineBartekSA</discord-mention>!
     </discord-message>
-    <discord-message bot role-color="#378afa" author="BDFD Support" verified>
+    <discord-message bot role-color="#378afa" verified author="BDFD Support">
         Hello @MineBartekSA!
     </discord-message>
 </discord-messages>
