@@ -133,7 +133,33 @@
                         <a href="" class="editPage">
                             <i class='fa fa-edit' id="editPageIcon"></i>
                         </a>
-                        <link rel="stylesheet" href="./theme/css/chrome.css">
+                        <style>
+  .pageButtons {
+    display: flex;
+    justify-content: center;
+  }
+
+  button {
+	  display: flex;
+	  justify-content: center;
+    border-radius: 10px;
+    border: none;
+  	transition: .3s;
+	  margin-left: .5rem;
+    margin-right: .5rem;
+  }
+
+  button:hover {
+    border-radius: 10px;
+    transform: scale(1.025);
+    transition: .3s;
+  }
+  
+  p:not(button p) {
+    text-align: center;
+    font-size: 2.5rem;
+  }
+</style>
 <div class="pageNotFound">
   <img src="https://github.com/user-attachments/assets/d8222221-ae23-4124-9a86-82ab005862a4" alt="404" />
   <p>Page not found:(</p>
