@@ -16,11 +16,25 @@ Required permissions that the bot must have for this function to work properly:
 ## Example
 ```
 $nomention
-$onlyPerms[manageroles;❌ You are missing the `MANAGE_ROLES` permission!]
-$argsCheck[>1;Please provide a role to delete!]
-$onlyIf[$findRole[$message]!=;Invalid role!]
 $deleteRole[$findRole[$message]]
-Deleted the role!
+Successfully deleted $roleName[$findRole[$message]]
 ```
-![example](https://user-images.githubusercontent.com/111157596/239688806-0699dbf1-3684-4a4a-9cdf-f191ad0b90fd.png)\
+
+``` discord yaml
+- user_id: 803569638084313098
+  username: RainbowKey
+  color: "#E67E22"
+  content: |
+    !example Cool Role
+- user_id: 1009018156494368798
+  username: BDFD Support
+  color: "#378afa"
+  bot: true
+  verified: true
+  content: |
+      Successfully deleted Cool Role
+  ```
+\
 ![example](https://user-images.githubusercontent.com/111157596/239688761-3bd88f60-8a5c-48e9-9b23-677b2e4ecd17.png)
+
+> How [`$findRole[]`](./findRole.md), [`$roleName[]`](./roleName.md) and [`$message`](./message.md) works?

@@ -40,7 +40,8 @@ $awaitFunc[say]
   color: "#E67E22"
   content: |
     !example
-- username: BDFD Support
+- user_id: 1009018156494368798
+  username: BDFD Support
   color: "#378afa"
   bot: true
   verified: true
@@ -51,7 +52,8 @@ $awaitFunc[say]
   color: "#E67E22"
   content: |
     I love BDFD
-- username: BDFD Support
+- user_id: 1009018156494368798
+  username: BDFD Support
   color: "#378afa"
   bot: true
   verified: true
@@ -88,7 +90,8 @@ $message
   color: "#E67E22"
   content: |
     !example
-- username: BDFD Support
+- user_id: 1009018156494368798
+  username: BDFD Support
   color: "#378afa"
   bot: true
   verified: true
@@ -99,7 +102,8 @@ $message
   color: "#E67E22"
   content: |
     I love BDFD
-- username: BDFD Support
+- user_id: 1009018156494368798
+  username: BDFD Support
   color: "#378afa"
   bot: true
   verified: true

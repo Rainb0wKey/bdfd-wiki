@@ -1,7 +1,7 @@
 # $findRole
 Finds a role's ID using the given role name, ID, or mention.
 
-> 📝 This function can only find roles of the current server.
+> This function can only find roles of **the current** server.
 
 ## Syntax
 ```
@@ -14,7 +14,24 @@ $findRole[Role]
 ## Example
 ```
 $nomention
-$findRole[$message]
+Role ID: $findRole[$message]
 ```
 
-![example](https://user-images.githubusercontent.com/69215413/125977360-1deeba9f-9350-4bbc-a69d-e56352a8d9aa.png)
+```discord yaml
+- user_id: 803569638084313098
+  username: RainbowKey
+  color: "#E67E22"
+  content: |
+    !example Support
+- user_id: 1009018156494368798
+  username: BDFD Support
+  color: "#378afa"
+  bot: true
+  verified: true
+  content: |
+    Role ID: 568155071997542410
+```
+
+```admonish question title="What is this?"
+How [`$message`](./message.md) works?
+```

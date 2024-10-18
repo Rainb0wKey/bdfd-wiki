@@ -1,7 +1,7 @@
 # $isBot
 Returns whether the provided user is a bot or not.
 
-> 🧙‍♂️ "true" means the user is a bot, "false" means they aren't.
+> "true" means the user is a bot, "false" means they aren't.
 
 ## Syntax
 ```
@@ -14,7 +14,32 @@ $isBot[User ID]
 ## Example
 ```
 $nomention
-Bot? $isBot[$findUser[$message]]
+Bot?: $isBot[$mentioned[1]]
 ```
 
-![image](https://user-images.githubusercontent.com/69215413/126853528-3af140c4-0c73-4091-bb6f-d1f6e3567bf5.png)
+``` discord yaml
+- user_id: 803569638084313098
+  username: RainbowKey
+  color: "#E67E22"
+  content: |
+    !example <@MineBarekSA>
+- user_id: 1009018156494368798
+  username: BDFD Support
+  color: "#378afa"
+  bot: true
+  verified: true
+  content: |
+    Bot?: <code>false</code>
+- user_id: 803569638084313098
+  username: RainbowKey
+  color: "#E67E22"
+  content: |
+    !example <@BDFD Support>
+- user_id: 1009018156494368798
+  username: BDFD Support
+  color: "#378afa"
+  bot: true
+  verified: true
+  content: |
+    Bot?: <code>true</code>
+```

@@ -1,8 +1,6 @@
 # $getTextSplitLength
 Returns the number of splits in [`$textSplit[]`](./textSplit.md).
 
-> 🧙‍♂️ This function can't be used, if `$textSplit[]` isn't present in the code.
-
 ## Syntax
 ```
 $getTextSplitLength
@@ -11,9 +9,23 @@ $getTextSplitLength
 ## Example
 ```
 $nomention
-$textSplit[Hello | Hi | Hey; | ]
-The text has been split into $getTextSplitLength elements!
+$textSplit[hello%world%!;%]
+> $getTextSplitLength
 ```
-![example](https://user-images.githubusercontent.com/111157596/233414862-1bb20a46-f0f3-4785-b25d-dd3e79e01fd9.png)
+
+``` discord yaml
+- user_id: 803569638084313098
+  username: RainbowKey
+  color: "#E67E22"
+  content: |
+    !example
+- user_id: 1009018156494368798
+  username: BDFD Support
+  color: "#378afa"
+  bot: true
+  verified: true
+  content: |
+    <discord-quote>3</discord-quote>
+```
 
 > For more info, see the [Text Splitting Guide](../guides/general/textSplitting.md).

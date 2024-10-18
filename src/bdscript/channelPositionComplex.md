@@ -12,7 +12,7 @@ $channelPosition[Channel ID]
 ## Example
 ```
 $nomention
-Channel Position: $channelPosition[$mentionedChannels[1;yes]]
+Channel Position: $channelPosition[$mentionedChannels[1]]
 ```
 
 ```discord yaml
@@ -21,7 +21,8 @@ Channel Position: $channelPosition[$mentionedChannels[1;yes]]
   color: "#E67E22"
   content: |
     !example <#main-chat>
-- username: BDFD Support
+- user_id: 1009018156494368798
+  username: BDFD Support
   color: "#378afa"
   bot: true
   verified: true
@@ -29,3 +30,6 @@ Channel Position: $channelPosition[$mentionedChannels[1;yes]]
     Channel Position: 2
 ```
 
+```admonish question title="What is this?"
+How [`$mentionedChannels[]`](./mentionedChannels.md) works?
+```

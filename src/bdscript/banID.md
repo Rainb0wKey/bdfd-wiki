@@ -10,7 +10,6 @@ $banID
 ## Example
 ```
 $nomention
-$onlyPerms[ban;You need the `ban` permission to use that command!]
 <@$findUser[$message;no]> was banned!
 $banID
 ```
@@ -21,7 +20,8 @@ $banID
   color: "#E67E22"
   content: |
     !example 854665455527526421
-- username: BDFD Support
+- user_id: 1009018156494368798
+  username: BDFD Support
   color: "#378afa"
   bot: true
   verified: true
@@ -32,4 +32,6 @@ $banID
   type: leave
 ```
 
-> [How `$findUser[]` works?](./findUser.md)
+```admonish question title="What is this?"
+How [`$findUser[]`](./findUser.md) and [`$message`](./message.md) works?
+```

@@ -1,6 +1,10 @@
 # $discriminator
 Returns a user's discriminator (the 4 digit number at the end of their username).
 
+```admonish fail
+Discord has updated the username system, removing discriminators for users. Discriminators will only work for bots. For user it will return `0000`.
+```
+
 ## Syntax
 ```
 $discriminator[User ID]
@@ -9,19 +13,31 @@ $discriminator[User ID]
 ### Parameters
 - `User ID` `(Type: Snowflake || Flag: Emptiable)`: The user to get the discriminator from.
 
-> 🧙‍♂️ You can leave the `User ID` argument empty to get the discriminator of the author of the message. See [Example 1](#example-1) below.
-
-## Examples
-### Example #1
+## Example
 ```
 $nomention
-Hello $username#$discriminator[]!
+Discriminator: #$discriminator[$mentioned[1]]
 ```
-![example1](https://user-images.githubusercontent.com/69215413/123010488-b5911b00-d38c-11eb-8aeb-a7453c3687c6.png)
 
-### Example #2
+```discord yaml
+- user_id: 803569638084313098
+  username: RainbowKey
+  color: "#E67E22"
+  content: |
+    !example <@BDFD Support>
+- user_id: 1009018156494368798
+  username: BDFD Support
+  color: "#378afa"
+  bot: true
+  verified: true
+  content: |
+    Discriminator: #7678
 ```
-$nomention
-Hello, I'm **$username[$botID]#$discriminator[$botID]**!
+
+```admonish note
+You can use `$discriminator[]` get the discriminator of the author.
 ```
-![example2](https://user-images.githubusercontent.com/111157596/232813565-f300e328-35db-4c5b-b98d-839e5db4f428.png)
+
+```admonish question title="What is this?"
+How [`$mentioned[]`](./mentioned.md) works?
+```

@@ -1,6 +1,8 @@
 # $editSelectMenuOption
 Edits a select menu option.
 
+> You can edit the main select menu with [`$editSelectMenu[]`](./editSelectMenu.md).
+
 ## Syntax
 ```
 $editSelectMenuOption[Menu option ID;Label;Value;Description;(Default;Emoji;Message ID)]

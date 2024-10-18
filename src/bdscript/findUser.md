@@ -16,7 +16,7 @@ $nomention
 User ID: $findUser[$message]
 ```
 
-```
+``` discord yaml
 - user_id: 803569638084313098
   username: RainbowKey
   color: "#E67E22"
@@ -29,4 +29,8 @@ User ID: $findUser[$message]
   verified: true
   content: |
     User ID: 1009018156494368798
+```
+
+```admonish question title="What is this?"
+How [`$message`](./message.md) works?
 ```

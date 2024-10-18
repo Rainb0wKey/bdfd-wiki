@@ -12,6 +12,22 @@ $getCustomStatus[User ID]
 ## Example
 ```
 $nomention
-Your custom status: $getCustomStatus[$authorID]
+Custom status: $getCustomStatus[$authorID]
 ```
-![example](https://user-images.githubusercontent.com/94063167/199255690-0c1a250f-7004-4605-8a0a-858a664f9a9d.png)
+
+``` discord yaml
+- user_id: 803569638084313098
+  username: RainbowKey
+  color: "#E67E22"
+  content: |
+    !example
+- user_id: 1009018156494368798
+  username: BDFD Support
+  color: "#378afa"
+  bot: true
+  verified: true
+  content: |
+    Custom status: Hello! I'm RainbowKey
+```
+
+> [How `$authorID` works?](./authorID.md)

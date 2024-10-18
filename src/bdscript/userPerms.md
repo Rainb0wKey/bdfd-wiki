@@ -14,6 +14,24 @@ $userPerms[User ID;Return amount;Separator]
 ## Example
 ```
 $nomention
-$userPerms[$mentioned[1;yes];-1;-]
+$userPerms[$authorID;-1;, ]
 ```
-![image](https://user-images.githubusercontent.com/42785890/151909707-d8e093f2-1279-4754-88a5-51466270fde6.png)
+
+``` discord yaml
+- user_id: 803569638084313098
+  username: RainbowKey
+  color: "#E67E22"
+  content: |
+    !example
+- username: BDFD Support
+  user_id: 1009018156494368798
+  color: "#378afa"
+  bot: true
+  verified: true
+  content: |
+    CREATE_INSTANT_INVITE, ADMINISTRATOR, ADD_REACTIONS, STREAM, VIEW_CHANNEL, SEND_MESSAGES, EMBED_LINKS, ATTACH_FILES, READ_MESSAGE_HISTORY, MENTION_EVERYONE, USE_EXTERNAL_EMOJIS, CONNECT, SPEAK, USE_VAD, CHANGE_NICKNAME, USE_APPLICATION_COMMANDS, REQUEST_TO_SPEAK, CREATE_PUBLIC_THREADS, CREATE_PRIVATE_THREADS, USE_EXTERNAL_STICKERS, SEND_MESSAGES_IN_THREADS
+```
+
+```admonish question title="What is this?"
+How [`$authorID`](./authorID.md) works?
+```

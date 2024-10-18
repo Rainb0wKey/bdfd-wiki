@@ -15,4 +15,17 @@ $disableSpecialEscaping
 %{DOL}%replaceText[Hello World!%{-SEMICOL-}%World%{-SEMICOL-}%Planet%{-SEMICOL-}%1]
 ```
 
-![example](https://user-images.githubusercontent.com/69215413/126878203-7dfe9494-b107-4e05-842c-2134b64138ef.png)
+``` discord yaml
+- user_id: 803569638084313098
+  username: RainbowKey
+  color: "#E67E22"
+  content: |
+    !example
+- user_id: 1009018156494368798
+  username: BDFD Support
+  color: "#378afa"
+  bot: true
+  verified: true
+  content: |
+      Hello Planet!
+  ```

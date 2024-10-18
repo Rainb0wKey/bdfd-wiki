@@ -14,4 +14,22 @@ $userID[Username#Discriminator / Username]
 $nomention
 $userID[$username]
 ```
-![example](https://user-images.githubusercontent.com/69215413/125357565-c999be00-e335-11eb-9b17-037bb574de53.png)
+
+``` discord yaml
+- user_id: 803569638084313098
+  username: RainbowKey
+  color: "#E67E22"
+  content: |
+    !example
+- username: BDFD Support
+  user_id: 1009018156494368798
+  color: "#378afa"
+  bot: true
+  verified: true
+  content: |
+    803569638084313098
+```
+
+```admonish question title="What is this?"
+How [`$username`](./username.md) works?
+```

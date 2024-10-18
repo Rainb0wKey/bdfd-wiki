@@ -1,4 +1,4 @@
-# $getBanReason[]
+# $getBanReason
 Gets the user's ban reason.
 
 
@@ -24,9 +24,11 @@ Ban Reason: $getBanReason[154148273307910144]
   color: "#E67E22"
   content: |
     !example
-- username: BDFD Support
-  color: "#b9a0e0"
+- user_id: 1009018156494368798
+  username: BDFD Support
+  color: "#378afa"
   bot: true
+  verified: true
   content: |
     Ban Reason: Too cute
 ```

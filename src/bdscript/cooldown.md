@@ -56,7 +56,7 @@ Hi!
 ```
 \
 
-> If you are using **BDScript 2**, then all functions above `$colldown[]` will always work.
+> If you are using **BDScript 2**, then all functions above `$cooldown[]` will always work.
 > 
 > ❌ Not correct:
 > ```

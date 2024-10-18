@@ -6,7 +6,7 @@ Suppresses the error messages, responds with the embed if there is an error.
 $embedSuppressErrors[Title;Description;(Color;Author;Footer;Footer icon)]
 ```
 
-> 🧙‍♂️ All fields are optional, leave the field empty to not include it. At least one field needs to be inputted, however.
+> All fields are optional, leave the field empty to not include it. At least one field needs to be inputted, however.
 
 ### Parameters
 - `Title` `(Type: String || Flag: Emptiable)`: The title of the embed.

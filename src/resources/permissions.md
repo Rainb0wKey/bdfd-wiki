@@ -49,4 +49,4 @@ viewguildinsights | Allows to view [insights](https://discord.com/developers/ser
 voicedeafen | Allows to deafen a member in voice/stage channel.
 voicemute | Allows to mute a member from speaking in voice/stage channel.
 
-> 📝 All permissions are case insensitive (i.e both `BAN` and `Ban` will work).
+> All permissions are case insensitive (i.e both `BAN` and `Ban` will work).

@@ -17,7 +17,8 @@ Channel ID: $channelID
   color: "#E67E22"
   content: |
     !example
-- username: BDFD Support
+- user_id: 1009018156494368798
+  username: BDFD Support
   color: "#378afa"
   bot: true
   verified: true
@@ -25,13 +26,17 @@ Channel ID: $channelID
       Channel ID: 566370477967147018
 ```
 
-> It will return `none` if you use it in a DM.
+```admonish note
+It will return `none` if you use it in a DM:
+```
+
 ```discord yaml
 - user_id: 803569638084313098
   username: RainbowKey
   content: |
     !example
-- username: BDFD Support
+- user_id: 1009018156494368798
+  username: BDFD Support
   bot: true
   verified: true
   content: |

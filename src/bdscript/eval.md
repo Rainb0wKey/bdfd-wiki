@@ -1,22 +1,55 @@
 # $eval
+<div class="functionTags">
+  <span id="DangerousTag">Dangerous</span>
+</div>
+
 Evaluates the provided BDScript code.
 
-> ⚠️ Can only be used in BDScript 2. This function should be used with caution!
+```admonish danger title="BDScript 2"
+Can only be used in **[BDScript 2](../guides/general/bds2/aboutBDScript2.md)**.
+```
+
+> ⚠️ **Should be used with caution!** ⚠️
+
 
 ## Syntax
 ```
-$eval[BDScript source code]
+$eval[Source code]
 ```
 
 ### Parameters 
-- `BDScript source code` `(Type: String || Flag: Emptiable)`: The code to be evaluated.
+- `Source code` `(Type: String || Flag: Emptiable)`: The code to be evaluated.
 
 ## Example
 ```
 $nomention
-$onlyForIDs[$botOwnerID;❌ Only the bot owner can use that!]
 $eval[$message]
 ```
-![example](https://user-images.githubusercontent.com/98183987/153739471-cb7a44ff-d0f1-40ac-8c26-ff2f58ffb008.jpg)
 
-> It is recommended to restrict the command to be only used by the bot developers, this can be done with [`$onlyForIDs[]`](./onlyForIDs.md).
+``` discord yaml
+- user_id: 729343563401265193
+  username: Nicky
+  color: "#EE7908"
+  content: |
+    !example $sendMessage[Hello! My username is $username]
+- user_id: 566613317972394004
+  username: Wiki Bot
+  color: "#748BD4"
+  bot: true
+  verified: true
+  content: |
+    Hello! My username is Nicky
+```
+
+> How [`$message`](./message.md) works?
+
+> ⚠️ **Should be used with caution!** ⚠️
+> 
+> It is recommended to restrict the command to be only used by the bot developers, this can be done with:
+```
+$nomention
+$onlyForIDs[$botOwnerID;❌ You are not my owner!]
+$eval[$message]
+```
+
+> How [`$onlyForIDs[]`](./onlyForIDs.md) and [`$botOwnerID`](./botOwnerID.md) works?

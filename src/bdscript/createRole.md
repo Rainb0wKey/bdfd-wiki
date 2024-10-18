@@ -20,7 +20,7 @@ $createRole[Role name;Color hex;Hoist?;Mentionable?]
 ```
 $nomention
 $createRole[Cool Role;#FFFF00;yes;no]
-Created new role!
+New role created!
 ```
 
 ``` discord yaml
@@ -35,9 +35,9 @@ Created new role!
   bot: true
   verified: true
   content: |
-    New channel created!
+    New role created!
 ```
 \
 ![example](https://user-images.githubusercontent.com/69215413/125973030-7c9b980c-cffb-4f8e-aacc-a644a6fa23c3.png)
 
-> [You can use `$roleID[]` to return the channel ID.](./roleID.md)
+> [You can use `$roleID[]` to return the role ID.](./roleID.md)

@@ -10,12 +10,37 @@ $getTextSplitIndex[Value]
 - `Value` `(Type: String || Flag: Emptiable)`: The value to search in the text split.
 
 ## Example 
-``` 
-$nomention 
-$textSplit[Cake-Bread;-] 
-$getTextSplitIndex[$message[1]] 
-``` 
+```
+$nomention
+$textSplit[hello_world_!;_]
+> $getTextSplitIndex[$message]
+```
 
-![image](https://user-images.githubusercontent.com/42785890/151845189-1866a9c2-cacb-401b-9efe-137cc54586b6.png)
+``` discord yaml
+- user_id: 803569638084313098
+  username: RainbowKey
+  color: "#E67E22"
+  content: |
+    !example world
+- user_id: 1009018156494368798
+  username: BDFD Support
+  color: "#378afa"
+  bot: true
+  verified: true
+  content: |
+    <discord-quote>2</discord-quote>
+- user_id: 803569638084313098
+  username: RainbowKey
+  color: "#E67E22"
+  content: |
+    !example bdfd
+- user_id: 1009018156494368798
+  username: BDFD Support
+  color: "#378afa"
+  bot: true
+  verified: true
+  content: |
+    <discord-quote>-1</discord-quote>
+```
 
 > For more info, see the [Text Splitting Guide](../guides/general/textSplitting.md).

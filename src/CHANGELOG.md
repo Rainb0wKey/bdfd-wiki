@@ -1,19 +1,33 @@
 # Changelog
 
 # 2024
+   
+## August
+- Added `$log[]`
+- Added `$logQuota`
+- Added `$suppressErrorLogging`
+- Added `$ceil[]`
+- Added `$floor[]`
+- Added `$sqrt[]`
+- Added `$isInteger[]`
+
+<details><summary>Previous Updates</summary>
+
+## July
+- Added `$setUserRoles[]`
+- Added `$getLeaderboardPosition[]`
+- Added `$isBooster[]`
 
 ## June
 - Added `$ai[]`
 - Added `$aiQuota`
 
-<details><summary>Previous Updates</summary>
-
 ## March
-- Fixed that sometimes the bot duplicates its answer
-- Fixed `$onlyForIDs[]` did not work correctly on big nodes
+- Fixed the bot sometimes duplicating its answer
+- Fixed `$onlyForIDs[]` not working correctly on big nodes
 
 </details>
-   
+
 # 2023
 
 ## June
@@ -476,6 +490,8 @@
 - Added `$findChannel[]` and `$channelExists[]`
 - Added `$userJoined[]` and `$userJoinedDiscord[]`
 
+</details>
+
 # 2020
 
 ## December
@@ -487,6 +503,8 @@
 - Added `userID` option to `$resetUserVar`
 - Added `serverID` option to `$serverOwner`
 - Added `$premiumExpireTime`
+
+<details><summary>Previous Updates</summary>
 
 ## November
 - Fixed disappearing bot status
@@ -688,3 +706,7 @@
 </details>
 
 > If you want to access this changelog externally, we have a [JSON version](https://raw.githubusercontent.com/NilPointer-Software/bdfd-wiki/dev/external/CHANGELOG.json) of the changelog to which you can send a GET request and work with a JSON document further.
+
+```admonish abstract title="Flowchart Changelog"
+If you want to see the BDScript changelog, [click here](./FLOWCHART_CHANGELOG.md).
+```

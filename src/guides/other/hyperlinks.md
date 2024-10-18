@@ -18,7 +18,7 @@ $nomention
 $description[This bot is made with [Bot Designer For Discord\](https://botdesignerdiscord.com)]
 ```
 
-```
+``` discord yaml
 - user_id: 803569638084313098
   username: RainbowKey
   color: "#E67E22"

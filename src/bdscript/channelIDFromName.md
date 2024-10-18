@@ -1,7 +1,9 @@
 # $channelDFromName
-*(deprecated)*
+<div class="functionTags">
+  <span id="DeprecatedTag">Deprecated</span>
+</div>
 
-> 🧙‍♂️ This function is deprecated, instead better use [`$channelID[]`](./channelIDComplex.md).
+> This function is deprecated, instead better use [`$channelID[]`](./channelIDComplex.md).
 
 Returns a channel's ID from its name.
 
@@ -25,10 +27,15 @@ Channel ID: $channelIDFromName[$mesaage]
   color: "#E67E22"
   content: |
     !example main-chat
-- username: BDFD Support
+- user_id: 1009018156494368798
+  username: BDFD Support
   color: "#378afa"
   bot: true
   verified: true
   content: |
     Channel ID: 1014546423032860754
+```
+
+```admonish question title="What is this?"
+How [`$message`](./message.md) works?
 ```

@@ -1,4 +1,28 @@
 {
+    "2024": {
+        "august": [
+            "Added `$log[]`",
+            "Added `$logQuota`",
+            "Added `$suppressErrorLogging`",
+            "Added `$ceil[]`",
+            "Added `$floor[]`",
+            "Added `$sqrt[]`",
+            "Added `$isInteger[]`"
+        ],
+        "july": [
+            "Added `$isBooster[]`",
+            "Added `$setUserRoles[]`",
+            "Added `$getLeaderboardPosition[]`"
+        ],
+        "june": [
+            "Added `$ai[]`",
+            "Added `$aiQuota`"
+        ],
+        "march": [
+            "Fixed the bot sometimes duplicating its answer",
+            "Fixed `$onlyForIDs[]` not working correctly on big nodes"
+        ]
+    },
     "2023": {
         "june": [
             "Fixed custom images not always being displayed",

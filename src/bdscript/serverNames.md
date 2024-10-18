@@ -9,7 +9,6 @@ $serverNames
 ## Example
 ```
 $nomention
-$onlyForIDs[$botOwnerID;Only my owner can use that!]
 $serverNames
 ```
 
@@ -20,8 +19,10 @@ $serverNames
   content: |
     !example
 - username: BDFD Support
-  color: "#b9a0e0"
+  user_id: 1009018156494368798
+  color: "#378afa"
   bot: true
+  verified: true
   content: |
-    BDFD Support, Best Guild, Wiki Server
+    Bot Designer for Discord Official Server, B. Support, Bot Designer List, BDFD Appeals Server, Synthexia, Roblox, Minecraft, Discord Developers, Discord API, BDFD Development
 ```

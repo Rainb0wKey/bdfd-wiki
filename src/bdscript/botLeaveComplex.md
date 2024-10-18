@@ -16,13 +16,18 @@ $sendMessage[I left out `$serverName[$message]` server.]
 $botLeave[$message]
 ```
 
+```admonish question title="What is this?"
+How [`$sendMessage[]`](./sendMessage.md), [`$serverName[]`](./serverName.md) and [`$message`](./message.md) works?
+```
+
 ```discord yaml
 - user_id: 803569638084313098
   username: RainbowKey
   color: "#E67E22"
   content: |
     !example 1009018156494368798
-- username: BDFD Support
+- user_id: 1009018156494368798
+  username: BDFD Support
   color: "#378afa"
   bot: true
   verified: true

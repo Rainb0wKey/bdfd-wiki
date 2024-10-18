@@ -12,7 +12,7 @@ $boostCount[Guild ID]
 ## Example
 ```
 $nomention
-This server currently has $boostCount[$message[1]] boost(s).
+This server currently has $boostCount[$message] boost(s).
 ```
 
 ```discord yaml
@@ -24,7 +24,8 @@ This server currently has $boostCount[$message[1]] boost(s).
   color: "#E67E22"
   content: |
     !example 566363823137882154
-- username: BDFD Support
+- user_id: 1009018156494368798
+  username: BDFD Support
   color: "#378afa"
   bot: true
   verified: true

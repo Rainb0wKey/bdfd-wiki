@@ -29,11 +29,11 @@ Author of message: $username[$authorOfMessage[$message[1];$message[2]]]
   color: "#E67E22"
   content: |
     !example 566370477967147018 1135158746369245314
-- username: BDFD Support
+- user_id: 1009018156494368798
+  username: BDFD Support
   color: "#378afa"
   bot: true
   verified: true
   content: |
     Author of message: Kemi
 ```
-

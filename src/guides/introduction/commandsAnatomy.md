@@ -20,10 +20,9 @@ The soul of your command. This is what the bot responds when the command is exec
 ![image](https://user-images.githubusercontent.com/69215413/120054230-b092b300-bffc-11eb-805d-16b8b6c41cc1.png)
 
 #### Output
-```
+``` discord yaml
 - user_id: 803569638084313098
   username: RainbowKey
-  avatar: https://github.com/NilPointer-Software/bdfd-wiki/assets/113303649/a9034fd5-40c2-4320-a408-2f2ee0071d9d
   color: "#E67E22"
   content: |
     !help

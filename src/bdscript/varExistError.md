@@ -14,7 +14,32 @@ $varExistError[Name;Error message]
 ```
 $nomention
 $varExistError[Cool;Add the 'Cool' variable in the app.]
-$setUserVar[Cool;true]
 You are now cool!
 ```
-![example](https://user-images.githubusercontent.com/69215413/125121239-9a7b1680-e0c1-11eb-8ceb-b9b695f1b89f.png)
+
+``` discord yaml
+- user_id: 803569638084313098
+  username: RainbowKey
+  color: "#E67E22"
+  content: |
+    !example
+- username: BDFD Support
+  user_id: 1009018156494368798
+  color: "#378afa"
+  bot: true
+  verified: true
+  content: |
+    Add the 'Cool' variable in the app.
+- user_id: 803569638084313098
+  username: RainbowKey
+  color: "#E67E22"
+  content: |
+    !example
+- username: BDFD Support
+  user_id: 1009018156494368798
+  color: "#378afa"
+  bot: true
+  verified: true
+  content: |
+    You are now cool!
+```

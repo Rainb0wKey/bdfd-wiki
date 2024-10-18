@@ -12,6 +12,24 @@ $displayName[User ID]
 ## Example
 ```
 $nomention
-**$username[$message[1]]**'s display name is `$displayName[$message[1]]`
+Display name: $displayName[$mentioned[1]]
 ```
-![example](https://user-images.githubusercontent.com/111157596/249786688-61ed7be7-2c9d-48f0-8a7a-280e498a09e7.png)
+
+```discord yaml
+- user_id: 803569638084313098
+  username: RainbowKey
+  color: "#E67E22"
+  content: |
+    !example <@MineBartekSA>
+- user_id: 1009018156494368798
+  username: BDFD Support
+  color: "#378afa"
+  bot: true
+  verified: true
+  content: |
+    Display name: MineBartekSA
+```
+
+```admonish question title="What is this?"
+How [`$mentioned[]`](./mentioned.md) works?
+```

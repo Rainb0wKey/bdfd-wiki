@@ -22,7 +22,8 @@ $ban[$noMentionMessage]
   color: "#E67E22"
   content: |
     !example <@Spen> Too cute
-- username: BDFD Support
+- user_id: 1009018156494368798
+  username: BDFD Support
   color: "#378afa"
   bot: true
   verified: true
@@ -31,4 +32,8 @@ $ban[$noMentionMessage]
 - content: |
       <font color="white">Spen</font> left without pizza.
   type: leave
+```
+
+```admonish question title="What is this?"
+How [`$noMentionMessage`](./noMentionMessage.md) and [`$mentioned[]`](./mentioned.md) works?
 ```

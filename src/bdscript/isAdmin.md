@@ -1,7 +1,7 @@
 # $isAdmin
 Returns whether the provided user has the administrator permission or not.
 
-> 🧙‍♂️ "true" means the user has the administrator permission, "false" means they don't.
+> "true" means the user has the administrator permission, "false" means they don't.
 
 ## Syntax
 ```
@@ -16,4 +16,18 @@ $isAdmin[User ID]
 $nomention
 Are you an admin?: `$isAdmin[$authorID]`
 ```
-![example](https://user-images.githubusercontent.com/111157596/233708093-852277ce-50b7-4fd6-a7b1-01d55931d9d2.png)
+
+``` discord yaml
+- user_id: 803569638084313098
+  username: RainbowKey
+  color: "#E67E22"
+  content: |
+    !example
+- user_id: 1009018156494368798
+  username: BDFD Support
+  color: "#378afa"
+  bot: true
+  verified: true
+  content: |
+    Are you an admin?: <code>true</code>
+```

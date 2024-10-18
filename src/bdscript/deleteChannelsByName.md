@@ -16,9 +16,25 @@ Required permissions that the bot must have for this function to work properly:
 ## Example
 ```
 $nomention
-$argsCheck[>1;Please provide a channel name!]
-$onlyPerms[managechannels;❌ You need the `MANAGE_CHANNELS` permission to use that!]
-Successfully deleted the channel #$channelName[$channelID[$message]]!
+Successfully deleted #$channelName[$channelID[$message]]!
 $deleteChannelsByName[$message]
 ```
-![example](https://user-images.githubusercontent.com/111157596/232805102-060e69c3-89e1-4008-bf71-8b62f5cb4d72.png)
+
+``` discord yaml
+- user_id: 803569638084313098
+  username: RainbowKey
+  color: "#E67E22"
+  content: |
+    !example main-chat
+- user_id: 1009018156494368798
+  username: BDFD Support
+  color: "#378afa"
+  bot: true
+  verified: true
+  content: |
+      Successfully deleted #main-chat
+  ```
+\
+![example](https://github.com/Rainb0wKey/bdfd-wiki/assets/113303649/6479e1dd-da03-431a-85e8-1f8ff18bf84c)
+
+> How [`$channelName[]`](./channelName.md) and [`$channelID[]`](./channelIDComplex.md) works?
