@@ -36,6 +36,13 @@
         <link rel="stylesheet" href="../ayu-highlight.css">
 
         <!-- Custom theme stylesheets -->
+           <link rel="stylesheet" href="../src/theme/css/chrome.css">
+           <link rel="stylesheet" href="../src/theme/css/general.css">
+           <link rel="stylesheet" href="../src/theme/css/variables.css">
+           <link rel="stylesheet" href="../src/theme/css/print.css">
+           <link rel="stylesheet" href="../src/theme/css/wiki-themes/breadcrumbs.css">
+           <link rel="stylesheet" href="../src/theme/css/wiki-themes/discord-messages.css">
+           <link rel="stylesheet" href="../src/theme/css/wiki-themes/root.css">
            <link rel="stylesheet" href=".././src/theme/mdbook-admonish.css">
 
     </head>
@@ -149,8 +156,8 @@
 <p>Entry Point ➤ - ➤ Set response message (Content: <code>Hello</code>)
 <img src="https://github.com/user-attachments/assets/ed7d4f3d-c753-4cda-a3d6-57d8f8d4564d" alt="example" /></p>
 <discord-messages>
-    <discord-message role-color="#748bd4" bot author="Flowchart">
-        <discord-command slot="reply" author="RainbowKey" command="/test" role-color="#E67E22">
+    <discord-message bot role-color="#748bd4" author="Flowchart">
+        <discord-command author="RainbowKey" role-color="#E67E22" command="/test" slot="reply">
         </discord-command>
         Hello
     </discord-message>
