@@ -325,8 +325,8 @@ a:link:not(.editPage, .mobile-nav-chapters, .chapter li a, .discord-button, .dis
 }
 
 @media (max-width: 750px) {
-    #editPageIcon {
-        padding: .3rem;
+    .editPage {
+        visibility: hidden;
     }
 }
 
