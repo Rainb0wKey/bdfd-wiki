@@ -110,14 +110,14 @@ button:not(#menu-bar i, #menu-bar .icon-button) {
     flex-wrap: wrap;
 }
 
-.textfontbuttons, .folderbuttons {
+.textfontbuttons, .folderbuttons, .effectbuttons {
     user-select: none;
     -webkit-user-select: none;
     display: block;
     margin-top: -20px;
 }
 
-.tbutton, .fbutton, .hgButton, .hbutton, .folderbutton {
+.tbutton, .fbutton, .hgButton, .hbutton, .ebutton, .folderbutton {
     -webkit-user-select: none;
     user-select: none;
     touch-action: manipulation;
@@ -290,7 +290,7 @@ button:not(#menu-bar i, #menu-bar .icon-button) {
     background: linear-gradient(-25deg, #240800, #742006);
 }
 
-.tbutton:hover, .fbutton:hover, .hgButton:hover, .hbutton:hover, .folderbutton:hover {
+.tbutton:hover, .fbutton:hover, .hgButton:hover, .hbutton:hover, .ebutton:hover, .folderbutton:hover {
     transform: scale(1.1);
     border-radius: 8px;
     border-width: 1px;
