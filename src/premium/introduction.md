@@ -25,7 +25,9 @@ After a successful purchase of premium points, here's how to redeem them :
 
      ![IMG_20220809_152453](https://user-images.githubusercontent.com/95774950/183664582-2f2bbb33-819b-49c9-ab48-a4ec6500cd1e.jpg)
 
-    > One premium point equals one week (7 days) of premium hosting.
+```admonish note
+One premium point equals one week (7 days) of premium hosting.
+```
 
 ## Premium Perks
 
@@ -58,7 +60,7 @@ Channel variable value character limit.                                         
 - Access to the premium chat.
 - Additional role income in our server economy system.
 
-### Support
-For any premium related issues/support, contact us at `premium-support@mail.botdesignerdiscord.com`.
-
+```admonish info title="Support"
+For any premium related issues/support, contact us at `premium-support@mail.botdesignerdiscord.com`.\
 You can also ask questions about premium in our [Community Discord Server](https://botdesignerdiscord.com/discord).
+```
