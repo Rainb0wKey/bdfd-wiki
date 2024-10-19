@@ -467,11 +467,11 @@
 
 - [Premium]()
     - [Introduction](./premium/introduction.md)
-    - [Callbacks]()
+    - [Callbacks](./callbacks/introduction.md)
         - [$alwaysReply](./premium/alwaysReply.md)
         - [$messageContains](./premium/messageContains.md) 
         - [$reaction](./premium/reaction.md)
-    - [Functions]()
+    - [Functions](./bdscript/introduction.md)
         - [$ai](./premium/ai.md)
         - [$aiQuota](./premium/aiQuota.md)
         - [$awaitReactions](./premium/awaitReactions.md)
