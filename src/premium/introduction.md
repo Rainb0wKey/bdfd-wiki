@@ -58,16 +58,6 @@ Channel variable value character limit.                                         
 - Access to the premium chat.
 - Additional role income in our server economy system.
 
-### Guides
-- [Awaited Reactions](./awaitedReactions.md)
-- [Custom Prefixes](./customPrefixes.md)
-- [Custom Images](./customImages.md)
-- [Embed Builder](./embedBuilder.md)
-- [$alwaysReply](./alwaysReply.md)
-- [$ignoreTriggerCase](./ignoreTriggerCase.md)
-- [$messageContains](./messageContains.md)
-- [$sendNotification](./sendNotification.md)
-
 ### Support
 For any premium related issues/support, contact us at `premium-support@mail.botdesignerdiscord.com`.
 
