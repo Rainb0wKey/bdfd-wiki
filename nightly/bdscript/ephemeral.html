@@ -36,12 +36,6 @@
         <link rel="stylesheet" href="../ayu-highlight.css">
 
         <!-- Custom theme stylesheets -->
-           <link rel="stylesheet" href="../src/theme/css/chrome.css">
-           <link rel="stylesheet" href="../src/theme/css/general.css">
-           <link rel="stylesheet" href="../src/theme/css/variables.css">
-           <link rel="stylesheet" href="../src/theme/css/wiki-themes/breadcrumbs.css">
-           <link rel="stylesheet" href="../src/theme/css/wiki-themes/discord-messages.css">
-           <link rel="stylesheet" href="../src/theme/css/wiki-themes/root.css">
            <link rel="stylesheet" href=".././src/theme/mdbook-admonish.css">
 
     </head>
@@ -160,8 +154,8 @@ $ephemeral
 Hello!
 </code></pre>
 <discord-messages>
-    <discord-message role-color="#378afa" author="BDFD Support" bot ephemeral verified>
-        <discord-command author="RainbowKey" slot="reply" role-color="#E67E22" command="/example">
+    <discord-message bot verified ephemeral role-color="#378afa" author="BDFD Support">
+        <discord-command role-color="#E67E22" author="RainbowKey" slot="reply" command="/example">
         </discord-command>
         Hello!
     </discord-message>
@@ -170,8 +164,8 @@ Hello!
 <li>Without <code>$ephemeral</code>:</li>
 </ul>
 <discord-messages>
-    <discord-message role-color="#378afa" bot verified author="BDFD Support">
-        <discord-command author="RainbowKey" slot="reply" role-color="#E67E22" command="/example">
+    <discord-message bot author="BDFD Support" verified role-color="#378afa">
+        <discord-command command="/example" role-color="#E67E22" author="RainbowKey" slot="reply">
         </discord-command>
         Hello!
     </discord-message>
