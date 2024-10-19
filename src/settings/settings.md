@@ -92,6 +92,19 @@ Let's customize your experience in our Bot Designer For Discord wiki world!
 </div>
 
 <div class="settingembed">
+  <h2>Effects</h2>
+  <p>It's only decoration for wiki.</p>
+  <div class="effectbuttons">
+    <button id="effect-none" class="hbutton">Disable</button>
+    <button id="effect-auto" class="hbutton">Auto</button>
+    <button id="effect-winter" class="hbutton">☃️ Winter</button>
+    <button id="effect-halloween" class="hbutton">🎃 Halloween</button>
+    <button id="effect-april" class="hbutton">🃏 April</button>
+  </div>
+  <p id="default-is">"Auto"</p>
+</div>
+
+<div class="settingembed">
   <h2>Discord Example</h2>
   <p>Let’s give our Discord example previews a color makeover to make them look better.</p>
   <button class="resetSettingButton" onClick="changeDiscordTheme('dark')" title="Reset" aria-label="Reset">
