@@ -230,6 +230,18 @@
   <p id="default-is">"Enable" (Disabled)</p>
 </div>
 <div class="settingembed">
+  <h2 id="effects"><a class="header" href="#effects">Effects</a></h2>
+  <p>It's only decoration for wiki.</p>
+  <div class="effectbuttons">
+    <button id="effect-none" class="hbutton">Disable</button>
+    <button id="effect-auto" class="hbutton">Auto</button>
+    <button id="effect-winter" class="hbutton">☃️ Winter</button>
+    <button id="effect-halloween" class="hbutton">🎃 Halloween</button>
+    <button id="effect-april" class="hbutton">🃏 April</button>
+  </div>
+  <p id="default-is">"Auto"</p>
+</div>
+<div class="settingembed">
   <h2 id="discord-example"><a class="header" href="#discord-example">Discord Example</a></h2>
   <p>Let’s give our Discord example previews a color makeover to make them look better.</p>
   <button class="resetSettingButton" onClick="changeDiscordTheme('dark')" title="Reset" aria-label="Reset">
@@ -311,11 +323,11 @@
     <discord-message author="RainbowKey" role-color="#E67E22">
         !example ❤️
         <discord-reactions slot="reactions">
-            <discord-reaction emoji="https://upload.wikimedia.org/wikipedia/commons/7/70/Symbolic_Love_Heart.png" count="1" name=":emoji:">
+            <discord-reaction count="1" emoji="https://upload.wikimedia.org/wikipedia/commons/7/70/Symbolic_Love_Heart.png" name=":emoji:">
             </discord-reaction>
         </discord-reactions>
     </discord-message>
-    <discord-message verified author="BDFD Support" bot role-color="#378afa">
+    <discord-message verified bot author="BDFD Support" role-color="#378afa">
         Added!
     </discord-message>
 </discord-messages>
