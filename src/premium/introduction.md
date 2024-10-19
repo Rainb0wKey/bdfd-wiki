@@ -61,6 +61,7 @@ Channel variable value character limit.                                         
 - Additional role income in our server economy system.
 
 ```admonish info title="Support"
-For any premium related issues/support, contact us at `premium-support@mail.botdesignerdiscord.com`.\
+For any premium related issues/support, contact us at\
+`premium-support@mail.botdesignerdiscord.com`.\
 You can also ask questions about premium in our [Community Discord Server](https://discord.gg/bot-designer-for-discord-official-server-566363823137882154).
 ```
