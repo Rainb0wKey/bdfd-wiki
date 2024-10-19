@@ -5,6 +5,10 @@ body {
     touch-action: manipulation;
 }
 
+.editPage, .breadcrumb {
+    visibility: hidden;
+}
+
 /* Tag Beta Feature */
 
 .tag-beta {
