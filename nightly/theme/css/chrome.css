@@ -5,9 +5,11 @@
 ::-webkit-scrollbar {
     background: var(--color3);
 }
+
 ::-webkit-scrollbar-thumb {
     background: var(--color2);
 }
+
 html {
     scrollbar-color: var(--color2) var(--color3);
 }
@@ -690,6 +692,17 @@ ul#searchresults span.teaser em {
     .sidebar-visible .page-wrapper {
         transform: none;
         margin-left: 320px;
+    }
+}
+
+/* Fixed  sidebar for PX */
+@media only screen and (min-width: 750px) {
+    .sidebar-hidden .sidebar {
+        transform: translateX(0);
+    }
+
+    .sidebar-hidden .page-wrapper {
+        transform: translateX(320px);
     }
 }
 
