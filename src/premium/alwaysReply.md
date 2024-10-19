@@ -44,7 +44,7 @@ Hello, $displayName!
     author: RainbowKey
     command: /example
   content: |
-    I can't detect slash commands!
+    $alwaysReply can't detect slash commands!
 - user_id: 1009018156494368798
   username: BDFD Support
   color: "#378afa"
@@ -52,7 +52,7 @@ Hello, $displayName!
   verified: true
   ephemeral: true
   content: |
-    And I can't detect ephemeral messages!
+    And $alwaysReply can't detect ephemeral messages!
 - user_id: 803569638084313098
   username: RainbowKey
   color: "#E67E22"
@@ -64,7 +64,7 @@ Hello, $displayName!
   bot: true
   verified: true
   content: |
-     Also he can't detect messages from different bots/webhhoks...
+     Also it can't detect messages from different bots/webhooks...
 - user_id: 1009018156494368798
   username: BDFD Support
   color: "#378afa"
