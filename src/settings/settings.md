@@ -49,6 +49,7 @@ Let's customize your experience in our Bot Designer For Discord wiki world!
     <button id="high-purple" onClick="changeTextHigh('purple')" class="hbutton">Purple</button>
     <button id="high-sync" onClick="changeTextHigh('sync')" class="hbutton">Sync</button>
   </div>
+  <p id="default-is">"Disable" (Disabled)</p>
 </div>
 
 <div class="settingembed">
