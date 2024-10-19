@@ -55,12 +55,12 @@ Server & Global variable value character limit.                                 
 User variable value character limit.                                                                                 | 4999 | 4999 |
 Channel variable value character limit.                                                                              | 499  | 499  |
 
-#### [Discord Server](https://botdesignerdiscord.com/discord) Perks
+#### [Discord Server](https://discord.gg/bot-designer-for-discord-official-server-566363823137882154) Perks
 - The premium role. Run `!getPremiumRole`.
 - Access to the premium chat.
 - Additional role income in our server economy system.
 
 ```admonish info title="Support"
 For any premium related issues/support, contact us at `premium-support@mail.botdesignerdiscord.com`.\
-You can also ask questions about premium in our [Community Discord Server](https://botdesignerdiscord.com/discord).
+You can also ask questions about premium in our [Community Discord Server](https://discord.gg/bot-designer-for-discord-official-server-566363823137882154).
 ```
