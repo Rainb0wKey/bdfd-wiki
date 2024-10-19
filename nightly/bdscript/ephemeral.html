@@ -154,7 +154,7 @@ $ephemeral
 Hello!
 </code></pre>
 <discord-messages>
-    <discord-message verified ephemeral author="BDFD Support" role-color="#378afa" bot>
+    <discord-message bot verified role-color="#378afa" ephemeral author="BDFD Support">
         <discord-command role-color="#E67E22" slot="reply" command="/example" author="RainbowKey">
         </discord-command>
         Hello!
@@ -164,8 +164,8 @@ Hello!
 <li>Without <code>$ephemeral</code>:</li>
 </ul>
 <discord-messages>
-    <discord-message bot verified role-color="#378afa" author="BDFD Support">
-        <discord-command command="/example" author="RainbowKey" slot="reply" role-color="#E67E22">
+    <discord-message role-color="#378afa" verified author="BDFD Support" bot>
+        <discord-command command="/example" role-color="#E67E22" slot="reply" author="RainbowKey">
         </discord-command>
         Hello!
     </discord-message>

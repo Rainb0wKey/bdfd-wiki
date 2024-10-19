@@ -262,7 +262,8 @@ a:link:not(.editPage, .mobile-nav-chapters, .chapter li a, .discord-button, .dis
 
 #sidebar-toggle,
 #search-toggle {
-  touch-action: manipulation;
+    touch-action: manipulation;
+    -webkit-tap-highlight-color: transparent;
 }
 
 /* Hide sidebar button for PC & Add text in the menu bar */
