@@ -10,7 +10,6 @@ $addField[Name;Value;(Inline?;Index)]
 You can add up to 25 fields per embed.
 ```
 
-
 ### Parameters
 - `Name` `(Type: String || Flag: Required)`: The name of the field. It cannot exceed more than 256 characters.
 - `Value` `(Type: String || Flag: Required)`: The value of the field. It cannot exceed more than 1024 characters.
