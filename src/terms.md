@@ -1,3 +1,9 @@
+<style>
+  .editPage {
+      visibility: hidden;
+  }
+</style>
+
 # Terms of service
 Your use of our service ("_**Bot Designer for Discord**_") implies that you agree to the Terms stated on this page, and these Terms will remain in effect while you use the service.
 
