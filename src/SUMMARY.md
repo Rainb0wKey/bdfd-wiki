@@ -442,8 +442,10 @@
 
 - [Callbacks]()
     - [Introduction](./callbacks/introduction.md)
+    - [$alwaysReply](./premium/alwaysReply.md)
     - [$awaitedCommand](./callbacks/awaitedCommand.md)
     - [$awaitedCommandError](./callbacks/awaitedCommandError.md)
+    - [$messageContains](./premium/messageContains.md) 
     - [$onJoined](./callbacks/onJoined.md)
     - [$onLeave](./callbacks/onLeave.md)
     - [$onBanAdd](./callbacks/onBanAdd.md)
@@ -451,6 +453,7 @@
     - [$onMessageDelete](./callbacks/onMessageDelete.md)
     - [$onInteraction](./callbacks/onInteraction.md)
     - [$onInteraction[]](./callbacks/onInteractionComplex.md)
+    - [$reaction](./premium/reaction.md)
 
 - [Flowchart]()
     - [Add Response Embed](./flowchart/addResponseEmbed.md)]
