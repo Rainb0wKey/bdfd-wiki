@@ -1,3 +1,9 @@
+<style>
+  .editPage {
+      visibility: hidden;
+  }
+</style>
+
 # Context
 
 - Bot Designer for Discord is a service provided by NilPointer Software.
