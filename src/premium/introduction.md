@@ -56,7 +56,7 @@ User variable value character limit.                                            
 Channel variable value character limit.                                                                              | 499  | 499  |
 
 #### [Discord Server](https://discord.gg/bot-designer-for-discord-official-server-566363823137882154) Perks
-- The premium role. Run `!getPremiumRole`.
+- The premium role. Run `/getPremiumRole`.
 - Access to the premium chat.
 - Additional role income in our server economy system.
 
