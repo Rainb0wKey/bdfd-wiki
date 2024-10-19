@@ -39,10 +39,6 @@ on_failure = "bail"
 "/guides/ifStatements.html" = "./general/ifStatements.html"
 "/guides/async.html" = "./general/bds2/asyncScopes.html"
 
-"/bdscript/awaitReactions.html" = "../premium/awaitReactions.html"
-"/bdscript/customImage.html" = "../premium/customImage.html"
-"/bdscript/ignoreTriggerCase.html" = "../premium/ignoreTriggerCase.html"
-
 "/bdscript/httpAddHeader.html" = "../guides/general/httpRequests.html"
 "/bdscript/httpDelete.html" = "../guides/general/httpRequests.html"
 "/bdscript/httpGet.html" = "../guides/general/httpRequests.html"
