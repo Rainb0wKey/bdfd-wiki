@@ -95,11 +95,11 @@ Let's customize your experience in our Bot Designer For Discord wiki world!
   <h2>Effects</h2>
   <p>It's only decoration for wiki.</p>
   <div class="effectbuttons">
-    <button id="effect-none" class="hbutton">Disable</button>
-    <button id="effect-auto" class="hbutton">Auto</button>
-    <button id="effect-winter" class="hbutton">☃️ Winter</button>
-    <button id="effect-halloween" class="hbutton">🎃 Halloween</button>
-    <button id="effect-april" class="hbutton">🃏 April</button>
+    <button id="effect-none" class="ebutton">Disable</button>
+    <button id="effect-auto" class="ebutton">Auto</button>
+    <button id="effect-winter" class="ebutton">☃️ Winter</button>
+    <button id="effect-halloween" class="ebutton">🎃 Halloween</button>
+    <button id="effect-april" class="ebutton">🃏 April</button>
   </div>
   <p id="default-is">"Auto"</p>
 </div>
