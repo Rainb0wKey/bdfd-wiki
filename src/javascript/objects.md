@@ -1,5 +1,5 @@
 # Objects
-Here is the list of all Discord API supported objects :
+Here is the list of all Discord API supported objects:
 
 Name                  |         Type           |                                                                                     Description 
 ----------------|----------------| -----------------------------------------------------------------------------------------------------------
