@@ -1,5 +1,11 @@
 # Changelog
 
+<style>
+  .editPage {
+      visibility: hidden;
+  }
+</style>
+
 # 2024
    
 ## August
