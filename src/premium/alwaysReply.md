@@ -20,8 +20,7 @@ $nomention
 Hello, $displayName!
 ```
 
-```
-```discord yaml
+``` discord yaml
 - user_id: 803569638084313098
   username: RainbowKey
   color: "#E67E22"
