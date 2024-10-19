@@ -153,37 +153,22 @@ It’s useful when creating leveling, auto-moderation, or message counting syste
 <pre><code>$nomention
 Hello, $displayName!
 </code></pre>
-<pre><code>```discord yaml
-- user_id: 803569638084313098
-  username: RainbowKey
-  color: "#E67E22"
-  content: |
-    Hello everyone!
-- user_id: 1009018156494368798
-  username: BDFD Support
-  color: "#378afa"
-  bot: true
-  verified: true
-  content: |
-    Hello, RainbowKey!
-- user_id: 1009018156494368798
-  username: BDFD Support
-  color: "#378afa"
-  bot: true
-  verified: true
-  command:
-    user_id: 803569638084313098
-    color: "#E67E22"
-    author: RainbowKey
-    command: /example
-  content: |
-    I can't detect slash commands!
-- user_id: 803569638084313098
-  username: RainbowKey
-  color: "#E67E22"
-  content: |
-    !example 8
-</code></pre>
+<discord-messages>
+    <discord-message role-color="#E67E22" author="RainbowKey">
+        Hello everyone!
+    </discord-message>
+    <discord-message role-color="#378afa" verified author="BDFD Support" bot>
+        Hello, RainbowKey!
+    </discord-message>
+    <discord-message author="BDFD Support" bot role-color="#378afa" verified>
+        <discord-command role-color="#E67E22" slot="reply" command="/example" author="RainbowKey">
+        </discord-command>
+        I can't detect slash commands!
+    </discord-message>
+    <discord-message role-color="#E67E22" author="RainbowKey">
+        !example 8
+    </discord-message>
+</discord-messages>
 
                     </main>
 
