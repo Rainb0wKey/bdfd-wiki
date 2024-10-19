@@ -98,6 +98,16 @@ html {
     padding-top: 1rem;
 }
 
+.function-playground h3:after {
+    content: 'BETA';
+    margin-left: .5rem;
+    background: rgb(255 255 255 / 10%);
+    padding: .3rem;
+    padding-left: .6rem;
+    padding-right: .6rem;
+    border-radius: 10px;
+}
+
 .function-input #play-code, .function-output #play-output {
     display: inline-block;
     background: hsl(0deg 0% 0% / 65%);
