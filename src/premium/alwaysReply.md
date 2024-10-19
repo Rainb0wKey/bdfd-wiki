@@ -45,9 +45,12 @@ Hello, $displayName!
     command: /example
   content: |
     I can't detect slash commands!
-- user_id: 803569638084313098
-  username: RainbowKey
-  color: "#E67E22"
+- user_id: 1009018156494368798
+  username: BDFD Support
+  color: "#378afa"
+  bot: true
+  verified: true
+  ephemeral: true
   content: |
-    !example 8
+    And I can't detect ephemeral messages!
 ```
