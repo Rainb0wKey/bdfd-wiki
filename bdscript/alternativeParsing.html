@@ -36,12 +36,6 @@
         <link rel="stylesheet" href="../ayu-highlight.css">
 
         <!-- Custom theme stylesheets -->
-           <link rel="stylesheet" href="../src/theme/css/chrome.css">
-           <link rel="stylesheet" href="../src/theme/css/general.css">
-           <link rel="stylesheet" href="../src/theme/css/variables.css">
-           <link rel="stylesheet" href="../src/theme/css/wiki-themes/breadcrumbs.css">
-           <link rel="stylesheet" href="../src/theme/css/wiki-themes/discord-messages.css">
-           <link rel="stylesheet" href="../src/theme/css/wiki-themes/root.css">
            <link rel="stylesheet" href=".././src/theme/mdbook-admonish.css">
 
     </head>
@@ -176,10 +170,10 @@ $description["helloworld"]
 <li>
 <p>Execute commands.</p>
 <discord-messages>
-    <discord-message author="Nicky" role-color="#EE7908">
+    <discord-message role-color="#EE7908" author="Nicky">
         hello
     </discord-message>
-    <discord-message role-color="#748BD4" author="Wiki Bot" bot verified>
+    <discord-message author="Wiki Bot" bot verified role-color="#748BD4">
         <none>
         <discord-embed slot="embeds">
             <discord-embed-description slot="description">
@@ -190,7 +184,7 @@ $description["helloworld"]
     <discord-message author="Nicky" role-color="#EE7908">
         helloworld
     </discord-message>
-    <discord-message author="Wiki Bot" bot verified role-color="#748BD4">
+    <discord-message author="Wiki Bot" verified role-color="#748BD4" bot>
         <none>
         <discord-embed slot="embeds">
             <discord-embed-description slot="description">
@@ -202,10 +196,10 @@ $description["helloworld"]
 <ul>
 <li>Without <code>$alternativeParsing</code>:
 <discord-messages>
-<discord-message role-color="#EE7908" author="Nicky">
+<discord-message author="Nicky" role-color="#EE7908">
 hello
 </discord-message>
-<discord-message verified bot role-color="#748BD4" author="Wiki Bot">
+<discord-message author="Wiki Bot" verified role-color="#748BD4" bot>
 <none>
 <discord-embed slot="embeds">
 <discord-embed-description slot="description">
@@ -216,7 +210,7 @@ hello
 <discord-message role-color="#EE7908" author="Nicky">
 helloworld
 </discord-message>
-<discord-message bot verified author="Wiki Bot" role-color="#748BD4">
+<discord-message bot verified role-color="#748BD4" author="Wiki Bot">
 <none>
 <discord-embed slot="embeds">
 <discord-embed-description slot="description">
