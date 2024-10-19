@@ -157,16 +157,25 @@ Hello, $displayName!
     <discord-message author="RainbowKey" role-color="#E67E22">
         Hello everyone!
     </discord-message>
-    <discord-message role-color="#378afa" bot author="BDFD Support" verified>
+    <discord-message author="BDFD Support" bot verified role-color="#378afa">
         Hello, RainbowKey!
     </discord-message>
-    <discord-message author="BDFD Support" bot role-color="#378afa" verified>
-        <discord-command slot="reply" role-color="#E67E22" author="RainbowKey" command="/example">
+    <discord-message verified role-color="#378afa" author="BDFD Support" bot>
+        <discord-command command="/example" author="RainbowKey" role-color="#E67E22" slot="reply">
         </discord-command>
         I can't detect slash commands!
     </discord-message>
-    <discord-message ephemeral author="BDFD Support" role-color="#378afa" bot verified>
+    <discord-message role-color="#378afa" ephemeral verified author="BDFD Support" bot>
         And I can't detect ephemeral messages!
+    </discord-message>
+    <discord-message role-color="#E67E22" author="RainbowKey">
+        !example
+    </discord-message>
+    <discord-message verified author="Wiki Bot" role-color="#748BD4" bot>
+        Also he can't detect messages from different bots/webhhoks...
+    </discord-message>
+    <discord-message bot verified role-color="#378afa" author="BDFD Support">
+        Hello, RainbowKey!
     </discord-message>
 </discord-messages>
 
