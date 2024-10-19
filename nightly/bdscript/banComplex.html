@@ -139,8 +139,19 @@
 </code></pre>
 <h3 id="parameters"><a class="header" href="#parameters">Parameters</a></h3>
 <ul>
-<li><code>Reason</code> <code>(Type: String || Flag: Emptiable)</code>: The reason for the ban, which will be saved in the audit-log.</li>
+<li><code>Reason</code> <code>(Type: String || Flag: Emptiable)</code>: The reason for the ban, which will be saved in the audit-log. Reason must not exceed more than 512 characters.</li>
 </ul>
+<div id="admonition-tip" class="admonition admonish-tip" role="note" aria-labelledby="admonition-tip-title">
+<div class="admonition-title">
+<div id="admonition-tip-title">
+<p>Tip</p>
+</div>
+<a class="admonition-anchor-link" href="#admonition-tip"></a>
+</div>
+<div>
+<p>Use <a href="./getBanReason.html"><code>$getBanReason[]</code></a> to get the ban reason.</p>
+</div>
+</div>
 <h2 id="example"><a class="header" href="#example">Example</a></h2>
 <pre><code>$nomention
 $ban[$noMentionMessage]
@@ -150,7 +161,7 @@ $ban[$noMentionMessage]
     <discord-message role-color="#E67E22" author="RainbowKey">
         !example <discord-mention>Spen</discord-mention> Too cute
     </discord-message>
-    <discord-message author="BDFD Support" verified role-color="#378afa" bot>
+    <discord-message bot verified role-color="#378afa" author="BDFD Support">
         <discord-mention>Spen</discord-mention> was banned!
     </discord-message>
     <discord-system-message type="leave">
