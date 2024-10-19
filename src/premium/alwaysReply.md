@@ -34,22 +34,21 @@ Hello, $displayName!
   verified: true
   content: |
     Hello, RainbowKey!
-- user_id: 803569638084313098
-  username: RainbowKey
-  color: "#E67E22"
-  content: |
-    !example -6.4
-- user_id: 803569638084313098
-  username: RainbowKey
-  color: "#E67E22"
-  content: |
-    !example 8
 - user_id: 1009018156494368798
   username: BDFD Support
   color: "#378afa"
   bot: true
   verified: true
+  command:
+    user_id: 803569638084313098
+    color: "#E67E22"
+    author: RainbowKey
+    command: /example
   content: |
-    Result: 8
-```
+    I can't detect slash commands!
+- user_id: 803569638084313098
+  username: RainbowKey
+  color: "#E67E22"
+  content: |
+    !example 8
 ```
