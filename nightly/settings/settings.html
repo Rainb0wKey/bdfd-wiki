@@ -234,12 +234,8 @@
   <p>It's only decoration for wiki.</p>
   <div class="effectbuttons">
     <button id="effect-none" class="ebutton">Disable</button>
-    <button id="effect-auto" class="ebutton">Auto</button>
-    <button id="effect-winter" class="ebutton">☃️ Winter</button>
-    <button id="effect-halloween" class="ebutton">🎃 Halloween</button>
-    <button id="effect-april" class="ebutton">🃏 April</button>
   </div>
-  <p id="default-is">"Auto"</p>
+  <p id="default-is">"Disable" (Enabled)</p>
 </div>
 <div class="settingembed">
   <h2 id="discord-example"><a class="header" href="#discord-example">Discord Example</a></h2>
@@ -323,11 +319,11 @@
     <discord-message author="RainbowKey" role-color="#E67E22">
         !example ❤️
         <discord-reactions slot="reactions">
-            <discord-reaction name=":emoji:" emoji="https://upload.wikimedia.org/wikipedia/commons/7/70/Symbolic_Love_Heart.png" count="1">
+            <discord-reaction emoji="https://upload.wikimedia.org/wikipedia/commons/7/70/Symbolic_Love_Heart.png" name=":emoji:" count="1">
             </discord-reaction>
         </discord-reactions>
     </discord-message>
-    <discord-message bot role-color="#378afa" verified author="BDFD Support">
+    <discord-message verified role-color="#378afa" author="BDFD Support" bot>
         Added!
     </discord-message>
 </discord-messages>
