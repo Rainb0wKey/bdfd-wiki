@@ -146,6 +146,45 @@
 <p><em>Triggered whenever a user sends a message.</em></p>
 <p><code>$alwaysReply</code> is a callback, which means it’s used in the command trigger <em>(not the code)</em>. The command is ran when a user sends a message.<br />
 It’s useful when creating leveling, auto-moderation, or message counting systems.</p>
+<h2 id="syntax"><a class="header" href="#syntax">Syntax</a></h2>
+<pre><code>$alwaysReply
+</code></pre>
+<h2 id="example"><a class="header" href="#example">Example</a></h2>
+<pre><code>$nomention
+Hello, $displayName!
+</code></pre>
+<pre><code>```discord yaml
+- user_id: 803569638084313098
+  username: RainbowKey
+  color: "#E67E22"
+  content: |
+    Hello everyone!
+- user_id: 1009018156494368798
+  username: BDFD Support
+  color: "#378afa"
+  bot: true
+  verified: true
+  content: |
+    Hello, RainbowKey!
+- user_id: 803569638084313098
+  username: RainbowKey
+  color: "#E67E22"
+  content: |
+    !example -6.4
+- user_id: 803569638084313098
+  username: RainbowKey
+  color: "#E67E22"
+  content: |
+    !example 8
+- user_id: 1009018156494368798
+  username: BDFD Support
+  color: "#378afa"
+  bot: true
+  verified: true
+  content: |
+    Result: 8
+</code></pre>
+<pre><code></code></pre>
 
                     </main>
 
