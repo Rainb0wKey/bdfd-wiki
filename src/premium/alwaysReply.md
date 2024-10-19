@@ -53,4 +53,23 @@ Hello, $displayName!
   ephemeral: true
   content: |
     And I can't detect ephemeral messages!
+- user_id: 803569638084313098
+  username: RainbowKey
+  color: "#E67E22"
+  content: |
+    !example
+- user_id: 566613317972394004
+  username: Wiki Bot
+  color: "#748BD4"
+  bot: true
+  verified: true
+  content: |
+     Also he can't detect messages from different bots/webhhoks...
+- user_id: 1009018156494368798
+  username: BDFD Support
+  color: "#378afa"
+  bot: true
+  verified: true
+  content: |
+   Hello, RainbowKey!
 ```
