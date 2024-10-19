@@ -27,6 +27,8 @@ After a successful purchase of premium points, here's how to redeem them :
 
     > One premium point equals one week (7 days) of premium hosting.
 
+## Premium Perks
+
 Feature                                                                                         | Without premium | With premium   |
 -------------------------------------------------------------------------------------------------------------------  | --- | ----- |
 Access to AI functions. ([`$ai[]`](./ai.md) and [`$aiQuota`](./aiQuota.md))                                          | ❌ | ✅    |
