@@ -235,15 +235,15 @@ function effectsSetting() {
   
   if (manageEffectButton.textContent === "Enable") {
     // Enabled
-    var effecttStatus = "Disable";
+    var effectStatus = "Disable";
     var boolEffectStatus = "visible";
   } else {
     // Disabled
-    var effecttStatus = "Enable";
+    var effectStatus = "Enable";
     var boolEffectStatus = "hidden";
   }
   
-  manageEffectButton.textContent = effecttStatus;
+  manageEffectButton.textContent = effectStatus;
   updateJsonFile("effects", boolEffectStatus);
 }
 
