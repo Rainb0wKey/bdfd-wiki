@@ -904,20 +904,17 @@ ul#searchresults span.teaser em {
     width: 22px;
     height: 6px;
     -webkit-animation-duration: 6s;
-    -webkit-transform-origin: right -45px;
 }
 .snowflakes i:nth-child(3n+1) {
     width: 30px;
     height: 7px;
     -webkit-animation-duration: 8s;
-    -webkit-transform-origin: right -30px;
 }
 
 .snowflakes i:nth-child(3n+2) {
     width: 34px;
     height: 10px;
     -webkit-animation-duration: 10s;
-    -webkit-transform-origin: right -15px;
 }
 
 .snowflakes i:nth-child(7n) {
