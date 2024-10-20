@@ -232,6 +232,7 @@ function foldersSetting() {
 
 function effectsSetting() {
   const manageEffectButton = document.getElementById("manageEffect");
+  const snowflakes = document.querySelector('.snowflakes');
   
   if (manageEffectButton.textContent === "Enable") {
     // Enabled
@@ -242,7 +243,8 @@ function effectsSetting() {
     var effectStatus = "Enable";
     var boolEffectStatus = "hidden";
   }
-  
+
+  snowflakes.style.visibility = boolEffectStatus; 
   manageEffectButton.textContent = effectStatus;
   updateJsonFile("effects", boolEffectStatus);
 }
