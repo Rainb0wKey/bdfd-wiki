@@ -904,14 +904,12 @@ ul#searchresults span.teaser em {
     width: 22px;
     height: 6px;
     -webkit-animation-duration: 6s;
-    -webkit-animation-iteration-count: 30;
     -webkit-transform-origin: right -45px;
 }
 .snowflakes i:nth-child(3n+1) {
     width: 30px;
     height: 7px;
     -webkit-animation-duration: 8s;
-    -webkit-animation-iteration-count: 45;
     -webkit-transform-origin: right -30px;
 }
 
@@ -919,7 +917,6 @@ ul#searchresults span.teaser em {
     width: 34px;
     height: 10px;
     -webkit-animation-duration: 10s;
-    -webkit-animation-iteration-count: 60;
     -webkit-transform-origin: right -15px;
 }
 
