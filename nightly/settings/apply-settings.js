@@ -121,6 +121,8 @@ function applySettings() {
   const sidePages = document.querySelectorAll('.chapter li a');
   const sideMainPages = document.querySelectorAll('.chapter li');
   const searchBar = document.getElementById('searchbar');
+  const manageEffectButton = document.getElementById("manageEffect");
+  const snowflakes = document.querySelector('.snowflakes');
   
   let data;
 
@@ -214,6 +216,8 @@ function applySettings() {
   html.style.fontFamily = data['text-font'];
   html.style.fontSize = data['text-size'];
   html.style.textShadow = data['text-hg'];
+  
+  snowflakes.style.visibility = data['effects']; 
 
   document.documentElement.style.setProperty('--color1', colorTheme1);
   document.documentElement.style.setProperty('--color2', colorTheme2);
