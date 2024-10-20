@@ -853,6 +853,46 @@ ul#searchresults span.teaser em {
 
 /* Snowflake animation | Winter event */
 
+.snowflakes {
+    z-index: 1000;
+    width: 150%;
+    height: 100%;
+    position: fixed;
+    top: -150px;
+    left: -350px;
+    pointer-events: none; 
+}
+
+.snowflakes i,
+.snowflakes i:after,
+.snowflakes i:before {
+    background: white;
+}
+
+.snowflakes i:after,
+.snowflakes i:before {
+    height: 100%;
+    width: 100%;
+    content: ".";
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    -webkit-transform: rotate(120deg);
+}
+
+.snowflakes i:before {
+    -webkit-transform: rotate(240deg);
+}
+
+@-webkit-keyframes snowflakes {
+    0% {
+        -webkit-transform: translate3d(0, 0, 0) rotate(0deg) scale(0.6);
+    }
+    100% {
+        -webkit-transform: translate3d(15px, 1200px, 0px) rotate(360deg) scale(0.6);
+    }
+}
+
 .snowflakes i {
     display: inline-block;
     -webkit-animation: snowflakes 3s linear 2s 20;
