@@ -95,7 +95,7 @@ Let's customize your experience in our Bot Designer For Discord wiki world!
   <h2>Effects</h2>
   <p>It's only decoration for wiki.</p>
   <div class="effectbuttons">
-    <button id="manageEffect" class="ebutton">Disable</button>
+    <button id="manageEffect" class="ebutton" onClick="effectsSetting()">Disable</button>
   </div>
   <p id="default-is">"Disable" (Enabled)</p>
 </div>
