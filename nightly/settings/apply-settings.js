@@ -138,6 +138,7 @@ function applySettings() {
     "language": "en",
     "text-hg": "none",
     "text-font": "Open Sans, sans-serif",
+    "effects": "visible",
     "code-hg": {
     "defaultTextHighlight":{
       "color":4288341353,
