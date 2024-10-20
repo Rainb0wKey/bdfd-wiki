@@ -230,6 +230,23 @@ function foldersSetting() {
   updateJsonFile("folders", boolFolderStatus);
 }
 
+function effectsSetting() {
+  const manageEffectButton = document.getElementById("manageEffect");
+  
+  if (manageEffectButton.textContent === "Enable") {
+    // Enabled
+    var effecttStatus = "Disable";
+    var boolEffectStatus = "visible";
+  } else {
+    // Disabled
+    var effecttStatus = "Enable";
+    var boolEffectStatus = "hidden";
+  }
+  
+  manageEffectButton.textContent = effecttStatus;
+  updateJsonFile("effects", boolEffectStatus);
+}
+
 function changeTextFont(fontId) {
   const fontHtml = document.querySelector('html');
   let font = fonts[fontId] || 'Open Sans, sans-serif'
@@ -608,6 +625,7 @@ function loadSettings() {
     "language": "en",
     "text-hg": "none",
     "text-font": "Open Sans, sans-serif",
+    "effects": "visible",
     "code-hg": {
     "defaultTextHighlight":{
       "color":4288341353,
