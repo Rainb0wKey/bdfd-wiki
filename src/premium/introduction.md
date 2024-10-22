@@ -50,7 +50,7 @@ Ad-free hosting time.                                                           
 Character limit per code.                                                                                            | 65k  | 65k  |
 Variable limit.                                                                                                      | 100  | ∞    |
 Command limit.                                                                                                       | 230  | ∞    |
-Maximum time in the "Time" parameter in  `$replyIn` & `$editEmbedIn` functions.                                      | 40m  | 120m |
+Maximum time in the "Time" parameter in  `$replyIn[]`, `$editIn[]` and `$editEmbedIn[]` functions.                   | 40m  | 120m |
 Server & Global variable value character limit.                                                                      | 499  | 4999 |
 User variable value character limit.                                                                                 | 4999 | 4999 |
 Channel variable value character limit.                                                                              | 499  | 499  |
