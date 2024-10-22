@@ -236,7 +236,7 @@ You have provided a number: $message
   bot: true
   verified: true
   content: |
-    You have provided number: 52
+    You have provided a number: 52
 ```
 \
 
@@ -313,7 +313,38 @@ $message
 
 3. Execute command `!say`
 
-![example](https://user-images.githubusercontent.com/113303649/212294420-acf01905-c9f5-4673-99f0-375f9d786f25.png)
+``` discord yaml
+- user_id: 803569638084313098
+  username: RainbowKey
+  color: "#E67E22"
+  content: |
+    !say
+- user_id: 1009018156494368798
+  username: BDFD Support
+  color: "#378afa"
+  bot: true
+  verified: true
+  content: |
+    What do you want me to say?
+- user_id: 803569638084313098
+  username: RainbowKey
+  color: "#E67E22"
+  content: |
+    Hello everyone!
+- user_id: 1009018156494368798
+  username: BDFD Support
+  color: "#378afa"
+  bot: true
+  verified: true
+  content: |
+    Hello everyone!
+```
+\
+
+```admonish warning
+Use [`$allowUserMentions[]`](../../bdscript/allowUserMentions.md) and [`$allowRoleMentions[]`](../../bdscript/allowRoleMentions.md) to disable role, @here and @everyone mentions!
+```
+
 ## With choose filter
 
 1. Create two commands with `!odd` and `$awaitedCommand[odd;<yes/no/cancel>]` triggers.
@@ -322,7 +353,7 @@ $message
 Code for the `!odd` command:
 ```
 $nomention
-Is '19' an odd number?
+Is '21' an odd number?
 $awaitFunc[odd]
 ```
 
@@ -340,7 +371,82 @@ $endif
 
 3. Execute command `!odd`
 
-![example](https://user-images.githubusercontent.com/113303649/212088333-54a94584-f854-45cf-8b7e-6980aa370764.png)
+``` discord yaml
+- user_id: 803569638084313098
+  username: RainbowKey
+  color: "#E67E22"
+  content: |
+    !odd
+- user_id: 1009018156494368798
+  username: BDFD Support
+  color: "#378afa"
+  bot: true
+  verified: true
+  content: |
+    Is '21' odd number?
+- user_id: 803569638084313098
+  username: RainbowKey
+  color: "#E67E22"
+  content: |
+    yes
+- user_id: 1009018156494368798
+  username: BDFD Support
+  color: "#378afa"
+  bot: true
+  verified: true
+  content: |
+    Your answer is correct!
+- user_id: 803569638084313098
+  username: RainbowKey
+  color: "#E67E22"
+  content: |
+    !odd
+- user_id: 1009018156494368798
+  username: BDFD Support
+  color: "#378afa"
+  bot: true
+  verified: true
+  content: |
+    Is '21' odd number?
+- user_id: 803569638084313098
+  username: RainbowKey
+  color: "#E67E22"
+  content: |
+    no
+- user_id: 1009018156494368798
+  username: BDFD Support
+  color: "#378afa"
+  bot: true
+  verified: true
+  content: |
+    Your answer is incorrect!
+- user_id: 803569638084313098
+  username: RainbowKey
+  color: "#E67E22"
+  content: |
+    !odd
+- user_id: 1009018156494368798
+  username: BDFD Support
+  color: "#378afa"
+  bot: true
+  verified: true
+  content: |
+    Is '21' odd number?
+- user_id: 803569638084313098
+  username: RainbowKey
+  color: "#E67E22"
+  content: |
+    cancel
+- user_id: 1009018156494368798
+  username: BDFD Support
+  color: "#378afa"
+  bot: true
+  verified: true
+  content: |
+    Command cancelled!
+```
+\
+
 ## With numeric filter
 
 1. Create two commands with `!number` and `$awaitedCommand[number;<numeric>]` triggers.
@@ -361,4 +467,30 @@ You have provided a number: $message
 
 3. Execute command `!number`
 
-![example](https://user-images.githubusercontent.com/113303649/212089433-e998259a-0e74-4401-9140-a7ea4c6c3776.png)
+``` discord yaml
+- user_id: 803569638084313098
+  username: RainbowKey
+  color: "#E67E22"
+  content: |
+    !number
+- user_id: 1009018156494368798
+  username: BDFD Support
+  color: "#378afa"
+  bot: true
+  verified: true
+  content: |
+    Provide a number!
+- user_id: 803569638084313098
+  username: RainbowKey
+  color: "#E67E22"
+  content: |
+    28
+- user_id: 1009018156494368798
+  username: BDFD Support
+  color: "#378afa"
+  bot: true
+  verified: true
+  content: |
+    You have provided a number: 28
+```
+\
