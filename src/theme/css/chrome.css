@@ -904,52 +904,62 @@ ul#searchresults span.teaser em {
     width: 22px;
     height: 6px;
     -webkit-animation-duration: 6s;
+    -webkit-animation-iteration-count: infinite;
 }
 .snowflakes i:nth-child(3n+1) {
     width: 30px;
     height: 7px;
     -webkit-animation-duration: 8s;
+    -webkit-animation-iteration-count: infinite;
 }
 
 .snowflakes i:nth-child(3n+2) {
     width: 34px;
     height: 10px;
     -webkit-animation-duration: 10s;
+    -webkit-animation-iteration-count: infinite;
 }
 
 .snowflakes i:nth-child(7n) {
     opacity: 0.3;
     -webkit-animation-delay: 0s;
+    -webkit-animation-iteration-count: infinite;
     -webkit-animation-timing-function: ease-in;
 }
 .snowflakes i:nth-child(7n+1) {
     opacity: 0.4;
     -webkit-animation-delay: 1s;
+    -webkit-animation-iteration-count: infinite;
     -webkit-animation-timing-function: ease-out;
 }
 .snowflakes i:nth-child(7n+2) {
-  opacity: 0.5;
-  -webkit-animation-delay: 1.5s;
-  -webkit-animation-timing-function: linear;
+    opacity: 0.5;
+    -webkit-animation-delay: 1.5s;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-timing-function: linear;
 }
 .snowflakes i:nth-child(7n+3) {
-  opacity: 0.6;
-  -webkit-animation-delay: 2s;
-  -webkit-animation-timing-function: ease-in;
+    opacity: 0.6;
+    -webkit-animation-delay: 2s;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-timing-function: ease-in;
 }
 .snowflakes i:nth-child(7n+4) {
-  opacity: 0.7;
-  -webkit-animation-delay: 2.5s;
-  -webkit-animation-timing-function: linear;
+    opacity: 0.7;
+    -webkit-animation-delay: 2.5s;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-timing-function: linear;
 }
 .snowflakes i:nth-child(7n+5) {
-  opacity: 0.8;
-  -webkit-animation-delay: 3s;
-  -webkit-animation-timing-function: ease-out;
+    opacity: 0.8;
+    -webkit-animation-delay: 3s;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-timing-function: ease-out;
 }
 .snowflakes i:nth-child(7n+6) {
-  opacity: 0.9;
-  -webkit-animation-delay: 3.5s;
-  -webkit-animation-timing-function: ease-in;
+    opacity: 0.9;
+    -webkit-animation-delay: 3.5s;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-timing-function: ease-in;
 }
 
