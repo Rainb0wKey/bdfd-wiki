@@ -146,6 +146,39 @@
                         </a>
                         <h1 id="disableinnerspaceremoval"><a class="header" href="#disableinnerspaceremoval">$disableInnerSpaceRemoval</a></h1>
 <p>Disables the removal of multiple spaces from within the message.</p>
+<style>
+.discord-messages {
+    margin-top: 1.5rem;
+}
+
+.discord-messages > .discord-message:before {
+    color: var(--color1);
+    background: var(--color3);
+    border-radius: 10px;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    margin-left: -1.8rem;
+    margin-top: -.9rem;
+    width: fit-content;
+    transition: .3s;
+    z-index: 1000;
+}
+
+.discord-messages > .discord-message:before {
+    content: 'Without $disableInnerSpaceRemoval';
+}
+
+.discord-messages:first-of-type > .discord-message:before {
+    content: 'With $disableInnerSpaceRemoval';
+}
+
+.discord-messages > .discord-message:hover:before {
+    transform: scale(1.025);
+    transform: rotate(-2.5deg);
+    border-radius: 12.5px;
+    transition: .3s;
+}
+</style>
 <h2 id="syntax"><a class="header" href="#syntax">Syntax</a></h2>
 <pre><code>$disableInnerSpaceRemoval
 </code></pre>
@@ -158,18 +191,15 @@ Hello               $displayName!
     <discord-message author="RainbowKey" role-color="#E67E22">
         !example
     </discord-message>
-    <discord-message author="BDFD Support" bot role-color="#378afa" verified>
+    <discord-message author="BDFD Support" bot verified role-color="#378afa">
         Hello RainbowKey!
     </discord-message>
 </discord-messages>
-<ul>
-<li>Without <code>$disableInnerSpaceRemoval</code>:</li>
-</ul>
 <discord-messages>
-    <discord-message author="RainbowKey" role-color="#E67E22">
+    <discord-message role-color="#E67E22" author="RainbowKey">
         !example
     </discord-message>
-    <discord-message verified role-color="#378afa" bot author="BDFD Support">
+    <discord-message author="BDFD Support" bot role-color="#378afa" verified>
         Hello        RainbowKey!
     </discord-message>
 </discord-messages>

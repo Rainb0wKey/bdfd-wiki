@@ -163,24 +163,24 @@ Hello, $displayName!
     <discord-message role-color="#E67E22" author="RainbowKey">
         Hello everyone!
     </discord-message>
-    <discord-message verified author="BDFD Support" role-color="#378afa" bot>
+    <discord-message verified author="BDFD Support" bot role-color="#378afa">
         Hello, RainbowKey!
     </discord-message>
-    <discord-message verified author="BDFD Support" bot role-color="#378afa">
-        <discord-command slot="reply" command="/example" role-color="#E67E22" author="RainbowKey">
+    <discord-message role-color="#378afa" author="BDFD Support" bot verified>
+        <discord-command command="/example" slot="reply" role-color="#E67E22" author="RainbowKey">
         </discord-command>
         $alwaysReply can't detect slash commands!
     </discord-message>
-    <discord-message bot ephemeral author="BDFD Support" verified role-color="#378afa">
+    <discord-message author="BDFD Support" bot role-color="#378afa" ephemeral verified>
         And $alwaysReply can't detect ephemeral messages!
     </discord-message>
-    <discord-message role-color="#E67E22" author="RainbowKey">
+    <discord-message author="RainbowKey" role-color="#E67E22">
         !example
     </discord-message>
-    <discord-message verified role-color="#748BD4" author="Wiki Bot" bot>
+    <discord-message author="Wiki Bot" role-color="#748BD4" verified bot>
         Also it can't detect messages from different bots/webhooks...
     </discord-message>
-    <discord-message role-color="#378afa" bot verified author="BDFD Support">
+    <discord-message author="BDFD Support" bot role-color="#378afa" verified>
         Hello, RainbowKey!
     </discord-message>
 </discord-messages>
