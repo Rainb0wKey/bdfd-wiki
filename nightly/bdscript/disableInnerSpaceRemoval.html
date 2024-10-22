@@ -152,13 +152,27 @@
 <h2 id="example"><a class="header" href="#example">Example</a></h2>
 <pre><code>$nomention
 $disableInnerSpaceRemoval
-
 Hello               $displayName!
 </code></pre>
-<h3 id="output-without"><a class="header" href="#output-without">Output Without</a></h3>
-<p><img src="https://user-images.githubusercontent.com/70456337/214134396-560937db-efe6-40e9-b50d-2bd26faab03b.png" alt="" /></p>
-<h3 id="output-with"><a class="header" href="#output-with">Output With</a></h3>
-<p><img src="https://user-images.githubusercontent.com/70456337/214134431-5ac11979-20a4-45ef-b390-918cc4b01370.png" alt="" /></p>
+<discord-messages>
+    <discord-message author="RainbowKey" role-color="#E67E22">
+        !example
+    </discord-message>
+    <discord-message author="BDFD Support" bot role-color="#378afa" verified>
+        Hello RainbowKey!
+    </discord-message>
+</discord-messages>
+<ul>
+<li>Without <code>$disableInnerSpaceRemoval</code>:</li>
+</ul>
+<discord-messages>
+    <discord-message author="RainbowKey" role-color="#E67E22">
+        !example
+    </discord-message>
+    <discord-message verified role-color="#378afa" bot author="BDFD Support">
+        Hello        RainbowKey!
+    </discord-message>
+</discord-messages>
 
                     </main>
 
