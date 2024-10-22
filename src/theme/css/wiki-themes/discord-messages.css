@@ -248,6 +248,16 @@
     padding-right: 5px;
 }
 
+.discord-time-mark:hover:before {
+    position: absolute;
+    top: -28px;
+    content: "Timestamp mark";
+    background: rgb(13 13 13 / 85%);
+    padding: 5px;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
 /* Time marks */
 .discord-message [id$="-mark"] {
     line-height: 19px;
