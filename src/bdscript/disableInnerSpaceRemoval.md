@@ -76,3 +76,7 @@ Hello               $displayName!
   content: |
       Hello        RainbowKey!
   ```
+
+```admonish question title="What is this?"
+How [`$displayName`](./displayName.md) works?
+```
