@@ -205,6 +205,10 @@ $endif
 ```
 \
 
+```admonish info title="Read more"
+For more information about the functions used can be found in [If Statements Guide](../guides/general/ifStatements.md).
+```
+
 ### With numeric filter
 **Trigger: `$awaitedCommand[odd;<numeric>]`**
 ```
