@@ -159,15 +159,31 @@
 <li>In top-left corner, click on the hamburger icon (<code>≡</code>) and select the <em>“Bots”</em> tab.</li>
 <li>Once done, press the <em>“Reset Token”</em> button and copy your bot token.</li>
 </ul>
-<blockquote>
-<p>Never share your Discord bot token with anyone. <em><a href="../../resources/security.html#sharing-tokens">Learn more</a></em></p>
-</blockquote>
+<div id="admonition-danger" class="admonition admonish-danger" role="note" aria-labelledby="admonition-danger-title">
+<div class="admonition-title">
+<div id="admonition-danger-title">
+<p>Danger</p>
+</div>
+<a class="admonition-anchor-link" href="#admonition-danger"></a>
+</div>
+<div>
+<p>Never share your Discord bot token with anyone! <em><a href="../../resources/security.html#sharing-tokens">Learn more</a></em></p>
+</div>
+</div>
 <ul>
 <li>Now, open your BDFD app <em>(If you haven’t installed the app yet, head over to <a href="https://play.google.com/store/apps/details?id=com.jakubtomana.discordbotdesinger">Play Store</a>/<a href="https://apps.apple.com/app/bot-designer-for-discord/id1495536477">App Store</a> and download it)</em> and press <em>“Create New Bot”</em>.</li>
 </ul>
-<blockquote>
-<p>Make sure that when you are creating a new bot, your Discord account is signed into the BDFD app. This is so that you don’t lose access to your bot in the future.</p>
-</blockquote>
+<div id="admonition-warning" class="admonition admonish-warning" role="note" aria-labelledby="admonition-warning-title">
+<div class="admonition-title">
+<div id="admonition-warning-title">
+<p>Warning</p>
+</div>
+<a class="admonition-anchor-link" href="#admonition-warning"></a>
+</div>
+<div>
+<p>Make sure that when you are creating a new bot, your Discord account is signed into the BDFD app. <strong>This is so that you don’t lose access to your bot in the future.</strong></p>
+</div>
+</div>
 <ul>
 <li>Enter your bot’s name and its token <em>(the one that you copied earlier from the <a href="https://discord.com/developers/applications">Discord Developer Portal</a>)</em>.</li>
 <li>If you have a <a href="../other/sharecode.html">share code</a>, toggle on <em>“Use share code”</em> and put the code into the text field.</li>
@@ -188,9 +204,17 @@ You will see 3 categories (“Command Name”, “Command Trigger”, “Templat
 <li>Come up with a name for your command and paste it into the “Command  Name” field. (You can leave it blank).</li>
 <li>Now come up with a trigger for the command. (Example: <code>!ping</code>).</li>
 </ul>
-<blockquote>
+<div id="admonition-tip" class="admonition admonish-tip" role="note" aria-labelledby="admonition-tip-title">
+<div class="admonition-title">
+<div id="admonition-tip-title">
+<p>Tip</p>
+</div>
+<a class="admonition-anchor-link" href="#admonition-tip"></a>
+</div>
+<div>
 <p>It is important that the trigger of the command matches its meaning.</p>
-</blockquote>
+</div>
+</div>
 <p>After completing the command setup, press the <em>“Create Command”</em> button. Now you can create your first code!
 In “Reply Message” you can paste this code:</p>
 <pre><code>$nomention
@@ -201,13 +225,21 @@ Pong!
 </ul>
 <h1 id="step-4-bot-online"><a class="header" href="#step-4-bot-online">Step 4: Bot Online</a></h1>
 <h3 id="method-1---30-minutes"><a class="header" href="#method-1---30-minutes">Method 1 - 30 Minutes</a></h3>
+<div id="admonition-note" class="admonition admonish-note" role="note" aria-labelledby="admonition-note-title">
+<div class="admonition-title">
+<div id="admonition-note-title">
+<p>Note</p>
+</div>
+<a class="admonition-anchor-link" href="#admonition-note"></a>
+</div>
+<div>
+<p>This method only works when your bot is offline (No hosting).</p>
+</div>
+</div>
 <ul>
 <li>Click on the <em>“Dashboard”</em> tab after selecting your bot and press on the <em>“+ Add free hosting time”</em> button.</li>
 <li>Enter the indicated numbers and click <em>“Confirm”</em>.</li>
 </ul>
-<blockquote>
-<p>Note: This method only works when your bot is offline.</p>
-</blockquote>
 <h3 id="method-2---200-minutes"><a class="header" href="#method-2---200-minutes">Method 2 - 200 Minutes</a></h3>
 <ul>
 <li>Press on <em>“Dashboard”</em> tab after selecting your bot and click on <em>“+ Watch ad for 140 minutes of free hosting time”</em>.</li>
@@ -217,16 +249,24 @@ Pong!
 <ul>
 <li>Use <a href="../../premium/introduction.html#purchasing-premium-points">premium</a> points to get hosting time without watching ads.</li>
 </ul>
-<blockquote>
+<div id="admonition-question" class="admonition admonish-question" role="note" aria-labelledby="admonition-question-title">
+<div class="admonition-title">
+<div id="admonition-question-title">
+<p>Question</p>
+</div>
+<a class="admonition-anchor-link" href="#admonition-question"></a>
+</div>
+<div>
 <p>If the bot is not online after these methods, then take a look at this page: <a href="../../resources/troubleshooting.html#the-bot-is-offline">Why my bot is offline?</a></p>
-</blockquote>
+</div>
+</div>
 <h2 id="step-5-test-it"><a class="header" href="#step-5-test-it">Step 5: Test it!</a></h2>
 <p>Send a <code>!ping</code> command in a channel of the server you invited your bot to.</p>
 <discord-messages>
-    <discord-message author="RainbowKey" role-color="#E67E22">
+    <discord-message role-color="#E67E22" author="RainbowKey">
         !ping
     </discord-message>
-    <discord-message bot role-color="#378afa" verified author="BDFD Support">
+    <discord-message verified author="BDFD Support" bot role-color="#378afa">
         Pong!
     </discord-message>
 </discord-messages>
