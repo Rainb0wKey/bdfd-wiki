@@ -179,13 +179,13 @@ $awaitFunc[say]
     <discord-message role-color="#E67E22" author="RainbowKey">
         !example
     </discord-message>
-    <discord-message verified bot role-color="#378afa" author="BDFD Support">
+    <discord-message verified author="BDFD Support" bot role-color="#378afa">
         What do you want me to say?
     </discord-message>
     <discord-message role-color="#E67E22" author="RainbowKey">
         I love BDFD
     </discord-message>
-    <discord-message verified bot role-color="#378afa" author="BDFD Support">
+    <discord-message bot role-color="#378afa" author="BDFD Support" verified>
         I love BDFD
     </discord-message>
 </discord-messages>
@@ -210,16 +210,16 @@ $awaitFunc[say]
 $message
 </code></pre>
 <discord-messages>
-    <discord-message role-color="#E67E22" author="RainbowKey">
+    <discord-message author="RainbowKey" role-color="#E67E22">
         !example
     </discord-message>
-    <discord-message author="BDFD Support" verified role-color="#378afa" bot>
+    <discord-message bot verified role-color="#378afa" author="BDFD Support">
         What do you want me to say?
     </discord-message>
-    <discord-message role-color="#E67E22" author="RainbowKey">
+    <discord-message author="RainbowKey" role-color="#E67E22">
         I love BDFD
     </discord-message>
-    <discord-message author="BDFD Support" bot verified role-color="#378afa">
+    <discord-message verified role-color="#378afa" author="BDFD Support" bot>
         I love BDFD
     </discord-message>
 </discord-messages>
@@ -235,40 +235,40 @@ $elseif[$message==cancel]
 $endif
 </code></pre>
 <discord-messages>
+    <discord-message author="RainbowKey" role-color="#E67E22">
+        !example
+    </discord-message>
+    <discord-message verified role-color="#378afa" author="BDFD Support" bot>
+        Is '19' odd number?
+    </discord-message>
+    <discord-message role-color="#E67E22" author="RainbowKey">
+        yes
+    </discord-message>
+    <discord-message role-color="#378afa" verified bot author="BDFD Support">
+        Your answer is correct!
+    </discord-message>
     <discord-message role-color="#E67E22" author="RainbowKey">
         !example
     </discord-message>
-    <discord-message author="BDFD Support" verified role-color="#378afa" bot>
-        Is '19' odd number?
-    </discord-message>
-    <discord-message author="RainbowKey" role-color="#E67E22">
-        yes
-    </discord-message>
-    <discord-message role-color="#378afa" author="BDFD Support" verified bot>
-        Your answer is correct!
-    </discord-message>
-    <discord-message author="RainbowKey" role-color="#E67E22">
-        !example
-    </discord-message>
-    <discord-message author="BDFD Support" verified bot role-color="#378afa">
+    <discord-message verified role-color="#378afa" bot author="BDFD Support">
         Is '19' odd number?
     </discord-message>
     <discord-message role-color="#E67E22" author="RainbowKey">
         no
     </discord-message>
-    <discord-message author="BDFD Support" bot role-color="#378afa" verified>
+    <discord-message verified author="BDFD Support" bot role-color="#378afa">
         Your answer is incorrect!
     </discord-message>
     <discord-message author="RainbowKey" role-color="#E67E22">
         !example
     </discord-message>
-    <discord-message author="BDFD Support" bot role-color="#378afa" verified>
+    <discord-message bot author="BDFD Support" verified role-color="#378afa">
         Is '19' odd number?
     </discord-message>
     <discord-message author="RainbowKey" role-color="#E67E22">
         cancel
     </discord-message>
-    <discord-message author="BDFD Support" verified bot role-color="#378afa">
+    <discord-message author="BDFD Support" bot verified role-color="#378afa">
         Command cancelled!
     </discord-message>
 </discord-messages>
@@ -289,16 +289,16 @@ $endif
 You have provided a number: $message
 </code></pre>
 <discord-messages>
-    <discord-message role-color="#E67E22" author="RainbowKey">
+    <discord-message author="RainbowKey" role-color="#E67E22">
         !example
     </discord-message>
-    <discord-message author="BDFD Support" bot role-color="#378afa" verified>
+    <discord-message bot role-color="#378afa" verified author="BDFD Support">
         Provide a number!
     </discord-message>
     <discord-message author="RainbowKey" role-color="#E67E22">
         52
     </discord-message>
-    <discord-message bot author="BDFD Support" verified role-color="#378afa">
+    <discord-message author="BDFD Support" role-color="#378afa" bot verified>
         You have provided a number: 52
     </discord-message>
 </discord-messages>
@@ -321,16 +321,16 @@ You have provided a number: $message
 Invalid number!
 </code></pre>
 <discord-messages>
-    <discord-message role-color="#E67E22" author="RainbowKey">
+    <discord-message author="RainbowKey" role-color="#E67E22">
         !example
     </discord-message>
-    <discord-message verified role-color="#378afa" bot author="BDFD Support">
+    <discord-message verified author="BDFD Support" role-color="#378afa" bot>
         Provide a number!
     </discord-message>
-    <discord-message author="RainbowKey" role-color="#E67E22">
+    <discord-message role-color="#E67E22" author="RainbowKey">
         azbc
     </discord-message>
-    <discord-message role-color="#378afa" bot author="BDFD Support" verified>
+    <discord-message role-color="#378afa" bot verified author="BDFD Support">
         Invalid number!
     </discord-message>
 </discord-messages>
@@ -356,13 +356,13 @@ $message
     <discord-message author="RainbowKey" role-color="#E67E22">
         !say
     </discord-message>
-    <discord-message role-color="#378afa" verified bot author="BDFD Support">
+    <discord-message author="BDFD Support" role-color="#378afa" bot verified>
         What do you want me to say?
     </discord-message>
-    <discord-message author="RainbowKey" role-color="#E67E22">
+    <discord-message role-color="#E67E22" author="RainbowKey">
         Hello everyone!
     </discord-message>
-    <discord-message bot verified role-color="#378afa" author="BDFD Support">
+    <discord-message author="BDFD Support" verified role-color="#378afa" bot>
         Hello everyone!
     </discord-message>
 </discord-messages>
@@ -404,37 +404,37 @@ $endif
     <discord-message author="RainbowKey" role-color="#E67E22">
         !odd
     </discord-message>
-    <discord-message role-color="#378afa" verified author="BDFD Support" bot>
+    <discord-message bot role-color="#378afa" author="BDFD Support" verified>
         Is '21' odd number?
     </discord-message>
-    <discord-message author="RainbowKey" role-color="#E67E22">
+    <discord-message role-color="#E67E22" author="RainbowKey">
         yes
     </discord-message>
-    <discord-message author="BDFD Support" verified role-color="#378afa" bot>
+    <discord-message role-color="#378afa" bot author="BDFD Support" verified>
         Your answer is correct!
     </discord-message>
     <discord-message author="RainbowKey" role-color="#E67E22">
         !odd
     </discord-message>
-    <discord-message author="BDFD Support" role-color="#378afa" verified bot>
+    <discord-message author="BDFD Support" bot verified role-color="#378afa">
         Is '21' odd number?
     </discord-message>
-    <discord-message author="RainbowKey" role-color="#E67E22">
+    <discord-message role-color="#E67E22" author="RainbowKey">
         no
     </discord-message>
-    <discord-message bot author="BDFD Support" role-color="#378afa" verified>
+    <discord-message verified bot author="BDFD Support" role-color="#378afa">
         Your answer is incorrect!
     </discord-message>
     <discord-message author="RainbowKey" role-color="#E67E22">
         !odd
     </discord-message>
-    <discord-message verified author="BDFD Support" role-color="#378afa" bot>
+    <discord-message bot verified role-color="#378afa" author="BDFD Support">
         Is '21' odd number?
     </discord-message>
-    <discord-message role-color="#E67E22" author="RainbowKey">
+    <discord-message author="RainbowKey" role-color="#E67E22">
         cancel
     </discord-message>
-    <discord-message bot author="BDFD Support" role-color="#378afa" verified>
+    <discord-message role-color="#378afa" author="BDFD Support" bot verified>
         Command cancelled!
     </discord-message>
 </discord-messages>
@@ -459,13 +459,13 @@ You have provided a number: $message
     <discord-message author="RainbowKey" role-color="#E67E22">
         !number
     </discord-message>
-    <discord-message author="BDFD Support" bot role-color="#378afa" verified>
+    <discord-message author="BDFD Support" role-color="#378afa" verified bot>
         Provide a number!
     </discord-message>
-    <discord-message role-color="#E67E22" author="RainbowKey">
+    <discord-message author="RainbowKey" role-color="#E67E22">
         28
     </discord-message>
-    <discord-message verified author="BDFD Support" bot role-color="#378afa">
+    <discord-message verified bot author="BDFD Support" role-color="#378afa">
         You have provided a number: 28
     </discord-message>
 </discord-messages>
