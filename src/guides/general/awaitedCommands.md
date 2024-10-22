@@ -63,6 +63,10 @@ $awaitFunc[say]
 \
 
 # $awaitedCommand
+<div class="functionTags">
+  <span id="CallbackTag">Callback</span>
+</div>
+
 _Triggered when an awaited command gets responded to._
 
 `$awaitedCommand[]` is a callback, which means it's used in the command trigger (not the code). The command is only run when an awaited command gets responded to.
@@ -237,6 +241,10 @@ You have provided a number: $message
 \
 
 # $awaitedCommandError
+<div class="functionTags">
+  <span id="CallbackTag">Callback</span>
+</div>
+
 _Triggered when an awaited command doesn't match with provided filter._
 
 `$awaitedCommandError[]` is a callback, which means it's used in the command trigger (not the code). The command is only run when an awaited command doesn't match with provided filter.
