@@ -231,7 +231,7 @@
 </div>
 <div class="settingembed">
   <h2 id="effects"><a class="header" href="#effects">Effects</a></h2>
-  <p>It's only decoration for wiki. Events: Halloween, Winter</p>
+  <p>It's only decoration for wiki.</p>
   <div class="effectbuttons">
     <button id="manageEffect" class="ebutton" onClick="effectsSetting()">Disable</button>
   </div>
@@ -316,14 +316,14 @@
   <p id="default-is">"Discord Dark"</p>
 </div>
 <discord-messages>
-    <discord-message author="RainbowKey" role-color="#E67E22">
+    <discord-message role-color="#E67E22" author="RainbowKey">
         !example ❤️
         <discord-reactions slot="reactions">
-            <discord-reaction emoji="https://upload.wikimedia.org/wikipedia/commons/7/70/Symbolic_Love_Heart.png" name=":emoji:" count="1">
+            <discord-reaction count="1" name=":emoji:" emoji="https://upload.wikimedia.org/wikipedia/commons/7/70/Symbolic_Love_Heart.png">
             </discord-reaction>
         </discord-reactions>
     </discord-message>
-    <discord-message role-color="#378afa" author="BDFD Support" bot verified>
+    <discord-message bot role-color="#378afa" author="BDFD Support" verified>
         Added!
     </discord-message>
 </discord-messages>
@@ -359,7 +359,7 @@ $try
   $endif
 $catch
   $sendMessage[Bye!]
-  $botLeave $c[Kicks the bot😉]
+  $botLeave $c[Magic😉]
 $endtry
 </code></pre>
 <div class="importantReset">
