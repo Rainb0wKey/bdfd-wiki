@@ -203,11 +203,11 @@ $addField[First Field;Content;yes;3]
 $addField[Second Field;Cat or dog?;yes;3]
 </code></pre>
 <discord-messages>
-    <discord-message role-color="#E67E22" author="RainbowKey">
+    <discord-message author="RainbowKey" role-color="#E67E22">
         !example
     </discord-message>
-    <discord-message role-color="#378afa" author="BDFD Support" bot verified>
-        <discord-embed slot="embeds" embed-title="Embed 1" color="#673ab7">
+    <discord-message bot role-color="#378afa" author="BDFD Support" verified>
+        <discord-embed color="#673ab7" slot="embeds" embed-title="Embed 1">
             <discord-embed-description slot="description">
                 Hello user!
             </discord-embed-description>
@@ -215,12 +215,12 @@ $addField[Second Field;Cat or dog?;yes;3]
                 I love BDFD
             </discord-embed-footer>
         </discord-embed>
-        <discord-embed embed-title="Embed 2" color="#673ab7" slot="embeds">
+        <discord-embed color="#673ab7" slot="embeds" embed-title="Embed 2">
             <discord-embed-description slot="description">
                 Hello embed!
             </discord-embed-description>
         </discord-embed>
-        <discord-embed slot="embeds" color="#673ab7" embed-title="Embed 3">
+        <discord-embed color="#673ab7" embed-title="Embed 3" slot="embeds">
             <discord-embed-description slot="description">
                 Посхалка
             </discord-embed-description>
@@ -228,13 +228,24 @@ $addField[Second Field;Cat or dog?;yes;3]
                 <discord-embed-field field-title="First Field" inline inline-index="1">
                     Content
                 </discord-embed-field>
-                <discord-embed-field inline field-title="Second Field" inline-index="2">
+                <discord-embed-field inline-index="2" field-title="Second Field" inline>
                     Cat or dog?
                 </discord-embed-field>
             </discord-embed-fields>
         </discord-embed>
     </discord-message>
 </discord-messages>
+<div id="admonition-what-is-this" class="admonition admonish-question" role="note" aria-labelledby="admonition-what-is-this-title">
+<div class="admonition-title">
+<div id="admonition-what-is-this-title">
+<p>What is this?</p>
+</div>
+<a class="admonition-anchor-link" href="#admonition-what-is-this"></a>
+</div>
+<div>
+<p>How <a href="./color.html"><code>$color</code></a>, <a href="./title.html"><code>$title[]</code></a>, <a href="./description.html"><code>$description[]</code></a>, <a href="./footer.html"><code>$footer[]</code></a> and <a href="./addField.html"><code>$addField[]</code></a> works?</p>
+</div>
+</div>
 <h3 id="all-embed-functions"><a class="header" href="#all-embed-functions">All Embed Functions</a></h3>
 <ul>
 <li>With <code>Index</code> parameter:</li>
