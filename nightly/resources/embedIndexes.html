@@ -145,7 +145,7 @@
                             <i class='fa fa-edit' id="editPageIcon"></i>
                         </a>
                         <h1 id="embed-indexes"><a class="header" href="#embed-indexes">Embed Indexes</a></h1>
-<p>If you look around BDFD embed functions (eg. <a href="../bdscript/title.html"><code>$title</code></a>, <a href="../bdscript/footer.html"><code>$footer</code></a>, <a href="../bdscript/addTimestamp.html"><code>$addTimestamp</code></a> etc.). You’ll see an argument called <code>index</code>. This argument is used to create multi-embeds.</p>
+<p>If you look around BDFD embed functions (eg. <a href="../bdscript/title.html"><code>$title</code></a>, <a href="../bdscript/footer.html"><code>$footer</code></a>, <a href="../bdscript/addTimestamp.html"><code>$addTimestamp</code></a> etc.). You’ll see an parameter called <code>Index</code>. This parameter is used to create multi-embeds.</p>
 <div id="admonition-limit" class="admonition admonish-warning" role="note" aria-labelledby="admonition-limit-title">
 <div class="admonition-title">
 <div id="admonition-limit-title">
@@ -158,7 +158,7 @@
 </div>
 </div>
 <h2 id="creating-multi-embeds"><a class="header" href="#creating-multi-embeds">Creating Multi-Embeds</a></h2>
-<p>By default, the <code>index</code> is set to <code>1</code> <em>(the first embed)</em>. To create a second embed, you have to write <code>2</code> in <code>index</code> argument and so on. You can specify any number between <code>1</code> to <code>10</code> in <code>index</code> argument.</p>
+<p>By default, the <code>Index</code> is set to <code>1</code> <em>(the first embed)</em>. To create a second embed, you have to write <code>2</code> in <code>Index</code> parameter and so on. You can specify any number between <code>1</code> to <code>10</code> in <code>index</code> parameter.</p>
 <div id="admonition-limit-1" class="admonition admonish-warning" role="note" aria-labelledby="admonition-limit-1-title">
 <div class="admonition-title">
 <div id="admonition-limit-1-title">
@@ -178,7 +178,8 @@
 <a class="admonition-anchor-link" href="#admonition-remember"></a>
 </div>
 <div>
-<p>✅ <code>$title[Title]</code> == <code>$title[Title;1]</code><br />
+<p>By default, the parameter <code>Index</code> is set to <code>1</code> <em>(The first embed)</em>.
+✅ <code>$title[Title]</code> == <code>$title[Title;1]</code><br />
 ❌ <code>$title[Title]</code> == <code>$title[Title;2]</code><br />
 ❌ <code>$title[Title]</code> == <code>$title[Title;1]</code> + <code>$title[Title;2]</code></p>
 </div>
@@ -202,11 +203,11 @@ $addField[First Field;Content;yes;3]
 $addField[Second Field;Cat or dog?;yes;3]
 </code></pre>
 <discord-messages>
-    <discord-message author="RainbowKey" role-color="#E67E22">
+    <discord-message role-color="#E67E22" author="RainbowKey">
         !example
     </discord-message>
-    <discord-message author="BDFD Support" verified role-color="#378afa" bot>
-        <discord-embed embed-title="Embed 1" slot="embeds" color="#673ab7">
+    <discord-message role-color="#378afa" bot verified author="BDFD Support">
+        <discord-embed color="#673ab7" slot="embeds" embed-title="Embed 1">
             <discord-embed-description slot="description">
                 Hello user!
             </discord-embed-description>
@@ -214,20 +215,20 @@ $addField[Second Field;Cat or dog?;yes;3]
                 I love BDFD
             </discord-embed-footer>
         </discord-embed>
-        <discord-embed slot="embeds" embed-title="Embed 2" color="#673ab7">
+        <discord-embed color="#673ab7" slot="embeds" embed-title="Embed 2">
             <discord-embed-description slot="description">
                 Hello embed!
             </discord-embed-description>
         </discord-embed>
-        <discord-embed color="#673ab7" slot="embeds" embed-title="Embed 3">
+        <discord-embed color="#673ab7" embed-title="Embed 3" slot="embeds">
             <discord-embed-description slot="description">
                 Посхалка
             </discord-embed-description>
             <discord-embed-fields slot="fields">
-                <discord-embed-field field-title="First Field" inline inline-index="1">
+                <discord-embed-field inline-index="1" inline field-title="First Field">
                     Content
                 </discord-embed-field>
-                <discord-embed-field field-title="Second Field" inline inline-index="2">
+                <discord-embed-field inline field-title="Second Field" inline-index="2">
                     Cat or dog?
                 </discord-embed-field>
             </discord-embed-fields>
