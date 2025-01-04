@@ -145,7 +145,7 @@
                             <i class='fa fa-edit' id="editPageIcon"></i>
                         </a>
                         <h1 id="embed-indexes"><a class="header" href="#embed-indexes">Embed Indexes</a></h1>
-<p>If you look around BDFD embed functions (eg. <a href="../bdscript/title.html"><code>$title</code></a>, <a href="../bdscript/footer.html"><code>$footer</code></a>, <a href="../bdscript/addTimestamp.html"><code>$addTimestamp</code></a> etc.). You’ll see an parameter called <code>Index</code>. This parameter is used to create multi-embeds.</p>
+<p>If you look around <a href="#AllEmbedFunctions">BDFD Embed Functions</a>. You’ll see an parameter called <code>Index</code>. This parameter is used to create multi-embeds.</p>
 <div id="admonition-limit" class="admonition admonish-warning" role="note" aria-labelledby="admonition-limit-title">
 <div class="admonition-title">
 <div id="admonition-limit-title">
@@ -203,11 +203,11 @@ $addField[First Field;Content;yes;3]
 $addField[Second Field;Cat or dog?;yes;3]
 </code></pre>
 <discord-messages>
-    <discord-message role-color="#E67E22" author="RainbowKey">
+    <discord-message author="RainbowKey" role-color="#E67E22">
         !example
     </discord-message>
-    <discord-message bot role-color="#378afa" author="BDFD Support" verified>
-        <discord-embed color="#673ab7" slot="embeds" embed-title="Embed 1">
+    <discord-message bot role-color="#378afa" verified author="BDFD Support">
+        <discord-embed slot="embeds" color="#673ab7" embed-title="Embed 1">
             <discord-embed-description slot="description">
                 Hello user!
             </discord-embed-description>
@@ -215,12 +215,12 @@ $addField[Second Field;Cat or dog?;yes;3]
                 I love BDFD
             </discord-embed-footer>
         </discord-embed>
-        <discord-embed embed-title="Embed 2" slot="embeds" color="#673ab7">
+        <discord-embed slot="embeds" color="#673ab7" embed-title="Embed 2">
             <discord-embed-description slot="description">
                 Hello embed!
             </discord-embed-description>
         </discord-embed>
-        <discord-embed color="#673ab7" slot="embeds" embed-title="Embed 3">
+        <discord-embed embed-title="Embed 3" slot="embeds" color="#673ab7">
             <discord-embed-description slot="description">
                 Посхалка
             </discord-embed-description>
@@ -228,7 +228,7 @@ $addField[Second Field;Cat or dog?;yes;3]
                 <discord-embed-field inline-index="1" field-title="First Field" inline>
                     Content
                 </discord-embed-field>
-                <discord-embed-field field-title="Second Field" inline inline-index="2">
+                <discord-embed-field inline field-title="Second Field" inline-index="2">
                     Cat or dog?
                 </discord-embed-field>
             </discord-embed-fields>
