@@ -170,19 +170,70 @@
 <p>Total character length of the overall response should not exceed more than 6,000. If it does, the bot won’t send the message.</p>
 </div>
 </div>
+<div id="admonition-remember" class="admonition admonish-tip" role="note" aria-labelledby="admonition-remember-title">
+<div class="admonition-title">
+<div id="admonition-remember-title">
+<p>Remember!</p>
+</div>
+<a class="admonition-anchor-link" href="#admonition-remember"></a>
+</div>
+<div>
+<p>✅ $title[Title] == $title[Title;1]
+❌ $title[Title] == $title[Title;2]
+❌ $title[Title] == $title[Title;1] + $title[Title;2]</p>
+</div>
+</div>
 <h3 id="example"><a class="header" href="#example">Example</a></h3>
 <pre><code>$nomention
 
-$title[Title #1]
-$description[Description #1]
+$color[#673ab7]
+$title[Title 1;1]
+$description[Hello user!;1]
+$footer[I love BDFD]
 
-$title[Title #2;2]
-$description[Description #2;2]
+$color[#673ab7;2]
+$title[Embed 2;2]
+$description[hello embed!;2]
 
-$title[Title #3;3]
-$description[Description #3;3]
+$color[#673ab7;3]
+$title[Embed 3;3]
+$description[Посхалка;3]
+$addField[First Field;Content;yes;3]
+$addField[Second Field;Cat or dog?;yes;3]
 </code></pre>
-<p><img src="https://user-images.githubusercontent.com/69215413/125877770-c2bbc30e-95f4-4859-9343-bce65ad633c5.png" alt="example" /></p>
+<discord-messages>
+    <discord-message author="RainbowKey" role-color="#E67E22">
+        !example
+    </discord-message>
+    <discord-message bot role-color="#378afa" author="BDFD Support" verified>
+        <discord-embed embed-title="Embed 1" color="#673ab7" slot="embeds">
+            <discord-embed-description slot="description">
+                Hello user!
+            </discord-embed-description>
+            <discord-embed-footer slot="footer">
+                I love BDFD
+            </discord-embed-footer>
+        </discord-embed>
+        <discord-embed color="#673ab7" slot="embeds" embed-title="Embed 2">
+            <discord-embed-description slot="description">
+                Hello embed!
+            </discord-embed-description>
+        </discord-embed>
+        <discord-embed color="#673ab7" slot="embeds" embed-title="Embed 3">
+            <discord-embed-description slot="description">
+                Посхалка
+            </discord-embed-description>
+            <discord-embed-fields slot="fields">
+                <discord-embed-field field-title="First Field" inline inline-index="1">
+                    Content
+                </discord-embed-field>
+                <discord-embed-field field-title="Second Field" inline inline-index="2">
+                    Cat or dog?
+                </discord-embed-field>
+            </discord-embed-fields>
+        </discord-embed>
+    </discord-message>
+</discord-messages>
 
                     </main>
 
