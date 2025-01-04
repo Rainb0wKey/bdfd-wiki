@@ -206,7 +206,7 @@ $addField[Second Field;Cat or dog?;yes;3]
     <discord-message role-color="#E67E22" author="RainbowKey">
         !example
     </discord-message>
-    <discord-message role-color="#378afa" bot verified author="BDFD Support">
+    <discord-message bot role-color="#378afa" author="BDFD Support" verified>
         <discord-embed color="#673ab7" slot="embeds" embed-title="Embed 1">
             <discord-embed-description slot="description">
                 Hello user!
@@ -215,26 +215,53 @@ $addField[Second Field;Cat or dog?;yes;3]
                 I love BDFD
             </discord-embed-footer>
         </discord-embed>
-        <discord-embed color="#673ab7" slot="embeds" embed-title="Embed 2">
+        <discord-embed embed-title="Embed 2" slot="embeds" color="#673ab7">
             <discord-embed-description slot="description">
                 Hello embed!
             </discord-embed-description>
         </discord-embed>
-        <discord-embed color="#673ab7" embed-title="Embed 3" slot="embeds">
+        <discord-embed color="#673ab7" slot="embeds" embed-title="Embed 3">
             <discord-embed-description slot="description">
                 Посхалка
             </discord-embed-description>
             <discord-embed-fields slot="fields">
-                <discord-embed-field inline-index="1" inline field-title="First Field">
+                <discord-embed-field inline-index="1" field-title="First Field" inline>
                     Content
                 </discord-embed-field>
-                <discord-embed-field inline field-title="Second Field" inline-index="2">
+                <discord-embed-field field-title="Second Field" inline inline-index="2">
                     Cat or dog?
                 </discord-embed-field>
             </discord-embed-fields>
         </discord-embed>
     </discord-message>
 </discord-messages>
+<h3 id="all-embed-functions"><a class="header" href="#all-embed-functions">All Embed Functions</a></h3>
+<ul>
+<li>With <code>Index</code> parameter:</li>
+</ul>
+<ol>
+<li><a href="../bdscript/color.html"><code>$color[]</code></a> - Sets the embed border color.</li>
+<li><a href="../bdscript/author.html"><code>$author[]</code></a> - Adds author text to an embed.</li>
+<li><a href="../bdscript/authorIcon.html"><code>$authorIcon[]</code></a> - Adds an icon to the author section in the embed.</li>
+<li><a href="../bdscript/authorURL.html"><code>$authorURL[]</code></a> - Adds a hyperlink to the author text.</li>
+<li><a href="../bdscript/title.html"><code>$title[]</code></a> - Adds an embedded title to bot’s response message.</li>
+<li><a href="../bdscript/embeddedURL.html"><code>$embeddedURL[]</code></a> - Sets the title to be a hyperlink.</li>
+<li><a href="../bdscript/thumbnail.html"><code>$thumbnail[]</code></a> - Adds an embedded thumbnail to the bot’s response message.</li>
+<li><a href="../bdscript/description.html"><code>$description[]</code></a> - Adds a description to an embed.</li>
+<li><a href="../bdscript/addField.html"><code>$addField[]</code></a> - Adds a field to an embed.</li>
+<li><a href="../bdscript/image.html"><code>$image[]</code></a> - Adds an image to the embed.</li>
+<li><a href="../bdscript/footer.html"><code>$footer[]</code></a> - Sets the embed footer text.</li>
+<li><a href="../bdscript/footerIcon.html"><code>$footerIcon[]</code></a> - Sets the embed footer icon.</li>
+<li><a href="../bdscript/addTimestamp.html"><code>$addTimestamp</code></a> - Adds a timestamp to an embed.</li>
+<li><a href="../bdscript/addTimestampComplex.html"><code>$addTimestamp[]</code></a> - Adds a timestamp to a specific embed.</li>
+</ol>
+<ul>
+<li>Without <code>Index</code> parameter (You can’t separate embeds):</li>
+</ul>
+<ol>
+<li><a href="../bdscript/sendEmbedMessage.html"><code>$sendEmbedMessage[]</code></a> - Sends an embed message to the provided channel.</li>
+<li><a href="../bdscript/editMessage.html"><code>$editMessage[]</code></a> - Edits one of the bot’s messages.</li>
+</ol>
 
                     </main>
 
