@@ -178,9 +178,9 @@
 <a class="admonition-anchor-link" href="#admonition-remember"></a>
 </div>
 <div>
-<p>✅ $title[Title] == $title[Title;1]
-❌ $title[Title] == $title[Title;2]
-❌ $title[Title] == $title[Title;1] + $title[Title;2]</p>
+<p>✅ <code>$title[Title]</code> == <code>$title[Title;1]</code><br />
+❌ <code>$title[Title]</code> == <code>$title[Title;2]</code><br />
+❌ <code>$title[Title]</code> == <code>$title[Title;1]</code> + <code>$title[Title;2]</code></p>
 </div>
 </div>
 <h3 id="example"><a class="header" href="#example">Example</a></h3>
@@ -205,8 +205,8 @@ $addField[Second Field;Cat or dog?;yes;3]
     <discord-message author="RainbowKey" role-color="#E67E22">
         !example
     </discord-message>
-    <discord-message bot role-color="#378afa" author="BDFD Support" verified>
-        <discord-embed embed-title="Embed 1" color="#673ab7" slot="embeds">
+    <discord-message author="BDFD Support" verified role-color="#378afa" bot>
+        <discord-embed embed-title="Embed 1" slot="embeds" color="#673ab7">
             <discord-embed-description slot="description">
                 Hello user!
             </discord-embed-description>
@@ -214,7 +214,7 @@ $addField[Second Field;Cat or dog?;yes;3]
                 I love BDFD
             </discord-embed-footer>
         </discord-embed>
-        <discord-embed color="#673ab7" slot="embeds" embed-title="Embed 2">
+        <discord-embed slot="embeds" embed-title="Embed 2" color="#673ab7">
             <discord-embed-description slot="description">
                 Hello embed!
             </discord-embed-description>
