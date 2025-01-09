@@ -1,4 +1,9 @@
 const root = "/";
+
+if (location.pathname.includes("bdfd-wiki")) {
+    root = "/bdfd-wiki/"; 
+}
+
 const paths = location.pathname.split("/").filter(Boolean);
 const categories = {
    introduction: 0,
