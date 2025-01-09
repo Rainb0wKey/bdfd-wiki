@@ -3,7 +3,7 @@
     <head>
         <!-- Book generated using mdBook -->
         <meta charset="UTF-8">
-        <title>$botLeave[] - Bot Designer For Discord - Wiki</title>
+        <title>Introduction - Bot Designer For Discord - Wiki</title>
 
 
 
@@ -146,67 +146,23 @@
                             <script src="../theme/breadcrumbs.js"></script>
                         </nav>
 
-                        <a href="https://github.com/NilPointer-Software/bdfd-wiki/edit/dev/src/bdscript/botLeaveComplex.md" class="editPage">
+                        <a href="https://github.com/NilPointer-Software/bdfd-wiki/edit/dev/src/guides/introduction.md" class="editPage">
                             <i class='fa fa-edit' id="editPageIcon"></i>
                         </a>
 
-                        <h1 id="botleave"><a class="header" href="#botleave">$botLeave[]</a></h1>
-<p>Forces the bot to leave the server matching the provided <a href="https://support.discord.com/hc/en-us/articles/206346498-Where-can-I-find-my-User-Server-Message-ID">server ID</a>.</p>
-<h2 id="syntax"><a class="header" href="#syntax">Syntax</a></h2>
-<pre><code>$botLeave[Guild ID]
-</code></pre>
-<h3 id="parameters"><a class="header" href="#parameters">Parameters</a></h3>
-<ul>
-<li><code>Guild ID</code> <code>(Type: Snowflake || Flag: Required)</code>: The ID of the guild to leave.</li>
-</ul>
-<h2 id="example"><a class="header" href="#example">Example</a></h2>
-<pre><code>$nomention
-$sendMessage[I left out `$serverName[$message]` server.]
-$botLeave[$message]
-</code></pre>
-<div id="admonition-what-is-this" class="admonition admonish-question" role="note" aria-labelledby="admonition-what-is-this-title">
-<div class="admonition-title">
-<div id="admonition-what-is-this-title">
-<p>What is this?</p>
-</div>
-<a class="admonition-anchor-link" href="#admonition-what-is-this"></a>
-</div>
-<div>
-<p>How <a href="./sendMessage.html"><code>$sendMessage[]</code></a>, <a href="./serverName.html"><code>$serverName[]</code></a> and <a href="./message.html"><code>$message</code></a> works?</p>
-</div>
-</div>
-<discord-messages>
-    <discord-message author="RainbowKey" role-color="#E67E22">
-        !example 1009018156494368798
-    </discord-message>
-    <discord-message bot role-color="#378afa" author="BDFD Support" verified>
-        I left out <discord-inline-code>BDFD Support</discord-inline-code> server.
-    </discord-message>
-</discord-messages>
-<p><img src="https://user-images.githubusercontent.com/113303649/210337078-dbdb0539-6f4a-4271-8574-afc43551d0e8.png" alt="example" /></p>
-<blockquote>
-<p>If you are using <strong>BDScript 2</strong>, put <code>$botLeave[]</code> at the very bottom of the code so that the code works correctly i.e:</p>
-<p>❌ Not correct:</p>
-<pre><code>$botLeave[$message]
-$nomention
-$sendMessage[I left this server!]
-</code></pre>
-<p>✅ Correct:</p>
-<pre><code>$nomention
-$sendMessage[I left this server!]
-$botLeave[$message]
-</code></pre>
-</blockquote>
+                        <h1 id="guides"><a class="header" href="#guides">Guides</a></h1>
+<p>In this section, you’ll find guides that contain helpful tutorials on certain elements of the app. These contain example codes and images to help explain functions and their usages.<br />
+Here you can learn how to create your first BDFD bot, as well as how to use functions such as select menus, buttons, and more!</p>
 
                     </main>
 
                     <nav class="nav-wrapper" aria-label="Page navigation">
                         <!-- Mobile navigation buttons -->
-                            <a rel="prev" href="../bdscript/botLeave.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                            <a rel="prev" href="../entityTransferPolicy.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
                                 <i class="fa fa-angle-left"></i>
                             </a>
 
-                            <a rel="next" href="../bdscript/botListDescription.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                            <a rel="next" href="../guides/introduction/beginning.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
                                 <i class="fa fa-angle-right"></i>
                             </a>
 
@@ -217,13 +173,13 @@ $botLeave[$message]
 
             <nav class="nav-wide-wrapper" aria-label="Page navigation">
 
-                <a href="../bdscript/botLeave.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
-                    <a href="../bdscript/botLeave.html" class="nav-chapters previous" title="Previous page" aria-label="Previous page" aria-keyshortcuts="Left">
+                <a href="../entityTransferPolicy.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                    <a href="../entityTransferPolicy.html" class="nav-chapters previous" title="Previous page" aria-label="Previous page" aria-keyshortcuts="Left">
                         <i class="fa fa-angle-left"></i>
                     </a>
 
-                <a href="../bdscript/botListDescription.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
-                    <a href="../bdscript/botListDescription.html" class="nav-chapters next" title="Next page" aria-label="Next page" aria-keyshortcuts="Right">
+                <a href="../guides/introduction/beginning.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                    <a href="../guides/introduction/beginning.html" class="nav-chapters next" title="Next page" aria-label="Next page" aria-keyshortcuts="Right">
                         <i class="fa fa-angle-right"></i>
                     </a>
 
