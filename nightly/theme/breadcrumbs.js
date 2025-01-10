@@ -1,4 +1,4 @@
-const root = "/";
+let root = "/";
 
 if (location.pathname.includes("bdfd-wiki")) {
     root = "/bdfd-wiki/"; 
