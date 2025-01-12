@@ -36,7 +36,7 @@ window.search = window.search || {};
             bool: "AND",
             expand: true,
             fields: {
-                title: {boost: 2},
+                title: {boost: 1},
                 body: {boost: 1},
                 breadcrumbs: {boost: 0}
             }
