@@ -172,8 +172,8 @@ $ephemeral
 Hello!
 </code></pre>
 <discord-messages>
-    <discord-message ephemeral role-color="#378afa" verified author="BDFD Support" bot>
-        <discord-command slot="reply" author="RainbowKey" role-color="#E67E22" command="/example">
+    <discord-message verified bot role-color="#378afa" author="BDFD Support" ephemeral>
+        <discord-command slot="reply" role-color="#E67E22" author="RainbowKey" command="/example">
         </discord-command>
         Hello!
     </discord-message>
@@ -182,8 +182,8 @@ Hello!
 <li>Without <code>$ephemeral</code>:</li>
 </ul>
 <discord-messages>
-    <discord-message bot verified author="BDFD Support" role-color="#378afa">
-        <discord-command author="RainbowKey" command="/example" role-color="#E67E22" slot="reply">
+    <discord-message bot author="BDFD Support" verified role-color="#378afa">
+        <discord-command slot="reply" author="RainbowKey" command="/example" role-color="#E67E22">
         </discord-command>
         Hello!
     </discord-message>
@@ -240,9 +240,9 @@ Hello!
         <!-- Custom JS scripts -->
 
 
-        <script src="../settings/code-hg.js" defer></script>
+        <script src="../theme/settings/code-hg.js" defer></script>
 
         <!-- Override some theme attributes with the custom settings -->
-        <script src="../settings/apply-settings.js"></script>
+        <script src="../theme/settings/apply-settings.js"></script>
     </body>
 </html>

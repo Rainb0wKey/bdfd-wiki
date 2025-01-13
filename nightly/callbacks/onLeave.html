@@ -188,7 +188,7 @@
     <discord-system-message type="leave">
         Goodbye <font color="white">User</font>.
     </discord-system-message>
-    <discord-message author="Wiki Bot" bot verified role-color="#748BD4">
+    <discord-message bot role-color="#748BD4" author="Wiki Bot" verified>
         <discord-mention>User</discord-mention> just left the server :c
     </discord-message>
 </discord-messages>
@@ -304,9 +304,9 @@ $setServerVar[leave;$mentionedChannels[1]]
         <!-- Custom JS scripts -->
 
 
-        <script src="../settings/code-hg.js" defer></script>
+        <script src="../theme/settings/code-hg.js" defer></script>
 
         <!-- Override some theme attributes with the custom settings -->
-        <script src="../settings/apply-settings.js"></script>
+        <script src="../theme/settings/apply-settings.js"></script>
     </body>
 </html>
