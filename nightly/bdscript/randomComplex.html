@@ -46,6 +46,8 @@
             var path_to_root = "../";
             var default_theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? "bdfd" : "bdfd";
         </script>
+        <!-- Start loading toc.js asap -->
+        <script src="../toc.js"></script>
 
         <!-- Work around some values being stored in localStorage wrapped in quotes -->
         <script>
@@ -206,7 +208,7 @@ The random number is **$random[1;21]**
     <discord-message author="RainbowKey" role-color="#E67E22">
         !example
     </discord-message>
-    <discord-message bot verified author="BDFD Support" role-color="#378afa">
+    <discord-message bot author="BDFD Support" role-color="#378afa" verified>
         The random number is <b>16</b>
     </discord-message>
 </discord-messages>

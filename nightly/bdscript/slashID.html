@@ -46,6 +46,8 @@
             var path_to_root = "../";
             var default_theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? "bdfd" : "bdfd";
         </script>
+        <!-- Start loading toc.js asap -->
+        <script src="../toc.js"></script>
 
         <!-- Work around some values being stored in localStorage wrapped in quotes -->
         <script>
@@ -172,8 +174,8 @@
 ID of this slash command: $slashID
 </code></pre>
 <discord-messages>
-    <discord-message author="BDFD Support" role-color="#378afa">
-        <discord-command role-color="#E67E22" command="/example" author="RainbowKey" slot="reply">
+    <discord-message role-color="#378afa" author="BDFD Support">
+        <discord-command slot="reply" role-color="#E67E22" command="/example" author="RainbowKey">
         </discord-command>
         ID of this slash command: 1199084158555787377
     </discord-message>

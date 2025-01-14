@@ -46,6 +46,8 @@
             var path_to_root = "../";
             var default_theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? "bdfd" : "bdfd";
         </script>
+        <!-- Start loading toc.js asap -->
+        <script src="../toc.js"></script>
 
         <!-- Work around some values being stored in localStorage wrapped in quotes -->
         <script>
@@ -180,7 +182,7 @@ $colorRole[$noMentionMessage]
     <discord-message author="Nicky" role-color="#EE7908">
         !example <discord-mention type="role" color="#E11F0E">cool role</discord-mention> #E11F0E
     </discord-message>
-    <discord-message bot role-color="#748BD4" author="Wiki Bot" verified>
+    <discord-message author="Wiki Bot" role-color="#748BD4" bot verified>
         ✅ Changed the role color of <discord-mention type="role" color="#E11F0E">cool role</discord-mention> to <code>#E11F0E</code>!
     </discord-message>
 </discord-messages>

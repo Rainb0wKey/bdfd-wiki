@@ -46,6 +46,8 @@
             var path_to_root = "../";
             var default_theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? "bdfd" : "bdfd";
         </script>
+        <!-- Start loading toc.js asap -->
+        <script src="../toc.js"></script>
 
         <!-- Work around some values being stored in localStorage wrapped in quotes -->
         <script>
@@ -176,7 +178,7 @@ $message
     <discord-message author="RainbowKey" role-color="#E67E22">
         !example <discord-mention>RainbowKey</discord-mention>
     </discord-message>
-    <discord-message bot role-color="#378afa" author="BDFD Support" verified>
+    <discord-message author="BDFD Support" bot verified role-color="#378afa">
         <discord-mention>RainbowKey</discord-mention>
     </discord-message>
 </discord-messages>
@@ -187,7 +189,7 @@ $message
     <discord-message author="RainbowKey" role-color="#E67E22">
         !example <discord-mention>RainbowKey</discord-mention>
     </discord-message>
-    <discord-message bot role-color="#378afa" verified author="BDFD Support">
+    <discord-message bot author="BDFD Support" verified role-color="#378afa">
         @RainbowKey
     </discord-message>
 </discord-messages>

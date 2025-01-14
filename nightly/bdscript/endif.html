@@ -46,6 +46,8 @@
             var path_to_root = "../";
             var default_theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? "bdfd" : "bdfd";
         </script>
+        <!-- Start loading toc.js asap -->
+        <script src="../toc.js"></script>
 
         <!-- Work around some values being stored in localStorage wrapped in quotes -->
         <script>
@@ -174,10 +176,10 @@ $if[$message==BDFD]
 $endif
 </code></pre>
 <discord-messages>
-    <discord-message role-color="#E67E22" author="RainbowKey">
+    <discord-message author="RainbowKey" role-color="#E67E22">
         !example BDFD
     </discord-message>
-    <discord-message author="BDFD Support" bot role-color="#378afa" verified>
+    <discord-message role-color="#378afa" author="BDFD Support" bot verified>
         I love BDFD!
     </discord-message>
 </discord-messages>
@@ -185,10 +187,10 @@ $endif
 <li>Without <code>$endif</code>:</li>
 </ul>
 <discord-messages>
-    <discord-message author="RainbowKey" role-color="#E67E22">
+    <discord-message role-color="#E67E22" author="RainbowKey">
         !example BDFD
     </discord-message>
-    <discord-message author="BDFD Support" bot verified role-color="#378afa">
+    <discord-message role-color="#378afa" verified bot author="BDFD Support">
         <code>$if</code> not closed with <code>$endif</code>
     </discord-message>
 </discord-messages>

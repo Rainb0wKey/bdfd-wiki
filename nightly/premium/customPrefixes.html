@@ -46,6 +46,8 @@
             var path_to_root = "../";
             var default_theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? "bdfd" : "bdfd";
         </script>
+        <!-- Start loading toc.js asap -->
+        <script src="../toc.js"></script>
 
         <!-- Work around some values being stored in localStorage wrapped in quotes -->
         <script>
@@ -194,7 +196,7 @@ Set $serverName[$guildID]'s prefix to `$noMentionMessage`
     <discord-message author="Nicky" role-color="#EE7908">
         !prefix .
     </discord-message>
-    <discord-message author="Wiki Bot" bot verified role-color="#748BD4">
+    <discord-message verified role-color="#748BD4" author="Wiki Bot" bot>
         Set Testing's prefix to <code>.</code>
     </discord-message>
 </discord-messages>

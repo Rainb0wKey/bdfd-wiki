@@ -46,6 +46,8 @@
             var path_to_root = "../";
             var default_theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? "bdfd" : "bdfd";
         </script>
+        <!-- Start loading toc.js asap -->
+        <script src="../toc.js"></script>
 
         <!-- Work around some values being stored in localStorage wrapped in quotes -->
         <script>
@@ -177,10 +179,10 @@
 $repeatMessage[5;Hello World!]
 </code></pre>
 <discord-messages>
-    <discord-message author="RainbowKey" role-color="#E67E22">
+    <discord-message role-color="#E67E22" author="RainbowKey">
         !example
     </discord-message>
-    <discord-message author="BDFD Support" bot verified role-color="#378afa">
+    <discord-message bot verified role-color="#378afa" author="BDFD Support">
         Hello World!Hello World!Hello World!Hello World!Hello World!
     </discord-message>
 </discord-messages>

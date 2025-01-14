@@ -46,6 +46,8 @@
             var path_to_root = "../";
             var default_theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? "bdfd" : "bdfd";
         </script>
+        <!-- Start loading toc.js asap -->
+        <script src="../toc.js"></script>
 
         <!-- Work around some values being stored in localStorage wrapped in quotes -->
         <script>
@@ -180,13 +182,13 @@ Result: $numberSeparator[$message]
     <discord-message author="RainbowKey" role-color="#E67E22">
         !example 5000
     </discord-message>
-    <discord-message author="BDFD Support" bot role-color="#378afa" verified>
+    <discord-message bot verified author="BDFD Support" role-color="#378afa">
         Result: 5,000
     </discord-message>
     <discord-message author="RainbowKey" role-color="#E67E22">
         !example 2536000
     </discord-message>
-    <discord-message author="BDFD Support" bot verified role-color="#378afa">
+    <discord-message role-color="#378afa" verified author="BDFD Support" bot>
         Result: 2,536,000
     </discord-message>
 </discord-messages>

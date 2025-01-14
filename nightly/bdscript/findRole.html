@@ -46,6 +46,8 @@
             var path_to_root = "../";
             var default_theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? "bdfd" : "bdfd";
         </script>
+        <!-- Start loading toc.js asap -->
+        <script src="../toc.js"></script>
 
         <!-- Work around some values being stored in localStorage wrapped in quotes -->
         <script>
@@ -182,7 +184,7 @@ Role ID: $findRole[$message]
     <discord-message role-color="#E67E22" author="RainbowKey">
         !example Support
     </discord-message>
-    <discord-message role-color="#378afa" bot author="BDFD Support" verified>
+    <discord-message role-color="#378afa" verified bot author="BDFD Support">
         Role ID: 568155071997542410
     </discord-message>
 </discord-messages>

@@ -46,6 +46,8 @@
             var path_to_root = "../";
             var default_theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? "bdfd" : "bdfd";
         </script>
+        <!-- Start loading toc.js asap -->
+        <script src="../toc.js"></script>
 
         <!-- Work around some values being stored in localStorage wrapped in quotes -->
         <script>
@@ -180,7 +182,7 @@ $c[This is a say command. You are reading a comment!]
     <discord-message author="Nicky" role-color="#EE7908">
         !say As you can see, the comment doesn't appear! Pretty cool; right?
     </discord-message>
-    <discord-message verified role-color="#748BD4" author="Wiki Bot" bot>
+    <discord-message author="Wiki Bot" role-color="#748BD4" verified bot>
         As you can see, the comment doesn't appear! Pretty cool; right?
     </discord-message>
 </discord-messages>

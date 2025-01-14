@@ -46,6 +46,8 @@
             var path_to_root = "../";
             var default_theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? "bdfd" : "bdfd";
         </script>
+        <!-- Start loading toc.js asap -->
+        <script src="../toc.js"></script>
 
         <!-- Work around some values being stored in localStorage wrapped in quotes -->
         <script>
@@ -185,7 +187,7 @@ $deleteChannelsByName[$message]
     <discord-message author="RainbowKey" role-color="#E67E22">
         !example main-chat
     </discord-message>
-    <discord-message bot verified author="BDFD Support" role-color="#378afa">
+    <discord-message role-color="#378afa" verified author="BDFD Support" bot>
         Successfully deleted #main-chat
     </discord-message>
 </discord-messages>

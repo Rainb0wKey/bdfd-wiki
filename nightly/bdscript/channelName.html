@@ -46,6 +46,8 @@
             var path_to_root = "../";
             var default_theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? "bdfd" : "bdfd";
         </script>
+        <!-- Start loading toc.js asap -->
+        <script src="../toc.js"></script>
 
         <!-- Work around some values being stored in localStorage wrapped in quotes -->
         <script>
@@ -182,7 +184,7 @@ Channel Name: `#$channelName[$channelID]`
     <discord-message role-color="#E67E22" author="RainbowKey">
         !example
     </discord-message>
-    <discord-message role-color="#378afa" bot verified author="BDFD Support">
+    <discord-message bot verified author="BDFD Support" role-color="#378afa">
         Channel Name: <discord-inline-code>#main-chat</discord-inline-code>
     </discord-message>
 </discord-messages>
