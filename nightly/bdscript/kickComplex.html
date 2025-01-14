@@ -165,19 +165,17 @@
                         </a>
 
                         <h1 id="kick"><a class="header" href="#kick">$kick[]</a></h1>
-<p>Kicks the provided user.</p>
+<p>Kicks the provided user with specified reason.</p>
 <h2 id="syntax"><a class="header" href="#syntax">Syntax</a></h2>
-<pre><code>$kick[user ID;(reason)]
+<pre><code>$kick[User ID;(Reason)]
 </code></pre>
 <h3 id="parameters"><a class="header" href="#parameters">Parameters</a></h3>
 <ul>
-<li><code>user ID</code> <code>(Type: Snowflake || Flag: Required)</code>: The user to kick from the server.</li>
-<li><code>reason</code> <code>(Type: String || Flag: Vacantable)</code>: The audit-log reason for the kick.</li>
+<li><code>User ID</code> <code>(Type: Snowflake || Flag: Required)</code>: The user to kick from the server.</li>
+<li><code>Reason</code> <code>(Type: String || Flag: Vacantable)</code>: The audit-log reason for the kick.</li>
 </ul>
 <h2 id="example"><a class="header" href="#example">Example</a></h2>
 <pre><code>$nomention
-$onlyPerms[kick;❌ You need the `kick` permission to use that!]
-$argsCheck[&gt;1;❌ Please provide a user to kick. Usage: `!kick (user) &lt;reason&gt;`.]
 $kick[$mentioned[1];$noMentionMessage]
 ✅ Kicked `$username[$mentioned[1]]#$discriminator[$mentioned[1]]`!
 </code></pre>
