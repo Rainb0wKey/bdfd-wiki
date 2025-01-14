@@ -196,7 +196,7 @@
 <li>
 <p>Now, you have a logging message! ✨</p>
 <discord-messages>
-    <discord-message author="Nicky" role-color="#EE7908">
+    <discord-message role-color="#EE7908" author="Nicky">
         Hey
     </discord-message>
     <discord-message author="MineBartekSA" role-color="#F1BDEE">
@@ -207,7 +207,7 @@
     <discord-message author="Nicky" role-color="#EE7908">
         Hey
     </discord-message>
-    <discord-message verified bot author="Wiki Bot" role-color="#748BD4">
+    <discord-message bot role-color="#748BD4" author="Wiki Bot" verified>
         A message was deleted!<br />Message ID: 1133145902865985646
     </discord-message>
 </discord-messages>
@@ -247,7 +247,7 @@ $setServerVar[logs;$mentionedChannels[1]]
                                 <i class="fa fa-angle-left"></i>
                             </a>
 
-                           <a rel="next prefetch" href="../callbacks/onInteraction.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                            <a rel="next" href="../callbacks/onInteraction.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
                                 <i class="fa fa-angle-right"></i>
                             </a>
 
@@ -257,11 +257,13 @@ $setServerVar[logs;$mentionedChannels[1]]
             </div>
 
             <nav class="nav-wide-wrapper" aria-label="Page navigation">
-                    <a rel="prev" href="../callbacks/onBanRemove.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                    <a href="../callbacks/onBanRemove.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                    <a href="../callbacks/onBanRemove.html" class="nav-chapters previous" title="Previous page" aria-label="Previous page" aria-keyshortcuts="Left">
                         <i class="fa fa-angle-left"></i>
                     </a>
 
-                    <a rel="next prefetch" href="../callbacks/onInteraction.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                    <a href="../callbacks/onInteraction.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                    <a href="../callbacks/onInteraction.html" class="nav-chapters next" title="Next page" aria-label="Next page" aria-keyshortcuts="Right">
                         <i class="fa fa-angle-right"></i>
                     </a>
             </nav>

@@ -336,14 +336,14 @@
   <p id="default-is">"Discord Dark"</p>
 </div>
 <discord-messages>
-    <discord-message author="RainbowKey" role-color="#E67E22">
+    <discord-message role-color="#E67E22" author="RainbowKey">
         !example ❤️
         <discord-reactions slot="reactions">
-            <discord-reaction count="1" name=":emoji:" emoji="https://upload.wikimedia.org/wikipedia/commons/7/70/Symbolic_Love_Heart.png">
+            <discord-reaction emoji="https://upload.wikimedia.org/wikipedia/commons/7/70/Symbolic_Love_Heart.png" count="1" name=":emoji:">
             </discord-reaction>
         </discord-reactions>
     </discord-message>
-    <discord-message bot verified role-color="#378afa" author="BDFD Support">
+    <discord-message author="BDFD Support" bot role-color="#378afa" verified>
         Added!
     </discord-message>
 </discord-messages>
@@ -398,7 +398,7 @@ $endtry
                                 <i class="fa fa-angle-left"></i>
                             </a>
 
-                           <a rel="next prefetch" href="CHANGELOG.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                            <a rel="next" href="CHANGELOG.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
                                 <i class="fa fa-angle-right"></i>
                             </a>
 
@@ -408,11 +408,13 @@ $endtry
             </div>
 
             <nav class="nav-wide-wrapper" aria-label="Page navigation">
-                    <a rel="prev" href="foreword.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                    <a href="foreword.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                    <a href="foreword.html" class="nav-chapters previous" title="Previous page" aria-label="Previous page" aria-keyshortcuts="Left">
                         <i class="fa fa-angle-left"></i>
                     </a>
 
-                    <a rel="next prefetch" href="CHANGELOG.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                    <a href="CHANGELOG.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                    <a href="CHANGELOG.html" class="nav-chapters next" title="Next page" aria-label="Next page" aria-keyshortcuts="Right">
                         <i class="fa fa-angle-right"></i>
                     </a>
             </nav>

@@ -223,11 +223,11 @@ $addField[First Field;Content;yes;3]
 $addField[Second Field;Cat or dog?;yes;3]
 </code></pre>
 <discord-messages>
-    <discord-message author="RainbowKey" role-color="#E67E22">
+    <discord-message role-color="#E67E22" author="RainbowKey">
         !example
     </discord-message>
-    <discord-message author="BDFD Support" role-color="#378afa" bot verified>
-        <discord-embed color="#673ab7" slot="embeds" embed-title="Embed 1">
+    <discord-message bot author="BDFD Support" verified role-color="#378afa">
+        <discord-embed color="#673ab7" embed-title="Embed 1" slot="embeds">
             <discord-embed-description slot="description">
                 Hello user!
             </discord-embed-description>
@@ -240,15 +240,15 @@ $addField[Second Field;Cat or dog?;yes;3]
                 Hello embed!
             </discord-embed-description>
         </discord-embed>
-        <discord-embed embed-title="Embed 3" slot="embeds" color="#673ab7">
+        <discord-embed slot="embeds" color="#673ab7" embed-title="Embed 3">
             <discord-embed-description slot="description">
                 Посхалка
             </discord-embed-description>
             <discord-embed-fields slot="fields">
-                <discord-embed-field field-title="First Field" inline-index="1" inline>
+                <discord-embed-field inline inline-index="1" field-title="First Field">
                     Content
                 </discord-embed-field>
-                <discord-embed-field field-title="Second Field" inline-index="2" inline>
+                <discord-embed-field inline field-title="Second Field" inline-index="2">
                     Cat or dog?
                 </discord-embed-field>
             </discord-embed-fields>
@@ -302,7 +302,7 @@ $addField[Second Field;Cat or dog?;yes;3]
                                 <i class="fa fa-angle-left"></i>
                             </a>
 
-                           <a rel="next prefetch" href="../resources/2FA.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                            <a rel="next" href="../resources/2FA.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
                                 <i class="fa fa-angle-right"></i>
                             </a>
 
@@ -312,11 +312,13 @@ $addField[Second Field;Cat or dog?;yes;3]
             </div>
 
             <nav class="nav-wide-wrapper" aria-label="Page navigation">
-                    <a rel="prev" href="../resources/discordTimestamps.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                    <a href="../resources/discordTimestamps.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                    <a href="../resources/discordTimestamps.html" class="nav-chapters previous" title="Previous page" aria-label="Previous page" aria-keyshortcuts="Left">
                         <i class="fa fa-angle-left"></i>
                     </a>
 
-                    <a rel="next prefetch" href="../resources/2FA.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                    <a href="../resources/2FA.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                    <a href="../resources/2FA.html" class="nav-chapters next" title="Next page" aria-label="Next page" aria-keyshortcuts="Right">
                         <i class="fa fa-angle-right"></i>
                     </a>
             </nav>

@@ -213,7 +213,7 @@ I created a new thread! &lt;#$startThread[Cool Thread;$channelID;;1440;yes]&gt;
     <discord-system-message type="thread">
         <i style="color: #378afa">BDFD Support</i> Started a thread: <i style="color: white">Cool Thread</i>. See all <i style="color: white">threads</i>.
     </discord-system-message>
-    <discord-message bot role-color="#378afa" verified author="BDFD Support">
+    <discord-message author="BDFD Support" bot verified role-color="#378afa">
         I created a new thread! <discord-mention type="channel">Cool Thread</discord-mention>
     </discord-message>
 </discord-messages>
@@ -261,7 +261,7 @@ $editThread[1098166444111433819;Cool Thread 😎;no;!unchanged;!unchanged;5]
 $threadAddMember[1021054508975009793;$authorID]
 </code></pre>
 <discord-messages>
-    <discord-message author="RainbowKey" role-color="#E67E22">
+    <discord-message role-color="#E67E22" author="RainbowKey">
         !example
     </discord-message>
 </discord-messages>
@@ -310,7 +310,7 @@ $threadAddMember[$var[id];$authorID]
     <discord-system-message type="thread">
         <i style="color: #378afa">BDFD Support</i> Started a thread: <i style="color: white">Cool Thread</i>. See all <i style="color: white">threads</i>.
     </discord-system-message>
-    <discord-message verified bot author="BDFD Support" role-color="#378afa">
+    <discord-message verified author="BDFD Support" bot role-color="#378afa">
         New thread - <discord-mention type="channel">Cool Thread</discord-mention>
     </discord-message>
 </discord-messages>
@@ -334,7 +334,7 @@ $threadAddMember[$var[id];$authorID]
                                 <i class="fa fa-angle-left"></i>
                             </a>
 
-                           <a rel="next prefetch" href="../../guides/general/textSplitting.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                            <a rel="next" href="../../guides/general/textSplitting.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
                                 <i class="fa fa-angle-right"></i>
                             </a>
 
@@ -344,11 +344,13 @@ $threadAddMember[$var[id];$authorID]
             </div>
 
             <nav class="nav-wide-wrapper" aria-label="Page navigation">
-                    <a rel="prev" href="../../guides/general/jsonFunctions.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                    <a href="../../guides/general/jsonFunctions.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                    <a href="../../guides/general/jsonFunctions.html" class="nav-chapters previous" title="Previous page" aria-label="Previous page" aria-keyshortcuts="Left">
                         <i class="fa fa-angle-left"></i>
                     </a>
 
-                    <a rel="next prefetch" href="../../guides/general/textSplitting.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                    <a href="../../guides/general/textSplitting.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                    <a href="../../guides/general/textSplitting.html" class="nav-chapters next" title="Next page" aria-label="Next page" aria-keyshortcuts="Right">
                         <i class="fa fa-angle-right"></i>
                     </a>
             </nav>
