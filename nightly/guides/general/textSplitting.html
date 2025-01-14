@@ -1,5 +1,5 @@
 <!DOCTYPE HTML>
-<html lang="en" class="bdfd sidebar-visible" dir="ltr">
+<html lang="en" class="sidebar-visible no-js bdfd">
     <head>
         <!-- Book generated using mdBook -->
         <meta charset="UTF-8">
@@ -195,7 +195,7 @@ $textSplit[hello-world-!;-]
     <discord-message role-color="#E67E22" author="RainbowKey">
         !example
     </discord-message>
-    <discord-message author="BDFD Support" bot role-color="#378afa" verified>
+    <discord-message author="BDFD Support" role-color="#378afa" bot verified>
         <discord-quote>world</discord-quote>
     </discord-message>
 </discord-messages>
@@ -219,7 +219,7 @@ $textSplit[hello world !; ]
     <discord-message author="RainbowKey" role-color="#E67E22">
         !example
     </discord-message>
-    <discord-message role-color="#378afa" verified bot author="BDFD Support">
+    <discord-message role-color="#378afa" bot verified author="BDFD Support">
         <discord-quote>hello<br />world<br />!</discord-quote>
     </discord-message>
 </discord-messages>
@@ -234,10 +234,10 @@ $textSplit[hello%world%!;%]
 &gt; $getTextSplitLength
 </code></pre>
 <discord-messages>
-    <discord-message role-color="#E67E22" author="RainbowKey">
+    <discord-message author="RainbowKey" role-color="#E67E22">
         !example
     </discord-message>
-    <discord-message author="BDFD Support" role-color="#378afa" bot verified>
+    <discord-message bot author="BDFD Support" verified role-color="#378afa">
         <discord-quote>3</discord-quote>
     </discord-message>
 </discord-messages>
@@ -259,13 +259,13 @@ $textSplit[hello_world_!;_]
     <discord-message author="RainbowKey" role-color="#E67E22">
         !example world
     </discord-message>
-    <discord-message author="BDFD Support" verified role-color="#378afa" bot>
+    <discord-message author="BDFD Support" bot role-color="#378afa" verified>
         <discord-quote>2</discord-quote>
     </discord-message>
     <discord-message author="RainbowKey" role-color="#E67E22">
         !example bdfd
     </discord-message>
-    <discord-message verified bot author="BDFD Support" role-color="#378afa">
+    <discord-message role-color="#378afa" bot verified author="BDFD Support">
         <discord-quote>-1</discord-quote>
     </discord-message>
 </discord-messages>
@@ -288,7 +288,7 @@ $textSplit[hello#world#!;#]
     <discord-message role-color="#E67E22" author="RainbowKey">
         !example
     </discord-message>
-    <discord-message bot role-color="#378afa" author="BDFD Support" verified>
+    <discord-message bot verified role-color="#378afa" author="BDFD Support">
         <discord-quote>hello<br />world<br />!</discord-quote>
     </discord-message>
 </discord-messages>
@@ -308,10 +308,10 @@ $removeSplitTextElement[3]
 &gt; $joinSplitText[-]
 </code></pre>
 <discord-messages>
-    <discord-message author="RainbowKey" role-color="#E67E22">
+    <discord-message role-color="#E67E22" author="RainbowKey">
         !example
     </discord-message>
-    <discord-message verified bot role-color="#378afa" author="BDFD Support">
+    <discord-message author="BDFD Support" bot verified role-color="#378afa">
         <discord-quote>hello-world</discord-quote>
     </discord-message>
 </discord-messages>
@@ -332,10 +332,10 @@ $editSplitText[2;bdfd]
 &gt; $joinSplitText[-]
 </code></pre>
 <discord-messages>
-    <discord-message role-color="#E67E22" author="RainbowKey">
+    <discord-message author="RainbowKey" role-color="#E67E22">
         !example
     </discord-message>
-    <discord-message author="BDFD Support" bot role-color="#378afa" verified>
+    <discord-message bot verified author="BDFD Support" role-color="#378afa">
         <discord-quote>hello-bdfd-!</discord-quote>
     </discord-message>
 </discord-messages>
@@ -352,7 +352,7 @@ First word: $splitText[&lt;]
     <discord-message author="RainbowKey" role-color="#E67E22">
         !example Hello world!
     </discord-message>
-    <discord-message bot verified role-color="#378afa" author="BDFD Support">
+    <discord-message role-color="#378afa" verified author="BDFD Support" bot>
         Characters: 12<br />Words: 2<br />Random word: world!<br />First word: Hello
     </discord-message>
 </discord-messages>
