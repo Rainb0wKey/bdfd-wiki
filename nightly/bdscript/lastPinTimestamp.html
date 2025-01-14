@@ -3,7 +3,7 @@
     <head>
         <!-- Book generated using mdBook -->
         <meta charset="UTF-8">
-        <title>$getEmbedData - Bot Designer For Discord - Wiki</title>
+        <title>$lastPinTimestamp - Bot Designer For Discord - Wiki</title>
 
 
 
@@ -146,48 +146,37 @@
                             <script src="../theme/breadcrumbs.js"></script>
                         </nav>
 
-                        <a href="https://github.com/NilPointer-Software/bdfd-wiki/edit/dev/src/bdscript/getEmbedData.md" class="editPage">
+                        <a href="https://github.com/NilPointer-Software/bdfd-wiki/edit/dev/src/bdscript/lastPinTimestamp.md" class="editPage">
                             <i class='fa fa-edit' id="editPageIcon"></i>
                         </a>
 
-                        <h1 id="getembeddata"><a class="header" href="#getembeddata">$getEmbedData</a></h1>
-<p>Fetches embed data from the provided message.</p>
+                        <h1 id="lastpintimestamp"><a class="header" href="#lastpintimestamp">$lastPinTimestamp</a></h1>
+<p>Returns the last pinned message timestamp in the current channel.</p>
 <h2 id="syntax"><a class="header" href="#syntax">Syntax</a></h2>
-<pre><code>$getEmbedData[Channel ID;Message ID;Embed index;Embed property (title/description/footer/color/image/timestamp)]
+<pre><code>$lastPinTimestamp
 </code></pre>
-<h3 id="parameters"><a class="header" href="#parameters">Parameters</a></h3>
-<ul>
-<li><code>Channel ID</code> <code>(Type: Snowflake || Flag: Required)</code>: The channel this message belongs to.</li>
-<li><code>Message ID</code> <code>(Type: Snowflake || Flag: Required)</code>: The message to get this embed data from.</li>
-<li><code>Embed index</code> <code>(Type: HowMany || Flag: Required)</code>: The embed of this message to get data from. Use <code>1</code> for the first embed of this message. <a href="../resources/embedIndexes.html">(learn more)</a></li>
-<li><code>Embed property</code> <code>(Type: Enum || Flag: Required)</code>: The embed property to return. Embed properties:
-<ul>
-<li><code>title</code> - The title of the embed.</li>
-<li><code>description</code> - The description of the embed.</li>
-<li><code>footer</code> - The footer of the embed.</li>
-<li><code>color</code> - The color border hex of the embed.</li>
-<li><code>image</code> - The image of the embed.</li>
-<li><code>timestamp</code> - The timestamp of the embed.</li>
-</ul>
-</li>
-</ul>
 <h2 id="example"><a class="header" href="#example">Example</a></h2>
 <pre><code>$nomention
-Title: $getEmbedData[876920205526319144;878299081380876339;1;title]
-Description: $getEmbedData[876920205526319144;878299081380876339;1;description]
-Footer: $getEmbedData[876920205526319144;878299081380876339;1;footer]
+Last Pin Timestamp: $lastPinTimestamp
 </code></pre>
-<p><img src="https://user-images.githubusercontent.com/69215413/130266834-50421e8e-fe9f-4b2e-8937-c9b870f3296d.png" alt="example" /></p>
+<discord-messages>
+    <discord-message author="RainbowKey" role-color="#E67E22">
+        !example
+    </discord-message>
+    <discord-message author="BDFD Support" verified bot role-color="#378afa">
+        Last Pin Timestamp: 1753454520
+    </discord-message>
+</discord-messages>
 
                     </main>
 
                     <nav class="nav-wrapper" aria-label="Page navigation">
                         <!-- Mobile navigation buttons -->
-                            <a rel="prev" href="../bdscript/getCustomStatus.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                            <a rel="prev" href="../bdscript/lastMessageID.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
                                 <i class="fa fa-angle-left"></i>
                             </a>
 
-                            <a rel="next" href="../bdscript/getInviteInfo.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                            <a rel="next" href="../bdscript/lowestRole.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
                                 <i class="fa fa-angle-right"></i>
                             </a>
 
@@ -198,13 +187,13 @@ Footer: $getEmbedData[876920205526319144;878299081380876339;1;footer]
 
             <nav class="nav-wide-wrapper" aria-label="Page navigation">
 
-                <a href="../bdscript/getCustomStatus.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
-                    <a href="../bdscript/getCustomStatus.html" class="nav-chapters previous" title="Previous page" aria-label="Previous page" aria-keyshortcuts="Left">
+                <a href="../bdscript/lastMessageID.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                    <a href="../bdscript/lastMessageID.html" class="nav-chapters previous" title="Previous page" aria-label="Previous page" aria-keyshortcuts="Left">
                         <i class="fa fa-angle-left"></i>
                     </a>
 
-                <a href="../bdscript/getInviteInfo.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
-                    <a href="../bdscript/getInviteInfo.html" class="nav-chapters next" title="Next page" aria-label="Next page" aria-keyshortcuts="Right">
+                <a href="../bdscript/lowestRole.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                    <a href="../bdscript/lowestRole.html" class="nav-chapters next" title="Next page" aria-label="Next page" aria-keyshortcuts="Right">
                         <i class="fa fa-angle-right"></i>
                     </a>
 
