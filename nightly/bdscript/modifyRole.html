@@ -187,8 +187,6 @@
 </ul>
 <h2 id="example"><a class="header" href="#example">Example</a></h2>
 <pre><code>$nomention
-$argsCheck[&gt;2;❌ Please provide the needed arguments! Usage: `!role-name (role) (newRoleName)`]
-$onlyPerms[manageroles;❌ You are missing the manage_roles permission!]
 $modifyRole[$findRole[$message[1]];$replaceText[$message;$message[1];;1];!unchanged;!unchanged;!unchanged]
 $description[✅ Changed role name of &lt;@&amp;$findRole[$message[1]]&gt;]
 </code></pre>
