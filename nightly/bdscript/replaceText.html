@@ -160,24 +160,22 @@
 <li><code>Text</code> <code>(Type: String || Flag: Emptiable)</code>: The text where the bot is searching for the ‘Sample’.</li>
 <li><code>Sample</code> <code>(Type: String || Flag: Emptiable)</code>: The text to replace with ‘New’.</li>
 <li><code>New</code> <code>(Type: String || Flag: Emptiable)</code>: The text to replace ‘Sample’ with.</li>
-<li><code>Amount</code> <code>(Type: Integer || Flag: Optional)</code>: The number of times, at most, the bot should replace the sample. Use <code>-1</code> to replace all ‘Sample’ in ‘Text’ with ‘New’.</li>
+<li><code>Amount</code> <code>(Type: Integer || Flag: Optional)</code>: The number of times, at most, the bot should replace the sample. Use <code>-1</code> to replace all ‘Sample’ in ‘Text’ with ‘New’. Default is <code>1</code>.</li>
 </ul>
-<h2 id="examples"><a class="header" href="#examples">Examples</a></h2>
-<p><strong>Example #1:</strong></p>
-<ul>
-<li>Input: <code>$replaceText[Hello World! Hello Earth!;Hello;Hi;1]</code></li>
-<li>Output: <code>Hi World! Hello Earth!</code></li>
-</ul>
-<p><strong>Example #2:</strong></p>
-<ul>
-<li>Input: <code>$replaceText[Hello World! Hello Earth! Hello Dog!;Hello;Hi;-1]</code></li>
-<li>Output: <code>Hi World! Hi Earth! Hello Dog!</code></li>
-</ul>
-<p><strong>Example #3:</strong></p>
-<ul>
-<li>Input: <code>$replaceText[Hello World! Hello Earth! Hello Dog!;Hello;Hi;-1]</code> or <code>$replaceText[Hello World! Hello Earth! Hello Dog!;Hello;Hi]</code></li>
-<li>Output: <code>Hi World! Hi Earth! Hi Dog!</code></li>
-</ul>
+<h2 id="example"><a class="header" href="#example">Example</a></h2>
+<pre><code>$nomention
+Result 1: $replaceText[Hello world!;Hello;Bye]
+Result 2: $replaceText[Hello world!;ll;o;-1]
+Result 3: $replaceText[Hello world!;!;]
+</code></pre>
+<discord-messages>
+    <discord-message role-color="#E67E22" author="RainbowKey">
+        !example
+    </discord-message>
+    <discord-message bot verified author="BDFD Support" role-color="#378afa">
+        Result 1: Bye world!<br /> Result 2: Heoo world!<br /> Result 3: Hello world
+    </discord-message>
+</discord-messages>
 
                     </main>
 
