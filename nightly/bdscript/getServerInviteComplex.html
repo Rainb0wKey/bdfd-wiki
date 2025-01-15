@@ -173,19 +173,35 @@
 
                     <h1 id="getserverinvite"><a class="header" href="#getserverinvite">$getServerInvite[]</a></h1>
 <p>Returns the provided server’s invite URL.</p>
-<blockquote>
-<p>🧙‍♂️ <strong>Note:</strong> The bot must be present in the provided server for it to create an invite.</p>
-</blockquote>
+<div id="admonition-danger" class="admonition admonish-danger" role="note" aria-labelledby="admonition-danger-title">
+<div class="admonition-title">
+<div id="admonition-danger-title">
+<p>Danger</p>
+</div>
+<a class="admonition-anchor-link" href="#admonition-danger"></a>
+</div>
+<div>
+<p>The bot must be present in the provided server (<code>Guild ID</code> parameter) for it to create an invite.</p>
+</div>
+</div>
+<div id="admonition-danger-1" class="admonition admonish-danger" role="note" aria-labelledby="admonition-danger-1-title">
+<div class="admonition-title">
+<div id="admonition-danger-1-title">
+<p>Danger</p>
+</div>
+<a class="admonition-anchor-link" href="#admonition-danger-1"></a>
+</div>
+<div>
+<p>You should not use this function to join a user’s server unsolicited. This means that you aren’t allowed to join a user’s server without their consent, otherwise it may be considered as API abuse and result in a report against you and your bot.</p>
+</div>
+</div>
 <h2 id="syntax"><a class="header" href="#syntax">Syntax</a></h2>
 <pre><code>$getServerInvite[Guild ID]
 </code></pre>
 <h3 id="parameters"><a class="header" href="#parameters">Parameters</a></h3>
 <ul>
-<li><code>Guild ID</code> <code>(Type: Snowflake || Flag: Required)</code>: The server for which to get the invite.</li>
+<li><code>Guild ID</code> <code>(Type: Snowflake || Flag: Required)</code>: The server for which to get the invite. <a href="https://support.discord.com/hc/en-us/articles/206346498-Where-can-I-find-my-User-Server-Message-ID">How do I find a guild ID? (click-me)</a></li>
 </ul>
-<blockquote>
-<p>🧙‍♂️ <a href="https://support.discord.com/hc/en-us/articles/206346498-Where-can-I-find-my-User-Server-Message-ID">How do I find a server/guild ID? (click-me)</a></p>
-</blockquote>
 <h3 id="permissions"><a class="header" href="#permissions">Permissions</a></h3>
 <p>Required permissions that the bot must have for this function to work properly :</p>
 <ul>
@@ -193,7 +209,7 @@
 </ul>
 <h2 id="example"><a class="header" href="#example">Example</a></h2>
 <pre><code>$nomention
-$getServerInvite[$message[1]]
+$getServerInvite[$message]
 </code></pre>
 <p><img src="https://user-images.githubusercontent.com/111157596/232099171-ab1a4cea-836a-45e7-9a93-2012ac4012e5.png" alt="example" /></p>
 
