@@ -4,7 +4,7 @@
 <head>
     <!-- Book generated using mdBook -->
     <meta charset="UTF-8">
-    <title>$getBanReason - Bot Designer For Discord - Wiki</title>
+    <title>$systemChannelID - Bot Designer For Discord - Wiki</title>
 
 
 
@@ -167,30 +167,25 @@
                         <script src="../theme/breadcrumbs.js"></script>
                     </nav>
 
-                    <a href="https://github.com/NilPointer-Software/bdfd-wiki/edit/dev/src/bdscript/getBanReason.md" class="editPage">
+                    <a href="https://github.com/NilPointer-Software/bdfd-wiki/edit/dev/src/bdscript/systemChannelID.md" class="editPage">
                         <i class='fa fa-edit' id="editPageIcon"></i>
                     </a>
 
-                    <h1 id="getbanreason"><a class="header" href="#getbanreason">$getBanReason</a></h1>
-<p>Gets the user’s ban reason.</p>
+                    <h1 id="systemchannelid"><a class="header" href="#systemchannelid">$systemChannelID</a></h1>
+<p>Returns the server’s system channel ID (<strong>returns an error if there isn’t such a channel</strong>).</p>
 <h2 id="syntax"><a class="header" href="#syntax">Syntax</a></h2>
-<pre><code>$getBanReason[User ID;(Guild ID)]
+<pre><code>$systemChannelID 
 </code></pre>
-<h3 id="parameters"><a class="header" href="#parameters">Parameters</a></h3>
-<ul>
-<li><code>User ID</code> <code>(Type: Snowflake || Flag: Required)</code>: User to get the ban reason for</li>
-<li><code>Guild ID</code> <code>(Type: Snowflake || Flag: Optional)</code>: The server id from which to get the ban reason.</li>
-</ul>
 <h2 id="example"><a class="header" href="#example">Example</a></h2>
 <pre><code>$nomention
-Ban Reason: $getBanReason[154148273307910144]
+System channel ID: $systemChannelID
 </code></pre>
 <discord-messages>
-    <discord-message role-color="#E67E22" author="RainbowKey">
+    <discord-message author="GettingBeatenByKito" role-color="#E67E22">
         !example
     </discord-message>
-    <discord-message verified role-color="#378afa" author="BDFD Support" bot>
-        Ban Reason: Too cute
+    <discord-message role-color="#378afa" bot verified author="BDFD Support">
+        System channel ID: 566364581522440232
     </discord-message>
 </discord-messages>
 
@@ -198,12 +193,12 @@ Ban Reason: $getBanReason[154148273307910144]
 
                 <nav class="nav-wrapper" aria-label="Page navigation">
                     <!-- Mobile navigation buttons -->
-                    <a rel="prev" href="../bdscript/footerIcon.html" class="mobile-nav-chapters previous"
+                    <a rel="prev" href="../bdscript/suppressErrorsComplex.html" class="mobile-nav-chapters previous"
                         title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
                         <i class="fa fa-angle-left"></i>
                     </a>
 
-                    <a rel="next" href="../bdscript/getBotInvite.html" class="mobile-nav-chapters next"
+                    <a rel="next" href="../bdscript/takeRole.html" class="mobile-nav-chapters next"
                         title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
                         <i class="fa fa-angle-right"></i>
                     </a>
@@ -214,16 +209,16 @@ Ban Reason: $getBanReason[154148273307910144]
         </div>
 
         <nav class="nav-wide-wrapper" aria-label="Page navigation">
-            <a href="../bdscript/footerIcon.html" class="nav-chapters previous" title="Previous chapter"
+            <a href="../bdscript/suppressErrorsComplex.html" class="nav-chapters previous" title="Previous chapter"
                 aria-label="Previous chapter" aria-keyshortcuts="Left">
-                <a href="../bdscript/footerIcon.html" class="nav-chapters previous" title="Previous page"
+                <a href="../bdscript/suppressErrorsComplex.html" class="nav-chapters previous" title="Previous page"
                     aria-label="Previous page" aria-keyshortcuts="Left">
                     <i class="fa fa-angle-left"></i>
                 </a>
 
-                <a href="../bdscript/getBotInvite.html" class="nav-chapters next" title="Next chapter"
+                <a href="../bdscript/takeRole.html" class="nav-chapters next" title="Next chapter"
                     aria-label="Next chapter" aria-keyshortcuts="Right">
-                    <a href="../bdscript/getBotInvite.html" class="nav-chapters next" title="Next page"
+                    <a href="../bdscript/takeRole.html" class="nav-chapters next" title="Next page"
                         aria-label="Next page" aria-keyshortcuts="Right">
                         <i class="fa fa-angle-right"></i>
                     </a>
