@@ -4,7 +4,7 @@
 <head>
     <!-- Book generated using mdBook -->
     <meta charset="UTF-8">
-    <title>$deleteChannelsByName - Bot Designer For Discord - Wiki</title>
+    <title>$afkChannelID - Bot Designer For Discord - Wiki</title>
 
 
 
@@ -167,52 +167,27 @@
                         <script src="../theme/breadcrumbs.js"></script>
                     </nav>
 
-                    <a href="https://github.com/NilPointer-Software/bdfd-wiki/edit/dev/src/bdscript/deleteChannelsByName.md" class="editPage">
+                    <a href="https://github.com/NilPointer-Software/bdfd-wiki/edit/dev/src/bdscript/afkChannelID.md" class="editPage">
                         <i class='fa fa-edit' id="editPageIcon"></i>
                     </a>
 
-                    <h1 id="deletechannelsbyname"><a class="header" href="#deletechannelsbyname">$deleteChannelsByName</a></h1>
-<p>Deletes all channels matching the names provided.</p>
-<h2 id="syntax"><a class="header" href="#syntax">Syntax</a></h2>
-<pre><code>$deleteChannelsByName[Channel name;...]
-</code></pre>
-<h3 id="parameters"><a class="header" href="#parameters">Parameters</a></h3>
+                    <p>Returns the servers AFK channel ID (returns an error if there isn’t any)</p>
+<h1 id="syntax"><a class="header" href="#syntax">Syntax</a></h1>
+<p>$afkChannelID</p>
 <ul>
-<li><code>Channel name</code> <code>(Type: String || Flag: Required)</code>: The name(s) of the channel(s) to delete. Use semicolons <code>;</code> as a separator to separate multiple channel names.</li>
+<li>user_id: 1262009115689881702 username: GettingBeatenByKito color: “#E67E22” content: | !example - user_id: 1009018156494368798 username: BDFD Support color: “#378afa” bot: true verified: true content: | Afk Channel ID: 567428769766440962</li>
 </ul>
-<h3 id="permissions"><a class="header" href="#permissions">Permissions</a></h3>
-<p>Required permissions that the bot must have for this function to work properly:</p>
-<ul>
-<li><code>managechannels</code></li>
-</ul>
-<h2 id="example"><a class="header" href="#example">Example</a></h2>
-<pre><code>$nomention
-Successfully deleted #$channelName[$channelID[$message]]!
-$deleteChannelsByName[$message]
-</code></pre>
-<discord-messages>
-    <discord-message author="RainbowKey" role-color="#E67E22">
-        !example main-chat
-    </discord-message>
-    <discord-message author="BDFD Support" bot role-color="#378afa" verified>
-        Successfully deleted #main-chat
-    </discord-message>
-</discord-messages>
-<p><img src="https://github.com/Rainb0wKey/bdfd-wiki/assets/113303649/6479e1dd-da03-431a-85e8-1f8ff18bf84c" alt="example" /></p>
-<blockquote>
-<p>How <a href="./channelName.html"><code>$channelName[]</code></a> and <a href="./channelIDComplex.html"><code>$channelID[]</code></a> works?</p>
-</blockquote>
 
                 </main>
 
                 <nav class="nav-wrapper" aria-label="Page navigation">
                     <!-- Mobile navigation buttons -->
-                    <a rel="prev" href="../bdscript/deleteChannels.html" class="mobile-nav-chapters previous"
+                    <a rel="prev" href="../bdscript/addTimestampComplex.html" class="mobile-nav-chapters previous"
                         title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
                         <i class="fa fa-angle-left"></i>
                     </a>
 
-                    <a rel="next" href="../bdscript/deletecommand.html" class="mobile-nav-chapters next"
+                    <a rel="next" href="../bdscript/allMembersCount.html" class="mobile-nav-chapters next"
                         title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
                         <i class="fa fa-angle-right"></i>
                     </a>
@@ -223,16 +198,16 @@ $deleteChannelsByName[$message]
         </div>
 
         <nav class="nav-wide-wrapper" aria-label="Page navigation">
-            <a href="../bdscript/deleteChannels.html" class="nav-chapters previous" title="Previous chapter"
+            <a href="../bdscript/addTimestampComplex.html" class="nav-chapters previous" title="Previous chapter"
                 aria-label="Previous chapter" aria-keyshortcuts="Left">
-                <a href="../bdscript/deleteChannels.html" class="nav-chapters previous" title="Previous page"
+                <a href="../bdscript/addTimestampComplex.html" class="nav-chapters previous" title="Previous page"
                     aria-label="Previous page" aria-keyshortcuts="Left">
                     <i class="fa fa-angle-left"></i>
                 </a>
 
-                <a href="../bdscript/deletecommand.html" class="nav-chapters next" title="Next chapter"
+                <a href="../bdscript/allMembersCount.html" class="nav-chapters next" title="Next chapter"
                     aria-label="Next chapter" aria-keyshortcuts="Right">
-                    <a href="../bdscript/deletecommand.html" class="nav-chapters next" title="Next page"
+                    <a href="../bdscript/allMembersCount.html" class="nav-chapters next" title="Next page"
                         aria-label="Next page" aria-keyshortcuts="Right">
                         <i class="fa fa-angle-right"></i>
                     </a>
