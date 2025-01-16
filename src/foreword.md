@@ -93,6 +93,7 @@
 ```discord yaml
 - user_id: 390515191819010058
   username: kubastick
+  avatar: https://avatars.githubusercontent.com/u/25605091
   color: "#FF0000"
   content: |
     Hello guys!
@@ -112,6 +113,7 @@
     user_id: 803569638084313098
     color: "#E67E22"
     author: RainbowKey
+    avatar: https://avatars.githubusercontent.com/u/113303649
     command: /work
   content: |
     You worked successfully and earned...
@@ -121,6 +123,7 @@
         label: 🪙 50 Coins!
 - user_id: 311808747141857292
   username: Lelouch Lamperouge
+  avatar: https://avatars.githubusercontent.com/u/72157108
   color: "#39B0E8"
   content: |
     !bal <@RainbowKey>
@@ -133,8 +136,13 @@
   embed:
     title: Balance - RainbowKey
     description: 🪙 2146 Coins!
+- user_id : 0
+  avatar: https://avatars.githubusercontent.com/u/68653647
+  username: Berk Der Beserker
+  content: sup chat
 - user_id: 154148273307910144
   username: MineBartekSa
+  avatar: https://avatars.githubusercontent.com/u/19757593
   color: "#FF0000"
   content: |
     !ban <@Berk> Breaking BDFD ToS
@@ -146,6 +154,7 @@
   reply:
     user_id: 154148273307910144
     author: MineBartekSa
+    avatar: https://avatars.githubusercontent.com/u/19757593
     color: "#FF0000"
     content: |
       !ban <@Berk> Breaking BDFD ToS
@@ -161,6 +170,7 @@
   type: leave
 - user_id: 311808747141857292
   username: Lelouch Lamperouge
+  avatar: https://avatars.githubusercontent.com/u/72157108
   color: "#39B0E8"
   content: |
     !prefix -
@@ -173,6 +183,7 @@
     Sure! New prefix selected: <code>-</code>
 - user_id: 325663449680052227
   username: Emperor Toaster
+  avatar: https://avatars.githubusercontent.com/u/64114013
   color: "#B4B4B4"
   content: |
     -askAi Hello! Who are you?
@@ -185,6 +196,7 @@
     I'm an AI designed to assist with a variety of questions and tasks. How can I help you today?
 - user_id: 325663449680052227
   username: Emperor Toaster
+  avatar: https://avatars.githubusercontent.com/u/64114013
   color: "#B4B4B4"
   content: |
     What day is today?
