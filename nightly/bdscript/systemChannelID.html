@@ -182,16 +182,17 @@
 System channel ID: $systemChannelID
 </code></pre>
 <discord-messages>
-    <discord-message author="GettingBeatenByKito" role-color="#E67E22">
+    <discord-message role-color="#E67E22" author="GettingBeatenByKito">
         !example
     </discord-message>
-    <discord-message bot author="BDFD Support" role-color="#378afa" verified>
+    <discord-message role-color="#378afa" author="BDFD Support" verified bot>
         System channel ID: 566364581522440232
     </discord-message>
 </discord-messages>
 <h2 id="tips"><a class="header" href="#tips">Tips</a></h2>
 <h3 id="how-to-stop-the-error-message"><a class="header" href="#how-to-stop-the-error-message">How to stop the error message?</a></h3>
 <p>The <code>$systemChannelID</code> function as said in above returns an error if there isn’t any AFK channel set on the server and there is a way to stop that.</p>
+<h4 id="example-1"><a class="header" href="#example-1">Example</a></h4>
 <pre><code>$nomention
 $try 
 System channel ID: $systemChannelID
@@ -204,16 +205,16 @@ $endtry
     <discord-message author="GettingBeatenByKito" role-color="#E67E22">
         !example
     </discord-message>
-    <discord-message author="BDFD Support" bot role-color="#378afa" verified>
-        ❌ Function `$systemChannelID` at `2:35` returned an error: No system channel set in this server!
+    <discord-message bot verified role-color="#378afa" author="BDFD Support">
+        ❌ Function <code>$systemChannelID</code> at <code>2:35</code> returned an error: No system channel set in this server!
     </discord-message>
 </discord-messages>
 <p>With try block</p>
 <discord-messages>
-    <discord-message author="GettingBeatenByKito" role-color="#E67E22">
+    <discord-message role-color="#E67E22" author="GettingBeatenByKito">
         !example
     </discord-message>
-    <discord-message role-color="#378afa" author="BDFD Support" bot verified>
+    <discord-message author="BDFD Support" bot verified role-color="#378afa">
         No system channel found!
     </discord-message>
 </discord-messages>
