@@ -1,12 +1,18 @@
 :root {
-    --sidebar-width: 320px;
-    --page-padding: 5px;
-    --content-max-width: 750px;
-    --menu-bar-height: 45px;
-    --menu-bar-border-radius: 10px;
-    --color1: hsl(270, 80%, 50%);
-    --color2: hsl(270, 80%, 30%);
-    --color3: hsl(270, 80%, 15%);
+    --color-primary: hsl(271, 76%, 53%);
+    --color-secondary: hsl(270, 80%, 30%);
+    --color-accent: hsl(270, 80%, 15%);
+
+    --color-html: hsl(230, 13%, 9%);
+    --color-href: hsl(271, 76%, 53%);
+    --color-appNav: hsla(271, 74%, 56%, 0.9);
+    --color-text-button: white;
+
+    --color-scrollbar-thumb: var(--color-primary);
+    --color-scrollbar-track: black;
+
+    /* Fonts */
+    --font-family-base: "Inter", ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 }
 
 :root code {
@@ -20,4 +26,42 @@
 
 :root img {
     border-radius: 10px;
+}
+
+
+/* UI Elements */
+
+a {
+    color: inherit;
+    outline: none !important;
+    text-decoration: none;
+    position: relative;
+}
+
+input
+[search]::before {
+    content: '';
+}
+
+main {
+    z-index: -1;
+    a {
+        color: var(--color-href);
+        outline: none !important;
+        text-decoration: none;
+        position: relative;
+    }
+    
+    a::after {
+        content: '';
+        position: absolute;
+        left: 0;
+        bottom: 0;
+    }
+    
+    button {
+        color: inherit;
+        outline: none !important;
+        border-radius: 10px;
+    }
 }
