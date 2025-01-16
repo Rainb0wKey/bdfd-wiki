@@ -4,7 +4,7 @@
 <head>
     <!-- Book generated using mdBook -->
     <meta charset="UTF-8">
-    <title>$enableDecimals - Bot Designer For Discord - Wiki</title>
+    <title>$emojiName[] - Bot Designer For Discord - Wiki</title>
 
 
 
@@ -168,54 +168,29 @@
                         <script src="../theme/breadcrumbs.js"></script>
                     </nav>
 
-                    <a href="https://github.com/NilPointer-Software/bdfd-wiki/edit/dev/src/bdscript/enableDecimals.md" class="editPage">
+                    <a href="https://github.com/NilPointer-Software/bdfd-wiki/edit/dev/src/bdscript/emojiName.md" class="editPage">
                         <i class='fa fa-edit' id="editPageIcon"></i>
                     </a>
 
-                    <h1 id="enabledecimals"><a class="header" href="#enabledecimals">$enableDecimals</a></h1>
-<p>Enables/disables decimals in math functions.</p>
+                    <h1 id="emojiname"><a class="header" href="#emojiname">$emojiName[]</a></h1>
+<p>Returns the name of the custom emoji.</p>
 <h2 id="syntax"><a class="header" href="#syntax">Syntax</a></h2>
-<pre><code>$enableDecimals[Enable?]
+<pre><code>$emojiName[Emoji ID]
 </code></pre>
-<div id="admonition-note" class="admonition admonish-note" role="note" aria-labelledby="admonition-note-title">
-<div class="admonition-title">
-<div id="admonition-note-title">
-<p>Note</p>
-</div>
-<a class="admonition-anchor-link" href="#admonition-note"></a>
-</div>
-<div>
-<p>You can use <a href="./round.html"><code>$round[]</code></a>, <a href="./ceil.html"><code>$ceil[]</code></a>, <a href="./floor.html"><code>$floor[]</code></a> for work with decimal numbers.</p>
-</div>
-</div>
 <h3 id="parameters"><a class="header" href="#parameters">Parameters</a></h3>
 <ul>
-<li><code>Enable?</code> <code>(Type: Bool || Flag: Required)</code>: Whether to enable decimals in math functions or not, <code>yes</code> means it’s enabled and <code>no</code> means it’s disabled.</li>
+<li><code>Emoji ID</code> <code>(Type: Snowflake || Flag: Required)</code>: The emoji’s id to get the name for.</li>
 </ul>
-<h3 id="explaination"><a class="header" href="#explaination">Explaination</a></h3>
-<p>By default, decimals in math functions (e.g <code>$sum</code>, <code>$sub</code>, <code>$multi</code>, etc) are disabled. The only use for this function is to enable decimals, if you want decimals enabled for math functions in that command.</p>
 <h2 id="example"><a class="header" href="#example">Example</a></h2>
 <pre><code>$nomention
-$enableDecimals[yes]
-Result: $random[1;5]
+Emoji Name: $emojiName[$message]
 </code></pre>
 <discord-messages>
-    <discord-message role-color="#E67E22" author="RainbowKey">
-        !example
+    <discord-message author="RainbowKey" role-color="#E67E22">
+        !example 760463263879135242
     </discord-message>
-    <discord-message role-color="#378afa" author="BDFD Support" verified bot>
-        Result: 3.381
-    </discord-message>
-</discord-messages>
-<ul>
-<li>Without <code>$enableDecimals[]</code> (or result with <code>$enableDecimals[no]</code>):</li>
-</ul>
-<discord-messages>
-    <discord-message role-color="#E67E22" author="RainbowKey">
-        !example
-    </discord-message>
-    <discord-message bot role-color="#378afa" author="BDFD Support" verified>
-        Result: 3
+    <discord-message author="BDFD Support" role-color="#378afa" bot verified>
+        Emoji Name: doge
     </discord-message>
 </discord-messages>
 <div id="admonition-what-is-this" class="admonition admonish-question" role="note" aria-labelledby="admonition-what-is-this-title">
@@ -226,20 +201,19 @@ Result: $random[1;5]
 <a class="admonition-anchor-link" href="#admonition-what-is-this"></a>
 </div>
 <div>
-<p>How <a href="./randomComplex.html"><code>$random[]</code></a> works?</p>
+<p>How <a href="./message.html"><code>$message</code></a> works?</p>
 </div>
 </div>
-
                 </main>
 
                 <nav class="nav-wrapper" aria-label="Page navigation">
                     <!-- Mobile navigation buttons -->
-                    <a rel="prev" href="../bdscript/enabled.html" class="mobile-nav-chapters previous"
+                    <a rel="prev" href="../bdscript/emojiExists.html" class="mobile-nav-chapters previous"
                         title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
                         <i class="fa fa-angle-left"></i>
                     </a>
 
-                    <a rel="next" href="../bdscript/endif.html" class="mobile-nav-chapters next"
+                    <a rel="next" href="../bdscript/emoteCount.html" class="mobile-nav-chapters next"
                         title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
                         <i class="fa fa-angle-right"></i>
                     </a>
@@ -250,16 +224,16 @@ Result: $random[1;5]
         </div>
 
         <nav class="nav-wide-wrapper" aria-label="Page navigation">
-            <a href="../bdscript/enabled.html" class="nav-chapters previous" title="Previous chapter"
+            <a href="../bdscript/emojiExists.html" class="nav-chapters previous" title="Previous chapter"
                 aria-label="Previous chapter" aria-keyshortcuts="Left">
-                <a href="../bdscript/enabled.html" class="nav-chapters previous" title="Previous page"
+                <a href="../bdscript/emojiExists.html" class="nav-chapters previous" title="Previous page"
                     aria-label="Previous page" aria-keyshortcuts="Left">
                     <i class="fa fa-angle-left"></i>
                 </a>
 
-                <a href="../bdscript/endif.html" class="nav-chapters next" title="Next chapter"
+                <a href="../bdscript/emoteCount.html" class="nav-chapters next" title="Next chapter"
                     aria-label="Next chapter" aria-keyshortcuts="Right">
-                    <a href="../bdscript/endif.html" class="nav-chapters next" title="Next page"
+                    <a href="../bdscript/emoteCount.html" class="nav-chapters next" title="Next page"
                         aria-label="Next page" aria-keyshortcuts="Right">
                         <i class="fa fa-angle-right"></i>
                     </a>
