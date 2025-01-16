@@ -4,7 +4,7 @@
 <head>
     <!-- Book generated using mdBook -->
     <meta charset="UTF-8">
-    <title>$disableInnerSpaceRemoval - Bot Designer For Discord - Wiki</title>
+    <title>$isEmojiAnimated - Bot Designer For Discord - Wiki</title>
 
 
 
@@ -168,37 +168,29 @@
                         <script src="../theme/breadcrumbs.js"></script>
                     </nav>
 
-                    <a href="https://github.com/NilPointer-Software/bdfd-wiki/edit/dev/src/bdscript/disableInnerSpaceRemoval.md" class="editPage">
+                    <a href="https://github.com/NilPointer-Software/bdfd-wiki/edit/dev/src/bdscript/isEmojiAnimated.md" class="editPage">
                         <i class='fa fa-edit' id="editPageIcon"></i>
                     </a>
 
-                    <h1 id="disableinnerspaceremoval"><a class="header" href="#disableinnerspaceremoval">$disableInnerSpaceRemoval</a></h1>
-<p>Disables the removal of multiple spaces from within the message.</p>
+                    <h1 id="isemojianimated"><a class="header" href="#isemojianimated">$isEmojiAnimated[]</a></h1>
+<p>Checks if the emoji’s animated.</p>
 <h2 id="syntax"><a class="header" href="#syntax">Syntax</a></h2>
-<pre><code>$disableInnerSpaceRemoval
+<pre><code>$isEmojiAnimated[Emoji ID]
 </code></pre>
+<h3 id="parameters"><a class="header" href="#parameters">Parameters</a></h3>
+<ul>
+<li><code>Emoji ID</code> <code>(Type: Snowflake || Flag: Required)</code>: The emoji’s id to check if it’s animated.</li>
+</ul>
 <h2 id="example"><a class="header" href="#example">Example</a></h2>
 <pre><code>$nomention
-$disableInnerSpaceRemoval
-Hello               $displayName!
+Is emoji animated: $isEmojiAnimated[$message]
 </code></pre>
 <discord-messages>
-    <discord-message author="RainbowKey" role-color="#E67E22">
-        !example
+    <discord-message author="GettingBeatenByKito" role-color="#E67E22">
+        !example 760463263879135242
     </discord-message>
-    <discord-message bot verified author="BDFD Support" role-color="#378afa">
-        Hello RainbowKey!
-    </discord-message>
-</discord-messages>
-<ul>
-<li>Without <code>$disableInnerSpaceRemoval</code>:</li>
-</ul>
-<discord-messages>
-    <discord-message role-color="#E67E22" author="RainbowKey">
-        !example
-    </discord-message>
-    <discord-message bot verified role-color="#378afa" author="BDFD Support">
-        HelloㅤㅤㅤㅤRainbowKey!
+    <discord-message bot role-color="#378afa" author="BDFD Support" verified>
+        Is emoji animated: false
     </discord-message>
 </discord-messages>
 <div id="admonition-what-is-this" class="admonition admonish-question" role="note" aria-labelledby="admonition-what-is-this-title">
@@ -209,20 +201,19 @@ Hello               $displayName!
 <a class="admonition-anchor-link" href="#admonition-what-is-this"></a>
 </div>
 <div>
-<p>How <a href="./displayName.html"><code>$displayName</code></a> works?</p>
+<p>How <a href="./message.html"><code>$message</code></a> works?</p>
 </div>
 </div>
-
                 </main>
 
                 <nav class="nav-wrapper" aria-label="Page navigation">
                     <!-- Mobile navigation buttons -->
-                    <a rel="prev" href="../bdscript/description.html" class="mobile-nav-chapters previous"
+                    <a rel="prev" href="../bdscript/isBot.html" class="mobile-nav-chapters previous"
                         title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
                         <i class="fa fa-angle-left"></i>
                     </a>
 
-                    <a rel="next" href="../bdscript/disableSpecialEscaping.html" class="mobile-nav-chapters next"
+                    <a rel="next" href="../bdscript/isHoisted.html" class="mobile-nav-chapters next"
                         title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
                         <i class="fa fa-angle-right"></i>
                     </a>
@@ -233,16 +224,16 @@ Hello               $displayName!
         </div>
 
         <nav class="nav-wide-wrapper" aria-label="Page navigation">
-            <a href="../bdscript/description.html" class="nav-chapters previous" title="Previous chapter"
+            <a href="../bdscript/isBot.html" class="nav-chapters previous" title="Previous chapter"
                 aria-label="Previous chapter" aria-keyshortcuts="Left">
-                <a href="../bdscript/description.html" class="nav-chapters previous" title="Previous page"
+                <a href="../bdscript/isBot.html" class="nav-chapters previous" title="Previous page"
                     aria-label="Previous page" aria-keyshortcuts="Left">
                     <i class="fa fa-angle-left"></i>
                 </a>
 
-                <a href="../bdscript/disableSpecialEscaping.html" class="nav-chapters next" title="Next chapter"
+                <a href="../bdscript/isHoisted.html" class="nav-chapters next" title="Next chapter"
                     aria-label="Next chapter" aria-keyshortcuts="Right">
-                    <a href="../bdscript/disableSpecialEscaping.html" class="nav-chapters next" title="Next page"
+                    <a href="../bdscript/isHoisted.html" class="nav-chapters next" title="Next page"
                         aria-label="Next page" aria-keyshortcuts="Right">
                         <i class="fa fa-angle-right"></i>
                     </a>
