@@ -185,16 +185,55 @@ AFK channel ID: $afkChannelID
     <discord-message author="GettingBeatenByKito" role-color="#E67E22">
         !example
     </discord-message>
-    <discord-message author="BDFD Support" bot verified role-color="#378afa">
+    <discord-message verified role-color="#378afa" bot author="BDFD Support">
         AFK channel ID: 567428769766440962
     </discord-message>
 </discord-messages>
-<div id="admonition-what-is-this" class="admonition admonish-info" role="note" aria-labelledby="admonition-what-is-this-title">
+<h2 id="tips"><a class="header" href="#tips">Tips</a></h2>
+<h3 id="how-to-stop-the-error-message"><a class="header" href="#how-to-stop-the-error-message">How to stop the error message?</a></h3>
+<p>The <code>$afkChannelID</code> function as said in above returns an error if there isn’t any AFK channel set on the server and there is a way to stop that.</p>
+<pre><code>$nomention
+$try 
+AFK channel ID: $afkChannelID
+$catch
+No AFK channel found!
+$endtry
+</code></pre>
+<p>Without try block</p>
+<discord-messages>
+    <discord-message role-color="#E67E22" author="GettingBeatenByKito">
+        !example
+    </discord-message>
+    <discord-message verified bot role-color="#378afa" author="BDFD Support">
+        ❌ Function `$afkChannelID` at `2:30` returned an error: No AFK channel set in this server!
+    </discord-message>
+</discord-messages>
+<p>With try block</p>
+<discord-messages>
+    <discord-message role-color="#E67E22" author="GettingBeatenByKito">
+        !example
+    </discord-message>
+    <discord-message author="BDFD Support" bot verified role-color="#378afa">
+        No AFK channel found!
+    </discord-message>
+</discord-messages>
+<div id="admonition-what-is-this" class="admonition admonish-question" role="note" aria-labelledby="admonition-what-is-this-title">
 <div class="admonition-title">
 <div id="admonition-what-is-this-title">
 <p>What is this?</p>
 </div>
 <a class="admonition-anchor-link" href="#admonition-what-is-this"></a>
+</div>
+<div>
+<p>How <a href="./try.html"><code>$try</code></a>, <a href="./catch.html"><code>$catch</code></a> and <a href="./endtry.html"><code>$endtry</code></a> works?</p>
+</div>
+</div>
+<div id="admonition-what-is-this-1" class="admonition admonish-info" role="note" aria-labelledby="admonition-what-is-this-1-title">
+<div class="admonition-title">
+<div id="admonition-what-is-this-1-title">
+<p>What is this?</p>
+</div>
+<a class="admonition-anchor-link" href="#admonition-what-is-this-1"></a>
 </div>
 <div>
 <p>An AFK channel on Discord is a voice channel where inactive users are automatically moved after being idle for a set time. It keeps active channels clear of idle users.</p>
