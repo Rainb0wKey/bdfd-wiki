@@ -185,11 +185,49 @@ System channel ID: $systemChannelID
     <discord-message author="GettingBeatenByKito" role-color="#E67E22">
         !example
     </discord-message>
-    <discord-message verified bot role-color="#378afa" author="BDFD Support">
+    <discord-message role-color="#378afa" author="BDFD Support" verified bot>
         System channel ID: 566364581522440232
     </discord-message>
 </discord-messages>
-
+<h2 id="tips"><a class="header" href="#tips">Tips</a></h2>
+<h3 id="how-to-stop-the-error-message"><a class="header" href="#how-to-stop-the-error-message">How to stop the error message?</a></h3>
+<p>The <code>$systemChannelID</code> function as said in above returns an error if there isn’t any AFK channel set on the server and there is a way to stop that.</p>
+<pre><code>$nomention
+$try 
+System channel ID: $systemChannelID
+$catch
+No system channel found!
+$endtry
+</code></pre>
+<p>Without try block</p>
+<discord-messages>
+    <discord-message author="GettingBeatenByKito" role-color="#E67E22">
+        !example
+    </discord-message>
+    <discord-message role-color="#378afa" verified bot author="BDFD Support">
+        ❌ Function `$systemChannelID` at `2:36` returned an error: No AFK channel set in this server!
+    </discord-message>
+</discord-messages>
+<p>With try block</p>
+<discord-messages>
+    <discord-message role-color="#E67E22" author="GettingBeatenByKito">
+        !example
+    </discord-message>
+    <discord-message bot author="BDFD Support" verified role-color="#378afa">
+        No system channel found!
+    </discord-message>
+</discord-messages>
+<div id="admonition-what-is-this" class="admonition admonish-question" role="note" aria-labelledby="admonition-what-is-this-title">
+<div class="admonition-title">
+<div id="admonition-what-is-this-title">
+<p>What is this?</p>
+</div>
+<a class="admonition-anchor-link" href="#admonition-what-is-this"></a>
+</div>
+<div>
+<p>How <a href="./try.html"><code>$try</code></a>, <a href="./catch.html"><code>$catch</code></a> and <a href="./endtry.html"><code>$endtry</code></a> works</p>
+</div>
+</div>
                 </main>
 
                 <nav class="nav-wrapper" aria-label="Page navigation">
