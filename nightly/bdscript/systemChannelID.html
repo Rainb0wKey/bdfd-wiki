@@ -185,7 +185,7 @@ System channel ID: $systemChannelID
     <discord-message role-color="#E67E22" author="GettingBeatenByKito">
         !example
     </discord-message>
-    <discord-message author="BDFD Support" bot role-color="#378afa" verified>
+    <discord-message role-color="#378afa" author="BDFD Support" verified bot>
         System channel ID: 566364581522440232
     </discord-message>
 </discord-messages>
@@ -198,40 +198,30 @@ System channel ID: $systemChannelID
 </div>
 <div>
 <p>The <code>$systemChannelID</code> function as said in above returns an error if there isn’t any AFK channel set on the server and there is a way to stop that.</p>
-<pre><code>
-</code></pre>
-<p>$nomention
-$try
-System channel ID: $systemChannelID
+<pre><code>$nomention
+$try 
+  System channel ID: $systemChannelID
 $catch
-No system channel found!
-$endtry</p>
-<pre><code>
-&lt;/div&gt;
-&lt;/div&gt;
-
-Without try block
-
-```discord yaml
-- user_id: 1262009115689881702
-  username: GettingBeatenByKito
-  color: "#E67E22"
-  content: |
-    !example
-- user_id: 1009018156494368798
-  username: BDFD Support
-  color: "#378afa"
-  bot: true
-  verified: true
-  content: |
-    ❌ Function &lt;code&gt;$systemChannelID&lt;/code&gt; at &lt;code&gt;2:35&lt;/code&gt; returned an error: No system channel set in this server!
+  No system channel found!
+$endtry
 </code></pre>
-<p>With try block</p>
+</div>
+</div>
+<p>Without try block</p>
 <discord-messages>
-    <discord-message role-color="#E67E22" author="GettingBeatenByKito">
+    <discord-message author="GettingBeatenByKito" role-color="#E67E22">
         !example
     </discord-message>
-    <discord-message bot role-color="#378afa" author="BDFD Support" verified>
+    <discord-message author="BDFD Support" role-color="#378afa" bot verified>
+        ❌ Function <code>$systemChannelID</code> at <code>2:35</code> returned an error: No system channel set in this server!
+    </discord-message>
+</discord-messages>
+<p>With try block</p>
+<discord-messages>
+    <discord-message author="GettingBeatenByKito" role-color="#E67E22">
+        !example
+    </discord-message>
+    <discord-message role-color="#378afa" author="BDFD Support" bot verified>
         No system channel found!
     </discord-message>
 </discord-messages>
@@ -243,7 +233,7 @@ Without try block
 <a class="admonition-anchor-link" href="#admonition-what-is-this"></a>
 </div>
 <div>
-<p>How <a href="./try.html"><code>$try</code></a>, <a href="./catch.html"><code>$catch</code></a> and <a href="./endtry.html"><code>$endtry</code></a> works</p>
+<p>How <a href="./try.html"><code>$try</code></a>, <a href="./catch.html"><code>$catch</code></a> and <a href="./endtry.html"><code>$endtry</code></a> works?</p>
 </div>
 </div>
                 </main>
