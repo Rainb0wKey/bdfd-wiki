@@ -4,7 +4,7 @@
 <head>
     <!-- Book generated using mdBook -->
     <meta charset="UTF-8">
-    <title>$cooldown - Bot Designer For Discord - Wiki</title>
+    <title>$log - Bot Designer For Discord - Wiki</title>
 
 
 
@@ -168,86 +168,58 @@
                         <script src="../theme/breadcrumbs.js"></script>
                     </nav>
 
-                    <a href="https://github.com/NilPointer-Software/bdfd-wiki/edit/dev/src/bdscript/cooldown.md" class="editPage">
+                    <a href="https://github.com/NilPointer-Software/bdfd-wiki/edit/dev/src/premium/log.md" class="editPage">
                         <i class='fa fa-edit' id="editPageIcon"></i>
                     </a>
 
-                    <h1 id="cooldown"><a class="header" href="#cooldown">$cooldown</a></h1>
-<p>Sets a cooldown. The user can not run the command again, until the ‘duration’ is up.</p>
+                    <h1 id="log"><a class="header" href="#log">$log</a></h1>
+<div class="functionTags">
+  <span id="PremiumTag">Premium</span>
+</div>
+<p>Logs an error message to the bot logs upon encountering a specific issue (<code>Type</code> parameter).</p>
 <h2 id="syntax"><a class="header" href="#syntax">Syntax</a></h2>
-<pre><code>$cooldown[Duration;Error message]
+<pre><code>$log[Text;(Type)]
 </code></pre>
 <h3 id="parameters"><a class="header" href="#parameters">Parameters</a></h3>
 <ul>
-<li><code>Duration</code> <code>(Type: Duration || Flag: Required)</code>: The duration of this cooldown.</li>
-<li><code>Error message</code> <code>(Type: String || Flag: Emptiable)</code>: The message that is returned when the cooldown duration is still ongoing. <code>%time%</code> and other related functions can be used here.</li>
+<li><code>Log Message</code> <code>(Type: String || Flag: Required)</code>: The text to be output to the logs.</li>
+<li><code>Type</code> <code>(Type: Enum || Flag: Optional)</code>: The log type to be displayed. Default is <code>info</code>.</li>
 </ul>
-<div class="table-wrapper"><table><thead><tr><th>Time</th><th>In Usage</th><th>Limit</th></tr></thead><tbody>
-<tr><td>Year</td><td>y</td><td>191568</td></tr>
-<tr><td>Week</td><td>w</td><td>9988936</td></tr>
-<tr><td>Day</td><td>d</td><td>69922554</td></tr>
-<tr><td>Hour</td><td>h</td><td>1678141301</td></tr>
-<tr><td>Minute</td><td>m</td><td>100688478068</td></tr>
-<tr><td>Second</td><td>s</td><td>6041308684139</td></tr>
+<h4 id="log-types"><a class="header" href="#log-types">Log Types</a></h4>
+<div class="table-wrapper"><table><thead><tr><th>Value (<code>Type</code>)</th><th>Color</th></tr></thead><tbody>
+<tr><td>success</td><td>Green</td></tr>
+<tr><td>info</td><td>Blue</td></tr>
+<tr><td>warning</td><td>Yellow</td></tr>
+<tr><td>error</td><td>Red</td></tr>
 </tbody></table>
 </div>
-<blockquote>
-<p><code>%time%</code> returns how much time is left on the cooldown.</p>
-</blockquote>
+<ul>
+<li>Default input for “<code>Type</code>” parameter is <code>info</code>.</li>
+</ul>
 <h2 id="example"><a class="header" href="#example">Example</a></h2>
 <pre><code>$nomention
-$cooldown[30s;Please wait %time%, then use that command again!]
-Hi!
+Hello world!
+$log[$username used secret command!]
 </code></pre>
 <discord-messages>
     <discord-message author="RainbowKey" role-color="#E67E22">
         !example
     </discord-message>
-    <discord-message author="BDFD Support" verified bot role-color="#378afa">
-        Hi
-    </discord-message>
-    <discord-message author="RainbowKey" role-color="#E67E22">
-        !example
-    </discord-message>
-    <discord-message author="BDFD Support" verified bot role-color="#378afa">
-        Please wait 27 Seconds, then use that command again!
+    <discord-message verified role-color="#378afa" author="BDFD Support" bot>
+        Hello world!
     </discord-message>
 </discord-messages>
-<blockquote>
-<p>If you are using <strong>BDScript 2</strong>, then all functions above <code>$cooldown[]</code> will always work.</p>
-<p>❌ Not correct:</p>
-<pre><code>$nomention
-$setUserVar[Money;$sum[$getUserVar[Money];5]]
-$sendMessage[You worked successfully and earned 5 🪙]
-$cooldown[30s;Please wait %time%, then use !work command again!]
-</code></pre>
-<p>Your bot will always add 5🪙 to “Money” variable.</p>
-<p>✅ Correct:</p>
-<pre><code>$nomention
-$cooldown[30s;Please wait %time%, then use !work command again!]
-$setUserVar[Money;$sum[$getUserVar[Money];5]]
-$sendMessage[You worked successfully and earned 5 🪙]
-</code></pre>
-<p>How <a href="./findUser.html"><code>$setUserVar[]</code></a> and <a href="./sendMessage.html"><code>$sendMessage[]</code></a> works?</p>
-</blockquote>
-<h3 id="recommendation"><a class="header" href="#recommendation">Recommendation</a></h3>
-<p>You can also use these functions:</p>
-<ul>
-<li><a href="./getCooldown.html"><code>$getCooldown[]</code></a></li>
-<li><a href="./serverCooldown.html"><code>$serverCooldown[]</code></a></li>
-<li><a href="./globalCooldown.html"><code>$globalCooldown[]</code></a></li>
-</ul>
 
                 </main>
 
                 <nav class="nav-wrapper" aria-label="Page navigation">
                     <!-- Mobile navigation buttons -->
-                    <a rel="prev" href="../bdscript/commandsCount.html" class="mobile-nav-chapters previous"
+                    <a rel="prev" href="../premium/ignoreTriggerCase.html" class="mobile-nav-chapters previous"
                         title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
                         <i class="fa fa-angle-left"></i>
                     </a>
 
-                    <a rel="next" href="../bdscript/createChannel.html" class="mobile-nav-chapters next"
+                    <a rel="next" href="../premium/logQuota.html" class="mobile-nav-chapters next"
                         title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
                         <i class="fa fa-angle-right"></i>
                     </a>
@@ -258,16 +230,16 @@ $sendMessage[You worked successfully and earned 5 🪙]
         </div>
 
         <nav class="nav-wide-wrapper" aria-label="Page navigation">
-            <a href="../bdscript/commandsCount.html" class="nav-chapters previous" title="Previous chapter"
+            <a href="../premium/ignoreTriggerCase.html" class="nav-chapters previous" title="Previous chapter"
                 aria-label="Previous chapter" aria-keyshortcuts="Left">
-                <a href="../bdscript/commandsCount.html" class="nav-chapters previous" title="Previous page"
+                <a href="../premium/ignoreTriggerCase.html" class="nav-chapters previous" title="Previous page"
                     aria-label="Previous page" aria-keyshortcuts="Left">
                     <i class="fa fa-angle-left"></i>
                 </a>
 
-                <a href="../bdscript/createChannel.html" class="nav-chapters next" title="Next chapter"
+                <a href="../premium/logQuota.html" class="nav-chapters next" title="Next chapter"
                     aria-label="Next chapter" aria-keyshortcuts="Right">
-                    <a href="../bdscript/createChannel.html" class="nav-chapters next" title="Next page"
+                    <a href="../premium/logQuota.html" class="nav-chapters next" title="Next page"
                         aria-label="Next page" aria-keyshortcuts="Right">
                         <i class="fa fa-angle-right"></i>
                     </a>
