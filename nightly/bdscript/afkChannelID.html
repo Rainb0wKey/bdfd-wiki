@@ -193,10 +193,10 @@
 AFK channel ID: $afkChannelID
 </code></pre>
 <discord-messages>
-    <discord-message author="GettingBeatenByKito" role-color="#E67E22">
+    <discord-message role-color="#E67E22" author="GettingBeatenByKito">
         !example
     </discord-message>
-    <discord-message verified author="BDFD Support" bot role-color="#378afa">
+    <discord-message role-color="#378afa" verified bot author="BDFD Support">
         AFK channel ID: 567428769766440962
     </discord-message>
 </discord-messages>
@@ -209,9 +209,6 @@ AFK channel ID: $afkChannelID
 </div>
 <div>
 <p>The <code>$afkChannelID</code> function as said in above returns an error if there isn’t any AFK channel set on the server and there is a way to stop that.</p>
-</div>
-</div>
-<h4 id="example-1"><a class="header" href="#example-1">Example</a></h4>
 <pre><code>$nomention
 $try 
   AFK channel ID: $afkChannelID
@@ -219,12 +216,14 @@ $catch
   No AFK channel found!
 $endtry
 </code></pre>
+</div>
+</div>
 <p>Without try block</p>
 <discord-messages>
-    <discord-message role-color="#E67E22" author="GettingBeatenByKito">
+    <discord-message author="GettingBeatenByKito" role-color="#E67E22">
         !example
     </discord-message>
-    <discord-message author="BDFD Support" role-color="#378afa" verified bot>
+    <discord-message author="BDFD Support" bot verified role-color="#378afa">
         ❌ Function <code>$afkChannelID</code> at <code>2:30</code> returned an error: No AFK channel set in this server!
     </discord-message>
 </discord-messages>
@@ -233,7 +232,7 @@ $endtry
     <discord-message author="GettingBeatenByKito" role-color="#E67E22">
         !example
     </discord-message>
-    <discord-message author="BDFD Support" verified role-color="#378afa" bot>
+    <discord-message bot role-color="#378afa" verified author="BDFD Support">
         No AFK channel found!
     </discord-message>
 </discord-messages>
