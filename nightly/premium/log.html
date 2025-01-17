@@ -191,6 +191,7 @@
 <li><code>info</code>: Blue color</li>
 <li><code>warning</code>: Yellow color</li>
 <li><code>error</code>: Red color</li>
+<li><code>bdscript</code>: Can’t be used in <code>$log[]</code> function. Appears automatically when an error is made in the code. Can be disabled by <a href="./suppressErrorLogging.html"><code>$suppressErrorLogging</code></a>.</li>
 <li>Default input for “<code>Type</code>” parameter is <code>info</code>.</li>
 </ul>
 <h2 id="example"><a class="header" href="#example">Example</a></h2>
@@ -199,10 +200,10 @@ Hello world!
 $log[$username used secret command!]
 </code></pre>
 <discord-messages>
-    <discord-message role-color="#E67E22" author="RainbowKey">
+    <discord-message author="RainbowKey" role-color="#E67E22">
         !example
     </discord-message>
-    <discord-message role-color="#378afa" author="BDFD Support" bot verified>
+    <discord-message author="BDFD Support" role-color="#378afa" bot verified>
         Hello world!
     </discord-message>
 </discord-messages>
