@@ -186,14 +186,11 @@
 <li><code>Type</code> <code>(Type: Enum || Flag: Optional)</code>: The log type to be displayed. Default is <code>info</code>.</li>
 </ul>
 <h4 id="log-types"><a class="header" href="#log-types">Log Types</a></h4>
-<div class="table-wrapper"><table><thead><tr><th>Value (<code>Type</code>)</th><th>Color</th></tr></thead><tbody>
-<tr><td>success</td><td>Green</td></tr>
-<tr><td>info</td><td>Blue</td></tr>
-<tr><td>warning</td><td>Yellow</td></tr>
-<tr><td>error</td><td>Red</td></tr>
-</tbody></table>
-</div>
 <ul>
+<li><code>success</code>: Green color</li>
+<li><code>info</code>: Blue color</li>
+<li><code>warning</code>: Yellow color</li>
+<li><code>error</code>: Red color</li>
 <li>Default input for “<code>Type</code>” parameter is <code>info</code>.</li>
 </ul>
 <h2 id="example"><a class="header" href="#example">Example</a></h2>
@@ -205,7 +202,7 @@ $log[$username used secret command!]
     <discord-message role-color="#E67E22" author="RainbowKey">
         !example
     </discord-message>
-    <discord-message bot role-color="#378afa" verified author="BDFD Support">
+    <discord-message bot role-color="#378afa" author="BDFD Support" verified>
         Hello world!
     </discord-message>
 </discord-messages>
