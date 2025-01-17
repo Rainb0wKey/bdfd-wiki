@@ -4,7 +4,7 @@
 <head>
     <!-- Book generated using mdBook -->
     <meta charset="UTF-8">
-    <title>$editButton - Bot Designer For Discord - Wiki</title>
+    <title>$voiceUserLimit - Bot Designer For Discord - Wiki</title>
 
 
 
@@ -168,108 +168,57 @@
                         <script src="../theme/breadcrumbs.js"></script>
                     </nav>
 
-                    <a href="https://github.com/NilPointer-Software/bdfd-wiki/edit/dev/src/bdscript/editButton.md" class="editPage">
+                    <a href="https://github.com/NilPointer-Software/bdfd-wiki/edit/dev/src/bdscript/voiceUserLimit.md" class="editPage">
                         <i class='fa fa-edit' id="editPageIcon"></i>
                     </a>
 
-                    <h1 id="editbutton"><a class="header" href="#editbutton">$editButton</a></h1>
-<p>Edits an already existing button.</p>
+                    <h1 id="voiceuserlimit"><a class="header" href="#voiceuserlimit">$voiceUserLimit</a></h1>
+<p>Returns the user limit of the provided voice channel.</p>
 <h2 id="syntax"><a class="header" href="#syntax">Syntax</a></h2>
-<pre><code>$editButton[Button ID/URL;Label;Style;(Disabled?;Emoji;Message ID)]
+<pre><code>$voiceUserLimit[(Voice Channnel ID)]
 </code></pre>
 <h3 id="parameters"><a class="header" href="#parameters">Parameters</a></h3>
 <ul>
-<li><code>Button ID/URL</code> <code>(Type: String, URL || Flag: Required)</code>: The required button ID or URL, you want to be edited.</li>
-<li><code>Label</code> <code>(Type: String || Flag: Emptiable)</code>: The new label displayed on the button.</li>
-<li><code>Style</code> <code>(Type: Enum || Flag: Required)</code>: The style of the button. All styles are listed <a href="#button-style">below</a>.</li>
-<li><code>Disabled?</code> <code>(Type: Bool || Flag: Vacantable)</code>: If set to <code>yes</code>, the button can’t be pressed. Default is <code>no</code>.</li>
-<li><code>Emoji</code> <code>(Type: Emoji || Flag: Vacantable)</code>: Edits / Adds an emoji inside the button. Emojis have to be either pasted as <em>Unicode</em> or be in the following format <code>&lt;:emoji name:emoji ID&gt;</code>.</li>
-<li><code>Message ID</code> <code>(Type: Snowflake || Flag: Vacantable)</code>: Adds a button to the provided message ID. It’s important to note that provided message ID author <strong>has to</strong> be the bot.</li>
+<li><code>Voice Channnel ID</code> <code>(Type: Snowflake || Flag: Optional)</code>: What is the voice channel to get the user limit?</li>
 </ul>
-<h2 id="button-style"><a class="header" href="#button-style">Button Style</a></h2>
-<p>Buttons can have different styles <em>(background colors)</em>.
-Here, are all possible values for the <code>style</code> function argument.</p>
-<ul>
-<li><code>primary</code> - Blue button</li>
-<li><code>secondary</code> - Gray button</li>
-<li><code>success</code> - Green button</li>
-<li><code>danger</code> - Red button</li>
-<li><code>link</code> - Redirect button</li>
-</ul>
+<h2 id="example"><a class="header" href="#example">Example</a></h2>
+<pre><code>$nomention
+Voice User Limit: $voiceUserLimit[$message]
+</code></pre>
 <discord-messages>
-    <discord-message bot role-color="#378afa" verified author="BDFD Support">
-        Buttons:
-        <discord-attachments slot="components">
-            <discord-action-row>
-                <discord-button type="primary">
-                    Primary
-                </discord-button>
-                <discord-button disabled type="primary">
-                    Primary
-                </discord-button>
-            </discord-action-row>
-            <discord-action-row>
-                <discord-button type="success">
-                    Success
-                </discord-button>
-                <discord-button type="success" disabled>
-                    Success
-                </discord-button>
-            </discord-action-row>
-            <discord-action-row>
-                <discord-button type="destructive">
-                    Danger
-                </discord-button>
-                <discord-button disabled type="destructive">
-                    Danger
-                </discord-button>
-            </discord-action-row>
-            <discord-action-row>
-                <discord-button type="secondary">
-                    Secondary
-                </discord-button>
-                <discord-button type="secondary" disabled>
-                    Secondary
-                </discord-button>
-            </discord-action-row>
-        </discord-attachments>
+    <discord-message role-color="#E67E22" author="RainbowKey">
+        !example 611281459080331274
     </discord-message>
-    <discord-message role-color="#378afa" verified bot author="BDFD Support">
-        Other Buttons:
-        <discord-attachments slot="components">
-            <discord-action-row>
-                <discord-button type="secondary" url="https://nilpointer-software.github.io/bdfd-wiki/nightly/">
-                    Link
-                </discord-button>
-                <discord-button url="https://nilpointer-software.github.io/bdfd-wiki/nightly/" type="secondary" disabled>
-                    Link
-                </discord-button>
-            </discord-action-row>
-            <discord-action-row>
-                <discord-button type="secondary" emoji="https://em-content.zobj.net/thumbs/120/mozilla/36/heavy-black-heart_2764.png">
-                    Emoji
-                </discord-button>
-            </discord-action-row>
-        </discord-attachments>
+    <discord-message bot author="BDFD Support" verified role-color="#378afa">
+        0
+    </discord-message>
+    <discord-message author="RainbowKey" role-color="#E67E22">
+        !example 827255538705236019
+    </discord-message>
+    <discord-message author="BDFD Support" role-color="#378afa" verified bot>
+        99
     </discord-message>
 </discord-messages>
-<h2 id="example"><a class="header" href="#example">Example</a></h2>
-<h3 id="interaction-command-code"><a class="header" href="#interaction-command-code">Interaction command code</a></h3>
-<pre><code>$nomention
-$username said hello!
-$editButton[test;Say hello!;primary;yes;]
-$addButton[no;http://botdesignerdiscord.com;Check our website;link;no;👀]
-</code></pre>
-<p><img src="https://user-images.githubusercontent.com/16838075/120207246-7d366b00-c22c-11eb-8d04-9cf569ced8ae.png" alt="" /></p>
-<div id="admonition-read-more" class="admonition admonish-info" role="note" aria-labelledby="admonition-read-more-title">
+<div id="admonition-what-is-this" class="admonition admonish-question" role="note" aria-labelledby="admonition-what-is-this-title">
 <div class="admonition-title">
-<div id="admonition-read-more-title">
-<p>Read more</p>
+<div id="admonition-what-is-this-title">
+<p>What is this?</p>
 </div>
-<a class="admonition-anchor-link" href="#admonition-read-more"></a>
+<a class="admonition-anchor-link" href="#admonition-what-is-this"></a>
 </div>
 <div>
-<p>For more information, read the the <a href="../guides/general/interactions/buttons/aboutButtons.html">Buttons Guide</a>.</p>
+<p>How <a href="./message.html"><code>$message</code></a> works?</p>
+</div>
+</div>
+<div id="admonition-tip" class="admonition admonish-tip" role="note" aria-labelledby="admonition-tip-title">
+<div class="admonition-title">
+<div id="admonition-tip-title">
+<p>Tip</p>
+</div>
+<a class="admonition-anchor-link" href="#admonition-tip"></a>
+</div>
+<div>
+<p>You can use <code>$voiceUserLimit[]</code> (without parameters) only in the <strong>voice chat</strong>.</p>
 </div>
 </div>
 
@@ -277,12 +226,12 @@ $addButton[no;http://botdesignerdiscord.com;Check our website;link;no;👀]
 
                 <nav class="nav-wrapper" aria-label="Page navigation">
                     <!-- Mobile navigation buttons -->
-                    <a rel="prev" href="../bdscript/dmChannelID.html" class="mobile-nav-chapters previous"
+                    <a rel="prev" href="../bdscript/variablesCount.html" class="mobile-nav-chapters previous"
                         title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
                         <i class="fa fa-angle-left"></i>
                     </a>
 
-                    <a rel="next" href="../bdscript/editChannelPerms.html" class="mobile-nav-chapters next"
+                    <a rel="next" href="../bdscript/year.html" class="mobile-nav-chapters next"
                         title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
                         <i class="fa fa-angle-right"></i>
                     </a>
@@ -293,16 +242,16 @@ $addButton[no;http://botdesignerdiscord.com;Check our website;link;no;👀]
         </div>
 
         <nav class="nav-wide-wrapper" aria-label="Page navigation">
-            <a href="../bdscript/dmChannelID.html" class="nav-chapters previous" title="Previous chapter"
+            <a href="../bdscript/variablesCount.html" class="nav-chapters previous" title="Previous chapter"
                 aria-label="Previous chapter" aria-keyshortcuts="Left">
-                <a href="../bdscript/dmChannelID.html" class="nav-chapters previous" title="Previous page"
+                <a href="../bdscript/variablesCount.html" class="nav-chapters previous" title="Previous page"
                     aria-label="Previous page" aria-keyshortcuts="Left">
                     <i class="fa fa-angle-left"></i>
                 </a>
 
-                <a href="../bdscript/editChannelPerms.html" class="nav-chapters next" title="Next chapter"
+                <a href="../bdscript/year.html" class="nav-chapters next" title="Next chapter"
                     aria-label="Next chapter" aria-keyshortcuts="Right">
-                    <a href="../bdscript/editChannelPerms.html" class="nav-chapters next" title="Next page"
+                    <a href="../bdscript/year.html" class="nav-chapters next" title="Next page"
                         aria-label="Next page" aria-keyshortcuts="Right">
                         <i class="fa fa-angle-right"></i>
                     </a>
