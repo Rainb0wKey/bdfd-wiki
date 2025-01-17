@@ -4,7 +4,7 @@
 <head>
     <!-- Book generated using mdBook -->
     <meta charset="UTF-8">
-    <title>$randomGuildID - Bot Designer For Discord - Wiki</title>
+    <title>$threadMessageCount - Bot Designer For Discord - Wiki</title>
 
 
 
@@ -168,25 +168,34 @@
                         <script src="../theme/breadcrumbs.js"></script>
                     </nav>
 
-                    <a href="https://github.com/NilPointer-Software/bdfd-wiki/edit/dev/src/bdscript/randomGuildID.md" class="editPage">
+                    <a href="https://github.com/NilPointer-Software/bdfd-wiki/edit/dev/src/bdscript/threadMessageCount.md" class="editPage">
                         <i class='fa fa-edit' id="editPageIcon"></i>
                     </a>
 
-                    <h1 id="randomguildid"><a class="header" href="#randomguildid">$randomGuildID</a></h1>
-<p>Returns a random guild ID from servers the bot is in.</p>
+                    <h1 id="threadmessagecount"><a class="header" href="#threadmessagecount">$threadMessageCount</a></h1>
+<p>Returns the total number of users in the current thread. (<strong>not including bot’s response</strong>)</p>
 <h2 id="syntax"><a class="header" href="#syntax">Syntax</a></h2>
-<pre><code>$randomGuildID
+<pre><code>$threadMessageCount
 </code></pre>
 <h2 id="example"><a class="header" href="#example">Example</a></h2>
 <pre><code>$nomention
-Random Guild: $serverName[$randomGuildID]
+This thread has a total of $threadMessageCount messages sent!
 </code></pre>
 <discord-messages>
+    <discord-message role-color="#E67E22" author="RainbowKey">
+        Hello guys!
+    </discord-message>
+    <discord-message role-color="#FF0000" author="kubastick">
+        Hello RainbowKey! 👋
+    </discord-message>
     <discord-message author="RainbowKey" role-color="#E67E22">
         !example
     </discord-message>
-    <discord-message role-color="#378afa" bot verified author="BDFD Support">
-        Random Guild: Bot Designer for Discord Official Server
+    <discord-message author="BDFD Support" role-color="#378afa" verified bot>
+        This thread has a total of 3 messages sent!
+    </discord-message>
+    <discord-message role-color="#FF0000" author="kubastick">
+        Nice!
     </discord-message>
 </discord-messages>
 
@@ -194,12 +203,12 @@ Random Guild: $serverName[$randomGuildID]
 
                 <nav class="nav-wrapper" aria-label="Page navigation">
                     <!-- Mobile navigation buttons -->
-                    <a rel="prev" href="../bdscript/randomChannelID.html" class="mobile-nav-chapters previous"
+                    <a rel="prev" href="../bdscript/threadAddMember.html" class="mobile-nav-chapters previous"
                         title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
                         <i class="fa fa-angle-left"></i>
                     </a>
 
-                    <a rel="next" href="../bdscript/randomMention.html" class="mobile-nav-chapters next"
+                    <a rel="next" href="../bdscript/threadRemoveMember.html" class="mobile-nav-chapters next"
                         title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
                         <i class="fa fa-angle-right"></i>
                     </a>
@@ -210,16 +219,16 @@ Random Guild: $serverName[$randomGuildID]
         </div>
 
         <nav class="nav-wide-wrapper" aria-label="Page navigation">
-            <a href="../bdscript/randomChannelID.html" class="nav-chapters previous" title="Previous chapter"
+            <a href="../bdscript/threadAddMember.html" class="nav-chapters previous" title="Previous chapter"
                 aria-label="Previous chapter" aria-keyshortcuts="Left">
-                <a href="../bdscript/randomChannelID.html" class="nav-chapters previous" title="Previous page"
+                <a href="../bdscript/threadAddMember.html" class="nav-chapters previous" title="Previous page"
                     aria-label="Previous page" aria-keyshortcuts="Left">
                     <i class="fa fa-angle-left"></i>
                 </a>
 
-                <a href="../bdscript/randomMention.html" class="nav-chapters next" title="Next chapter"
+                <a href="../bdscript/threadRemoveMember.html" class="nav-chapters next" title="Next chapter"
                     aria-label="Next chapter" aria-keyshortcuts="Right">
-                    <a href="../bdscript/randomMention.html" class="nav-chapters next" title="Next page"
+                    <a href="../bdscript/threadRemoveMember.html" class="nav-chapters next" title="Next page"
                         aria-label="Next page" aria-keyshortcuts="Right">
                         <i class="fa fa-angle-right"></i>
                     </a>
