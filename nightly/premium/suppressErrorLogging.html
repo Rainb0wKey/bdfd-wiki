@@ -4,7 +4,7 @@
 <head>
     <!-- Book generated using mdBook -->
     <meta charset="UTF-8">
-    <title>$charCount - Bot Designer For Discord - Wiki</title>
+    <title>$suppressErrorLogging - Bot Designer For Discord - Wiki</title>
 
 
 
@@ -168,65 +168,43 @@
                         <script src="../theme/breadcrumbs.js"></script>
                     </nav>
 
-                    <a href="https://github.com/NilPointer-Software/bdfd-wiki/edit/dev/src/bdscript/charCount.md" class="editPage">
+                    <a href="https://github.com/NilPointer-Software/bdfd-wiki/edit/dev/src/premium/suppressErrorLogging.md" class="editPage">
                         <i class='fa fa-edit' id="editPageIcon"></i>
                     </a>
 
-                    <h1 id="charcount"><a class="header" href="#charcount">$charCount</a></h1>
-<p>Returns the amount of characters in the provided “Text”.</p>
+                    <h1 id="suppresserrorlogging"><a class="header" href="#suppresserrorlogging">$suppressErrorLogging</a></h1>
+<div class="functionTags">
+  <span id="PremiumTag">Premium</span>
+</div>
+<p>Disable error logging for the command in bot logs.</p>
 <h2 id="syntax"><a class="header" href="#syntax">Syntax</a></h2>
-<pre><code>$charCount[Text]
+<pre><code>$suppressErrorLogging
 </code></pre>
-<h3 id="parameters"><a class="header" href="#parameters">Parameters</a></h3>
-<ul>
-<li><code>Text</code> <code>(Type: String || Flag: Emptiable)</code>: The text to return the character count for.</li>
-</ul>
 <h2 id="example"><a class="header" href="#example">Example</a></h2>
 <pre><code>$nomention
-Your message has $charCount[$message] characters.
+Hello world!
+$sum[5;10
+$suppressErrorLogging
 </code></pre>
 <discord-messages>
-    <discord-message role-color="#E67E22" author="RainbowKey">
-        !example Hello World!
+    <discord-message author="GettingBeatenByKito" role-color="#E67E22">
+        !example
     </discord-message>
-    <discord-message bot role-color="#378afa" author="BDFD Support" verified>
-        Your message has 12 characters.
+    <discord-message bot verified role-color="#378afa" author="BDFD Support">
+        Hello world!
     </discord-message>
 </discord-messages>
-<div id="admonition-what-is-this" class="admonition admonish-question" role="note" aria-labelledby="admonition-what-is-this-title">
-<div class="admonition-title">
-<div id="admonition-what-is-this-title">
-<p>What is this?</p>
-</div>
-<a class="admonition-anchor-link" href="#admonition-what-is-this"></a>
-</div>
-<div>
-<p>How <a href="./message.html"><code>$message</code></a> works?</p>
-</div>
-</div>
-<div class=function-playground>
-  <h3 id="-playground"><a class="header" href="#-playground">🤖 Playground</a></h3>
-  <p>Here you can understand how this function works.</p>
-  <div class="function-input">
-    <p>Input:</p>
-    <span id="play-code">$charCount[<textarea id="play-input" rows="1" maxlength="150" oninput="charCountPlayground(this.value)">Text</textarea>]</span>
-  </div>
-  <div class="function-output">
-    <p>Output:</p>
-    <span id="play-output">Your message has 4 characters.</span>
-  </div>
-</div>
 
                 </main>
 
                 <nav class="nav-wrapper" aria-label="Page navigation">
                     <!-- Mobile navigation buttons -->
-                    <a rel="prev" href="../bdscript/channelType.html" class="mobile-nav-chapters previous"
+                    <a rel="prev" href="../premium/sendNotification.html" class="mobile-nav-chapters previous"
                         title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
                         <i class="fa fa-angle-left"></i>
                     </a>
 
-                    <a rel="next" href="../bdscript/checkCondition.html" class="mobile-nav-chapters next"
+                    <a rel="next" href="../premium/usedEmoji.html" class="mobile-nav-chapters next"
                         title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
                         <i class="fa fa-angle-right"></i>
                     </a>
@@ -237,16 +215,16 @@ Your message has $charCount[$message] characters.
         </div>
 
         <nav class="nav-wide-wrapper" aria-label="Page navigation">
-            <a href="../bdscript/channelType.html" class="nav-chapters previous" title="Previous chapter"
+            <a href="../premium/sendNotification.html" class="nav-chapters previous" title="Previous chapter"
                 aria-label="Previous chapter" aria-keyshortcuts="Left">
-                <a href="../bdscript/channelType.html" class="nav-chapters previous" title="Previous page"
+                <a href="../premium/sendNotification.html" class="nav-chapters previous" title="Previous page"
                     aria-label="Previous page" aria-keyshortcuts="Left">
                     <i class="fa fa-angle-left"></i>
                 </a>
 
-                <a href="../bdscript/checkCondition.html" class="nav-chapters next" title="Next chapter"
+                <a href="../premium/usedEmoji.html" class="nav-chapters next" title="Next chapter"
                     aria-label="Next chapter" aria-keyshortcuts="Right">
-                    <a href="../bdscript/checkCondition.html" class="nav-chapters next" title="Next page"
+                    <a href="../premium/usedEmoji.html" class="nav-chapters next" title="Next page"
                         aria-label="Next page" aria-keyshortcuts="Right">
                         <i class="fa fa-angle-right"></i>
                     </a>
