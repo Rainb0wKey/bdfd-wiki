@@ -195,15 +195,16 @@
 </blockquote>
 <h2 id="example"><a class="header" href="#example">Example</a></h2>
 <pre><code>$nomention
-&lt;#$categoryChannels[$categoryID[BDFD];&gt;
-&lt;#;id]&gt;
+Total $categoryChannels[$categoryID[BDFD];;count] channels!
+$categoryChannels[$categoryID[BDFD];
+;mention]
 </code></pre>
 <discord-messages>
     <discord-message author="Nicky" role-color="#EE7908">
         !example
     </discord-message>
-    <discord-message author="Wiki Bot" role-color="#748BD4" verified bot>
-        <discord-mention type="channel">rules</discord-mention><br /><discord-mention type="channel">news</discord-mention><br /><discord-mention type="channel">update-logs</discord-mention><br /><discord-mention type="channel">main-chat</discord-mention><br /><discord-mention type="channel">secret-channel</discord-mention>
+    <discord-message bot author="Wiki Bot" role-color="#748BD4" verified>
+        Total 5 channels!<br /><discord-mention type="channel">rules</discord-mention><br /><discord-mention type="channel">news</discord-mention><br /><discord-mention type="channel">update-logs</discord-mention><br /><discord-mention type="channel">main-chat</discord-mention><br /><discord-mention type="channel">secret-channel</discord-mention>
     </discord-message>
 </discord-messages>
 <div id="admonition-what-is-this" class="admonition admonish-question" role="note" aria-labelledby="admonition-what-is-this-title">
