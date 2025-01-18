@@ -191,9 +191,6 @@
 <h2 id="syntax"><a class="header" href="#syntax">Syntax</a></h2>
 <pre><code>$getUserStatus[User ID]
 </code></pre>
-<blockquote>
-<p>The different statuses this function will return are: <code>online</code>, <code>dnd</code>, <code>idle</code> and <code>offline</code>.</p>
-</blockquote>
 <h3 id="parameters"><a class="header" href="#parameters">Parameters</a></h3>
 <ul>
 <li><code>User ID</code> <code>(Type: Snowflake || Flag: Required)</code>: The user to get the status for.</li>
@@ -213,7 +210,7 @@ My status is: `$getUserStatus[$authorID]`
     <discord-message author="RainbowKey" role-color="#E67E22">
         !example
     </discord-message>
-    <discord-message role-color="#378afa" verified author="BDFD Support" bot>
+    <discord-message bot author="BDFD Support" verified role-color="#378afa">
         My status is: <code>dnd</code>
     </discord-message>
 </discord-messages>
