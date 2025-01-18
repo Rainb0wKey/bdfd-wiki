@@ -183,12 +183,40 @@
 </ul>
 <h2 id="example"><a class="header" href="#example">Example</a></h2>
 <pre><code>$nomention
-$image[$userAvatar[$mentioned[1;yes]]]
+$image[$userAvatar[$authorID]]
 </code></pre>
-<p><img src="https://user-images.githubusercontent.com/69215413/125360420-d3bdbb80-e339-11eb-8a52-05289b2a62bf.png" alt="example" /></p>
-<blockquote>
-<p>📌 You can optionally append a query string <code>?size=VALUE</code> at the end of the URL to increase the size of the avatar. The <code>size</code>’s value supports any power of two between 16 and 4096.</p>
-</blockquote>
+<discord-messages>
+    <discord-message author="RainbowKey" role-color="#E67E22">
+        !example
+    </discord-message>
+    <discord-message author="BDFD Support" role-color="#378afa" verified bot>
+        <discord-embed image="https://github.com/user-attachments/assets/3f669ece-44b2-441d-9051-014c13720978" slot="embeds">
+        </discord-embed>
+    </discord-message>
+</discord-messages>
+<div id="admonition-what-is-this" class="admonition admonish-question" role="note" aria-labelledby="admonition-what-is-this-title">
+<div class="admonition-title">
+<div id="admonition-what-is-this-title">
+<p>What is this?</p>
+</div>
+<a class="admonition-anchor-link" href="#admonition-what-is-this"></a>
+</div>
+<div>
+<p>How <a href="./image.html"><code>$image[]</code></a> and <a href="./authorID.html"><code>$authorID</code></a> works?</p>
+</div>
+</div>
+<div id="admonition-image-size" class="admonition admonish-tip" role="note" aria-labelledby="admonition-image-size-title">
+<div class="admonition-title">
+<div id="admonition-image-size-title">
+<p>Image size</p>
+</div>
+<a class="admonition-anchor-link" href="#admonition-image-size"></a>
+</div>
+<div>
+<p>You can use <code>?size=size</code> at the end of the banner URL to increase/decrease the image size. Example sizes: 1024, 2048, 4096.
+(e.g. <code>$image[$userAvatar[$authorID]?size=4096]</code>)</p>
+</div>
+</div>
 
                 </main>
 
