@@ -174,9 +174,6 @@
 
                     <h1 id="getuserstatus"><a class="header" href="#getuserstatus">$getUserStatus</a></h1>
 <p>Returns the provided user’s status/presence.</p>
-<blockquote>
-<p>🧙‍♂️ The user must share atleast 1 server with the bot, for this function to work.</p>
-</blockquote>
 <h2 id="syntax"><a class="header" href="#syntax">Syntax</a></h2>
 <pre><code>$getUserStatus[User ID]
 </code></pre>
@@ -187,16 +184,43 @@
 <ul>
 <li><code>User ID</code> <code>(Type: Snowflake || Flag: Required)</code>: The user to get the status for.</li>
 </ul>
-<h3 id="privileged-intents"><a class="header" href="#privileged-intents">Privileged Intents</a></h3>
+<div id="admonition-privileged-intents" class="admonition admonish-failure" role="note" aria-labelledby="admonition-privileged-intents-title">
+<div class="admonition-title">
+<div id="admonition-privileged-intents-title">
+<p>Privileged Intents</p>
+</div>
+<a class="admonition-anchor-link" href="#admonition-privileged-intents"></a>
+</div>
+<div>
 <p>This function requires the following privileged intents:</p>
 <ul>
 <li><a href="../guides/introduction/gatewayIntents.html#presence-intent"><code>Presences Intent</code></a></li>
 </ul>
+</div>
+</div>
 <h2 id="example"><a class="header" href="#example">Example</a></h2>
 <pre><code>$nomention
-$nickname[$mentioned[1;yes]]'s status is: $getUserStatus[$mentioned[1;yes]]
+My status is: `$getUserStatus[$authorID]`
 </code></pre>
-<p><img src="https://user-images.githubusercontent.com/69215413/124503888-68517800-dd94-11eb-93e5-c0eea7d8b055.png" alt="example" /></p>
+<discord-messages>
+    <discord-message author="RainbowKey" role-color="#E67E22">
+        !example
+    </discord-message>
+    <discord-message verified bot role-color="#378afa" author="BDFD Support">
+        My status is: <code>dnd</code>
+    </discord-message>
+</discord-messages>
+<div id="admonition-what-is-this" class="admonition admonish-question" role="note" aria-labelledby="admonition-what-is-this-title">
+<div class="admonition-title">
+<div id="admonition-what-is-this-title">
+<p>What is this?</p>
+</div>
+<a class="admonition-anchor-link" href="#admonition-what-is-this"></a>
+</div>
+<div>
+<p>How <a href="./authorID.html"><code>$authorID</code></a> works?</p>
+</div>
+</div>
 
                 </main>
 
