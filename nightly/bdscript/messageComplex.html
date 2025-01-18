@@ -183,12 +183,12 @@
 <li><code>Argument name</code> <code>(Type: String || Flag: Optional)</code>: Returns the input of the matching slash command option.</li>
 </ul>
 <blockquote>
-<p>🧙‍♂️ For example, <code>$message[1]</code> would just return the first word of the message. You can also use <code>$message[&gt;]</code> to get the last argument/word of the user’s message.</p>
+<p>For example, <code>$message[1]</code> would just return the first word of the message. You can also use <code>$message[&gt;]</code> to get the last argument/word of the user’s message.</p>
 </blockquote>
 <h3 id="optimization"><a class="header" href="#optimization">Optimization</a></h3>
 <p>If you want this function to work in a slash command <strong>only</strong>, then you can use <code>$message[Argument name]</code>. If this function should work in a normal <strong>and</strong> slash command, then you can use <code>$message[Argument number;Argument name]</code>.</p>
 <blockquote>
-<p>🧙‍♂️ For example, <code>$message[message]</code> would just return the input of the slash command option named “message”. <code>$message[1;text]</code> would return the first word of the message <strong>or</strong> the input of the slash command option named “text”.</p>
+<p>For example, <code>$message[message]</code> would just return the input of the slash command option named “message”. <code>$message[1;text]</code> would return the first word of the message <strong>or</strong> the input of the slash command option named “text”.</p>
 </blockquote>
 <p>Find more info about optimizing <code>$message[]</code> for slash commands <a href="../guides/general/interactions/slashCommands/aboutSlashCommands.html#retrieving-value-from-options">here</a>.</p>
 <h2 id="examples"><a class="header" href="#examples">Examples</a></h2>
@@ -204,18 +204,18 @@ Third word: $message[3]
 <pre><code>$nomention
 $message[message]
 </code></pre>
-<p><img src="https://user-images.githubusercontent.com/95774950/179398322-d9a27169-0030-458d-8abc-ed4462637862.png" alt="example2" />
-<img src="https://user-images.githubusercontent.com/95774950/179398327-6c1f1c00-205f-4dcf-a0ce-08cefed5c937.png" alt="example3" /></p>
+<p><img src="https://user-images.githubusercontent.com/95774950/179398322-d9a27169-0030-458d-8abc-ed4462637862.png" alt="example" />
+<img src="https://user-images.githubusercontent.com/95774950/179398327-6c1f1c00-205f-4dcf-a0ce-08cefed5c937.png" alt="example" /></p>
 <h3 id="normal-and-slash-command"><a class="header" href="#normal-and-slash-command">Normal and Slash command</a></h3>
 <p>We retrieve the first argument of the message or the input of the slash command option named “text”.</p>
 <pre><code>$nomention
 $message[1;text]
 </code></pre>
 <p><strong>Normal</strong></p>
-<p><img src="https://github.com/NilPointer-Software/bdfd-wiki/assets/111157596/4d743aaa-0b86-4cdf-aa5f-32dbfdf4057e" alt="example4" /></p>
+<p><img src="https://github.com/NilPointer-Software/bdfd-wiki/assets/111157596/4d743aaa-0b86-4cdf-aa5f-32dbfdf4057e" alt="example" /></p>
 <p><strong>Slash</strong></p>
-<p><img src="https://github.com/NilPointer-Software/bdfd-wiki/assets/111157596/67f1202c-61d3-49f1-a055-91e21b90d934" alt="example5" />
-<img src="https://github.com/NilPointer-Software/bdfd-wiki/assets/111157596/1e381e99-bc5b-4d02-8d09-35f397c5ff75" alt="example6" /></p>
+<p><img src="https://github.com/NilPointer-Software/bdfd-wiki/assets/111157596/67f1202c-61d3-49f1-a055-91e21b90d934" alt="example" />
+<img src="https://github.com/NilPointer-Software/bdfd-wiki/assets/111157596/1e381e99-bc5b-4d02-8d09-35f397c5ff75" alt="example" /></p>
 
                 </main>
 
