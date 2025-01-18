@@ -173,39 +173,6 @@
                     </a>
 
                     <h1 id="isnsfw"><a class="header" href="#isnsfw">$isNSFW</a></h1>
-<style>
-.discord-messages {
-    margin-top: 1.5rem;
-}
-
-.discord-messages > .discord-message:before {
-    color: var(--color1);
-    background: var(--color3);
-    border-radius: 10px;
-    padding-left: 1rem;
-    padding-right: 1rem;
-    margin-left: -1.8rem;
-    margin-top: -.9rem;
-    width: fit-content;
-    transition: .3s;
-    z-index: 1000;
-}
-
-.discord-messages > .discord-message:before {
-    content: '#main-chat';
-}
-
-.discord-messages:first-of-type > .discord-message:before {
-    content: '#nsfw-channel-🤫';
-}
-
-.discord-messages > .discord-message:hover:before {
-    transform: scale(1.025);
-    transform: rotate(-2.5deg);
-    border-radius: 12.5px;
-    transition: .3s;
-}
-</style>
 <p>Returns whether the provided channel is NSFW (Not Safe For Work) or not.</p>
 <blockquote>
 <p>“true” means the channel is NSFW, “false” means it isn’t.</p>
@@ -223,18 +190,24 @@ Is this channel NSFW?: `$isNSFW[$channelID]`
 </code></pre>
 <discord-messages>
     <discord-message author="RainbowKey" role-color="#E67E22">
+        NSFW Channel 🤫
+    </discord-message>
+    <discord-message author="RainbowKey" role-color="#E67E22">
         !example
     </discord-message>
-    <discord-message bot role-color="#378afa" verified author="BDFD Support">
-        Is this channel NSFW?: <code>false</code>
+    <discord-message bot author="BDFD Support" role-color="#378afa" verified>
+        Is this channel NSFW?: <code>true</code>
     </discord-message>
 </discord-messages>
 <discord-messages>
     <discord-message author="RainbowKey" role-color="#E67E22">
+        It's a main chat here!
+    </discord-message>
+    <discord-message author="RainbowKey" role-color="#E67E22">
         !example
     </discord-message>
-    <discord-message role-color="#378afa" verified author="BDFD Support" bot>
-        Is this channel NSFW?: <code>true</code>
+    <discord-message bot role-color="#378afa" verified author="BDFD Support">
+        Is this channel NSFW?: <code>false</code>
     </discord-message>
 </discord-messages>
 <div id="admonition-what-is-this" class="admonition admonish-question" role="note" aria-labelledby="admonition-what-is-this-title">
