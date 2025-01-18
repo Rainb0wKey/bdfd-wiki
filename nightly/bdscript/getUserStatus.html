@@ -174,16 +174,6 @@
 
                     <h1 id="getuserstatus"><a class="header" href="#getuserstatus">$getUserStatus</a></h1>
 <p>Returns the provided user’s status/presence.</p>
-<h2 id="syntax"><a class="header" href="#syntax">Syntax</a></h2>
-<pre><code>$getUserStatus[User ID]
-</code></pre>
-<blockquote>
-<p>The different statuses this function will return are: <code>online</code>, <code>dnd</code>, <code>idle</code> and <code>offline</code>.</p>
-</blockquote>
-<h3 id="parameters"><a class="header" href="#parameters">Parameters</a></h3>
-<ul>
-<li><code>User ID</code> <code>(Type: Snowflake || Flag: Required)</code>: The user to get the status for.</li>
-</ul>
 <div id="admonition-privileged-intents" class="admonition admonish-failure" role="note" aria-labelledby="admonition-privileged-intents-title">
 <div class="admonition-title">
 <div id="admonition-privileged-intents-title">
@@ -198,6 +188,23 @@
 </ul>
 </div>
 </div>
+<h2 id="syntax"><a class="header" href="#syntax">Syntax</a></h2>
+<pre><code>$getUserStatus[User ID]
+</code></pre>
+<blockquote>
+<p>The different statuses this function will return are: <code>online</code>, <code>dnd</code>, <code>idle</code> and <code>offline</code>.</p>
+</blockquote>
+<h3 id="parameters"><a class="header" href="#parameters">Parameters</a></h3>
+<ul>
+<li><code>User ID</code> <code>(Type: Snowflake || Flag: Required)</code>: The user to get the status for.</li>
+</ul>
+<h4 id="possible-outoputs"><a class="header" href="#possible-outoputs">Possible Outoputs</a></h4>
+<ul>
+<li><code>online</code>: 🟢 Online</li>
+<li><code>dnd</code>: 🔴 Do not disturb</li>
+<li><code>idle</code>: 🟡 Idle</li>
+<li><code>offline</code>: ⚫ Offline</li>
+</ul>
 <h2 id="example"><a class="header" href="#example">Example</a></h2>
 <pre><code>$nomention
 My status is: `$getUserStatus[$authorID]`
@@ -206,7 +213,7 @@ My status is: `$getUserStatus[$authorID]`
     <discord-message author="RainbowKey" role-color="#E67E22">
         !example
     </discord-message>
-    <discord-message verified bot role-color="#378afa" author="BDFD Support">
+    <discord-message role-color="#378afa" verified author="BDFD Support" bot>
         My status is: <code>dnd</code>
     </discord-message>
 </discord-messages>
