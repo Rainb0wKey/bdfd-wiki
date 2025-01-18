@@ -175,22 +175,22 @@
                     <h1 id="modifychannel"><a class="header" href="#modifychannel">$modifyChannel</a></h1>
 <p>Edits a channel with the data provided.</p>
 <blockquote>
-<p>🧙‍♂️ You can use <code>!unchanged</code> as an argument for the option to remain in its current state.</p>
+<p>You can use <code>!unchanged</code> as an parameter for the option to remain in its current state.</p>
 </blockquote>
 <h2 id="syntax"><a class="header" href="#syntax">Syntax</a></h2>
-<pre><code>$modifyChannel[channelID;(channelName;topic;NSFW;position;categoryID)]
+<pre><code>$modifyChannel[Channel ID;(Channel Name;Topic;Make NSFW?;Position;Category ID)]
 </code></pre>
 <h3 id="parameters"><a class="header" href="#parameters">Parameters</a></h3>
 <ul>
-<li><code>channelID</code> <code>(Type: Snowflake || Flag: Required)</code>: The channel the bot will edit.</li>
-<li><code>channelName</code> <code>(Type: String || Flag: Vacantable)</code>: New channel name.</li>
-<li><code>topic</code> <code>(Type: String || Flag: Vacantable)</code>: New channel topic/description.</li>
-<li><code>NSFW</code> <code>(Type: Bool || Flag: Vacantable)</code>: Whether the channel will be marked as NSFW or not.</li>
-<li><code>position</code> <code>(Type: Integer || Flag: Vacantable)</code>: The new channel position <em>(1 = top)</em>.</li>
-<li><code>categoryID</code> <code>(Type: Snowflake || Flag: Vacantable)</code>: The category to which the channel should belong to.</li>
+<li><code>Channel ID</code> <code>(Type: Snowflake || Flag: Required)</code>: The channel the bot will edit.</li>
+<li><code>Channel Name</code> <code>(Type: String || Flag: Vacantable)</code>: New channel name.</li>
+<li><code>Topic</code> <code>(Type: String || Flag: Vacantable)</code>: New channel topic/description.</li>
+<li><code>Make NSFW?</code> <code>(Type: Bool || Flag: Vacantable)</code>: Whether the channel will be marked as NSFW or not.</li>
+<li><code>Position</code> <code>(Type: Integer || Flag: Vacantable)</code>: The new channel position <em>(1 = top)</em>.</li>
+<li><code>Category ID</code> <code>(Type: Snowflake || Flag: Vacantable)</code>: The category to which the channel should belong to.</li>
 </ul>
 <blockquote>
-<p>🧙‍♂️ You can use <code>$channelID[category/channelName]</code> to get the ID of a category or channel.</p>
+<p>You can use <code>$channelID[category/channelName]</code> to get the ID of a category or channel.</p>
 </blockquote>
 <h3 id="permissions"><a class="header" href="#permissions">Permissions</a></h3>
 <p>Required permissions that the bot must have for this function to work properly :</p>
