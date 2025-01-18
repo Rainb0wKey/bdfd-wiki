@@ -174,9 +174,17 @@
 
                     <h1 id="userinfo"><a class="header" href="#userinfo">$userInfo</a></h1>
 <p>Allows you to make a ‘user info’ command without using a bunch of different functions at once. Returns information of the first mentioned user.</p>
-<blockquote>
-<p>📌 <a href="./userInfo.html"><code>$userInfo</code></a> automatically generates a description. So, <a href="./description.html"><code>$description</code></a> of index <code>1</code> should be avoided in the code.</p>
-</blockquote>
+<div id="admonition-fail" class="admonition admonish-failure" role="note" aria-labelledby="admonition-fail-title">
+<div class="admonition-title">
+<div id="admonition-fail-title">
+<p>Fail</p>
+</div>
+<a class="admonition-anchor-link" href="#admonition-fail"></a>
+</div>
+<div>
+<p><a href="./userInfo.html"><code>$userInfo</code></a> automatically generates a description. So, <a href="./description.html"><code>$description</code></a> of index <code>1</code> should be avoided in the code.</p>
+</div>
+</div>
 <h2 id="syntax"><a class="header" href="#syntax">Syntax</a></h2>
 <pre><code>$userInfo[Message]
 </code></pre>
@@ -192,7 +200,7 @@
 <tr><td><code>{username}</code></td><td>Returns the user’s username.</td><td><a href="./usernameComplex.html"><code>$username[]</code></a></td></tr>
 <tr><td><code>{ID}</code></td><td>Returns the ID of the user.</td><td><a href="./findUser.html"><code>$findUser[]</code></a></td></tr>
 <tr><td><code>{BOT}</code></td><td>Returns <code>true</code> if the user is a bot otherwise, <code>false</code>.</td><td><a href="./isBot.html"><code>$isBot[]</code></a></td></tr>
-<tr><td><code>{discriminator}</code></td><td>Returns the user’s discriminator. <em>(Depreacted)</em></td><td><a href="./discriminator.html"><code>$discriminator[]</code></a> <em>(Deprecated)</em></td></tr>
+<tr><td><code>{discriminator}</code></td><td>Returns the user’s discriminator. <em>(Depreacted)</em></td><td><a href="./discriminator.html"><code>$discriminator[]</code></a> <em>(Only For Bots)</em></td></tr>
 </tbody></table>
 </div>
 <h2 id="example"><a class="header" href="#example">Example</a></h2>
@@ -204,10 +212,10 @@ Bot?: {BOT}
 Discriminator: {discriminator}]
 </code></pre>
 <discord-messages>
-    <discord-message role-color="#E67E22" author="RainbowKey">
+    <discord-message author="RainbowKey" role-color="#E67E22">
         !example <discord-mention>RainbowKey</discord-mention>
     </discord-message>
-    <discord-message verified role-color="#378afa" bot author="BDFD Support">
+    <discord-message bot verified author="BDFD Support" role-color="#378afa">
         <discord-embed slot="embeds" embed-title="User Info">
             <discord-embed-description slot="description">
                 Username: rainbow_key<br /> User ID: 803569638084313098<br /> Bot?: false<br /> Discriminator: 0000
@@ -215,9 +223,17 @@ Discriminator: {discriminator}]
         </discord-embed>
     </discord-message>
 </discord-messages>
-<blockquote>
-<p>📌 <a href="./userInfo.html"><code>$userInfo</code></a> automatically generates a thumbnail of the mentioned user. If you want to remove it, put <a href="./thumbnail.html"><code>$thumbnail[]</code></a> (with empty argument) below <a href="./userInfo.html"><code>$userInfo</code></a> function.</p>
-</blockquote>
+<div id="admonition-tip" class="admonition admonish-tip" role="note" aria-labelledby="admonition-tip-title">
+<div class="admonition-title">
+<div id="admonition-tip-title">
+<p>Tip</p>
+</div>
+<a class="admonition-anchor-link" href="#admonition-tip"></a>
+</div>
+<div>
+<p><a href="./userInfo.html"><code>$userInfo</code></a> automatically generates a thumbnail of the mentioned user. If you want to remove it, put <a href="./thumbnail.html"><code>$thumbnail[]</code></a> (with empty argument) below <a href="./userInfo.html"><code>$userInfo</code></a> function.</p>
+</div>
+</div>
 
                 </main>
 
