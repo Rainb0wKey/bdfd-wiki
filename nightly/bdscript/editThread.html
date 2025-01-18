@@ -174,9 +174,6 @@
 
                     <h1 id="editthread"><a class="header" href="#editthread">$editThread</a></h1>
 <p>Modifies an existing thread.</p>
-<blockquote>
-<p>🧙‍♂️ You can use <code>!unchanged</code> as an argument for the option to remain in its current state.</p>
-</blockquote>
 <h2 id="syntax"><a class="header" href="#syntax">Syntax</a></h2>
 <pre><code>$editThread[Thread ID;(Name;Archived;Archive duration;Locked;Slowmode)]
 </code></pre>
@@ -189,6 +186,9 @@
 <li><code>Locked</code> <code>(Type: Bool || Flag: Optional)</code>: Whether to lock this thread or not. Note that archived threads can’t be locked.</li>
 <li><code>Slowmode</code> <code>(Type: Integer || Flag: Optional)</code>: The slowmode of this channel, expressed in seconds.</li>
 </ul>
+<blockquote>
+<p>You can use <code>!unchanged</code> as an parameter for the option to remain in its current state.</p>
+</blockquote>
 <h2 id="example"><a class="header" href="#example">Example</a></h2>
 <pre><code>$nomention
 $editThread[1098166444111433819;Cool Thread 😎;no;!unchanged;!unchanged;5]
