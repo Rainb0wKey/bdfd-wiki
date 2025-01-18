@@ -182,13 +182,15 @@
 </code></pre>
 <h2 id="example"><a class="header" href="#example">Example</a></h2>
 <pre><code>$nomention
-$if[$isSlash==true]
-$message[text]
-$else
-$message
-$endif
+Is slash?: `$isSlash`
 </code></pre>
-<p><img src="https://user-images.githubusercontent.com/69215413/123517923-b0c0b580-d671-11eb-8e10-ef56a4a5792e.png" alt="example" /></p>
+<discord-messages>
+    <discord-message role-color="#748bd4" author="Flowcharts" bot>
+        <discord-command author="RainbowKey" role-color="#E67E22" command="/example" slot="reply">
+        </discord-command>
+        Is slash?: <code>true</code>
+    </discord-message>
+</discord-messages>
 
                 </main>
 
