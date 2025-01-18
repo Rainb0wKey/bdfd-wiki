@@ -179,7 +179,7 @@
 <p><em>Triggered when a user leaves the server.</em></p>
 <p><code>$onLeave[Channel ID]</code> is a callback, which means it’s used in the command trigger <em>(not the code)</em>. The command is ran when a user leaves the server.</p>
 <blockquote>
-<p>📌 You can only have <strong>1</strong> single <code>$onLeave[]</code> per bot.</p>
+<p>You can only have <strong>1</strong> single <code>$onLeave[]</code> per bot.</p>
 </blockquote>
 <h2 id="syntax"><a class="header" href="#syntax">Syntax</a></h2>
 <pre><code>$onLeave[Channel ID]
@@ -193,14 +193,14 @@
 <li>
 <p>Create a command with the trigger <code>$onLeave[Channel ID]</code>.</p>
 <blockquote>
-<p>🧙‍♂️ You must replace “Channel ID” with a <a href="https://support.discord.com/hc/en-us/articles/206346498-Where-can-I-find-my-User-Server-Message-ID-">valid channel ID</a> or a server variable that holds the channelID <a href="#advanced"><em>(See more here…)</em></a>!</p>
+<p>You must replace “Channel ID” with a <a href="https://support.discord.com/hc/en-us/articles/206346498-Where-can-I-find-my-User-Server-Message-ID-">valid channel ID</a> or a server variable that holds the channelID <a href="#advanced"><em>(See more here…)</em></a>!</p>
 </blockquote>
 <p><img src="https://user-images.githubusercontent.com/69215413/129492818-7aca8563-baff-4ebb-b82b-5a1a368339e5.png" alt="example1" /></p>
 </li>
 <li>
 <p>Input your code/reply text.</p>
 <blockquote>
-<p>🧙‍♂️ You can use functions like <code>$username</code>, <code>$authorAvatar</code>, <code>$authorID</code>, <code>$membersCount</code>, <code>$serverName[$guildID]</code> here.</p>
+<p>You can use functions like <code>$username</code>, <code>$authorAvatar</code>, <code>$authorID</code>, <code>$membersCount</code>, <code>$serverName[$guildID]</code> here.</p>
 </blockquote>
 <p><img src="https://user-images.githubusercontent.com/69215413/129492763-1261a971-4d4c-4f33-9e78-757595484672.png" alt="example2" /></p>
 </li>
@@ -210,7 +210,7 @@
     <discord-system-message type="leave">
         Goodbye <font color="white">User</font>.
     </discord-system-message>
-    <discord-message role-color="#748BD4" verified author="Wiki Bot" bot>
+    <discord-message author="Wiki Bot" verified bot role-color="#748BD4">
         <discord-mention>User</discord-mention> just left the server :c
     </discord-message>
 </discord-messages>
