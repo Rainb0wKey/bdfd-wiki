@@ -4,7 +4,7 @@
 <head>
     <!-- Book generated using mdBook -->
     <meta charset="UTF-8">
-    <title>$displayName - Bot Designer For Discord - Wiki</title>
+    <title>$byteCount - Bot Designer For Discord - Wiki</title>
 
 
 
@@ -168,38 +168,77 @@
                         <script src="../theme/breadcrumbs.js"></script>
                     </nav>
 
-                    <a href="https://github.com/NilPointer-Software/bdfd-wiki/edit/dev/src/bdscript/displayName.md" class="editPage">
+                    <a href="https://github.com/NilPointer-Software/bdfd-wiki/edit/dev/src/bdscript/byteCount.md" class="editPage">
                         <i class='fa fa-edit' id="editPageIcon"></i>
                     </a>
 
-                    <h1 id="displayname"><a class="header" href="#displayname">$displayName</a></h1>
-<p>Returns the author’s display name.</p>
+                    <h1 id="bytecount"><a class="header" href="#bytecount">$byteCount</a></h1>
+<p>Returns the amount of bytes in the provided “<code>Text</code>”.</p>
 <h2 id="syntax"><a class="header" href="#syntax">Syntax</a></h2>
-<pre><code>$displayName
+<pre><code>$byteCount[Text]
 </code></pre>
+<h3 id="parameters"><a class="header" href="#parameters">Parameters</a></h3>
+<ul>
+<li><code>Text</code> <code>(Type: String || Flag: Emptiable)</code>: The text to return the byte count for.</li>
+</ul>
 <h2 id="example"><a class="header" href="#example">Example</a></h2>
 <pre><code>$nomention
-Your display name is $displayName
+Your message has $byteCount[$message] bytes.
 </code></pre>
 <discord-messages>
-    <discord-message role-color="#EE7908" author="Nicky">
-        !example
+    <discord-message author="RainbowKey" role-color="#E67E22">
+        !example Hello World!
     </discord-message>
-    <discord-message author="Wiki Bot" role-color="#748BD4" bot verified>
-        Your display name is Nicky
+    <discord-message bot role-color="#378afa" author="BDFD Support" verified>
+        Your message has 12 bytes.
+    </discord-message>
+    <discord-message author="RainbowKey" role-color="#E67E22">
+        !example Привет Мир!
+    </discord-message>
+    <discord-message author="BDFD Support" bot role-color="#378afa" verified>
+        Your message has 20 bytes.
+    </discord-message>
+    <discord-message author="RainbowKey" role-color="#E67E22">
+        !example 你好世界！
+    </discord-message>
+    <discord-message author="BDFD Support" bot verified role-color="#378afa">
+        Your message has 15 bytes.
     </discord-message>
 </discord-messages>
+<div id="admonition-what-is-this" class="admonition admonish-question" role="note" aria-labelledby="admonition-what-is-this-title">
+<div class="admonition-title">
+<div id="admonition-what-is-this-title">
+<p>What is this?</p>
+</div>
+<a class="admonition-anchor-link" href="#admonition-what-is-this"></a>
+</div>
+<div>
+<p>How <a href="./message.html"><code>$message</code></a> works?</p>
+</div>
+</div>
+<div class=function-playground>
+  <h3 id="-playground"><a class="header" href="#-playground">🤖 Playground</a></h3>
+  <p>Here you can understand how this function works.</p>
+  <div class="function-input">
+    <p>Input:</p>
+    <span id="play-code">$byteCount[<textarea id="play-input" rows="1" maxlength="150" oninput="byteCountPlayground(this.value)">Text</textarea>]</span>
+  </div>
+  <div class="function-output">
+    <p>Output:</p>
+    <span id="play-output">Your message has 4 bytes</span>
+  </div>
+</div>
 
                 </main>
 
                 <nav class="nav-wrapper" aria-label="Page navigation">
                     <!-- Mobile navigation buttons -->
-                    <a rel="prev" href="../bdscript/discriminator.html" class="mobile-nav-chapters previous"
+                    <a rel="prev" href="../bdscript/botTyping.html" class="mobile-nav-chapters previous"
                         title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
                         <i class="fa fa-angle-left"></i>
                     </a>
 
-                    <a rel="next" href="../bdscript/displayNameComplex.html" class="mobile-nav-chapters next"
+                    <a rel="next" href="../bdscript/c.html" class="mobile-nav-chapters next"
                         title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
                         <i class="fa fa-angle-right"></i>
                     </a>
@@ -210,16 +249,16 @@ Your display name is $displayName
         </div>
 
         <nav class="nav-wide-wrapper" aria-label="Page navigation">
-            <a href="../bdscript/discriminator.html" class="nav-chapters previous" title="Previous chapter"
+            <a href="../bdscript/botTyping.html" class="nav-chapters previous" title="Previous chapter"
                 aria-label="Previous chapter" aria-keyshortcuts="Left">
-                <a href="../bdscript/discriminator.html" class="nav-chapters previous" title="Previous page"
+                <a href="../bdscript/botTyping.html" class="nav-chapters previous" title="Previous page"
                     aria-label="Previous page" aria-keyshortcuts="Left">
                     <i class="fa fa-angle-left"></i>
                 </a>
 
-                <a href="../bdscript/displayNameComplex.html" class="nav-chapters next" title="Next chapter"
+                <a href="../bdscript/c.html" class="nav-chapters next" title="Next chapter"
                     aria-label="Next chapter" aria-keyshortcuts="Right">
-                    <a href="../bdscript/displayNameComplex.html" class="nav-chapters next" title="Next page"
+                    <a href="../bdscript/c.html" class="nav-chapters next" title="Next page"
                         aria-label="Next page" aria-keyshortcuts="Right">
                         <i class="fa fa-angle-right"></i>
                     </a>
