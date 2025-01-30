@@ -4,7 +4,7 @@
 <head>
     <!-- Book generated using mdBook -->
     <meta charset="UTF-8">
-    <title>$hostingExpireTime - Bot Designer For Discord - Wiki</title>
+    <title>$getSlowmode - Bot Designer For Discord - Wiki</title>
 
 
 
@@ -168,38 +168,55 @@
                         <script src="../theme/breadcrumbs.js"></script>
                     </nav>
 
-                    <a href="https://github.com/NilPointer-Software/bdfd-wiki/edit/dev/src/bdscript/hostingExpireTime.md" class="editPage">
+                    <a href="https://github.com/NilPointer-Software/bdfd-wiki/edit/dev/src/bdscript/getSlowmode.md" class="editPage">
                         <i class='fa fa-edit' id="editPageIcon"></i>
                     </a>
 
-                    <h1 id="hostingexpiretime"><a class="header" href="#hostingexpiretime">$hostingExpireTime</a></h1>
-<p>Returns your bot’s hosting expiration date.</p>
+                    <h1 id="getslowmode"><a class="header" href="#getslowmode">$getSlowmode</a></h1>
+<p>Returns the channel’s slowmode time.</p>
 <h2 id="syntax"><a class="header" href="#syntax">Syntax</a></h2>
-<pre><code>$hostingExpireTime
+<pre><code>$getSlowmode[(Channel ID)]
 </code></pre>
+<h3 id="parameters"><a class="header" href="#parameters">Parameters</a></h3>
+<ul>
+<li><code>Channel ID</code> <code>(Type: Snowflake || Flag: Optional)</code>: The channel to get the slowmode time</li>
+</ul>
 <h2 id="example"><a class="header" href="#example">Example</a></h2>
-<pre><code>$nomention 
-My hosting expiration date: $hostingExpireTime 
+<pre><code>$nomention
+Slowmode time: $getSlowmode[$channelID]
 </code></pre>
 <discord-messages>
-    <discord-message author="RainbowKey" role-color="#E67E22">
+    <discord-message author="GettingBeatenByKito" role-color="#E67E22">
         !example
     </discord-message>
-    <discord-message role-color="#378afa" author="BDFD Support" bot verified>
-        My hosting expiration date: San, 3 Sep 2029 23:59:00 UTC
+    <discord-message role-color="#378afa" verified author="BDFD Support" bot>
+        Slowmode time: 0
+    </discord-message>
+    <discord-message role-color="#E67E22" author="GettingBeatenByKito">
+        This means there is no slowmode set in this channel.
     </discord-message>
 </discord-messages>
-
+<div id="admonition-what-is-this" class="admonition admonish-question" role="note" aria-labelledby="admonition-what-is-this-title">
+<div class="admonition-title">
+<div id="admonition-what-is-this-title">
+<p>What is this?</p>
+</div>
+<a class="admonition-anchor-link" href="#admonition-what-is-this"></a>
+</div>
+<div>
+<p>How <a href="./channelID.html"><code>$channelID</code></a> works?</p>
+</div>
+</div>
                 </main>
 
                 <nav class="nav-wrapper" aria-label="Page navigation">
                     <!-- Mobile navigation buttons -->
-                    <a rel="prev" href="../bdscript/highestRoleWithPerms.html" class="mobile-nav-chapters previous"
+                    <a rel="prev" href="../bdscript/getServerVar.html" class="mobile-nav-chapters previous"
                         title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
                         <i class="fa fa-angle-left"></i>
                     </a>
 
-                    <a rel="next" href="../bdscript/hostingExpireTimeComplex.html" class="mobile-nav-chapters next"
+                    <a rel="next" href="../bdscript/getTextSplitIndex.html" class="mobile-nav-chapters next"
                         title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
                         <i class="fa fa-angle-right"></i>
                     </a>
@@ -210,16 +227,16 @@ My hosting expiration date: $hostingExpireTime
         </div>
 
         <nav class="nav-wide-wrapper" aria-label="Page navigation">
-            <a href="../bdscript/highestRoleWithPerms.html" class="nav-chapters previous" title="Previous chapter"
+            <a href="../bdscript/getServerVar.html" class="nav-chapters previous" title="Previous chapter"
                 aria-label="Previous chapter" aria-keyshortcuts="Left">
-                <a href="../bdscript/highestRoleWithPerms.html" class="nav-chapters previous" title="Previous page"
+                <a href="../bdscript/getServerVar.html" class="nav-chapters previous" title="Previous page"
                     aria-label="Previous page" aria-keyshortcuts="Left">
                     <i class="fa fa-angle-left"></i>
                 </a>
 
-                <a href="../bdscript/hostingExpireTimeComplex.html" class="nav-chapters next" title="Next chapter"
+                <a href="../bdscript/getTextSplitIndex.html" class="nav-chapters next" title="Next chapter"
                     aria-label="Next chapter" aria-keyshortcuts="Right">
-                    <a href="../bdscript/hostingExpireTimeComplex.html" class="nav-chapters next" title="Next page"
+                    <a href="../bdscript/getTextSplitIndex.html" class="nav-chapters next" title="Next page"
                         aria-label="Next page" aria-keyshortcuts="Right">
                         <i class="fa fa-angle-right"></i>
                     </a>
