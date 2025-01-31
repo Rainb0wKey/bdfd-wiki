@@ -173,7 +173,7 @@
                     </a>
 
                     <h1 id="getslowmode"><a class="header" href="#getslowmode">$getSlowmode</a></h1>
-<p>Returns the channel’s slowmode time.</p>
+<p>Returns the channel’s slowmode time (In Seconds).</p>
 <div id="admonition-change-slowmode-time" class="admonition admonish-tip" role="note" aria-labelledby="admonition-change-slowmode-time-title">
 <div class="admonition-title">
 <div id="admonition-change-slowmode-time-title">
@@ -194,14 +194,14 @@
 </ul>
 <h2 id="example"><a class="header" href="#example">Example</a></h2>
 <pre><code>$nomention
-Slowmode time: $getSlowmode[$channelID]
+Slowmode time: $getSlowmode[$channelID] seconds
 </code></pre>
 <discord-messages>
-    <discord-message author="GettingBeatenByKito" role-color="#E67E22">
+    <discord-message role-color="#E67E22" author="GettingBeatenByKito">
         !example
     </discord-message>
-    <discord-message bot role-color="#378afa" author="BDFD Support" verified>
-        Slowmode time: 0
+    <discord-message role-color="#378afa" verified bot author="BDFD Support">
+        Slowmode time: 0 seconds
     </discord-message>
     <discord-message role-color="#E67E22" author="GettingBeatenByKito">
         This means there is no slowmode set in this channel.
@@ -218,6 +218,7 @@ Slowmode time: $getSlowmode[$channelID]
 <p>How <a href="./channelID.html"><code>$channelID</code></a> works?</p>
 </div>
 </div>
+
                 </main>
 
                 <nav class="nav-wrapper" aria-label="Page navigation">
