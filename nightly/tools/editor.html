@@ -4,7 +4,7 @@
 <head>
     <!-- Book generated using mdBook -->
     <meta charset="UTF-8">
-    <title>$max - Bot Designer For Discord - Wiki</title>
+    <title>Editor - Bot Designer For Discord - Wiki</title>
 
 
 
@@ -168,42 +168,148 @@
                         <script src="../theme/breadcrumbs.js"></script>
                     </nav>
 
-                    <a href="https://github.com/NilPointer-Software/bdfd-wiki/edit/dev/src/bdscript/max.md" class="editPage">
+                    <a href="https://github.com/NilPointer-Software/bdfd-wiki/edit/dev/src/tools/editor.md" class="editPage">
                         <i class='fa fa-edit' id="editPageIcon"></i>
                     </a>
 
-                    <h1 id="max"><a class="header" href="#max">$max</a></h1>
-<p>Returns the largest number from the provided numbers.</p>
-<h2 id="syntax"><a class="header" href="#syntax">Syntax</a></h2>
-<pre><code>$max[A;B;...]
+                    <h1 id="text-editor"><a class="header" href="#text-editor">Text Editor</a></h1>
+<p>Here you can use the basic editor features to write codes more conveniently.</p>
+<pre><code>&lt;style&gt;
+
+	textarea {
+		width: 100%;
+		height: 100px;
+    border-radius: 10px;
+		margin-bottom: 10px;
+	}
+
+	input {
+		width: 100%;
+  border-radius: 10px;
+		margin-bottom: 10px;
+	}
+
+	.highlight {
+		background-color: yellow;
+	}
+
+	#highlightedText {
+		white-space: pre-wrap;
+		word-break: break-word;
+	}
+
+	#error-message {
+		color: red;
+	}
+
+	#stats-container {
+		position: fixed;
+		top: 0;
+		left: 0;
+		background-color: white;
+		padding: 10px;
+		border-bottom: 1px solid #ccc;
+		z-index: 100;
+	}
+
+	body {
+		padding-top: 60px;
+	}
+&lt;/style&gt;
 </code></pre>
-<h3 id="parameters"><a class="header" href="#parameters">Parameters</a></h3>
-<ul>
-<li><code>A,B,...</code> <code>(Type: Integer || Flag: Required)</code>: The numbers to get the maximum from. <strong>At least two numbers must be provided!</strong> Use semicolons <code>;</code> as a separator to separate multiple numbers.</li>
-</ul>
-<h2 id="example"><a class="header" href="#example">Example</a></h2>
-<pre><code>$nomention
-$max[100;20;50]
+</head>
+<pre><code>&lt;div id="stats-container"&gt;
+	&lt;p&gt;Words: &lt;span id="wordCount"&gt;0&lt;/span&gt; |
+		Spaces: &lt;span id="spaceCount"&gt;0&lt;/span&gt; |
+		Lines: &lt;span id="lineCount"&gt;0&lt;/span&gt; |
+		Characters: &lt;span id="charCount"&gt;0&lt;/span&gt; 
+&lt;/div&gt;
+
+&lt;textarea id="editor" oninput="updateStats(); checkBrackets()"&gt;&lt;/textarea&gt;&lt;br&gt;
+&lt;label for="searchText"&gt;Find:&lt;/label&gt;
+&lt;input type="text" id="searchText"&gt;&lt;br&gt;
+&lt;label for="replaceText"&gt;Replcae with:&lt;/label&gt;
+&lt;input type="text" id="replaceText"&gt;&lt;br&gt;
+&lt;button onclick="replaceText()"&gt;Replcae all&lt;/button&gt;
+&lt;button id="highlightButton" onclick="toggleHighlight()"&gt;Highlighting found&lt;/button&gt;&lt;br&gt;
+&lt;p id="error-message"&gt;&lt;/p&gt;
 </code></pre>
-<discord-messages>
-    <discord-message author="RainbowKey" role-color="#E67E22">
-        !example 
-    </discord-message>
-    <discord-message author="BDFD Support" bot role-color="#378afa" verified>
-        100
-    </discord-message>
-</discord-messages>
+<p>[: <span id="openCount">0</span> | ]: <span id="openCount">0</span><p>
+	<div id="highlightedText"></div>
+<pre><code>&lt;script&gt;
+    function updateStats() {
+        const text = document.getElementById("editor").value;
+        const words = text.trim().split(/\s+/).filter(word =&gt; word !== "");
+        const wordCount = words.length;
+        let spaceCount = 0;
+        for (let i = 0; i &lt; text.length; i++) { if (text[i] === ' ') { spaceCount++; } }
+        const lineCount = text.split('\n').length;
+        const charCount = text.length;
+
+        document.getElementById("wordCount").textContent = wordCount;
+        document.getElementById("spaceCount").textContent = spaceCount;
+        document.getElementById("lineCount").textContent = lineCount;
+        document.getElementById("charCount").textContent = charCount;
+    }
+
+    function replaceText() {
+        const searchText = document.getElementById("searchText").value;
+        const replaceText = document.getElementById("replaceText").value;
+        const editor = document.getElementById("editor");
+        editor.value = editor.value.replaceAll(searchText, replaceText);
+        updateStats();
+        checkBrackets();
+    }
+
+    function checkBrackets() {
+        const text = document.getElementById("editor").value;
+        let openBrackets = 0;
+        let closeBrackets = 0;
+
+        for (let i = 0; i &lt; text.length; i++) {
+            if (text[i] === '[') { openBrackets++; }
+            else if (text[i] === ']') { closeBrackets++; }
+        }
+
+        document.getElementById("openCount").textContent = openBrackets;
+        document.getElementById("closeCount").textContent = closeBrackets;
+        const errorMessageElement = document.getElementById("error-message");
+
+        if (openBrackets &gt; closeBrackets) { errorMessageElement.textContent = "Error: Brackets are closed."; }
+        else if (openBrackets &lt; closeBrackets) { errorMessageElement.textContent = "Error: empty"; }
+        else { errorMessageElement.textContent = ""; }
+    }
+
+    function toggleHighlight() {
+        const button = document.getElementById("highlightButton");
+        const highlightedTextDiv = document.getElementById("highlightedText");
+        const text = document.getElementById("editor").value;
+        const searchText = document.getElementById("searchText").value;
+        let highlighted = text;
+        if (button.textContent === "Highlighting found") {
+            if (searchText) {
+                highlighted = highlighted.replaceAll(searchText, `&lt;span class="highlight"&gt;${searchText}&lt;/span&gt;`);
+            }
+            highlightedTextDiv.innerHTML = highlighted;
+            button.textContent = "Hide";
+        } else {
+            highlightedTextDiv.innerHTML = "";
+            button.textContent = "Highlighting found";
+        }
+    }
+&lt;/script&gt;
+</code></pre>
 
                 </main>
 
                 <nav class="nav-wrapper" aria-label="Page navigation">
                     <!-- Mobile navigation buttons -->
-                    <a rel="prev" href="../bdscript/lowestRoleWithPerms.html" class="mobile-nav-chapters previous"
+                    <a rel="prev" href="../guides/other/commonErrors.html" class="mobile-nav-chapters previous"
                         title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
                         <i class="fa fa-angle-left"></i>
                     </a>
 
-                    <a rel="next" href="../bdscript/membersCount.html" class="mobile-nav-chapters next"
+                    <a rel="next" href="../resources/introduction.html" class="mobile-nav-chapters next"
                         title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
                         <i class="fa fa-angle-right"></i>
                     </a>
@@ -214,16 +320,16 @@ $max[100;20;50]
         </div>
 
         <nav class="nav-wide-wrapper" aria-label="Page navigation">
-            <a href="../bdscript/lowestRoleWithPerms.html" class="nav-chapters previous" title="Previous chapter"
+            <a href="../guides/other/commonErrors.html" class="nav-chapters previous" title="Previous chapter"
                 aria-label="Previous chapter" aria-keyshortcuts="Left">
-                <a href="../bdscript/lowestRoleWithPerms.html" class="nav-chapters previous" title="Previous page"
+                <a href="../guides/other/commonErrors.html" class="nav-chapters previous" title="Previous page"
                     aria-label="Previous page" aria-keyshortcuts="Left">
                     <i class="fa fa-angle-left"></i>
                 </a>
 
-                <a href="../bdscript/membersCount.html" class="nav-chapters next" title="Next chapter"
+                <a href="../resources/introduction.html" class="nav-chapters next" title="Next chapter"
                     aria-label="Next chapter" aria-keyshortcuts="Right">
-                    <a href="../bdscript/membersCount.html" class="nav-chapters next" title="Next page"
+                    <a href="../resources/introduction.html" class="nav-chapters next" title="Next page"
                         aria-label="Next page" aria-keyshortcuts="Right">
                         <i class="fa fa-angle-right"></i>
                     </a>
