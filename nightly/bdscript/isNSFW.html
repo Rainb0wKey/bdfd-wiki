@@ -195,7 +195,7 @@ Is this channel NSFW?: `$isNSFW[$channelID]`
     <discord-message author="RainbowKey" role-color="#E67E22">
         !example
     </discord-message>
-    <discord-message role-color="#378afa" author="BDFD Support" bot verified>
+    <discord-message bot role-color="#378afa" author="BDFD Support" verified>
         Is this channel NSFW?: <code>true</code>
     </discord-message>
 </discord-messages>
@@ -206,7 +206,7 @@ Is this channel NSFW?: `$isNSFW[$channelID]`
     <discord-message role-color="#E67E22" author="RainbowKey">
         !example
     </discord-message>
-    <discord-message bot author="BDFD Support" role-color="#378afa" verified>
+    <discord-message author="BDFD Support" bot verified role-color="#378afa">
         Is this channel NSFW?: <code>false</code>
     </discord-message>
 </discord-messages>
@@ -281,6 +281,7 @@ Is this channel NSFW?: `$isNSFW[$channelID]`
 
     <!-- Override some theme attributes with the custom settings -->
     <script src="../theme/settings/apply-settings.js"></script>
+    <script src="../theme/autocomplete.js"></script>
 </body>
 
 </html>
