@@ -231,10 +231,10 @@ $addField[First Field;Content;yes;3]
 $addField[Second Field;Cat or dog?;yes;3]
 </code></pre>
 <discord-messages>
-    <discord-message role-color="#E67E22" author="RainbowKey">
+    <discord-message author="RainbowKey" role-color="#E67E22">
         !example
     </discord-message>
-    <discord-message verified role-color="#378afa" bot author="BDFD Support">
+    <discord-message author="BDFD Support" bot role-color="#378afa" verified>
         <discord-embed slot="embeds" embed-title="Embed 1" color="#673ab7">
             <discord-embed-description slot="description">
                 Hello user!
@@ -243,17 +243,17 @@ $addField[Second Field;Cat or dog?;yes;3]
                 I love BDFD
             </discord-embed-footer>
         </discord-embed>
-        <discord-embed slot="embeds" embed-title="Embed 2" color="#673ab7">
+        <discord-embed embed-title="Embed 2" color="#673ab7" slot="embeds">
             <discord-embed-description slot="description">
                 Hello embed!
             </discord-embed-description>
         </discord-embed>
-        <discord-embed slot="embeds" embed-title="Embed 3" color="#673ab7">
+        <discord-embed color="#673ab7" slot="embeds" embed-title="Embed 3">
             <discord-embed-description slot="description">
                 Посхалка
             </discord-embed-description>
             <discord-embed-fields slot="fields">
-                <discord-embed-field inline field-title="First Field" inline-index="1">
+                <discord-embed-field inline inline-index="1" field-title="First Field">
                     Content
                 </discord-embed-field>
                 <discord-embed-field inline inline-index="2" field-title="Second Field">
