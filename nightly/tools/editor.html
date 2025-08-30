@@ -219,7 +219,8 @@
 		<p>Escaped Characters: <span id="escapesCount">0</span></p>
 		<p>Special Characters: <span id="specialChars">0</span></p>
 </div>
-<div id="text-editorui">
+<details id="text-editorui">
+  <summary>Editor</summary>
 	<label for="searchText">Find:</label>
 	<input type="text" id="searchText"><br>
 	<label for="replaceText">Replace:</label>
@@ -227,7 +228,7 @@
 	<button onclick="replaceText()">Replace all</button>
 	<button id="highlightButton" onclick="toggleHighlight()">Find</button><br>
 	<p><i class="fa fa-info" aria-hidden="true"></i> Regex is supported</p>
-</div>
+</details>
 <div id="highlightedText"></div>
 <details id="settings">
   <summary>Settings</summary>
