@@ -234,8 +234,8 @@ $addField[Second Field;Cat or dog?;yes;3]
     <discord-message author="RainbowKey" role-color="#E67E22">
         !example
     </discord-message>
-    <discord-message role-color="#378afa" author="BDFD Support" bot verified>
-        <discord-embed embed-title="Embed 1" color="#673ab7" slot="embeds">
+    <discord-message role-color="#378afa" bot verified author="BDFD Support">
+        <discord-embed color="#673ab7" slot="embeds" embed-title="Embed 1">
             <discord-embed-description slot="description">
                 Hello user!
             </discord-embed-description>
@@ -248,7 +248,7 @@ $addField[Second Field;Cat or dog?;yes;3]
                 Hello embed!
             </discord-embed-description>
         </discord-embed>
-        <discord-embed slot="embeds" embed-title="Embed 3" color="#673ab7">
+        <discord-embed slot="embeds" color="#673ab7" embed-title="Embed 3">
             <discord-embed-description slot="description">
                 Посхалка
             </discord-embed-description>
@@ -256,7 +256,7 @@ $addField[Second Field;Cat or dog?;yes;3]
                 <discord-embed-field inline inline-index="1" field-title="First Field">
                     Content
                 </discord-embed-field>
-                <discord-embed-field inline inline-index="2" field-title="Second Field">
+                <discord-embed-field inline-index="2" inline field-title="Second Field">
                     Cat or dog?
                 </discord-embed-field>
             </discord-embed-fields>
