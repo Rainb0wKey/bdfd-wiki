@@ -4,7 +4,7 @@
 <head>
     <!-- Book generated using mdBook -->
     <meta charset="UTF-8">
-    <title>$if - Bot Designer For Discord - Wiki</title>
+    <title>Character Escaping - Bot Designer For Discord - Wiki</title>
 
 
 
@@ -168,72 +168,22 @@
                         <script src="../theme/breadcrumbs.js"></script>
                     </nav>
 
-                    <a href="https://github.com/NilPointer-Software/bdfd-wiki/edit/dev/src/bdscript/if.md" class="editPage">
+                    <a href="https://github.com/NilPointer-Software/bdfd-wiki/edit/dev/src/tools/escape.md" class="editPage">
                         <i class='fa fa-edit' id="editPageIcon"></i>
                     </a>
 
-                    <h1 id="if"><a class="header" href="#if">$if</a></h1>
-<p>Executes the following block of code if the provided condition is true.</p>
-<h2 id="syntax"><a class="header" href="#syntax">Syntax</a></h2>
-<pre><code>$if[Condition]
-</code></pre>
-<h3 id="parameters"><a class="header" href="#parameters">Parameters</a></h3>
-<ul>
-<li><code>Condition</code> <code>(Type: String || Flag: Required)</code>: Check that will be carried out.</li>
-</ul>
-<h3 id="signs"><a class="header" href="#signs">Signs</a></h3>
-<p><code>==</code> - Equal</p>
-<p><code>!=</code> - Not Equal</p>
-<p><code>&lt;</code> -  Less Than</p>
-<p><code>&gt;</code> - Greater Than</p>
-<p><code>&gt;=</code> - Greater Than Or Equal To</p>
-<p><code>&lt;=</code> - Less Than Or Equal To</p>
-<ul>
-<li>These signs could vary in meaning based on the order or intent of the if statement.</li>
-<li>If you are using text as your <code>x</code> and/or <code>y</code>, you can not use any other signs besides <code>==</code> and <code>!=</code>. However for numbers, you can use any sign shown in the above list.</li>
-</ul>
-<h2 id="example"><a class="header" href="#example">Example</a></h2>
-<pre><code>$nomention
-$if[$authorID==$botOwnerID]
-  $sendMessage[You are the developer of this bot!]
-$endif
-</code></pre>
-<discord-messages>
-    <discord-message role-color="#E67E22" author="RainbowKey" avatar="https://cdn.discordapp.com/avatars/803569638084313098/1c0a70609cdd326f9265bb2040e83b7e.png">
-        !example
-    </discord-message>
-    <discord-message bot role-color="#378afa" verified author="BDFD Support">
-        You are the developer of this bot!
-    </discord-message>
-    <discord-message role-color="#FF0000" author="MineBartekSA" avatar="https://cdn.discordapp.com/avatars/154148273307910144/2cf8dd7b18fd4289835cb5a7fa5eaed3.png">
-        !example
-    </discord-message>
-    <discord-message avatar="https://cdn.discordapp.com/avatars/803569638084313098/1c0a70609cdd326f9265bb2040e83b7e.png" role-color="#E67E22" author="RainbowKey">
-        <discord-italic>Nothing</discord-italic>
-    </discord-message>
-</discord-messages>
-<div id="admonition-read-more" class="admonition admonish-info" role="note" aria-labelledby="admonition-read-more-title">
-<div class="admonition-title">
-<div id="admonition-read-more-title">
-<p>Read more</p>
-</div>
-<a class="admonition-anchor-link" href="#admonition-read-more"></a>
-</div>
-<div>
-<p>For more information, read the the <a href="../guides/ifStatements.html">If Statements Guide</a>.</p>
-</div>
-</div>
+                    <h1 id="character-escaping"><a class="header" href="#character-escaping">Character Escaping</a></h1>
 
                 </main>
 
                 <nav class="nav-wrapper" aria-label="Page navigation">
                     <!-- Mobile navigation buttons -->
-                    <a rel="prev" href="../bdscript/hypesquad.html" class="mobile-nav-chapters previous"
+                    <a rel="prev" href="../guides/other/commonErrors.html" class="mobile-nav-chapters previous"
                         title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
                         <i class="fa fa-angle-left"></i>
                     </a>
 
-                    <a rel="next" href="../bdscript/ignoreChannels.html" class="mobile-nav-chapters next"
+                    <a rel="next" href="../tools/timestamp.html" class="mobile-nav-chapters next"
                         title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
                         <i class="fa fa-angle-right"></i>
                     </a>
@@ -244,16 +194,16 @@ $endif
         </div>
 
         <nav class="nav-wide-wrapper" aria-label="Page navigation">
-            <a href="../bdscript/hypesquad.html" class="nav-chapters previous" title="Previous chapter"
+            <a href="../guides/other/commonErrors.html" class="nav-chapters previous" title="Previous chapter"
                 aria-label="Previous chapter" aria-keyshortcuts="Left">
-                <a href="../bdscript/hypesquad.html" class="nav-chapters previous" title="Previous page"
+                <a href="../guides/other/commonErrors.html" class="nav-chapters previous" title="Previous page"
                     aria-label="Previous page" aria-keyshortcuts="Left">
                     <i class="fa fa-angle-left"></i>
                 </a>
 
-                <a href="../bdscript/ignoreChannels.html" class="nav-chapters next" title="Next chapter"
+                <a href="../tools/timestamp.html" class="nav-chapters next" title="Next chapter"
                     aria-label="Next chapter" aria-keyshortcuts="Right">
-                    <a href="../bdscript/ignoreChannels.html" class="nav-chapters next" title="Next page"
+                    <a href="../tools/timestamp.html" class="nav-chapters next" title="Next page"
                         aria-label="Next page" aria-keyshortcuts="Right">
                         <i class="fa fa-angle-right"></i>
                     </a>
