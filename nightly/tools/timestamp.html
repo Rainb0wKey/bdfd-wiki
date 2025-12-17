@@ -248,36 +248,31 @@
             color: #2c3e50;
         }
 </style>
-<div class="block-time">
-        <h1 id="-unix-time-converter"><a class="header" href="#-unix-time-converter">📅 Unix Time Converter</a></h1>
-<pre><code>    &lt;div class="converter-section"&gt;
-        &lt;h2&gt;&lt;span class="icon"&gt;📅&lt;/span&gt; Date to Unix Time&lt;/h2&gt;
-        &lt;label for="datetimepicker"&gt;Select date and time:&lt;/label&gt;
-        &lt;input type="datetime-local" id="datetimepicker"&gt;
-        
-        &lt;label&gt;Unix Timestamp (seconds):&lt;/label&gt;
+<div class="converter-section">
+            <h2 id="-date-to-unix-time"><a class="header" href="#-date-to-unix-time"><span class="icon">📅</span> Date to Unix Time</a></h2>
+            <label for="datetimepicker">Select date and time:</label>
+            <input type="datetime-local" id="datetimepicker">
+<pre><code>        &lt;label&gt;Unix Timestamp (seconds):&lt;/label&gt;
         &lt;div class="result"&gt;
             &lt;span id="unixtime-display"&gt;0&lt;/span&gt;
             &lt;div class="timestamp" id="timestamp-info"&gt;&lt;/div&gt;
         &lt;/div&gt;
     &lt;/div&gt;
     
-    &lt;div class="converter-section"&gt;
-        &lt;h2&gt;&lt;span class="icon"&gt;⏰&lt;/span&gt; Unix Time to Date&lt;/h2&gt;
-        &lt;label for="unix-input"&gt;Enter Unix Timestamp (seconds):&lt;/label&gt;
-        &lt;input type="number" id="unix-input" placeholder="e.g., 1704067200"&gt;
+&lt;div class="converter-section"&gt;
+&lt;h2&gt;&lt;span class="icon"&gt;⏰&lt;/span&gt; Unix Time to Date&lt;/h2&gt;
+&lt;label for="unix-input"&gt;Enter Unix Timestamp (seconds):&lt;/label&gt;
+&lt;input type="number" id="unix-input" placeholder="e.g., 1704067200"&gt;
         
-        &lt;label&gt;Date and Time:&lt;/label&gt;
-        &lt;div class="result"&gt;
-            &lt;span id="date-display"&gt;Not set&lt;/span&gt;
-            &lt;div class="timestamp" id="date-info"&gt;&lt;/div&gt;
-        &lt;/div&gt;
-    &lt;/div&gt;
-    
-    &lt;div class="current-time"&gt;
-        &lt;span id="current-time"&gt;&lt;/span&gt;
-    &lt;/div&gt;
+&lt;label&gt;Date and Time:&lt;/label&gt;
+&lt;div class="result"&gt;
+    &lt;span id="date-display"&gt;Not set&lt;/span&gt;
+    &lt;div class="timestamp" id="date-info"&gt;&lt;/div&gt;
+&lt;/div&gt;
 </code></pre>
+</div>
+<div class="current-time">
+    <span id="current-time"></span>
 </div>
 <script>
         // Элементы для конвертации из даты в Unix Time
