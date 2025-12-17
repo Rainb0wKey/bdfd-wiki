@@ -174,12 +174,6 @@
 
                     <h1 id="timestamp-converter"><a class="header" href="#timestamp-converter">Timestamp Converter</a></h1>
 <style>
-        .block-time {
-            background-color: white;
-            border-radius: 10px;
-            padding: 5px;
-            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
-        }
         .converter-section {
             margin-bottom: 30px;
             padding: 20px;
@@ -249,22 +243,21 @@
         }
 </style>
 <div class="converter-section">
-            <h2 id="-date-to-unix-time"><a class="header" href="#-date-to-unix-time"><span class="icon">📅</span> Date to Unix Time</a></h2>
-            <label for="datetimepicker">Select date and time:</label>
-            <input type="datetime-local" id="datetimepicker">
-<pre><code>        &lt;label&gt;Unix Timestamp (seconds):&lt;/label&gt;
-        &lt;div class="result"&gt;
+        <h2 id="-date-to-unix-time"><a class="header" href="#-date-to-unix-time"><span class="icon">📅</span> Date to Unix Time</a></h2>
+        <label for="datetimepicker">Select date and time:</label>
+        <input type="datetime-local" id="datetimepicker">
+<pre><code>    &lt;label&gt;Unix Timestamp (seconds):&lt;/label&gt;
+    &lt;div class="result"&gt;
             &lt;span id="unixtime-display"&gt;0&lt;/span&gt;
             &lt;div class="timestamp" id="timestamp-info"&gt;&lt;/div&gt;
-        &lt;/div&gt;
     &lt;/div&gt;
-    
-&lt;div class="converter-section"&gt;
-&lt;h2&gt;&lt;span class="icon"&gt;⏰&lt;/span&gt; Unix Time to Date&lt;/h2&gt;
-&lt;label for="unix-input"&gt;Enter Unix Timestamp (seconds):&lt;/label&gt;
-&lt;input type="number" id="unix-input" placeholder="e.g., 1704067200"&gt;
-        
-&lt;label&gt;Date and Time:&lt;/label&gt;
+</code></pre>
+</div>
+<div class="converter-section">
+    <h2 id="-unix-time-to-date"><a class="header" href="#-unix-time-to-date"><span class="icon">⏰</span> Unix Time to Date</a></h2>
+    <label for="unix-input">Enter Unix Timestamp (seconds):</label>
+    <input type="number" id="unix-input" placeholder="e.g., 1704067200">
+<pre><code>&lt;label&gt;Date and Time:&lt;/label&gt;
 &lt;div class="result"&gt;
     &lt;span id="date-display"&gt;Not set&lt;/span&gt;
     &lt;div class="timestamp" id="date-info"&gt;&lt;/div&gt;
