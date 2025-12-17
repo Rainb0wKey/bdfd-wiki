@@ -260,10 +260,9 @@
             color: #2c3e50;
         }
 </style>
-<pre><code>&lt;div class="container"&gt;
-    &lt;h1&gt;📅 Unix Time Converter&lt;/h1&gt;
-    
-    &lt;div class="converter-section"&gt;
+<div class="container">
+        <h1 id="-unix-time-converter"><a class="header" href="#-unix-time-converter">📅 Unix Time Converter</a></h1>
+<pre><code>    &lt;div class="converter-section"&gt;
         &lt;h2&gt;&lt;span class="icon"&gt;📅&lt;/span&gt; Date to Unix Time&lt;/h2&gt;
         &lt;label for="datetimepicker"&gt;Select date and time:&lt;/label&gt;
         &lt;input type="datetime-local" id="datetimepicker"&gt;
@@ -290,15 +289,14 @@
     &lt;div class="current-time"&gt;
         &lt;span id="current-time"&gt;&lt;/span&gt;
     &lt;/div&gt;
-&lt;/div&gt;
-
-&lt;script&gt;
-    // Элементы для конвертации из даты в Unix Time
-    const datetimePicker = document.getElementById('datetimepicker');
-    const unixTimeDisplay = document.getElementById('unixtime-display');
-    const timestampInfo = document.getElementById('timestamp-info');
-    
-    // Элементы для конвертации из Unix Time в дату
+</code></pre>
+</div>
+<script>
+        // Элементы для конвертации из даты в Unix Time
+        const datetimePicker = document.getElementById('datetimepicker');
+        const unixTimeDisplay = document.getElementById('unixtime-display');
+        const timestampInfo = document.getElementById('timestamp-info');
+<pre><code>    // Элементы для конвертации из Unix Time в дату
     const unixInput = document.getElementById('unix-input');
     const dateDisplay = document.getElementById('date-display');
     const dateInfo = document.getElementById('date-info');
@@ -453,9 +451,8 @@
         // Вставляем кнопки после поля ввода Unix Time
         unixInput.parentNode.insertBefore(quickButtons, unixInput.nextSibling);
     });
-&lt;/script&gt;
 </code></pre>
-
+</script>
                 </main>
 
                 <nav class="nav-wrapper" aria-label="Page navigation">
