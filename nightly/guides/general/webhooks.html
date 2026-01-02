@@ -174,13 +174,25 @@
 
                     <h1 id="webhooks"><a class="header" href="#webhooks">Webhooks</a></h1>
 <p>This wiki explains how to create and use webhooks in BDFD.</p>
-<h2 id="webhookcreate"><a class="header" href="#webhookcreate">$webhookCreate</a></h2>
+<h2 id="content"><a class="header" href="#content">Content</a></h2>
+<p><a href="#functions-used"><strong>Functions Used</strong></a> &gt; <a href="#webhookCreate"><strong>$webhookCreate[]</strong></a></p>
+<h2 id="functions-used"><a class="header" href="#functions-used">Functions Used</a></h2>
+<ul>
+<li><a href="../../bdscript/webhookCreate.html"><code>$webhookCreate[]</code></a></li>
+</ul>
+<h2 id="support-functions-used"><a class="header" href="#support-functions-used">Support Functions Used</a></h2>
+<ul>
+<li><a href="../../bdscript/var.html"><code>$var[]</code></a></li>
+</ul>
+<h1 id="webhookcreate"><a class="header" href="#webhookcreate">$webhookCreate</a></h1>
 <p>Creates and returns the URL of the newly created webhook <strong>(webhook URLs should be kept private, treat them like a password)</strong>.</p>
 <blockquote>
 <p><strong>Note:</strong> Only ten webhooks can be created per channel.</p>
 </blockquote>
+<h2 id="syntax"><a class="header" href="#syntax">Syntax</a></h2>
 <pre><code>$webhookCreate[Channel ID;Username;(Avatar URL)]
 </code></pre>
+<h3 id="parameters"><a class="header" href="#parameters">Parameters</a></h3>
 <h2 id="editing-a-webhook"><a class="header" href="#editing-a-webhook">Editing A Webhook</a></h2>
 <pre><code>$webhookAvatarURL[webhookURL;avatarURL]
 </code></pre>
