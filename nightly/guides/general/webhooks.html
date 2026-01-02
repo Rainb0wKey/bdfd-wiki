@@ -212,6 +212,15 @@
 <pre><code>$webhookCreate[Channel ID;Username;(Avatar URL)]
 </code></pre>
 <h3 id="parameters"><a class="header" href="#parameters">Parameters</a></h3>
+<ul>
+<li><code>Channel ID</code> <code>(Type: Snowflake || Flag: Required)</code>: The channel in which the webhook will be created.</li>
+<li><code>Username</code> <code>(Type: String || Flag: Required)</code>: Name of the webhook that will be displayed in the channel.</li>
+<li><code>Avatar URL</code> <code>(Type: String || Flag: Vacantable)</code>: Avatar of the webhook that will be displayed in the channel.</li>
+</ul>
+<h2 id="example"><a class="header" href="#example">Example</a></h2>
+<pre><code>$nomention
+$webhookCreate[$channelID;BDFD Webhook 🤖]
+</code></pre>
 <h2 id="editing-a-webhook"><a class="header" href="#editing-a-webhook">Editing A Webhook</a></h2>
 <pre><code>$webhookAvatarURL[webhookURL;avatarURL]
 </code></pre>
@@ -238,7 +247,7 @@
 <pre><code>$webhookDelete[webhookURL]
 </code></pre>
 <p>Deletes the provided webhook.</p>
-<h2 id="example"><a class="header" href="#example">Example</a></h2>
+<h2 id="example-1"><a class="header" href="#example-1">Example</a></h2>
 <pre><code>$nomention
 $var[webhookURL;$webhookCreate[$channelID;Cool Webhook;]]
 $webhookContent[$var[webhookURL];Hello World!]
