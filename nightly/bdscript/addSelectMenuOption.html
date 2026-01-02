@@ -175,11 +175,11 @@
                     <h1 id="addselectmenuoption"><a class="header" href="#addselectmenuoption">$addSelectMenuOption</a></h1>
 <p>Adds a new select menu option to an existing select menu.</p>
 <h2 id="syntax"><a class="header" href="#syntax">Syntax</a></h2>
-<pre><code>$addSelectMenuOption[Menu option ID;Label;Value;Description;(Default?;Emoji;Message ID)]
+<pre><code>$addSelectMenuOption[Menu ID;Label;Value;Description;(Default?;Emoji;Message ID)]
 </code></pre>
 <h3 id="parameters"><a class="header" href="#parameters">Parameters</a></h3>
 <ul>
-<li><code>Menu option ID</code> <code>(Type: String || Flag: Required)</code>: The ID used in <a href="./newSelectMenu.html"><code>$newSelectMenu[]</code></a>.</li>
+<li><code>Menu ID</code> <code>(Type: String || Flag: Required)</code>: The ID used in <a href="./newSelectMenu.html"><code>$newSelectMenu[]</code></a>.</li>
 <li><code>Label</code> <code>(Type: String || Flag: Required)</code>: The name of the option.</li>
 <li><code>Value</code> <code>(Type: String || Flag: Required)</code>: It’s the data that gets passed to the <code>$onInteraction[]</code> callback. <strong>The value has to be unique in the select menu!</strong></li>
 <li><code>Description</code> <code>(Type: String || Flag: Emptiable)</code>: A text which shows up under the <code>Label</code>.</li>
