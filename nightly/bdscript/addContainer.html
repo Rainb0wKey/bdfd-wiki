@@ -188,6 +188,17 @@
 <p>A message can have a maximum of 20 container bodies (40 container components).</p>
 </div>
 </div>
+<div id="admonition-its-important" class="admonition admonish-danger" role="note" aria-labelledby="admonition-its-important-title">
+<div class="admonition-title">
+<div id="admonition-its-important-title">
+<p>It’s important!</p>
+</div>
+<a class="admonition-anchor-link" href="#admonition-its-important"></a>
+</div>
+<div>
+<p>The container body must contain <a href="#container-components">container components</a>, otherwise the function will not work!</p>
+</div>
+</div>
 <h3 id="parameters"><a class="header" href="#parameters">Parameters</a></h3>
 <ul>
 <li><code>Container name</code> <code>(Type: String || Flag: Required)</code>: Name for attaching other container components to the container body.</li>
@@ -207,18 +218,23 @@
 <li><code>Color hex</code> <code>(Type: Color || Flag: Vacantable)</code>: The <a href="https://htmlcolorcodes.com/color-picker">color hex</a> to set the container border color as. You can also use color integer number.</li>
 <li><code>Spoiler?</code> <code>(Type: Bool || Flag: Optional)</code>: Will the container have a spoiler effect?</li>
 </ul>
+<h2 id="container-components"><a class="header" href="#container-components">Container Components</a></h2>
+<ul>
+<li><code>$addTextDisplay[]</code></li>
+<li><code>$addSeparator[]</code></li>
+</ul>
 <h2 id="example"><a class="header" href="#example">Example</a></h2>
 <pre><code>$nomention
 $addContainer[Container1;#673ab7;false]
 $addTextDisplay[Hello world!;Container1]
 </code></pre>
 <discord-messages>
-    <discord-message author="RainbowKey" avatar="https://cdn.discordapp.com/avatars/803569638084313098/1c0a70609cdd326f9265bb2040e83b7e.png" role-color="#E67E22">
+    <discord-message role-color="#E67E22" avatar="https://cdn.discordapp.com/avatars/803569638084313098/1c0a70609cdd326f9265bb2040e83b7e.png" author="RainbowKey">
         !example
     </discord-message>
-    <discord-message author="BDFD Support" avatar="https://cdn.discordapp.com/avatars/1009018156494368798/612acd98b01ab110615a2524ee2b6360.png" verified role-color="#378afa" bot>
+    <discord-message verified author="BDFD Support" avatar="https://cdn.discordapp.com/avatars/1009018156494368798/612acd98b01ab110615a2524ee2b6360.png" bot role-color="#378afa">
         <none>
-        <discord-embed slot="embeds" color="#673ab7">
+        <discord-embed color="#673ab7" slot="embeds">
             <discord-embed-description slot="description">
                 Hello world!
             </discord-embed-description>
