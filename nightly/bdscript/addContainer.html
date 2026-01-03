@@ -175,14 +175,25 @@
                     <h1 id="addcontainer"><a class="header" href="#addcontainer">$addContainer</a></h1>
 <p>Adds a container component to the message.</p>
 <h2 id="syntax"><a class="header" href="#syntax">Syntax</a></h2>
-<pre><code>$addContainer[Container ID;(Color hex;Spoiler?)]
+<pre><code>$addContainer[Container name;(Color hex;Spoiler?)]
 </code></pre>
 <h3 id="parameters"><a class="header" href="#parameters">Parameters</a></h3>
 <ul>
-<li><code>Container ID</code> <code>(Type: String || Flag: Required)</code>: Main ID for attaching other container elements to container.</li>
-<li><code>Color hex</code> <code>(Type: Color || Flag: Vacantable)</code>: The <a href="https://htmlcolorcodes.com/color-picker">color hex</a> to set the container border color as. You can also use color integer number.</li>
-<li><code>Spoiler?</code> <code>(Type: Bool || Flag: Optional)</code>: Will the container have a spoiler effect?</li>
+<li><code>Container name</code> <code>(Type: String || Flag: Required)</code>: Name for attaching other container elements to container.</li>
 </ul>
+<div id="admonition-warning" class="admonition admonish-warning" role="note" aria-labelledby="admonition-warning-title">
+<div class="admonition-title">
+<div id="admonition-warning-title">
+<p>Warning</p>
+</div>
+<a class="admonition-anchor-link" href="#admonition-warning"></a>
+</div>
+<div>
+<p>You can’t have multiple containers <strong>with the same name</strong> in one message.</p>
+</div>
+</div>
+- `Color hex` `(Type: Color || Flag: Vacantable)`: The [color hex](https://htmlcolorcodes.com/color-picker) to set the container border color as. You can also use color integer number.
+- `Spoiler?` `(Type: Bool || Flag: Optional)`: Will the container have a spoiler effect?
 <h2 id="example"><a class="header" href="#example">Example</a></h2>
 <pre><code>$nomention
 $addContainer[Container1;#673ab7;false]
