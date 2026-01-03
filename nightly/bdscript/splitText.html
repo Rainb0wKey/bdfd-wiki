@@ -173,10 +173,7 @@
                     </a>
 
                     <h1 id="splittext"><a class="header" href="#splittext">$splitText</a></h1>
-<p>Retrieves a value from <a href="./textSplit.html"><code>$textSplit[]</code></a>.</p>
-<blockquote>
-<p>⚠️ This function is used with <code>$textSplit[]</code>.</p>
-</blockquote>
+<p>Each separated text has a number, i.e. an index. <code>$splitText</code> is a function that returns one of the elements of the separated text by an index or the sign <code>&lt;</code> - the very first element, or <code>&gt;</code> - the very last element.</p>
 <h2 id="syntax"><a class="header" href="#syntax">Syntax</a></h2>
 <pre><code>$splitText[Index]
 </code></pre>
@@ -186,15 +183,19 @@
 </ul>
 <h2 id="example"><a class="header" href="#example">Example</a></h2>
 <pre><code>$nomention
-$textSplit[Hi-Hello-Hey;-]
-$splitText[2]
+$textSplit[hello world !; ]
+&gt; $splitText[&lt;]
+&gt; $splitText[2]
+&gt; $splitText[&gt;]
 </code></pre>
-<blockquote>
-<p>The above example will return output as <code>Hello</code>.</p>
-</blockquote>
-<blockquote>
-<p>For more info, see the <a href="../guides/general/textSplitting.html">Text Splitting Guide</a>.</p>
-</blockquote>
+<discord-messages>
+    <discord-message role-color="#E67E22" author="RainbowKey" avatar="https://cdn.discordapp.com/avatars/803569638084313098/1c0a70609cdd326f9265bb2040e83b7e.png">
+        !example
+    </discord-message>
+    <discord-message bot role-color="#378afa" author="BDFD Support" avatar="https://cdn.discordapp.com/avatars/1009018156494368798/612acd98b01ab110615a2524ee2b6360.png" verified>
+        <discord-quote>hello<br />world<br />!</discord-quote>
+    </discord-message>
+</discord-messages>
 
                 </main>
 
