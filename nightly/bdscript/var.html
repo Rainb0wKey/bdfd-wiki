@@ -196,9 +196,17 @@ Instead, it creates the variable automatically during it’s runtime and gets de
 <li><code>Name</code> <code>(Type: String || Flag: Required)</code>: The name of the temporary variable.</li>
 <li><code>Value</code> <code>(Type: String || Flag: Vacantable)</code>: The data to store</li>
 </ul>
-<blockquote>
-<p>📌 To retrieve the temporary stored value, type <code>$var[Name]</code>, where <em>“Name”</em> is the temporary variable name.</p>
-</blockquote>
+<div id="admonition-info" class="admonition admonish-info" role="note" aria-labelledby="admonition-info-title">
+<div class="admonition-title">
+<div id="admonition-info-title">
+<p>Info</p>
+</div>
+<a class="admonition-anchor-link" href="#admonition-info"></a>
+</div>
+<div>
+<p>To retrieve the temporary stored value, type <code>$var[Name]</code>, where <em>“Name”</em> is the temporary variable name.</p>
+</div>
+</div>
 <h2 id="example"><a class="header" href="#example">Example</a></h2>
 <pre><code>$nomention
 $argsCheck[&gt;1;Type a message!]
