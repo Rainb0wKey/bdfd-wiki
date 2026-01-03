@@ -179,13 +179,14 @@
 </code></pre>
 <h3 id="parameters"><a class="header" href="#parameters">Parameters</a></h3>
 <ul>
-<li><code>Container ID</code> <code>(Type: String || Flag: Required)</code>:</li>
+<li><code>Container ID</code> <code>(Type: String || Flag: Required)</code>: Main ID for attaching other container elements to container.</li>
 <li><code>Color hex</code> <code>(Type: Color || Flag: Vacantable)</code>: The <a href="https://htmlcolorcodes.com/color-picker">color hex</a> to set the container border color as. You can also use color integer number.</li>
-<li><code>Spoiler?</code> <code>(Type: Bool || Flag: Optional)</code>:</li>
+<li><code>Spoiler?</code> <code>(Type: Bool || Flag: Optional)</code>: Will the container have a spoiler effect?</li>
 </ul>
 <h2 id="example"><a class="header" href="#example">Example</a></h2>
 <pre><code>$nomention
 $addContainer[Container1;#673ab7;false]
+$addTextDisplay[Hello world!;Container1]
 </code></pre>
 
                 </main>
