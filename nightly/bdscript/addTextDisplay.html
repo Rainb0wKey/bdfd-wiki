@@ -4,7 +4,7 @@
 <head>
     <!-- Book generated using mdBook -->
     <meta charset="UTF-8">
-    <title>$ephemeral - Bot Designer For Discord - Wiki</title>
+    <title>$addTextDisplay - Bot Designer For Discord - Wiki</title>
 
 
 
@@ -168,59 +168,84 @@
                         <script src="../theme/breadcrumbs.js"></script>
                     </nav>
 
-                    <a href="https://github.com/NilPointer-Software/bdfd-wiki/edit/dev/src/bdscript/ephemeral.md" class="editPage">
+                    <a href="https://github.com/NilPointer-Software/bdfd-wiki/edit/dev/src/bdscript/addTextDisplay.md" class="editPage">
                         <i class='fa fa-edit' id="editPageIcon"></i>
                     </a>
 
-                    <h1 id="ephemeral"><a class="header" href="#ephemeral">$ephemeral</a></h1>
-<p>Makes the bot’s response ephemeral.</p>
-<div id="admonition-warning" class="admonition admonish-warning" role="note" aria-labelledby="admonition-warning-title">
+                    <h1 id="adddisplaytext"><a class="header" href="#adddisplaytext">$addDisplayText</a></h1>
+<p>Adds a text display component to the container body or message.</p>
+<h2 id="syntax"><a class="header" href="#syntax">Syntax</a></h2>
+<pre><code>$addDisplayText[Content;(Container name)]
+</code></pre>
+<div id="admonition-limit" class="admonition admonish-warning" role="note" aria-labelledby="admonition-limit-title">
 <div class="admonition-title">
-<div id="admonition-warning-title">
-<p>Warning</p>
+<div id="admonition-limit-title">
+<p>Limit</p>
 </div>
-<a class="admonition-anchor-link" href="#admonition-warning"></a>
+<a class="admonition-anchor-link" href="#admonition-limit"></a>
 </div>
 <div>
-<p>Can only be used in <a href="../guides/general/interactions/slashCommands/aboutSlashCommands.html">Slash Commands</a>, <a href="../callbacks/onInteraction.html"><code>$onInteraction</code></a> and <a href="../callbacks/onInteractionComplex.html"><code>$onInteraction[]</code></a>.</p>
+<p>This function counts as a container component. A message can have a maximum of 40 container components.</p>
 </div>
 </div>
-<h2 id="syntax"><a class="header" href="#syntax">Syntax</a></h2>
-<pre><code>$ephemeral
-</code></pre>
+<h3 id="parameters"><a class="header" href="#parameters">Parameters</a></h3>
+<ul>
+<li><code>Content</code> <code>(Type: String || Flag: Required)</code>:</li>
+</ul>
+<div id="admonition-info" class="admonition admonish-info" role="note" aria-labelledby="admonition-info-title">
+<div class="admonition-title">
+<div id="admonition-info-title">
+<p>Info</p>
+</div>
+<a class="admonition-anchor-link" href="#admonition-info"></a>
+</div>
+<div>
+<p>Supports highlighting.</p>
+</div>
+</div>
+<ul>
+<li><code>Container name</code> <code>(Type: String || Flag: Optional)</code>:</li>
+</ul>
 <h2 id="example"><a class="header" href="#example">Example</a></h2>
 <pre><code>$nomention
-$ephemeral
-Hello!
+$addTextDisplay[Simple text]
+$addContainer[Container1;#673ab7;false]
+$addTextDisplay[Hello world!;Container1]
 </code></pre>
 <discord-messages>
-    <discord-message role-color="#378afa" verified author="BDFD Support" bot avatar="https://cdn.discordapp.com/avatars/1009018156494368798/612acd98b01ab110615a2524ee2b6360.png" ephemeral>
-        <discord-command command="/example" avatar="https://cdn.discordapp.com/avatars/803569638084313098/1c0a70609cdd326f9265bb2040e83b7e.png" slot="reply" role-color="#E67E22" author="SnowyKey">
-        </discord-command>
-        Hello!
+    <discord-message role-color="#E67E22" avatar="https://cdn.discordapp.com/avatars/803569638084313098/1c0a70609cdd326f9265bb2040e83b7e.png" author="RainbowKey">
+        !example
+    </discord-message>
+    <discord-message author="BDFD Support" verified avatar="https://cdn.discordapp.com/avatars/1009018156494368798/612acd98b01ab110615a2524ee2b6360.png" bot role-color="#378afa">
+        Simple text
+        <discord-embed slot="embeds" color="#673ab7">
+            <discord-embed-description slot="description">
+                Hello world!
+            </discord-embed-description>
+        </discord-embed>
     </discord-message>
 </discord-messages>
-<ul>
-<li>Without <code>$ephemeral</code>:</li>
-</ul>
-<discord-messages>
-    <discord-message author="BDFD Support" avatar="https://cdn.discordapp.com/avatars/1009018156494368798/612acd98b01ab110615a2524ee2b6360.png" bot role-color="#378afa" verified>
-        <discord-command avatar="https://cdn.discordapp.com/avatars/803569638084313098/1c0a70609cdd326f9265bb2040e83b7e.png" role-color="#E67E22" command="/example" author="SnowyKey" slot="reply">
-        </discord-command>
-        Hello!
-    </discord-message>
-</discord-messages>
-
+<div id="admonition-what-is-this" class="admonition admonish-question" role="note" aria-labelledby="admonition-what-is-this-title">
+<div class="admonition-title">
+<div id="admonition-what-is-this-title">
+<p>What is this?</p>
+</div>
+<a class="admonition-anchor-link" href="#admonition-what-is-this"></a>
+</div>
+<div>
+<p>How <a href="./addContainer.html"><code>$addContainer[]</code></a> works?</p>
+</div>
+</div>
                 </main>
 
                 <nav class="nav-wrapper" aria-label="Page navigation">
                     <!-- Mobile navigation buttons -->
-                    <a rel="prev" href="../bdscript/endtry.html" class="mobile-nav-chapters previous"
+                    <a rel="prev" href="../bdscript/addSelectMenuOption.html" class="mobile-nav-chapters previous"
                         title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
                         <i class="fa fa-angle-left"></i>
                     </a>
 
-                    <a rel="next" href="../bdscript/error.html" class="mobile-nav-chapters next"
+                    <a rel="next" href="../bdscript/addTextInput.html" class="mobile-nav-chapters next"
                         title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
                         <i class="fa fa-angle-right"></i>
                     </a>
@@ -231,16 +256,16 @@ Hello!
         </div>
 
         <nav class="nav-wide-wrapper" aria-label="Page navigation">
-            <a href="../bdscript/endtry.html" class="nav-chapters previous" title="Previous chapter"
+            <a href="../bdscript/addSelectMenuOption.html" class="nav-chapters previous" title="Previous chapter"
                 aria-label="Previous chapter" aria-keyshortcuts="Left">
-                <a href="../bdscript/endtry.html" class="nav-chapters previous" title="Previous page"
+                <a href="../bdscript/addSelectMenuOption.html" class="nav-chapters previous" title="Previous page"
                     aria-label="Previous page" aria-keyshortcuts="Left">
                     <i class="fa fa-angle-left"></i>
                 </a>
 
-                <a href="../bdscript/error.html" class="nav-chapters next" title="Next chapter"
+                <a href="../bdscript/addTextInput.html" class="nav-chapters next" title="Next chapter"
                     aria-label="Next chapter" aria-keyshortcuts="Right">
-                    <a href="../bdscript/error.html" class="nav-chapters next" title="Next page"
+                    <a href="../bdscript/addTextInput.html" class="nav-chapters next" title="Next page"
                         aria-label="Next page" aria-keyshortcuts="Right">
                         <i class="fa fa-angle-right"></i>
                     </a>
