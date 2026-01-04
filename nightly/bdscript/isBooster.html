@@ -174,9 +174,17 @@
 
                     <h1 id="isbooster"><a class="header" href="#isbooster">$isBooster</a></h1>
 <p>Returns if user is boosting guild with nitro.</p>
-<blockquote>
+<div id="admonition-info" class="admonition admonish-info" role="note" aria-labelledby="admonition-info-title">
+<div class="admonition-title">
+<div id="admonition-info-title">
+<p>Info</p>
+</div>
+<a class="admonition-anchor-link" href="#admonition-info"></a>
+</div>
+<div>
 <p>“true” means the user is a booster, “false” means it isn’t.</p>
-</blockquote>
+</div>
+</div>
 <h2 id="syntax"><a class="header" href="#syntax">Syntax</a></h2>
 <pre><code>$isBooster[(User ID;Guild ID)]
 </code></pre>
@@ -186,16 +194,26 @@
 Booster? $isBooster[$mentioned[1]]
 </code></pre>
 <discord-messages>
-    <discord-message author="RainbowKey" role-color="#E67E22" avatar="https://cdn.discordapp.com/avatars/803569638084313098/1c0a70609cdd326f9265bb2040e83b7e.png">
+    <discord-message avatar="https://cdn.discordapp.com/avatars/803569638084313098/1c0a70609cdd326f9265bb2040e83b7e.png" role-color="#E67E22" author="RainbowKey">
         !example <discord-mention>kubastick</discord-mention>
     </discord-message>
-    <discord-message avatar="https://cdn.discordapp.com/avatars/1009018156494368798/612acd98b01ab110615a2524ee2b6360.png" role-color="#378afa" verified author="BDFD Support" bot>
+    <discord-message role-color="#378afa" verified bot author="BDFD Support" avatar="https://cdn.discordapp.com/avatars/1009018156494368798/612acd98b01ab110615a2524ee2b6360.png">
         Booster? true
     </discord-message>
 </discord-messages>
+<div id="admonition-tip" class="admonition admonish-tip" role="note" aria-labelledby="admonition-tip-title">
+<div class="admonition-title">
+<div id="admonition-tip-title">
+<p>Tip</p>
+</div>
+<a class="admonition-anchor-link" href="#admonition-tip"></a>
+</div>
+<div>
+<p>You can use empty <code>$isBooster[]</code> to get the information about author.</p>
+</div>
+</div>
 <blockquote>
-<p>You can use <code>$isBooster[]</code> to get the status of author.<br />
-<a href="./mentioned.html">How <code>$mentioned[]</code> works?</a></p>
+<p><a href="./mentioned.html">How <code>$mentioned[]</code> works?</a></p>
 </blockquote>
 
                 </main>
