@@ -4,7 +4,7 @@
 <head>
     <!-- Book generated using mdBook -->
     <meta charset="UTF-8">
-    <title>$guildExists - Bot Designer For Discord - Wiki</title>
+    <title>$addSeparator - Bot Designer For Discord - Wiki</title>
 
 
 
@@ -168,45 +168,69 @@
                         <script src="../theme/breadcrumbs.js"></script>
                     </nav>
 
-                    <a href="https://github.com/NilPointer-Software/bdfd-wiki/edit/dev/src/bdscript/guildExists.md" class="editPage">
+                    <a href="https://github.com/NilPointer-Software/bdfd-wiki/edit/dev/src/bdscript/addSeparator.md" class="editPage">
                         <i class='fa fa-edit' id="editPageIcon"></i>
                     </a>
 
-                    <h1 id="guildexists"><a class="header" href="#guildexists">$guildExists</a></h1>
-<p>Checks if the provided guild/server exists.</p>
-<blockquote>
-<p>Returns <code>true</code> if the server exists. Returns <code>false</code> if the server doesn’t exist or the bot isn’t present in the provided server.</p>
-</blockquote>
+                    <h1 id="addseparator"><a class="header" href="#addseparator">$addSeparator</a></h1>
+<div class="functionTags">
+  <span id="ComponentTag">Components v2</span>
+</div>
+<p>Adds a separator component to the container body or message.</p>
 <h2 id="syntax"><a class="header" href="#syntax">Syntax</a></h2>
-<pre><code>$guildExists[Guild ID]
+<pre><code>$addSeparator[(Divider?;Spacing type;Container name)]
 </code></pre>
+<div id="admonition-limit" class="admonition admonish-warning" role="note" aria-labelledby="admonition-limit-title">
+<div class="admonition-title">
+<div id="admonition-limit-title">
+<p>Limit</p>
+</div>
+<a class="admonition-anchor-link" href="#admonition-limit"></a>
+</div>
+<div>
+<p>This function counts as a container component. A message can have a maximum of 40 container components.</p>
+</div>
+</div>
 <h3 id="parameters"><a class="header" href="#parameters">Parameters</a></h3>
 <ul>
-<li><code>Guild ID</code> <code>(Type: Snowflake, String || Flag: Emptiable)</code>: The ID of the hypothetical server.</li>
+<li><code>Divider?</code> <code>(Type: Bool || Flag: Vacantable)</code>: Should the message show a visual divider?</li>
+<li><code>Spacing type</code> <code>(Type: Enum || Flag: Vacantable)</code>: Type of the divider. <a href="#spacing-types">Possible types</a>.</li>
+<li><code>Container name</code> <code>(Type: String || Flag: Optional)</code>: The name of the container body to which the component will be attached. If nothing is specified, it will be attached to the message.</li>
+</ul>
+<h3 id="spacing-types"><a class="header" href="#spacing-types">Spacing Types</a></h3>
+<ul>
+<li><code>small</code></li>
+<li><code>large</code></li>
 </ul>
 <h2 id="example"><a class="header" href="#example">Example</a></h2>
 <pre><code>$nomention
-$guildExists[$message[1]]
+$addTextDisplay[Hello world!]
+$addSeparator[]
+$addTextDisplay[I love BDFD]
+$addSeparator[false]
+$addTextDisplay[Components v2]
 </code></pre>
-<discord-messages>
-    <discord-message avatar="https://cdn.discordapp.com/avatars/803569638084313098/1c0a70609cdd326f9265bb2040e83b7e.png" role-color="#E67E22" author="RainbowKey">
-        !example 566363823137882154
-    </discord-message>
-    <discord-message bot verified author="BDFD Support" role-color="#378afa">
-        true
-    </discord-message>
-</discord-messages>
-
+<div id="admonition-what-is-this" class="admonition admonish-question" role="note" aria-labelledby="admonition-what-is-this-title">
+<div class="admonition-title">
+<div id="admonition-what-is-this-title">
+<p>What is this?</p>
+</div>
+<a class="admonition-anchor-link" href="#admonition-what-is-this"></a>
+</div>
+<div>
+<p>How <a href="./addTextDisplay.html"><code>$addTextDisplay[]</code></a> works?</p>
+</div>
+</div>
                 </main>
 
                 <nav class="nav-wrapper" aria-label="Page navigation">
                     <!-- Mobile navigation buttons -->
-                    <a rel="prev" href="../bdscript/guildBanner.html" class="mobile-nav-chapters previous"
+                    <a rel="prev" href="../bdscript/addSelectMenuOption.html" class="mobile-nav-chapters previous"
                         title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
                         <i class="fa fa-angle-left"></i>
                     </a>
 
-                    <a rel="next" href="../bdscript/guildID.html" class="mobile-nav-chapters next"
+                    <a rel="next" href="../bdscript/addTextDisplay.html" class="mobile-nav-chapters next"
                         title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
                         <i class="fa fa-angle-right"></i>
                     </a>
@@ -217,16 +241,16 @@ $guildExists[$message[1]]
         </div>
 
         <nav class="nav-wide-wrapper" aria-label="Page navigation">
-            <a href="../bdscript/guildBanner.html" class="nav-chapters previous" title="Previous chapter"
+            <a href="../bdscript/addSelectMenuOption.html" class="nav-chapters previous" title="Previous chapter"
                 aria-label="Previous chapter" aria-keyshortcuts="Left">
-                <a href="../bdscript/guildBanner.html" class="nav-chapters previous" title="Previous page"
+                <a href="../bdscript/addSelectMenuOption.html" class="nav-chapters previous" title="Previous page"
                     aria-label="Previous page" aria-keyshortcuts="Left">
                     <i class="fa fa-angle-left"></i>
                 </a>
 
-                <a href="../bdscript/guildID.html" class="nav-chapters next" title="Next chapter"
+                <a href="../bdscript/addTextDisplay.html" class="nav-chapters next" title="Next chapter"
                     aria-label="Next chapter" aria-keyshortcuts="Right">
-                    <a href="../bdscript/guildID.html" class="nav-chapters next" title="Next page"
+                    <a href="../bdscript/addTextDisplay.html" class="nav-chapters next" title="Next page"
                         aria-label="Next page" aria-keyshortcuts="Right">
                         <i class="fa fa-angle-right"></i>
                     </a>
