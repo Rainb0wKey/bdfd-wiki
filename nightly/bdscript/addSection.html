@@ -4,7 +4,7 @@
 <head>
     <!-- Book generated using mdBook -->
     <meta charset="UTF-8">
-    <title>$replaceText - Bot Designer For Discord - Wiki</title>
+    <title>$addSection - Bot Designer For Discord - Wiki</title>
 
 
 
@@ -168,47 +168,76 @@
                         <script src="../theme/breadcrumbs.js"></script>
                     </nav>
 
-                    <a href="https://github.com/NilPointer-Software/bdfd-wiki/edit/dev/src/bdscript/replaceText.md" class="editPage">
+                    <a href="https://github.com/NilPointer-Software/bdfd-wiki/edit/dev/src/bdscript/addSection.md" class="editPage">
                         <i class='fa fa-edit' id="editPageIcon"></i>
                     </a>
 
-                    <h1 id="replacetext"><a class="header" href="#replacetext">$replaceText</a></h1>
-<p>Replaces ‘Sample’ with ‘New’ from ‘Text’, you can choose how many ‘Sample’ is replaced by inputting ‘Amount’.</p>
+                    <h1 id="addsection"><a class="header" href="#addsection">$addSection</a></h1>
+<div class="functionTags">
+  <span id="ComponentTag">Components v2</span>
+</div>
+<p>Adds a section to the message.</p>
 <h2 id="syntax"><a class="header" href="#syntax">Syntax</a></h2>
-<pre><code>$replaceText[Text;Sample;New;(Amount)]
+<pre><code>$addSection[Section name]
 </code></pre>
+<div id="admonition-its-important" class="admonition admonish-failure" role="note" aria-labelledby="admonition-its-important-title">
+<div class="admonition-title">
+<div id="admonition-its-important-title">
+<p>It’s important!</p>
+</div>
+<a class="admonition-anchor-link" href="#admonition-its-important"></a>
+</div>
+<div>
+<p>The section body must contain all <a href="#section-components">section components</a>, otherwise the function will not work!</p>
+</div>
+</div>
 <h3 id="parameters"><a class="header" href="#parameters">Parameters</a></h3>
 <ul>
-<li><code>Text</code> <code>(Type: String || Flag: Emptiable)</code>: The text where the bot is searching for the ‘Sample’.</li>
-<li><code>Sample</code> <code>(Type: String || Flag: Emptiable)</code>: The text to replace with ‘New’.</li>
-<li><code>New</code> <code>(Type: String || Flag: Emptiable)</code>: The text to replace ‘Sample’ with.</li>
-<li><code>Amount</code> <code>(Type: Integer || Flag: Optional)</code>: The number of times, at most, the bot should replace the sample. Use <code>-1</code> to replace all ‘Sample’ in ‘Text’ with ‘New’. Default is <code>1</code>.</li>
+<li><code>Section name</code> <code>(Type: String || Flag: Required)</code>: Name for attaching other section components to the section.</li>
+</ul>
+<div id="admonition-warning" class="admonition admonish-warning" role="note" aria-labelledby="admonition-warning-title">
+<div class="admonition-title">
+<div id="admonition-warning-title">
+<p>Warning</p>
+</div>
+<a class="admonition-anchor-link" href="#admonition-warning"></a>
+</div>
+<div>
+<p>You can’t have multiple sections and <a href="./addContainer.html">containers</a> <strong>with the same name</strong> in one message. So for example, you can’t have two sections with the name set to <code>section</code>.</p>
+</div>
+</div>
+<h2 id="container-components"><a class="header" href="#container-components">Container Components</a></h2>
+<ul>
+<li><a href="./addTextDisplay.html"><code>$addTextDisplay[]</code></a></li>
+<li><a href="./addThumbnail.html"><code>$addThumbnail[]</code></a></li>
 </ul>
 <h2 id="example"><a class="header" href="#example">Example</a></h2>
 <pre><code>$nomention
-Result 1: $replaceText[Hello world!;Hello;Bye]
-Result 2: $replaceText[Hello world!;ll;o;-1]
-Result 3: $replaceText[Hello world!;!;]
+$addSection[section]
+$addTextDisplay[Hello world!;section]
+$addThumbnail[$authorAvatar;;;section]
 </code></pre>
-<discord-messages>
-    <discord-message avatar="https://cdn.discordapp.com/avatars/803569638084313098/1c0a70609cdd326f9265bb2040e83b7e.png" author="RainbowKey" role-color="#E67E22">
-        !example
-    </discord-message>
-    <discord-message bot avatar="https://cdn.discordapp.com/avatars/1009018156494368798/612acd98b01ab110615a2524ee2b6360.png" verified author="BDFD Support" role-color="#378afa">
-        Result 1: Bye world!<br /> Result 2: Heoo world!<br /> Result 3: Hello world
-    </discord-message>
-</discord-messages>
-
+<div id="admonition-what-is-this" class="admonition admonish-question" role="note" aria-labelledby="admonition-what-is-this-title">
+<div class="admonition-title">
+<div id="admonition-what-is-this-title">
+<p>What is this?</p>
+</div>
+<a class="admonition-anchor-link" href="#admonition-what-is-this"></a>
+</div>
+<div>
+<p>How <a href="./addTextDisplay.html"><code>$addTextDisplay[]</code></a>, <a href="./addThumbnail.html"><code>$addThumbnail[]</code></a> and <a href="./authorAvatar.html"><code>$authorAvatar</code></a> works?</p>
+</div>
+</div>
                 </main>
 
                 <nav class="nav-wrapper" aria-label="Page navigation">
                     <!-- Mobile navigation buttons -->
-                    <a rel="prev" href="../bdscript/repeatMessage.html" class="mobile-nav-chapters previous"
+                    <a rel="prev" href="../bdscript/addReactions.html" class="mobile-nav-chapters previous"
                         title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
                         <i class="fa fa-angle-left"></i>
                     </a>
 
-                    <a rel="next" href="../bdscript/repliedMessageID.html" class="mobile-nav-chapters next"
+                    <a rel="next" href="../bdscript/addSelectMenuOption.html" class="mobile-nav-chapters next"
                         title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
                         <i class="fa fa-angle-right"></i>
                     </a>
@@ -219,16 +248,16 @@ Result 3: $replaceText[Hello world!;!;]
         </div>
 
         <nav class="nav-wide-wrapper" aria-label="Page navigation">
-            <a href="../bdscript/repeatMessage.html" class="nav-chapters previous" title="Previous chapter"
+            <a href="../bdscript/addReactions.html" class="nav-chapters previous" title="Previous chapter"
                 aria-label="Previous chapter" aria-keyshortcuts="Left">
-                <a href="../bdscript/repeatMessage.html" class="nav-chapters previous" title="Previous page"
+                <a href="../bdscript/addReactions.html" class="nav-chapters previous" title="Previous page"
                     aria-label="Previous page" aria-keyshortcuts="Left">
                     <i class="fa fa-angle-left"></i>
                 </a>
 
-                <a href="../bdscript/repliedMessageID.html" class="nav-chapters next" title="Next chapter"
+                <a href="../bdscript/addSelectMenuOption.html" class="nav-chapters next" title="Next chapter"
                     aria-label="Next chapter" aria-keyshortcuts="Right">
-                    <a href="../bdscript/repliedMessageID.html" class="nav-chapters next" title="Next page"
+                    <a href="../bdscript/addSelectMenuOption.html" class="nav-chapters next" title="Next page"
                         aria-label="Next page" aria-keyshortcuts="Right">
                         <i class="fa fa-angle-right"></i>
                     </a>
