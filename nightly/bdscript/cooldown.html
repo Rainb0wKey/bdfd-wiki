@@ -190,30 +190,44 @@
 <tr><td>Minute</td><td>m</td><td>100688478068</td></tr>
 <tr><td>Second</td><td>s</td><td>6041308684139</td></tr>
 </tbody></table>
+</div><div id="admonition-tip" class="admonition admonish-tip" role="note" aria-labelledby="admonition-tip-title">
+<div class="admonition-title">
+<div id="admonition-tip-title">
+<p>Tip</p>
 </div>
-<blockquote>
+<a class="admonition-anchor-link" href="#admonition-tip"></a>
+</div>
+<div>
 <p><code>%time%</code> returns how much time is left on the cooldown.</p>
-</blockquote>
+</div>
+</div>
 <h2 id="example"><a class="header" href="#example">Example</a></h2>
 <pre><code>$nomention
 $cooldown[30s;Please wait %time%, then use that command again!]
 Hi!
 </code></pre>
 <discord-messages>
-    <discord-message role-color="#E67E22" author="RainbowKey" avatar="https://cdn.discordapp.com/avatars/803569638084313098/1c0a70609cdd326f9265bb2040e83b7e.png">
+    <discord-message author="RainbowKey" avatar="https://cdn.discordapp.com/avatars/803569638084313098/1c0a70609cdd326f9265bb2040e83b7e.png" role-color="#E67E22">
         !example
     </discord-message>
-    <discord-message role-color="#378afa" author="BDFD Support" verified avatar="https://cdn.discordapp.com/avatars/1009018156494368798/612acd98b01ab110615a2524ee2b6360.png" bot>
+    <discord-message bot role-color="#378afa" author="BDFD Support" avatar="https://cdn.discordapp.com/avatars/1009018156494368798/612acd98b01ab110615a2524ee2b6360.png" verified>
         Hi
     </discord-message>
-    <discord-message avatar="https://cdn.discordapp.com/avatars/803569638084313098/1c0a70609cdd326f9265bb2040e83b7e.png" role-color="#E67E22" author="RainbowKey">
+    <discord-message role-color="#E67E22" author="RainbowKey" avatar="https://cdn.discordapp.com/avatars/803569638084313098/1c0a70609cdd326f9265bb2040e83b7e.png">
         !example
     </discord-message>
     <discord-message author="BDFD Support" avatar="https://cdn.discordapp.com/avatars/1009018156494368798/612acd98b01ab110615a2524ee2b6360.png" bot role-color="#378afa" verified>
         Please wait 27 Seconds, then use that command again!
     </discord-message>
 </discord-messages>
-<blockquote>
+<div id="admonition-warning" class="admonition admonish-warning" role="note" aria-labelledby="admonition-warning-title">
+<div class="admonition-title">
+<div id="admonition-warning-title">
+<p>Warning</p>
+</div>
+<a class="admonition-anchor-link" href="#admonition-warning"></a>
+</div>
+<div>
 <p>If you are using <strong>BDScript 2</strong>, then all functions above <code>$cooldown[]</code> will always work.</p>
 <p>❌ Not correct:</p>
 <pre><code>$nomention
@@ -228,15 +242,26 @@ $cooldown[30s;Please wait %time%, then use !work command again!]
 $setUserVar[Money;$sum[$getUserVar[Money];5]]
 $sendMessage[You worked successfully and earned 5 🪙]
 </code></pre>
-<p>How <a href="./findUser.html"><code>$setUserVar[]</code></a> and <a href="./sendMessage.html"><code>$sendMessage[]</code></a> works?</p>
-</blockquote>
-<h3 id="recommendation"><a class="header" href="#recommendation">Recommendation</a></h3>
+<p>How <a href="./findUser.html"><code>$setUserVar[]</code></a>, <a href="/sum.html"><code>$sum[]</code></a> and <a href="./sendMessage.html"><code>$sendMessage[]</code></a> works?</p>
+</div>
+</div>
+<div id="admonition-note" class="admonition admonish-note" role="note" aria-labelledby="admonition-note-title">
+<div class="admonition-title">
+<div id="admonition-note-title">
+<p>Note</p>
+</div>
+<a class="admonition-anchor-link" href="#admonition-note"></a>
+</div>
+<div>
 <p>You can also use these functions:</p>
 <ul>
+<li><a href="./changeCooldownTime.html"><code>$changeCooldownTime[]</code></a></li>
 <li><a href="./getCooldown.html"><code>$getCooldown[]</code></a></li>
 <li><a href="./serverCooldown.html"><code>$serverCooldown[]</code></a></li>
 <li><a href="./globalCooldown.html"><code>$globalCooldown[]</code></a></li>
 </ul>
+</div>
+</div>
 
                 </main>
 
