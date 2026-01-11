@@ -180,7 +180,7 @@
 <h3 id="parameters"><a class="header" href="#parameters">Parameters</a></h3>
 <ul>
 <li><code>Color hex</code> <code>(Type: Color || Flag: Emptiable)</code>: The <a href="https://htmlcolorcodes.com/color-picker">color hex</a> to set the embed border color as. You can also use color integer number.</li>
-<li><code>Index</code> <code>(Type: Integer || Flag: Optional)</code>: What embed the color border should belong to (Optional). The default is <code>1</code>. <a href="../resources/embedIndexes.html">(learn more)</a></li>
+<li><code>Index</code> <code>(Type: Integer || Flag: Optional)</code>: What embed the color border should belong to. The default is <code>1</code>. <a href="../resources/embedIndexes.html">(learn more)</a></li>
 </ul>
 <h2 id="example"><a class="header" href="#example">Example</a></h2>
 <pre><code>$nomention
@@ -188,12 +188,12 @@ $description[⬅️ That is the embed color border!]
 $color[#673ab7]
 </code></pre>
 <discord-messages>
-    <discord-message role-color="#EE7908" author="Nicky" avatar="https://cdn.discordapp.com/avatars/729343563401265193/bd91eedd77a95b9f81be39997613d295.png">
+    <discord-message author="Nicky" avatar="https://cdn.discordapp.com/avatars/729343563401265193/bd91eedd77a95b9f81be39997613d295.png" role-color="#EE7908">
         !example
     </discord-message>
-    <discord-message avatar="https://cdn.discordapp.com/avatars/566613317972394004/05f26f2f951578db660f1bdf25a027ea.png" author="Wiki Bot" role-color="#748BD4" verified bot>
+    <discord-message author="Wiki Bot" role-color="#748BD4" avatar="https://cdn.discordapp.com/avatars/566613317972394004/05f26f2f951578db660f1bdf25a027ea.png" verified bot>
         <none>
-        <discord-embed slot="embeds" color="#673ab7">
+        <discord-embed color="#673ab7" slot="embeds">
             <discord-embed-description slot="description">
                 ⬅️ That is the embed color border!
             </discord-embed-description>
