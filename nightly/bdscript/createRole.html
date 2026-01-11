@@ -216,18 +216,37 @@ $createRole[Cool Role;#FFFF00;yes;no]
 New role created!
 </code></pre>
 <discord-messages>
-    <discord-message avatar="https://cdn.discordapp.com/avatars/803569638084313098/1c0a70609cdd326f9265bb2040e83b7e.png" author="RainbowKey" role-color="#E67E22">
+    <discord-message role-color="#E67E22" author="RainbowKey" avatar="https://cdn.discordapp.com/avatars/803569638084313098/1c0a70609cdd326f9265bb2040e83b7e.png">
         !example
     </discord-message>
-    <discord-message author="BDFD Support" role-color="#378afa" verified avatar="https://cdn.discordapp.com/avatars/1009018156494368798/612acd98b01ab110615a2524ee2b6360.png" bot>
+    <discord-message bot role-color="#378afa" author="BDFD Support" avatar="https://cdn.discordapp.com/avatars/1009018156494368798/612acd98b01ab110615a2524ee2b6360.png" verified>
         New role created!
     </discord-message>
 </discord-messages>
 <p><img src="https://user-images.githubusercontent.com/69215413/125973030-7c9b980c-cffb-4f8e-aacc-a644a6fa23c3.png" alt="example" /></p>
-<blockquote>
-<p><a href="./roleID.html">You can use <code>$roleID[]</code> to return the role ID.</a></p>
-</blockquote>
-
+<div id="admonition-tip" class="admonition admonish-tip" role="note" aria-labelledby="admonition-tip-title">
+<div class="admonition-title">
+<div id="admonition-tip-title">
+<p>Tip</p>
+</div>
+<a class="admonition-anchor-link" href="#admonition-tip"></a>
+</div>
+<div>
+<p>You can use <a href="./roleID.html"><code>$roleID[]</code></a> to return the role ID.</p>
+<pre><code>$nomention
+$createRole[Staff;#FFFF00;no;no]
+New role created! ID: $roleID[Staff]
+</code></pre>
+<discord-messages>
+    <discord-message role-color="#E67E22" avatar="https://cdn.discordapp.com/avatars/803569638084313098/1c0a70609cdd326f9265bb2040e83b7e.png" author="RainbowKey">
+        !example
+    </discord-message>
+    <discord-message verified author="BDFD Support" avatar="https://cdn.discordapp.com/avatars/1009018156494368798/612acd98b01ab110615a2524ee2b6360.png" bot role-color="#378afa">
+        New role created! ID: 659789148806447134
+    </discord-message>
+</discord-messages>
+</div>
+</div>
                 </main>
 
                 <nav class="nav-wrapper" aria-label="Page navigation">
