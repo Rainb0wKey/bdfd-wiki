@@ -299,34 +299,34 @@ input {
 </div>
 </div>
 <div class="converter-section">
-    <h2 id="zone"><a class="header" href="#zone">Zone</a></h2>
-    <p>Specify the timezone you want to use for calculating time.</p>
-    <input type="timestamp" id="timezone" placeholder="e.g., Europe/London" oninput="updateTimezone()" onkeypress="if(event.key === 'Enter') updateTimezone()">
+    <h2 id="timezone"><a class="header" href="#timezone">Timezone</a></h2>
+    <p>Select timezone for time calculations</p>
+    <input type="text" id="timezone" placeholder="e.g., Europe/London, America/New_York" oninput="updateTimezone()" onkeypress="if(event.key === 'Enter') updateTimezone()">
     <label class="timezone-error"></label>
 </div>
 <div class="converter-section">
-    <h2 id="date-to-unix-time"><a class="header" href="#date-to-unix-time">Date to Unix Time</a></h2>
-    <p>Date:</p>
+    <h2 id="date-to-unix-timestamp"><a class="header" href="#date-to-unix-timestamp">Date to Unix Timestamp</a></h2>
+    <p>Select a date and time:</p>
     <input type="datetime-local" id="datetimepicker" oninput="updateUnixTime()">
-    <p>Unix Timestamp:</p>
+    <p>Unix timestamp:</p>
     <div class="result">
         <span id="unixtime-display">0</span>
         <div class="timestamp" id="timestamp-info"></div>
     </div>
 </div>
 <div class="converter-section">
-    <h2 id="unix-time-to-date"><a class="header" href="#unix-time-to-date">Unix Time to Date</a></h2>
-    <p>Unix Timestamp:</p>
+    <h2 id="unix-timestamp-to-date"><a class="header" href="#unix-timestamp-to-date">Unix Timestamp to Date</a></h2>
+    <p>Enter Unix timestamp:</p>
     <input type="number" id="unix-input" placeholder="e.g., 1704067200" oninput="updateDateFromUnix()" onkeypress="if(event.key === 'Enter') updateDateFromUnix()">
-    <p>Date and Time:</p>
+    <p>Date and time:</p>
     <div class="result">
         <span id="date-display">Not set</span>
         <div class="timestamp" id="date-info"></div>
     </div>
 </div>
 <div class="converter-section">
-    <h2 id="timer"><a class="header" href="#timer">Timer</a></h2>
-    <p>This shows when UnixTime will be </p>
+    <h2 id="time-remaining"><a class="header" href="#time-remaining">Time Remaining</a></h2>
+    <p>Time until selected Unix timestamp:</p>
     <div class="result">
         <span id="timer-display">Loading...</span>
     </div>
