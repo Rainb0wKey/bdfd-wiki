@@ -187,9 +187,17 @@
 <h2 id="syntax"><a class="header" href="#syntax">Syntax</a></h2>
 <pre><code>$alternativeParsing
 </code></pre>
-<blockquote>
+<div id="admonition-fail" class="admonition admonish-failure" role="note" aria-labelledby="admonition-fail-title">
+<div class="admonition-title">
+<div id="admonition-fail-title">
+<p>Fail</p>
+</div>
+<a class="admonition-anchor-link" href="#admonition-fail"></a>
+</div>
+<div>
 <p>This function was added at the end of 2019 as an experiment, and it can be unstable and break your commands. You should not use <code>$alternativeParsing</code> when making your bot.</p>
-</blockquote>
+</div>
+</div>
 <h2 id="example"><a class="header" href="#example">Example</a></h2>
 <ol>
 <li>
@@ -209,11 +217,39 @@ $description["helloworld"]
 </li>
 <li>
 <p>Execute commands.</p>
+</li>
+</ol>
 <discord-messages>
-    <discord-message author="Nicky" role-color="#EE7908" avatar="https://cdn.discordapp.com/avatars/729343563401265193/bd91eedd77a95b9f81be39997613d295.png">
+    <discord-message author="Nicky" avatar="https://cdn.discordapp.com/avatars/729343563401265193/bd91eedd77a95b9f81be39997613d295.png" role-color="#EE7908">
         hello
     </discord-message>
-    <discord-message avatar="https://cdn.discordapp.com/avatars/566613317972394004/05f26f2f951578db660f1bdf25a027ea.png" author="Wiki Bot" verified role-color="#748BD4" bot>
+    <discord-message author="Wiki Bot" verified bot avatar="https://cdn.discordapp.com/avatars/566613317972394004/05f26f2f951578db660f1bdf25a027ea.png" role-color="#748BD4">
+        <none>
+        <discord-embed slot="embeds">
+            <discord-embed-description slot="description">
+                "hello"
+            </discord-embed-description>
+        </discord-embed>
+    </discord-message>
+    <discord-message role-color="#EE7908" author="Nicky" avatar="https://cdn.discordapp.com/avatars/729343563401265193/bd91eedd77a95b9f81be39997613d295.png">
+        helloworld
+    </discord-message>
+    <discord-message author="Wiki Bot" avatar="https://cdn.discordapp.com/avatars/566613317972394004/05f26f2f951578db660f1bdf25a027ea.png" role-color="#748BD4" bot verified>
+        <none>
+        <discord-embed slot="embeds">
+            <discord-embed-description slot="description">
+                "helloworld"
+            </discord-embed-description>
+        </discord-embed>
+    </discord-message>
+</discord-messages>
+<pre><code>- Without `$alternativeParsing`:
+</code></pre>
+<discord-messages>
+    <discord-message role-color="#EE7908" author="Nicky" avatar="https://cdn.discordapp.com/avatars/729343563401265193/bd91eedd77a95b9f81be39997613d295.png">
+        hello
+    </discord-message>
+    <discord-message avatar="https://cdn.discordapp.com/avatars/566613317972394004/05f26f2f951578db660f1bdf25a027ea.png" author="Wiki Bot" bot role-color="#748BD4" verified>
         <none>
         <discord-embed slot="embeds">
             <discord-embed-description slot="description">
@@ -224,49 +260,20 @@ $description["helloworld"]
     <discord-message author="Nicky" role-color="#EE7908" avatar="https://cdn.discordapp.com/avatars/729343563401265193/bd91eedd77a95b9f81be39997613d295.png">
         helloworld
     </discord-message>
-    <discord-message bot author="Wiki Bot" avatar="https://cdn.discordapp.com/avatars/566613317972394004/05f26f2f951578db660f1bdf25a027ea.png" role-color="#748BD4" verified>
+    <discord-message author="Wiki Bot" role-color="#748BD4" verified bot avatar="https://cdn.discordapp.com/avatars/566613317972394004/05f26f2f951578db660f1bdf25a027ea.png">
         <none>
         <discord-embed slot="embeds">
             <discord-embed-description slot="description">
                 "helloworld"
             </discord-embed-description>
         </discord-embed>
+        <discord-embed slot="embeds">
+            <discord-embed-description slot="description">
+                "hello"
+            </discord-embed-description>
+        </discord-embed>
     </discord-message>
 </discord-messages>
-<ul>
-<li>Without <code>$alternativeParsing</code>:
-<discord-messages>
-<discord-message role-color="#EE7908" avatar="https://cdn.discordapp.com/avatars/729343563401265193/bd91eedd77a95b9f81be39997613d295.png" author="Nicky">
-hello
-</discord-message>
-<discord-message avatar="https://cdn.discordapp.com/avatars/566613317972394004/05f26f2f951578db660f1bdf25a027ea.png" verified author="Wiki Bot" bot role-color="#748BD4">
-<none>
-<discord-embed slot="embeds">
-<discord-embed-description slot="description">
-“hello”
-</discord-embed-description>
-</discord-embed>
-</discord-message>
-<discord-message avatar="https://cdn.discordapp.com/avatars/729343563401265193/bd91eedd77a95b9f81be39997613d295.png" role-color="#EE7908" author="Nicky">
-helloworld
-</discord-message>
-<discord-message avatar="https://cdn.discordapp.com/avatars/566613317972394004/05f26f2f951578db660f1bdf25a027ea.png" bot author="Wiki Bot" verified role-color="#748BD4">
-<none>
-<discord-embed slot="embeds">
-<discord-embed-description slot="description">
-“helloworld”
-</discord-embed-description>
-</discord-embed>
-<discord-embed slot="embeds">
-<discord-embed-description slot="description">
-“hello”
-</discord-embed-description>
-</discord-embed>
-</discord-message>
-</discord-messages></li>
-</ul>
-</li>
-</ol>
 
                 </main>
 
