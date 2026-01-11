@@ -174,6 +174,17 @@
 
                     <h1 id="botownerid"><a class="header" href="#botownerid">$botOwnerID</a></h1>
 <p>Returns the bot owner’s ID.</p>
+<div id="admonition-warning" class="admonition admonish-warning" role="note" aria-labelledby="admonition-warning-title">
+<div class="admonition-title">
+<div id="admonition-warning-title">
+<p>Warning</p>
+</div>
+<a class="admonition-anchor-link" href="#admonition-warning"></a>
+</div>
+<div>
+<p>Only works if you logged into the app via your Discord account. Otherwise, if you log in via your Google/Apple account or other methods, it will return <code>&lt;unknown&gt;</code>.</p>
+</div>
+</div>
 <h2 id="syntax"><a class="header" href="#syntax">Syntax</a></h2>
 <pre><code>$botOwnerID
 </code></pre>
@@ -182,10 +193,10 @@
 My owner's ID: $botOwnerID
 </code></pre>
 <discord-messages>
-    <discord-message role-color="#EE7908" author="Nicky" avatar="https://cdn.discordapp.com/avatars/729343563401265193/bd91eedd77a95b9f81be39997613d295.png">
+    <discord-message author="Nicky" avatar="https://cdn.discordapp.com/avatars/729343563401265193/bd91eedd77a95b9f81be39997613d295.png" role-color="#EE7908">
         !example
     </discord-message>
-    <discord-message bot role-color="#748BD4" verified author="Wiki Bot" avatar="https://cdn.discordapp.com/avatars/566613317972394004/05f26f2f951578db660f1bdf25a027ea.png">
+    <discord-message role-color="#748BD4" bot avatar="https://cdn.discordapp.com/avatars/566613317972394004/05f26f2f951578db660f1bdf25a027ea.png" verified author="Wiki Bot">
         My owner's ID: 729343563401265193
     </discord-message>
 </discord-messages>
