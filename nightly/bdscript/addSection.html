@@ -178,7 +178,7 @@
 </div>
 <p>Adds a section to the message.</p>
 <h2 id="syntax"><a class="header" href="#syntax">Syntax</a></h2>
-<pre><code>$addSection[Section name]
+<pre><code>$addSection[Section name;(Container name)]
 </code></pre>
 <div id="admonition-its-important" class="admonition admonish-failure" role="note" aria-labelledby="admonition-its-important-title">
 <div class="admonition-title">
@@ -206,6 +206,9 @@
 <p>You can’t have multiple sections and <a href="./addContainer.html">containers</a> <strong>with the same name</strong> in one message. So for example, you can’t have two sections with the name set to <code>section</code>.</p>
 </div>
 </div>
+<ul>
+<li><code>Container name</code> <code>(Type: String || Flag: Optional)</code>: To which <a href="./addContainer.html">container body</a> should the section be attached.</li>
+</ul>
 <h2 id="section-components"><a class="header" href="#section-components">Section Components</a></h2>
 <div id="admonition-limit" class="admonition admonish-warning" role="note" aria-labelledby="admonition-limit-title">
 <div class="admonition-title">
