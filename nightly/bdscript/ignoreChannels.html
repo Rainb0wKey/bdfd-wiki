@@ -174,6 +174,39 @@
 
                     <h1 id="ignorechannels"><a class="header" href="#ignorechannels">$ignoreChannels</a></h1>
 <p>The command can’t be executed in any of the provided channels. If the channel is ignored, then the provided “Error message” is returned.</p>
+<style>
+.discord-messages {
+    margin-top: 1.5rem;
+}
+
+.discord-messages > .discord-message:first-of-type:before {
+    color: var(--color1);
+    background: var(--color3);
+    border-radius: 10px;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    margin-left: -1.8rem;
+    margin-top: -.9rem;
+    width: fit-content;
+    transition: .3s;
+    z-index: 1000;
+}
+
+.discord-messages > .discord-message:first-of-type:before {
+    content: 'Another channel';
+}
+
+.discord-messages:first-of-type > .discord-message:first-of-type:before {
+    content: 'Ignored channel';
+}
+
+.discord-messages:hover > .discord-message:before {
+    transform: scale(1.025);
+    transform: rotate(-2.5deg);
+    border-radius: 12.5px;
+    transition: .3s;
+}
+</style>
 <h2 id="syntax"><a class="header" href="#syntax">Syntax</a></h2>
 <pre><code>$ignoreChannels[Channel IDs;...;Error message]
 </code></pre>
@@ -188,10 +221,10 @@ $ignoreChannels[566370477967147018;❌ That command can't be used in this channe
 Hello world!
 </code></pre>
 <discord-messages>
-    <discord-message author="RainbowKey" avatar="https://cdn.discordapp.com/avatars/803569638084313098/1c0a70609cdd326f9265bb2040e83b7e.png" role-color="#E67E22">
+    <discord-message avatar="https://cdn.discordapp.com/avatars/803569638084313098/1c0a70609cdd326f9265bb2040e83b7e.png" author="RainbowKey" role-color="#E67E22">
         !example
     </discord-message>
-    <discord-message author="BDFD Support" verified role-color="#378afa" bot>
+    <discord-message author="BDFD Support" bot verified role-color="#378afa">
         ❌ That command can't be used in this channel!
     </discord-message>
 </discord-messages>
@@ -199,7 +232,7 @@ Hello world!
     <discord-message author="RainbowKey" avatar="https://cdn.discordapp.com/avatars/803569638084313098/1c0a70609cdd326f9265bb2040e83b7e.png" role-color="#E67E22">
         !example
     </discord-message>
-    <discord-message verified role-color="#378afa" author="BDFD Support" avatar="https://cdn.discordapp.com/avatars/1009018156494368798/612acd98b01ab110615a2524ee2b6360.png" bot>
+    <discord-message author="BDFD Support" bot role-color="#378afa" avatar="https://cdn.discordapp.com/avatars/1009018156494368798/612acd98b01ab110615a2524ee2b6360.png" verified>
         Hello world!
     </discord-message>
 </discord-messages>
