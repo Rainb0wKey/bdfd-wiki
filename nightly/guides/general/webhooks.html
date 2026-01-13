@@ -232,69 +232,91 @@ $webhookCreate[$channelID;BDFD Webhook 🤖]
 <p>You can use <a href="../../bdscript/var.html"><code>$var[]</code></a> or <a href="../variables.html">other variable functions</a> to store the Webhook URL.</p>
 <pre><code class="language-$nomention">$var[Webhook;$webhookCreate[$channelID;Secret]]
 Created and saved!
-
-&lt;/div&gt;
-&lt;/div&gt;
-
-# $webhookSend
-Sends message as the webhook.
-
-## Syntax
 </code></pre>
-<p>$webhookSend[Webhook URL;(Content;Title;Title URL;Description;Color;Author;Author icon URL;Footer;Footer icon URL;Thumbnail URL;Image URL;Add timestamp?)]</p>
-<pre><code>
-### Parameters
-
-## Example
+</div>
+</div>
+<h1 id="webhooksend"><a class="header" href="#webhooksend">$webhookSend</a></h1>
+<p>Sends message as the webhook.</p>
+<h2 id="syntax-1"><a class="header" href="#syntax-1">Syntax</a></h2>
+<pre><code>$webhookSend[Webhook URL;(Content;Title;Title URL;Description;Color;Author;Author icon URL;Footer;Footer icon URL;Thumbnail URL;Image URL;Add timestamp?)]
 </code></pre>
-<p>$nomention
+<h3 id="parameters-1"><a class="header" href="#parameters-1">Parameters</a></h3>
+<h2 id="example-1"><a class="header" href="#example-1">Example</a></h2>
+<pre><code>$nomention
 $var[webhook;$webhookCreate[$channelID;Test webhook]]
-$webhookSend[$var[webhook];I’m the best webhook;Title;;It’s description!;#000;;;;;;false]</p>
-<pre><code>
-
+$webhookSend[$var[webhook];I'm the best webhook;Title;;It's description!;#000;;;;;;false]
 </code></pre>
-<p>$webhookAvatarURL[webhookURL;avatarURL]</p>
-<pre><code>Changes the provided webhook's avatar.
-
+<h1 id="webhookdelete"><a class="header" href="#webhookdelete">$webhookDelete</a></h1>
+<p>Deletes the wehook.</p>
+<h2 id="syntax-2"><a class="header" href="#syntax-2">Syntax</a></h2>
+<pre><code>$webhookDelete[Webhook URL]
 </code></pre>
-<p>$webhookUsername[webhookURL;username]</p>
-<pre><code>Changes the provided webhook's username.
-
-## Webhook Messages
-You can send messages via a webhook using the following functions:
-
-- `$webhookTitle[webhookURL;text]` - Adds a title to the webhook embed.
-- `$webhookDescription[webhookURL;text]` - Adds a description to the webhook embed.
-- `$webhookFooter[webhookURL;text]` - Adds a footer to the webhook embed.
-- `$webhookContent[webhookURL;text]` - The webhook non-embedded message content.
-- `$webhookColor[webhookURL;colorHex]` - The color of the webhook embed.
-
-Alternatively, you can use `$webhookSend[]` for more options and condensement:
+<h3 id="parameters-2"><a class="header" href="#parameters-2">Parameters</a></h3>
+<h2 id="example-2"><a class="header" href="#example-2">Example</a></h2>
+<pre><code>$nomention
 </code></pre>
-<p>$webhookSend[webhookURL;content;title;titleURL;description;color;author;authorIcon;footer;footerIcon;thumbnail;image;addTimestamp (yes/no)]</p>
-<pre><code>&gt; **Note:** Unneeded fields can be left empty. 
-
-## Deleting A Webhook
+<h1 id="webhookavatarurl"><a class="header" href="#webhookavatarurl">$webhookAvatarURL</a></h1>
+<p>Changes the webhook’s avatar.</p>
+<h2 id="syntax-3"><a class="header" href="#syntax-3">Syntax</a></h2>
+<pre><code>$webhookAvatarURL[Webhook URL;Avatar URL]
 </code></pre>
-<p>$webhookDelete[webhookURL]</p>
-<pre><code>Deletes the provided webhook.
-
-## Example
+<h3 id="parameters-3"><a class="header" href="#parameters-3">Parameters</a></h3>
+<h2 id="example-3"><a class="header" href="#example-3">Example</a></h2>
+<pre><code>$nomention
 </code></pre>
-<p>$nomention
-$var[webhookURL;$webhookCreate[$channelID;Cool Webhook;]]
-$webhookContent[$var[webhookURL];Hello World!]
-$c[❗️This example requires BDScript 2 enabled❗️]</p>
-<pre><code>
-__Explaination:__
-
-This code is storing the newly created webhook URL returned from `$webhookCreate[]` *(using $var[])*. Then, in the rest of the code `$var[webhookURL]` was called to get the webhook URL, which allowed the webhook message to send using `$webhookContent[]`.
-&gt; Remember, you need to be in BDScript 2 mode to use `$var[]`!
-
-__Output:__
-
-![example](https://user-images.githubusercontent.com/69215413/128615389-30e9dadc-2cce-4868-af33-540f612fcf27.png)
-
+<h1 id="webhookusername"><a class="header" href="#webhookusername">$webhookUsername</a></h1>
+<p>Changes the webhook’s username.</p>
+<h2 id="syntax-4"><a class="header" href="#syntax-4">Syntax</a></h2>
+<pre><code>$webhookUsername[Webhook URL;Username]
+</code></pre>
+<h3 id="parameters-4"><a class="header" href="#parameters-4">Parameters</a></h3>
+<h2 id="example-4"><a class="header" href="#example-4">Example</a></h2>
+<pre><code>$nomention
+</code></pre>
+<h1 id="webhooktitle"><a class="header" href="#webhooktitle">$webhookTitle</a></h1>
+<p>Adds title to the webhook.</p>
+<h2 id="syntax-5"><a class="header" href="#syntax-5">Syntax</a></h2>
+<pre><code>$webhookTitle[Webhook URL;Text]
+</code></pre>
+<h3 id="parameters-5"><a class="header" href="#parameters-5">Parameters</a></h3>
+<h2 id="example-5"><a class="header" href="#example-5">Example</a></h2>
+<pre><code>$nomention
+</code></pre>
+<h1 id="webhookdescription"><a class="header" href="#webhookdescription">$webhookDescription</a></h1>
+<p>Adds description to the webhook.</p>
+<h2 id="syntax-6"><a class="header" href="#syntax-6">Syntax</a></h2>
+<pre><code>$webhookDescription[Webhook URL;Text]
+</code></pre>
+<h3 id="parameters-6"><a class="header" href="#parameters-6">Parameters</a></h3>
+<h2 id="example-6"><a class="header" href="#example-6">Example</a></h2>
+<pre><code>$nomention
+</code></pre>
+<h1 id="webhookfooter"><a class="header" href="#webhookfooter">$webhookFooter</a></h1>
+<p>Adds footer to the webhook.</p>
+<h2 id="syntax-7"><a class="header" href="#syntax-7">Syntax</a></h2>
+<pre><code>$webhookFooter[Webhook URL;Text]
+</code></pre>
+<h3 id="parameters-7"><a class="header" href="#parameters-7">Parameters</a></h3>
+<h2 id="example-7"><a class="header" href="#example-7">Example</a></h2>
+<pre><code>$nomention
+</code></pre>
+<h1 id="webhookcontent"><a class="header" href="#webhookcontent">$webhookContent</a></h1>
+<p>Adds content to the webhook.</p>
+<h2 id="syntax-8"><a class="header" href="#syntax-8">Syntax</a></h2>
+<pre><code>$webhookContent[Webhook URL;Text]
+</code></pre>
+<h3 id="parameters-8"><a class="header" href="#parameters-8">Parameters</a></h3>
+<h2 id="example-8"><a class="header" href="#example-8">Example</a></h2>
+<pre><code>$nomention
+</code></pre>
+<h1 id="webhookcolor"><a class="header" href="#webhookcolor">$webhookColor</a></h1>
+<p>Adds color to the webhook.</p>
+<h2 id="syntax-9"><a class="header" href="#syntax-9">Syntax</a></h2>
+<pre><code>$webhookContent[Webhook URL;Color]
+</code></pre>
+<h3 id="parameters-9"><a class="header" href="#parameters-9">Parameters</a></h3>
+<h2 id="example-9"><a class="header" href="#example-9">Example</a></h2>
+<pre><code>$nomention
 </code></pre>
 
                 </main>
