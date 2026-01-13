@@ -196,11 +196,15 @@
     <div class="lock-text" id="lockText" onClick="lockTheme()">Locked</div>
   </div>
   <div class="themebuttons">
-    <button class="tbutton" id="setBackground" onClick="useBackground()">Set background</button>
+    <button class="tbutton" id="setBackground" onClick="useBackground()">Background</button>
     <button class="tbutton" id="gradientTheme" onClick="gradientBackground()">Gradient</button>
-    <button class="tbutton" id="setDarkBackground" onClick="useDarkBackground()">Dark background</button>
-    <button class="tbutton" id="setLightBackground" onClick="useLightBackground()">Light background</button>
-    <button class="tbutton" id="setWhiteColor" onClick="useFontColor()">Light text</button>
+    <button class="tbutton" id="setDarkBackground" onClick="setBackground('dark')">Dark background</button>
+    <button class="tbutton" id="setLightBackground" onClick="setBackground('light')">Light background</button>
+	<button class="tbutton" id="setBlackColor" onClick="useFontColor()">Set text color</button>
+	<button class="tbutton" id="setBlackColor" onClick="setFontColor('dark')">Dark text</button>
+	<button class="tbutton" id="setWhiteColor" onClick="setFontColor('light')">Light text</button>
+	<button class="tbutton" id="setDarkTheme" onClick="setTheme('dark')">Dark theme</button>
+	<button class="tbutton" id="setLightTheme" onClick="setTheme('light')">Light theme</button>
   </div>
   <p id="default-is">270°</p>
 </div>
@@ -345,14 +349,14 @@
   <p id="default-is">"Discord Dark"</p>
 </div>
 <discord-messages>
-    <discord-message avatar="https://cdn.discordapp.com/avatars/803569638084313098/1c0a70609cdd326f9265bb2040e83b7e.png" role-color="#E67E22" author="RainbowKey">
+    <discord-message author="RainbowKey" role-color="#E67E22" avatar="https://cdn.discordapp.com/avatars/803569638084313098/1c0a70609cdd326f9265bb2040e83b7e.png">
         !example ❤️
         <discord-reactions slot="reactions">
-            <discord-reaction name=":emoji:" count="1" emoji="https://upload.wikimedia.org/wikipedia/commons/7/70/Symbolic_Love_Heart.png">
+            <discord-reaction emoji="https://upload.wikimedia.org/wikipedia/commons/7/70/Symbolic_Love_Heart.png" name=":emoji:" count="1">
             </discord-reaction>
         </discord-reactions>
     </discord-message>
-    <discord-message role-color="#378afa" avatar="https://cdn.discordapp.com/avatars/1009018156494368798/612acd98b01ab110615a2524ee2b6360.png" bot author="BDFD Support" verified>
+    <discord-message author="BDFD Support" avatar="https://cdn.discordapp.com/avatars/1009018156494368798/612acd98b01ab110615a2524ee2b6360.png" bot role-color="#378afa" verified>
         Added!
     </discord-message>
 </discord-messages>
