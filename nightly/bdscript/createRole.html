@@ -204,7 +204,20 @@
 </div>
 </div>
 <ul>
-<li><code>Color hex</code> <code>(Type: Color || Flag: Required)</code>: The <a href="https://htmlcolorcodes.com/color-picker">color hex</a> of the new role.</li>
+<li><code>Color hex</code> <code>(Type: Color || Flag: Required)</code>: The <a href="../tools/color.html">color hex</a> of the new role. You can also use color integer number.</li>
+</ul>
+<div id="admonition-color-picker" class="admonition admonish-tip" role="note" aria-labelledby="admonition-color-picker-title">
+<div class="admonition-title">
+<div id="admonition-color-picker-title">
+<p>Color Picker</p>
+</div>
+<a class="admonition-anchor-link" href="#admonition-color-picker"></a>
+</div>
+<div>
+<p>You can use our <a href="../tools/color.html">“Color” tool</a> to select the best color!</p>
+</div>
+</div>
+<ul>
 <li><code>Hoist?</code> <code>(Type: Bool || Flag: Vacantable)</code>: Whether the role should be displayed separately (hoisted) or not. <code>no</code> means the role won’t be hoisted, <code>yes</code> means it will.<br />
 <img src="https://user-images.githubusercontent.com/69215413/122795705-965e9480-d28b-11eb-8e4e-98338f143ecb.png" alt="example" /></li>
 <li><code>Mentionable?</code> <code>(Type: Bool || Flag: Vacantable)</code>: Whether the role should be mentionable by everyone. <code>no</code> means the role won’t be mentionable, <code>yes</code> means it will.<br />
@@ -216,10 +229,10 @@ $createRole[Cool Role;#FFFF00;yes;no]
 New role created!
 </code></pre>
 <discord-messages>
-    <discord-message author="RainbowKey" role-color="#E67E22" avatar="https://cdn.discordapp.com/avatars/803569638084313098/1c0a70609cdd326f9265bb2040e83b7e.png">
+    <discord-message author="RainbowKey" avatar="https://cdn.discordapp.com/avatars/803569638084313098/1c0a70609cdd326f9265bb2040e83b7e.png" role-color="#E67E22">
         !example
     </discord-message>
-    <discord-message author="BDFD Support" bot avatar="https://cdn.discordapp.com/avatars/1009018156494368798/612acd98b01ab110615a2524ee2b6360.png" role-color="#378afa" verified>
+    <discord-message author="BDFD Support" bot role-color="#378afa" verified avatar="https://cdn.discordapp.com/avatars/1009018156494368798/612acd98b01ab110615a2524ee2b6360.png">
         New role created!
     </discord-message>
 </discord-messages>
@@ -241,12 +254,13 @@ New role created! ID: $roleID[Staff]
     <discord-message role-color="#E67E22" author="RainbowKey" avatar="https://cdn.discordapp.com/avatars/803569638084313098/1c0a70609cdd326f9265bb2040e83b7e.png">
         !example
     </discord-message>
-    <discord-message verified author="BDFD Support" bot role-color="#378afa" avatar="https://cdn.discordapp.com/avatars/1009018156494368798/612acd98b01ab110615a2524ee2b6360.png">
+    <discord-message author="BDFD Support" role-color="#378afa" verified avatar="https://cdn.discordapp.com/avatars/1009018156494368798/612acd98b01ab110615a2524ee2b6360.png" bot>
         New role created! ID: 659789148806447134
     </discord-message>
 </discord-messages>
 </div>
 </div>
+
                 </main>
 
                 <nav class="nav-wrapper" aria-label="Page navigation">
