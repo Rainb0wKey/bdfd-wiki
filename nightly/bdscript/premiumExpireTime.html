@@ -188,6 +188,17 @@
 <h2 id="syntax"><a class="header" href="#syntax">Syntax</a></h2>
 <pre><code>$premiumExpireTime[(Return unix timestamp?)]
 </code></pre>
+<div id="admonition-timestamp-converter" class="admonition admonish-tip" role="note" aria-labelledby="admonition-timestamp-converter-title">
+<div class="admonition-title">
+<div id="admonition-timestamp-converter-title">
+<p>Timestamp Converter</p>
+</div>
+<a class="admonition-anchor-link" href="#admonition-timestamp-converter"></a>
+</div>
+<div>
+<p>You can use our <a href="../tools/timestamp.html">“Timestamp Converter” tool</a> to work with unixtime!</p>
+</div>
+</div>
 <h3 id="parameters"><a class="header" href="#parameters">Parameters</a></h3>
 <ul>
 <li><code>Return unix timestamp?</code> <code>(Type: Bool || Flag: Optional)</code>: If “yes” is written, it will return the premium expiration value in UNIX timestamp and if “no”, it will output as normal time format. Defaults to “no”.</li>
@@ -200,13 +211,13 @@ My premium expires in: $premiumExpireTime (Unix Timestamp: $premiumExpireTime[ye
     <discord-message role-color="#E67E22" author="RainbowKey" avatar="https://cdn.discordapp.com/avatars/803569638084313098/1c0a70609cdd326f9265bb2040e83b7e.png">
         !example
     </discord-message>
-    <discord-message author="BDFD Support" bot role-color="#378afa" avatar="https://cdn.discordapp.com/avatars/1009018156494368798/612acd98b01ab110615a2524ee2b6360.png" verified>
+    <discord-message author="BDFD Support" verified avatar="https://cdn.discordapp.com/avatars/1009018156494368798/612acd98b01ab110615a2524ee2b6360.png" role-color="#378afa" bot>
         My premium expires in: Mon, Nov 03 2025 12:02:09 UTC (Unix Timestamp: 1762171329)
     </discord-message>
-    <discord-message role-color="#E67E22" author="RainbowKey" avatar="https://cdn.discordapp.com/avatars/803569638084313098/1c0a70609cdd326f9265bb2040e83b7e.png">
+    <discord-message author="RainbowKey" role-color="#E67E22" avatar="https://cdn.discordapp.com/avatars/803569638084313098/1c0a70609cdd326f9265bb2040e83b7e.png">
         !bot
     </discord-message>
-    <discord-message bot author="Wiki Bot" verified avatar="https://cdn.discordapp.com/avatars/566613317972394004/05f26f2f951578db660f1bdf25a027ea.png" role-color="#748BD4">
+    <discord-message avatar="https://cdn.discordapp.com/avatars/566613317972394004/05f26f2f951578db660f1bdf25a027ea.png" bot role-color="#748BD4" verified author="Wiki Bot">
         My premium expires in: expired (Unix Timestamp: expired)
     </discord-message>
 </discord-messages>
