@@ -284,20 +284,22 @@
 </style>
 <p>Here you can choose a color to use in your command.</p>
 <div class="picker-container">
-  <h2 id="color-picker"><a class="header" href="#color-picker">Color Picker</a></h2>
-  <p>Select the color.</p>
-  <div class="input-row">
-    <input type="text" id="hexInput" class="hex-input" maxlength="20" placeholder="#000000" oninput="hexInputChange()">
-    <input type="color" id="colorPicker" class="color-input" value="#000000" oninput="colorPickerChange()">
-  </div>
-  <div class="error" id="errorText"></div>
-  <div id="validColorDisplay"><div class="valid-color" style="background:#000000">#000000</div></div>
+	<h2 id="color-picker"><a class="header" href="#color-picker">Color Picker</a></h2>
+  	<p>Select the color.</p>
+  	<div class="input-row">
+    	<input type="text" id="hexInput" class="hex-input" maxlength="20" placeholder="#000000" oninput="hexInputChange()">
+    	<input type="color" id="colorPicker" class="color-input" value="#000000" oninput="colorPickerChange()">
+  	</div>
+  	<div class="error" id="errorText"></div>
+  	<div id="validColorDisplay"><div class="valid-color" style="background:#000000">#000000</div></div>
 </div>
 <div class="picker-container">
-  <h2 id="random-color"><a class="header" href="#random-color">Random Color</a></h2>
-  <p>Generate a random color.</p>
-  <button id="randomColorButton" onclick="generateRandomColor()">Generate</button>
-  <div id="randomColorResult" class="random-color-result"></div>
+  	<h2 id="random-color"><a class="header" href="#random-color">Random Color</a></h2>
+  	<p>Generate a random color.</p>
+	<div class="random-result">
+  		<button id="randomColorButton" onclick="generateRandomColor()">Generate</button>
+  		<div id="randomColorResult" class="random-color-result"></div>
+	</div>
 </div>
 <h2 id="functions"><a class="header" href="#functions">Functions</a></h2>
 <p>Here are all the functions related to hex colors.</p>
