@@ -179,7 +179,20 @@
 </code></pre>
 <h3 id="parameters"><a class="header" href="#parameters">Parameters</a></h3>
 <ul>
-<li><code>Color hex</code> <code>(Type: Color || Flag: Emptiable)</code>: The <a href="https://htmlcolorcodes.com/color-picker">color hex</a> to set the embed border color as. You can also use color integer number.</li>
+<li><code>Color hex</code> <code>(Type: Color || Flag: Emptiable)</code>: The <a href="../tools/color.html">color hex</a> to set the embed border color as. You can also use color integer number.</li>
+</ul>
+<div id="admonition-color-picker" class="admonition admonish-tip" role="note" aria-labelledby="admonition-color-picker-title">
+<div class="admonition-title">
+<div id="admonition-color-picker-title">
+<p>Color Picker</p>
+</div>
+<a class="admonition-anchor-link" href="#admonition-color-picker"></a>
+</div>
+<div>
+<p>You can use our <a href="../tools/color.html">“Color” tool</a> to select the best color!</p>
+</div>
+</div>
+<ul>
 <li><code>Index</code> <code>(Type: Integer || Flag: Optional)</code>: What embed the color border should belong to. The default is <code>1</code>. <a href="../resources/embedIndexes.html">(learn more)</a></li>
 </ul>
 <h2 id="example"><a class="header" href="#example">Example</a></h2>
@@ -188,12 +201,12 @@ $description[⬅️ That is the embed color border!]
 $color[#673ab7]
 </code></pre>
 <discord-messages>
-    <discord-message role-color="#EE7908" author="Nicky" avatar="https://cdn.discordapp.com/avatars/729343563401265193/bd91eedd77a95b9f81be39997613d295.png">
+    <discord-message avatar="https://cdn.discordapp.com/avatars/729343563401265193/bd91eedd77a95b9f81be39997613d295.png" role-color="#EE7908" author="Nicky">
         !example
     </discord-message>
-    <discord-message bot author="Wiki Bot" avatar="https://cdn.discordapp.com/avatars/566613317972394004/05f26f2f951578db660f1bdf25a027ea.png" role-color="#748BD4" verified>
+    <discord-message role-color="#748BD4" verified avatar="https://cdn.discordapp.com/avatars/566613317972394004/05f26f2f951578db660f1bdf25a027ea.png" bot author="Wiki Bot">
         <none>
-        <discord-embed color="#673ab7" slot="embeds">
+        <discord-embed slot="embeds" color="#673ab7">
             <discord-embed-description slot="description">
                 ⬅️ That is the embed color border!
             </discord-embed-description>
@@ -211,6 +224,7 @@ $color[#673ab7]
 <p>How <a href="./description.html"><code>$description[]</code></a> works?</p>
 </div>
 </div>
+
                 </main>
 
                 <nav class="nav-wrapper" aria-label="Page navigation">
