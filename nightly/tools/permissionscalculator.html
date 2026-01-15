@@ -4,7 +4,7 @@
 <head>
     <!-- Book generated using mdBook -->
     <meta charset="UTF-8">
-    <title>$dm - Bot Designer For Discord - Wiki</title>
+    <title>Permission Calculator - Bot Designer For Discord - Wiki</title>
 
 
 
@@ -168,85 +168,42 @@
                         <script src="../theme/breadcrumbs.js"></script>
                     </nav>
 
-                    <a href="https://github.com/NilPointer-Software/bdfd-wiki/edit/dev/src/bdscript/dm.md" class="editPage">
+                    <a href="https://github.com/NilPointer-Software/bdfd-wiki/edit/dev/src/tools/permissionscalculator.md" class="editPage">
                         <i class='fa fa-edit' id="editPageIcon"></i>
                     </a>
 
-                    <h1 id="dm"><a class="header" href="#dm">$dm</a></h1>
-<p>Direct messages the user who runs the command.</p>
-<style>
-.discord-messages {
-    margin-top: 1.5rem;
-}
-
-.discord-messages > .discord-message:before {
-    color: var(--color1);
-    background: var(--color3);
-    border-radius: 10px;
-    padding-left: 1rem;
-    padding-right: 1rem;
-    margin-left: -1.8rem;
-    margin-top: -.9rem;
-    width: fit-content;
-    transition: .3s;
-    z-index: 1000;
-}
-
-.discord-messages > .discord-message:before {
-    content: 'RainbowKey`s DM';
-}
-
-.discord-messages:first-of-type > .discord-message:before {
-    content: '#main-chat';
-}
-
-.discord-messages > .discord-message:hover:before {
-    transform: scale(1.025);
-    transform: rotate(-2.5deg);
-    border-radius: 12.5px;
-    transition: .3s;
-}
-</style>
-<h2 id="syntax"><a class="header" href="#syntax">Syntax</a></h2>
-<pre><code>$dm
-</code></pre>
-<h2 id="example"><a class="header" href="#example">Example</a></h2>
-<pre><code>$nomention
-$dm
-Hello!
-</code></pre>
-<discord-messages>
-    <discord-message author="RainbowKey" avatar="https://cdn.discordapp.com/avatars/803569638084313098/1c0a70609cdd326f9265bb2040e83b7e.png" role-color="#E67E22">
-        !example
-    </discord-message>
-</discord-messages>
-<discord-messages>
-    <discord-message verified bot avatar="https://cdn.discordapp.com/avatars/1009018156494368798/612acd98b01ab110615a2524ee2b6360.png" author="BDFD Support">
-        Hello!
-    </discord-message>
-</discord-messages>
-<div id="admonition-failure" class="admonition admonish-failure" role="note" aria-labelledby="admonition-failure-title">
-<div class="admonition-title">
-<div id="admonition-failure-title">
-<p>Failure</p>
+                    <h1 id="permission-calculator"><a class="header" href="#permission-calculator">Permission Calculator</a></h1>
+<div class="control-buttons">
+    <button class="control-button" id="enableAll">Enable All</button>
+    <button class="control-button disable" id="disableAll">Disable All</button>
 </div>
-<a class="admonition-anchor-link" href="#admonition-failure"></a>
+<div class="permissions-grid" id="permissionsGrid">
+    <!-- Permissions will be added via JavaScript -->
 </div>
-<div>
-<p>If the command fails to send the message, make sure you allow direct messages from everyone.</p>
+<div class="total-section">
+    <h2 id="current-permission-value"><a class="header" href="#current-permission-value">Current Permission Value:</a></h2>
+    <div class="total-value" id="totalValue">0</div>
+    <div class="hex-value" id="hexValue">0x0</div>
 </div>
+<div class="input-section">
+    <input type="number" id="targetValue" placeholder="Enter permission value to find combinations (e.g., 10)" min="0">
 </div>
-
+<div class="results">
+    <h3 id="search-results"><a class="header" href="#search-results">Search Results:</a></h3>
+    <div class="result-content" id="resultContent">
+        Select permissions and/or enter a value to find combinations
+    </div>
+</div>
                 </main>
 
                 <nav class="nav-wrapper" aria-label="Page navigation">
                     <!-- Mobile navigation buttons -->
-                    <a rel="prev" href="../bdscript/divide.html" class="mobile-nav-chapters previous"
+                    <a rel="prev" href="../guides/other/commonErrors.html" class="mobile-nav-chapters previous"
                         title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
                         <i class="fa fa-angle-left"></i>
                     </a>
 
-                    <a rel="next" href="../bdscript/dmComplex.html" class="mobile-nav-chapters next"
+                    <a rel="next" href="../tools/color.html" class="mobile-nav-chapters next"
                         title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
                         <i class="fa fa-angle-right"></i>
                     </a>
@@ -257,16 +214,16 @@ Hello!
         </div>
 
         <nav class="nav-wide-wrapper" aria-label="Page navigation">
-            <a href="../bdscript/divide.html" class="nav-chapters previous" title="Previous chapter"
+            <a href="../guides/other/commonErrors.html" class="nav-chapters previous" title="Previous chapter"
                 aria-label="Previous chapter" aria-keyshortcuts="Left">
-                <a href="../bdscript/divide.html" class="nav-chapters previous" title="Previous page"
+                <a href="../guides/other/commonErrors.html" class="nav-chapters previous" title="Previous page"
                     aria-label="Previous page" aria-keyshortcuts="Left">
                     <i class="fa fa-angle-left"></i>
                 </a>
 
-                <a href="../bdscript/dmComplex.html" class="nav-chapters next" title="Next chapter"
+                <a href="../tools/color.html" class="nav-chapters next" title="Next chapter"
                     aria-label="Next chapter" aria-keyshortcuts="Right">
-                    <a href="../bdscript/dmComplex.html" class="nav-chapters next" title="Next page"
+                    <a href="../tools/color.html" class="nav-chapters next" title="Next page"
                         aria-label="Next page" aria-keyshortcuts="Right">
                         <i class="fa fa-angle-right"></i>
                     </a>
