@@ -431,388 +431,333 @@
             background-color: #3ca374;
         }
     </style>
-<pre><code>    &lt;div class="control-buttons"&gt;
-        &lt;button class="control-button" id="enableAll"&gt;Enable All&lt;/button&gt;
-        &lt;button class="control-button disable" id="disableAll"&gt;Disable All&lt;/button&gt;
-    &lt;/div&gt;
-    
-    &lt;div class="permissions-grid" id="permissionsGrid"&gt;
-        &lt;!-- General Server Permissions --&gt;
-        &lt;div class="category-header"&gt;
-            &lt;div class="category-title"&gt;General Server Permissions&lt;/div&gt;
-            &lt;button class="category-toggle" data-category="general"&gt;Toggle All&lt;/button&gt;
-        &lt;/div&gt;
-        
-        &lt;div class="permission-item" id="item-manage_server"&gt;
-            &lt;input type="checkbox" id="manage_server" value="32"&gt;
-            &lt;label for="manage_server"&gt;
-                Manage Server
-                &lt;span class="permission-value" id="value-manage_server"&gt;32&lt;/span&gt;
-            &lt;/label&gt;
-        &lt;/div&gt;
-        
-        &lt;div class="permission-item" id="item-view_audit_log"&gt;
-            &lt;input type="checkbox" id="view_audit_log" value="128"&gt;
-            &lt;label for="view_audit_log"&gt;
-                View Audit Log
-                &lt;span class="permission-value" id="value-view_audit_log"&gt;128&lt;/span&gt;
-            &lt;/label&gt;
-        &lt;/div&gt;
-        
-        &lt;div class="permission-item" id="item-view_server_insights"&gt;
-            &lt;input type="checkbox" id="view_server_insights" value="524288"&gt;
-            &lt;label for="view_server_insights"&gt;
-                View Server Insights
-                &lt;span class="permission-value" id="value-view_server_insights"&gt;524288&lt;/span&gt;
-            &lt;/label&gt;
-        &lt;/div&gt;
-        
-        &lt;div class="permission-item" id="item-administrator"&gt;
-            &lt;input type="checkbox" id="administrator" value="8"&gt;
-            &lt;label for="administrator"&gt;
-                Administrator
-                &lt;span class="permission-value" id="value-administrator"&gt;8&lt;/span&gt;
-            &lt;/label&gt;
-        &lt;/div&gt;
-        
-        &lt;!-- Member Management --&gt;
-        &lt;div class="category-header"&gt;
-            &lt;div class="category-title"&gt;Member Management&lt;/div&gt;
-            &lt;button class="category-toggle" data-category="member"&gt;Toggle All&lt;/button&gt;
-        &lt;/div&gt;
-        
-        &lt;div class="permission-item" id="item-kick_members"&gt;
-            &lt;input type="checkbox" id="kick_members" value="2"&gt;
-            &lt;label for="kick_members"&gt;
-                Kick Members
-                &lt;span class="permission-value" id="value-kick_members"&gt;2&lt;/span&gt;
-            &lt;/label&gt;
-        &lt;/div&gt;
-        
-        &lt;div class="permission-item" id="item-ban_members"&gt;
-            &lt;input type="checkbox" id="ban_members" value="4"&gt;
-            &lt;label for="ban_members"&gt;
-                Ban Members
-                &lt;span class="permission-value" id="value-ban_members"&gt;4&lt;/span&gt;
-            &lt;/label&gt;
-        &lt;/div&gt;
-        
-        &lt;div class="permission-item" id="item-manage_nicknames"&gt;
-            &lt;input type="checkbox" id="manage_nicknames" value="134217728"&gt;
-            &lt;label for="manage_nicknames"&gt;
-                Manage Nicknames
-                &lt;span class="permission-value" id="value-manage_nicknames"&gt;134217728&lt;/span&gt;
-            &lt;/label&gt;
-        &lt;/div&gt;
-        
-        &lt;div class="permission-item" id="item-change_nickname"&gt;
-            &lt;input type="checkbox" id="change_nickname" value="67108864"&gt;
-            &lt;label for="change_nickname"&gt;
-                Change Nickname
-                &lt;span class="permission-value" id="value-change_nickname"&gt;67108864&lt;/span&gt;
-            &lt;/label&gt;
-        &lt;/div&gt;
-        
-        &lt;!-- Channel Management --&gt;
-        &lt;div class="category-header"&gt;
-            &lt;div class="category-title"&gt;Channel Management&lt;/div&gt;
-            &lt;button class="category-toggle" data-category="channel"&gt;Toggle All&lt;/button&gt;
-        &lt;/div&gt;
-        
-        &lt;div class="permission-item" id="item-manage_channels"&gt;
-            &lt;input type="checkbox" id="manage_channels" value="16"&gt;
-            &lt;label for="manage_channels"&gt;
-                Manage Channels
-                &lt;span class="permission-value" id="value-manage_channels"&gt;16&lt;/span&gt;
-            &lt;/label&gt;
-        &lt;/div&gt;
-        
-        &lt;div class="permission-item" id="item-manage_roles"&gt;
-            &lt;input type="checkbox" id="manage_roles" value="268435456"&gt;
-            &lt;label for="manage_roles"&gt;
-                Manage Roles
-                &lt;span class="permission-value" id="value-manage_roles"&gt;268435456&lt;/span&gt;
-            &lt;/label&gt;
-        &lt;/div&gt;
-        
-        &lt;div class="permission-item" id="item-manage_webhooks"&gt;
-            &lt;input type="checkbox" id="manage_webhooks" value="536870912"&gt;
-            &lt;label for="manage_webhooks"&gt;
-                Manage Webhooks
-                &lt;span class="permission-value" id="value-manage_webhooks"&gt;536870912&lt;/span&gt;
-            &lt;/label&gt;
-        &lt;/div&gt;
-        
-        &lt;div class="permission-item" id="item-view_channels"&gt;
-            &lt;input type="checkbox" id="view_channels" value="1024"&gt;
-            &lt;label for="view_channels"&gt;
-                View Channels
-                &lt;span class="permission-value" id="value-view_channels"&gt;1024&lt;/span&gt;
-            &lt;/label&gt;
-        &lt;/div&gt;
-        
-        &lt;!-- Text Permissions --&gt;
-        &lt;div class="category-header"&gt;
-            &lt;div class="category-title"&gt;Text Permissions&lt;/div&gt;
-            &lt;button class="category-toggle" data-category="text"&gt;Toggle All&lt;/button&gt;
-        &lt;/div&gt;
-        
-        &lt;div class="permission-item" id="item-send_messages"&gt;
-            &lt;input type="checkbox" id="send_messages" value="2048"&gt;
-            &lt;label for="send_messages"&gt;
-                Send Messages
-                &lt;span class="permission-value" id="value-send_messages"&gt;2048&lt;/span&gt;
-            &lt;/label&gt;
-        &lt;/div&gt;
-        
-        &lt;div class="permission-item" id="item-send_messages_in_threads"&gt;
-            &lt;input type="checkbox" id="send_messages_in_threads" value="274877906944"&gt;
-            &lt;label for="send_messages_in_threads"&gt;
-                Send Messages in Threads
-                &lt;span class="permission-value" id="value-send_messages_in_threads"&gt;274877906944&lt;/span&gt;
-            &lt;/label&gt;
-        &lt;/div&gt;
-        
-        &lt;div class="permission-item" id="item-create_public_threads"&gt;
-            &lt;input type="checkbox" id="create_public_threads" value="34359738368"&gt;
-            &lt;label for="create_public_threads"&gt;
-                Create Public Threads
-                &lt;span class="permission-value" id="value-create_public_threads"&gt;34359738368&lt;/span&gt;
-            &lt;/label&gt;
-        &lt;/div&gt;
-        
-        &lt;div class="permission-item" id="item-create_private_threads"&gt;
-            &lt;input type="checkbox" id="create_private_threads" value="68719476736"&gt;
-            &lt;label for="create_private_threads"&gt;
-                Create Private Threads
-                &lt;span class="permission-value" id="value-create_private_threads"&gt;68719476736&lt;/span&gt;
-            &lt;/label&gt;
-        &lt;/div&gt;
-        
-        &lt;div class="permission-item" id="item-embed_links"&gt;
-            &lt;input type="checkbox" id="embed_links" value="16384"&gt;
-            &lt;label for="embed_links"&gt;
-                Embed Links
-                &lt;span class="permission-value" id="value-embed_links"&gt;16384&lt;/span&gt;
-            &lt;/label&gt;
-        &lt;/div&gt;
-        
-        &lt;div class="permission-item" id="item-attach_files"&gt;
-            &lt;input type="checkbox" id="attach_files" value="32768"&gt;
-            &lt;label for="attach_files"&gt;
-                Attach Files
-                &lt;span class="permission-value" id="value-attach_files"&gt;32768&lt;/span&gt;
-            &lt;/label&gt;
-        &lt;/div&gt;
-        
-        &lt;div class="permission-item" id="item-add_reactions"&gt;
-            &lt;input type="checkbox" id="add_reactions" value="64"&gt;
-            &lt;label for="add_reactions"&gt;
-                Add Reactions
-                &lt;span class="permission-value" id="value-add_reactions"&gt;64&lt;/span&gt;
-            &lt;/label&gt;
-        &lt;/div&gt;
-        
-        &lt;div class="permission-item" id="item-use_external_emoji"&gt;
-            &lt;input type="checkbox" id="use_external_emoji" value="262144"&gt;
-            &lt;label for="use_external_emoji"&gt;
-                Use External Emoji
-                &lt;span class="permission-value" id="value-use_external_emoji"&gt;262144&lt;/span&gt;
-            &lt;/label&gt;
-        &lt;/div&gt;
-        
-        &lt;div class="permission-item" id="item-use_external_stickers"&gt;
-            &lt;input type="checkbox" id="use_external_stickers" value="137438953472"&gt;
-            &lt;label for="use_external_stickers"&gt;
-                Use External Stickers
-                &lt;span class="permission-value" id="value-use_external_stickers"&gt;137438953472&lt;/span&gt;
-            &lt;/label&gt;
-        &lt;/div&gt;
-        
-        &lt;div class="permission-item" id="item-mention_everyone"&gt;
-            &lt;input type="checkbox" id="mention_everyone" value="131072"&gt;
-            &lt;label for="mention_everyone"&gt;
-                Mention @everyone, @here, All Roles
-                &lt;span class="permission-value" id="value-mention_everyone"&gt;131072&lt;/span&gt;
-            &lt;/label&gt;
-        &lt;/div&gt;
-        
-        &lt;div class="permission-item" id="item-manage_messages"&gt;
-            &lt;input type="checkbox" id="manage_messages" value="8192"&gt;
-            &lt;label for="manage_messages"&gt;
-                Manage Messages
-                &lt;span class="permission-value" id="value-manage_messages"&gt;8192&lt;/span&gt;
-            &lt;/label&gt;
-        &lt;/div&gt;
-        
-        &lt;div class="permission-item" id="item-manage_threads"&gt;
-            &lt;input type="checkbox" id="manage_threads" value="17179869184"&gt;
-            &lt;label for="manage_threads"&gt;
-                Manage Threads
-                &lt;span class="permission-value" id="value-manage_threads"&gt;17179869184&lt;/span&gt;
-            &lt;/label&gt;
-        &lt;/div&gt;
-        
-        &lt;div class="permission-item" id="item-read_message_history"&gt;
-            &lt;input type="checkbox" id="read_message_history" value="65536"&gt;
-            &lt;label for="read_message_history"&gt;
-                Read Message History
-                &lt;span class="permission-value" id="value-read_message_history"&gt;65536&lt;/span&gt;
-            &lt;/label&gt;
-        &lt;/div&gt;
-        
-        &lt;div class="permission-item" id="item-send_tts_messages"&gt;
-            &lt;input type="checkbox" id="send_tts_messages" value="4096"&gt;
-            &lt;label for="send_tts_messages"&gt;
-                Send Text-to-Speech Messages
-                &lt;span class="permission-value" id="value-send_tts_messages"&gt;4096&lt;/span&gt;
-            &lt;/label&gt;
-        &lt;/div&gt;
-        
-        &lt;div class="permission-item" id="item-use_application_commands"&gt;
-            &lt;input type="checkbox" id="use_application_commands" value="2147483648"&gt;
-            &lt;label for="use_application_commands"&gt;
-                Use Application Commands
-                &lt;span class="permission-value" id="value-use_application_commands"&gt;2147483648&lt;/span&gt;
-            &lt;/label&gt;
-        &lt;/div&gt;
-        
-        &lt;!-- Voice Permissions --&gt;
-        &lt;div class="category-header"&gt;
-            &lt;div class="category-title"&gt;Voice Permissions&lt;/div&gt;
-            &lt;button class="category-toggle" data-category="voice"&gt;Toggle All&lt;/button&gt;
-        &lt;/div&gt;
-        
-        &lt;div class="permission-item" id="item-connect"&gt;
-            &lt;input type="checkbox" id="connect" value="1048576"&gt;
-            &lt;label for="connect"&gt;
-                Connect
-                &lt;span class="permission-value" id="value-connect"&gt;1048576&lt;/span&gt;
-            &lt;/label&gt;
-        &lt;/div&gt;
-        
-        &lt;div class="permission-item" id="item-speak"&gt;
-            &lt;input type="checkbox" id="speak" value="2097152"&gt;
-            &lt;label for="speak"&gt;
-                Speak
-                &lt;span class="permission-value" id="value-speak"&gt;2097152&lt;/span&gt;
-            &lt;/label&gt;
-        &lt;/div&gt;
-        
-        &lt;div class="permission-item" id="item-video"&gt;
-            &lt;input type="checkbox" id="video" value="512"&gt;
-            &lt;label for="video"&gt;
-                Video
-                &lt;span class="permission-value" id="value-video"&gt;512&lt;/span&gt;
-            &lt;/label&gt;
-        &lt;/div&gt;
-        
-        &lt;div class="permission-item" id="item-start_activities"&gt;
-            &lt;input type="checkbox" id="start_activities" value="549755813888"&gt;
-            &lt;label for="start_activities"&gt;
-                Start Activities
-                &lt;span class="permission-value" id="value-start_activities"&gt;549755813888&lt;/span&gt;
-            &lt;/label&gt;
-        &lt;/div&gt;
-        
-        &lt;div class="permission-item" id="item-use_voice_activity"&gt;
-            &lt;input type="checkbox" id="use_voice_activity" value="33554432"&gt;
-            &lt;label for="use_voice_activity"&gt;
-                Use Voice Activity
-                &lt;span class="permission-value" id="value-use_voice_activity"&gt;33554432&lt;/span&gt;
-            &lt;/label&gt;
-        &lt;/div&gt;
-        
-        &lt;div class="permission-item" id="item-priority_speaker"&gt;
-            &lt;input type="checkbox" id="priority_speaker" value="256"&gt;
-            &lt;label for="priority_speaker"&gt;
-                Priority Speaker
-                &lt;span class="permission-value" id="value-priority_speaker"&gt;256&lt;/span&gt;
-            &lt;/label&gt;
-        &lt;/div&gt;
-        
-        &lt;div class="permission-item" id="item-mute_members"&gt;
-            &lt;input type="checkbox" id="mute_members" value="4194304"&gt;
-            &lt;label for="mute_members"&gt;
-                Mute Members
-                &lt;span class="permission-value" id="value-mute_members"&gt;4194304&lt;/span&gt;
-            &lt;/label&gt;
-        &lt;/div&gt;
-        
-        &lt;div class="permission-item" id="item-deafen_members"&gt;
-            &lt;input type="checkbox" id="deafen_members" value="8388608"&gt;
-            &lt;label for="deafen_members"&gt;
-                Deafen Members
-                &lt;span class="permission-value" id="value-deafen_members"&gt;8388608&lt;/span&gt;
-            &lt;/label&gt;
-        &lt;/div&gt;
-        
-        &lt;div class="permission-item" id="item-move_members"&gt;
-            &lt;input type="checkbox" id="move_members" value="16777216"&gt;
-            &lt;label for="move_members"&gt;
-                Move Members
-                &lt;span class="permission-value" id="value-move_members"&gt;16777216&lt;/span&gt;
-            &lt;/label&gt;
-        &lt;/div&gt;
-        
-        &lt;div class="permission-item" id="item-request_to_speak"&gt;
-            &lt;input type="checkbox" id="request_to_speak" value="4294967296"&gt;
-            &lt;label for="request_to_speak"&gt;
-                Request to Speak
-                &lt;span class="permission-value" id="value-request_to_speak"&gt;4294967296&lt;/span&gt;
-            &lt;/label&gt;
-        &lt;/div&gt;
-        
-        &lt;!-- Other Permissions --&gt;
-        &lt;div class="category-header"&gt;
-            &lt;div class="category-title"&gt;Other Permissions&lt;/div&gt;
-            &lt;button class="category-toggle" data-category="other"&gt;Toggle All&lt;/button&gt;
-        &lt;/div&gt;
-        
-        &lt;div class="permission-item" id="item-manage_emojis_stickers"&gt;
-            &lt;input type="checkbox" id="manage_emojis_stickers" value="1073741824"&gt;
-            &lt;label for="manage_emojis_stickers"&gt;
-                Manage Emojis and Stickers
-                &lt;span class="permission-value" id="value-manage_emojis_stickers"&gt;1073741824&lt;/span&gt;
-            &lt;/label&gt;
-        &lt;/div&gt;
-        
-        &lt;div class="permission-item" id="item-manage_events"&gt;
-            &lt;input type="checkbox" id="manage_events" value="8589934592"&gt;
-            &lt;label for="manage_events"&gt;
-                Manage Events
-                &lt;span class="permission-value" id="value-manage_events"&gt;8589934592&lt;/span&gt;
-            &lt;/label&gt;
-        &lt;/div&gt;
-        
-        &lt;div class="permission-item" id="item-create_invite"&gt;
-            &lt;input type="checkbox" id="create_invite" value="1"&gt;
-            &lt;label for="create_invite"&gt;
-                Create Invite
-                &lt;span class="permission-value" id="value-create_invite"&gt;1&lt;/span&gt;
-            &lt;/label&gt;
-        &lt;/div&gt;
-    
-    &lt;div class="total-section"&gt;
-        &lt;h2&gt;Current Permission Value:&lt;/h2&gt;
-        &lt;div class="total-value" id="totalValue"&gt;0&lt;/div&gt;
-        &lt;div class="hex-value" id="hexValue"&gt;0x0&lt;/div&gt;
-    &lt;/div&gt;
-    
-    &lt;div class="input-section"&gt;
-        &lt;input type="number" id="targetValue" 
+<div class="control-buttons">
+    <button class="control-button" id="enableAll">Enable All</button>
+    <button class="control-button disable" id="disableAll">Disable All</button>
+</div>
+<div class="permissions-grid" id="permissionsGrid">
+    <div class="category-header">
+        <div class="category-title">General Server Permissions</div>
+        <button class="category-toggle" data-category="general">Toggle All</button>
+    </div>
+    <div class="permission-item" id="item-manage_server">
+        <input type="checkbox" id="manage_server" value="32">
+        <label for="manage_server">
+            Manage Server
+            <span class="permission-value" id="value-manage_server">32</span>
+        </label>
+    </div>
+    <div class="permission-item" id="item-view_audit_log">
+        <input type="checkbox" id="view_audit_log" value="128">
+        <label for="view_audit_log">
+            View Audit Log
+            <span class="permission-value" id="value-view_audit_log">128</span>
+        </label>
+    </div>
+    <div class="permission-item" id="item-view_server_insights">
+        <input type="checkbox" id="view_server_insights" value="524288">
+        <label for="view_server_insights">
+            View Server Insights
+            <span class="permission-value" id="value-view_server_insights">524288</span>
+        </label>
+    </div>
+    <div class="permission-item" id="item-administrator">
+        <input type="checkbox" id="administrator" value="8">
+        <label for="administrator">
+            Administrator
+            <span class="permission-value" id="value-administrator">8</span>
+        </label>
+    </div>
+    <div class="category-header">
+        <div class="category-title">Member Management</div>
+        <button class="category-toggle" data-category="member">Toggle All</button>
+    </div>
+    <div class="permission-item" id="item-kick_members">
+        <input type="checkbox" id="kick_members" value="2">
+        <label for="kick_members">
+            Kick Members
+            <span class="permission-value" id="value-kick_members">2</span>
+        </label>
+    </div>
+    <div class="permission-item" id="item-ban_members">
+        <input type="checkbox" id="ban_members" value="4">
+        <label for="ban_members">
+            Ban Members
+            <span class="permission-value" id="value-ban_members">4</span>
+        </label>
+    </div>
+    <div class="permission-item" id="item-manage_nicknames">
+        <input type="checkbox" id="manage_nicknames" value="134217728">
+        <label for="manage_nicknames">
+            Manage Nicknames
+            <span class="permission-value" id="value-manage_nicknames">134217728</span>
+        </label>
+    </div>
+    <div class="permission-item" id="item-change_nickname">
+        <input type="checkbox" id="change_nickname" value="67108864">
+        <label for="change_nickname">
+            Change Nickname
+            <span class="permission-value" id="value-change_nickname">67108864</span>
+        </label>
+    </div>
+    <div class="category-header">
+        <div class="category-title">Channel Management</div>
+        <button class="category-toggle" data-category="channel">Toggle All</button>
+    </div>
+    <div class="permission-item" id="item-manage_channels">
+        <input type="checkbox" id="manage_channels" value="16">
+        <label for="manage_channels">
+            Manage Channels
+            <span class="permission-value" id="value-manage_channels">16</span>
+        </label>
+    </div>
+    <div class="permission-item" id="item-manage_roles">
+        <input type="checkbox" id="manage_roles" value="268435456">
+        <label for="manage_roles">
+            Manage Roles
+            <span class="permission-value" id="value-manage_roles">268435456</span>
+        </label>
+    </div>
+    <div class="permission-item" id="item-manage_webhooks">
+        <input type="checkbox" id="manage_webhooks" value="536870912">
+        <label for="manage_webhooks">
+            Manage Webhooks
+            <span class="permission-value" id="value-manage_webhooks">536870912</span>
+        </label>
+    </div>
+    <div class="permission-item" id="item-view_channels">
+        <input type="checkbox" id="view_channels" value="1024">
+        <label for="view_channels">
+            View Channels
+            <span class="permission-value" id="value-view_channels">1024</span>
+        </label>
+    </div>
+    <div class="category-header">
+        <div class="category-title">Text Permissions</div>
+        <button class="category-toggle" data-category="text">Toggle All</button>
+    </div>
+    <div class="permission-item" id="item-send_messages">
+        <input type="checkbox" id="send_messages" value="2048">
+        <label for="send_messages">
+            Send Messages
+            <span class="permission-value" id="value-send_messages">2048</span>
+        </label>
+    </div>
+    <div class="permission-item" id="item-send_messages_in_threads">
+        <input type="checkbox" id="send_messages_in_threads" value="274877906944">
+        <label for="send_messages_in_threads">
+            Send Messages in Threads
+            <span class="permission-value" id="value-send_messages_in_threads">274877906944</span>
+        </label>
+    </div>
+    <div class="permission-item" id="item-create_public_threads">
+        <input type="checkbox" id="create_public_threads" value="34359738368">
+        <label for="create_public_threads">
+            Create Public Threads
+            <span class="permission-value" id="value-create_public_threads">34359738368</span>
+        </label>
+    </div>
+    <div class="permission-item" id="item-create_private_threads">
+        <input type="checkbox" id="create_private_threads" value="68719476736">
+        <label for="create_private_threads">
+            Create Private Threads
+            <span class="permission-value" id="value-create_private_threads">68719476736</span>
+        </label>
+    </div>
+    <div class="permission-item" id="item-embed_links">
+        <input type="checkbox" id="embed_links" value="16384">
+        <label for="embed_links">
+            Embed Links
+            <span class="permission-value" id="value-embed_links">16384</span>
+        </label>
+    </div>
+    <div class="permission-item" id="item-attach_files">
+        <input type="checkbox" id="attach_files" value="32768">
+        <label for="attach_files">
+            Attach Files
+            <span class="permission-value" id="value-attach_files">32768</span>
+        </label>
+    </div>
+    <div class="permission-item" id="item-add_reactions">
+        <input type="checkbox" id="add_reactions" value="64">
+        <label for="add_reactions">
+            Add Reactions
+            <span class="permission-value" id="value-add_reactions">64</span>
+        </label>
+    </div>
+    <div class="permission-item" id="item-use_external_emoji">
+        <input type="checkbox" id="use_external_emoji" value="262144">
+        <label for="use_external_emoji">
+            Use External Emoji
+            <span class="permission-value" id="value-use_external_emoji">262144</span>
+        </label>
+    </div>
+    <div class="permission-item" id="item-use_external_stickers">
+        <input type="checkbox" id="use_external_stickers" value="137438953472">
+        <label for="use_external_stickers">
+            Use External Stickers
+            <span class="permission-value" id="value-use_external_stickers">137438953472</span>
+        </label>
+    </div>
+    <div class="permission-item" id="item-mention_everyone">
+        <input type="checkbox" id="mention_everyone" value="131072">
+        <label for="mention_everyone">
+            Mention @everyone, @here, All Roles
+            <span class="permission-value" id="value-mention_everyone">131072</span>
+        </label>
+    </div>
+    <div class="permission-item" id="item-manage_messages">
+        <input type="checkbox" id="manage_messages" value="8192">
+        <label for="manage_messages">
+            Manage Messages
+            <span class="permission-value" id="value-manage_messages">8192</span>
+        </label>
+    </div>
+    <div class="permission-item" id="item-manage_threads">
+        <input type="checkbox" id="manage_threads" value="17179869184">
+        <label for="manage_threads">
+            Manage Threads
+            <span class="permission-value" id="value-manage_threads">17179869184</span>
+        </label>
+    </div>
+    <div class="permission-item" id="item-read_message_history">
+        <input type="checkbox" id="read_message_history" value="65536">
+        <label for="read_message_history">
+            Read Message History
+            <span class="permission-value" id="value-read_message_history">65536</span>
+        </label>
+    </div>
+    <div class="permission-item" id="item-send_tts_messages">
+        <input type="checkbox" id="send_tts_messages" value="4096">
+        <label for="send_tts_messages">
+            Send Text-to-Speech Messages
+            <span class="permission-value" id="value-send_tts_messages">4096</span>
+        </label>
+    </div>
+    <div class="permission-item" id="item-use_application_commands">
+        <input type="checkbox" id="use_application_commands" value="2147483648">
+        <label for="use_application_commands">
+            Use Application Commands
+            <span class="permission-value" id="value-use_application_commands">2147483648</span>
+        </label>
+    </div>
+    <div class="category-header">
+        <div class="category-title">Voice Permissions</div>
+        <button class="category-toggle" data-category="voice">Toggle All</button>
+    </div>
+    <div class="permission-item" id="item-connect">
+        <input type="checkbox" id="connect" value="1048576">
+        <label for="connect">
+            Connect
+            <span class="permission-value" id="value-connect">1048576</span>
+        </label>
+    </div>
+    <div class="permission-item" id="item-speak">
+        <input type="checkbox" id="speak" value="2097152">
+        <label for="speak">
+            Speak
+            <span class="permission-value" id="value-speak">2097152</span>
+        </label>
+    </div>
+    <div class="permission-item" id="item-video">
+        <input type="checkbox" id="video" value="512">
+        <label for="video">
+            Video
+            <span class="permission-value" id="value-video">512</span>
+        </label>
+    </div>
+    <div class="permission-item" id="item-start_activities">
+        <input type="checkbox" id="start_activities" value="549755813888">
+        <label for="start_activities">
+            Start Activities
+            <span class="permission-value" id="value-start_activities">549755813888</span>
+        </label>
+    </div>
+    <div class="permission-item" id="item-use_voice_activity">
+        <input type="checkbox" id="use_voice_activity" value="33554432">
+        <label for="use_voice_activity">
+            Use Voice Activity
+            <span class="permission-value" id="value-use_voice_activity">33554432</span>
+        </label>
+    </div>
+    <div class="permission-item" id="item-priority_speaker">
+        <input type="checkbox" id="priority_speaker" value="256">
+        <label for="priority_speaker">
+            Priority Speaker
+            <span class="permission-value" id="value-priority_speaker">256</span>
+        </label>
+    </div>
+    <div class="permission-item" id="item-mute_members">
+        <input type="checkbox" id="mute_members" value="4194304">
+        <label for="mute_members">
+            Mute Members
+            <span class="permission-value" id="value-mute_members">4194304</span>
+        </label>
+    </div>
+    <div class="permission-item" id="item-deafen_members">
+        <input type="checkbox" id="deafen_members" value="8388608">
+        <label for="deafen_members">
+            Deafen Members
+            <span class="permission-value" id="value-deafen_members">8388608</span>
+        </label>
+    </div>
+    <div class="permission-item" id="item-move_members">
+        <input type="checkbox" id="move_members" value="16777216">
+        <label for="move_members">
+            Move Members
+            <span class="permission-value" id="value-move_members">16777216</span>
+        </label>
+    </div>
+    <div class="permission-item" id="item-request_to_speak">
+        <input type="checkbox" id="request_to_speak" value="4294967296">
+        <label for="request_to_speak">
+            Request to Speak
+            <span class="permission-value" id="value-request_to_speak">4294967296</span>
+        </label>
+    </div>
+    <div class="category-header">
+        <div class="category-title">Other Permissions</div>
+        <button class="category-toggle" data-category="other">Toggle All</button>
+    </div>
+    <div class="permission-item" id="item-manage_emojis_stickers">
+        <input type="checkbox" id="manage_emojis_stickers" value="1073741824">
+        <label for="manage_emojis_stickers">
+            Manage Emojis and Stickers
+            <span class="permission-value" id="value-manage_emojis_stickers">1073741824</span>
+        </label>
+    </div>
+    <div class="permission-item" id="item-manage_events">
+        <input type="checkbox" id="manage_events" value="8589934592">
+        <label for="manage_events">
+            Manage Events
+            <span class="permission-value" id="value-manage_events">8589934592</span>
+        </label>
+    </div>
+    <div class="permission-item" id="item-create_invite">
+        <input type="checkbox" id="create_invite" value="1">
+        <label for="create_invite">
+            Create Invite
+            <span class="permission-value" id="value-create_invite">1</span>
+        </label>
+    </div>
+    <div class="total-section">
+        <h2 id="current-permission-value"><a class="header" href="#current-permission-value">Current Permission Value:</a></h2>
+        <div class="total-value" id="totalValue">0</div>
+        <div class="hex-value" id="hexValue">0x0</div>
+    </div>
+    <div class="input-section">
+        <input type="number" id="targetValue" 
                placeholder="Enter permission value to find combinations (e.g., 10)"
-               min="0"&gt;
-    &lt;/div&gt;
-    
-    &lt;div class="results"&gt;
-        &lt;h3&gt;Search Results:&lt;/h3&gt;
-        &lt;div class="result-content" id="resultContent"&gt;
+               min="0">
+    </div>
+    <div class="results">
+        <h3 id="search-results"><a class="header" href="#search-results">Search Results:</a></h3>
+        <div class="result-content" id="resultContent">
             Select permissions and/or enter a value to find combinations
-        &lt;/div&gt;
-    &lt;/div&gt;
-</code></pre>
-<script>
+        </div>
+    </div>
+</div>
+<script defer>
         // Permission function to get permission value
         function permission(permissionName) {
             const permissions = {
@@ -857,332 +802,331 @@
                 'manage_events': 8589934592n,
                 'create_invite': 1n
             };
+<pre><code>        return permissions[permissionName] || 0n;
+    }
+    
+    // Category mapping for toggle functionality
+    const categoryMapping = {
+        'general': ['manage_server', 'view_audit_log', 'view_server_insights', 'administrator'],
+        'member': ['kick_members', 'ban_members', 'manage_nicknames', 'change_nickname'],
+        'channel': ['manage_channels', 'manage_roles', 'manage_webhooks', 'view_channels'],
+        'text': [
+            'send_messages', 'send_messages_in_threads', 'create_public_threads', 
+            'create_private_threads', 'embed_links', 'attach_files', 'add_reactions',
+            'use_external_emoji', 'use_external_stickers', 'mention_everyone',
+            'manage_messages', 'manage_threads', 'read_message_history',
+            'send_tts_messages', 'use_application_commands'
+        ],
+        'voice': [
+            'connect', 'speak', 'video', 'start_activities', 'use_voice_activity',
+            'priority_speaker', 'mute_members', 'deafen_members', 'move_members',
+            'request_to_speak'
+        ],
+        'other': ['manage_emojis_stickers', 'manage_events', 'create_invite']
+    };
+    
+    // Permission values map for quick lookup
+    const permissionValues = new Map();
+    
+    // Initialize permission values from HTML
+    function initializePermissionValues() {
+        // Get all permission checkboxes
+        const checkboxes = document.querySelectorAll('input[type="checkbox"]');
+        
+        checkboxes.forEach(checkbox =&gt; {
+            const permissionName = checkbox.id;
+            const permissionValue = BigInt(checkbox.value);
             
-            return permissions[permissionName] || 0n;
-        }
-        
-        // Category mapping for toggle functionality
-        const categoryMapping = {
-            'general': ['manage_server', 'view_audit_log', 'view_server_insights', 'administrator'],
-            'member': ['kick_members', 'ban_members', 'manage_nicknames', 'change_nickname'],
-            'channel': ['manage_channels', 'manage_roles', 'manage_webhooks', 'view_channels'],
-            'text': [
-                'send_messages', 'send_messages_in_threads', 'create_public_threads', 
-                'create_private_threads', 'embed_links', 'attach_files', 'add_reactions',
-                'use_external_emoji', 'use_external_stickers', 'mention_everyone',
-                'manage_messages', 'manage_threads', 'read_message_history',
-                'send_tts_messages', 'use_application_commands'
-            ],
-            'voice': [
-                'connect', 'speak', 'video', 'start_activities', 'use_voice_activity',
-                'priority_speaker', 'mute_members', 'deafen_members', 'move_members',
-                'request_to_speak'
-            ],
-            'other': ['manage_emojis_stickers', 'manage_events', 'create_invite']
-        };
-        
-        // Permission values map for quick lookup
-        const permissionValues = new Map();
-        
-        // Initialize permission values from HTML
-        function initializePermissionValues() {
-            // Get all permission checkboxes
-            const checkboxes = document.querySelectorAll('input[type="checkbox"]');
-            
-            checkboxes.forEach(checkbox => {
-                const permissionName = checkbox.id;
-                const permissionValue = BigInt(checkbox.value);
-                
-                permissionValues.set(permissionName, {
-                    name: document.querySelector(`label[for="${permissionName}"]`).textContent.trim().split('\n')[0],
-                    value: permissionValue
-                });
+            permissionValues.set(permissionName, {
+                name: document.querySelector(`label[for="${permissionName}"]`).textContent.trim().split('\n')[0],
+                value: permissionValue
             });
-        }
+        });
+    }
+    
+    let total = 0n;
+    const categoryStates = new Map();
+    
+    // Initialize interface
+    function initializeInterface() {
+        initializePermissionValues();
         
-        let total = 0n;
-        const categoryStates = new Map();
+        // Initialize category states
+        Object.keys(categoryMapping).forEach(category =&gt; {
+            categoryStates.set(category, false);
+        });
         
-        // Initialize interface
-        function initializeInterface() {
-            initializePermissionValues();
-            
-            // Initialize category states
-            Object.keys(categoryMapping).forEach(category => {
-                categoryStates.set(category, false);
-            });
-            
-            // Add event handlers for checkboxes
-            document.querySelectorAll('input[type="checkbox"]').forEach(checkbox => {
-                checkbox.addEventListener('change', updateTotal);
-            });
-            
-            // Add event handler for target value input
-            document.getElementById('targetValue').addEventListener('input', findCombinations);
-            
-            // Add event handlers for control buttons
-            document.getElementById('enableAll').addEventListener('click', () => toggleAllPermissions(true));
-            document.getElementById('disableAll').addEventListener('click', () => toggleAllPermissions(false));
-            
-            // Add event handlers for category toggle buttons
-            document.querySelectorAll('.category-toggle').forEach(button => {
-                button.addEventListener('click', (e) => {
-                    const categoryId = e.target.dataset.category;
-                    toggleCategoryPermissions(categoryId);
-                });
-            });
-            
-            updateTotal();
-        }
+        // Add event handlers for checkboxes
+        document.querySelectorAll('input[type="checkbox"]').forEach(checkbox =&gt; {
+            checkbox.addEventListener('change', updateTotal);
+        });
         
-        function toggleAllPermissions(enable) {
-            const checkboxes = document.querySelectorAll('input[type="checkbox"]');
-            checkboxes.forEach(checkbox => {
-                checkbox.checked = enable;
-            });
-            
-            // Update all category states
-            Object.keys(categoryMapping).forEach(category => {
-                categoryStates.set(category, enable);
-            });
-            
-            updateTotal();
-        }
+        // Add event handler for target value input
+        document.getElementById('targetValue').addEventListener('input', findCombinations);
         
-        function toggleCategoryPermissions(categoryId) {
-            const permissionIds = categoryMapping[categoryId];
-            if (!permissionIds) return;
+        // Add event handlers for control buttons
+        document.getElementById('enableAll').addEventListener('click', () =&gt; toggleAllPermissions(true));
+        document.getElementById('disableAll').addEventListener('click', () =&gt; toggleAllPermissions(false));
+        
+        // Add event handlers for category toggle buttons
+        document.querySelectorAll('.category-toggle').forEach(button =&gt; {
+            button.addEventListener('click', (e) =&gt; {
+                const categoryId = e.target.dataset.category;
+                toggleCategoryPermissions(categoryId);
+            });
+        });
+        
+        updateTotal();
+    }
+    
+    function toggleAllPermissions(enable) {
+        const checkboxes = document.querySelectorAll('input[type="checkbox"]');
+        checkboxes.forEach(checkbox =&gt; {
+            checkbox.checked = enable;
+        });
+        
+        // Update all category states
+        Object.keys(categoryMapping).forEach(category =&gt; {
+            categoryStates.set(category, enable);
+        });
+        
+        updateTotal();
+    }
+    
+    function toggleCategoryPermissions(categoryId) {
+        const permissionIds = categoryMapping[categoryId];
+        if (!permissionIds) return;
+        
+        // Get current state of the category (check if all are selected)
+        const allChecked = permissionIds.every(id =&gt; {
+            const checkbox = document.getElementById(id);
+            return checkbox &amp;&amp; checkbox.checked;
+        });
+        
+        const newState = !allChecked;
+        
+        // Toggle all permissions in this category
+        permissionIds.forEach(permissionId =&gt; {
+            const checkbox = document.getElementById(permissionId);
+            if (checkbox) {
+                checkbox.checked = newState;
+            }
+        });
+        
+        // Update category state
+        categoryStates.set(categoryId, newState);
+        
+        updateTotal();
+    }
+    
+    function updateTotal() {
+        total = 0n;
+        const checkboxes = document.querySelectorAll('input[type="checkbox"]:checked');
+        
+        checkboxes.forEach(checkbox =&gt; {
+            total += BigInt(checkbox.value);
             
-            // Get current state of the category (check if all are selected)
-            const allChecked = permissionIds.every(id => {
+            // Add class for highlighting selected element
+            document.getElementById(`item-${checkbox.id}`).classList.add('checked');
+        });
+        
+        // Remove class from unselected elements
+        document.querySelectorAll('input[type="checkbox"]:not(:checked)').forEach(checkbox =&gt; {
+            document.getElementById(`item-${checkbox.id}`).classList.remove('checked');
+        });
+        
+        // Update category states and toggle button texts
+        Object.keys(categoryMapping).forEach(category =&gt; {
+            const permissionIds = categoryMapping[category];
+            const allChecked = permissionIds.every(id =&gt; {
                 const checkbox = document.getElementById(id);
-                return checkbox && checkbox.checked;
+                return checkbox &amp;&amp; checkbox.checked;
             });
-            
-            const newState = !allChecked;
-            
-            // Toggle all permissions in this category
-            permissionIds.forEach(permissionId => {
-                const checkbox = document.getElementById(permissionId);
-                if (checkbox) {
-                    checkbox.checked = newState;
-                }
+            const anyChecked = permissionIds.some(id =&gt; {
+                const checkbox = document.getElementById(id);
+                return checkbox &amp;&amp; checkbox.checked;
             });
             
             // Update category state
-            categoryStates.set(categoryId, newState);
+            categoryStates.set(category, allChecked);
             
-            updateTotal();
-        }
-        
-        function updateTotal() {
-            total = 0n;
-            const checkboxes = document.querySelectorAll('input[type="checkbox"]:checked');
-            
-            checkboxes.forEach(checkbox => {
-                total += BigInt(checkbox.value);
-                
-                // Add class for highlighting selected element
-                document.getElementById(`item-${checkbox.id}`).classList.add('checked');
-            });
-            
-            // Remove class from unselected elements
-            document.querySelectorAll('input[type="checkbox"]:not(:checked)').forEach(checkbox => {
-                document.getElementById(`item-${checkbox.id}`).classList.remove('checked');
-            });
-            
-            // Update category states and toggle button texts
-            Object.keys(categoryMapping).forEach(category => {
-                const permissionIds = categoryMapping[category];
-                const allChecked = permissionIds.every(id => {
-                    const checkbox = document.getElementById(id);
-                    return checkbox && checkbox.checked;
-                });
-                const anyChecked = permissionIds.some(id => {
-                    const checkbox = document.getElementById(id);
-                    return checkbox && checkbox.checked;
-                });
-                
-                // Update category state
-                categoryStates.set(category, allChecked);
-                
-                // Update category toggle button text
-                const toggleButton = document.querySelector(`.category-toggle[data-category="${category}"]`);
-                if (toggleButton) {
-                    if (allChecked) {
-                        toggleButton.textContent = 'Disable All';
-                        toggleButton.style.backgroundColor = '#ed4245';
-                    } else if (anyChecked) {
-                        toggleButton.textContent = 'Enable All';
-                        toggleButton.style.backgroundColor = '#43b581';
-                    } else {
-                        toggleButton.textContent = 'Enable All';
-                        toggleButton.style.backgroundColor = '#43b581';
-                    }
-                }
-            });
-            
-            // Update display
-            document.getElementById('totalValue').textContent = total.toString();
-            document.getElementById('hexValue').textContent = `0x${total.toString(16).toUpperCase()}`;
-            
-            findCombinations();
-        }
-        
-        function findCombinations() {
-            const targetInput = document.getElementById('targetValue');
-            const targetValue = targetInput.value.trim();
-            const resultDiv = document.getElementById('resultContent');
-            
-            // Get currently selected permissions
-            const checkedBoxes = Array.from(document.querySelectorAll('input[type="checkbox"]:checked'));
-            const checkedPerms = checkedBoxes.map(cb => cb.id);
-            const checkedSum = checkedBoxes.reduce((sum, cb) => sum + BigInt(cb.value), 0n);
-            
-            // If input field is empty
-            if (!targetValue) {
-                if (checkedPerms.length > 0) {
-                    const permNames = checkedPerms.map(id => permissionValues.get(id).name);
-                    resultDiv.innerHTML = `
-                        <div class="current-selection">
-                            <div class="combination-title">Selected Permissions:</div>
-                            <ul class="permission-list">
-                                ${permNames.map(name => `<li>${name}</li>`).join('')}
-                            </ul>
-                            <div class="combination-total">Total: ${checkedSum.toString()} (0x${checkedSum.toString(16).toUpperCase()})</div>
-                        </div>
-                    `;
+            // Update category toggle button text
+            const toggleButton = document.querySelector(`.category-toggle[data-category="${category}"]`);
+            if (toggleButton) {
+                if (allChecked) {
+                    toggleButton.textContent = 'Disable All';
+                    toggleButton.style.backgroundColor = '#ed4245';
+                } else if (anyChecked) {
+                    toggleButton.textContent = 'Enable All';
+                    toggleButton.style.backgroundColor = '#43b581';
                 } else {
-                    resultDiv.innerHTML = '<div class="no-results">Select permissions from the list above</div>';
+                    toggleButton.textContent = 'Enable All';
+                    toggleButton.style.backgroundColor = '#43b581';
                 }
-                return;
             }
-            
-            // Validate input
-            let targetBigInt;
-            try {
-                targetBigInt = BigInt(targetValue);
-                if (targetBigInt < 0n) {
-                    resultDiv.innerHTML = '<div class="no-results">Value must be positive</div>';
-                    return;
-                }
-            } catch (e) {
-                resultDiv.innerHTML = '<div class="no-results">Please enter a valid number</div>';
-                return;
-            }
-            
-            // If current sum matches target
-            if (checkedSum === targetBigInt && checkedPerms.length > 0) {
-                const permNames = checkedPerms.map(id => permissionValues.get(id).name);
+        });
+        
+        // Update display
+        document.getElementById('totalValue').textContent = total.toString();
+        document.getElementById('hexValue').textContent = `0x${total.toString(16).toUpperCase()}`;
+        
+        findCombinations();
+    }
+    
+    function findCombinations() {
+        const targetInput = document.getElementById('targetValue');
+        const targetValue = targetInput.value.trim();
+        const resultDiv = document.getElementById('resultContent');
+        
+        // Get currently selected permissions
+        const checkedBoxes = Array.from(document.querySelectorAll('input[type="checkbox"]:checked'));
+        const checkedPerms = checkedBoxes.map(cb =&gt; cb.id);
+        const checkedSum = checkedBoxes.reduce((sum, cb) =&gt; sum + BigInt(cb.value), 0n);
+        
+        // If input field is empty
+        if (!targetValue) {
+            if (checkedPerms.length &gt; 0) {
+                const permNames = checkedPerms.map(id =&gt; permissionValues.get(id).name);
                 resultDiv.innerHTML = `
-                    <div class="combination">
-                        <div class="combination-title">Selected permissions match target value:</div>
-                        <ul class="permission-list">
-                            ${permNames.map(name => `<li>${name}</li>`).join('')}
-                        </ul>
-                        <div class="combination-total">Total: ${targetBigInt.toString()} (0x${targetBigInt.toString(16).toUpperCase()})</div>
-                    </div>
+                    &lt;div class="current-selection"&gt;
+                        &lt;div class="combination-title"&gt;Selected Permissions:&lt;/div&gt;
+                        &lt;ul class="permission-list"&gt;
+                            ${permNames.map(name =&gt; `&lt;li&gt;${name}&lt;/li&gt;`).join('')}
+                        &lt;/ul&gt;
+                        &lt;div class="combination-total"&gt;Total: ${checkedSum.toString()} (0x${checkedSum.toString(16).toUpperCase()})&lt;/div&gt;
+                    &lt;/div&gt;
                 `;
+            } else {
+                resultDiv.innerHTML = '&lt;div class="no-results"&gt;Select permissions from the list above&lt;/div&gt;';
+            }
+            return;
+        }
+        
+        // Validate input
+        let targetBigInt;
+        try {
+            targetBigInt = BigInt(targetValue);
+            if (targetBigInt &lt; 0n) {
+                resultDiv.innerHTML = '&lt;div class="no-results"&gt;Value must be positive&lt;/div&gt;';
+                return;
+            }
+        } catch (e) {
+            resultDiv.innerHTML = '&lt;div class="no-results"&gt;Please enter a valid number&lt;/div&gt;';
+            return;
+        }
+        
+        // If current sum matches target
+        if (checkedSum === targetBigInt &amp;&amp; checkedPerms.length &gt; 0) {
+            const permNames = checkedPerms.map(id =&gt; permissionValues.get(id).name);
+            resultDiv.innerHTML = `
+                &lt;div class="combination"&gt;
+                    &lt;div class="combination-title"&gt;Selected permissions match target value:&lt;/div&gt;
+                    &lt;ul class="permission-list"&gt;
+                        ${permNames.map(name =&gt; `&lt;li&gt;${name}&lt;/li&gt;`).join('')}
+                    &lt;/ul&gt;
+                    &lt;div class="combination-total"&gt;Total: ${targetBigInt.toString()} (0x${targetBigInt.toString(16).toUpperCase()})&lt;/div&gt;
+                &lt;/div&gt;
+            `;
+            return;
+        }
+        
+        // Search for all combinations
+        const allPerms = Array.from(permissionValues.entries());
+        const foundCombinations = [];
+        
+        // Function for recursive combination search (up to 5 permissions for performance)
+        function findCombinationsRecursive(startIndex, currentSum, currentPerms) {
+            if (currentSum === targetBigInt) {
+                foundCombinations.push([...currentPerms]);
                 return;
             }
             
-            // Search for all combinations
-            const allPerms = Array.from(permissionValues.entries());
-            const foundCombinations = [];
-            
-            // Function for recursive combination search (up to 5 permissions for performance)
-            function findCombinationsRecursive(startIndex, currentSum, currentPerms) {
-                if (currentSum === targetBigInt) {
-                    foundCombinations.push([...currentPerms]);
-                    return;
-                }
-                
-                if (currentSum > targetBigInt || currentPerms.length >= 5 || startIndex >= allPerms.length) {
-                    return;
-                }
-                
-                // Skip already selected permissions
-                for (let i = startIndex; i < allPerms.length; i++) {
-                    const [id, perm] = allPerms[i];
-                    findCombinationsRecursive(
-                        i + 1,
-                        currentSum + perm.value,
-                        [...currentPerms, { id, ...perm }]
-                    );
-                }
+            if (currentSum &gt; targetBigInt || currentPerms.length &gt;= 5 || startIndex &gt;= allPerms.length) {
+                return;
             }
             
-            // Start search
-            findCombinationsRecursive(0, 0n, []);
-            
-            // Display results
-            if (foundCombinations.length > 0) {
-                let resultHTML = `<div class="search-info">Found ${foundCombinations.length} combinations for value ${targetBigInt.toString()}:</div>`;
-                
-                foundCombinations.slice(0, 10).forEach((combination, index) => {
-                    const sum = combination.reduce((s, perm) => s + perm.value, 0n);
-                    resultHTML += `
-                        <div class="combination">
-                            <div class="combination-title">Combination ${index + 1}:</div>
-                            <ul class="permission-list">
-                                ${combination.map(perm => `<li>${perm.name} (${perm.value.toString()})</li>`).join('')}
-                            </ul>
-                            <div class="combination-total">Total: ${sum.toString()} = ${formatBinarySum(combination)}</div>
-                        </div>
-                    `;
-                });
-                
-                if (foundCombinations.length > 10) {
-                    resultHTML += `<div class="warning">Showing first 10 of ${foundCombinations.length} found combinations</div>`;
-                }
-                
-                // Add current selection info
-                if (checkedPerms.length > 0) {
-                    resultHTML += `
-                        <div class="current-selection">
-                            <div class="combination-title">Current Selection:</div>
-                            <ul class="permission-list">
-                                ${checkedPerms.map(id => `<li>${permissionValues.get(id).name}</li>`).join('')}
-                            </ul>
-                            <div class="combination-total">Total: ${checkedSum.toString()} (0x${checkedSum.toString(16).toUpperCase()})</div>
-                        </div>
-                    `;
-                }
-                
-                resultDiv.innerHTML = resultHTML;
-            } else {
-                let noResultHTML = `<div class="no-results">No permission combinations found for value ${targetBigInt.toString()}</div>`;
-                
-                if (checkedPerms.length > 0) {
-                    noResultHTML += `
-                        <div class="current-selection">
-                            <div class="combination-title">Current Selection:</div>
-                            <ul class="permission-list">
-                                ${checkedPerms.map(id => `<li>${permissionValues.get(id).name}</li>`).join('')}
-                            </ul>
-                            <div class="combination-total">Total: ${checkedSum.toString()} (0x${checkedSum.toString(16).toUpperCase()})</div>
-                        </div>
-                    `;
-                }
-                
-                resultDiv.innerHTML = noResultHTML;
+            // Skip already selected permissions
+            for (let i = startIndex; i &lt; allPerms.length; i++) {
+                const [id, perm] = allPerms[i];
+                findCombinationsRecursive(
+                    i + 1,
+                    currentSum + perm.value,
+                    [...currentPerms, { id, ...perm }]
+                );
             }
         }
         
-        function formatBinarySum(combination) {
-            let sum = 0n;
-            combination.forEach(perm => {
-                sum |= perm.value;
+        // Start search
+        findCombinationsRecursive(0, 0n, []);
+        
+        // Display results
+        if (foundCombinations.length &gt; 0) {
+            let resultHTML = `&lt;div class="search-info"&gt;Found ${foundCombinations.length} combinations for value ${targetBigInt.toString()}:&lt;/div&gt;`;
+            
+            foundCombinations.slice(0, 10).forEach((combination, index) =&gt; {
+                const sum = combination.reduce((s, perm) =&gt; s + perm.value, 0n);
+                resultHTML += `
+                    &lt;div class="combination"&gt;
+                        &lt;div class="combination-title"&gt;Combination ${index + 1}:&lt;/div&gt;
+                        &lt;ul class="permission-list"&gt;
+                            ${combination.map(perm =&gt; `&lt;li&gt;${perm.name} (${perm.value.toString()})&lt;/li&gt;`).join('')}
+                        &lt;/ul&gt;
+                        &lt;div class="combination-total"&gt;Total: ${sum.toString()} = ${formatBinarySum(combination)}&lt;/div&gt;
+                    &lt;/div&gt;
+                `;
             });
-            return `0x${sum.toString(16).toUpperCase()}`;
+            
+            if (foundCombinations.length &gt; 10) {
+                resultHTML += `&lt;div class="warning"&gt;Showing first 10 of ${foundCombinations.length} found combinations&lt;/div&gt;`;
+            }
+            
+            // Add current selection info
+            if (checkedPerms.length &gt; 0) {
+                resultHTML += `
+                    &lt;div class="current-selection"&gt;
+                        &lt;div class="combination-title"&gt;Current Selection:&lt;/div&gt;
+                        &lt;ul class="permission-list"&gt;
+                            ${checkedPerms.map(id =&gt; `&lt;li&gt;${permissionValues.get(id).name}&lt;/li&gt;`).join('')}
+                        &lt;/ul&gt;
+                        &lt;div class="combination-total"&gt;Total: ${checkedSum.toString()} (0x${checkedSum.toString(16).toUpperCase()})&lt;/div&gt;
+                    &lt;/div&gt;
+                `;
+            }
+            
+            resultDiv.innerHTML = resultHTML;
+        } else {
+            let noResultHTML = `&lt;div class="no-results"&gt;No permission combinations found for value ${targetBigInt.toString()}&lt;/div&gt;`;
+            
+            if (checkedPerms.length &gt; 0) {
+                noResultHTML += `
+                    &lt;div class="current-selection"&gt;
+                        &lt;div class="combination-title"&gt;Current Selection:&lt;/div&gt;
+                        &lt;ul class="permission-list"&gt;
+                            ${checkedPerms.map(id =&gt; `&lt;li&gt;${permissionValues.get(id).name}&lt;/li&gt;`).join('')}
+                        &lt;/ul&gt;
+                        &lt;div class="combination-total"&gt;Total: ${checkedSum.toString()} (0x${checkedSum.toString(16).toUpperCase()})&lt;/div&gt;
+                    &lt;/div&gt;
+                `;
+            }
+            
+            resultDiv.innerHTML = noResultHTML;
         }
-        
-        // Initialize on load
-        document.addEventListener('DOMContentLoaded', initializeInterface);
-        
-        // Export permission function to global scope for easy testing
-        window.permission = permission;
-        
+    }
+    
+    function formatBinarySum(combination) {
+        let sum = 0n;
+        combination.forEach(perm =&gt; {
+            sum |= perm.value;
+        });
+        return `0x${sum.toString(16).toUpperCase()}`;
+    }
+    
+    // Initialize on load
+    document.addEventListener('DOMContentLoaded', initializeInterface);
+    
+    // Export permission function to global scope for easy testing
+    window.permission = permission;
+</code></pre>
 </script>
                 </main>
 
