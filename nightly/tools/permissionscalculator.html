@@ -173,7 +173,7 @@
                     </a>
 
                     <h1 id="permission-calculator"><a class="header" href="#permission-calculator">Permission Calculator</a></h1>
-<p>Example text.</p>
+<p>Example text!</p>
 <script src="./permcalc.js" defer></script>
 <style>
         .control-buttons {
@@ -214,9 +214,10 @@
             display: flex;
             align-items: center;
             padding: 12px;
-            background-color: #40444b;
+            background-color: var(--color3);
             border-radius: 6px;
             transition: all 0.2s;
+            margin-bottom: 5px;
             border-left: 4px solid transparent;
         }
         .permission-item:hover {
@@ -380,12 +381,11 @@
             margin: 20px 0 10px 0;
         }
         .category-header .category-title {
-            color: #99aab5;
             font-size: 14px;
             text-transform: uppercase;
             letter-spacing: 1px;
             padding-bottom: 5px;
-            border-bottom: 1px solid #40444b;
+            border-bottom: 1px solid var(--color2);
             flex-grow: 1;
         }
         .category-toggle {
