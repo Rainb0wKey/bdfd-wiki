@@ -175,7 +175,7 @@
                     <h1 id="webhooks"><a class="header" href="#webhooks">Webhooks</a></h1>
 <p>This wiki explains how to create and use webhooks in BDFD.</p>
 <h2 id="content"><a class="header" href="#content">Content</a></h2>
-<p><a href="#functions-used"><strong>Functions Used</strong></a> &gt; <a href="#webhookcreate"><strong>$webhookCreate[]</strong></a> &gt; <a href="#webhooksend"><strong>$webhookSend[]</strong></a> &gt; <a href="#webhookDelete"><strong>$webhookDelete[]</strong></a> &gt; <a href="#webhookavatarurl"><strong>$webhookAvatarURL[]</strong></a>  &gt; <a href="#webhookusername"><strong>$webhookUsername[]</strong></a> &gt; <a href="#webhooktitle"><strong>$webhookTitle[]</strong></a> &gt; <a href="#webhookdescription"><strong>$webhookDescription[]</strong></a> &gt; <a href="#webhookfooter"><strong>$webhookFooter[]</strong></a> &gt; <a href="#webhookcontent"><strong>$webhookContent[]</strong></a> &gt; <a href="#webhookcolor"><strong>$webhookColor[]</strong></a></p>
+<p><a href="#functions-used"><strong>Functions Used</strong></a> &gt; <a href="#webhookcreate"><strong>$webhookCreate[]</strong></a> &gt; <a href="#webhooksend"><strong>$webhookSend[]</strong></a> &gt; <a href="#webhookDelete"><strong>$webhookDelete[]</strong></a> &gt; <a href="#webhookavatarurl"><strong>$webhookAvatarURL[]</strong></a>  &gt; <a href="#webhookusername"><strong>$webhookUsername[]</strong></a> &gt; <a href="#webhooktitle"><strong>$webhookTitle[]</strong></a> &gt; <a href="#webhookdescription"><strong>$webhookDescription[]</strong></a> &gt; <a href="#webhookfooter"><strong>$webhookFooter[]</strong></a> &gt; <a href="#webhookcontent"><strong>$webhookContent[]</strong></a> &gt; <a href="#webhookcolor"><strong>$webhookColor[]</strong></a> &gt;<a href="#beautiful-webhook">Beautiful Webhook</a></p>
 <h2 id="functions-used"><a class="header" href="#functions-used">Functions Used</a></h2>
 <ul>
 <li><a href="../../bdscript/webhookCreate.html"><code>$webhookCreate[]</code></a></li>
@@ -507,7 +507,7 @@ $webhookContent[$var[webhook];Hello from my webhook!]
 <h2 id="example-9"><a class="header" href="#example-9">Example</a></h2>
 <pre><code>$nomention
 $var[webhook;$webhookCreate[$channelID;Test webhook]]
-$webhookColor[$var[webhook];#00FF00]
+$webhookColor[$var[webhook];#000]
 </code></pre>
 <div id="admonition-what-is-this-9" class="admonition admonish-question" role="note" aria-labelledby="admonition-what-is-this-9-title">
 <div class="admonition-title">
@@ -520,6 +520,11 @@ $webhookColor[$var[webhook];#00FF00]
 <p>How <a href="#webhookcreate"><code>$webhookCreate[]</code></a>, <a href="../../bdscript/channelID.html"><code>$channelID</code></a> and <a href="../../bdscript/var.html"><code>$var[]</code></a> works?</p>
 </div>
 </div>
+<h1 id="beautiful-webhook"><a class="header" href="#beautiful-webhook">Beautiful webhook</a></h1>
+<p>Here is one example of how to use a webhook.</p>
+<pre><code>$nomention
+$var[webhook;$webhookCreate[$channelID;I'm webhook 😎]]
+</code></pre>
 
                 </main>
 
