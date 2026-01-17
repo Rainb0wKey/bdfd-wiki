@@ -348,7 +348,7 @@
 <div class="converter-section">
     <h2 id="unix-timestamp-to-date"><a class="header" href="#unix-timestamp-to-date">Unix Timestamp to Date</a></h2>
     <p>Enter Unix timestamp:</p>
-    <input type="number" id="unix-input" placeholder="e.g., 1704067200" oninput="updateDateFromUnix()" onkeypress="if(event.key === 'Enter') updateDateFromUnix()">
+    <input type="number" id="unix-input" placeholder="e.g., 1704067200" oninput="updateDateFromUnix()" onkeypress="if(event.key === 'Enter') updateDateFromUnix()" min="0">
     <div class="result">
 		<p>Date and time:</p>
         <span id="date-display">Not set</span>
@@ -383,10 +383,10 @@
 Unix date: &lt;t:1917043200:D&gt;
 </code></pre>
 <discord-messages>
-    <discord-message author="RainbowKey" avatar="https://cdn.discordapp.com/avatars/803569638084313098/1c0a70609cdd326f9265bb2040e83b7e.png" role-color="#E67E22">
+    <discord-message avatar="https://cdn.discordapp.com/avatars/803569638084313098/1c0a70609cdd326f9265bb2040e83b7e.png" role-color="#E67E22" author="RainbowKey">
         !example
     </discord-message>
-    <discord-message verified author="BDFD Support" bot role-color="#378afa">
+    <discord-message bot author="BDFD Support" verified role-color="#378afa">
         Unix date: <div class="discord-time-mark">January 10, 2030</div>
     </discord-message>
 </discord-messages>
