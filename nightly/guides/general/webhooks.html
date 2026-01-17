@@ -241,6 +241,34 @@ Created and saved!
 <pre><code>$webhookSend[Webhook URL;(Content;Title;Title URL;Description;Color hex;Author;Author icon URL;Footer;Footer icon URL;Thumbnail URL;Image URL;Add timestamp?)]
 </code></pre>
 <h3 id="parameters-1"><a class="header" href="#parameters-1">Parameters</a></h3>
+<ul>
+<li><code>Webhook URL</code> <code>(Type: URL || Flag: Required)</code>: The URL of the webhook you want to use.</li>
+<li><code>Content</code> <code>(Type: String || Flag: Vacantable)</code>: The text that is shown above the embed.</li>
+<li><code>Title</code> <code>(Type: String || Flag: Vacantable)</code>: The text that will be used as the title.</li>
+<li><code>Title URL</code> <code>(Type: URL || Flag: Vacantable)</code>: The URL that will be applied to the title.</li>
+<li><code>Description</code> <code>(Type: String || Flag: Vacantable)</code>: The description that will be applied to the embed.</li>
+<li><code>Color hex</code> <code>(Type: Color || Flag: Vacantable)</code>: The <a href="../tools/color.html">color hex</a> to set the embed border color as. You can also use color integer number.</li>
+</ul>
+<div id="admonition-color-picker" class="admonition admonish-tip" role="note" aria-labelledby="admonition-color-picker-title">
+<div class="admonition-title">
+<div id="admonition-color-picker-title">
+<p>Color Picker</p>
+</div>
+<a class="admonition-anchor-link" href="#admonition-color-picker"></a>
+</div>
+<div>
+<p>You can use our <a href="../tools/color.html">“Color” tool</a> to select the best color!</p>
+</div>
+</div>
+<ul>
+<li><code>Author</code> <code>(Type: String || Flag: Vacantable )</code>: The text that appears at the author.</li>
+<li><code>Author icon</code> <code>(Type: URL || Flag: Vacantable)</code>: The image that appears next to the author.</li>
+<li><code>Footer</code> <code>(Type: String || Flag: Vacantable)</code>: The text to set the footer as.</li>
+<li><code>Footer icon</code> <code>(Type: URL || Flag: Vacantable)</code>: The image that appears next to the footer.</li>
+<li><code>Thumbnail</code> <code>(Type: URL || Flag: Vacantable)</code>: The image to set as the thumbnail.</li>
+<li><code>Image</code> <code>(Type: URL || Flag: Vacantable)</code>: The image that appears above the footer.</li>
+<li><code>Add timestamp?</code> <code>(Type: Bool || Flag: Vacantable)</code>: Adds a timestamp to the footer.</li>
+</ul>
 <h2 id="example-1"><a class="header" href="#example-1">Example</a></h2>
 <pre><code>$nomention
 $var[webhook;$webhookCreate[$channelID;Test webhook]]
@@ -252,6 +280,9 @@ $webhookSend[$var[webhook];I'm the best webhook;Title;;It's description!;#000;;;
 <pre><code>$webhookDelete[Webhook URL]
 </code></pre>
 <h3 id="parameters-2"><a class="header" href="#parameters-2">Parameters</a></h3>
+<ul>
+<li><code>Webhook URL</code> <code>(Type: URL || Flag: Required)</code>: The URL of the webhook you want to delete.</li>
+</ul>
 <h2 id="example-2"><a class="header" href="#example-2">Example</a></h2>
 <pre><code>$nomention
 </code></pre>
