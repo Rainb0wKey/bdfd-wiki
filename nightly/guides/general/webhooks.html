@@ -306,7 +306,7 @@ Created and saved!
 <h2 id="example-1"><a class="header" href="#example-1">Example</a></h2>
 <pre><code>$nomention
 $var[webhook;$webhookCreate[$channelID;Test webhook]]
-$webhookSend[$var[webhook];I'm the best webhook;Title;;It's description!;#000;;;;;;false]
+$webhookSend[$var[webhook];I'm the best webhook;Title;;It's description!;#673ab7;;;;;;false]
 </code></pre>
 <div id="admonition-what-is-this-1" class="admonition admonish-question" role="note" aria-labelledby="admonition-what-is-this-1-title">
 <div class="admonition-title">
@@ -527,7 +527,8 @@ $webhookContent[$var[webhook];Hello from my webhook!]
 <h2 id="example-9"><a class="header" href="#example-9">Example</a></h2>
 <pre><code>$nomention
 $var[webhook;$webhookCreate[$channelID;Test webhook]]
-$webhookColor[$var[webhook];#000]
+$webhookColor[$var[webhook];#673ab7]
+$webhookDescriprion[⬅️ Embed border color] 
 </code></pre>
 <div id="admonition-what-is-this-9" class="admonition admonish-question" role="note" aria-labelledby="admonition-what-is-this-9-title">
 <div class="admonition-title">
@@ -537,13 +538,18 @@ $webhookColor[$var[webhook];#000]
 <a class="admonition-anchor-link" href="#admonition-what-is-this-9"></a>
 </div>
 <div>
-<p>How <a href="#webhookcreate"><code>$webhookCreate[]</code></a>, <a href="../../bdscript/channelID.html"><code>$channelID</code></a> and <a href="../../bdscript/var.html"><code>$var[]</code></a> works?</p>
+<p>How <a href="#webhookcreate"><code>$webhookCreate[]</code></a>, <a href="#webhookdescriprion"><code>$webhookDescriprion[]</code></a>, <a href="../../bdscript/channelID.html"><code>$channelID</code></a>, <a href="../../bdscript/var.html"><code>$var[]</code></a> works?</p>
 </div>
 </div>
 <h1 id="beautiful-webhook"><a class="header" href="#beautiful-webhook">Beautiful webhook</a></h1>
 <p>Here is one example of how to use a webhook.</p>
 <pre><code>$nomention
-$var[webhook;$webhookCreate[$channelID;I'm webhook 😎]]
+$var[webhook;$webhookCreate[$channelID;I'm webhook 😎;$serverIcon]]
+$webhookContent[👇 Read before chatting]
+$webhookTitle[📚 Rules]
+$webhookDescription[1. Be patient
+2. Just chill]
+$webhookFooter[Made by BDFD]
 </code></pre>
 
                 </main>
