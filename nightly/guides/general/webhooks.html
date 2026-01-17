@@ -328,11 +328,12 @@ Deleted!
 <h1 id="webhookavatarurl"><a class="header" href="#webhookavatarurl">$webhookAvatarURL</a></h1>
 <p>Changes the webhook’s avatar.</p>
 <h2 id="syntax-3"><a class="header" href="#syntax-3">Syntax</a></h2>
-<pre><code>$webhookAvatarURL[Webhook URL;Avatar URL]
+<pre><code>$webhookAvatarURL[Webhook URL;New avatar URL]
 </code></pre>
 <h3 id="parameters-3"><a class="header" href="#parameters-3">Parameters</a></h3>
 <ul>
 <li><code>Webhook URL</code> <code>(Type: URL || Flag: Required)</code>: The URL of the webhook you want to modify.</li>
+<li><code>New avatar URL</code> <code>(Type: URL || Flag: Required)</code>: The new avatar image URL for the webhook.</li>
 </ul>
 <h2 id="example-3"><a class="header" href="#example-3">Example</a></h2>
 <pre><code>$nomention
@@ -354,11 +355,12 @@ New avatar!
 <h1 id="webhookusername"><a class="header" href="#webhookusername">$webhookUsername</a></h1>
 <p>Changes the webhook’s username.</p>
 <h2 id="syntax-4"><a class="header" href="#syntax-4">Syntax</a></h2>
-<pre><code>$webhookUsername[Webhook URL;Username]
+<pre><code>$webhookUsername[Webhook URL;New username]
 </code></pre>
 <h3 id="parameters-4"><a class="header" href="#parameters-4">Parameters</a></h3>
 <ul>
 <li><code>Webhook URL</code> <code>(Type: URL || Flag: Required)</code>: The URL of the webhook you want to modify.</li>
+<li><code>New username</code> <code>(Type: String || Flag: Required)</code>: The new username for the webhook.</li>
 </ul>
 <h2 id="example-4"><a class="header" href="#example-4">Example</a></h2>
 <pre><code>$nomention
@@ -385,6 +387,7 @@ New username!
 <h3 id="parameters-5"><a class="header" href="#parameters-5">Parameters</a></h3>
 <ul>
 <li><code>Webhook URL</code> <code>(Type: URL || Flag: Required)</code>: The URL of the webhook you want to use.</li>
+<li><code>Text</code> <code>(Type: String || Flag: Required)</code>: The title text to add to the embed of the webhook.</li>
 </ul>
 <h2 id="example-5"><a class="header" href="#example-5">Example</a></h2>
 <pre><code>$nomention
@@ -410,6 +413,7 @@ $webhookTitle[$var[webhook];My Webhook Title]
 <h3 id="parameters-6"><a class="header" href="#parameters-6">Parameters</a></h3>
 <ul>
 <li><code>Webhook URL</code> <code>(Type: URL || Flag: Required)</code>: The URL of the webhook you want to use.</li>
+<li><code>Text</code> <code>(Type: String || Flag: Required)</code>: The description text to add to the embed of the webhook.</li>
 </ul>
 <h2 id="example-6"><a class="header" href="#example-6">Example</a></h2>
 <pre><code>$nomention
@@ -435,6 +439,7 @@ $webhookDescription[$var[webhook];This is a detailed description for my webhook.
 <h3 id="parameters-7"><a class="header" href="#parameters-7">Parameters</a></h3>
 <ul>
 <li><code>Webhook URL</code> <code>(Type: URL || Flag: Required)</code>: The URL of the webhook you want to use.</li>
+<li><code>Text</code> <code>(Type: String || Flag: Required)</code>: The footer text to add to the embed of the webhook.</li>
 </ul>
 <h2 id="example-7"><a class="header" href="#example-7">Example</a></h2>
 <pre><code>$nomention
@@ -460,6 +465,7 @@ $webhookFooter[$var[webhook];Footer Text Here]
 <h3 id="parameters-8"><a class="header" href="#parameters-8">Parameters</a></h3>
 <ul>
 <li><code>Webhook URL</code> <code>(Type: URL || Flag: Required)</code>: The URL of the webhook you want to use.</li>
+<li><code>Text</code> <code>(Type: String || Flag: Required)</code>: The content text to add to the webhook.</li>
 </ul>
 <h2 id="example-8"><a class="header" href="#example-8">Example</a></h2>
 <pre><code>$nomention
