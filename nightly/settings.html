@@ -184,49 +184,6 @@
 <link rel="stylesheet" href="./theme/settings/style.css">
 <script src="./theme/settings/index.js" defer></script>
 <div class="settingembed">
-  <h2 id="wiki-theme"><a class="header" href="#wiki-theme">Wiki Theme</a></h2>
-  <p>You can choose a color scheme that best suits your preferences and requirements.</p>
-  <button class="resetSettingButton" id="resetTheme" onClick="resetTheme()" title="Reset" aria-label="Reset">
-    <i class="fa fa-refresh" aria-hidden="true"></i>
-  </button>
-  <input type="range" id="themeSlider" min="0" max="360" oninput="updateColor()">
-  <div id="themePreview">
-    <div id="colorThemeDisplay"></div>
-    <div id="hexColor"></div>
-    <div class="lock-text" id="lockText" onClick="lockTheme()">Locked</div>
-  </div>
-  <div class="themebuttons">
-    <button class="tbutton" id="setBackground" onClick="useBackground()">Background</button>
-    <button class="tbutton" id="gradientTheme" onClick="gradientBackground()">Gradient</button>
-    <button class="tbutton" id="setDarkBackground" onClick="setBackground('dark')">Dark background</button>
-    <button class="tbutton" id="setLightBackground" onClick="setBackground('light')">Light background</button>
-	<button class="tbutton" id="setBlackColor" onClick="setFontColor('set')">Set text color</button>
-	<button class="tbutton" id="setBlackColor" onClick="setFontColor('dark')">Dark text</button>
-	<button class="tbutton" id="setWhiteColor" onClick="setFontColor('light')">Light text</button>
-	<button class="tbutton" id="setDarkTheme" onClick="setTheme('dark')">Dark theme</button>
-	<button class="tbutton" id="setLightTheme" onClick="setTheme('light')">Light theme</button>
-  </div>
-  <p id="default-is">270°</p>
-</div>
-<div class="settingembed">
-  <h2 id="text-highlighting"><a class="header" href="#text-highlighting">Text Highlighting</a></h2>
-  <p>Improve readability and make your text stand out with  text highlighting.</p>
-  <div class="texthighbuttons">
-    <button id="high-none" onClick="changeTextHigh('none')" class="hbutton">Disable</button>
-    <button id="high-white" onClick="changeTextHigh('white')" class="hbutton">White</button>
-    <button id="high-black" onClick="changeTextHigh('black')" class="hbutton">Black</button>
-    <button id="high-red" onClick="changeTextHigh('red')" class="hbutton">Red</button>
-    <button id="high-pink" onClick="changeTextHigh('pink')" class="hbutton">Pink</button>
-    <button id="high-orange" onClick="changeTextHigh('orange')" class="hbutton">Orange</button>
-    <button id="high-yellow" onClick="changeTextHigh('yellow')" class="hbutton">Yellow</button>
-    <button id="high-green" onClick="changeTextHigh('green')" class="hbutton">Green</button>
-    <button id="high-blue" onClick="changeTextHigh('blue')" class="hbutton">Blue</button>
-    <button id="high-purple" onClick="changeTextHigh('purple')" class="hbutton">Purple</button>
-    <button id="high-sync" onClick="changeTextHigh('sync')" class="hbutton">Sync</button>
-  </div>
-  <p id="default-is">"Disable" (Disabled)</p>
-</div>
-<div class="settingembed">
   <h2 id="text-size"><a class="header" href="#text-size">Text Size</a></h2>
   <p>Easily modify the size of text for optimal viewing and readability.</p>
   <button class="resetSettingButton" id="textResetButton" onClick="resetFontSize()" title="Reset" aria-label="Reset">
@@ -349,14 +306,14 @@
   <p id="default-is">"Discord Dark"</p>
 </div>
 <discord-messages>
-    <discord-message avatar="https://cdn.discordapp.com/avatars/803569638084313098/1c0a70609cdd326f9265bb2040e83b7e.png" role-color="#E67E22" author="RainbowKey">
+    <discord-message author="RainbowKey" avatar="https://cdn.discordapp.com/avatars/803569638084313098/1c0a70609cdd326f9265bb2040e83b7e.png" role-color="#E67E22">
         !example ❤️
         <discord-reactions slot="reactions">
-            <discord-reaction count="1" name=":emoji:" emoji="https://upload.wikimedia.org/wikipedia/commons/7/70/Symbolic_Love_Heart.png">
+            <discord-reaction name=":emoji:" count="1" emoji="https://upload.wikimedia.org/wikipedia/commons/7/70/Symbolic_Love_Heart.png">
             </discord-reaction>
         </discord-reactions>
     </discord-message>
-    <discord-message role-color="#378afa" verified author="BDFD Support" avatar="https://cdn.discordapp.com/avatars/1009018156494368798/612acd98b01ab110615a2524ee2b6360.png" bot>
+    <discord-message author="BDFD Support" avatar="https://cdn.discordapp.com/avatars/1009018156494368798/612acd98b01ab110615a2524ee2b6360.png" role-color="#378afa" bot verified>
         Added!
     </discord-message>
 </discord-messages>
