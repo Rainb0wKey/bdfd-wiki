@@ -200,20 +200,24 @@
 <li><code>Text</code> <code>(Type: String || Flag: Required)</code>: The text to send in the new message.</li>
 <li><code>Return message ID?</code> <code>(Type: Bool || Flag: Optional)</code>: Whether to return the ID of the newly sent message, in another message. Defaults to <code>no</code>.</li>
 </ul>
-<h2 id="examples"><a class="header" href="#examples">Examples</a></h2>
-<h3 id="example-1"><a class="header" href="#example-1">Example #1</a></h3>
+<h2 id="example"><a class="header" href="#example">Example</a></h2>
 <pre><code>$nomention
-$sendMessage[This is message #1!]
-$sendMessage[This is message #2!]
-$sendMessage[This is message #3!]
+$sendMessage[Hello world!]
+
+``` discord yaml
+- user_id: 803569638084313098
+  username: RainbowKey
+  color: "#E67E22"
+  content: |
+    !example
+- user_id: 1009018156494368798
+  username: BDFD Support
+  color: "#378afa"
+  bot: true
+  verified: true
+  content: |
+    Hello world!
 </code></pre>
-<p><img src="https://user-images.githubusercontent.com/69215413/126246807-7beaac06-4fd4-4ae3-a944-dcc66f7c0774.png" alt="example1" /></p>
-<h3 id="example-2"><a class="header" href="#example-2">Example #2</a></h3>
-<pre><code>$nomention
-$sendMessage[This is message #1!;yes]
-$sendMessage[This is message #2!;yes]
-</code></pre>
-<p><img src="https://user-images.githubusercontent.com/69215413/126246945-2fb29b3f-ab58-4de3-8341-a56a574db423.png" alt="example2" /></p>
 
             </main>
 
