@@ -210,18 +210,27 @@
 <ul>
 <li><code>Enable?</code> <code>(Type: Bool || Flag: Required)</code>: Whether to enable decimals in math functions or not, <code>yes</code> means it’s enabled and <code>no</code> means it’s disabled.</li>
 </ul>
-<h3 id="explaination"><a class="header" href="#explaination">Explaination</a></h3>
-<p>By default, decimals in math functions (e.g <code>$sum</code>, <code>$sub</code>, <code>$multi</code>, etc) are disabled. The only use for this function is to enable decimals, if you want decimals enabled for math functions in that command.</p>
+<div id="admonition-explaination" class="admonition admonish-example" role="note" aria-labelledby="admonition-explaination-title">
+<div class="admonition-title">
+<div id="admonition-explaination-title">
+<p>Explaination</p>
+</div>
+<a class="admonition-anchor-link" href="#admonition-explaination"></a>
+</div>
+<div>
+<p>By default, decimals in math or random functions (e.g <a href="./sum.html"><code>$sum[]</code></a>, <a href="./multi.html"><code>$multi[]</code></a>, <a href="./random.html"><code>$random</code></a>, etc) are disabled. The only use for this function is to enable decimals, if you want decimals enabled for math functions in that command.</p>
+</div>
+</div>
 <h2 id="example"><a class="header" href="#example">Example</a></h2>
 <pre><code>$nomention
 $enableDecimals[yes]
 Result: $random[1;5]
 </code></pre>
 <discord-messages>
-    <discord-message avatar="https://cdn.discordapp.com/avatars/803569638084313098/1c0a70609cdd326f9265bb2040e83b7e.png" author="RainbowKey" role-color="#E67E22">
+    <discord-message role-color="#E67E22" avatar="https://cdn.discordapp.com/avatars/803569638084313098/1c0a70609cdd326f9265bb2040e83b7e.png" author="RainbowKey">
         !example
     </discord-message>
-    <discord-message author="BDFD Support" bot avatar="https://cdn.discordapp.com/avatars/1009018156494368798/612acd98b01ab110615a2524ee2b6360.png" verified role-color="#378afa">
+    <discord-message author="BDFD Support" verified role-color="#378afa" bot avatar="https://cdn.discordapp.com/avatars/1009018156494368798/612acd98b01ab110615a2524ee2b6360.png">
         Result: 3.381
     </discord-message>
 </discord-messages>
@@ -237,10 +246,10 @@ Result: $random[1;5]
 <li>Without <code>$enableDecimals[]</code> (or result with <code>$enableDecimals[no]</code>):</li>
 </ul>
 <discord-messages>
-    <discord-message avatar="https://cdn.discordapp.com/avatars/803569638084313098/1c0a70609cdd326f9265bb2040e83b7e.png" role-color="#E67E22" author="RainbowKey">
+    <discord-message role-color="#E67E22" author="RainbowKey" avatar="https://cdn.discordapp.com/avatars/803569638084313098/1c0a70609cdd326f9265bb2040e83b7e.png">
         !example
     </discord-message>
-    <discord-message avatar="https://cdn.discordapp.com/avatars/1009018156494368798/612acd98b01ab110615a2524ee2b6360.png" verified author="BDFD Support" bot role-color="#378afa">
+    <discord-message avatar="https://cdn.discordapp.com/avatars/1009018156494368798/612acd98b01ab110615a2524ee2b6360.png" verified bot author="BDFD Support" role-color="#378afa">
         Result: 3
     </discord-message>
 </discord-messages>
