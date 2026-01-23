@@ -41,6 +41,9 @@
 
     <!-- Custom theme stylesheets -->
         <link rel="stylesheet" href=".././src/theme/mdbook-admonish.css">
+
+    <!-- Basic analytics setup -->
+    <script defer src="https://analytics.nilpointer.software/script.js" data-website-id="2a3354b3-c97b-4538-a9a3-cee0f91af3f3"></script>
 </head>
 
 <body>
@@ -212,14 +215,14 @@ $sendMessage[$username clicked on the reaction]
     <discord-message role-color="#EE7908" author="Nicky" avatar="https://cdn.discordapp.com/avatars/729343563401265193/bd91eedd77a95b9f81be39997613d295.png">
         !example
     </discord-message>
-    <discord-message avatar="https://cdn.discordapp.com/avatars/566613317972394004/05f26f2f951578db660f1bdf25a027ea.png" verified bot author="Wiki Bot" role-color="#748BD4">
+    <discord-message author="Wiki Bot" avatar="https://cdn.discordapp.com/avatars/566613317972394004/05f26f2f951578db660f1bdf25a027ea.png" bot verified role-color="#748BD4">
         Click
         <discord-reactions slot="reactions">
-            <discord-reaction count="2" name=":emoji:" emoji="https://cdn.discordapp.com/emojis/766607515445231637.webp" reacted>
+            <discord-reaction name=":emoji:" reacted emoji="https://cdn.discordapp.com/emojis/766607515445231637.webp" count="2">
             </discord-reaction>
         </discord-reactions>
     </discord-message>
-    <discord-message verified avatar="https://cdn.discordapp.com/avatars/566613317972394004/05f26f2f951578db660f1bdf25a027ea.png" role-color="#748BD4" bot author="Wiki Bot">
+    <discord-message verified bot author="Wiki Bot" avatar="https://cdn.discordapp.com/avatars/566613317972394004/05f26f2f951578db660f1bdf25a027ea.png" role-color="#748BD4">
         Nicky clicked on the reaction
     </discord-message>
 </discord-messages>
