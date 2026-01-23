@@ -197,7 +197,7 @@
     margin-top: 1.5rem;
 }
 
-.discord-messages > .discord-message:before {
+.discord-messages > .discord-message:first-of-type:before {
     color: var(--link-color);
     background: var(--card-bg);
     border-radius: 10px;
@@ -210,15 +210,15 @@
     z-index: 1000;
 }
 
-.discord-messages > .discord-message:before {
-    content: 'Not NSFW channel';
+.discord-messages > .discord-message:first-of-type:before {
+    content: 'Not NSFW';
 }
 
-.discord-messages:first-of-type > .discord-message:before {
+.discord-messages:first-of-type > .discord-message:first-of-type:before {
     content: 'NSFW Channel';
 }
 
-.discord-messages > .discord-message:hover:before {
+.discord-messages:hover > .discord-message:before {
     transform: scale(1.025);
     transform: rotate(-2.5deg);
     border-radius: 12.5px;
@@ -248,18 +248,18 @@
 Is this channel NSFW?: `$isNSFW[$channelID]`
 </code></pre>
 <discord-messages>
-    <discord-message author="RainbowKey" avatar="https://cdn.discordapp.com/avatars/803569638084313098/1c0a70609cdd326f9265bb2040e83b7e.png" role-color="#E67E22">
+    <discord-message role-color="#E67E22" author="RainbowKey" avatar="https://cdn.discordapp.com/avatars/803569638084313098/1c0a70609cdd326f9265bb2040e83b7e.png">
         !example
     </discord-message>
-    <discord-message verified avatar="https://cdn.discordapp.com/avatars/1009018156494368798/612acd98b01ab110615a2524ee2b6360.png" role-color="#378afa" author="BDFD Support" bot>
+    <discord-message verified avatar="https://cdn.discordapp.com/avatars/1009018156494368798/612acd98b01ab110615a2524ee2b6360.png" role-color="#378afa" bot author="BDFD Support">
         Is this channel NSFW?: <code>true</code>
     </discord-message>
 </discord-messages>
 <discord-messages>
-    <discord-message role-color="#E67E22" author="RainbowKey" avatar="https://cdn.discordapp.com/avatars/803569638084313098/1c0a70609cdd326f9265bb2040e83b7e.png">
+    <discord-message avatar="https://cdn.discordapp.com/avatars/803569638084313098/1c0a70609cdd326f9265bb2040e83b7e.png" author="RainbowKey" role-color="#E67E22">
         !example
     </discord-message>
-    <discord-message author="BDFD Support" role-color="#378afa" verified bot avatar="https://cdn.discordapp.com/avatars/1009018156494368798/612acd98b01ab110615a2524ee2b6360.png">
+    <discord-message avatar="https://cdn.discordapp.com/avatars/1009018156494368798/612acd98b01ab110615a2524ee2b6360.png" verified author="BDFD Support" role-color="#378afa" bot>
         Is this channel NSFW?: <code>false</code>
     </discord-message>
 </discord-messages>
