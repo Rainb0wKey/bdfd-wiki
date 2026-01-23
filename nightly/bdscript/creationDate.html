@@ -195,9 +195,17 @@
 <h2 id="syntax"><a class="header" href="#syntax">Syntax</a></h2>
 <pre><code>$creationDate[ID;(Format)]
 </code></pre>
-<blockquote>
-<p>Uses GoLang date format</p>
-</blockquote>
+<div id="admonition-info" class="admonition admonish-info" role="note" aria-labelledby="admonition-info-title">
+<div class="admonition-title">
+<div id="admonition-info-title">
+<p>Info</p>
+</div>
+<a class="admonition-anchor-link" href="#admonition-info"></a>
+</div>
+<div>
+<p>Uses GoLang date format.</p>
+</div>
+</div>
 <h3 id="parameters"><a class="header" href="#parameters">Parameters</a></h3>
 <ul>
 <li><code>ID</code> <code>(Type: Snowflake || Flag: Required)</code>: The ID from which to get the creation date. The ID can be a <code>User ID</code>, a <code>Role ID</code>, a <code>Message ID</code>, a <code>Emoji ID</code>, or a <code>Guild ID</code>.</li>
@@ -212,36 +220,39 @@
 <p>Click <a href="../resources/timeFormat.html">me</a> to check all supported time format values.</p>
 </blockquote>
 <h2 id="example"><a class="header" href="#example">Example</a></h2>
-<ul>
-<li>Default format
 <pre><code>$nomention
 $creationDate[$authorID]
 </code></pre>
-</li>
-</ul>
 <discord-messages>
     <discord-message author="RainbowKey" avatar="https://cdn.discordapp.com/avatars/803569638084313098/1c0a70609cdd326f9265bb2040e83b7e.png" role-color="#E67E22">
         !example
     </discord-message>
-    <discord-message role-color="#378afa" author="BDFD Support" bot verified avatar="https://cdn.discordapp.com/avatars/1009018156494368798/612acd98b01ab110615a2524ee2b6360.png">
+    <discord-message role-color="#378afa" avatar="https://cdn.discordapp.com/avatars/1009018156494368798/612acd98b01ab110615a2524ee2b6360.png" verified bot author="BDFD Support">
         2021-01-26
     </discord-message>
 </discord-messages>
-<ul>
-<li>Custom format
+<div id="admonition-example" class="admonition admonish-example" role="note" aria-labelledby="admonition-example-title">
+<div class="admonition-title">
+<div id="admonition-example-title">
+<p>Example</p>
+</div>
+<a class="admonition-anchor-link" href="#admonition-example"></a>
+</div>
+<div>
+<p>Example with custom format:</p>
 <pre><code>$nomention
 $creationDate[$authorID;January 2, 2006 at 3:04 PM (MST -07:00)]
 </code></pre>
-</li>
-</ul>
 <discord-messages>
     <discord-message author="RainbowKey" avatar="https://cdn.discordapp.com/avatars/803569638084313098/1c0a70609cdd326f9265bb2040e83b7e.png" role-color="#E67E22">
         !example
     </discord-message>
-    <discord-message verified author="BDFD Support" role-color="#378afa" bot avatar="https://cdn.discordapp.com/avatars/1009018156494368798/612acd98b01ab110615a2524ee2b6360.png">
+    <discord-message author="BDFD Support" role-color="#378afa" verified avatar="https://cdn.discordapp.com/avatars/1009018156494368798/612acd98b01ab110615a2524ee2b6360.png" bot>
         January 26, 2021 at 10:18 AM (UTC +00:00)
     </discord-message>
 </discord-messages>
+</div>
+</div>
 <div id="admonition-what-is-this" class="admonition admonish-question" role="note" aria-labelledby="admonition-what-is-this-title">
 <div class="admonition-title">
 <div id="admonition-what-is-this-title">
