@@ -4,7 +4,7 @@
 <head>
     <!-- Book generated using mdBook -->
     <meta charset="UTF-8">
-    <title>$changeCooldownTime - Bot Designer For Discord - Wiki</title>
+    <title>JSON Editor - Bot Designer For Discord - Wiki</title>
 
 
 
@@ -189,72 +189,27 @@
                     <script src="../theme/breadcrumbs.js"></script>
                 </nav>
 
-                <a href="https://github.com/NilPointer-Software/bdfd-wiki/edit/dev/src/bdscript/changeCooldownTime.md" class="editPage">
+                <a href="https://github.com/NilPointer-Software/bdfd-wiki/edit/dev/src/tools/json.md" class="editPage">
                     <i class='fa fa-edit' id="editPageIcon"></i>
                 </a>
 
-                <h1 id="changecooldowntime"><a class="header" href="#changecooldowntime">$changeCooldownTime</a></h1>
-<p>Changes the cooldown metrics. These can be used in cooldown error messages. It can be useful for translations.</p>
-<h2 id="syntax"><a class="header" href="#syntax">Syntax</a></h2>
-<pre><code>$changeCooldownTime[Days;Hours;Minutes;Seconds]
-</code></pre>
-<h3 id="parameters"><a class="header" href="#parameters">Parameters</a></h3>
-<ul>
-<li><code>Days</code> <code>(Type: String || Flag: Required)</code>: The text to replace ‘Days’ with.</li>
-<li><code>Hours</code> <code>(Type: String || Flag: Required)</code>: The text to replace ‘Hours’ with.</li>
-<li><code>Minutes</code> <code>(Type: String || Flag: Required)</code>: The text to replace ‘Minutes’ with.</li>
-<li><code>Seconds</code> <code>(Type: String || Flag: Required)</code>: The text to replace ‘Seconds’ with.</li>
-</ul>
-<h3 id="sub-functions"><a class="header" href="#sub-functions">Sub-functions</a></h3>
-<div class="table-wrapper"><table><thead><tr><th>Name</th><th>Type</th></tr></thead><tbody>
-<tr><td><code>%time-d%</code></td><td>Day</td></tr>
-<tr><td><code>%time-h%</code></td><td>Hour</td></tr>
-<tr><td><code>%time-m%</code></td><td>Minute</td></tr>
-<tr><td><code>%time-s%</code></td><td>Second</td></tr>
-</tbody></table>
-</div>
-<h2 id="example"><a class="header" href="#example">Example</a></h2>
-<pre><code>$nomention
-Hello world!
-$changeCooldownTime[Days⏰;Hours⏰;Mins🕧;Secs🕧]
-$cooldown[10m;Please wait %time-m%!]
-</code></pre>
-<discord-messages>
-    <discord-message avatar="https://cdn.discordapp.com/avatars/729343563401265193/bd91eedd77a95b9f81be39997613d295.png" role-color="#EE7908" author="Nicky">
-        !example
-    </discord-message>
-    <discord-message verified avatar="https://cdn.discordapp.com/avatars/566613317972394004/05f26f2f951578db660f1bdf25a027ea.png" author="Wiki Bot" bot role-color="#748BD4">
-        Hello world!
-    </discord-message>
-    <discord-message role-color="#EE7908" author="Nicky" avatar="https://cdn.discordapp.com/avatars/729343563401265193/bd91eedd77a95b9f81be39997613d295.png">
-        !example
-    </discord-message>
-    <discord-message role-color="#748BD4" verified avatar="https://cdn.discordapp.com/avatars/566613317972394004/05f26f2f951578db660f1bdf25a027ea.png" author="Wiki Bot" bot>
-        Please wait 9.9 Mins🕧!
-    </discord-message>
-</discord-messages>
-<div id="admonition-what-is-this" class="admonition admonish-question" role="note" aria-labelledby="admonition-what-is-this-title">
-<div class="admonition-title">
-<div id="admonition-what-is-this-title">
-<p>What is this?</p>
-</div>
-<a class="admonition-anchor-link" href="#admonition-what-is-this"></a>
-</div>
-<div>
-<p>How <a href="./cooldown.html"><code>$cooldown[]</code></a> works?</p>
-</div>
-</div>
+                <style>
+.editPage {
+	visibility: hidden;
+}
+</style>
+<p>Redirectig to https://bdfd-tool.github.io/bdfd-wiki/nightly/tools/json.html</p>
 
             </main>
 
             <nav class="nav-wrapper" aria-label="Page navigation">
                 <!-- Mobile navigation buttons -->
-                    <a rel="prev" href="../bdscript/year.html" class="mobile-nav-chapters previous"
+                    <a rel="prev" href="../tools/editor.html" class="mobile-nav-chapters previous"
                        title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
                         <i class="fa fa-angle-left"></i>
                     </a>
 
-                    <a rel="next" href="../bdscript/cooldown.html" class="mobile-nav-chapters next"
+                    <a rel="next" href="../tools/permissionscalculator.html" class="mobile-nav-chapters next"
                        title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
                         <i class="fa fa-angle-right"></i>
                     </a>
@@ -265,16 +220,16 @@ $cooldown[10m;Please wait %time-m%!]
     </div>
 
     <nav class="nav-wide-wrapper" aria-label="Page navigation">
-        <a href="../bdscript/year.html" class="nav-chapters previous" title="Previous chapter"
+        <a href="../tools/editor.html" class="nav-chapters previous" title="Previous chapter"
            aria-label="Previous chapter" aria-keyshortcuts="Left">
-            <a href="../bdscript/year.html" class="nav-chapters previous" title="Previous page"
+            <a href="../tools/editor.html" class="nav-chapters previous" title="Previous page"
                aria-label="Previous page" aria-keyshortcuts="Left">
                 <i class="fa fa-angle-left"></i>
             </a>
 
-            <a href="../bdscript/cooldown.html" class="nav-chapters next" title="Next chapter"
+            <a href="../tools/permissionscalculator.html" class="nav-chapters next" title="Next chapter"
                aria-label="Next chapter" aria-keyshortcuts="Right">
-                <a href="../bdscript/cooldown.html" class="nav-chapters next" title="Next page"
+                <a href="../tools/permissionscalculator.html" class="nav-chapters next" title="Next page"
                    aria-label="Next page" aria-keyshortcuts="Right">
                     <i class="fa fa-angle-right"></i>
                 </a>
