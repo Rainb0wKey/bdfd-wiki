@@ -4,7 +4,7 @@
 <head>
     <!-- Book generated using mdBook -->
     <meta charset="UTF-8">
-    <title>$username[] - Bot Designer For Discord - Wiki</title>
+    <title>$addMediaGallery - Bot Designer For Discord - Wiki</title>
 
 
 
@@ -189,31 +189,28 @@
                     <script src="../theme/breadcrumbs.js"></script>
                 </nav>
 
-                <a href="https://github.com/NilPointer-Software/bdfd-wiki/edit/dev/src/bdscript/usernameComplex.md" class="editPage">
+                <a href="https://github.com/NilPointer-Software/bdfd-wiki/edit/dev/src/bdscript/addMediaGallery.md" class="editPage">
                     <i class='fa fa-edit' id="editPageIcon"></i>
                 </a>
 
-                <h1 id="username"><a class="header" href="#username">$username[]</a></h1>
-<p>Returns the username for the provided user ID.</p>
+                <h1 id="addmediagallery"><a class="header" href="#addmediagallery">$addMediaGallery</a></h1>
+<div class="functionTags">
+  <span id="ComponentTag">Components v2</span>
+</div>
+<p>Adds a media gallery to the message.</p>
 <h2 id="syntax"><a class="header" href="#syntax">Syntax</a></h2>
-<pre><code>$username[User ID]
+<pre><code>$addMediaGallery[Gallery name;(Container name)]
 </code></pre>
 <h3 id="parameters"><a class="header" href="#parameters">Parameters</a></h3>
 <ul>
-<li><code>User ID</code> <code>(Type: Snowflake || Flag: Required)</code>: The user to get the username for.</li>
+<li><code>Gallery name</code> <code>(Type: String || Flag: Required)</code>: Name for attaching pictures to the gallery.</li>
+<li><code>Container name</code> <code>(Type: String || Flag: Optional)</code>: To which <a href="./addContainer.html">container body</a> should the gallery be attached.</li>
 </ul>
 <h2 id="example"><a class="header" href="#example">Example</a></h2>
 <pre><code>$nomention
-You just hugged $username[$mentioned[1]]
+$addMediaGallery[pictures]
+$addMediaGalleryItem[$authorAvatar;avatar;false;pictures]
 </code></pre>
-<discord-messages>
-    <discord-message avatar="https://cdn.discordapp.com/avatars/803569638084313098/1c0a70609cdd326f9265bb2040e83b7e.png" role-color="#E67E22" author="RainbowKey">
-        !example <discord-mention>Kuba</discord-mention>
-    </discord-message>
-    <discord-message avatar="https://cdn.discordapp.com/avatars/1009018156494368798/612acd98b01ab110615a2524ee2b6360.png" verified role-color="#378afa" bot author="BDFD Support">
-        You just hugged kubastick
-    </discord-message>
-</discord-messages>
 <div id="admonition-what-is-this" class="admonition admonish-question" role="note" aria-labelledby="admonition-what-is-this-title">
 <div class="admonition-title">
 <div id="admonition-what-is-this-title">
@@ -222,20 +219,19 @@ You just hugged $username[$mentioned[1]]
 <a class="admonition-anchor-link" href="#admonition-what-is-this"></a>
 </div>
 <div>
-<p>How <a href="./mentioned.html"><code>$mentioned[]</code></a> works?</p>
+<p>How <a href="./addMediaGalleryItem.html"><code>$addMediaGalleryItem[]</code></a> and <a href="./authorAvatar.html"><code>$authorAvatar</code></a> works?</p>
 </div>
 </div>
-
             </main>
 
             <nav class="nav-wrapper" aria-label="Page navigation">
                 <!-- Mobile navigation buttons -->
-                    <a rel="prev" href="../bdscript/username.html" class="mobile-nav-chapters previous"
+                    <a rel="prev" href="../bdscript/addField.html" class="mobile-nav-chapters previous"
                        title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
                         <i class="fa fa-angle-left"></i>
                     </a>
 
-                    <a rel="next" href="../bdscript/userPerms.html" class="mobile-nav-chapters next"
+                    <a rel="next" href="../bdscript/addSection.html" class="mobile-nav-chapters next"
                        title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
                         <i class="fa fa-angle-right"></i>
                     </a>
@@ -246,16 +242,16 @@ You just hugged $username[$mentioned[1]]
     </div>
 
     <nav class="nav-wide-wrapper" aria-label="Page navigation">
-        <a href="../bdscript/username.html" class="nav-chapters previous" title="Previous chapter"
+        <a href="../bdscript/addField.html" class="nav-chapters previous" title="Previous chapter"
            aria-label="Previous chapter" aria-keyshortcuts="Left">
-            <a href="../bdscript/username.html" class="nav-chapters previous" title="Previous page"
+            <a href="../bdscript/addField.html" class="nav-chapters previous" title="Previous page"
                aria-label="Previous page" aria-keyshortcuts="Left">
                 <i class="fa fa-angle-left"></i>
             </a>
 
-            <a href="../bdscript/userPerms.html" class="nav-chapters next" title="Next chapter"
+            <a href="../bdscript/addSection.html" class="nav-chapters next" title="Next chapter"
                aria-label="Next chapter" aria-keyshortcuts="Right">
-                <a href="../bdscript/userPerms.html" class="nav-chapters next" title="Next page"
+                <a href="../bdscript/addSection.html" class="nav-chapters next" title="Next page"
                    aria-label="Next page" aria-keyshortcuts="Right">
                     <i class="fa fa-angle-right"></i>
                 </a>
