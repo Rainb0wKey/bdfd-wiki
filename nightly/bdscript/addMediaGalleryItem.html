@@ -4,7 +4,7 @@
 <head>
     <!-- Book generated using mdBook -->
     <meta charset="UTF-8">
-    <title>$afkTimeout - Bot Designer For Discord - Wiki</title>
+    <title>$addMediaGalleryItem - Bot Designer For Discord - Wiki</title>
 
 
 
@@ -189,64 +189,29 @@
                     <script src="../theme/breadcrumbs.js"></script>
                 </nav>
 
-                <a href="https://github.com/NilPointer-Software/bdfd-wiki/edit/dev/src/bdscript/afkTimeout.md" class="editPage">
+                <a href="https://github.com/NilPointer-Software/bdfd-wiki/edit/dev/src/bdscript/addMediaGalleryItem.md" class="editPage">
                     <i class='fa fa-edit' id="editPageIcon"></i>
                 </a>
 
-                <h1 id="afktimeout"><a class="header" href="#afktimeout">$afkTimeout</a></h1>
-<p>Returns the AFK time-out (In Seconds) for a provided guild.</p>
-<div id="admonition-time-out" class="admonition admonish-info" role="note" aria-labelledby="admonition-time-out-title">
-<div class="admonition-title">
-<div id="admonition-time-out-title">
-<p>Time-out</p>
+                <h1 id="addmediagalleryitem"><a class="header" href="#addmediagalleryitem">$addMediaGalleryItem</a></h1>
+<div class="functionTags">
+  <span id="ComponentTag">Components v2</span>
 </div>
-<a class="admonition-anchor-link" href="#admonition-time-out"></a>
-</div>
-<div>
-<p>Discord automatically moves member to the specified (in the Server Settings / Can be returned via <a href="./afkChannelID"><code>$afkChannelID</code></a>) voice channel and mute them when they have been idle for longer then the inactive time-out (“inactive time-out” can be returned via <code>$afkTimeout[]</code> function).</p>
-</div>
-</div>
+<p>Adds a media to the gallery.</p>
 <h2 id="syntax"><a class="header" href="#syntax">Syntax</a></h2>
-<pre><code>$afkTimeout[(Guild ID)]
+<pre><code>$addMediaGalleryItem[Media URL;Description;Spoiler?;(Gallery name)]
 </code></pre>
-<h3 id="parameters"><a class="header" href="#parameters">Parameters</a></h3>
-<ul>
-<li><code>Guild ID</code> <code>(Type: Snowflake || Flag: Optional)</code>: The guild to get the AFK time-out.</li>
-</ul>
-<h2 id="example"><a class="header" href="#example">Example</a></h2>
-<pre><code>$nomention
-AFK Time-out: $afkTimeout[$guildID] seconds
-</code></pre>
-<discord-messages>
-    <discord-message avatar="https://cdn.discordapp.com/avatars/803569638084313098/1c0a70609cdd326f9265bb2040e83b7e.png" role-color="#E67E22" author="RainbowKey">
-        !example
-    </discord-message>
-    <discord-message author="BDFD Support" role-color="#378afa" bot verified avatar="https://cdn.discordapp.com/avatars/1009018156494368798/612acd98b01ab110615a2524ee2b6360.png">
-        AFK Time-out: 300 seconds
-    </discord-message>
-</discord-messages>
-<div id="admonition-what-is-this" class="admonition admonish-question" role="note" aria-labelledby="admonition-what-is-this-title">
-<div class="admonition-title">
-<div id="admonition-what-is-this-title">
-<p>What is this?</p>
-</div>
-<a class="admonition-anchor-link" href="#admonition-what-is-this"></a>
-</div>
-<div>
-<p>How <a href="./guildID.html"><code>$guildID</code></a> works?</p>
-</div>
-</div>
 
             </main>
 
             <nav class="nav-wrapper" aria-label="Page navigation">
                 <!-- Mobile navigation buttons -->
-                    <a rel="prev" href="../bdscript/eval.html" class="mobile-nav-chapters previous"
+                    <a rel="prev" href="../bdscript/addMediaGallery.html" class="mobile-nav-chapters previous"
                        title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
                         <i class="fa fa-angle-left"></i>
                     </a>
 
-                    <a rel="next" href="../bdscript/boostCount.html" class="mobile-nav-chapters next"
+                    <a rel="next" href="../bdscript/addSection.html" class="mobile-nav-chapters next"
                        title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
                         <i class="fa fa-angle-right"></i>
                     </a>
@@ -257,16 +222,16 @@ AFK Time-out: $afkTimeout[$guildID] seconds
     </div>
 
     <nav class="nav-wide-wrapper" aria-label="Page navigation">
-        <a href="../bdscript/eval.html" class="nav-chapters previous" title="Previous chapter"
+        <a href="../bdscript/addMediaGallery.html" class="nav-chapters previous" title="Previous chapter"
            aria-label="Previous chapter" aria-keyshortcuts="Left">
-            <a href="../bdscript/eval.html" class="nav-chapters previous" title="Previous page"
+            <a href="../bdscript/addMediaGallery.html" class="nav-chapters previous" title="Previous page"
                aria-label="Previous page" aria-keyshortcuts="Left">
                 <i class="fa fa-angle-left"></i>
             </a>
 
-            <a href="../bdscript/boostCount.html" class="nav-chapters next" title="Next chapter"
+            <a href="../bdscript/addSection.html" class="nav-chapters next" title="Next chapter"
                aria-label="Next chapter" aria-keyshortcuts="Right">
-                <a href="../bdscript/boostCount.html" class="nav-chapters next" title="Next page"
+                <a href="../bdscript/addSection.html" class="nav-chapters next" title="Next page"
                    aria-label="Next page" aria-keyshortcuts="Right">
                     <i class="fa fa-angle-right"></i>
                 </a>
