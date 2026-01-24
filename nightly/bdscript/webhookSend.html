@@ -233,12 +233,12 @@ $var[webhook;$webhookCreate[$channelID;Test webhook]]
 $webhookSend[$var[webhook];I'm the best webhook;Title;;It's a description!;#673ab7;;;;;;false]
 </code></pre>
 <discord-messages>
-    <discord-message avatar="https://cdn.discordapp.com/avatars/803569638084313098/1c0a70609cdd326f9265bb2040e83b7e.png" author="RainbowKey" role-color="#E67E22">
+    <discord-message role-color="#E67E22" author="RainbowKey" avatar="https://cdn.discordapp.com/avatars/803569638084313098/1c0a70609cdd326f9265bb2040e83b7e.png">
         !example
     </discord-message>
-    <discord-message author="Test webhook" role-color="#fff" bot verified>
+    <discord-message bot role-color="#fff" verified author="Test webhook">
         I'm the best webhook
-        <discord-embed embed-title="Title" color="#673ab7" slot="embeds">
+        <discord-embed color="#673ab7" slot="embeds" embed-title="Title">
             <discord-embed-description slot="description">
                 It's a description!
             </discord-embed-description>
