@@ -1329,7 +1329,7 @@ ul#searchresults span.teaser em {
 .sidebar {
 	position: fixed;
 	left: 0;
-	top: 70px; /* Account for fixed navbar height */
+	top: 65px; /* Account for fixed navbar height */
 	bottom: 0;
 	width: var(--sidebar-width);
 	font-size: 95%;
@@ -1343,7 +1343,7 @@ ul#searchresults span.teaser em {
 	border-right: 1px solid rgba(255, 255, 255, 0.08);
 	box-shadow: 4px 0 24px rgba(0, 0, 0, 0.3);
 	scrollbar-color: var(--card-hover) rgba(255, 0, 0, 0) !important;
-	z-index: 999;
+	z-index: 2500;
 }
 
 .sidebar code {
@@ -1357,7 +1357,7 @@ ul#searchresults span.teaser em {
 	bottom: 0;
 	left: 0;
 	right: 0;
-	padding: 20px 16px;
+	padding: .1rem 16px;
 }
 
 .sidebar-hidden .sidebar {
@@ -1605,5 +1605,7 @@ ul#searchresults span.teaser em {
         font-size: 1rem;
     }
 }
+
+
 
 
