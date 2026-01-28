@@ -247,10 +247,10 @@
 $webhookCreate[$channelID;BDFD Webhook 🤖]
 </code></pre>
 <discord-messages>
-    <discord-message author="RainbowKey" avatar="https://cdn.discordapp.com/avatars/803569638084313098/1c0a70609cdd326f9265bb2040e83b7e.png" role-color="#E67E22">
+    <discord-message avatar="https://cdn.discordapp.com/avatars/803569638084313098/1c0a70609cdd326f9265bb2040e83b7e.png" role-color="#E67E22" author="RainbowKey">
         !example
     </discord-message>
-    <discord-message author="BDFD Support" avatar="https://cdn.discordapp.com/avatars/1009018156494368798/612acd98b01ab110615a2524ee2b6360.png" bot role-color="#378afa" verified>
+    <discord-message verified author="BDFD Support" bot role-color="#378afa" avatar="https://cdn.discordapp.com/avatars/1009018156494368798/612acd98b01ab110615a2524ee2b6360.png">
         1234abcd567ABCDEFG890H_654679203GDGJEMFNXH.6479304948
     </discord-message>
 </discord-messages>
@@ -278,10 +278,10 @@ $webhookCreate[$channelID;BDFD Webhook 🤖]
 Created and saved!
 </code></pre>
 <discord-messages>
-    <discord-message avatar="https://cdn.discordapp.com/avatars/803569638084313098/1c0a70609cdd326f9265bb2040e83b7e.png" role-color="#E67E22" author="RainbowKey">
+    <discord-message role-color="#E67E22" author="RainbowKey" avatar="https://cdn.discordapp.com/avatars/803569638084313098/1c0a70609cdd326f9265bb2040e83b7e.png">
         !example
     </discord-message>
-    <discord-message author="BDFD Support" avatar="https://cdn.discordapp.com/avatars/1009018156494368798/612acd98b01ab110615a2524ee2b6360.png" bot verified role-color="#378afa">
+    <discord-message author="BDFD Support" bot role-color="#378afa" verified avatar="https://cdn.discordapp.com/avatars/1009018156494368798/612acd98b01ab110615a2524ee2b6360.png">
         Created and saved!
     </discord-message>
 </discord-messages>
@@ -330,12 +330,12 @@ $var[webhook;$webhookCreate[$channelID;Test webhook]]
 $webhookSend[$var[webhook];I'm the best webhook;Title;;It's a description!;#673ab7;;;;;;false]
 </code></pre>
 <discord-messages>
-    <discord-message role-color="#E67E22" avatar="https://cdn.discordapp.com/avatars/803569638084313098/1c0a70609cdd326f9265bb2040e83b7e.png" author="RainbowKey">
+    <discord-message author="RainbowKey" avatar="https://cdn.discordapp.com/avatars/803569638084313098/1c0a70609cdd326f9265bb2040e83b7e.png" role-color="#E67E22">
         !example
     </discord-message>
-    <discord-message bot verified author="Test webhook" role-color="#fff">
+    <discord-message bot role-color="#fff" author="Test webhook" verified>
         I'm the best webhook
-        <discord-embed color="#673ab7" slot="embeds" embed-title="Title">
+        <discord-embed slot="embeds" embed-title="Title" color="#673ab7">
             <discord-embed-description slot="description">
                 It's a description!
             </discord-embed-description>
@@ -372,10 +372,10 @@ $webhookDelete[$var[webhook]]
 Deleted!
 </code></pre>
 <discord-messages>
-    <discord-message avatar="https://cdn.discordapp.com/avatars/803569638084313098/1c0a70609cdd326f9265bb2040e83b7e.png" author="RainbowKey" role-color="#E67E22">
+    <discord-message avatar="https://cdn.discordapp.com/avatars/803569638084313098/1c0a70609cdd326f9265bb2040e83b7e.png" role-color="#E67E22" author="RainbowKey">
         !example
     </discord-message>
-    <discord-message verified role-color="#378afa" author="BDFD Support" avatar="https://cdn.discordapp.com/avatars/1009018156494368798/612acd98b01ab110615a2524ee2b6360.png" bot>
+    <discord-message author="BDFD Support" bot avatar="https://cdn.discordapp.com/avatars/1009018156494368798/612acd98b01ab110615a2524ee2b6360.png" role-color="#378afa" verified>
         Deleted!
     </discord-message>
 </discord-messages>
@@ -410,7 +410,7 @@ New avatar for webhook!
     <discord-message role-color="#E67E22" avatar="https://cdn.discordapp.com/avatars/803569638084313098/1c0a70609cdd326f9265bb2040e83b7e.png" author="RainbowKey">
         !example
     </discord-message>
-    <discord-message avatar="https://cdn.discordapp.com/avatars/1009018156494368798/612acd98b01ab110615a2524ee2b6360.png" bot role-color="#378afa" verified author="BDFD Support">
+    <discord-message author="BDFD Support" avatar="https://cdn.discordapp.com/avatars/1009018156494368798/612acd98b01ab110615a2524ee2b6360.png" bot role-color="#378afa" verified>
         New avatar for webhook!
     </discord-message>
 </discord-messages>
@@ -442,10 +442,10 @@ $webhookUsername[$var[webhook];BDFD Support]
 New username for webhook!
 </code></pre>
 <discord-messages>
-    <discord-message avatar="https://cdn.discordapp.com/avatars/803569638084313098/1c0a70609cdd326f9265bb2040e83b7e.png" author="RainbowKey" role-color="#E67E22">
+    <discord-message avatar="https://cdn.discordapp.com/avatars/803569638084313098/1c0a70609cdd326f9265bb2040e83b7e.png" role-color="#E67E22" author="RainbowKey">
         !example
     </discord-message>
-    <discord-message verified author="BDFD Support" bot avatar="https://cdn.discordapp.com/avatars/1009018156494368798/612acd98b01ab110615a2524ee2b6360.png" role-color="#378afa">
+    <discord-message role-color="#378afa" avatar="https://cdn.discordapp.com/avatars/1009018156494368798/612acd98b01ab110615a2524ee2b6360.png" bot verified author="BDFD Support">
         New username for webhook!
     </discord-message>
 </discord-messages>
@@ -476,10 +476,10 @@ $var[webhook;$webhookCreate[$channelID;Test webhook]]
 $webhookTitle[$var[webhook];My Webhook Title]
 </code></pre>
 <discord-messages>
-    <discord-message role-color="#E67E22" author="RainbowKey" avatar="https://cdn.discordapp.com/avatars/803569638084313098/1c0a70609cdd326f9265bb2040e83b7e.png">
+    <discord-message author="RainbowKey" role-color="#E67E22" avatar="https://cdn.discordapp.com/avatars/803569638084313098/1c0a70609cdd326f9265bb2040e83b7e.png">
         !example
     </discord-message>
-    <discord-message author="Test webhook" bot avatar="https://cdn.discordapp.com/embed/avatars/3.png" role-color="#fff">
+    <discord-message author="Test webhook" bot role-color="#fff" avatar="https://cdn.discordapp.com/embed/avatars/3.png">
         <discord-embed slot="embeds" embed-title="My Webhook Title">
         </discord-embed>
     </discord-message>
@@ -514,7 +514,7 @@ $webhookDescription[$var[webhook];This is a detailed description for my webhook.
     <discord-message role-color="#E67E22" author="RainbowKey" avatar="https://cdn.discordapp.com/avatars/803569638084313098/1c0a70609cdd326f9265bb2040e83b7e.png">
         !example
     </discord-message>
-    <discord-message author="Test webhook" bot avatar="https://cdn.discordapp.com/embed/avatars/4.png" role-color="#fff">
+    <discord-message bot avatar="https://cdn.discordapp.com/embed/avatars/4.png" role-color="#fff" author="Test webhook">
         <none>
         <discord-embed slot="embeds">
             <discord-embed-description slot="description">
@@ -550,10 +550,10 @@ $var[webhook;$webhookCreate[$channelID;Test webhook]]
 $webhookFooter[$var[webhook];Footer Text Here]
 </code></pre>
 <discord-messages>
-    <discord-message role-color="#E67E22" author="RainbowKey" avatar="https://cdn.discordapp.com/avatars/803569638084313098/1c0a70609cdd326f9265bb2040e83b7e.png">
+    <discord-message author="RainbowKey" avatar="https://cdn.discordapp.com/avatars/803569638084313098/1c0a70609cdd326f9265bb2040e83b7e.png" role-color="#E67E22">
         !example
     </discord-message>
-    <discord-message author="Test webhook" avatar="https://cdn.discordapp.com/embed/avatars/4.png" bot role-color="#fff">
+    <discord-message role-color="#fff" author="Test webhook" avatar="https://cdn.discordapp.com/embed/avatars/4.png" bot>
         <discord-embed slot="embeds">
             <discord-embed-footer slot="footer">
                 Footer Text Here
@@ -588,10 +588,10 @@ $var[webhook;$webhookCreate[$channelID;Test webhook]]
 $webhookContent[$var[webhook];Hello from my webhook!]
 </code></pre>
 <discord-messages>
-    <discord-message author="RainbowKey" avatar="https://cdn.discordapp.com/avatars/803569638084313098/1c0a70609cdd326f9265bb2040e83b7e.png" role-color="#E67E22">
+    <discord-message avatar="https://cdn.discordapp.com/avatars/803569638084313098/1c0a70609cdd326f9265bb2040e83b7e.png" role-color="#E67E22" author="RainbowKey">
         !example
     </discord-message>
-    <discord-message role-color="#fff" author="Test webhook" avatar="https://cdn.discordapp.com/embed/avatars/3.png" bot verified>
+    <discord-message author="Test webhook" bot avatar="https://cdn.discordapp.com/embed/avatars/3.png" role-color="#fff" verified>
         Hello from my webhook!
     </discord-message>
 </discord-messages>
@@ -637,7 +637,7 @@ $webhookDescription[⬅️ Embed border color.]
     <discord-message avatar="https://cdn.discordapp.com/avatars/803569638084313098/1c0a70609cdd326f9265bb2040e83b7e.png" role-color="#E67E22" author="RainbowKey">
         !example
     </discord-message>
-    <discord-message role-color="#fff" author="Test webhook" avatar="https://cdn.discordapp.com/embed/avatars/3.png" bot>
+    <discord-message avatar="https://cdn.discordapp.com/embed/avatars/3.png" author="Test webhook" bot role-color="#fff">
         <none>
         <discord-embed color="#673ab7" slot="embeds">
             <discord-embed-description slot="description">
@@ -668,10 +668,10 @@ $webhookFooter[$var[webhook];Made by BDFD]
 $webhookColor[$var[webhook];#673ab7]
 </code></pre>
 <discord-messages>
-    <discord-message author="RainbowKey" role-color="#E67E22" avatar="https://cdn.discordapp.com/avatars/803569638084313098/1c0a70609cdd326f9265bb2040e83b7e.png">
+    <discord-message avatar="https://cdn.discordapp.com/avatars/803569638084313098/1c0a70609cdd326f9265bb2040e83b7e.png" role-color="#E67E22" author="RainbowKey">
         !example
     </discord-message>
-    <discord-message avatar="https://cdn.discordapp.com/avatars/803569638084313098/1c0a70609cdd326f9265bb2040e83b7e.png" bot role-color="#fff" author="I'm webhook 😎">
+    <discord-message avatar="https://cdn.discordapp.com/avatars/803569638084313098/1c0a70609cdd326f9265bb2040e83b7e.png" role-color="#fff" bot author="I'm webhook 😎">
         👇 Read before chatting
         <discord-embed slot="embeds" embed-title="📚 Rules" color="#673ab7">
             <discord-embed-description slot="description">
