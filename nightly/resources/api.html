@@ -419,30 +419,30 @@ summary {
 <h3 id="function"><a class="header" href="#function">Function</a></h3>
 <div class="table-wrapper"><table><thead><tr><th>Field name</th><th>Type</th><th>Description</th><th>Can be empty?</th><th>Can be omitted?</th></tr></thead><tbody>
 <tr><td>tag</td><td>String</td><td>Function name</td><td>False</td><td>False</td></tr>
-<tr><td>shortDescription</td><td>String</td><td>Description for a function without arguments</td><td>True</td><td>False</td></tr>
-<tr><td>longDescription</td><td>String</td><td>Description for a function with arguments</td><td>True</td><td>False</td></tr>
-<tr><td>arguments</td><td>Array of <a href="#Argument">Arguments</a></td><td>Arguments needed by a function</td><td>True</td><td>False</td></tr>
+<tr><td>shortDescription</td><td>String</td><td>Description for a function without parameters</td><td>True</td><td>False</td></tr>
+<tr><td>longDescription</td><td>String</td><td>Description for a function with parameters</td><td>True</td><td>False</td></tr>
+<tr><td>arguments</td><td>Array of <a href="#parameters">Parameters</a></td><td>Parameters needed by a function</td><td>True</td><td>False</td></tr>
 <tr><td>intents</td><td>Integer</td><td>Discord intents needed by bot to execute this function</td><td>False</td><td>False</td></tr>
-<tr><td>premium</td><td>Bool</td><td>function needs premium</td><td>False</td><td>False</td></tr>
-<tr><td>deprecated</td><td>Bool</td><td>function is deprecated</td><td>False</td><td>True</td></tr>
+<tr><td>premium</td><td>Bool</td><td>Function needs premium</td><td>False</td><td>False</td></tr>
+<tr><td>deprecated</td><td>Bool</td><td>Dunction is deprecated</td><td>False</td><td>True</td></tr>
 <tr><td>deprecatedFor</td><td>String</td><td>Name of the function that should be used instead</td><td>False</td><td>True</td></tr>
 </tbody></table>
 </div>
-<h3 id="argument"><a class="header" href="#argument">Argument</a></h3>
+<h3 id="parameter"><a class="header" href="#parameter">Parameter</a></h3>
 <div class="table-wrapper"><table><thead><tr><th>Field name</th><th>Type</th><th>Description</th><th>Can be omitted?</th></tr></thead><tbody>
-<tr><td>name</td><td>String</td><td>Argument name</td><td>False</td></tr>
-<tr><td>description</td><td>String</td><td>Description for a function’s argument</td><td>True</td></tr>
-<tr><td>type</td><td>String <a href="#Argument-Types">Argument Types</a></td><td>Argument type. <code>|</code> is used for a compound type</td><td>False</td></tr>
-<tr><td>required</td><td>bool</td><td>Argument is required</td><td>False</td></tr>
-<tr><td>tupleTypes</td><td>Array of <a href="#Argument">Arguments</a></td><td>Array of arguments which can be repeated, i.e <code>Channel ID;Message ID;Channel ID;Message ID;...</code></td><td>True</td></tr>
-<tr><td>empty</td><td>Bool</td><td>Argument can be empty</td><td>True</td></tr>
-<tr><td>ellipsis</td><td>Bool</td><td>Argument accepts more data, i.e <code>Username 1;Username 2;Username 3;...</code></td><td>True</td></tr>
-<tr><td>enumData</td><td>Array of Strings</td><td>Possible options accepted as argument, i.e <code>primary/secondary/or/etc</code></td><td>True</td></tr>
+<tr><td>name</td><td>String</td><td>Parameter name</td><td>False</td></tr>
+<tr><td>description</td><td>String</td><td>Description for a function’s parameter</td><td>True</td></tr>
+<tr><td>type</td><td>String <a href="#parameter-types">Parameter Types</a></td><td>Parameter type. <code>|</code> is used for a compound type</td><td>False</td></tr>
+<tr><td>required</td><td>bool</td><td>Parameter is required</td><td>False</td></tr>
+<tr><td>tupleTypes</td><td>Array of <a href="#parameters">Parameters</a></td><td>Array of parameters which can be repeated, i.e <code>Channel ID;Message ID;Channel ID;Message ID;...</code></td><td>True</td></tr>
+<tr><td>empty</td><td>Bool</td><td>Parameter can be empty</td><td>True</td></tr>
+<tr><td>ellipsis</td><td>Bool</td><td>Parameter accepts more data, i.e <code>Username 1;Username 2;Username 3;...</code></td><td>True</td></tr>
+<tr><td>enumData</td><td>Array of Strings</td><td>Possible options accepted as parameter, i.e <code>primary/secondary/or/etc</code></td><td>True</td></tr>
 </tbody></table>
 </div>
-<h3 id="argument-types"><a class="header" href="#argument-types">Argument Types</a></h3>
+<h3 id="parameter-types"><a class="header" href="#parameter-types">Parameter Types</a></h3>
 <p>Multiple types can be merged together with <code>|</code> <em>(OR)</em>.<br />
-Possible argument types:</p>
+Possible parameter types:</p>
 <ul>
 <li><code>String</code></li>
 <li><code>Integer</code></li>
