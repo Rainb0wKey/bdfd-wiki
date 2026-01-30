@@ -15,6 +15,21 @@
     <meta name="og:image" content="https://app.botdesignerdiscord.com/icons/Icon-512.png">
     <meta name="format-detection" content="telephone=no"/>
 
+    <!-- Apply user settings early to prevent layout shift -->
+    <script>
+        (function() {
+            try {
+                var data = JSON.parse(localStorage.getItem("json"));
+                if (data) {
+                    var style = document.documentElement.style;
+                    if (data["text-font"]) style.fontFamily = data["text-font"];
+                    if (data["text-size"]) style.fontSize = data["text-size"];
+                    if (data["text-hg"]) style.textShadow = data["text-hg"];
+                }
+            } catch (e) {}
+        })();
+    </script>
+
     <link rel="icon" type="image/png" href="../favicon.png">
     <link rel="apple-touch-icon" type="image/png" href="../favicon.png">
 
@@ -27,12 +42,12 @@
     <script type="module"
             src="../assets/vendor/discord-components/skyra-discord-components-core.js"></script>
 
-    <!-- Fonts -->
+    <!-- Fonts - preconnect for faster loading -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="stylesheet" href="../FontAwesome/css/font-awesome.css">
     <link rel="stylesheet"
-          href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Code+Pro:500">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+          href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&family=Source+Code+Pro:wght@500&family=Montserrat&display=swap">
 
     <!-- Highlight.js Stylesheets -->
     <link rel="stylesheet" href="../highlight.css">
@@ -184,32 +199,45 @@
 </code></pre>
 <h3 id="parameters"><a class="header" href="#parameters">Parameters</a></h3>
 <ul>
-<li><code>Webhook URL</code> <code>(Type: URL || Flag: Required)</code>: The URL of the webhook you want to use.</li>
-<li><code>Content</code> <code>(Type: String || Flag: Vacantable)</code>: The text that is shown above the embed.</li>
-<li><code>Title</code> <code>(Type: String || Flag: Vacantable)</code>: The text that will be used as the title.</li>
-<li><code>Title URL</code> <code>(Type: URL || Flag: Vacantable)</code>: The URL that will be applied to the title.</li>
-<li><code>Description</code> <code>(Type: String || Flag: Vacantable)</code>: The description that will be applied to the embed.</li>
-<li><code>Color hex</code> <code>(Type: Color || Flag: Vacantable)</code>: The <a href="../tools/color.html">color hex</a> to set the embed border color as. You can also use color integer number.</li>
-</ul>
-<div id="admonition-color-picker" class="admonition admonish-tip" role="note" aria-labelledby="admonition-color-picker-title">
-<div class="admonition-title">
-<div id="admonition-color-picker-title">
-<p>Color Picker</p>
-</div>
-<a class="admonition-anchor-link" href="#admonition-color-picker"></a>
-</div>
-<div>
-<p>You can use our <a href="../tools/color.html">“Color” tool</a> to select the best color!</p>
-</div>
-</div>
-<ul>
-<li><code>Author</code> <code>(Type: String || Flag: Vacantable )</code>: The text that appears at the author.</li>
-<li><code>Author icon</code> <code>(Type: URL || Flag: Vacantable)</code>: The image that appears next to the author.</li>
-<li><code>Footer</code> <code>(Type: String || Flag: Vacantable)</code>: The text to set the footer as.</li>
-<li><code>Footer icon</code> <code>(Type: URL || Flag: Vacantable)</code>: The image that appears next to the footer.</li>
-<li><code>Thumbnail</code> <code>(Type: URL || Flag: Vacantable)</code>: The image to set as the thumbnail.</li>
-<li><code>Image</code> <code>(Type: URL || Flag: Vacantable)</code>: The image that appears above the footer.</li>
-<li><code>Add timestamp?</code> <code>(Type: Bool || Flag: Vacantable)</code>: Adds a timestamp to the footer.</li>
+<li>
+<p><code>Webhook URL</code> <code>(Type: URL || Flag: Required)</code>: The URL of the webhook you want to use.</p>
+</li>
+<li>
+<p><code>Content</code> <code>(Type: String || Flag: Vacantable)</code>: The text that is shown above the embed.</p>
+</li>
+<li>
+<p><code>Title</code> <code>(Type: String || Flag: Vacantable)</code>: The text that will be used as the title.</p>
+</li>
+<li>
+<p><code>Title URL</code> <code>(Type: URL || Flag: Vacantable)</code>: The URL that will be applied to the title.</p>
+</li>
+<li>
+<p><code>Description</code> <code>(Type: String || Flag: Vacantable)</code>: The description that will be applied to the embed.</p>
+</li>
+<li>
+<p><code>Color hex</code> <code>(Type: Color || Flag: Vacantable)</code>: The color hex to set the embed border color as. You can also use color integer number.</p>
+</li>
+<li>
+<p><code>Author</code> <code>(Type: String || Flag: Vacantable )</code>: The text that appears at the author.</p>
+</li>
+<li>
+<p><code>Author icon</code> <code>(Type: URL || Flag: Vacantable)</code>: The image that appears next to the author.</p>
+</li>
+<li>
+<p><code>Footer</code> <code>(Type: String || Flag: Vacantable)</code>: The text to set the footer as.</p>
+</li>
+<li>
+<p><code>Footer icon</code> <code>(Type: URL || Flag: Vacantable)</code>: The image that appears next to the footer.</p>
+</li>
+<li>
+<p><code>Thumbnail</code> <code>(Type: URL || Flag: Vacantable)</code>: The image to set as the thumbnail.</p>
+</li>
+<li>
+<p><code>Image</code> <code>(Type: URL || Flag: Vacantable)</code>: The image that appears above the footer.</p>
+</li>
+<li>
+<p><code>Add timestamp?</code> <code>(Type: Bool || Flag: Vacantable)</code>: Adds a timestamp to the footer.</p>
+</li>
 </ul>
 <h2 id="example"><a class="header" href="#example">Example</a></h2>
 <pre><code>$nomention
@@ -217,12 +245,12 @@ $var[webhook;$webhookCreate[$channelID;Test webhook]]
 $webhookSend[$var[webhook];I'm the best webhook;Title;;It's a description!;#673ab7;;;;;;false]
 </code></pre>
 <discord-messages>
-    <discord-message avatar="https://cdn.discordapp.com/avatars/803569638084313098/1c0a70609cdd326f9265bb2040e83b7e.png" author="RainbowKey" role-color="#E67E22">
+    <discord-message role-color="#E67E22" author="RainbowKey" avatar="https://cdn.discordapp.com/avatars/803569638084313098/1c0a70609cdd326f9265bb2040e83b7e.png">
         !example
     </discord-message>
-    <discord-message role-color="#fff" author="Test webhook" verified bot>
+    <discord-message bot verified author="Test webhook" role-color="#fff">
         I'm the best webhook
-        <discord-embed embed-title="Title" color="#673ab7" slot="embeds">
+        <discord-embed embed-title="Title" slot="embeds" color="#673ab7">
             <discord-embed-description slot="description">
                 It's a description!
             </discord-embed-description>
