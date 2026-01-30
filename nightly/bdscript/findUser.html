@@ -4,7 +4,7 @@
 <head>
     <!-- Book generated using mdBook -->
     <meta charset="UTF-8">
-    <title>$displayName - Bot Designer For Discord - Wiki</title>
+    <title>$findUser - Bot Designer For Discord - Wiki</title>
 
 
 
@@ -177,34 +177,50 @@
                     <script src="../theme/breadcrumbs.js"></script>
                 </nav>
 
-                <h1 id="displayname"><a class="header" href="#displayname">$displayName</a></h1>
-<p>Returns the author’s display name.</p>
+                <h1 id="finduser"><a class="header" href="#finduser">$findUser</a></h1>
+<p>Finds a user’s ID using username, ID, or mention in the current server.</p>
 <h2 id="syntax"><a class="header" href="#syntax">Syntax</a></h2>
-<pre><code>$displayName
+<pre><code>$findUser[User;(Return author ID?)]
 </code></pre>
+<h3 id="parameters"><a class="header" href="#parameters">Parameters</a></h3>
+<ul>
+<li><code>User</code> <code>(Type: String || Flag: Emptiable)</code>: The user’s username, ID, or mention to find.</li>
+<li><code>Return author ID?</code> <code>(Type: Bool || Flag: Optional)</code>: Whether to return the author ID if no user was found. The default is <code>yes</code>.</li>
+</ul>
 <h2 id="example"><a class="header" href="#example">Example</a></h2>
 <pre><code>$nomention
-Your display name is $displayName
+User ID: $findUser[$message]
 </code></pre>
 <discord-messages>
-    <discord-message avatar="https://cdn.discordapp.com/avatars/729343563401265193/bd91eedd77a95b9f81be39997613d295.png" author="Nicky" role-color="#EE7908">
-        !example
+    <discord-message role-color="#E67E22" avatar="https://cdn.discordapp.com/avatars/803569638084313098/1c0a70609cdd326f9265bb2040e83b7e.png" author="RainbowKey">
+        !example BDFD Support
     </discord-message>
-    <discord-message avatar="https://cdn.discordapp.com/avatars/566613317972394004/05f26f2f951578db660f1bdf25a027ea.png" author="Wiki Bot" bot verified role-color="#748BD4">
-        Your display name is Nicky
+    <discord-message author="BDFD Support" verified role-color="#378afa" avatar="https://cdn.discordapp.com/avatars/1009018156494368798/612acd98b01ab110615a2524ee2b6360.png" bot>
+        User ID: 1009018156494368798
     </discord-message>
 </discord-messages>
+<div id="admonition-what-is-this" class="admonition admonish-question" role="note" aria-labelledby="admonition-what-is-this-title">
+<div class="admonition-title">
+<div id="admonition-what-is-this-title">
+<p>What is this?</p>
+</div>
+<a class="admonition-anchor-link" href="#admonition-what-is-this"></a>
+</div>
+<div>
+<p>How <a href="./message.html"><code>$message</code></a> works?</p>
+</div>
+</div>
 
             </main>
 
             <nav class="nav-wrapper" aria-label="Page navigation">
                 <!-- Mobile navigation buttons -->
-                    <a rel="prev" href="../bdscript/discriminator.html" class="mobile-nav-chapters previous"
+                    <a rel="prev" href="../bdscript/userServerAvatar.html" class="mobile-nav-chapters previous"
                        title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
                         <i class="fa fa-angle-left"></i>
                     </a>
 
-                    <a rel="next" href="../bdscript/displayNameComplex.html" class="mobile-nav-chapters next"
+                    <a rel="next" href="../bdscript/ban.html" class="mobile-nav-chapters next"
                        title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
                         <i class="fa fa-angle-right"></i>
                     </a>
@@ -215,16 +231,16 @@ Your display name is $displayName
     </div>
 
     <nav class="nav-wide-wrapper" aria-label="Page navigation">
-        <a href="../bdscript/discriminator.html" class="nav-chapters previous" title="Previous chapter"
+        <a href="../bdscript/userServerAvatar.html" class="nav-chapters previous" title="Previous chapter"
            aria-label="Previous chapter" aria-keyshortcuts="Left">
-            <a href="../bdscript/discriminator.html" class="nav-chapters previous" title="Previous page"
+            <a href="../bdscript/userServerAvatar.html" class="nav-chapters previous" title="Previous page"
                aria-label="Previous page" aria-keyshortcuts="Left">
                 <i class="fa fa-angle-left"></i>
             </a>
 
-            <a href="../bdscript/displayNameComplex.html" class="nav-chapters next" title="Next chapter"
+            <a href="../bdscript/ban.html" class="nav-chapters next" title="Next chapter"
                aria-label="Next chapter" aria-keyshortcuts="Right">
-                <a href="../bdscript/displayNameComplex.html" class="nav-chapters next" title="Next page"
+                <a href="../bdscript/ban.html" class="nav-chapters next" title="Next page"
                    aria-label="Next page" aria-keyshortcuts="Right">
                     <i class="fa fa-angle-right"></i>
                 </a>
