@@ -4,7 +4,7 @@
 <head>
     <!-- Book generated using mdBook -->
     <meta charset="UTF-8">
-    <title>$suppressErrorLogging - Bot Designer For Discord - Wiki</title>
+    <title>$input - Bot Designer For Discord - Wiki</title>
 
 
 
@@ -177,68 +177,37 @@
                     <script src="../theme/breadcrumbs.js"></script>
                 </nav>
 
-                <h1 id="suppresserrorlogging"><a class="header" href="#suppresserrorlogging">$suppressErrorLogging</a></h1>
-<div class="functionTags">
-  <span id="PremiumTag">Premium</span>
-</div>
-<p>Disable error logging for the command in bot logs.</p>
+                <h1 id="input"><a class="header" href="#input">$input</a></h1>
+<p>Retrieves input from a modal.</p>
 <h2 id="syntax"><a class="header" href="#syntax">Syntax</a></h2>
-<pre><code>$suppressErrorLogging
+<pre><code>$input[Text Input ID]
 </code></pre>
-<h2 id="example"><a class="header" href="#example">Example</a></h2>
-<pre><code>$nomention
-Hello world!
-$createChannel[;]
-$suppressErrorLogging
-</code></pre>
-<discord-messages>
-    <discord-message role-color="#E67E22" author="RainbowKey" avatar="https://cdn.discordapp.com/avatars/803569638084313098/1c0a70609cdd326f9265bb2040e83b7e.png">
-        !example
-    </discord-message>
-    <discord-message bot role-color="#378afa" avatar="https://cdn.discordapp.com/avatars/1009018156494368798/612acd98b01ab110615a2524ee2b6360.png" verified author="BDFD Support">
-        ❌ Function <code>$createChannel</code> at <code>3:17</code> returned an error: expected valid value in position 1, got empty value
-    </discord-message>
-</discord-messages>
-<p><strong>In the <a href="https://app.botdesignerdiscord.com">BDFD Web App</a>:</strong></p>
+<h2 id="parameters"><a class="header" href="#parameters">Parameters</a></h2>
 <ul>
-<li>With <code>$suppressErrorLogging</code>:<br />
-<img src="https://github.com/user-attachments/assets/f8783361-38d7-4c9e-b4f4-3c6bf4249b34" alt="example" /></li>
-<li>Without <code>$suppressErrorLogging</code>:<br />
-<img src="https://github.com/user-attachments/assets/245a7bc3-5efa-4d01-86d3-f57b46e93db2" alt="example" /></li>
+<li><code>Text Input ID</code> <code>(Type: String || Flag: Required)</code>: The input ID in <a href="../bdscript/addTextInput.html"><code>$addTextInput[]</code></a>.</li>
 </ul>
-<div id="admonition-what-is-this" class="admonition admonish-question" role="note" aria-labelledby="admonition-what-is-this-title">
-<div class="admonition-title">
-<div id="admonition-what-is-this-title">
-<p>What is this?</p>
-</div>
-<a class="admonition-anchor-link" href="#admonition-what-is-this"></a>
-</div>
-<div>
-<p>How <a href="../bdscript/createChannel.html"><code>$createChannel[]</code></a> works?</p>
-</div>
-</div>
-<div id="admonition-tip" class="admonition admonish-tip" role="note" aria-labelledby="admonition-tip-title">
-<div class="admonition-title">
-<div id="admonition-tip-title">
-<p>Tip</p>
-</div>
-<a class="admonition-anchor-link" href="#admonition-tip"></a>
-</div>
-<div>
-<p>You can use <a href="../bdscript/suppressErrors.html"><code>$suppressErrors</code></a> to disable error bot response.</p>
-</div>
-</div>
+<h2 id="example"><a class="header" href="#example">Example</a></h2>
+<h3 id="interaction-command-code"><a class="header" href="#interaction-command-code">Interaction command code</a></h3>
+<pre><code>$nomention
+Name : $input[modalInput1]
+Pronouns : $input[modalInput2]
+About me : $input[modalInput3]
+</code></pre>
+<p><img src="https://user-images.githubusercontent.com/69215413/168921575-9c2e3106-4ac0-4388-8b41-46e640e6126a.png" alt="example" /></p>
+<blockquote>
+<p>For more info, see the <a href="../guides/general/interactions/modals/aboutModals.html">Modals Guide</a>.</p>
+</blockquote>
 
             </main>
 
             <nav class="nav-wrapper" aria-label="Page navigation">
                 <!-- Mobile navigation buttons -->
-                    <a rel="prev" href="../premium/sendNotification.html" class="mobile-nav-chapters previous"
+                    <a rel="prev" href="../bdscript/editSelectMenuOption.html" class="mobile-nav-chapters previous"
                        title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
                         <i class="fa fa-angle-left"></i>
                     </a>
 
-                    <a rel="next" href="../premium/usedEmoji.html" class="mobile-nav-chapters next"
+                    <a rel="next" href="../bdscript/newModal.html" class="mobile-nav-chapters next"
                        title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
                         <i class="fa fa-angle-right"></i>
                     </a>
@@ -249,16 +218,16 @@ $suppressErrorLogging
     </div>
 
     <nav class="nav-wide-wrapper" aria-label="Page navigation">
-        <a href="../premium/sendNotification.html" class="nav-chapters previous" title="Previous chapter"
+        <a href="../bdscript/editSelectMenuOption.html" class="nav-chapters previous" title="Previous chapter"
            aria-label="Previous chapter" aria-keyshortcuts="Left">
-            <a href="../premium/sendNotification.html" class="nav-chapters previous" title="Previous page"
+            <a href="../bdscript/editSelectMenuOption.html" class="nav-chapters previous" title="Previous page"
                aria-label="Previous page" aria-keyshortcuts="Left">
                 <i class="fa fa-angle-left"></i>
             </a>
 
-            <a href="../premium/usedEmoji.html" class="nav-chapters next" title="Next chapter"
+            <a href="../bdscript/newModal.html" class="nav-chapters next" title="Next chapter"
                aria-label="Next chapter" aria-keyshortcuts="Right">
-                <a href="../premium/usedEmoji.html" class="nav-chapters next" title="Next page"
+                <a href="../bdscript/newModal.html" class="nav-chapters next" title="Next page"
                    aria-label="Next page" aria-keyshortcuts="Right">
                     <i class="fa fa-angle-right"></i>
                 </a>
