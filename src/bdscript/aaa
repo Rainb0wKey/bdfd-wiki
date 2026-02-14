@@ -7,19 +7,22 @@
 	font-size: 62.5%;
 }
 
-/* ===== ОГЛАВЛЕНИЕ (TOC) ===== */
+/* ===== TABLE OF CONTENTS (TOC) ===== */
 .toc-smart {
     position: fixed;
     top: 8.6rem;
     right: 1rem;
-    width: auto;
+    width: 240px; /* Уменьшил с 280px до 240px */
     max-height: calc(100vh - 60px);
     overflow-y: auto;
-	border-radius: var(--border-radius);
-	padding: 1rem 3rem;
+    border-radius: var(--border-radius);
+    padding: 1rem 1.2rem; /* Чуть уменьшил паддинги */
     border: 1px solid rgba(255, 255, 255, 0.05);
     background: var(--card-bg);
     z-index: 100;
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
 }
 
 .toc-title {
@@ -32,14 +35,21 @@
 }
 
 .toc-smart ul {
-   list-style: none;
-   padding: 0;
-   margin: 0;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    flex: 1;
+    width: 100%;
+    overflow-x: hidden;
 }
 
 .toc-smart li {
-   margin-bottom: .5rem;
-   line-height: 1.4;
+    margin-bottom: .5rem;
+    line-height: 1.4;
+    transition: opacity 0.2s;
+    width: 100%;
+    white-space: normal;
+    word-wrap: break-word;
 }
 
 .toc-smart a {
@@ -48,42 +58,162 @@
     border-bottom: 1px solid transparent;
     transition: border-color 0.15s;
     display: inline-block;
+    max-width: 100%;
+    word-break: break-word;
 }
 
 .toc-smart a:hover {
     border-bottom-color: currentColor;
 }
 
-/* ===== ИЕРАРХИЯ ЗАГОЛОВКОВ ===== */
+/* ===== HEADING HIERARCHY ===== */
 .toc-h1 {
-    font-size: 1.4rem;
+    font-size: 1.3rem; /* Чуть уменьшил для узкой колонки */
     font-weight: 600;
     margin-bottom: .5rem !important;
+    width: 100%;
 }
 
 .toc-h1 a {
     font-weight: 600;
+    max-width: 100%;
 }
 
 .toc-h2 {
-    font-size: 1.3rem;
-	padding-left: 16px;
+    font-size: 1.2rem; /* Чуть уменьшил */
+    padding-left: 12px; /* Уменьшил отступ */
     font-weight: 500;
+    width: calc(100% - 12px);
+    box-sizing: border-box;
 }
 
 .toc-h3 {
-    font-size: 1rem;
-    padding-left: 32px;
+    font-size: 0.95rem; /* Чуть уменьшил */
+    padding-left: 24px; /* Уменьшил отступ */
     font-weight: 400;
-	margin-top: -.2rem;
+    margin-top: -.2rem;
+    width: calc(100% - 24px);
+    box-sizing: border-box;
 }
 
-/* Активный пункт */
+/* ===== CURRENT SECTION INDICATOR ===== */
+.toc-smart .current-section {
+    font-weight: 700 !important;
+    border-left: 2px solid;
+    padding-left: 10px; /* Уменьшил */
+    margin-left: -12px; /* Подогнал */
+    width: calc(100% + 2px);
+    box-sizing: border-box;
+}
+
+.toc-smart .current-section a {
+    max-width: calc(100% - 2px);
+}
+
+.toc-smart .past-section a {
+    opacity: 0.5;
+}
+
+.toc-smart .past-section.current-section a {
+    opacity: 1;
+}
+
+/* Active item (backward compatibility) */
 .toc-smart .active {
     font-weight: 700 !important;
     border-left: 2px solid;
-    padding-left: 12px;
-    margin-left: -14px;
+    padding-left: 10px;
+    margin-left: -12px;
+    width: calc(100% + 2px);
+    box-sizing: border-box;
+}
+
+/* ===== READING STATISTICS ===== */
+.toc-footer {
+    margin-top: 1.2rem; /* Чуть меньше */
+    padding-top: 0.8rem; /* Чуть меньше */
+    border-top: 1px solid rgba(255, 255, 255, 0.08);
+    font-size: 0.85rem; /* Чуть меньше */
+    opacity: 0.8;
+    position: sticky;
+    bottom: 0;
+    background: var(--card-bg);
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.reading-time {
+    display: flex;
+    align-items: center;
+    gap: 4px; /* Меньше gap */
+    margin-bottom: 0.6rem; /* Меньше */
+    white-space: nowrap;
+    width: 100%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.read-progress {
+    display: flex;
+    align-items: center;
+    gap: 6px; /* Меньше gap */
+    width: 100%;
+}
+
+.progress-bar-bg {
+    flex: 1;
+    height: 4px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 4px;
+    overflow: hidden;
+    min-width: 40px; /* Меньше минимум */
+}
+
+.progress-bar-fill {
+    height: 100%;
+    width: 0%;
+    background: currentColor;
+    opacity: 0.5;
+    transition: width 0.1s ease;
+}
+
+.progress-percent {
+    min-width: 40px; /* Меньше */
+    text-align: right;
+    font-feature-settings: "tnum";
+    font-size: 0.85rem; /* Меньше */
+    flex-shrink: 0;
+}
+
+/* ===== MOBILE ===== */
+@media (max-width: 1000px) {
+    .toc-smart {
+        position: static;
+        width: 100%;
+        max-height: none;
+        margin-bottom: 2rem;
+        padding: 1rem;
+    }
+    
+    .toc-footer {
+        position: static;
+    }
+    
+    .toc-h2 {
+        padding-left: 12px;
+        width: calc(100% - 12px);
+    }
+    
+    .toc-h3 {
+        padding-left: 24px;
+        width: calc(100% - 24px);
+    }
+}
+
+@media (max-width: 700px) {
+    .toc-smart {
+        display: none;
+    }
 }
 
 html {
@@ -177,9 +307,9 @@ h4 a.header:target {
 }
 
 .content main {
-	margin-left: 5rem;
-	margin-right: 4rem;
-	max-width: 750px;
+	margin-left: 2rem;
+	margin-right: 9rem;
+	max-width: 700px;
 }
 
 .content a {
@@ -306,5 +436,3 @@ blockquote {
 .tooltipped .tooltiptext {
 	visibility: visible;
 }
-
-
